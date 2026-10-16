@@ -1,0 +1,7530 @@
+{
+  "category": {
+    "id": "cinema",
+    "nameAr": "سينما ودراما",
+    "emoji": "🎬"
+  },
+  "questions": [
+    {
+      "id": "cn-mcq-1",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين بطل فيلم «الإرهاب والكباب»؟",
+      "options": [
+        "أحمد زكي",
+        "عادل إمام",
+        "محمود عبد العزيز",
+        "نور الشريف"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "cn-mcq-2",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين مخرج فيلم «الرسالة»؟",
+      "options": [
+        "يوسف شاهين",
+        "صلاح أبو سيف",
+        "مصطفى العقاد",
+        "هنري بركات"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "المخرج السوري الأمريكي مصطفى العقاد."
+    },
+    {
+      "id": "cn-mcq-3",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "أم كلثوم اتلقبت بإيه؟",
+      "options": [
+        "سيدة الشاشة",
+        "كوكب الشرق",
+        "شادية الوادي",
+        "أميرة الطرب"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "cn-mcq-4",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين بطل فيلم «شمس الزناتي»؟",
+      "options": [
+        "عادل إمام",
+        "أحمد زكي",
+        "فريد شوقي",
+        "سعيد صالح"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-5",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين مخرج فيلم «باب الحديد»؟",
+      "options": [
+        "كمال سليم",
+        "يوسف شاهين",
+        "عاطف الطيب",
+        "محمد خان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "يوسف شاهين أخرجه ومثّل فيه دور قناوي سنة 1958."
+    },
+    {
+      "id": "cn-mcq-6",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين بطل فيلم «الكيت كات»؟",
+      "options": [
+        "نور الشريف",
+        "محمود عبد العزيز",
+        "أحمد زكي",
+        "يحيى الفخراني"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "cn-mcq-7",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "سيد درويش كان إيه؟",
+      "options": [
+        "ممثل",
+        "مخرج",
+        "ملحن ومطرب",
+        "شاعر"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "cn-mcq-8",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "مين مخرج فيلم «العزيمة» اللي اتعمل سنة 1939؟",
+      "options": [
+        "كمال سليم",
+        "توفيق صالح",
+        "صلاح أبو سيف",
+        "أحمد بدرخان"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-9",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عبد الحليم حافظ اتلقب بإيه؟",
+      "options": [
+        "العندليب الأسمر",
+        "موسيقار الأجيال",
+        "كروان الشرق",
+        "الزعيم"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-num-1",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "فيلم «الرسالة» اتعمل سنة كام؟",
+      "correctValue": 1976,
+      "tolerance": 2
+    },
+    {
+      "id": "cn-num-2",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "أم كلثوم اتوفت سنة كام؟",
+      "correctValue": 1975,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-3",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "فيلم «باب الحديد» اتعرض سنة كام؟",
+      "correctValue": 1958,
+      "tolerance": 2
+    },
+    {
+      "id": "cn-num-4",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "عبد الحليم حافظ اتوفى سنة كام؟",
+      "correctValue": 1977,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-bool-1",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "عادل إمام اتلقب بالزعيم",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-2",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "يوسف شاهين مخرج مصري",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-3",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "فيروز مطربة مصرية",
+      "isTrue": false,
+      "explanationAr": "فيروز مطربة لبنانية."
+    },
+    {
+      "id": "cn-bool-4",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أحمد زكي مثّل شخصية عبد الناصر في السينما",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-5",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "محمد عبد الوهاب اتلقب بموسيقار الأجيال",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-6",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "فيلم «الأرض» من إخراج يوسف شاهين",
+      "isTrue": true
+    },
+    {
+      "id": "cn-fill-1",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "أم كلثوم اتلقبت بكوكب ____",
+      "answerAr": "الشرق",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-2",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "عادل إمام اتلقب بـ ____",
+      "answerAr": "الزعيم",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-3",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عبد الحليم حافظ اتلقب بالعندليب ____",
+      "answerAr": "الأسمر",
+      "aliases": [
+        "اسمر"
+      ]
+    },
+    {
+      "id": "cn-open-1",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم الجايزة الأشهر في السينما العالمية؟",
+      "answerAr": "الأوسكار",
+      "aliases": [
+        "اوسكار"
+      ]
+    },
+    {
+      "id": "cn-open-2",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم مهرجان السينما الأشهر في فرنسا؟",
+      "answerAr": "مهرجان كان",
+      "aliases": [
+        "كان",
+        "كانّ",
+        "مهرجان كانّ"
+      ]
+    },
+    {
+      "id": "cn-prog-1",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا فنان مصري",
+        "اشتغلت في السينما والمسرح",
+        "اتلقبت بالزعيم"
+      ],
+      "answerAr": "عادل إمام",
+      "aliases": [
+        "عادل امام",
+        "الزعيم"
+      ]
+    },
+    {
+      "id": "cn-prog-2",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مطربة مصرية",
+        "صوتي من أشهر الأصوات في العالم العربي",
+        "اتلقبت بكوكب الشرق"
+      ],
+      "answerAr": "أم كلثوم",
+      "aliases": [
+        "ام كلثوم",
+        "كوكب الشرق"
+      ]
+    },
+    {
+      "id": "cn-ord-1",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الأفلام من الأقدم للأحدث",
+      "items": [
+        "العزيمة",
+        "باب الحديد",
+        "الرسالة",
+        "الكيت كات"
+      ],
+      "labels": [
+        "1939",
+        "1958",
+        "1976",
+        "1991"
+      ]
+    },
+    {
+      "id": "cn-ord-2",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّبهم من الأقدم وفاةً",
+      "items": [
+        "سيد درويش",
+        "أم كلثوم",
+        "عبد الحليم حافظ",
+        "أحمد زكي"
+      ],
+      "labels": [
+        "1923",
+        "1975",
+        "1977",
+        "2005"
+      ]
+    },
+    {
+      "id": "cn-prog-3",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مخرج مصري",
+        "أفلامي اتعرضت في مهرجانات عالمية",
+        "أخرجت فيلم باب الحديد ومثلت فيه"
+      ],
+      "answerAr": "يوسف شاهين",
+      "aliases": [
+        "شاهين"
+      ]
+    },
+    {
+      "id": "cn-ord-3",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب مراحل عمل الفيلم",
+      "items": [
+        "كتابة السيناريو",
+        "التصوير",
+        "المونتاج",
+        "العرض"
+      ],
+      "labels": []
+    },
+    {
+      "id": "cn-mcq-10",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "مين مخرج فيلم «المومياء»؟",
+      "options": [
+        "يوسف شاهين",
+        "صلاح أبو سيف",
+        "شادي عبد السلام",
+        "كمال الشيخ"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "شادي عبد السلام أخرج المومياء، وبيتحسب من أهم الأفلام المصرية."
+    },
+    {
+      "id": "cn-mcq-11",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين مثّل دور صلاح الدين في فيلم «الناصر صلاح الدين»؟",
+      "options": [
+        "عمر الشريف",
+        "أحمد مظهر",
+        "رشدي أباظة",
+        "فريد شوقي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أحمد مظهر لعب الدور في فيلم يوسف شاهين سنة 1963."
+    },
+    {
+      "id": "cn-mcq-12",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الممثل المصري اللي اشتغل في هوليوود واترشح للأوسكار؟",
+      "options": [
+        "أحمد زكي",
+        "عمر الشريف",
+        "محمود ياسين",
+        "نور الشريف"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عمر الشريف اترشح للأوسكار عن دوره في «لورانس العرب»."
+    },
+    {
+      "id": "cn-mcq-13",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مؤلف «الثلاثية» اللي اتعملت أفلام؟",
+      "options": [
+        "طه حسين",
+        "نجيب محفوظ",
+        "توفيق الحكيم",
+        "يوسف إدريس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الثلاثية هي بين القصرين وقصر الشوق والسكرية."
+    },
+    {
+      "id": "cn-mcq-14",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "المطربة فيروز من أنهي بلد؟",
+      "options": [
+        "سوريا",
+        "لبنان",
+        "فلسطين",
+        "الأردن"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "فيروز لبنانية، وصوتها من أشهر الأصوات في العالم العربي."
+    },
+    {
+      "id": "cn-mcq-15",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الملقّب بـ«موسيقار الأجيال»؟",
+      "options": [
+        "بليغ حمدي",
+        "محمد عبد الوهاب",
+        "رياض السنباطي",
+        "سيد درويش"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "محمد عبد الوهاب لحّن لأجيال ورا بعض، ومن هنا اللقب."
+    },
+    {
+      "id": "cn-mcq-16",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين بطل مسرحية «مدرسة المشاغبين» مع سعيد صالح ويونس شلبي؟",
+      "options": [
+        "فؤاد المهندس",
+        "عادل إمام",
+        "محمد صبحي",
+        "سمير غانم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "المسرحية دي كانت من أهم محطات عادل إمام."
+    },
+    {
+      "id": "cn-mcq-17",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مؤلف مسرحية «الملك لير»؟",
+      "options": [
+        "موليير",
+        "شكسبير",
+        "تشيخوف",
+        "إبسن"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الملك لير واحدة من أشهر تراجيديات شكسبير."
+    },
+    {
+      "id": "cn-mcq-18",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين بطل فيلم «الأرض»؟",
+      "options": [
+        "فريد شوقي",
+        "محمود المليجي",
+        "عماد حمدي",
+        "حسن يوسف"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "محمود المليجي لعب دور محمد أبو سويلم."
+    },
+    {
+      "id": "cn-mcq-19",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الملقّبة بـ«سيدة الشاشة العربية»؟",
+      "options": [
+        "سعاد حسني",
+        "فاتن حمامة",
+        "شادية",
+        "ماجدة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "فاتن حمامة من أهم ممثلات السينما العربية."
+    },
+    {
+      "id": "cn-mcq-20",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الملقّبة بـ«السندريلا»؟",
+      "options": [
+        "نادية لطفي",
+        "سعاد حسني",
+        "ميرفت أمين",
+        "شادية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "سعاد حسني اتلقّبت بسندريلا الشاشة العربية."
+    },
+    {
+      "id": "cn-mcq-21",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين بطل فيلم «البريء»؟",
+      "options": [
+        "نور الشريف",
+        "أحمد زكي",
+        "محمود عبد العزيز",
+        "محمود حميدة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أحمد زكي لعب دور أحمد سبع الليل."
+    },
+    {
+      "id": "cn-mcq-22",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين مؤلف رواية «دعاء الكروان»؟",
+      "options": [
+        "نجيب محفوظ",
+        "طه حسين",
+        "إحسان عبد القدوس",
+        "يوسف السباعي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "طه حسين كتبها واتعملت فيلم بطولة فاتن حمامة."
+    },
+    {
+      "id": "cn-mcq-23",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "جوايز الأوسكار بتتعمل في أنهي دولة؟",
+      "options": [
+        "بريطانيا",
+        "فرنسا",
+        "أمريكا",
+        "إيطاليا"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "الأوسكار بتتعمل في لوس أنجلوس في أمريكا."
+    },
+    {
+      "id": "cn-mcq-24",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أم كلثوم من أنهي محافظة مصرية؟",
+      "options": [
+        "الغربية",
+        "الدقهلية",
+        "المنوفية",
+        "الشرقية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اتولدت في قرية طماي الزهايرة بمحافظة الدقهلية."
+    },
+    {
+      "id": "cn-mcq-25",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "جايزة مهرجان كان الكبرى اسمها إيه؟",
+      "options": [
+        "السعفة الذهبية",
+        "الدب الذهبي",
+        "الأسد الذهبي",
+        "الصقر الذهبي"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "السعفة الذهبية أشهر جايزة في مهرجانات السينما."
+    },
+    {
+      "id": "cn-mcq-26",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "جايزة مهرجان فينيسيا الكبرى اسمها إيه؟",
+      "options": [
+        "الدب الذهبي",
+        "النخلة الذهبية",
+        "الأسد الذهبي",
+        "السعفة الذهبية"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "الأسد رمز مدينة فينيسيا، ومن هنا اسم الجايزة."
+    },
+    {
+      "id": "cn-mcq-27",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مخرج فيلم «عمارة يعقوبيان»؟",
+      "options": [
+        "خالد يوسف",
+        "مروان حامد",
+        "شريف عرفة",
+        "داوود عبد السيد"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مروان حامد أخرجه سنة 2006 عن رواية بنفس الاسم."
+    },
+    {
+      "id": "cn-mcq-28",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "رواية «عمارة يعقوبيان» من تأليف مين؟",
+      "options": [
+        "علاء الأسواني",
+        "أحمد مراد",
+        "بهاء طاهر",
+        "صنع الله إبراهيم"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "علاء الأسواني كتبها واتترجمت للغات كتير."
+    },
+    {
+      "id": "cn-mcq-29",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين مخرج فيلم «الكيت كات»؟",
+      "options": [
+        "محمد خان",
+        "داوود عبد السيد",
+        "عاطف الطيب",
+        "رأفت الميهي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "داوود عبد السيد أخرجه عن رواية «مالك الحزين»."
+    },
+    {
+      "id": "cn-mcq-30",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مسلسل «ليالي الحلمية» من تأليف مين؟",
+      "options": [
+        "وحيد حامد",
+        "أسامة أنور عكاشة",
+        "محفوظ عبد الرحمن",
+        "يسري الجندي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أسامة أنور عكاشة من أشهر كتّاب الدراما المصرية."
+    },
+    {
+      "id": "cn-bool-7",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "عمر الشريف مثّل في أفلام أجنبية بره مصر",
+      "isTrue": true,
+      "explanationAr": "اشتغل في هوليوود وأوروبا سنين طويلة."
+    },
+    {
+      "id": "cn-bool-8",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "نجيب محفوظ خد جايزة نوبل في الأدب",
+      "isTrue": true,
+      "explanationAr": "خدها سنة 1988، وهو أول أديب عربي ياخدها."
+    },
+    {
+      "id": "cn-bool-9",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "سعاد حسني اتلقبت بالسندريلا",
+      "isTrue": true,
+      "explanationAr": "لقب سندريلا الشاشة العربية اتلزق بيها من أفلامها."
+    },
+    {
+      "id": "cn-bool-10",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "فاتن حمامة اتلقبت بسيدة الشاشة العربية",
+      "isTrue": true,
+      "explanationAr": "اللقب ده بقى مرتبط بيها من زمان."
+    },
+    {
+      "id": "cn-bool-11",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "«مدرسة المشاغبين» فيلم سينمائي مش مسرحية",
+      "isTrue": false,
+      "explanationAr": "هي مسرحية اتعرضت على المسرح واتصورت للتلفزيون."
+    },
+    {
+      "id": "cn-bool-12",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "سيد درويش من الإسكندرية",
+      "isTrue": true,
+      "explanationAr": "اتولد في حي كوم الدكة بالإسكندرية."
+    },
+    {
+      "id": "cn-bool-13",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "حفل جوايز الأوسكار بيتعمل في فرنسا",
+      "isTrue": false,
+      "explanationAr": "الأوسكار في أمريكا، ومهرجان كان هو اللي في فرنسا."
+    },
+    {
+      "id": "cn-bool-14",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "مهرجان كان السينمائي بيتعمل في فرنسا",
+      "isTrue": true,
+      "explanationAr": "في مدينة كان على الساحل الفرنسي."
+    },
+    {
+      "id": "cn-bool-15",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أغاني أم كلثوم كانت بتوصل لساعة أو أكتر في الحفلة",
+      "isTrue": true,
+      "explanationAr": "الأغنية الواحدة كانت بتتمد بالإعادة والارتجال."
+    },
+    {
+      "id": "cn-bool-16",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "محمود المليجي اشتهر بأدوار الشر في السينما المصرية",
+      "isTrue": true,
+      "explanationAr": "بقى أشهر «شرير» في السينما المصرية لفترة طويلة."
+    },
+    {
+      "id": "cn-bool-17",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "فيلم «الرسالة» اتصوّر بنسختين، عربية وإنجليزية",
+      "isTrue": true,
+      "explanationAr": "مصطفى العقاد صوّر النسختين بطاقم ممثلين مختلف."
+    },
+    {
+      "id": "cn-bool-18",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "عبد الحليم حافظ مثّل في أفلام سينمائية كمان",
+      "isTrue": true,
+      "explanationAr": "غنّى ومثّل، ومن أشهر أفلامه «أبي فوق الشجرة»."
+    },
+    {
+      "id": "cn-bool-19",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "رواية «عمارة يعقوبيان» اتعملت فيلم سينمائي",
+      "isTrue": true,
+      "explanationAr": "الفيلم اتعرض سنة 2006 بطاقم نجوم كبير."
+    },
+    {
+      "id": "cn-bool-20",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "مهرجان فينيسيا السينمائي بيتعمل في إسبانيا",
+      "isTrue": false,
+      "explanationAr": "فينيسيا مدينة إيطالية، والمهرجان بيتعمل هناك."
+    },
+    {
+      "id": "cn-bool-21",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "مهرجان القاهرة السينمائي أقدم مهرجان سينمائي في العالم العربي",
+      "isTrue": true,
+      "explanationAr": "بدأ سنة 1976 وهو الأقدم في المنطقة."
+    },
+    {
+      "id": "cn-bool-22",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "المسرح القومي المصري موجود في الإسكندرية",
+      "isTrue": false,
+      "explanationAr": "المسرح القومي في العتبة بالقاهرة."
+    },
+    {
+      "id": "cn-bool-23",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "فيلم «المومياء» بيدور حول اكتشاف مقابر فرعونية",
+      "isTrue": true,
+      "explanationAr": "الفيلم مأخوذ عن قصة اكتشاف خبيئة الدير البحري."
+    },
+    {
+      "id": "cn-bool-24",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "سيد درويش عاش أكتر من ثمانين سنة",
+      "isTrue": false,
+      "explanationAr": "مات وهو في الحادية والتلاتين من عمره سنة 1923."
+    },
+    {
+      "id": "cn-num-5",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "سيد درويش اتولد سنة كام؟",
+      "correctValue": 1892,
+      "tolerance": 0,
+      "explanationAr": "اتولد سنة 1892 ومات سنة 1923."
+    },
+    {
+      "id": "cn-num-6",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "نجيب محفوظ خد جايزة نوبل سنة كام؟",
+      "correctValue": 1988,
+      "tolerance": 0,
+      "explanationAr": "أول وآخر أديب عربي ياخدها لحد دلوقتي."
+    },
+    {
+      "id": "cn-num-7",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "فيلم «الأرض» اتعرض سنة كام؟",
+      "correctValue": 1969,
+      "tolerance": 1,
+      "explanationAr": "من إخراج يوسف شاهين وبطولة محمود المليجي."
+    },
+    {
+      "id": "cn-num-8",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "مسرحية «مدرسة المشاغبين» اتعرضت أول مرة سنة كام؟",
+      "correctValue": 1971,
+      "tolerance": 1,
+      "explanationAr": "بقت من أشهر المسرحيات في تاريخ المسرح المصري."
+    },
+    {
+      "id": "cn-num-9",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "فيلم «عمارة يعقوبيان» اتعرض سنة كام؟",
+      "correctValue": 2006,
+      "tolerance": 0,
+      "explanationAr": "من أضخم إنتاجات السينما المصرية وقتها."
+    },
+    {
+      "id": "cn-num-10",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "عمر الشريف اتوفى سنة كام؟",
+      "correctValue": 2015,
+      "tolerance": 0,
+      "explanationAr": "مات في القاهرة سنة 2015."
+    },
+    {
+      "id": "cn-num-11",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "فاتن حمامة اتوفت سنة كام؟",
+      "correctValue": 2015,
+      "tolerance": 0,
+      "explanationAr": "ماتت في يناير 2015."
+    },
+    {
+      "id": "cn-num-12",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "أحمد زكي اتوفى سنة كام؟",
+      "correctValue": 2005,
+      "tolerance": 0,
+      "explanationAr": "مات سنة 2005 وهو بيصوّر فيلم «حليم»."
+    },
+    {
+      "id": "cn-num-13",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "سعاد حسني اتوفت سنة كام؟",
+      "correctValue": 2001,
+      "tolerance": 0,
+      "explanationAr": "ماتت في لندن سنة 2001."
+    },
+    {
+      "id": "cn-num-14",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "سيد درويش عاش كام سنة بس؟",
+      "correctValue": 31,
+      "tolerance": 1,
+      "unitAr": "سنة",
+      "explanationAr": "مات صغير أوي، بس أثره في الموسيقى العربية ضخم."
+    },
+    {
+      "id": "cn-num-15",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "فيلم «الناصر صلاح الدين» اتعرض سنة كام؟",
+      "correctValue": 1963,
+      "tolerance": 1,
+      "explanationAr": "من أضخم الأفلام التاريخية في السينما المصرية."
+    },
+    {
+      "id": "cn-fill-4",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الروائي المصري اللي خد جايزة نوبل في الأدب هو نجيب ____",
+      "answerAr": "محفوظ",
+      "aliases": [
+        "نجيب محفوظ"
+      ],
+      "explanationAr": "خدها سنة 1988."
+    },
+    {
+      "id": "cn-fill-5",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "فاتن حمامة اتلقبت بسيدة ____ العربية",
+      "answerAr": "الشاشة",
+      "aliases": [
+        "شاشة"
+      ],
+      "explanationAr": "لقب ارتبط بيها طول مشوارها."
+    },
+    {
+      "id": "cn-fill-6",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "سعاد حسني اتلقبت بـ ____",
+      "answerAr": "السندريلا",
+      "aliases": [
+        "سندريلا"
+      ],
+      "explanationAr": "سندريلا الشاشة العربية."
+    },
+    {
+      "id": "cn-fill-7",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "جايزة مهرجان كان الكبرى اسمها ____ الذهبية",
+      "answerAr": "السعفة",
+      "aliases": [
+        "سعفة"
+      ],
+      "explanationAr": "السعفة الذهبية أرفع جايزة في المهرجان."
+    },
+    {
+      "id": "cn-fill-8",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "جايزة مهرجان فينيسيا الكبرى اسمها ____ الذهبي",
+      "answerAr": "الأسد",
+      "aliases": [
+        "اسد"
+      ],
+      "explanationAr": "الأسد رمز مدينة فينيسيا."
+    },
+    {
+      "id": "cn-fill-9",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الممثل المصري اللي اشتغل في هوليوود اسمه عمر ____",
+      "answerAr": "الشريف",
+      "aliases": [
+        "شريف"
+      ],
+      "explanationAr": "عمر الشريف أشهر ممثل مصري عالميًا."
+    },
+    {
+      "id": "cn-fill-10",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "فيلم «الرسالة» من إخراج مصطفى ____",
+      "answerAr": "العقاد",
+      "aliases": [
+        "عقاد"
+      ],
+      "explanationAr": "مصطفى العقاد مخرج سوري الأصل."
+    },
+    {
+      "id": "cn-fill-11",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "المطربة اللبنانية اللي غنّت «زهرة المدائن» اسمها ____",
+      "answerAr": "فيروز",
+      "aliases": [
+        "فيروزة"
+      ],
+      "explanationAr": "من أشهر أغاني فيروز على الإطلاق."
+    },
+    {
+      "id": "cn-fill-12",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "فيلم «أيام السادات» بطولة الفنان أحمد ____",
+      "answerAr": "زكي",
+      "aliases": [
+        "أحمد زكي",
+        "زكى"
+      ],
+      "explanationAr": "الفيلم اتعرض سنة 2001 وكان من آخر أعماله الكبيرة."
+    },
+    {
+      "id": "cn-fill-13",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "رواية «عمارة يعقوبيان» من تأليف علاء ____",
+      "answerAr": "الأسواني",
+      "aliases": [
+        "اسواني"
+      ],
+      "explanationAr": "الرواية اتترجمت للغات كتير."
+    },
+    {
+      "id": "cn-fill-14",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "مسلسل «ليالي الحلمية» من تأليف أسامة أنور ____",
+      "answerAr": "عكاشة",
+      "aliases": [
+        "عكاشه"
+      ],
+      "explanationAr": "من أشهر كتّاب الدراما التلفزيونية المصرية."
+    },
+    {
+      "id": "cn-fill-15",
+      "shape": "fill_blank",
+      "difficulty": 5,
+      "textAr": "المخرج صاحب فيلم «المومياء» اسمه شادي عبد ____",
+      "answerAr": "السلام",
+      "aliases": [
+        "سلام"
+      ],
+      "explanationAr": "شادي عبد السلام مخرج ومصمم ديكور كمان."
+    },
+    {
+      "id": "cn-open-3",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين الروائي المصري اللي خد جايزة نوبل في الأدب؟",
+      "answerAr": "نجيب محفوظ",
+      "aliases": [
+        "محفوظ"
+      ],
+      "explanationAr": "خدها سنة 1988 عن مجمل أعماله."
+    },
+    {
+      "id": "cn-open-4",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين الملقّبة بسيدة الشاشة العربية؟",
+      "answerAr": "فاتن حمامة",
+      "aliases": [
+        "فاتن"
+      ],
+      "explanationAr": "من أهم ممثلات السينما العربية."
+    },
+    {
+      "id": "cn-open-5",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين الملقّبة بالسندريلا؟",
+      "answerAr": "سعاد حسني",
+      "aliases": [
+        "سعاد"
+      ],
+      "explanationAr": "سندريلا الشاشة العربية."
+    },
+    {
+      "id": "cn-open-6",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين المطربة اللبنانية اللي غنّت «زهرة المدائن»؟",
+      "answerAr": "فيروز",
+      "aliases": [
+        "فيروزة"
+      ],
+      "explanationAr": "من أشهر أغانيها على الإطلاق."
+    },
+    {
+      "id": "cn-open-7",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم أكبر جايزة في مهرجان كان؟",
+      "answerAr": "السعفة الذهبية",
+      "aliases": [
+        "السعفه الذهبيه",
+        "سعفة ذهبية"
+      ],
+      "explanationAr": "بتتدي لأحسن فيلم في المهرجان."
+    },
+    {
+      "id": "cn-open-8",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين مخرج فيلم «الرسالة»؟",
+      "answerAr": "مصطفى العقاد",
+      "aliases": [
+        "العقاد",
+        "مصطفى عقاد"
+      ],
+      "explanationAr": "صوّر الفيلم بنسختين عربية وإنجليزية."
+    },
+    {
+      "id": "cn-open-9",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الممثل المصري اللي اترشح لجايزة الأوسكار؟",
+      "answerAr": "عمر الشريف",
+      "aliases": [
+        "الشريف"
+      ],
+      "explanationAr": "اترشح عن دوره في «لورانس العرب»."
+    },
+    {
+      "id": "cn-open-10",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم المسرحية اللي جمعت عادل إمام وسعيد صالح ويونس شلبي في فصل دراسي؟",
+      "answerAr": "مدرسة المشاغبين",
+      "aliases": [
+        "المشاغبين"
+      ],
+      "explanationAr": "من أشهر مسرحيات المسرح المصري."
+    },
+    {
+      "id": "cn-open-11",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين مؤلف رواية «عمارة يعقوبيان»؟",
+      "answerAr": "علاء الأسواني",
+      "aliases": [
+        "الأسواني",
+        "اسواني"
+      ],
+      "explanationAr": "الرواية اتحوّلت لفيلم سنة 2006."
+    },
+    {
+      "id": "cn-open-12",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الملحّن الملقّب بموسيقار الأجيال؟",
+      "answerAr": "محمد عبد الوهاب",
+      "aliases": [
+        "عبد الوهاب"
+      ],
+      "explanationAr": "لحّن لأجيال ورا بعض من المطربين."
+    },
+    {
+      "id": "cn-prog-4",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "مثّلت في أفلام أجنبية كتير بره بلدي",
+        "اترشحت لجايزة الأوسكار مرة",
+        "ممثل مصري اشتهر عالميًا بفيلم «لورانس العرب»"
+      ],
+      "answerAr": "عمر الشريف",
+      "aliases": [
+        "الشريف"
+      ],
+      "explanationAr": "أشهر ممثل مصري وصل للعالمية."
+    },
+    {
+      "id": "cn-prog-5",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "بدأت التمثيل وأنا طفلة صغيرة",
+        "كنت متجوزة عمر الشريف فترة",
+        "ممثلة مصرية اتلقبت بسيدة الشاشة العربية"
+      ],
+      "answerAr": "فاتن حمامة",
+      "aliases": [
+        "فاتن"
+      ],
+      "explanationAr": "من أهم ممثلات السينما العربية."
+    },
+    {
+      "id": "cn-prog-6",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "كتبت روايات كتير اتحوّلت لأفلام",
+        "من أشهر أعمالي «الثلاثية»",
+        "أول أديب عربي ياخد جايزة نوبل في الأدب"
+      ],
+      "answerAr": "نجيب محفوظ",
+      "aliases": [
+        "محفوظ"
+      ],
+      "explanationAr": "خد نوبل سنة 1988."
+    },
+    {
+      "id": "cn-prog-7",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "مثّلت في أفلام ومسلسلات كتير",
+        "أختي كانت مطربة مشهورة كمان",
+        "ممثلة مصرية اتلقبت بالسندريلا"
+      ],
+      "answerAr": "سعاد حسني",
+      "aliases": [
+        "سعاد"
+      ],
+      "explanationAr": "أختها المطربة نجاة الصغيرة."
+    },
+    {
+      "id": "cn-prog-8",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "اتخصصت في تجسيد شخصيات حقيقية",
+        "لعبت دور عبد الناصر ودور السادات",
+        "ممثل مصري من أشهر أفلامه «البريء»"
+      ],
+      "answerAr": "أحمد زكي",
+      "aliases": [
+        "زكي"
+      ],
+      "explanationAr": "اتلقّب بالإمبراطور."
+    },
+    {
+      "id": "cn-prog-9",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "بغني من ستينات القرن الماضي",
+        "أغانيّ بتتسمع الصبح في بيوت عربية كتير",
+        "مطربة لبنانية من أشهر أغانيها «زهرة المدائن»"
+      ],
+      "answerAr": "فيروز",
+      "aliases": [
+        "فيروزة"
+      ],
+      "explanationAr": "صوت الصباح في العالم العربي."
+    },
+    {
+      "id": "cn-prog-10",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "مخرج سوري الأصل",
+        "اشتغلت في السينما العالمية",
+        "أخرجت فيلم «الرسالة» بنسختين عربية وإنجليزية"
+      ],
+      "answerAr": "مصطفى العقاد",
+      "aliases": [
+        "العقاد"
+      ],
+      "explanationAr": "من أشهر المخرجين العرب عالميًا."
+    },
+    {
+      "id": "cn-ord-4",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الأفلام دي من الأقدم للأحدث",
+      "items": [
+        "العزيمة",
+        "باب الحديد",
+        "الناصر صلاح الدين",
+        "الأرض"
+      ],
+      "labels": [
+        "1939",
+        "1958",
+        "1963",
+        "1969"
+      ],
+      "explanationAr": "أربعة من أهم أفلام السينما المصرية."
+    },
+    {
+      "id": "cn-ord-5",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الروايات والأفلام دي حسب سنة صدور الرواية من الأقدم للأحدث",
+      "items": [
+        "دعاء الكروان",
+        "بين القصرين",
+        "عمارة يعقوبيان"
+      ],
+      "labels": [
+        "1934",
+        "1956",
+        "2002"
+      ],
+      "explanationAr": "التلاتة اتحوّلوا لأفلام مشهورة بعد كده."
+    },
+    {
+      "id": "cn-ord-6",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الأعمال دي حسب سنة العرض من الأقدم للأحدث",
+      "items": [
+        "مدرسة المشاغبين",
+        "الرسالة",
+        "الكيت كات",
+        "عمارة يعقوبيان"
+      ],
+      "labels": [
+        "1971",
+        "1976",
+        "1991",
+        "2006"
+      ],
+      "explanationAr": "أربع محطات في السينما والمسرح المصري."
+    },
+    {
+      "id": "cn-ord-7",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب أفلام عادل إمام وأحمد زكي دي من الأقدم للأحدث",
+      "items": [
+        "البريء",
+        "شمس الزناتي",
+        "الإرهاب والكباب"
+      ],
+      "labels": [
+        "1986",
+        "1991",
+        "1992"
+      ],
+      "explanationAr": "التلاتة من أشهر أفلام الثمانينات والتسعينات."
+    },
+    {
+      "id": "cn-ord-8",
+      "shape": "ordering",
+      "difficulty": 5,
+      "textAr": "رتّب المهرجانات دي حسب أول سنة اتعملت فيها",
+      "items": [
+        "فينيسيا",
+        "كان",
+        "برلين",
+        "القاهرة"
+      ],
+      "labels": [
+        "1932",
+        "1946",
+        "1951",
+        "1976"
+      ],
+      "explanationAr": "فينيسيا أقدم مهرجان سينمائي في العالم."
+    },
+    {
+      "id": "cn-ord-9",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب مراحل السينما دي من الأقدم للأحدث",
+      "items": [
+        "السينما الصامتة",
+        "السينما الناطقة",
+        "السينما الملونة",
+        "السينما الرقمية"
+      ],
+      "labels": [],
+      "explanationAr": "كل مرحلة غيّرت شكل الصناعة بالكامل."
+    },
+    {
+      "id": "cn-ord-10",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب الوحدات دي من الأصغر للأكبر",
+      "items": [
+        "مشهد",
+        "حلقة",
+        "موسم",
+        "مسلسل"
+      ],
+      "labels": [],
+      "explanationAr": "المشهد جوه الحلقة، والحلقة جوه الموسم."
+    },
+    {
+      "id": "cn-mcq-31",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه اسم أول فيلم روائي مصري طويل؟",
+      "options": [
+        "العزيمة",
+        "ليلى",
+        "أولاد الذوات",
+        "الوردة البيضاء"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اتعرض سنة 1927 وكان فيلم صامت."
+    },
+    {
+      "id": "cn-mcq-32",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "مين الفنانة اللي وقفت ورا إنتاج أول فيلم روائي مصري طويل؟",
+      "options": [
+        "بهيجة حافظ",
+        "عزيزة أمير",
+        "آسيا داغر",
+        "فاطمة رشدي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عزيزة أمير بيقولوا عليها «أم السينما المصرية»."
+    },
+    {
+      "id": "cn-mcq-33",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه اسم أول فيلم مصري ناطق؟",
+      "options": [
+        "ليلى",
+        "أولاد الذوات",
+        "الوردة البيضاء",
+        "زينب"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اتعرض في مارس 1932."
+    },
+    {
+      "id": "cn-mcq-34",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "مين بطل أول فيلم مصري ناطق؟",
+      "options": [
+        "نجيب الريحاني",
+        "يوسف وهبي",
+        "جورج أبيض",
+        "أمين عطا الله"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "يوسف وهبي، عميد المسرح العربي."
+    },
+    {
+      "id": "cn-mcq-35",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين اللي أسس «استوديو مصر»؟",
+      "options": [
+        "أحمد عرابي",
+        "طلعت حرب",
+        "يوسف وهبي",
+        "عزيزة أمير"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أسسه سنة 1935 كمشروع سينما لبنك مصر."
+    },
+    {
+      "id": "cn-mcq-36",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الملقّب بـ«فنان الشعب»؟",
+      "options": [
+        "محمد عبد الوهاب",
+        "سيد درويش",
+        "بليغ حمدي",
+        "سيد مكاوي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "سيد درويش غنّى للعمال والحرفيين."
+    },
+    {
+      "id": "cn-mcq-37",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الملقّب بـ«الكينج» في الغنا المصري؟",
+      "options": [
+        "عمرو دياب",
+        "محمد منير",
+        "مصطفى قمر",
+        "حميد الشاعري"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "محمد منير، وأصله من النوبة."
+    },
+    {
+      "id": "cn-mcq-38",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين الملقّب بـ«ملك العود»؟",
+      "options": [
+        "محمد عبد الوهاب",
+        "فريد الأطرش",
+        "رياض السنباطي",
+        "محمد القصبجي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "فريد الأطرش كان عازف عود استثنائي."
+    },
+    {
+      "id": "cn-mcq-39",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الملقّب بـ«عميد المسرح العربي»؟",
+      "options": [
+        "نجيب الريحاني",
+        "يوسف وهبي",
+        "جورج أبيض",
+        "زكي طليمات"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "يوسف وهبي أسس فرقة رمسيس المسرحية."
+    },
+    {
+      "id": "cn-mcq-40",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين اللي بيقص ويرتّب لقطات الفيلم؟",
+      "options": [
+        "المخرج",
+        "المونتير",
+        "مدير التصوير",
+        "المنتج"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "المونتاج بيحدد إيقاع الفيلم كله."
+    },
+    {
+      "id": "cn-mcq-41",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين المسؤول عن الإضاءة وحركة الكاميرا؟",
+      "options": [
+        "المونتير",
+        "مدير التصوير",
+        "المنتج",
+        "مهندس الديكور"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مدير التصوير بيرسم شكل الصورة."
+    },
+    {
+      "id": "cn-mcq-42",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«الدوبلاج» معناه إيه؟",
+      "options": [
+        "تصوير المشهد تاني",
+        "تسجيل صوت بلغة تانية على الفيلم",
+        "إضافة مؤثرات بصرية",
+        "قص المشاهد الطويلة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عشان الفيلم يتفرّج عليه جمهور بلغة تانية."
+    },
+    {
+      "id": "cn-mcq-43",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«الكادر» في السينما معناه إيه؟",
+      "options": [
+        "نص الحوار",
+        "إطار الصورة اللي الكاميرا شايفاه",
+        "فريق العمل",
+        "مكان التصوير"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اللي بره الكادر المتفرج مش بيشوفه."
+    },
+    {
+      "id": "cn-mcq-44",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "«الكومبارس» مين؟",
+      "options": [
+        "بطل الفيلم",
+        "ممثل في الخلفية من غير دور محدد",
+        "المخرج المساعد",
+        "موزع الفيلم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بيملا المشهد ويخليه واقعي."
+    },
+    {
+      "id": "cn-mcq-45",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "نجيب الريحاني اشتهر بأنهي شخصية كوميدية؟",
+      "options": [
+        "كشكش بيه",
+        "البرنس",
+        "الأسطى حنفي",
+        "شفيقة"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "كشكش بيه عمدة كفر البلاص."
+    },
+    {
+      "id": "cn-mcq-46",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين بطل مسلسل «رأفت الهجان»؟",
+      "options": [
+        "نور الشريف",
+        "محمود عبد العزيز",
+        "يحيى الفخراني",
+        "حسين فهمي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من أشهر أدوار محمود عبد العزيز."
+    },
+    {
+      "id": "cn-mcq-47",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مسلسل «ليالي الحلمية» اتعرض أول مرة في أنهي عقد؟",
+      "options": [
+        "السبعينات",
+        "الثمانينات",
+        "التسعينات",
+        "الألفينات"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أول جزء اتعرض سنة 1987."
+    },
+    {
+      "id": "cn-mcq-48",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«التتر» في المسلسل معناه إيه؟",
+      "options": [
+        "نهاية الحلقة",
+        "مقدمة العمل بالأسماء والموسيقى",
+        "الإعلان اللي في النص",
+        "ملخص الحلقة اللي فاتت"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وبيبقى ليه أغنية مميزة أحيانًا."
+    },
+    {
+      "id": "cn-mcq-49",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين اللي بينظّم جوايز الأوسكار؟",
+      "options": [
+        "استوديوهات هوليوود",
+        "أكاديمية فنون وعلوم الصور المتحركة",
+        "نقابة الممثلين الأمريكية",
+        "إدارة مهرجان كان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الأكاديمية أعضاؤها من صنّاع السينما نفسهم."
+    },
+    {
+      "id": "cn-mcq-50",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي شركة أنتجت فيلم «الأسد الملك» الكرتوني؟",
+      "options": [
+        "بيكسار",
+        "ديزني",
+        "دريم ووركس",
+        "وارنر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من كلاسيكيات ديزني في التسعينات."
+    },
+    {
+      "id": "cn-mcq-51",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي استوديو عمل فيلم «توي ستوري»؟",
+      "options": [
+        "ديزني",
+        "بيكسار",
+        "دريم ووركس",
+        "يونيفرسال"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وهو أول فيلم طويل بالكامل بالكمبيوتر."
+    },
+    {
+      "id": "cn-mcq-52",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه اسم أول فيلم كرتون طويل في التاريخ؟",
+      "options": [
+        "بامبي",
+        "سنو وايت والأقزام السبعة",
+        "بينوكيو",
+        "سندريلا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اتعمل سنة 1937."
+    },
+    {
+      "id": "cn-mcq-53",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "«الفيلم الوثائقي» بيتكلم عن إيه؟",
+      "options": [
+        "قصة خيالية",
+        "واقع وأحداث حقيقية",
+        "حكاية شعبية",
+        "مسرحية متصوّرة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بيوثّق ناس وأماكن وأحداث حقيقية."
+    },
+    {
+      "id": "cn-mcq-54",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "المسرح الروماني في الإسكندرية موجود في أنهي منطقة؟",
+      "options": [
+        "المنشية",
+        "كوم الدكة",
+        "بحري",
+        "سيدي جابر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "نفس الحي اللي اتولد فيه سيد درويش."
+    },
+    {
+      "id": "cn-mcq-55",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي آلة شرقية وترية ومالهاش دساتين على رقبتها؟",
+      "options": [
+        "القانون",
+        "العود",
+        "الناي",
+        "الرق"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وده اللي بيخلّيه ينفع مع أرباع النغمة."
+    },
+    {
+      "id": "cn-mcq-56",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي آلة شرقية بتتعزف بالنفخ؟",
+      "options": [
+        "العود",
+        "القانون",
+        "الناي",
+        "الرق"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "الناي مصنوع من البوص."
+    },
+    {
+      "id": "cn-mcq-57",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي آلة إيقاعية شرقية شكلها دايرة وعليها جلد؟",
+      "options": [
+        "العود",
+        "الرق",
+        "القانون",
+        "الكمان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الرق بيمسك إيقاع الفرقة الشرقية."
+    },
+    {
+      "id": "cn-mcq-58",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«المقام» في الموسيقى العربية معناه إيه؟",
+      "options": [
+        "سرعة اللحن",
+        "السلّم الموسيقي اللي اللحن ماشي عليه",
+        "اسم المطرب",
+        "حجم الفرقة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "زي الرست والبياتي والحجاز."
+    },
+    {
+      "id": "cn-mcq-59",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي مهرجان سينمائي عربي بيتعمل في المغرب؟",
+      "options": [
+        "مهرجان قرطاج",
+        "مهرجان مراكش",
+        "مهرجان دبي",
+        "مهرجان الجونة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وقرطاج في تونس."
+    },
+    {
+      "id": "cn-mcq-60",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مهرجان «قرطاج» السينمائي بيتعمل في أنهي بلد؟",
+      "options": [
+        "الجزائر",
+        "تونس",
+        "ليبيا",
+        "لبنان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من أعرق المهرجانات العربية والأفريقية."
+    },
+    {
+      "id": "cn-bool-25",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "أول فيلم روائي مصري طويل كان فيلم صامت",
+      "isTrue": true,
+      "explanationAr": "الصوت دخل السينما المصرية بعده بخمس سنين."
+    },
+    {
+      "id": "cn-bool-26",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "«أولاد الذوات» أول فيلم مصري ناطق",
+      "isTrue": true,
+      "explanationAr": "اتعرض سنة 1932."
+    },
+    {
+      "id": "cn-bool-27",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "استوديو مصر أسسه طلعت حرب",
+      "isTrue": true,
+      "explanationAr": "كان جزء من مشروع بنك مصر الصناعي."
+    },
+    {
+      "id": "cn-bool-28",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "سيد درويش بيتلقب بفنان الشعب",
+      "isTrue": true,
+      "explanationAr": "غنّى للشيالين والعمال والحرفيين."
+    },
+    {
+      "id": "cn-bool-29",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "محمد منير بيتلقب بالكينج",
+      "isTrue": true,
+      "explanationAr": "لقب لزق بيه من الثمانينات."
+    },
+    {
+      "id": "cn-bool-30",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "فريد الأطرش بيتلقب بملك العود",
+      "isTrue": true,
+      "explanationAr": "كان مطرب وملحّن وعازف عود."
+    },
+    {
+      "id": "cn-bool-31",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "يوسف وهبي بيتلقب بعميد المسرح العربي",
+      "isTrue": true,
+      "explanationAr": "أسس فرقة رمسيس المسرحية."
+    },
+    {
+      "id": "cn-bool-32",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "المونتير هو اللي بيقص ويرتّب لقطات الفيلم",
+      "isTrue": true,
+      "explanationAr": "المونتاج بيحدد إيقاع الفيلم."
+    },
+    {
+      "id": "cn-bool-33",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "مدير التصوير مسؤول عن الإضاءة والكاميرا",
+      "isTrue": true,
+      "explanationAr": "هو اللي بيرسم شكل الصورة مع المخرج."
+    },
+    {
+      "id": "cn-bool-34",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الكومبارس هو بطل الفيلم",
+      "isTrue": false,
+      "explanationAr": "الكومبارس بيظهر في الخلفية من غير دور محدد."
+    },
+    {
+      "id": "cn-bool-35",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "نجيب الريحاني اشتهر بشخصية «كشكش بيه»",
+      "isTrue": true,
+      "explanationAr": "شخصية عمدة ريفي بيتنصب عليه في القاهرة."
+    },
+    {
+      "id": "cn-bool-36",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "مسلسل «رأفت الهجان» بطولة نور الشريف",
+      "isTrue": false,
+      "explanationAr": "بطولة محمود عبد العزيز."
+    },
+    {
+      "id": "cn-bool-37",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "فيلم «الأسد الملك» من إنتاج بيكسار",
+      "isTrue": false,
+      "explanationAr": "من إنتاج ديزني، وبيكسار عملت توي ستوري."
+    },
+    {
+      "id": "cn-bool-38",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "«توي ستوري» أول فيلم كرتون طويل في التاريخ",
+      "isTrue": false,
+      "explanationAr": "سنو وايت أول واحد، وتوي ستوري أول واحد بالكمبيوتر."
+    },
+    {
+      "id": "cn-bool-39",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "«سنو وايت والأقزام السبعة» أول فيلم كرتون طويل في التاريخ",
+      "isTrue": true,
+      "explanationAr": "اتعمل سنة 1937."
+    },
+    {
+      "id": "cn-bool-40",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "العود آلة وترية مالهاش دساتين",
+      "isTrue": true,
+      "explanationAr": "وده اللي بيخلّيه ينفع مع أرباع النغمة الشرقية."
+    },
+    {
+      "id": "cn-bool-41",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الناي آلة إيقاعية",
+      "isTrue": false,
+      "explanationAr": "الناي آلة نفخ مصنوعة من البوص."
+    },
+    {
+      "id": "cn-bool-42",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الرق آلة إيقاعية شرقية",
+      "isTrue": true,
+      "explanationAr": "شكله دايرة وعليها جلد وصنوج صغيرة."
+    },
+    {
+      "id": "cn-bool-43",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "المسرح الروماني في الإسكندرية موجود في منطقة كوم الدكة",
+      "isTrue": true,
+      "explanationAr": "واتكشف بالصدفة في القرن العشرين."
+    },
+    {
+      "id": "cn-bool-44",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "مهرجان مراكش السينمائي بيتعمل في المغرب",
+      "isTrue": true,
+      "explanationAr": "ومهرجان قرطاج في تونس."
+    },
+    {
+      "id": "cn-bool-45",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الفيلم الوثائقي بيتكلم عن أحداث حقيقية",
+      "isTrue": true,
+      "explanationAr": "مش قصة خيالية."
+    },
+    {
+      "id": "cn-bool-46",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الدوبلاج معناه إعادة تصوير المشهد",
+      "isTrue": false,
+      "explanationAr": "الدوبلاج تسجيل صوت بلغة تانية على الفيلم."
+    },
+    {
+      "id": "cn-bool-47",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "مسلسل «ليالي الحلمية» اتعرض أول مرة في الثمانينات",
+      "isTrue": true,
+      "explanationAr": "أول جزء سنة 1987."
+    },
+    {
+      "id": "cn-bool-48",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "«التتر» هو مقدمة العمل الفني بالأسماء والموسيقى",
+      "isTrue": true,
+      "explanationAr": "وبعض التترات بقت أشهر من العمل نفسه."
+    },
+    {
+      "id": "cn-num-16",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "أول فيلم روائي مصري طويل اتعرض سنة كام؟",
+      "correctValue": 1927,
+      "tolerance": 1,
+      "explanationAr": "فيلم «ليلى» في نوفمبر 1927."
+    },
+    {
+      "id": "cn-num-17",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "أول فيلم مصري ناطق اتعرض سنة كام؟",
+      "correctValue": 1932,
+      "tolerance": 1,
+      "explanationAr": "«أولاد الذوات» في مارس 1932."
+    },
+    {
+      "id": "cn-num-18",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "استوديو مصر اتأسس سنة كام؟",
+      "correctValue": 1935,
+      "tolerance": 1,
+      "explanationAr": "على إيد طلعت حرب."
+    },
+    {
+      "id": "cn-num-19",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "أول فيلم كرتون طويل في التاريخ اتعمل سنة كام؟",
+      "correctValue": 1937,
+      "tolerance": 1,
+      "explanationAr": "«سنو وايت والأقزام السبعة»."
+    },
+    {
+      "id": "cn-num-20",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "فيلم «الأسد الملك» الكرتوني اتعرض سنة كام؟",
+      "correctValue": 1994,
+      "tolerance": 1,
+      "explanationAr": "من أنجح أفلام ديزني على الإطلاق."
+    },
+    {
+      "id": "cn-num-21",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "مسلسل «ليالي الحلمية» اتعرض أول مرة سنة كام؟",
+      "correctValue": 1987,
+      "tolerance": 1,
+      "explanationAr": "وبعده اتعملت أجزاء تانية."
+    },
+    {
+      "id": "cn-num-22",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "مهرجان القاهرة السينمائي بدأ سنة كام؟",
+      "correctValue": 1976,
+      "tolerance": 1,
+      "explanationAr": "أقدم مهرجان سينمائي في العالم العربي."
+    },
+    {
+      "id": "cn-num-23",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "فيلم «توي ستوري» اتعرض سنة كام؟",
+      "correctValue": 1995,
+      "tolerance": 1,
+      "explanationAr": "أول فيلم طويل متعمل بالكامل بالكمبيوتر."
+    },
+    {
+      "id": "cn-num-24",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "أول نسخة من مهرجان كان اتعملت سنة كام؟",
+      "correctValue": 1946,
+      "tolerance": 2,
+      "explanationAr": "بعد الحرب العالمية التانية على طول."
+    },
+    {
+      "id": "cn-num-25",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "بيتوزّع كام جايزة أوسكار كل سنة تقريبًا؟",
+      "correctValue": 24,
+      "tolerance": 4,
+      "unitAr": "جايزة",
+      "explanationAr": "بتشمل التمثيل والإخراج والصوت والمونتاج وغيرهم."
+    },
+    {
+      "id": "cn-num-26",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "«أولاد الذوات» اتعرض في الشهر رقم كام سنة 1932؟",
+      "correctValue": 3,
+      "tolerance": 0,
+      "explanationAr": "في 14 مارس 1932."
+    },
+    {
+      "id": "cn-num-27",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الفيلم السينمائي الطويل مدته كام دقيقة على الأقل عادةً؟",
+      "correctValue": 90,
+      "tolerance": 25,
+      "unitAr": "دقيقة",
+      "explanationAr": "أقل من كده بيتحسب فيلم قصير."
+    },
+    {
+      "id": "cn-fill-16",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "أول فيلم روائي مصري طويل اسمه ____",
+      "answerAr": "ليلى",
+      "aliases": [
+        "ليلي"
+      ],
+      "explanationAr": "اتعرض سنة 1927 وكان صامت."
+    },
+    {
+      "id": "cn-fill-17",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "أول فيلم مصري ناطق اسمه أولاد ____",
+      "answerAr": "الذوات",
+      "aliases": [
+        "ذوات"
+      ],
+      "explanationAr": "بطولة يوسف وهبي سنة 1932."
+    },
+    {
+      "id": "cn-fill-18",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "استوديو مصر أسسه الاقتصادي طلعت ____",
+      "answerAr": "حرب",
+      "aliases": [
+        "طلعت حرب"
+      ],
+      "explanationAr": "صاحب بنك مصر."
+    },
+    {
+      "id": "cn-fill-19",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "سيد درويش بيتلقب بفنان ____",
+      "answerAr": "الشعب",
+      "aliases": [
+        "شعب"
+      ],
+      "explanationAr": "غنّى للناس البسيطة."
+    },
+    {
+      "id": "cn-fill-20",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "محمد منير بيتلقب بـ ____",
+      "answerAr": "الكينج",
+      "aliases": [
+        "كينج",
+        "الكنج"
+      ],
+      "explanationAr": "لقب اتلزق بيه من الثمانينات."
+    },
+    {
+      "id": "cn-fill-21",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "فريد الأطرش بيتلقب بملك ____",
+      "answerAr": "العود",
+      "aliases": [
+        "عود"
+      ],
+      "explanationAr": "كان عازف عود استثنائي."
+    },
+    {
+      "id": "cn-fill-22",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "يوسف وهبي بيتلقب بعميد المسرح ____",
+      "answerAr": "العربي",
+      "aliases": [
+        "عربي"
+      ],
+      "explanationAr": "أسس فرقة رمسيس."
+    },
+    {
+      "id": "cn-fill-23",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "اللي بيقص ويرتّب لقطات الفيلم اسمه ____",
+      "answerAr": "المونتير",
+      "aliases": [
+        "مونتير",
+        "المونتاج"
+      ],
+      "explanationAr": "بيحدد إيقاع الفيلم كله."
+    },
+    {
+      "id": "cn-fill-24",
+      "shape": "fill_blank",
+      "difficulty": 5,
+      "textAr": "نجيب الريحاني اشتهر بشخصية ____ بيه",
+      "answerAr": "كشكش",
+      "aliases": [
+        "كشكش بيه"
+      ],
+      "explanationAr": "عمدة ريفي بيتنصب عليه في القاهرة."
+    },
+    {
+      "id": "cn-fill-25",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "أول فيلم كرتون طويل في التاريخ اسمه سنو ____",
+      "answerAr": "وايت",
+      "aliases": [
+        "وايت والأقزام السبعة",
+        "سنو وايت"
+      ],
+      "explanationAr": "من إنتاج ديزني سنة 1937."
+    },
+    {
+      "id": "cn-fill-26",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "الآلة الوترية الشرقية اللي مالهاش دساتين اسمها ____",
+      "answerAr": "العود",
+      "aliases": [
+        "عود"
+      ],
+      "explanationAr": "أمير الآلات الشرقية."
+    },
+    {
+      "id": "cn-fill-27",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "مقدمة المسلسل اللي فيها الأسماء والموسيقى اسمها ____",
+      "answerAr": "التتر",
+      "aliases": [
+        "تتر"
+      ],
+      "explanationAr": "وفي تترات بقت أشهر من العمل نفسه."
+    },
+    {
+      "id": "cn-open-13",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم أول فيلم روائي مصري طويل؟",
+      "answerAr": "ليلى",
+      "aliases": [
+        "ليلي",
+        "فيلم ليلى"
+      ],
+      "explanationAr": "سنة 1927، من إنتاج عزيزة أمير."
+    },
+    {
+      "id": "cn-open-14",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم أول فيلم مصري ناطق؟",
+      "answerAr": "أولاد الذوات",
+      "aliases": [
+        "اولاد الذوات",
+        "الذوات"
+      ],
+      "explanationAr": "بطولة يوسف وهبي سنة 1932."
+    },
+    {
+      "id": "cn-open-15",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "مين اللي أسس استوديو مصر؟",
+      "answerAr": "طلعت حرب",
+      "aliases": [
+        "حرب",
+        "طلعت"
+      ],
+      "explanationAr": "صاحب بنك مصر."
+    },
+    {
+      "id": "cn-open-16",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الملقّب بفنان الشعب؟",
+      "answerAr": "سيد درويش",
+      "aliases": [
+        "درويش"
+      ],
+      "explanationAr": "غنّى للعمال والحرفيين."
+    },
+    {
+      "id": "cn-open-17",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين الملقّب بالكينج في الغنا المصري؟",
+      "answerAr": "محمد منير",
+      "aliases": [
+        "منير",
+        "الكينج"
+      ],
+      "explanationAr": "أصله من النوبة."
+    },
+    {
+      "id": "cn-open-18",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الملقّب بعميد المسرح العربي؟",
+      "answerAr": "يوسف وهبي",
+      "aliases": [
+        "وهبي"
+      ],
+      "explanationAr": "أسس فرقة رمسيس المسرحية."
+    },
+    {
+      "id": "cn-open-19",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم اللي بيقص ويرتّب لقطات الفيلم؟",
+      "answerAr": "المونتير",
+      "aliases": [
+        "مونتير",
+        "المونتاج"
+      ],
+      "explanationAr": "شغله بيبدأ بعد ما التصوير يخلص."
+    },
+    {
+      "id": "cn-open-20",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم أول فيلم كرتون طويل في التاريخ؟",
+      "answerAr": "سنو وايت",
+      "aliases": [
+        "سنو وايت والأقزام السبعة",
+        "سنووايت"
+      ],
+      "explanationAr": "من إنتاج ديزني سنة 1937."
+    },
+    {
+      "id": "cn-open-21",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "إيه اسم الشخصية الكوميدية اللي اشتهر بيها نجيب الريحاني؟",
+      "answerAr": "كشكش بيه",
+      "aliases": [
+        "كشكش"
+      ],
+      "explanationAr": "عمدة كفر البلاص."
+    },
+    {
+      "id": "cn-open-22",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم المهرجان السينمائي اللي بيتعمل في المغرب؟",
+      "answerAr": "مهرجان مراكش",
+      "aliases": [
+        "مراكش"
+      ],
+      "explanationAr": "وقرطاج في تونس."
+    },
+    {
+      "id": "cn-prog-11",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "اشتغلت في المسرح والسينما مع بعض",
+        "بطل أول فيلم مصري ناطق",
+        "بيتلقب بعميد المسرح العربي وأسست فرقة رمسيس"
+      ],
+      "answerAr": "يوسف وهبي",
+      "aliases": [
+        "وهبي"
+      ],
+      "explanationAr": "من أهم رواد المسرح المصري."
+    },
+    {
+      "id": "cn-prog-12",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا اقتصادي مصري مش فنان",
+        "أسست بنك مصر",
+        "وأسست استوديو مصر للسينما سنة 1935"
+      ],
+      "answerAr": "طلعت حرب",
+      "aliases": [
+        "حرب"
+      ],
+      "explanationAr": "في ميدان باسمه في وسط البلد."
+    },
+    {
+      "id": "cn-prog-13",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا من الإسكندرية",
+        "عشت 31 سنة بس",
+        "بيتلقب بفنان الشعب وغيّرت شكل الموسيقى المصرية"
+      ],
+      "answerAr": "سيد درويش",
+      "aliases": [
+        "درويش"
+      ],
+      "explanationAr": "لحّن نشيد «بلادي بلادي»."
+    },
+    {
+      "id": "cn-prog-14",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا آلة موسيقية شرقية",
+        "مليش دساتين على رقبتي",
+        "بيقولوا عليّا أمير الآلات الشرقية وفريد الأطرش كان ملكي"
+      ],
+      "answerAr": "العود",
+      "aliases": [
+        "عود"
+      ],
+      "explanationAr": "أساس التخت الشرقي."
+    },
+    {
+      "id": "cn-prog-15",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا بشتغل بعد ما التصوير يخلص",
+        "بقص وبرتّب اللقطات",
+        "من غيري الفيلم يبقى مشاهد مبعثرة"
+      ],
+      "answerAr": "المونتير",
+      "aliases": [
+        "مونتير",
+        "المونتاج"
+      ],
+      "explanationAr": "المونتاج بيحدد إيقاع الفيلم."
+    },
+    {
+      "id": "cn-prog-16",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا مطرب مصري أصلي من النوبة",
+        "بمزج الشرقي بالنوبي",
+        "بيتلقب بالكينج"
+      ],
+      "answerAr": "محمد منير",
+      "aliases": [
+        "منير"
+      ],
+      "explanationAr": "من أشهر مطربي مصر."
+    },
+    {
+      "id": "cn-ord-11",
+      "shape": "ordering",
+      "difficulty": 5,
+      "textAr": "رتّب محطات السينما المصرية دي من الأقدم للأحدث",
+      "items": [
+        "فيلم ليلى",
+        "فيلم أولاد الذوات",
+        "تأسيس استوديو مصر",
+        "فيلم العزيمة"
+      ],
+      "labels": [
+        "1927",
+        "1932",
+        "1935",
+        "1939"
+      ],
+      "explanationAr": "اتناشر سنة بس بين أول فيلم وأول استوديو كبير."
+    },
+    {
+      "id": "cn-ord-12",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أفلام الكرتون دي من الأقدم للأحدث",
+      "items": [
+        "سنو وايت",
+        "الأسد الملك",
+        "توي ستوري"
+      ],
+      "labels": [
+        "1937",
+        "1994",
+        "1995"
+      ],
+      "explanationAr": "سنو وايت أقدم منهم بحوالي 60 سنة."
+    },
+    {
+      "id": "cn-ord-13",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الأدوار دي حسب ترتيب شغلهم في الفيلم",
+      "items": [
+        "السيناريست",
+        "المخرج",
+        "المونتير"
+      ],
+      "labels": [],
+      "explanationAr": "الكتابة الأول، وبعدين التصوير، وآخر حاجة المونتاج."
+    },
+    {
+      "id": "cn-ord-14",
+      "shape": "ordering",
+      "difficulty": 5,
+      "textAr": "رتّب المسلسلات دي من الأقدم للأحدث",
+      "items": [
+        "ليالي الحلمية",
+        "رأفت الهجان",
+        "الحاج متولي"
+      ],
+      "labels": [
+        "1987",
+        "1988",
+        "2002"
+      ],
+      "explanationAr": "تلاتة من أشهر المسلسلات المصرية."
+    },
+    {
+      "id": "cn-ord-15",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أنواع اللقطات دي من الأوسع للأضيق",
+      "items": [
+        "لقطة عامة",
+        "لقطة متوسطة",
+        "لقطة قريبة"
+      ],
+      "labels": [],
+      "explanationAr": "اللقطة القريبة بتركّز على الوش."
+    },
+    {
+      "id": "cn-ord-16",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب مراحل تحويل الرواية لفيلم بالترتيب",
+      "items": [
+        "الرواية",
+        "السيناريو",
+        "التصوير",
+        "العرض"
+      ],
+      "labels": [],
+      "explanationAr": "كل مرحلة بتبني على اللي قبلها."
+    },
+    {
+      "id": "cn-mcq-61",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي فيلم على رأس قايمة IMDb لأعلى الأفلام تقييمًا؟",
+      "options": [
+        "العرّاب",
+        "الخلاص من شاوشانك",
+        "فارس الظلام",
+        "بالب فيكشن"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "The Shawshank Redemption بتقييم 9.2."
+    },
+    {
+      "id": "cn-mcq-62",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مخرج فيلم «العرّاب»؟",
+      "options": [
+        "مارتن سكورسيزي",
+        "فرانسيس فورد كوبولا",
+        "ستيفن سبيلبرج",
+        "ستانلي كوبريك"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وأخرج الجزء التاني كمان."
+    },
+    {
+      "id": "cn-mcq-63",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين مثّل دور «دون كورليوني» في فيلم العرّاب؟",
+      "options": [
+        "آل باتشينو",
+        "مارلون براندو",
+        "روبرت دي نيرو",
+        "جيمس كان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وخد عنه أوسكار أحسن ممثل."
+    },
+    {
+      "id": "cn-mcq-64",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين مخرج فيلم The Dark Knight؟",
+      "options": [
+        "زاك سنايدر",
+        "كريستوفر نولان",
+        "تيم برتون",
+        "مات ريفز"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "التاني في تلاتية باتمان بتاعته."
+    },
+    {
+      "id": "cn-mcq-65",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مثّل «الجوكر» في فيلم The Dark Knight؟",
+      "options": [
+        "جاك نيكلسون",
+        "هيث ليدجر",
+        "خواكين فينيكس",
+        "جاريد ليتو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وخد أوسكار عن الدور بعد وفاته."
+    },
+    {
+      "id": "cn-mcq-66",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مخرج فيلم «جوراسيك بارك»؟",
+      "options": [
+        "جيمس كاميرون",
+        "ستيفن سبيلبرج",
+        "ريدلي سكوت",
+        "جورج لوكاس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "غيّر شكل المؤثرات البصرية سنة 1993."
+    },
+    {
+      "id": "cn-mcq-67",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين مخرج فيلم «تايتانيك»؟",
+      "options": [
+        "ستيفن سبيلبرج",
+        "جيمس كاميرون",
+        "مارتن سكورسيزي",
+        "ريدلي سكوت"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وأخرج «أفاتار» كمان."
+    },
+    {
+      "id": "cn-mcq-68",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مخرج سلسلة «حرب النجوم» الأصلية؟",
+      "options": [
+        "ستيفن سبيلبرج",
+        "جورج لوكاس",
+        "جيمس كاميرون",
+        "ريدلي سكوت"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وأسس شركة المؤثرات ILM."
+    },
+    {
+      "id": "cn-mcq-69",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "سلسلة «سيد الخواتم» مأخوذة من روايات مين؟",
+      "options": [
+        "سي إس لويس",
+        "تولكين",
+        "جورج مارتن",
+        "ج. ك. رولينج"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ج. ر. ر. تولكين، وكتبها في النص الأول من القرن العشرين."
+    },
+    {
+      "id": "cn-mcq-70",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين مخرج تلاتية «سيد الخواتم»؟",
+      "options": [
+        "كريستوفر نولان",
+        "بيتر جاكسون",
+        "جيمس كاميرون",
+        "ريدلي سكوت"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وصوّرها كلها في نيوزيلندا."
+    },
+    {
+      "id": "cn-mcq-71",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "سلسلة «هاري بوتر» مأخوذة من روايات مين؟",
+      "options": [
+        "تولكين",
+        "ج. ك. رولينج",
+        "ستيفن كينج",
+        "رولد دال"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "سبع روايات اتحوّلت لتمن أفلام."
+    },
+    {
+      "id": "cn-mcq-72",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "قصة «الخلاص من شاوشانك» مأخوذة من كتابة مين؟",
+      "options": [
+        "جون جريشام",
+        "ستيفن كينج",
+        "دان براون",
+        "ماريو بوزو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "كينج مشهور بالرعب، بس دي مش قصة رعب."
+    },
+    {
+      "id": "cn-mcq-73",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "رواية «العرّاب» مؤلفها مين؟",
+      "options": [
+        "ستيفن كينج",
+        "ماريو بوزو",
+        "جون جريشام",
+        "إرنست همنجواي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وشارك في كتابة سيناريو الفيلم."
+    },
+    {
+      "id": "cn-mcq-74",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "فيلم «تايتانيك» كسب كام جايزة أوسكار؟",
+      "options": [
+        "7",
+        "9",
+        "11",
+        "13"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "رقم قياسي شاركه فيلمين تانيين بس."
+    },
+    {
+      "id": "cn-mcq-75",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين مثّل شخصية «فورست جامب»؟",
+      "options": [
+        "توم كروز",
+        "توم هانكس",
+        "كيفن كوستنر",
+        "روبن ويليامز"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وخد أوسكار أحسن ممثل عن الدور."
+    },
+    {
+      "id": "cn-mcq-76",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين مخرج فيلم «بالب فيكشن»؟",
+      "options": [
+        "مارتن سكورسيزي",
+        "كوينتن تارانتينو",
+        "الأخوان كوين",
+        "ديفيد فينشر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وكسب السعفة الذهبية في كان سنة 1994."
+    },
+    {
+      "id": "cn-mcq-77",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي فيلم كرتون كسب أول أوسكار لأحسن فيلم رسوم متحركة؟",
+      "options": [
+        "توي ستوري",
+        "شريك",
+        "الأسد الملك",
+        "فايندنج نيمو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الجايزة دي اتعملت سنة 2002 لأول مرة."
+    },
+    {
+      "id": "cn-mcq-78",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي شركة إنتاج شعارها أسد بيزأر؟",
+      "options": [
+        "وارنر براذرز",
+        "مترو جولدن ماير",
+        "باراماونت",
+        "يونيفرسال"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "MGM، والأسد من أشهر الشعارات في السينما."
+    },
+    {
+      "id": "cn-mcq-79",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي شركة إنتاج شعارها جبل والنجوم حواليه؟",
+      "options": [
+        "يونيفرسال",
+        "باراماونت",
+        "كولومبيا",
+        "فوكس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من أقدم استوديوهات هوليوود."
+    },
+    {
+      "id": "cn-mcq-80",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي سلسلة أفلام بطلها جاسوس بريطاني رقمه 007؟",
+      "options": [
+        "جيسون بورن",
+        "جيمس بوند",
+        "إيثان هانت",
+        "جون ويك"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مثّله ممثلين كتير على مدار عقود."
+    },
+    {
+      "id": "cn-mcq-81",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "سلسلة «مهمة مستحيلة» بطولة مين؟",
+      "options": [
+        "مات ديمون",
+        "توم كروز",
+        "براد بيت",
+        "كيانو ريفز"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ومشهور إنه بيعمل مشاهده الخطرة بنفسه."
+    },
+    {
+      "id": "cn-mcq-82",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي فيلم كان أول فيلم في «عالم مارفل السينمائي»؟",
+      "options": [
+        "كابتن أمريكا",
+        "الرجل الحديدي",
+        "ثور",
+        "هالك"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "Iron Man سنة 2008."
+    },
+    {
+      "id": "cn-mcq-83",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي فيلم بيتحسب أعلى فيلم إيرادًا في التاريخ؟",
+      "options": [
+        "أفنجرز إنجيم",
+        "أفاتار",
+        "تايتانيك",
+        "حرب النجوم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "استرجع الصدارة بعد إعادة عرضه."
+    },
+    {
+      "id": "cn-mcq-84",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي ممثلة كسبت أكبر عدد جوايز أوسكار للتمثيل؟",
+      "options": [
+        "ميريل ستريب",
+        "كاثرين هيبورن",
+        "إنجريد بيرجمان",
+        "فرانسيس ماكدورماند"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أربع جوايز أحسن ممثلة."
+    },
+    {
+      "id": "cn-mcq-85",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين الممثلة صاحبة أكبر عدد ترشيحات للأوسكار؟",
+      "options": [
+        "كاثرين هيبورن",
+        "ميريل ستريب",
+        "بيتي ديفيس",
+        "جودي دينش"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اترشحت أكتر من 20 مرة."
+    },
+    {
+      "id": "cn-mcq-86",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي فيلم كوري كسب أوسكار أحسن فيلم؟",
+      "options": [
+        "أولد بوي",
+        "باراسايت",
+        "قطار إلى بوسان",
+        "الخادمة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أول فيلم بلغة غير إنجليزية ياخدها."
+    },
+    {
+      "id": "cn-mcq-87",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "فيلم «المليونير المتشرد» أحداثه بتدور في أنهي دولة؟",
+      "options": [
+        "باكستان",
+        "الهند",
+        "بنجلاديش",
+        "سريلانكا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في مومباي، وكسب 8 جوايز أوسكار."
+    },
+    {
+      "id": "cn-mcq-88",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "صناعة السينما في الهند بتتسمى إيه؟",
+      "options": [
+        "هوليوود",
+        "بوليوود",
+        "نوليوود",
+        "توليوود"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من بومباي، الاسم القديم لمومباي."
+    },
+    {
+      "id": "cn-mcq-89",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "صناعة السينما في نيجيريا بتتسمى إيه؟",
+      "options": [
+        "بوليوود",
+        "نوليوود",
+        "هوليوود",
+        "كوليوود"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من أكبر صناعات السينما في العالم بعدد الأفلام."
+    },
+    {
+      "id": "cn-mcq-90",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "«هوليوود» موجودة في أنهي مدينة؟",
+      "options": [
+        "نيويورك",
+        "لوس أنجلوس",
+        "شيكاجو",
+        "سان فرانسيسكو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "حي في لوس أنجلوس بولاية كاليفورنيا."
+    },
+    {
+      "id": "cn-mcq-91",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أفلام «النوار» بتتميز بإيه؟",
+      "options": [
+        "كوميديا خفيفة",
+        "أجواء مظلمة وجريمة وظلال حادة",
+        "خيال علمي",
+        "رسوم متحركة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ازدهرت في الأربعينات والخمسينات."
+    },
+    {
+      "id": "cn-mcq-92",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«السبين أوف» في السينما معناه إيه؟",
+      "options": [
+        "الجزء التاني من الفيلم",
+        "عمل مشتق بشخصية جانبية من عمل تاني",
+        "إعادة إنتاج فيلم قديم",
+        "فيلم قصير"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "زي ما شخصية ثانوية تاخد عمل لوحدها."
+    },
+    {
+      "id": "cn-mcq-93",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«الريميك» معناه إيه؟",
+      "options": [
+        "الجزء التاني",
+        "إعادة إنتاج فيلم قديم",
+        "فيلم وثائقي",
+        "إعلان الفيلم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "نفس القصة بإنتاج وممثلين جدد."
+    },
+    {
+      "id": "cn-mcq-94",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "«التريلر» معناه إيه؟",
+      "options": [
+        "نهاية الفيلم",
+        "إعلان الفيلم الدعائي",
+        "الموسيقى التصويرية",
+        "قائمة الأسماء"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بيتعرض قبل نزول الفيلم بشهور."
+    },
+    {
+      "id": "cn-mcq-95",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "«الساوند تراك» معناه إيه؟",
+      "options": [
+        "الحوار",
+        "الموسيقى التصويرية للفيلم",
+        "المؤثرات البصرية",
+        "الديكور"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وفي ساوند تراكات بقت أشهر من أفلامها."
+    },
+    {
+      "id": "cn-mcq-96",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الممثل اللي اشتهر بأفلام الفنون القتالية وتوفي سنة 1973؟",
+      "options": [
+        "جاكي شان",
+        "بروس لي",
+        "جيت لي",
+        "تشاك نوريس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مات وهو في التلاتين من عمره."
+    },
+    {
+      "id": "cn-mcq-97",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الممثل الكوميدي الصامت صاحب شخصية «المتشرد»؟",
+      "options": [
+        "باستر كيتون",
+        "شارلي شابلن",
+        "هارولد لويد",
+        "ستان لوريل"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "القبعة والعصاية والشنب الصغير."
+    },
+    {
+      "id": "cn-mcq-98",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي مخرج بيتقال عليه «سيد التشويق» وأخرج «سايكو»؟",
+      "options": [
+        "أورسون ويلز",
+        "ألفريد هيتشكوك",
+        "بيلي وايلدر",
+        "جون فورد"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وأخرج «الطيور» كمان."
+    },
+    {
+      "id": "cn-mcq-99",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي فيلم لسبيلبرج خلّى الناس تخاف من البحر؟",
+      "options": [
+        "الحوت الأبيض",
+        "الفك المفترس",
+        "الأعماق",
+        "ميج"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "Jaws سنة 1975، وأسس فكرة فيلم الصيف."
+    },
+    {
+      "id": "cn-mcq-100",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي استوديو ياباني مشهور بأفلام الأنيمي زي «الجارة توتورو»؟",
+      "options": [
+        "توي أنيميشن",
+        "استوديو جيبلي",
+        "مادهاوس",
+        "بونز"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بيرسم أفلامه بالإيد لحد وقت متأخر."
+    },
+    {
+      "id": "cn-mcq-101",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "مين مخرج «الجارة توتورو» و«المخطوفة»؟",
+      "options": [
+        "ماكوتو شينكاي",
+        "هاياو ميازاكي",
+        "إيساو تاكاهاتا",
+        "ساتوشي كون"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مؤسس استوديو جيبلي."
+    },
+    {
+      "id": "cn-mcq-102",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي فيلم أنيمي ياباني كسب أوسكار أحسن فيلم رسوم متحركة؟",
+      "options": [
+        "أميرة موناكوكي",
+        "المخطوفة",
+        "أكيرا",
+        "قلعة في السما"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "Spirited Away سنة 2003."
+    },
+    {
+      "id": "cn-mcq-103",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«الفيلم القصير» مدته عادةً أقل من كام دقيقة؟",
+      "options": [
+        "20",
+        "40",
+        "60",
+        "90"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ده تعريف الأكاديمية لجايزة الفيلم القصير."
+    },
+    {
+      "id": "cn-mcq-104",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي جايزة أمريكية بتتدي قبل الأوسكار وبتتنبأ بيه غالبًا؟",
+      "options": [
+        "البافتا",
+        "جولدن جلوب",
+        "الإيمي",
+        "الجرامي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بتشمل السينما والتلفزيون مع بعض."
+    },
+    {
+      "id": "cn-mcq-105",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "جايزة «الإيمي» بتتدي لإيه؟",
+      "options": [
+        "الأفلام السينمائية",
+        "البرامج والمسلسلات التلفزيونية",
+        "الأغاني",
+        "المسرح"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "والجرامي للأغاني، والتوني للمسرح."
+    },
+    {
+      "id": "cn-bool-49",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "فيلم «الخلاص من شاوشانك» على رأس قايمة IMDb لأعلى الأفلام تقييمًا",
+      "isTrue": true,
+      "explanationAr": "والعرّاب في المركز التاني."
+    },
+    {
+      "id": "cn-bool-50",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "فرانسيس فورد كوبولا هو مخرج فيلم «العرّاب»",
+      "isTrue": true,
+      "explanationAr": "وأخرج الجزء التاني كمان."
+    },
+    {
+      "id": "cn-bool-51",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "كريستوفر نولان هو مخرج فيلم The Dark Knight",
+      "isTrue": true,
+      "explanationAr": "ضمن تلاتية باتمان بتاعته."
+    },
+    {
+      "id": "cn-bool-52",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "جيمس كاميرون هو مخرج فيلم «تايتانيك»",
+      "isTrue": true,
+      "explanationAr": "وأخرج «أفاتار» كمان."
+    },
+    {
+      "id": "cn-bool-53",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "سلسلة «سيد الخواتم» مأخوذة من روايات ستيفن كينج",
+      "isTrue": false,
+      "explanationAr": "مأخوذة من روايات تولكين."
+    },
+    {
+      "id": "cn-bool-54",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "شارلي شابلن اشتهر بالكوميديا الصامتة",
+      "isTrue": true,
+      "explanationAr": "شخصية «المتشرد» بقيت أيقونة."
+    },
+    {
+      "id": "cn-bool-55",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "استوديو جيبلي استوديو ياباني لأفلام الأنيمي",
+      "isTrue": true,
+      "explanationAr": "أسسه هاياو ميازاكي."
+    },
+    {
+      "id": "cn-bool-56",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "«بوليوود» هو اسم صناعة السينما في نيجيريا",
+      "isTrue": false,
+      "explanationAr": "بوليوود للهند، ونوليوود لنيجيريا."
+    },
+    {
+      "id": "cn-bool-57",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "فيلم «باراسايت» الكوري كسب أوسكار أحسن فيلم",
+      "isTrue": true,
+      "explanationAr": "أول فيلم بلغة غير إنجليزية ياخدها."
+    },
+    {
+      "id": "cn-bool-58",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "جايزة «الإيمي» بتتدي للأفلام السينمائية",
+      "isTrue": false,
+      "explanationAr": "الإيمي للتلفزيون، والأوسكار للسينما."
+    },
+    {
+      "id": "cn-num-28",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "فيلم «تايتانيك» كسب كام جايزة أوسكار؟",
+      "correctValue": 11,
+      "tolerance": 0,
+      "unitAr": "أوسكار",
+      "explanationAr": "رقم قياسي شاركه فيلمين بس."
+    },
+    {
+      "id": "cn-num-29",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "فيلم «الخلاص من شاوشانك» اتعرض سنة كام؟",
+      "correctValue": 1994,
+      "tolerance": 1,
+      "explanationAr": "وبقى أعلى الأفلام تقييمًا على IMDb."
+    },
+    {
+      "id": "cn-num-30",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "فيلم «العرّاب» اتعرض سنة كام؟",
+      "correctValue": 1972,
+      "tolerance": 1,
+      "explanationAr": "والجزء التاني سنة 1974."
+    },
+    {
+      "id": "cn-open-23",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "أنهي فيلم على رأس قايمة IMDb لأعلى الأفلام تقييمًا؟",
+      "answerAr": "الخلاص من شاوشانك",
+      "aliases": [
+        "شاوشانك",
+        "the shawshank redemption"
+      ],
+      "explanationAr": "بتقييم 9.2 من 10."
+    },
+    {
+      "id": "cn-open-24",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين مخرج فيلم «العرّاب»؟",
+      "answerAr": "فرانسيس فورد كوبولا",
+      "aliases": [
+        "كوبولا",
+        "فرانسيس كوبولا"
+      ],
+      "explanationAr": "وأخرج الجزء التاني كمان."
+    },
+    {
+      "id": "cn-prog-17",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "اشتغلت في زمن السينما الصامتة",
+        "شخصيتي بتلبس قبعة وبتمشي بعصاية",
+        "بيتقال عليّا «المتشرد» وشنبي الصغير علامتي"
+      ],
+      "answerAr": "شارلي شابلن",
+      "aliases": [
+        "شابلن",
+        "تشارلي شابلن"
+      ],
+      "explanationAr": "من أشهر وجوه السينما في التاريخ."
+    },
+    {
+      "id": "cn-prog-18",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا فيلم أمريكي من السبعينات",
+        "مأخوذ عن رواية لماريو بوزو",
+        "بحكي عن عيلة مافيا إيطالية في أمريكا"
+      ],
+      "answerAr": "العرّاب",
+      "aliases": [
+        "العراب",
+        "the godfather"
+      ],
+      "explanationAr": "التاني في قايمة IMDb."
+    },
+    {
+      "id": "cn-prog-19",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "مخرج بريطاني أمريكي",
+        "أفلامي بتلعب على الوقت والذاكرة",
+        "أخرجت Inception وتلاتية باتمان"
+      ],
+      "answerAr": "كريستوفر نولان",
+      "aliases": [
+        "نولان"
+      ],
+      "explanationAr": "من أشهر مخرجي جيله."
+    },
+    {
+      "id": "cn-prog-20",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا استوديو ياباني",
+        "بعمل أفلام رسوم متحركة مرسومة بالإيد",
+        "من أعمالي «الجارة توتورو» و«المخطوفة»"
+      ],
+      "answerAr": "استوديو جيبلي",
+      "aliases": [
+        "جيبلي",
+        "غيبلي"
+      ],
+      "explanationAr": "أسسه هاياو ميازاكي."
+    },
+    {
+      "id": "cn-prog-21",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "ممثل ومقاتل في نفس الوقت",
+        "اشتهرت بأفلام الفنون القتالية",
+        "متّ وأنا في التلاتين سنة 1973 وبقيت أسطورة"
+      ],
+      "answerAr": "بروس لي",
+      "aliases": [
+        "بروسلي",
+        "بروس لي الصيني"
+      ],
+      "explanationAr": "غيّر شكل أفلام الأكشن للأبد."
+    },
+    {
+      "id": "cn-prog-22",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا شخصية سينمائية بريطانية",
+        "رقمي 007",
+        "جاسوس مثّله ممثلين كتير على مدار عقود"
+      ],
+      "answerAr": "جيمس بوند",
+      "aliases": [
+        "بوند",
+        "james bond"
+      ],
+      "explanationAr": "أطول سلسلة أفلام مستمرة في التاريخ."
+    },
+    {
+      "id": "cn-prog-23",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "مخرج بريطاني اشتغل في هوليوود",
+        "بيتقال عليّا سيد التشويق",
+        "أخرجت «سايكو» و«الطيور»"
+      ],
+      "answerAr": "ألفريد هيتشكوك",
+      "aliases": [
+        "هيتشكوك",
+        "الفريد هيتشكوك"
+      ],
+      "explanationAr": "أثّر في كل مخرجي التشويق بعده."
+    },
+    {
+      "id": "cn-prog-24",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا حي في مدينة أمريكية",
+        "اسمي مكتوب بحروف ضخمة على تل",
+        "مركز صناعة السينما الأمريكية في لوس أنجلوس"
+      ],
+      "answerAr": "هوليوود",
+      "aliases": [
+        "هوليود",
+        "hollywood"
+      ],
+      "explanationAr": "بقى اسم مرادف لصناعة السينما نفسها."
+    },
+    {
+      "id": "cn-mcq-106",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي فيلم لكوينتن تارانتينو بطولته أوما ثورمان في دور مقاتلة بسيف؟",
+      "options": [
+        "جانجو",
+        "اقتل بيل",
+        "الأوغاد المجهولون",
+        "الكلاب المتوحشة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "Kill Bill على جزئين."
+    },
+    {
+      "id": "cn-mcq-107",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي فيلم بيدور حول أحلام جوه أحلام وإخراج كريستوفر نولان؟",
+      "options": [
+        "إنترستيلر",
+        "إنسبشن",
+        "برستيج",
+        "تينيت"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "Inception سنة 2010."
+    },
+    {
+      "id": "cn-mcq-108",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي سلسلة أفلام بطلها عالم آثار بيلبس قبعة وبيستعمل سوط؟",
+      "options": [
+        "لارا كروفت",
+        "إنديانا جونز",
+        "ناشيونال تريجر",
+        "الموميا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من إخراج سبيلبرج وبطولة هاريسون فورد."
+    },
+    {
+      "id": "cn-mcq-109",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي فيلم بيحكي عن عالم افتراضي وبطله «نيو»؟",
+      "options": [
+        "تررون",
+        "ماتريكس",
+        "بليد رانر",
+        "أفاتار"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "The Matrix سنة 1999."
+    },
+    {
+      "id": "cn-mcq-110",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي استوديو أمريكي أنتج «توي ستوري» و«فايندنج نيمو»؟",
+      "options": [
+        "دريم ووركس",
+        "بيكسار",
+        "إليومينيشن",
+        "بلو سكاي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أول استوديو يعمل فيلم كامل بالكمبيوتر."
+    },
+    {
+      "id": "cn-mcq-111",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي فيلم كان أول فيلم روائي كامل بالرسوم المتحركة من ديزني؟",
+      "options": [
+        "بامبي",
+        "سنو وايت والأقزام السبعة",
+        "بينوكيو",
+        "دامبو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "سنة 1937."
+    },
+    {
+      "id": "cn-mcq-112",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي مخرج مشهور بأفلام الرعب النفسي زي «شايننج» و«2001»؟",
+      "options": [
+        "ديفيد لينش",
+        "ستانلي كوبريك",
+        "ريدلي سكوت",
+        "رومان بولانسكي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مشهور بالدقة الشديدة في التصوير."
+    },
+    {
+      "id": "cn-mcq-113",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي فيلم خيال علمي أخرجه ريدلي سكوت وبيدور في سفينة فضا؟",
+      "options": [
+        "ستار تريك",
+        "إيليان",
+        "إنترستيلر",
+        "جرافيتي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "Alien سنة 1979، وأسس نوع كامل."
+    },
+    {
+      "id": "cn-mcq-114",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«الكاستينج» في السينما معناه إيه؟",
+      "options": [
+        "مونتاج الفيلم",
+        "اختيار الممثلين للأدوار",
+        "تصميم الديكور",
+        "تسجيل الصوت"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مرحلة بتسبق التصوير."
+    },
+    {
+      "id": "cn-mcq-115",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«المونتاج» في السينما معناه إيه؟",
+      "options": [
+        "كتابة السيناريو",
+        "ترتيب وقص اللقطات",
+        "الإضاءة",
+        "التمثيل"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "المرحلة اللي بيتولد فيها إيقاع الفيلم."
+    },
+    {
+      "id": "cn-odd-1",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين المخرجين",
+      "items": [
+        "يوسف شاهين",
+        "صلاح أبو سيف",
+        "عادل إمام",
+        "توفيق صالح"
+      ],
+      "oddIndex": 2,
+      "reasonAr": "التلاتة التانيين مخرجين مصريين كبار، وعادل إمام ممثل مش مخرج."
+    },
+    {
+      "id": "cn-odd-2",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "الدخيل بين الأفلام",
+      "items": [
+        "الأسد الملك",
+        "علاء الدين",
+        "الجميلة والوحش",
+        "الإرهاب والكباب"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين أفلام رسوم متحركة من ديزني، والإرهاب والكباب فيلم مصري بشر."
+    },
+    {
+      "id": "cn-odd-3",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين الممثلين",
+      "items": [
+        "أحمد زكي",
+        "نور الشريف",
+        "محمود عبد العزيز",
+        "أم كلثوم"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين ممثلين، وأم كلثوم مطربة اشتغلت في السينما بس مش ممثلة أساسًا."
+    },
+    {
+      "id": "cn-odd-4",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين أبطال سلسلة جيمس بوند",
+      "items": [
+        "شون كونري",
+        "روجر مور",
+        "دانيال كريج",
+        "توم كروز"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين مثلوا شخصية جيمس بوند، وتوم كروز اشتهر بسلسلة أفلام تانية (مهمة مستحيلة)."
+    },
+    {
+      "id": "cn-odd-5",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "الدخيل بين الأنواع السينمائية",
+      "items": [
+        "كوميدي",
+        "رعب",
+        "رومانسي",
+        "مونتاج"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين أنواع أفلام، والمونتاج مرحلة تقنية في صناعة الفيلم مش نوع."
+    },
+    {
+      "id": "cn-odd-6",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين شخصيات مارفل الخارقة",
+      "items": [
+        "الرجل الحديدي",
+        "سبايدرمان",
+        "باتمان",
+        "كابتن أمريكا"
+      ],
+      "oddIndex": 2,
+      "reasonAr": "التلاتة التانيين شخصيات مارفل، وباتمان شخصية DC Comics."
+    },
+    {
+      "id": "cn-odd-7",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين استوديوهات الرسوم المتحركة",
+      "items": [
+        "بيكسار",
+        "ديزني",
+        "ستوديو جيبلي",
+        "وارنر بروذرز"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين استوديوهات متخصصة أساسًا في الرسوم المتحركة، ووارنر بروذرز استوديو عام."
+    },
+    {
+      "id": "cn-odd-8",
+      "shape": "odd_one_out",
+      "difficulty": 4,
+      "textAr": "الدخيل بين ممثلي شخصية باتمان في السينما",
+      "items": [
+        "كريستيان بيل",
+        "بن أفليك",
+        "مايكل كيتون",
+        "هيو جاكمان"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين مثلوا شخصية باتمان، وهيو جاكمان اشتهر بشخصية وولفرين."
+    },
+    {
+      "id": "cn-odd-9",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "الدخيل بين ممثلات مصريات",
+      "items": [
+        "فاتن حمامة",
+        "شادية",
+        "سعاد حسني",
+        "فريد شوقي"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين ممثلات مصريات، وفريد شوقي ممثل."
+    },
+    {
+      "id": "cn-odd-10",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين المهرجانات السينمائية",
+      "items": [
+        "كان",
+        "البندقية",
+        "الأوسكار",
+        "برلين"
+      ],
+      "oddIndex": 2,
+      "reasonAr": "التلاتة التانيين مهرجانات سينمائية دولية، والأوسكار حفل توزيع جوائز أمريكي مش مهرجان."
+    },
+    {
+      "id": "cn-odd-11",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين ممثلي الكوميديا الكلاسيكية الصامتة",
+      "items": [
+        "تشارلي شابلن",
+        "باستر كيتون",
+        "هارولد لويد",
+        "مارلون براندو"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين نجوم أفلام صامتة كوميدية، ومارلون براندو نجم أفلام درامية ناطقة."
+    },
+    {
+      "id": "cn-odd-12",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين أفلام تريلوجي «سيد الخواتم»",
+      "items": [
+        "رفقة الخاتم",
+        "البرجان",
+        "عودة الملك",
+        "الهوبيت"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين أجزاء ثلاثية سيد الخواتم الأصلية، والهوبيت ثلاثية منفصلة لاحقة."
+    },
+    {
+      "id": "cn-odd-13",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين وظائف صناعة الفيلم",
+      "items": [
+        "المخرج",
+        "المونتير",
+        "مدير التصوير",
+        "الناقد"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين شغالين فعليًا في صناعة الفيلم، والناقد بيكتب عنه بعد ما يخلص."
+    },
+    {
+      "id": "cn-odd-14",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "الدخيل بين أفلام أحمد زكي",
+      "items": [
+        "ناصر 56",
+        "الراقصة والسياسي",
+        "أيام السادات",
+        "الكيت كات"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين من بطولة أحمد زكي، والكيت كات بطولة محمود عبد العزيز."
+    },
+    {
+      "id": "cn-odd-15",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين المهن السينمائية القديمة",
+      "items": [
+        "مصور الاستوديو",
+        "الممثل البديل (الكاسكيير)",
+        "مهندس المؤثرات البصرية الرقمية",
+        "مصمم الديكور"
+      ],
+      "oddIndex": 2,
+      "reasonAr": "التلاتة التانيين مهن قديمة قدم السينما نفسها، والمؤثرات الرقمية مهنة حديثة ظهرت مع الكمبيوتر."
+    },
+    {
+      "id": "cn-odd-16",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين شخصيات ديزني الأميرات",
+      "items": [
+        "سندريلا",
+        "بياض الثلج",
+        "موانا",
+        "تينكر بيل"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين من ضمن أميرات ديزني الرسميات، وتينكر بيل جنية مش أميرة."
+    },
+    {
+      "id": "cn-odd-17",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين المخرجين المصريين",
+      "items": [
+        "يوسف شاهين",
+        "خيري بشارة",
+        "محمد خان",
+        "أحمد حلمي"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين مخرجين، وأحمد حلمي ممثل معروف."
+    },
+    {
+      "id": "cn-odd-18",
+      "shape": "odd_one_out",
+      "difficulty": 4,
+      "textAr": "الدخيل بين ألوان أفلام",
+      "items": [
+        "فيلم أبيض وأسود صامت",
+        "فيلم ملون بالتقنية الحديثة",
+        "فيلم رسوم متحركة ثلاثي الأبعاد",
+        "فيلم مسرحي مسجل على المسرح"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين أنواع أفلام سينمائية بالمعنى التقني، والمسرحية المسجلة عرض مسرحي وليس فيلم سينمائي."
+    },
+    {
+      "id": "cn-odd-19",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين أفلام هاري بوتر",
+      "items": [
+        "حجر الفيلسوف",
+        "حجرة الأسرار",
+        "كأس النار",
+        "المرآة المسحورة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين عناوين أجزاء حقيقية من سلسلة هاري بوتر، و«المرآة المسحورة» اسم غير موجود في السلسلة."
+    },
+    {
+      "id": "cn-odd-20",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "الدخيل بين أدوات صناعة الأفلام",
+      "items": [
+        "الكاميرا",
+        "الميكروفون",
+        "الإضاءة",
+        "الفرشاة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين أدوات أساسية في التصوير السينمائي، والفرشاة أداة رسم."
+    },
+    {
+      "id": "cn-odd-21",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين ممثلين لعبوا دور «جوكر»",
+      "items": [
+        "هيث ليدجر",
+        "واكين فينيكس",
+        "جاريد ليتو",
+        "روبرت داوني جونيور"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين مثلوا شخصية الجوكر في أفلام مختلفة، وروبرت داوني جونيور اشتهر بدور الرجل الحديدي."
+    },
+    {
+      "id": "cn-odd-22",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين مطربين اشتغلوا بالتمثيل السينمائي المصري",
+      "items": [
+        "أم كلثوم",
+        "عبد الحليم حافظ",
+        "فريد الأطرش",
+        "فؤاد المهندس"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين مطربين شهيرين مثّلوا في السينما، وفؤاد المهندس ممثل كوميدي أساسًا مش مطرب."
+    },
+    {
+      "id": "cn-odd-23",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "الدخيل بين مصطلحات سينمائية",
+      "items": [
+        "لقطة قريبة",
+        "لقطة بعيدة",
+        "لقطة بانورامية",
+        "نغمة موسيقية"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين مصطلحات تصوير سينمائي، والنغمة الموسيقية مصطلح صوتي مش تصويري."
+    },
+    {
+      "id": "cn-odd-24",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين جوائز الأوسكار",
+      "items": [
+        "أفضل فيلم",
+        "أفضل مخرج",
+        "أفضل ممثل",
+        "أفضل مطرب"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين فئات رسمية من جوائز الأوسكار، ومفيش فئة اسمها «أفضل مطرب» في الأوسكار."
+    },
+    {
+      "id": "cn-emj-1",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🚗⚡🔴",
+      "answerAr": "كارز",
+      "aliases": [
+        "Cars"
+      ]
+    },
+    {
+      "id": "cn-emj-2",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🕷️👨",
+      "answerAr": "الرجل العنكبوت",
+      "aliases": [
+        "سبايدرمان",
+        "Spider-Man"
+      ]
+    },
+    {
+      "id": "cn-emj-3",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🧙‍♂️💍🌋",
+      "answerAr": "سيد الخواتم",
+      "aliases": [
+        "The Lord of the Rings"
+      ]
+    },
+    {
+      "id": "cn-emj-4",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🦈🌊",
+      "answerAr": "الفك المفترس",
+      "aliases": [
+        "جوز",
+        "Jaws"
+      ]
+    },
+    {
+      "id": "cn-emj-5",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🚢🧊💔",
+      "answerAr": "تيتانيك",
+      "aliases": [
+        "Titanic"
+      ]
+    },
+    {
+      "id": "cn-emj-6",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🕋👳🏻",
+      "answerAr": "الرسالة",
+      "aliases": [
+        "فيلم الرسالة"
+      ]
+    },
+    {
+      "id": "cn-emj-7",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🐜🍽️",
+      "answerAr": "الإرهاب والكباب",
+      "aliases": []
+    },
+    {
+      "id": "cn-emj-8",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🦸‍♂️🇺🇸🛡️",
+      "answerAr": "كابتن أمريكا",
+      "aliases": [
+        "Captain America"
+      ]
+    },
+    {
+      "id": "cn-emj-9",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🃏😂😱",
+      "answerAr": "الجوكر",
+      "aliases": [
+        "Joker"
+      ]
+    },
+    {
+      "id": "cn-emj-10",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🧜‍♀️🐚",
+      "answerAr": "حورية البحر الصغيرة",
+      "aliases": [
+        "The Little Mermaid"
+      ]
+    },
+    {
+      "id": "cn-emj-11",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🦖🏝️",
+      "answerAr": "جوراسيك بارك",
+      "aliases": [
+        "الحديقة الجوراسية",
+        "Jurassic Park"
+      ]
+    },
+    {
+      "id": "cn-emj-12",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🧑‍🚀🌕",
+      "answerAr": "أبولو 13",
+      "aliases": [
+        "Apollo 13"
+      ]
+    },
+    {
+      "id": "cn-emj-13",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🐭🧀",
+      "answerAr": "توم أند جيري",
+      "aliases": [
+        "Tom and Jerry"
+      ]
+    },
+    {
+      "id": "cn-emj-14",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🕰️🚗⚡",
+      "answerAr": "العودة للمستقبل",
+      "aliases": [
+        "Back to the Future"
+      ]
+    },
+    {
+      "id": "cn-emj-15",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🐘👦",
+      "answerAr": "دمبو",
+      "aliases": [
+        "Dumbo"
+      ]
+    },
+    {
+      "id": "cn-emj-16",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🎩🐰✨",
+      "answerAr": "ساحر",
+      "aliases": [
+        "الساحر",
+        "خدعة سحرية"
+      ]
+    },
+    {
+      "id": "cn-emj-17",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "👨‍👩‍👧🏠😱",
+      "answerAr": "وحيدًا في المنزل",
+      "aliases": [
+        "هوم ألون",
+        "Home Alone"
+      ]
+    },
+    {
+      "id": "cn-emj-18",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🐟🔍",
+      "answerAr": "البحث عن نيمو",
+      "aliases": [
+        "نيمو",
+        "Finding Nemo"
+      ]
+    },
+    {
+      "id": "cn-emj-19",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🍫🏭👦",
+      "answerAr": "تشارلي ومصنع الشوكولاتة",
+      "aliases": [
+        "Charlie and the Chocolate Factory"
+      ]
+    },
+    {
+      "id": "cn-emj-20",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🧞‍♂️🪔",
+      "answerAr": "علاء الدين",
+      "aliases": [
+        "Aladdin"
+      ]
+    },
+    {
+      "id": "cn-emj-21",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🚗🏁💨",
+      "answerAr": "سريع وغاضب",
+      "aliases": [
+        "الأسرع والأغضب",
+        "Fast and Furious"
+      ]
+    },
+    {
+      "id": "cn-emj-22",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🐝🎬",
+      "answerAr": "فيلم عن النحل",
+      "aliases": [
+        "بي موفي",
+        "Bee Movie"
+      ]
+    },
+    {
+      "id": "cn-emj-23",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "👻🚫",
+      "answerAr": "مطاردو الأشباح",
+      "aliases": [
+        "غوست باسترز",
+        "Ghostbusters"
+      ]
+    },
+    {
+      "id": "cn-emj-24",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🤠🚀🧸",
+      "answerAr": "توي ستوري",
+      "aliases": [
+        "قصة لعبة",
+        "Toy Story"
+      ]
+    },
+    {
+      "id": "cn-emj-25",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🐠🌊👨‍👦",
+      "answerAr": "البحث عن دوري",
+      "aliases": [
+        "دوري",
+        "Finding Dory"
+      ]
+    },
+    {
+      "id": "cn-emj-26",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🎭😢😂",
+      "answerAr": "دراما وكوميديا",
+      "aliases": [
+        "ميلودراما"
+      ]
+    },
+    {
+      "id": "cn-emj-27",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🐟🍳🍽️",
+      "answerAr": "السمك مبيتكلمش",
+      "aliases": []
+    },
+    {
+      "id": "cn-emj-28",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🧟‍♂️🌍",
+      "answerAr": "حرب زد",
+      "aliases": [
+        "World War Z"
+      ]
+    },
+    {
+      "id": "cn-emj-29",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🐼🥋",
+      "answerAr": "كونغ فو باندا",
+      "aliases": [
+        "Kung Fu Panda"
+      ]
+    },
+    {
+      "id": "cn-emj-30",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "💊🕶️🔴",
+      "answerAr": "ماتريكس",
+      "aliases": [
+        "The Matrix"
+      ]
+    },
+    {
+      "id": "cn-ord-17",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الأفلام العالمية دي من الأقدم للأحدث",
+      "items": [
+        "الفك المفترس",
+        "حرب النجوم: أمل جديد",
+        "إي تي",
+        "تيتانيك"
+      ],
+      "labels": [
+        "1975",
+        "1977",
+        "1982",
+        "1997"
+      ]
+    },
+    {
+      "id": "cn-ord-18",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أفلام ديزني الكلاسيكية دي من الأقدم للأحدث",
+      "items": [
+        "بياض الثلج والأقزام السبعة",
+        "سندريلا",
+        "الأسد الملك",
+        "فروزن"
+      ],
+      "labels": [
+        "1937",
+        "1950",
+        "1994",
+        "2013"
+      ]
+    },
+    {
+      "id": "cn-ord-19",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب أفلام هاري بوتر دي حسب سنة عرضها",
+      "items": [
+        "حجر الفيلسوف",
+        "كأس النار",
+        "الأمير الهجين",
+        "مقدسات الموت الجزء الثاني"
+      ],
+      "labels": [
+        "2001",
+        "2005",
+        "2009",
+        "2011"
+      ]
+    },
+    {
+      "id": "cn-ord-20",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب أفلام عالم مارفل السينمائي دي حسب سنة عرضها",
+      "items": [
+        "الرجل الحديدي",
+        "المنتقمون",
+        "بلاك بانثر",
+        "المنتقمون: نهاية اللعبة"
+      ],
+      "labels": [
+        "2008",
+        "2012",
+        "2018",
+        "2019"
+      ]
+    },
+    {
+      "id": "cn-ord-21",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب ممثلي شخصية جيمس بوند دي حسب سنة أول فيلم مثّلوه فيها",
+      "items": [
+        "شون كونري",
+        "روجر مور",
+        "بيرس بروسنان",
+        "دانيال كريج"
+      ],
+      "labels": [
+        "1962",
+        "1973",
+        "1995",
+        "2006"
+      ]
+    },
+    {
+      "id": "cn-ord-22",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أجزاء ثلاثية «العراب» دي حسب سنة عرضها",
+      "items": [
+        "العراب الأول",
+        "العراب الثاني",
+        "العراب الثالث"
+      ],
+      "labels": [
+        "1972",
+        "1974",
+        "1990"
+      ]
+    },
+    {
+      "id": "cn-ord-23",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أفلام ثلاثية حرب النجوم الأصلية دي حسب سنة عرضها",
+      "items": [
+        "أمل جديد",
+        "الإمبراطورية ترد الضربة",
+        "عودة الجيداي"
+      ],
+      "labels": [
+        "1977",
+        "1980",
+        "1983"
+      ]
+    },
+    {
+      "id": "cn-ord-24",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب أفلام بيكسار دي حسب سنة عرضها",
+      "items": [
+        "توي ستوري",
+        "البحث عن نيمو",
+        "أب",
+        "إنسايد أوت"
+      ],
+      "labels": [
+        "1995",
+        "2003",
+        "2009",
+        "2015"
+      ]
+    },
+    {
+      "id": "cn-ord-25",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أجزاء ثلاثية «سيد الخواتم» دي حسب سنة عرضها",
+      "items": [
+        "رفقة الخاتم",
+        "البرجان التوأمان",
+        "عودة الملك"
+      ],
+      "labels": [
+        "2001",
+        "2002",
+        "2003"
+      ]
+    },
+    {
+      "id": "cn-ord-26",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب أفلام سلسلة «سريع وغاضب» الأولى دي حسب سنة عرضها",
+      "items": [
+        "سريع وغاضب",
+        "2 سريع 2 غاضب",
+        "طوكيو درفت",
+        "الجزء الرابع"
+      ],
+      "labels": [
+        "2001",
+        "2003",
+        "2006",
+        "2009"
+      ]
+    },
+    {
+      "id": "cn-ord-27",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب ممثلي شخصية باتمان دي حسب سنة أول فيلم مثّلوه فيها",
+      "items": [
+        "مايكل كيتون",
+        "فال كيلمر",
+        "كريستيان بيل",
+        "بن أفليك"
+      ],
+      "labels": [
+        "1989",
+        "1995",
+        "2005",
+        "2016"
+      ]
+    },
+    {
+      "id": "cn-ord-28",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب أفلام سلسلة «الحديقة الجوراسية» الأولى دي حسب سنة عرضها",
+      "items": [
+        "الحديقة الجوراسية",
+        "العالم المفقود",
+        "الحديقة الجوراسية 3",
+        "عالم جوراسي"
+      ],
+      "labels": [
+        "1993",
+        "1997",
+        "2001",
+        "2015"
+      ]
+    },
+    {
+      "id": "cn-ord-29",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب أفلام «توي ستوري» دي حسب سنة عرضها",
+      "items": [
+        "الجزء الأول",
+        "الجزء الثاني",
+        "الجزء الثالث",
+        "الجزء الرابع"
+      ],
+      "labels": [
+        "1995",
+        "1999",
+        "2010",
+        "2019"
+      ]
+    },
+    {
+      "id": "cn-ord-30",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب أفلام مصرية دي من الأقدم للأحدث",
+      "items": [
+        "شيء من الخوف",
+        "خلي بالك من زوزو",
+        "الكرنك",
+        "إحنا بتوع الأتوبيس"
+      ],
+      "labels": [
+        "1969",
+        "1972",
+        "1975",
+        "1979"
+      ]
+    },
+    {
+      "id": "cn-ord-31",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب أول أفلام ممثلي شخصية سبايدرمان دي حسب سنة عرضها",
+      "items": [
+        "توبي ماغواير",
+        "أندرو جارفيلد",
+        "توم هولاند"
+      ],
+      "labels": [
+        "2002",
+        "2012",
+        "2016"
+      ]
+    },
+    {
+      "id": "cn-ord-32",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب مراحل تجهيز الفيلم قبل عرضه في السينما",
+      "items": [
+        "الإنتاج (التصوير)",
+        "ما بعد الإنتاج (المونتاج والمؤثرات)",
+        "التوزيع",
+        "العرض في دور السينما"
+      ],
+      "labels": []
+    },
+    {
+      "id": "cn-bool-59",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "فيلم «أرض النفاق» من بطولة فؤاد المهندس وشويكار",
+      "isTrue": true,
+      "explanationAr": "الفيلم اتعمل سنة 1968 مقتبس من رواية يوسف السباعي."
+    },
+    {
+      "id": "cn-bool-60",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "فيلم «هي فوضى» كان آخر فيلم إخراج ليوسف شاهين قبل وفاته",
+      "isTrue": true,
+      "explanationAr": "اتعمل سنة 2007 بمشاركة إخراجية من تلميذه خالد يوسف."
+    },
+    {
+      "id": "cn-bool-61",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "فيلم «عمر المختار» (أسد الصحراء) من بطولة الممثل العالمي أنتوني كوين",
+      "isTrue": true,
+      "explanationAr": "الفيلم من إخراج مصطفى العقاد وعرض سنة 1981."
+    },
+    {
+      "id": "cn-bool-62",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "فيلم «المصير» ليوسف شاهين بيحكي قصة الفيلسوف ابن رشد",
+      "isTrue": true,
+      "explanationAr": "الفيلم اتعمل سنة 1997 وبيدور حول ابن رشد في الأندلس."
+    },
+    {
+      "id": "cn-bool-63",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الفنانة ليلى مراد اعتزلت الفن فجأة في قمة نجاحها",
+      "isTrue": true,
+      "explanationAr": "اعتزلت سنة 1953 بعد إنجاب ابنها الثاني، وسط جدل حول السبب الحقيقي."
+    },
+    {
+      "id": "cn-bool-64",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "والت ديزني نفسه كان الصوت الأصلي لشخصية ميكي ماوس",
+      "isTrue": true,
+      "explanationAr": "لعب دور الصوت من سنة 1928 لحد أواخر الخمسينيات تقريبًا."
+    },
+    {
+      "id": "cn-bool-65",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "مسرحية «شاهد ما شافش حاجة» كانت أول بطولة مطلقة لعادل إمام على المسرح",
+      "isTrue": true,
+      "explanationAr": "عُرضت سنة 1976 وتعتبر نقطة تحول في مشواره المسرحي."
+    },
+    {
+      "id": "cn-bool-66",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "أحمد زكي شارك ببطولة فيلم «العار» سنة 1982",
+      "isTrue": false,
+      "explanationAr": "فيلم العار بطولة نور الشريف ومحمود عبد العزيز وحسين فهمي، ومكانش فيه أحمد زكي خالص."
+    },
+    {
+      "id": "cn-bool-67",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الممثلة ميريل ستريب صاحبة أكتر عدد ترشيحات أوسكار في التاريخ لأي ممثل",
+      "isTrue": true,
+      "explanationAr": "وصلت لـ21 ترشيح، وده رقم أعلى بكتير من أي ممثل تاني."
+    },
+    {
+      "id": "cn-bool-68",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "ليوناردو دي كابريو فاز بأول أوسكار في مشواره عن فيلم «ذا ريفينانت»",
+      "isTrue": true,
+      "explanationAr": "فاز سنة 2016 بعد ترشيحات سابقة كتير من غير ما يفوز."
+    },
+    {
+      "id": "cn-bool-69",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "ستيفن سبيلبرج مخرج فيلم «قائمة شيندلر»",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-70",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "كوينتين تارانتينو مخرج فيلم «بالب فيكشن»",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-71",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "ألفريد هيتشكوك بيتلقب بـ«أستاذ التشويق» في السينما العالمية",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-72",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "توم هانكس مثّل شخصية «فورست جامب»",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-73",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "فيلم «أفاتار» لجيمس كاميرون من أعلى الأفلام إيرادًا في تاريخ السينما العالمية",
+      "isTrue": true,
+      "explanationAr": "الفيلم حقق حوالي 2.9 مليار دولار عالميًا، أعلى إيراد لفيلم في التاريخ."
+    },
+    {
+      "id": "cn-bool-74",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الممثل مايك مايرز أدّى صوت شخصية «شريك» في النسخة الإنجليزية",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-75",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "واكين فينيكس فاز بجايزة أوسكار أحسن ممثل عن دوره في فيلم «الجوكر» سنة 2019",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-76",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "سلسلة أفلام «روكي» بطولة سيلفستر ستالون",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-77",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الممثل مورجان فريمان مشهور بصوته العميق المميز في التعليقات الصوتية للأفلام الوثائقية",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-78",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "في حفل الأوسكار سنة 2017 حصل خطأ وإعلان فيلم غلط كـ«أفضل فيلم» قبل ما يتصحح على الهواء",
+      "isTrue": true,
+      "explanationAr": "أُعلن «لا لا لاند» غلط بدل «مونلايت» بسبب خطأ في المظاريف، واتصحح بعد كام دقيقة."
+    },
+    {
+      "id": "cn-bool-79",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "فيلم «تايتانيك» و«أفاتار» الاتنين من إخراج جيمس كاميرون",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-80",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "فيلم «الرحلة إلى الأرواح» (Spirited Away) الياباني أول فيلم رسوم متحركة غير أمريكي يفوز بأوسكار أفضل فيلم رسوم متحركة",
+      "isTrue": true,
+      "explanationAr": "فاز سنة 2003، وإخراج المخرج الياباني هاياو ميازاكي."
+    },
+    {
+      "id": "cn-bool-81",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "كلمة «بلوكباستر» المستخدمة لوصف الأفلام الناجحة جدًا أصلها من نوع قنبلة استُخدمت في الحرب العالمية الثانية",
+      "isTrue": true,
+      "explanationAr": "القنبلة دي كانت قوية كفاية إنها تدمر حي كامل، ومن هنا جات الاستعارة للأفلام الضخمة."
+    },
+    {
+      "id": "cn-bool-82",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الفنان فريد شوقي كان بيتلقب بـ«ملك الترسو»",
+      "isTrue": true,
+      "explanationAr": "اللقب جاله من جمهوره في الصالة الشعبية اللي كانت بتحبه جدًا."
+    },
+    {
+      "id": "cn-bool-83",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "فيلم «المومياء» (1969) هو الفيلم الروائي الوحيد للمخرج شادي عبد السلام طول مشواره",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-84",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الممثل الأمريكي دينزل واشنطن فاز بجايزتين أوسكار في مشواره",
+      "isTrue": true,
+      "explanationAr": "أوسكار أحسن ممثل مساعد عن فيلم Glory، وأوسكار أحسن ممثل عن فيلم Training Day."
+    },
+    {
+      "id": "cn-bool-85",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "فيلم «باراسايت» الكوري أول فيلم مش ناطق بالإنجليزية يفوز بأوسكار أحسن فيلم",
+      "isTrue": true,
+      "explanationAr": "فاز سنة 2020، وده أول مرة في تاريخ الأوسكار من 92 سنة."
+    },
+    {
+      "id": "cn-bool-86",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "تمثال جايزة الأوسكار اسمه الرسمي «جايزة الأكاديمية للاستحقاق»، و«أوسكار» مجرد لقب دارج",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-87",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "منصة نتفليكس بدأت نشاطها كخدمة تأجير أقراص DVD بالبريد قبل ما تتحول لمنصة بث",
+      "isTrue": true,
+      "explanationAr": "اتأسست سنة 1997 وبدأت البث المباشر بعد كده بعشر سنين."
+    },
+    {
+      "id": "cn-bool-88",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "مهرجان القاهرة السينمائي الدولي اتأسس في السبعينيات",
+      "isTrue": true,
+      "explanationAr": "بدأ فعاليته الأولى سنة 1976."
+    },
+    {
+      "id": "cn-bool-89",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "عمرو دياب شارك بالتمثيل في أكتر من عشرة أفلام سينمائية طول مشواره",
+      "isTrue": false,
+      "explanationAr": "مشواره السينمائي اقتصر على 4 أفلام بس رغم نجاحه الغنائي الضخم."
+    },
+    {
+      "id": "cn-bool-90",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "مسرحية «شاهد ما شافش حاجة» الشهيرة أصلها عمل مسرحي، مش فيلم سينمائي في الأساس",
+      "isTrue": true,
+      "explanationAr": "عُرضت كمسرحية سنة 1976 قبل ما تتحول لصيغة معروضة على منصات البث."
+    },
+    {
+      "id": "cn-bool-91",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "عمر الشريف اترشح لجايزة الأوسكار أحسن ممثل مساعد عن دوره في فيلم «لورنس العرب»",
+      "isTrue": true,
+      "explanationAr": "اترشح سنة 1963 وكان أول ممثل عربي يترشح للأوسكار."
+    },
+    {
+      "id": "cn-bool-92",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "الفنانة شادية اعتزلت الفن بعد ما غنت أغنية دينية وتأثرت روحيًا في طريقها",
+      "isTrue": true,
+      "explanationAr": "اعتزلت سنة 1985 بعد تأثرها بأغنية دينية ولقاءات مع الشيخ الشعراوي."
+    },
+    {
+      "id": "cn-bool-93",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "مسلسل «رأفت الهجان» بطولة الفنان محمود عبد العزيز",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-94",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "المخرج الياباني هاياو ميازاكي هو مؤسس استوديو جيبلي للرسوم المتحركة",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-95",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "جورج لوكاس هو مبتكر سلسلة أفلام «حرب النجوم»",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-96",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الممثل هاريسون فورد مثّل شخصيتي هان سولو وإنديانا جونز",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-97",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الأخوان لوميير من رواد اختراع السينما وعرضوا أول فيلم تجاري في التاريخ في فرنسا",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-98",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "«بوليوود» هو الاسم اللي بيُطلق على صناعة السينما الهندية الناطقة بالهندية ومركزها مومباي",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-99",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "جايزة «بافتا» جايزة سينمائية بريطانية",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-100",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "مهرجان «صندانس» مخصص لعرض الأفلام المستقلة الأمريكية",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-101",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الممثل جوني ديب اشتهر بدور «جاك سبارو» في سلسلة «قراصنة الكاريبي»",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-102",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الممثل روبرت دي نيرو والمخرج مارتن سكورسيزي تعاونوا مع بعض في أفلام كتير",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-103",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "المخرج تيم برتون معروف بأسلوبه الغرايبي الغامق في أفلامه، زي «إدوارد يدوي المقص»",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-104",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "سلسلة أفلام «هاري بوتر» مأخوذة من روايات الكاتبة البريطانية جي كي رولينج",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-105",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "صلاح جاهين كان شاعر وكاتب سيناريو مصري معروف",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-106",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "المخرج المصري خيري بشارة بيُعتبر من رواد موجة الواقعية الجديدة في السينما المصرية في الثمانينات",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-107",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "فيلم «الجوكر» (2019) من إخراج تود فيليبس",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-108",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "صوت شخصية «دارث فيدر» الشرير في حرب النجوم أداه الممثل جيمس إيرل جونز",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-109",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "فيلم «قائمة شيندلر» ملوّن بالكامل رغم موضوعه التاريخي الجاد",
+      "isTrue": false,
+      "explanationAr": "الفيلم اتصور بالأبيض والأسود بالكامل تقريبًا رغم إنه اتصور في التسعينيات، بقرار من سبيلبرج نفسه."
+    },
+    {
+      "id": "cn-bool-110",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "والت ديزني بيحمل الرقم القياسي لأكتر عدد جوايز أوسكار حصل عليها شخص واحد في التاريخ",
+      "isTrue": true,
+      "explanationAr": "حصل على 26 جايزة أوسكار (تنافسية وتكريمية) طول مشواره."
+    },
+    {
+      "id": "cn-bool-111",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "فيلم «الفك المفترس» (Jaws) لستيفن سبيلبرج بيُعتبر أول «بلوكباستر صيفي» في تاريخ هوليوود",
+      "isTrue": true,
+      "explanationAr": "غيّر طريقة توزيع وتسويق الأفلام الصيفية الضخمة بعد نجاحه سنة 1975."
+    },
+    {
+      "id": "cn-bool-112",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الأخوين وارنر هما مؤسسا استوديو «وارنر بروذرز»",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-113",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الكاتب توفيق الحكيم اشتهر بكتابة الأدب المسرحي المصري",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-114",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "فيلم الرسوم المتحركة اليابانية بيُطلق عليه مصطلح «أنمي»",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-115",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الفيلم الصامت بيعتمد على التمثيل الجسدي والموسيقى التصويرية من غير حوار منطوق",
+      "isTrue": true
+    },
+    {
+      "id": "cn-bool-116",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الممثل ويل سميث بدأ مشواره الفني كمغني راب قبل ما يدخل مجال التمثيل",
+      "isTrue": true,
+      "explanationAr": "اشتهر كمغني تحت اسم The Fresh Prince قبل ما يبقى نجم سينمائي كبير."
+    },
+    {
+      "id": "cn-num-31",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "فيلم «أفاتار» حقق كام مليار دولار إيرادات عالميًا تقريبًا؟",
+      "correctValue": 2.9,
+      "tolerance": 0.3,
+      "unitAr": "مليار دولار"
+    },
+    {
+      "id": "cn-num-32",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "إجمالي أرباح شباك التذاكر حول العالم لفيلم «تايتانيك» بعد كل إعادات العرض وصلت لكام مليار دولار؟",
+      "correctValue": 2.2,
+      "tolerance": 0.3,
+      "unitAr": "مليار دولار"
+    },
+    {
+      "id": "cn-num-33",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الممثلة ميريل ستريب عندها كام ترشيح أوسكار تقريبًا، وهو رقم قياسي؟",
+      "correctValue": 21,
+      "tolerance": 2
+    },
+    {
+      "id": "cn-num-34",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الفنان دينزل واشنطن فاز بكام جايزة أوسكار طول مشواره؟",
+      "correctValue": 2,
+      "tolerance": 0
+    },
+    {
+      "id": "cn-num-35",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "سلسلة أفلام هاري بوتر الأصلية مكوّنة من كام فيلم؟",
+      "correctValue": 8,
+      "tolerance": 0
+    },
+    {
+      "id": "cn-num-36",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "ثلاثية «سيد الخواتم» الأصلية مكوّنة من كام فيلم؟",
+      "correctValue": 3,
+      "tolerance": 0
+    },
+    {
+      "id": "cn-num-37",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "فيلم «قائمة شيندلر» مدته كام دقيقة تقريبًا؟",
+      "correctValue": 195,
+      "tolerance": 15,
+      "unitAr": "دقيقة"
+    },
+    {
+      "id": "cn-num-38",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "فيلم «المومياء» لشادي عبد السلام اتصور سنة 1969 بس اتعرض جماهيريًا لأول مرة سنة كام؟",
+      "correctValue": 1975,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-39",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "المخرج والت ديزني حصل على كام جايزة أوسكار طول مشواره (تنافسية وتكريمية)؟",
+      "correctValue": 26,
+      "tolerance": 2
+    },
+    {
+      "id": "cn-num-40",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "شركة نتفليكس اتأسست سنة كام؟",
+      "correctValue": 1997,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-41",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الجزء الأول من مسلسل «رأفت الهجان» اتعرض سنة كام؟",
+      "correctValue": 1988,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-42",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "فيلم «خلي بالك من زوزو» اتعرض سنة كام؟",
+      "correctValue": 1972,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-43",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "فيلم «الكرنك» اتعرض سنة كام؟",
+      "correctValue": 1975,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-44",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "فيلم «إحنا بتوع الأتوبيس» اتعرض سنة كام؟",
+      "correctValue": 1979,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-45",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "فيلم «شيء من الخوف» اتعرض سنة كام؟",
+      "correctValue": 1969,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-46",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "فيلم «أرض النفاق» اتعرض سنة كام؟",
+      "correctValue": 1968,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-47",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "فيلم «عمر المختار» (أسد الصحراء) اتعرض سنة كام؟",
+      "correctValue": 1981,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-48",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "فيلم «المصير» ليوسف شاهين اتعرض سنة كام؟",
+      "correctValue": 1997,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-49",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "فيلم «هي فوضى» آخر أفلام يوسف شاهين اتعرض سنة كام؟",
+      "correctValue": 2007,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-50",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "الفنانة شادية اعتزلت الفن سنة كام؟",
+      "correctValue": 1985,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-51",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "الفنانة ليلى مراد اعتزلت الفن سنة كام؟",
+      "correctValue": 1953,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-52",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "أول فيلم «أفاتار» اتعرض سنة كام؟",
+      "correctValue": 2009,
+      "tolerance": 0
+    },
+    {
+      "id": "cn-num-53",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "فيلم «أفاتار: طريق الماء» الجزء التاني اتعرض سنة كام؟",
+      "correctValue": 2022,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-54",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "أول جزء من سلسلة «حرب النجوم» اتعرض سنة كام؟",
+      "correctValue": 1977,
+      "tolerance": 0
+    },
+    {
+      "id": "cn-num-55",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "فيلم «الفك المفترس» (جوز) لستيفن سبيلبرج اتعرض سنة كام؟",
+      "correctValue": 1975,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-56",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "سلسلة أفلام «المنتقمون» (Avengers) الأساسية مكوّنة من كام فيلم؟",
+      "correctValue": 4,
+      "tolerance": 0
+    },
+    {
+      "id": "cn-num-57",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "سلسلة أفلام «توي ستوري» مكوّنة من كام فيلم لحد دلوقتي؟",
+      "correctValue": 4,
+      "tolerance": 0
+    },
+    {
+      "id": "cn-num-58",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "فيلم «الرجل الحديدي» (Iron Man) الأول اتعرض سنة كام؟",
+      "correctValue": 2008,
+      "tolerance": 0
+    },
+    {
+      "id": "cn-num-59",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "فيلم «المنتقمون: نهاية اللعبة» اتعرض سنة كام؟",
+      "correctValue": 2019,
+      "tolerance": 0
+    },
+    {
+      "id": "cn-num-60",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "فيلم «باراسايت» الكوري فاز بأوسكار أحسن فيلم سنة كام؟",
+      "correctValue": 2020,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-61",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "فيلم «الجوكر» بطولة واكين فينيكس اتعرض سنة كام؟",
+      "correctValue": 2019,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-62",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "ليوناردو دي كابريو فاز بأول أوسكار في مشواره سنة كام؟",
+      "correctValue": 2016,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-63",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "مسرحية «شاهد ما شافش حاجة» بطولة عادل إمام اتعرضت سنة كام؟",
+      "correctValue": 1976,
+      "tolerance": 1
+    },
+    {
+      "id": "cn-num-64",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "ستوديو جيبلي الياباني للرسوم المتحركة اتأسس في أنهي عقد تقريبًا؟",
+      "correctValue": 1985,
+      "tolerance": 2
+    },
+    {
+      "id": "cn-fill-28",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الفنانة شادية اعتزلت الفن وتأثرت روحيًا بالشيخ ____",
+      "answerAr": "الشعراوي",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-29",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "المخرج الياباني مؤسس استوديو جيبلي اسمه هاياو ____",
+      "answerAr": "ميازاكي",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-30",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "مبتكر سلسلة أفلام «حرب النجوم» اسمه جورج ____",
+      "answerAr": "لوكاس",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-31",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الممثل اللي جسّد شخصيتي هان سولو وإنديانا جونز اسمه هاريسون ____",
+      "answerAr": "فورد",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-32",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "صناعة السينما الهندية الناطقة بالهندية بيُطلق عليها اسم ____",
+      "answerAr": "بوليوود",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-33",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الجايزة السينمائية البريطانية الكبرى اسمها ____",
+      "answerAr": "بافتا",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-34",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الممثل اللي اشتهر بدور «جاك سبارو» في قراصنة الكاريبي اسمه جوني ____",
+      "answerAr": "ديب",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-35",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "المخرج الأمريكي المعروف بأسلوبه الغرايبي الغامق اسمه تيم ____",
+      "answerAr": "برتون",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-36",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "مؤلفة روايات هاري بوتر اسمها جي كي ____",
+      "answerAr": "رولينج",
+      "aliases": [
+        "رولنج"
+      ]
+    },
+    {
+      "id": "cn-fill-37",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الشاعر وكاتب السيناريو المصري صلاح ____",
+      "answerAr": "جاهين",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-38",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "المخرج المصري من رواد موجة الواقعية الجديدة اسمه خيري ____",
+      "answerAr": "بشارة",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-39",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "مخرج فيلم «الجوكر» سنة 2019 اسمه تود ____",
+      "answerAr": "فيليبس",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-40",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "صوت شخصية «دارث فيدر» الشرير أداه الممثل جيمس إيرل ____",
+      "answerAr": "جونز",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-41",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "فيلم «قائمة شيندلر» من إخراج ستيفن ____",
+      "answerAr": "سبيلبرج",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-42",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الاستوديو الأمريكي الشهير اللي أسسه الأخوة الأربعة الملقبين بلقب عائلتهم اسمه ____ بروذرز",
+      "answerAr": "وارنر",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-43",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "الفيلسوف اللي بيحكي فيلم «المصير» ليوسف شاهين قصته اسمه ابن ____",
+      "answerAr": "رشد",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-44",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الفنان فريد شوقي كان بيتلقب بملك ____",
+      "answerAr": "الترسو",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-45",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الممثل الأمريكي اللي بدأ مشواره مغني راب قبل التمثيل اسمه ويل ____",
+      "answerAr": "سميث",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-46",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "مسلسل «رأفت الهجان» بطولة الفنان محمود عبد ____",
+      "answerAr": "العزيز",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-47",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "فيلم «أرض النفاق» من بطولة الفنان فؤاد ____",
+      "answerAr": "المهندس",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-48",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "فيلم «خلي بالك من زوزو» من بطولة الفنانة سعاد ____",
+      "answerAr": "حسني",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-49",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "مخرج فيلم «العرّاب» اسمه فرانسيس فورد ____",
+      "answerAr": "كوبولا",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-50",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "مخرج فيلم The Dark Knight اسمه كريستوفر ____",
+      "answerAr": "نولان",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-51",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "مخرج فيلمي «تايتانيك» و«أفاتار» اسمه جيمس ____",
+      "answerAr": "كاميرون",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-52",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الممثلة صاحبة أكتر ترشيحات أوسكار في التاريخ اسمها ميريل ____",
+      "answerAr": "ستريب",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-53",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "سلسلة أفلام «روكي» بطولة الممثل سيلفستر ____",
+      "answerAr": "ستالون",
+      "aliases": []
+    },
+    {
+      "id": "cn-fill-54",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الرسوم المتحركة اليابانية بيُطلق عليها مصطلح ____",
+      "answerAr": "أنمي",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-25",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين مخرج فيلم «قائمة شيندلر»؟",
+      "answerAr": "ستيفن سبيلبرج",
+      "aliases": [
+        "سبيلبرج"
+      ]
+    },
+    {
+      "id": "cn-open-26",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين مبتكر سلسلة أفلام «حرب النجوم»؟",
+      "answerAr": "جورج لوكاس",
+      "aliases": [
+        "لوكاس"
+      ]
+    },
+    {
+      "id": "cn-open-27",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الممثل اللي جسّد شخصيتي هان سولو وإنديانا جونز؟",
+      "answerAr": "هاريسون فورد",
+      "aliases": [
+        "فورد"
+      ]
+    },
+    {
+      "id": "cn-open-28",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم صناعة السينما الهندية الناطقة بالهندية ومركزها مومباي؟",
+      "answerAr": "بوليوود",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-29",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين الممثل اللي اشتهر بدور «جاك سبارو» في قراصنة الكاريبي؟",
+      "answerAr": "جوني ديب",
+      "aliases": [
+        "ديب"
+      ]
+    },
+    {
+      "id": "cn-open-30",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين المخرج المعروف بأسلوبه الغرايبي الغامق صاحب فيلم «إدوارد يدوي المقص»؟",
+      "answerAr": "تيم برتون",
+      "aliases": [
+        "برتون"
+      ]
+    },
+    {
+      "id": "cn-open-31",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين مؤلفة روايات هاري بوتر؟",
+      "answerAr": "جي كي رولينج",
+      "aliases": [
+        "رولينج"
+      ]
+    },
+    {
+      "id": "cn-open-32",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الشاعر وكاتب السيناريو المصري اللي كتب أغاني كتير لعبد الحليم حافظ؟",
+      "answerAr": "صلاح جاهين",
+      "aliases": [
+        "جاهين"
+      ]
+    },
+    {
+      "id": "cn-open-33",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين مخرج فيلم «الجوكر» سنة 2019؟",
+      "answerAr": "تود فيليبس",
+      "aliases": [
+        "فيليبس"
+      ]
+    },
+    {
+      "id": "cn-open-34",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الممثل اللي أدّى صوت «دارث فيدر» في حرب النجوم؟",
+      "answerAr": "جيمس إيرل جونز",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-35",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم الفيلسوف اللي بيحكي فيلم «المصير» ليوسف شاهين قصته؟",
+      "answerAr": "ابن رشد",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-36",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الفنان المصري الملقّب بـ«ملك الترسو»؟",
+      "answerAr": "فريد شوقي",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-37",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الممثل الأمريكي اللي بدأ مشواره الفني كمغني راب قبل التمثيل؟",
+      "answerAr": "ويل سميث",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-38",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين بطل مسلسل «رأفت الهجان»؟",
+      "answerAr": "محمود عبد العزيز",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-39",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين مخرج فيلمي «تايتانيك» و«أفاتار»؟",
+      "answerAr": "جيمس كاميرون",
+      "aliases": [
+        "كاميرون"
+      ]
+    },
+    {
+      "id": "cn-open-40",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين مخرج فيلم The Dark Knight؟",
+      "answerAr": "كريستوفر نولان",
+      "aliases": [
+        "نولان"
+      ]
+    },
+    {
+      "id": "cn-open-41",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الممثلة صاحبة أكتر ترشيحات أوسكار في التاريخ؟",
+      "answerAr": "ميريل ستريب",
+      "aliases": [
+        "ستريب"
+      ]
+    },
+    {
+      "id": "cn-open-42",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين بطل سلسلة أفلام «روكي»؟",
+      "answerAr": "سيلفستر ستالون",
+      "aliases": [
+        "ستالون"
+      ]
+    },
+    {
+      "id": "cn-open-43",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "مين المخرج المصري اللي فيلم «المومياء» هو فيلمه الروائي الوحيد؟",
+      "answerAr": "شادي عبد السلام",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-44",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين المخرج المصري اللي شارك يوسف شاهين إخراج فيلمه الأخير «هي فوضى»؟",
+      "answerAr": "خالد يوسف",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-45",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الفنانة اللي اعتزلت الفن بعد ما غنت أغنية دينية وتأثرت بالشيخ الشعراوي؟",
+      "answerAr": "شادية",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-46",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الفنانة اللي اعتزلت الفن فجأة سنة 1953 في قمة نجاحها؟",
+      "answerAr": "ليلى مراد",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-47",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين مؤسس استوديو جيبلي الياباني للرسوم المتحركة؟",
+      "answerAr": "هاياو ميازاكي",
+      "aliases": [
+        "ميازاكي"
+      ]
+    },
+    {
+      "id": "cn-open-48",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم أول فيلم «بلوكباستر صيفي» في تاريخ هوليوود، من إخراج ستيفن سبيلبرج؟",
+      "answerAr": "الفك المفترس",
+      "aliases": [
+        "جوز",
+        "Jaws"
+      ]
+    },
+    {
+      "id": "cn-open-49",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الممثل الأمريكي اللي فاز بجايزتين أوسكار، منهم واحدة عن فيلم Training Day؟",
+      "answerAr": "دينزل واشنطن",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-50",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم الفيلم الكوري اللي فاز بجايزة أوسكار أحسن فيلم سنة 2020؟",
+      "answerAr": "باراسايت",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-51",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين مؤسس شركة نتفليكس؟",
+      "answerAr": "ريد هاستينجز",
+      "aliases": [
+        "هاستينجز"
+      ]
+    },
+    {
+      "id": "cn-open-52",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين مخرج فيلم «عمر المختار» (أسد الصحراء)؟",
+      "answerAr": "مصطفى العقاد",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-53",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين بطل فيلم «أرض النفاق»؟",
+      "answerAr": "فؤاد المهندس",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-54",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه الاسم الرسمي لتمثال جايزة الأوسكار غير لقبه الشهير؟",
+      "answerAr": "جايزة الأكاديمية للاستحقاق",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-55",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "مصطلح «بلوكباستر» أصله من نوع سلاح استُخدم في الحرب العالمية الثانية، إيه هو؟",
+      "answerAr": "قنبلة",
+      "aliases": [
+        "قنبلة ضخمة",
+        "قنبلة تدمير أحياء"
+      ]
+    },
+    {
+      "id": "cn-open-56",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الممثل اللي مثّل شخصية الجوكر وفاز بأوسكار أحسن ممثل عنها سنة 2020؟",
+      "answerAr": "واكين فينيكس",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-57",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه المصطلح الياباني اللي بيُطلق على الرسوم المتحركة اليابانية؟",
+      "answerAr": "أنمي",
+      "aliases": []
+    },
+    {
+      "id": "cn-open-58",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين مخرج فيلم «خلي بالك من زوزو»؟",
+      "answerAr": "حسن الإمام",
+      "aliases": []
+    },
+    {
+      "id": "cn-prog-25",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مخرج ومنتج أمريكي",
+        "ابتكرت كون سينمائي ضخم فيه فرسان وقوة غامضة",
+        "أشهر أعمالي سلسلة أفلام حرب النجوم"
+      ],
+      "answerAr": "جورج لوكاس",
+      "aliases": [
+        "لوكاس"
+      ]
+    },
+    {
+      "id": "cn-prog-26",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا ممثل أمريكي مشهور",
+        "مثّلت شخصية مغامر بيبحث عن آثار قديمة بسوطه",
+        "مثّلت كمان دور هان سولو في حرب النجوم"
+      ],
+      "answerAr": "هاريسون فورد",
+      "aliases": [
+        "فورد"
+      ]
+    },
+    {
+      "id": "cn-prog-27",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مش شخص، أنا اسم صناعة كاملة",
+        "مركزي في مدينة هندية اسمها مومباي",
+        "بنتج أفلام غنائية استعراضية بالهندية"
+      ],
+      "answerAr": "بوليوود",
+      "aliases": []
+    },
+    {
+      "id": "cn-prog-28",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا ممثل أمريكي",
+        "اشتهرت بشخصيات غريبة الأطوار في السينما",
+        "لعبت دور القرصان جاك سبارو"
+      ],
+      "answerAr": "جوني ديب",
+      "aliases": [
+        "ديب"
+      ]
+    },
+    {
+      "id": "cn-prog-29",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مخرج أمريكي",
+        "أسلوبي غرايبي وغامق ومليان خيال",
+        "أخرجت فيلم إدوارد يدوي المقص"
+      ],
+      "answerAr": "تيم برتون",
+      "aliases": [
+        "برتون"
+      ]
+    },
+    {
+      "id": "cn-prog-30",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا كاتبة بريطانية",
+        "خيالي خلق عالم كامل من السحر والمدارس",
+        "كتبت سلسلة روايات هاري بوتر"
+      ],
+      "answerAr": "جي كي رولينج",
+      "aliases": [
+        "رولينج"
+      ]
+    },
+    {
+      "id": "cn-prog-31",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا شاعر وكاتب سيناريو مصري",
+        "كتبت أغاني كتير لعبد الحليم حافظ",
+        "من أشهر شعراء العامية المصرية"
+      ],
+      "answerAr": "صلاح جاهين",
+      "aliases": [
+        "جاهين"
+      ]
+    },
+    {
+      "id": "cn-prog-32",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا مخرج مصري",
+        "من رواد موجة سينمائية جديدة في الثمانينات",
+        "أفلامي بتتميز بواقعيتها الاجتماعية"
+      ],
+      "answerAr": "خيري بشارة",
+      "aliases": [
+        "بشارة"
+      ]
+    },
+    {
+      "id": "cn-prog-33",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مخرج أمريكي",
+        "أخرجت فيلم درامي نفسي عن شخصية شريرة شهيرة",
+        "فيلمي حقق أوسكار لبطله واكين فينيكس"
+      ],
+      "answerAr": "تود فيليبس",
+      "aliases": [
+        "فيليبس"
+      ]
+    },
+    {
+      "id": "cn-prog-34",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا ممثل أمريكي بصوت عميق مميز",
+        "صوتي بس اللي سمعتوه من غير ما تشوفوا وشي في فيلم شهير",
+        "أديت صوت دارث فيدر"
+      ],
+      "answerAr": "جيمس إيرل جونز",
+      "aliases": []
+    },
+    {
+      "id": "cn-prog-35",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا مخرج أمريكي شهير جدًا",
+        "أخرجت أفلام عن ديناصورات وحروب عالمية",
+        "أخرجت قائمة شيندلر والفك المفترس"
+      ],
+      "answerAr": "ستيفن سبيلبرج",
+      "aliases": [
+        "سبيلبرج"
+      ]
+    },
+    {
+      "id": "cn-prog-36",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا فيلسوف وقاضي أندلسي قديم",
+        "أفكاري سببت جدل واتحرقت كتبي",
+        "قصتي اتحولت لفيلم مصري اسمه المصير"
+      ],
+      "answerAr": "ابن رشد",
+      "aliases": []
+    },
+    {
+      "id": "cn-prog-37",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا ممثل مصري",
+        "لقبي مرتبط بجمهور الصالة الشعبية اللي بتحبني",
+        "اتلقبت بملك الترسو"
+      ],
+      "answerAr": "فريد شوقي",
+      "aliases": []
+    },
+    {
+      "id": "cn-prog-38",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا ممثل أمريكي",
+        "بدأت مغني راب قبل التمثيل",
+        "بطلت أفلام أكشن وكوميدي كتير في هوليوود"
+      ],
+      "answerAr": "ويل سميث",
+      "aliases": []
+    },
+    {
+      "id": "cn-prog-39",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا ممثل مصري",
+        "بطلت مسلسل عن جاسوس مصري شهير اتزرع في إسرائيل",
+        "مثّلت في مسلسل رأفت الهجان"
+      ],
+      "answerAr": "محمود عبد العزيز",
+      "aliases": []
+    },
+    {
+      "id": "cn-prog-40",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا مخرج كندي",
+        "أفلامي من أعلى الأفلام إيرادًا في تاريخ السينما",
+        "أخرجت تايتانيك وأفاتار"
+      ],
+      "answerAr": "جيمس كاميرون",
+      "aliases": [
+        "كاميرون"
+      ]
+    },
+    {
+      "id": "cn-prog-41",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا ممثلة أمريكية",
+        "عندي رقم قياسي في عدد ترشيحات جايزة كبيرة جدًا",
+        "أكتر ممثلة اترشحت للأوسكار في التاريخ"
+      ],
+      "answerAr": "ميريل ستريب",
+      "aliases": [
+        "ستريب"
+      ]
+    },
+    {
+      "id": "cn-prog-42",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا ممثل أمريكي",
+        "اشتهرت بأدوار العضلات والأكشن",
+        "بطلت سلسلة أفلام روكي"
+      ],
+      "answerAr": "سيلفستر ستالون",
+      "aliases": [
+        "ستالون"
+      ]
+    },
+    {
+      "id": "cn-prog-43",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا مش شخص، أنا مصطلح فني",
+        "بيُطلق عليّ في اليابان تحديدًا",
+        "بستخدمني لوصف الرسوم المتحركة اليابانية"
+      ],
+      "answerAr": "أنمي",
+      "aliases": []
+    },
+    {
+      "id": "cn-prog-44",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا مخرج مصري",
+        "عملت فيلم روائي طويل واحد بس طول حياتي",
+        "فيلمي الوحيد اسمه المومياء"
+      ],
+      "answerAr": "شادي عبد السلام",
+      "aliases": []
+    },
+    {
+      "id": "cn-prog-45",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مخرج مصري",
+        "كنت تلميذ لمخرج كبير جدًا في السينما المصرية",
+        "شاركت أستاذي إخراج آخر أفلامه هي فوضى"
+      ],
+      "answerAr": "خالد يوسف",
+      "aliases": []
+    },
+    {
+      "id": "cn-prog-46",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا فنانة مصرية",
+        "غنيت ومثّلت لعقود طويلة",
+        "اعتزلت الفن بعد ما غنيت أغنية دينية"
+      ],
+      "answerAr": "شادية",
+      "aliases": []
+    },
+    {
+      "id": "cn-prog-47",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا فنانة مصرية",
+        "اعتزلت الفن فجأة في قمة نجاحي",
+        "اعتزلت سنة 1953 بعد إنجاب ابني التاني"
+      ],
+      "answerAr": "ليلى مراد",
+      "aliases": []
+    },
+    {
+      "id": "cn-prog-48",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مش شخص، أنا استوديو أمريكي شهير",
+        "أسسني أربعة إخوة من عيلة واحدة",
+        "من أعرق استوديوهات هوليوود التاريخية"
+      ],
+      "answerAr": "وارنر بروذرز",
+      "aliases": [
+        "وارنر"
+      ]
+    },
+    {
+      "id": "cn-mcq-116",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «تايتانيك» فاز بكام جايزة أوسكار سنة 1998؟",
+      "options": [
+        "7 جوايز",
+        "9 جوايز",
+        "11 جايزة",
+        "14 جايزة"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "فاز بـ11 جايزة أوسكار، منهم أفضل فيلم وأفضل إخراج لجيمس كاميرون."
+    },
+    {
+      "id": "cn-mcq-117",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «العرّاب» (1972) مأخوذ عن رواية لمين؟",
+      "options": [
+        "ماريو بوزو",
+        "إرنست همنجواي",
+        "مارك توين",
+        "ستيفن كينج"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفيلم مقتبس من رواية ماريو بوزو بنفس الاسم."
+    },
+    {
+      "id": "cn-mcq-118",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين بطل فيلم «بالب فيكشن» (1994) اللي رجع مشواره الفني للنجومية بعد الفيلم ده؟",
+      "options": [
+        "بروس ويليس",
+        "جون ترافولتا",
+        "صامويل جاكسون",
+        "تيم روث"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الفيلم أعاد جون ترافولتا لقمة النجومية بعد فترة تراجع في مشواره."
+    },
+    {
+      "id": "cn-mcq-119",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مخرج فيلم «الخلاص من شاوشانك» اللي على رأس قايمة IMDb؟",
+      "options": [
+        "فرانك دارابونت",
+        "ديفيد فينشر",
+        "رون هاورد",
+        "روب راينر"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفيلم من إخراج فرانك دارابونت وعرض سنة 1994."
+    },
+    {
+      "id": "cn-mcq-120",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «إنسبشن» (Inception) بطولة ليوناردو دي كابريو بيدور حول إيه؟",
+      "options": [
+        "سرقة أفكار من عقل البشر أثناء الحلم",
+        "رحلة عبر الزمن",
+        "غزو فضائي للأرض",
+        "جريمة قتل غامضة"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفيلم من إخراج كريستوفر نولان وبيدور حول سرقة وزرع أفكار في العقل الباطن."
+    },
+    {
+      "id": "cn-mcq-121",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «إبراهيم الأبيض» المصري (2009) من بطولة مين؟",
+      "options": [
+        "أحمد السقا",
+        "كريم عبد العزيز",
+        "عمرو سعد",
+        "هاني سلامة"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفيلم من إخراج مروان حامد وبطولة أحمد السقا ومحمود عبد العزيز."
+    },
+    {
+      "id": "cn-mcq-122",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مسلسل «الأسطورة» المصري (2016) من بطولة مين؟",
+      "options": [
+        "محمد رمضان",
+        "أحمد عز",
+        "كريم عبد العزيز",
+        "خالد النبوي"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "المسلسل عرض في رمضان 2016 وقام فيه محمد رمضان بدور مزدوج."
+    },
+    {
+      "id": "cn-mcq-123",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «اللمبي» المصري (2002) من بطولة مين؟",
+      "options": [
+        "محمد هنيدي",
+        "محمد سعد",
+        "أحمد حلمي",
+        "أحمد آدم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الفيلم من إخراج وائل إحسان وحقق نجاح جماهيري ضخم."
+    },
+    {
+      "id": "cn-mcq-124",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مخرج فيلم «إبراهيم الأبيض»؟",
+      "options": [
+        "مروان حامد",
+        "شريف عرفة",
+        "خالد يوسف",
+        "أحمد البدري"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "مروان حامد أخرج الفيلم سنة 2009."
+    },
+    {
+      "id": "cn-mcq-125",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين مؤلف رواية «العرّاب» اللي اتحول لفيلم؟",
+      "options": [
+        "ماريو بوزو",
+        "دان براون",
+        "جون جريشام",
+        "توم كلانسي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-126",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «الجوكر» (2019) حقق كام ترشيح أوسكار؟",
+      "options": [
+        "5 ترشيحات",
+        "8 ترشيحات",
+        "11 ترشيح",
+        "15 ترشيح"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "الفيلم حقق 11 ترشيح أوسكار، وفاز باتنين منهم."
+    },
+    {
+      "id": "cn-mcq-127",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «باراسايت» الكوري بيدور حول إيه بشكل عام؟",
+      "options": [
+        "عيلة فقيرة بتتسلل لخدمة عيلة غنية",
+        "قصة حب في الحرب",
+        "جريمة قتل غامضة",
+        "رحلة فضائية"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفيلم بيتناول الفوارق الطبقية بين عيلة فقيرة وعيلة غنية بأسلوب ساخر ومأساوي."
+    },
+    {
+      "id": "cn-mcq-128",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مخرج فيلم «باراسايت» الكوري الحاصل على أوسكار أحسن فيلم؟",
+      "options": [
+        "بونج جون هو",
+        "بارك تشان ووك",
+        "كيم كي دوك",
+        "لي تشانج دونج"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-129",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين مخرج فيلم «الجميلة النائمة» (1959) الكرتوني من ديزني؟",
+      "options": [
+        "كليد جيرونيمي",
+        "ولفجانج ريذرمان",
+        "هاميلتون لاسك",
+        "بن شاربستين"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-130",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الممثل اللي جسّد شخصية إنديانا جونز في سلسلة الأفلام؟",
+      "options": [
+        "توم كروز",
+        "هاريسون فورد",
+        "مات ديمون",
+        "براد بيت"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "cn-mcq-131",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "صناعة السينما الهندية الناطقة بالهندية بيُطلق عليها اسم إيه؟",
+      "options": [
+        "تولوود",
+        "بوليوود",
+        "كوليوود",
+        "لوليوود"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "cn-mcq-132",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الممثل الأمريكي اللي اشتهر بدور القرصان «جاك سبارو»؟",
+      "options": [
+        "أورلاندو بلوم",
+        "جوني ديب",
+        "جيرارد باتلر",
+        "كريس هيمسورث"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "cn-mcq-133",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين المخرج المعروف بأسلوبه الغرايبي الغامق صاحب فيلم «إدوارد يدوي المقص»؟",
+      "options": [
+        "تيم برتون",
+        "ديفيد لينش",
+        "ويس أندرسون",
+        "جيلرمو ديل تورو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-134",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مؤلفة سلسلة روايات «هاري بوتر» العالمية؟",
+      "options": [
+        "جي كي رولينج",
+        "سوزان كولينز",
+        "ستيفني ماير",
+        "جين أوستن"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-135",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الشاعر المصري صلاح جاهين اشتهر بكتابة إيه بشكل أساسي؟",
+      "options": [
+        "الأغاني والسيناريوهات",
+        "الروايات البوليسية",
+        "المسرحيات التراجيدية",
+        "كتب الفلسفة"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "كتب أغاني كتير لعبد الحليم حافظ وسيناريوهات أفلام مصرية مهمة."
+    },
+    {
+      "id": "cn-mcq-136",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "المخرج المصري خيري بشارة بيُعتبر من رواد أنهي موجة في السينما المصرية؟",
+      "options": [
+        "الواقعية الجديدة في الثمانينات",
+        "السينما الصامتة",
+        "أفلام الاستعراض الغنائي",
+        "أفلام الرعب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-137",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مخرج فيلم «الجوكر» (2019)؟",
+      "options": [
+        "تود فيليبس",
+        "زاك سنايدر",
+        "مات ريفز",
+        "جيمس وان"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-138",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الممثل اللي أدّى صوت شخصية «دارث فيدر» في سلسلة حرب النجوم؟",
+      "options": [
+        "مورجان فريمان",
+        "صامويل جاكسون",
+        "جيمس إيرل جونز",
+        "دنزل واشنطن"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "cn-mcq-139",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "فيلم «المصير» ليوسف شاهين بيحكي قصة فيلسوف أندلسي قديم، مين هو؟",
+      "options": [
+        "ابن رشد",
+        "ابن سينا",
+        "ابن خلدون",
+        "الفارابي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-140",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الفنان المصري فريد شوقي اتلقب بإيه بسبب حب جمهور الصالة الشعبية ليه؟",
+      "options": [
+        "ملك الترسو",
+        "أمير الشاشة",
+        "فارس السينما",
+        "نجم الجيل"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-141",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «الناظر» المصري (2000) من بطولة مين؟",
+      "options": [
+        "علاء ولي الدين",
+        "محمد هنيدي",
+        "أحمد حلمي",
+        "كريم عبد العزيز"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفيلم من إخراج شريف عرفة وجسّد فيه علاء ولي الدين 6 شخصيات مختلفة."
+    },
+    {
+      "id": "cn-mcq-142",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مخرج فيلم «الناظر» (2000)؟",
+      "options": [
+        "شريف عرفة",
+        "وائل إحسان",
+        "مروان حامد",
+        "خالد يوسف"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-143",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «عسل أسود» المصري (2010) من بطولة مين؟",
+      "options": [
+        "أحمد حلمي",
+        "كريم عبد العزيز",
+        "عمرو سعد",
+        "هاني رمزي"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفيلم بيحكي قصة مصري عاش في أمريكا وبيرجع لبلده."
+    },
+    {
+      "id": "cn-mcq-144",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «عمارة يعقوبيان» (2006) بيتناول قصص كام شخصية متوازية بيسكنوا في نفس العمارة تقريبًا؟",
+      "options": [
+        "عدة شخصيات من طبقات اجتماعية مختلفة",
+        "شخصية واحدة بس",
+        "أسرة واحدة فقط",
+        "زوجين بس"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفيلم بيتابع مصائر متشابكة لشخصيات من طبقات اجتماعية متباينة ساكنة في نفس العمارة."
+    },
+    {
+      "id": "cn-mcq-145",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «الكيت كات» (1991) مقتبس من رواية «مالك الحزين» لمين؟",
+      "options": [
+        "إبراهيم أصلان",
+        "نجيب محفوظ",
+        "يوسف إدريس",
+        "يوسف السباعي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-146",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مخرج فيلم «الكيت كات» بطولة محمود عبد العزيز؟",
+      "options": [
+        "داود عبد السيد",
+        "عاطف الطيب",
+        "محمد خان",
+        "رأفت الميهي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-147",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «المنتقمون» (The Avengers) الأول سنة 2012 من إخراج مين؟",
+      "options": [
+        "جوس ويدون",
+        "روس جونسون",
+        "آنتوني روسو",
+        "جون فافرو"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفيلم حقق أكتر من 1.5 مليار دولار عالميًا."
+    },
+    {
+      "id": "cn-mcq-148",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «بلاك بانثر» (2018) من إخراج مين؟",
+      "options": [
+        "ريان كوجلر",
+        "تايكا وايتيتي",
+        "جيمس جان",
+        "جون واتس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-149",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الممثل اللي جسّد شخصية «بلاك بانثر» في فيلم 2018؟",
+      "options": [
+        "تشادويك بوزمان",
+        "مايكل بي جوردان",
+        "ونستون دوك",
+        "دانيال كالويا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-150",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «فروزن» (2013) من إخراج مين؟",
+      "options": [
+        "كريس باك وجينيفر لي",
+        "جون لاسيتر وحده",
+        "بيت دوكتر",
+        "بايرون هاورد"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "جينيفر لي كانت أول مخرجة أنثى لفيلم ديزني رسوم متحركة طويل."
+    },
+    {
+      "id": "cn-mcq-151",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «توي ستوري» (1995) أول فيلم ديزني بيكسار طويل، من إخراج مين؟",
+      "options": [
+        "جون لاسيتر",
+        "بيت دوكتر",
+        "براد بيرد",
+        "أندرو ستانتون"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-152",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أي جزء من سلسلة «توي ستوري» أول فيلم متحرك بالكامل بالكمبيوتر (CGI) في التاريخ؟",
+      "options": [
+        "الجزء الأول",
+        "الجزء الثاني",
+        "الجزء الثالث",
+        "الجزء الرابع"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-153",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الممثل اللي أدّى صوت «وودي» في سلسلة توي ستوري؟",
+      "options": [
+        "توم هانكس",
+        "تيم ألين",
+        "بيلي كريستال",
+        "روبن ويليامز"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-154",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الممثل اللي أدّى صوت «باز لايتير» في سلسلة توي ستوري؟",
+      "options": [
+        "تيم ألين",
+        "توم هانكس",
+        "إدي مورفي",
+        "مايك مايرز"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-155",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مسلسل «رأفت الهجان» بيحكي قصة جاسوس مصري حقيقي اسمه إيه؟",
+      "options": [
+        "رفعت علي سليمان الجمال",
+        "أحمد فؤاد نجم",
+        "محمد إبراهيم كامل",
+        "اسم مختلف تمامًا"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الاسم الحقيقي للجاسوس اللي اتبنى عليه المسلسل هو رفعت الجمال."
+    },
+    {
+      "id": "cn-mcq-156",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين كاتب سيناريو فيلم «عمارة يعقوبيان»؟",
+      "options": [
+        "وحيد حامد",
+        "بشير الديك",
+        "ماهر عواد",
+        "هاني فوزي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-157",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «إبراهيم الأبيض» بيدور في بيئة إيه بالتحديد؟",
+      "options": [
+        "العشوائيات والبلطجة",
+        "الريف المصري",
+        "الجامعة",
+        "الطبقة الأرستقراطية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-158",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «اللمبي» (2002) كان أول فيلم إخراج لمين؟",
+      "options": [
+        "وائل إحسان",
+        "شريف عرفة",
+        "سعد هنداوي",
+        "أحمد البدري"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-159",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «عسل أسود» بيحكي قصة مصري هاجر لأمريكا وهو عنده كام سنة؟",
+      "options": [
+        "10 سنين",
+        "5 سنين",
+        "16 سنة",
+        "20 سنة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-160",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "رواية «عمارة يعقوبيان» اتترجمت لعدد كبير من اللغات الأجنبية بعد نجاحها، صح ولا غلط كسؤال اختياري؟",
+      "options": [
+        "اتترجمت لأكتر من 30 لغة",
+        "اتترجمت للإنجليزية بس",
+        "مترجمتش خالص",
+        "اتترجمت للعربية الفصحى بس"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الرواية حققت نجاح عالمي واسع واتترجمت للغات كتير حول العالم."
+    },
+    {
+      "id": "cn-mcq-161",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "فيلم ديزني «الأسد الملك» بيقول بعض النقاد إن قصته اتلهمت جزئيًا من مسرحية شكسبيرية، إيه هي؟",
+      "options": [
+        "هاملت",
+        "ماكبث",
+        "الملك لير",
+        "روميو وجولييت"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "فيه تشابه ملحوظ بين خط أحداث سيمبا وقصة هاملت الكلاسيكية."
+    },
+    {
+      "id": "cn-mcq-162",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "في فيلم «فروزن»، إيه القوة الخارقة اللي عند الأميرة إلسا؟",
+      "options": [
+        "التحكم في الجليد والثلج",
+        "الطيران",
+        "قراءة العقول",
+        "السرعة الفائقة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-163",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مسلسل «ليالي الحلمية» من تأليف أسامة أنور عكاشة، وبيدور حول إيه؟",
+      "options": [
+        "تاريخ حارة مصرية عبر أجيال متعاقبة",
+        "قصة حب في الجامعة",
+        "جريمة قتل غامضة",
+        "رحلة استكشافية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-164",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مخرج مسلسل «رأفت الهجان»؟",
+      "options": [
+        "يحيى العلمي",
+        "إسماعيل عبد الحافظ",
+        "محمد فاضل",
+        "جمال عبد الحميد"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-165",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الفنان محمود عبد العزيز فاز بجايزة أفضل ممثل عن فيلم «الكيت كات» سنة 1991، متفوقًا على ممثلين كبار عُرضت أفلامهم في نفس السنة، مين هما؟",
+      "options": [
+        "نور الشريف وأحمد زكي",
+        "عادل إمام ونور الشريف",
+        "يحيى الفخراني وأحمد زكي",
+        "فاروق الفيشاوي وعادل إمام"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-166",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «الجزيرة» (2007) بطولة أحمد السقا مستوحى من قصة حقيقية عن إيه؟",
+      "options": [
+        "تاجر مخدرات وأسلحة متحالف مع الحكومة",
+        "ضابط شرطة نزيه",
+        "رحلة استكشافية",
+        "حرب تحرير"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفيلم من إخراج شريف عرفة ومستوحى من قصة تاجر مخدرات أسيوطي حقيقي."
+    },
+    {
+      "id": "cn-mcq-167",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «الجزيرة» (2007) من إخراج مين؟",
+      "options": [
+        "شريف عرفة",
+        "مروان حامد",
+        "خالد يوسف",
+        "محمد ياسين"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-168",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «تيمور وشفيقة» (2007) من بطولة أحمد السقا ومين؟",
+      "options": [
+        "منى زكي",
+        "هند صبري",
+        "منة شلبي",
+        "ياسمين عبد العزيز"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-169",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «واحد من الناس» (2006) من بطولة مين؟",
+      "options": [
+        "كريم عبد العزيز",
+        "أحمد السقا",
+        "عمرو سعد",
+        "هاني سلامة"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفيلم من إخراج أحمد نادر جلال."
+    },
+    {
+      "id": "cn-mcq-170",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «واحد من الناس» بيحكي قصة راجل بسيط بيشتغل إيه؟",
+      "options": [
+        "حارس أمن في جراج سيارات",
+        "طبيب",
+        "محامي",
+        "مدرس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-171",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم الرعب الأمريكي «Get Out» (2017) من إخراج مين؟",
+      "options": [
+        "جوردان بيل",
+        "جيمس وان",
+        "آري أستر",
+        "ديفيد جوير"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "بقى أول ممثل أمريكي من أصل أفريقي يفوز بأوسكار أفضل سيناريو أصلي عن الفيلم ده."
+    },
+    {
+      "id": "cn-mcq-172",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «Everything Everywhere All at Once» فاز بأوسكار أحسن فيلم سنة كام؟",
+      "options": [
+        "2023",
+        "2020",
+        "2021",
+        "2019"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "فاز بـ7 جوايز أوسكار من أصل 11 ترشيح."
+    },
+    {
+      "id": "cn-mcq-173",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين بطلة فيلم «Everything Everywhere All at Once» اللي فازت بأوسكار أحسن ممثلة عنه؟",
+      "options": [
+        "ميشيل يوه",
+        "سانديرا هوانج",
+        "ستيفاني سو",
+        "لوسي ليو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-174",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «أوبنهايمر» (2023) بيحكي قصة مين؟",
+      "options": [
+        "العالم اللي طوّر القنبلة الذرية",
+        "رئيس أمريكي",
+        "رائد فضاء",
+        "مخترع الكهرباء"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفيلم من إخراج كريستوفر نولان وبيحكي قصة روبرت أوبنهايمر."
+    },
+    {
+      "id": "cn-mcq-175",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مثّل شخصية روبرت أوبنهايمر وفاز بأوسكار أحسن ممثل عنها؟",
+      "options": [
+        "كيليان مورفي",
+        "روبرت داوني جونيور",
+        "مات ديمون",
+        "جوش هارتنيت"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-176",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «باربي» (2023) من إخراج مين؟",
+      "options": [
+        "جريتا جرويج",
+        "سوفيا كوبولا",
+        "باتي جينكينز",
+        "أوليفيا وايلد"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفيلم بقى أعلى فيلم إيرادًا لمخرجة أنثى منفردة في التاريخ."
+    },
+    {
+      "id": "cn-mcq-177",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين بطلة فيلم «باربي» (2023)؟",
+      "options": [
+        "مارجو روبي",
+        "إيما ستون",
+        "آنا كيندريك",
+        "سكارليت جوهانسون"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-178",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مثّل شخصية «كين» في فيلم باربي (2023)؟",
+      "options": [
+        "ريان جوسلينج",
+        "رايان رينولدز",
+        "كريس إيفانز",
+        "زاك إيفرون"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-179",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «أوبنهايمر» حصل على كام ترشيح أوسكار سنة 2024؟",
+      "options": [
+        "13 ترشيح",
+        "8 ترشيحات",
+        "5 ترشيحات",
+        "20 ترشيح"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "كان أكتر فيلم ترشيحات في السنة دي وفاز بـ7 جوايز من ضمنها أفضل فيلم."
+    },
+    {
+      "id": "cn-mcq-180",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مسلسل «ليالي الحلمية» بيتناول تاريخ حارة مصرية عبر أجيال، امتد عرضه على كام جزء؟",
+      "options": [
+        "5 أجزاء",
+        "2 جزء",
+        "3 أجزاء",
+        "7 أجزاء"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-181",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «إبراهيم الأبيض» من إنتاج مين؟",
+      "options": [
+        "عماد الدين أديب",
+        "السبكي",
+        "أفلام مصر العالمية",
+        "فيلم كلينك"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-182",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «عمارة يعقوبيان» من إنتاج مين؟",
+      "options": [
+        "عماد الدين أديب",
+        "هشام عبد الخالق",
+        "وليد منصور",
+        "محمد حسن رمزي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-183",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «الجزيرة» من تأليف مين؟",
+      "options": [
+        "محمد دياب",
+        "بلال فضل",
+        "وحيد حامد",
+        "تامر حبيب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-184",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «واحد من الناس» من تأليف مين؟",
+      "options": [
+        "بلال فضل",
+        "محمد دياب",
+        "أحمد عبد الله",
+        "مروان حامد"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-185",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «تيمور وشفيقة» من إخراج مين؟",
+      "options": [
+        "خالد مرعي",
+        "شريف عرفة",
+        "أحمد نادر جلال",
+        "سعد هنداوي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-186",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "في فيلم «تيمور وشفيقة»، شفيقة بتوصل لأنهي منصب مهم؟",
+      "options": [
+        "وزيرة لشئون البيئة",
+        "نائبة برلمان",
+        "محافظة",
+        "سفيرة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-187",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مؤلف مسرحية «مدرسة المشاغبين»؟",
+      "options": [
+        "علي سالم",
+        "صلاح جاهين",
+        "لينين الرملي",
+        "يسري الجندي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-188",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مخرج مسرحية «مدرسة المشاغبين» الأصلية سنة 1971؟",
+      "options": [
+        "جلال الشرقاوي",
+        "هاني مطاوع",
+        "فهمي الخولي",
+        "حسن عبد السلام"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-189",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «الحفيد» (1974) من كلاسيكيات السينما المصرية، من بطولة مين بشكل أساسي؟",
+      "options": [
+        "نور الشريف ومحمود عبد العزيز",
+        "أحمد زكي وعادل إمام",
+        "فريد شوقي ورشدي أباظة",
+        "يوسف وهبي وسراج منير"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-190",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أحمد زكي كان بيتلقب بـ«النجم الأسمر» في السينما المصرية، السبب إيه؟",
+      "options": [
+        "بسبب لون بشرته المميز",
+        "بسبب لقب عائلته",
+        "بسبب أول دور مثله",
+        "بسبب اسم أول فيلم شاركه"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-191",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «حسن ومرقص» (2008) من بطولة عادل إمام ومين؟",
+      "options": [
+        "عمر الشريف",
+        "نور الشريف",
+        "محمود عبد العزيز",
+        "يحيى الفخراني"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفيلم بيتناول قضية الوحدة الوطنية بين المسلمين والمسيحيين."
+    },
+    {
+      "id": "cn-mcq-192",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «حسن ومرقص» من إخراج مين؟",
+      "options": [
+        "رامي إمام",
+        "مروان حامد",
+        "شريف عرفة",
+        "خالد يوسف"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-193",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «بحب السيما» (2004) من بطولة مين؟",
+      "options": [
+        "ليلى علوي ومحمود حميدة",
+        "يسرا ونور الشريف",
+        "هند صبري وأحمد السقا",
+        "منة شلبي وكريم عبد العزيز"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-194",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «بحب السيما» من إخراج مين؟",
+      "options": [
+        "أسامة فوزي",
+        "داود عبد السيد",
+        "يسري نصر الله",
+        "خيري بشارة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-195",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «زوجة رجل مهم» (1988) من بطولة أحمد زكي ومين؟",
+      "options": [
+        "ميرفت أمين",
+        "يسرا",
+        "ليلى علوي",
+        "نبيلة عبيد"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفيلم من إخراج محمد خان."
+    },
+    {
+      "id": "cn-mcq-196",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «زوجة رجل مهم» بيحكي قصة ضابط في المباحث يتحول شخصيته إزاي؟",
+      "options": [
+        "من طيب لمتسلط وغير سوي",
+        "من فقير لغني",
+        "من عازب لمتزوج بس",
+        "من مدني لعسكري"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-197",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مخرج فيلم «زوجة رجل مهم»؟",
+      "options": [
+        "محمد خان",
+        "عاطف الطيب",
+        "رأفت الميهي",
+        "داود عبد السيد"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-198",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «سبايدرمان: لا طريق للعودة» (2021) من إخراج مين؟",
+      "options": [
+        "جون واتس",
+        "سام رايمي",
+        "مارك ويب",
+        "جاريد بوش"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفيلم جمع بين 3 ممثلين مختلفين لعبوا سبايدرمان في أفلام سابقة."
+    },
+    {
+      "id": "cn-mcq-199",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «سبايدرمان: لا طريق للعودة» فيه ظهور لتوبي ماغواير وأندرو جارفيلد مع توم هولاند، ليه بالتحديد؟",
+      "options": [
+        "الفيلم جمع نسخ مختلفة من الشخصية عبر أكوان متوازية",
+        "عشان يبقى فيلم تكريمي بس",
+        "مجرد ظهور خاطف في مشهد النهاية",
+        "كانوا ضيوف شرف من غير علاقة بالقصة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-200",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «ديون» (Dune) لسنة 2021 من إخراج مين؟",
+      "options": [
+        "دينيس فيلنوف",
+        "ريدلي سكوت",
+        "دينزل واشنطن",
+        "كريستوفر نولان"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-201",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين بطل فيلم «ديون» (2021) اللي جسّد شخصية بول أتريدس؟",
+      "options": [
+        "تيموثي شالاميه",
+        "زاك إفرون",
+        "توم هولاند",
+        "أنسل إلجورت"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-202",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "النسخة الجديدة من فيلم «الأسد الملك» سنة 2019 بأسلوب شبه واقعي، من إخراج مين؟",
+      "options": [
+        "جون فافرو",
+        "جون لاسيتر",
+        "روب مينكوف",
+        "براد بيرد"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-203",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "المخرج جون فافرو وصف نسخة «الأسد الملك» 2019 بإنها مش حية ولا رسوم متحركة تقليدية، إزاي كانت التقنية بالضبط؟",
+      "options": [
+        "رسوم متحركة بأسلوب شبه واقعي (فوتوريالستي)",
+        "تصوير حي بحيوانات مدربة",
+        "دمى متحركة (ستوب موشن)",
+        "رسم يدوي تقليدي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-204",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم ديزني «إنكانتو» (2021) بيدور حول عيلة عندها إيه بشكل خاص؟",
+      "options": [
+        "كل فرد فيها عنده قوة سحرية ما عدا وحدة",
+        "كنز مدفون",
+        "قصر مسكون",
+        "رحلة عبر الزمن"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-205",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أغنية «إحنا معنعرفش نتكلم عن برونو» (We Dont Talk About Bruno) الشهيرة من فيلم «إنكانتو» كتبها مين؟",
+      "options": [
+        "لين مانويل ميراندا",
+        "جيرمين فرانكو",
+        "آلان مينكين",
+        "إلتون جون"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-206",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين مخرج فيلم «تيتانيك» وفيلم «أفاتار» في نفس الوقت اللي كسب بيهم أوسكار؟",
+      "options": [
+        "جيمس كاميرون",
+        "ستيفن سبيلبرج",
+        "ريدلي سكوت",
+        "بيتر جاكسون"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-207",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي فيلم من دول اتنافس ضد «أوبنهايمر» على جايزة أفضل فيلم سنة 2024 وكان من أعلى إيرادات نفس الصيف؟",
+      "options": [
+        "باربي",
+        "ديون الجزء التاني",
+        "أفاتار طريق الماء",
+        "جون ويك 4"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفيلمين طلعوا في نفس الأسبوع تقريبًا واتسمت الظاهرة إعلاميًا بـ«باربنهايمر».\" "
+    },
+    {
+      "id": "cn-mcq-208",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين ممثلة فيلم «باربي» (2023) اللي جسّدت شخصية باربي الرئيسية؟",
+      "options": [
+        "مارجو روبي",
+        "إميلي بلانت",
+        "آنا فاريس",
+        "بروك شيلدز"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-209",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مخرج فيلم «باربي» جريتا جرويج بتُعتبر أول مخرجة أنثى منفردة تحقق إيه؟",
+      "options": [
+        "فيلم بإيرادات تعدي المليار دولار",
+        "أوسكار أحسن مخرج",
+        "فيلم في مسابقة كان الرسمية",
+        "إخراج فيلم مارفل"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-210",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «حسن ومرقص» من تأليف مين؟",
+      "options": [
+        "يوسف معاطي",
+        "وحيد حامد",
+        "بلال فضل",
+        "أحمد عبد الله"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-211",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «الجوكر» (2019) حصل على جايزة الأسد الذهبي في مهرجان سينمائي مهم، إيه هو؟",
+      "options": [
+        "مهرجان فينيسيا",
+        "مهرجان كان",
+        "مهرجان برلين",
+        "مهرجان صندانس"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "كان أول فيلم مبني على شخصية كوميكس يفوز بالجايزة الكبرى لمهرجان فينيسيا."
+    },
+    {
+      "id": "cn-mcq-212",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «باراسايت» فاز بجايزة السعفة الذهبية في مهرجان كان قبل ما يفوز بالأوسكار، سنة كام؟",
+      "options": [
+        "2019",
+        "2018",
+        "2020",
+        "2017"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-213",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «الجزيرة» بطولة أحمد السقا حقق نجاح كبير لدرجة إنه اتعمل ليه جزء تاني لاحقًا، صح ولا غلط كسؤال اختياري؟",
+      "options": [
+        "اتعمل جزء تاني فعلًا",
+        "الفيلم مالوش جزء تاني خالص",
+        "اتعمل مسلسل بس مش فيلم",
+        "اتعمل ريميك بممثل تاني"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-214",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «إبراهيم الأبيض» بطولة أحمد السقا اتصنّف كفيلم إيه بشكل أساسي؟",
+      "options": [
+        "أكشن وجريمة",
+        "رومانسي كوميدي",
+        "رعب",
+        "خيال علمي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-215",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الفنانة يسرا شاركت الفنان محمود عبد العزيز البطولة في مسلسل «رأفت الهجان» ابتداءً من أنهي جزء؟",
+      "options": [
+        "الجزء الثاني",
+        "الجزء الأول",
+        "الجزء الثالث بس",
+        "مشاركتش خالص"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-216",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي مسلسل من دول بيُعتبر أشهر أعمال الكاتب أسامة أنور عكاشة؟",
+      "options": [
+        "ليالي الحلمية",
+        "هي فوضى",
+        "الأسطورة",
+        "واحد من الناس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-217",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مخرج فيلم «الناظر»، وهو نفسه مخرج فيلم «إبراهيم الأبيض»؟",
+      "options": [
+        "شريف عرفة كان مخرج الناظر بس مش إبراهيم الأبيض",
+        "نفس المخرج في الفيلمين",
+        "مروان حامد أخرج الفيلمين",
+        "خالد يوسف أخرج الفيلمين"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "شريف عرفة أخرج الناظر، بينما إبراهيم الأبيض من إخراج مروان حامد."
+    },
+    {
+      "id": "cn-mcq-218",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «واحد من الناس» بيتناول قصة راجل شاهد جريمة قتل وقرر إيه؟",
+      "options": [
+        "ميرفضش يزوّر شهادته رغم التهديد",
+        "يهرب من البلد",
+        "يتعاون مع العصابة",
+        "ينسى الموضوع كله"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-219",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين كاتب سيناريو فيلم «الجزيرة» (2007)؟",
+      "options": [
+        "محمد دياب",
+        "وحيد حامد",
+        "يوسف معاطي",
+        "تامر حبيب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-220",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «تيمور وشفيقة» من تأليف مين؟",
+      "options": [
+        "تامر حبيب",
+        "بلال فضل",
+        "يوسف معاطي",
+        "محمد دياب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-221",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "فيلم «باربي» حقق كام مليار دولار إيرادات عالميًا تقريبًا؟",
+      "options": [
+        "1.4 مليار دولار",
+        "0.5 مليار دولار",
+        "2.5 مليار دولار",
+        "3 مليار دولار"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-222",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فيلم «أوبنهايمر» بيتناول فترة تاريخية مهمة، إيه هي؟",
+      "options": [
+        "سباق تطوير القنبلة الذرية في الحرب العالمية الثانية",
+        "الحرب الباردة بعد الحرب مباشرة",
+        "الثورة الصناعية",
+        "الحرب العالمية الأولى"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-223",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مثّل شخصية الجنرال الأمريكي المسؤول عن مشروع القنبلة الذرية في فيلم «أوبنهايمر»؟",
+      "options": [
+        "مات ديمون",
+        "روبرت داوني جونيور",
+        "جوش هارتنيت",
+        "كينيث برانا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-224",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مسرحية «مدرسة المشاغبين» مقتبسة عن فيلم بريطاني، إيه اسمه؟",
+      "options": [
+        "إلى المعلم مع الحب",
+        "مدرسة الحياة",
+        "معلم العام",
+        "أستاذ في المدرسة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-225",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مؤلف مسرحية «شاهد ما شافش حاجة»؟",
+      "options": [
+        "لينين الرملي",
+        "علي سالم",
+        "يوسف معاطي",
+        "صلاح جاهين"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-226",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين المخرج اللي أخرج مسرحية «شاهد ما شافش حاجة»؟",
+      "options": [
+        "هاني مطاوع",
+        "جلال الشرقاوي",
+        "فهمي الخولي",
+        "حسن عبد السلام"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-227",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين بطلة فيلم «عمارة يعقوبيان» اللي مثّلت شخصية «بثينة»؟",
+      "options": [
+        "هند صبري",
+        "منة شلبي",
+        "يسرا",
+        "خالد الصاوي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-228",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مثّل شخصية «حاتم رشيد» الصحفي في فيلم «عمارة يعقوبيان»؟",
+      "options": [
+        "خالد الصاوي",
+        "عادل إمام",
+        "نور الشريف",
+        "يحيى الفخراني"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-229",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين لعب دور «زكي الدسوقي» في فيلم «عمارة يعقوبيان»؟",
+      "options": [
+        "عادل إمام",
+        "خالد الصاوي",
+        "أحمد راتب",
+        "هشام سليم"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "cn-mcq-230",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي فيلم من دول بيحكي قصة إخوة اكتشفوا إن ثروة عيلتهم مرتبطة بصفقة مخدرات؟",
+      "options": [
+        "العار",
+        "إبراهيم الأبيض",
+        "واحد من الناس",
+        "الجزيرة"
+      ],
+      "correctIndex": 0
+    }
+  ]
+}

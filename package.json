@@ -1,0 +1,30 @@
+{
+  "name": "arabic-party-games",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@game/server & npm run dev --workspace=@game/web",
+    "dev:server": "npm run dev --workspace=@game/server",
+    "dev:web": "npm run dev --workspace=@game/web",
+    "build": "npm run build --workspaces --if-present",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p packages/shared && tsc -p packages/rounds && tsc -p apps/server && tsc -p apps/web",
+    "start": "npm run start --workspace=@game/server",
+    "build:web": "npm run build --workspace=@game/web"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

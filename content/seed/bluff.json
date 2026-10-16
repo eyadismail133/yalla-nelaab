@@ -1,0 +1,4158 @@
+{
+  "category": {
+    "id": "bluff",
+    "nameAr": "غرايب ومعلومات",
+    "emoji": "🤥"
+  },
+  "questions": [
+    {
+      "id": "bl-open-1",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه أكتر فاكهة بتتزرع في العالم من حيث الكمية؟",
+      "answerAr": "الطماطم",
+      "aliases": [
+        "طماطم",
+        "الطماطم الحمرا"
+      ],
+      "explanationAr": "الطماطم فاكهة علميًا، وهي الأكتر إنتاجًا في العالم."
+    },
+    {
+      "id": "bl-open-2",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم الخوف من الأماكن الضيقة؟",
+      "answerAr": "الكلاستروفوبيا",
+      "aliases": [
+        "كلاستروفوبيا",
+        "رهاب الأماكن المغلقة"
+      ]
+    },
+    {
+      "id": "bl-open-3",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم صغير الضفدع؟",
+      "answerAr": "الشرغوف",
+      "aliases": [
+        "شرغوف",
+        "أبو ذنيبة"
+      ]
+    },
+    {
+      "id": "bl-open-4",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه أكبر عضو في جسم الإنسان؟",
+      "answerAr": "الجلد",
+      "aliases": [
+        "جلد",
+        "البشرة"
+      ]
+    },
+    {
+      "id": "bl-open-6",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم المسافة اللي الضوء بيقطعها في سنة؟",
+      "answerAr": "السنة الضوئية",
+      "aliases": [
+        "سنة ضوئية"
+      ]
+    },
+    {
+      "id": "bl-open-7",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه أصغر دولة في العالم من حيث المساحة؟",
+      "answerAr": "الفاتيكان",
+      "aliases": [
+        "فاتيكان",
+        "مدينة الفاتيكان"
+      ]
+    },
+    {
+      "id": "bl-open-8",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم الحيوان الوحيد اللي مش بيقدر يقفز؟",
+      "answerAr": "الفيل",
+      "aliases": [
+        "فيل"
+      ]
+    },
+    {
+      "id": "bl-open-9",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "إيه اسم الخط اللي بيقسم الأرض لنص شمالي ونص جنوبي؟",
+      "answerAr": "خط الاستواء",
+      "aliases": [
+        "الاستواء",
+        "خط الاستوا"
+      ]
+    },
+    {
+      "id": "bl-open-10",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه المعدن الوحيد اللي بيبقى سايل في درجة حرارة الغرفة؟",
+      "answerAr": "الزئبق",
+      "aliases": [
+        "زئبق"
+      ]
+    },
+    {
+      "id": "bl-open-11",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم أطول عظمة في جسم الإنسان؟",
+      "answerAr": "عظمة الفخذ",
+      "aliases": [
+        "الفخذ",
+        "عظمة الفخد"
+      ]
+    },
+    {
+      "id": "bl-open-12",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم أكبر محيط في العالم؟",
+      "answerAr": "المحيط الهادي",
+      "aliases": [
+        "الهادي",
+        "المحيط الهادئ",
+        "الباسيفيكي"
+      ]
+    },
+    {
+      "id": "bl-open-13",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم الجهاز اللي بيقيس الزلازل؟",
+      "answerAr": "السيزموغراف",
+      "aliases": [
+        "سيزموغراف",
+        "مرسمة الزلازل",
+        "الجهاز السيزمي"
+      ]
+    },
+    {
+      "id": "bl-open-14",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم أسرع طاير في العالم؟",
+      "answerAr": "الشاهين",
+      "aliases": [
+        "شاهين",
+        "صقر الشاهين"
+      ]
+    },
+    {
+      "id": "bl-open-15",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "إيه اسم مجموعة النجوم اللي إحنا عايشين فيها؟",
+      "answerAr": "درب التبانة",
+      "aliases": [
+        "درب اللبانة",
+        "المجرة"
+      ]
+    },
+    {
+      "id": "bl-mcq-1",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أكبر محيط في العالم؟",
+      "options": [
+        "الأطلنطي",
+        "الهندي",
+        "الهادي",
+        "المتجمد الشمالي"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "bl-mcq-2",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أكبر عضو في جسم الإنسان؟",
+      "options": [
+        "الكبد",
+        "الجلد",
+        "الرئة",
+        "المخ"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "bl-num-1",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الفيل بيعيش كام سنة تقريبًا؟",
+      "correctValue": 65,
+      "tolerance": 10,
+      "unitAr": "سنة"
+    },
+    {
+      "id": "bl-num-2",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "قلب الإنسان بيدق كام مرة في الدقيقة وهو مرتاح؟",
+      "correctValue": 72,
+      "tolerance": 12,
+      "unitAr": "دقة"
+    },
+    {
+      "id": "bl-bool-1",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الفيل مش بيقدر يقفز",
+      "isTrue": true
+    },
+    {
+      "id": "bl-bool-2",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الزئبق معدن سايل في درجة حرارة الغرفة",
+      "isTrue": true
+    },
+    {
+      "id": "bl-bool-3",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الفاتيكان أصغر دولة في العالم",
+      "isTrue": true
+    },
+    {
+      "id": "bl-bool-4",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "النعامة بتدفن راسها في الرمل لما تخاف",
+      "isTrue": false,
+      "explanationAr": "دي خرافة — النعامة بتنبطح بس على الأرض عشان تختفي."
+    },
+    {
+      "id": "bl-bool-5",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "سور الصين العظيم بيتشاف من الفضا بالعين المجردة",
+      "isTrue": false,
+      "explanationAr": "خرافة مشهورة — مش بيتشاف بالعين المجردة من المدار."
+    },
+    {
+      "id": "bl-fill-1",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "المعدن الوحيد اللي بيبقى سايل في درجة حرارة الغرفة هو ____",
+      "answerAr": "الزئبق",
+      "aliases": [
+        "زئبق"
+      ]
+    },
+    {
+      "id": "bl-fill-2",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أكبر عضو في جسم الإنسان هو ____",
+      "answerAr": "الجلد",
+      "aliases": [
+        "جلد"
+      ]
+    },
+    {
+      "id": "bl-prog-1",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا معدن",
+        "بستعمل في الترمومتر",
+        "أنا سايل في درجة حرارة الغرفة"
+      ],
+      "answerAr": "الزئبق",
+      "aliases": [
+        "زئبق"
+      ]
+    },
+    {
+      "id": "bl-prog-2",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا طاير",
+        "بنقض على فريستي بسرعة رهيبة",
+        "أنا أسرع كائن في العالم"
+      ],
+      "answerAr": "الشاهين",
+      "aliases": [
+        "شاهين",
+        "صقر الشاهين"
+      ]
+    },
+    {
+      "id": "bl-ord-1",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الحيوانات من الأصغر للأكبر",
+      "items": [
+        "القط",
+        "الأسد",
+        "الفيل",
+        "الحوت الأزرق"
+      ],
+      "labels": []
+    },
+    {
+      "id": "bl-ord-2",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّبهم من الأقل حرارة للأعلى",
+      "items": [
+        "ميه متجمدة",
+        "ميه عادية",
+        "ميه سخنة",
+        "ميه بتغلي"
+      ],
+      "labels": [
+        "صفر",
+        "25",
+        "60",
+        "100"
+      ]
+    },
+    {
+      "id": "bl-open-16",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم الخوف من الأماكن المرتفعة؟",
+      "answerAr": "الأكروفوبيا",
+      "aliases": [
+        "اكروفوبيا",
+        "أكروفوبيا"
+      ],
+      "explanationAr": "من الكلمة اليونانية «أكرو» يعني مرتفع."
+    },
+    {
+      "id": "bl-open-17",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم الخوف من العناكب؟",
+      "answerAr": "الأراكنوفوبيا",
+      "aliases": [
+        "اراكنوفوبيا",
+        "أراكنوفوبيا"
+      ],
+      "explanationAr": "من أشهر أنواع الرهاب في العالم."
+    },
+    {
+      "id": "bl-open-18",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه أكبر حيوان عاش على وجه الأرض؟",
+      "answerAr": "الحوت الأزرق",
+      "aliases": [
+        "حوت أزرق",
+        "الحوت الازرق"
+      ],
+      "explanationAr": "أكبر من أي ديناصور اتكشف لحد دلوقتي."
+    },
+    {
+      "id": "bl-open-19",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "إيه اسم العظمة الوحيدة في الجسم اللي مش متصلة بأي عظمة تانية؟",
+      "answerAr": "العظم اللامي",
+      "aliases": [
+        "اللامي",
+        "العظمة اللامية"
+      ],
+      "explanationAr": "موجودة في الرقبة وبتساعد في البلع والكلام."
+    },
+    {
+      "id": "bl-open-20",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم أصغر عظمة في جسم الإنسان؟",
+      "answerAr": "عظمة الركاب",
+      "aliases": [
+        "الركاب",
+        "عظمة الركاب في الأذن"
+      ],
+      "explanationAr": "موجودة في الأذن الوسطى وطولها ملليمترات."
+    },
+    {
+      "id": "bl-open-21",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "أنهي كوكب بيلف حوالين نفسه عكس اتجاه معظم الكواكب؟",
+      "answerAr": "الزهرة",
+      "aliases": [
+        "كوكب الزهرة",
+        "فينوس"
+      ],
+      "explanationAr": "دورانه معكوس، فالشمس بتطلع من الغرب هناك."
+    },
+    {
+      "id": "bl-open-22",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم المادة اللي بتتكوّن منها الأظافر والشعر؟",
+      "answerAr": "الكيراتين",
+      "aliases": [
+        "كيراتين"
+      ],
+      "explanationAr": "نفس المادة اللي في قرون الحيوانات وريش الطيور."
+    },
+    {
+      "id": "bl-open-23",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "أنهي حيوان عنده تلات قلوب؟",
+      "answerAr": "الأخطبوط",
+      "aliases": [
+        "اخطبوط",
+        "الاخطبوط"
+      ],
+      "explanationAr": "قلبين للخياشيم وواحد لباقي الجسم."
+    },
+    {
+      "id": "bl-open-24",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه أكبر صحرا في العالم لو حسبنا الصحاري الباردة كمان؟",
+      "answerAr": "القارة القطبية الجنوبية",
+      "aliases": [
+        "أنتاركتيكا",
+        "انتاركتيكا",
+        "القطب الجنوبي"
+      ],
+      "explanationAr": "الصحرا معناها قلة الأمطار مش الحرارة."
+    },
+    {
+      "id": "bl-open-25",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "أنهي حاسة مرتبطة بالذكريات أكتر من باقي الحواس؟",
+      "answerAr": "الشم",
+      "aliases": [
+        "حاسة الشم",
+        "الشمّ"
+      ],
+      "explanationAr": "الريحة بتوصل لمركز الذاكرة في المخ بسرعة."
+    },
+    {
+      "id": "bl-open-26",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه أطول نهر في أمريكا الجنوبية؟",
+      "answerAr": "الأمازون",
+      "aliases": [
+        "امازون",
+        "نهر الأمازون"
+      ],
+      "explanationAr": "وأكبر نهر في العالم من حيث كمية الميه."
+    },
+    {
+      "id": "bl-open-27",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه أكبر جزيرة في العالم؟",
+      "answerAr": "جرينلاند",
+      "aliases": [
+        "جرينلند",
+        "غرينلاند"
+      ],
+      "explanationAr": "أغلبها مغطى بالتلج طول السنة."
+    },
+    {
+      "id": "bl-open-28",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم أعمق نقطة في محيطات العالم؟",
+      "answerAr": "خندق ماريانا",
+      "aliases": [
+        "ماريانا",
+        "خندق مريانا"
+      ],
+      "explanationAr": "عمقه أكتر من ارتفاع جبل إيفرست."
+    },
+    {
+      "id": "bl-open-29",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "أنهي حيوان بيقدر ينام وهو واقف؟",
+      "answerAr": "الحصان",
+      "aliases": [
+        "حصان",
+        "الخيل"
+      ],
+      "explanationAr": "عنده نظام في رجليه بيقفلها وهو نايم."
+    },
+    {
+      "id": "bl-open-30",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الغاز اللي بيخلي البالونة تطير وبيغيّر الصوت؟",
+      "answerAr": "الهيليوم",
+      "aliases": [
+        "هيليوم"
+      ],
+      "explanationAr": "أخف من الهوا وبيخلي الصوت رفيع."
+    },
+    {
+      "id": "bl-open-31",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "أنهي قارة مفيهاش سكان دائمين؟",
+      "answerAr": "القارة القطبية الجنوبية",
+      "aliases": [
+        "أنتاركتيكا",
+        "انتاركتيكا"
+      ],
+      "explanationAr": "فيها علماء بس وبيتغيّروا كل فترة."
+    },
+    {
+      "id": "bl-open-32",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "أنهي حيوان بيغيّر لونه ولسانه طويل أوي؟",
+      "answerAr": "الحرباء",
+      "aliases": [
+        "حرباء",
+        "الحرباية"
+      ],
+      "explanationAr": "بتغيّر لونها للتمويه وللتواصل كمان."
+    },
+    {
+      "id": "bl-open-33",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم المادة اللي بتدي الدم لونه الأحمر؟",
+      "answerAr": "الهيموجلوبين",
+      "aliases": [
+        "هيموجلوبين",
+        "الهيموغلوبين"
+      ],
+      "explanationAr": "بروتين في كرات الدم الحمرا بيشيل الأكسجين."
+    },
+    {
+      "id": "bl-mcq-3",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه أعمق نقطة في محيطات العالم؟",
+      "options": [
+        "البحر الميت",
+        "خندق ماريانا",
+        "البحر الأحمر",
+        "بحر البلطيق"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عمقه حوالي 11 كيلومتر تحت سطح الميه."
+    },
+    {
+      "id": "bl-mcq-4",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي حيوان عنده تلات قلوب؟",
+      "options": [
+        "الحوت",
+        "الأخطبوط",
+        "القرش",
+        "السلحفاة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "قلبين للخياشيم وقلب لباقي الجسم."
+    },
+    {
+      "id": "bl-mcq-5",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه أكبر جزيرة في العالم؟",
+      "options": [
+        "مدغشقر",
+        "جرينلاند",
+        "بورنيو",
+        "أستراليا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أستراليا بتتحسب قارة مش جزيرة."
+    },
+    {
+      "id": "bl-mcq-6",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي قارة مفيهاش سكان دائمين؟",
+      "options": [
+        "أفريقيا",
+        "أستراليا",
+        "القارة القطبية الجنوبية",
+        "أمريكا الجنوبية"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "فيها محطات أبحاث بس."
+    },
+    {
+      "id": "bl-mcq-7",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي كوكب بيلف حوالين نفسه عكس اتجاه معظم الكواكب؟",
+      "options": [
+        "المريخ",
+        "الزهرة",
+        "عطارد",
+        "نبتون"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الشمس بتطلع من الغرب على كوكب الزهرة."
+    },
+    {
+      "id": "bl-mcq-8",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "فين أصغر عظمة في جسم الإنسان؟",
+      "options": [
+        "في الأنف",
+        "في الأذن",
+        "في الإصبع",
+        "في الرسغ"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عظمة الركاب في الأذن الوسطى."
+    },
+    {
+      "id": "bl-mcq-9",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الخوف من الأماكن المرتفعة اسمه إيه؟",
+      "options": [
+        "الكلاستروفوبيا",
+        "الأكروفوبيا",
+        "الأراكنوفوبيا",
+        "النيكتوفوبيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الكلاستروفوبيا هي الخوف من الأماكن الضيقة."
+    },
+    {
+      "id": "bl-mcq-10",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي حيوان بينام وهو واقف؟",
+      "options": [
+        "القطة",
+        "الحصان",
+        "الأرنب",
+        "الكلب"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "رجليه بتتقفل أوتوماتيك وهو نايم."
+    },
+    {
+      "id": "bl-mcq-11",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أظافر الإنسان مصنوعة من إيه؟",
+      "options": [
+        "الكولاجين",
+        "الكيراتين",
+        "الكالسيوم",
+        "الميلانين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "نفس مادة الشعر، مش الكالسيوم زي العضم."
+    },
+    {
+      "id": "bl-mcq-12",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اللي بيدي الدم لونه الأحمر؟",
+      "options": [
+        "البلازما",
+        "الهيموجلوبين",
+        "الكولاجين",
+        "الميلانين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الهيموجلوبين فيه حديد وده سبب اللون."
+    },
+    {
+      "id": "bl-mcq-13",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي حاسة مرتبطة بالذاكرة أكتر من غيرها؟",
+      "options": [
+        "السمع",
+        "الشم",
+        "اللمس",
+        "التذوق"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ريحة واحدة ممكن ترجعك لموقف من عشرين سنة."
+    },
+    {
+      "id": "bl-mcq-14",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أطول نهر في أمريكا الجنوبية؟",
+      "options": [
+        "البارانا",
+        "الأمازون",
+        "أورينوكو",
+        "ريو نيجرو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وأكبر نهر في العالم من حيث كمية الميه."
+    },
+    {
+      "id": "bl-mcq-15",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "العسل بيفسد بعد قد إيه؟",
+      "options": [
+        "بعد سنة",
+        "بعد خمس سنين",
+        "بعد عشرين سنة",
+        "عمليًا مبيفسدش"
+      ],
+      "correctIndex": 3,
+      "explanationAr": "لاقوا عسل في مقابر فرعونية لسه صالح."
+    },
+    {
+      "id": "bl-mcq-16",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه أكبر صحرا في العالم لو حسبنا الصحاري الباردة؟",
+      "options": [
+        "الصحرا الكبرى",
+        "القارة القطبية الجنوبية",
+        "صحرا جوبي",
+        "الربع الخالي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الصحرا معناها قلة الأمطار مش الحرارة."
+    },
+    {
+      "id": "bl-mcq-17",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي كائن بيقدر يشوف الأشعة فوق البنفسجية؟",
+      "options": [
+        "الكلب",
+        "النحلة",
+        "القطة",
+        "الحصان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "النحل بيشوف علامات على الورد إحنا مش شايفينها."
+    },
+    {
+      "id": "bl-mcq-18",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي طاير بيقدر يلف راسه لورا بزاوية كبيرة أوي؟",
+      "options": [
+        "الحرباء",
+        "البومة",
+        "الصقر",
+        "الغراب"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عينها مش بتتحرك، فبتلف راسها بدالها."
+    },
+    {
+      "id": "bl-mcq-19",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "بصمات التوأم المتطابق بتبقى إزاي؟",
+      "options": [
+        "نفسها بالظبط",
+        "مختلفة",
+        "متشابهة 90 بالمية",
+        "مفيش عندهم بصمة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "البصمة بتتكوّن في الرحم وبتختلف حتى بين التوأم."
+    },
+    {
+      "id": "bl-mcq-20",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الضوء بياخد كام تقريبًا عشان يوصل من الشمس للأرض؟",
+      "options": [
+        "دقيقة",
+        "8 دقايق",
+        "ساعة",
+        "يوم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "يعني إنت شايف الشمس زي ما كانت من 8 دقايق."
+    },
+    {
+      "id": "bl-bool-6",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "العسل عمليًا مبيفسدش لو اتخزّن كويس",
+      "isTrue": true,
+      "explanationAr": "لاقوا عسل في مقابر فرعونية لسه صالح للأكل."
+    },
+    {
+      "id": "bl-bool-7",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "الأخطبوط عنده تلات قلوب",
+      "isTrue": true,
+      "explanationAr": "قلبين للخياشيم وواحد لباقي الجسم."
+    },
+    {
+      "id": "bl-bool-8",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "جرينلاند أكبر جزيرة في العالم",
+      "isTrue": true,
+      "explanationAr": "أستراليا أكبر بس بتتحسب قارة."
+    },
+    {
+      "id": "bl-bool-9",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "القارة القطبية الجنوبية بتتحسب أكبر صحرا في العالم",
+      "isTrue": true,
+      "explanationAr": "الأمطار عليها أقل من الصحرا الكبرى."
+    },
+    {
+      "id": "bl-bool-10",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "كوكب الزهرة بيلف حوالين نفسه عكس اتجاه معظم الكواكب",
+      "isTrue": true,
+      "explanationAr": "وعشان كده الشمس بتطلع من الغرب هناك."
+    },
+    {
+      "id": "bl-bool-11",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "أصغر عظمة في جسم الإنسان موجودة في الأذن",
+      "isTrue": true,
+      "explanationAr": "عظمة الركاب في الأذن الوسطى."
+    },
+    {
+      "id": "bl-bool-12",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الحصان بيقدر ينام وهو واقف",
+      "isTrue": true,
+      "explanationAr": "رجليه فيها نظام بيقفلها وهو نايم."
+    },
+    {
+      "id": "bl-bool-13",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "التوأم المتطابق بصماتهم نفسها بالظبط",
+      "isTrue": false,
+      "explanationAr": "الحمض النووي واحد، بس البصمة بتختلف."
+    },
+    {
+      "id": "bl-bool-14",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الضوء بياخد حوالي 8 دقايق عشان يوصل من الشمس للأرض",
+      "isTrue": true,
+      "explanationAr": "المسافة حوالي 150 مليون كيلومتر."
+    },
+    {
+      "id": "bl-bool-15",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "البومة بتقدر تلف راسها لورا بزاوية كبيرة",
+      "isTrue": true,
+      "explanationAr": "عينها ثابتة في مكانها فبتلف راسها بدالها."
+    },
+    {
+      "id": "bl-bool-16",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الهيموجلوبين هو اللي بيدي الدم لونه الأحمر",
+      "isTrue": true,
+      "explanationAr": "بسبب الحديد اللي جواه."
+    },
+    {
+      "id": "bl-bool-17",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "أظافر الإنسان مصنوعة من الكالسيوم زي العضم",
+      "isTrue": false,
+      "explanationAr": "مصنوعة من الكيراتين، نفس مادة الشعر."
+    },
+    {
+      "id": "bl-bool-18",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "خندق ماريانا أعمق من ارتفاع جبل إيفرست",
+      "isTrue": true,
+      "explanationAr": "لو حطينا إيفرست جواه هيفضل فوقه ميه."
+    },
+    {
+      "id": "bl-bool-19",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "نهر الأمازون في أمريكا الجنوبية",
+      "isTrue": true,
+      "explanationAr": "بيمر في البرازيل وبيرو ودول تانية."
+    },
+    {
+      "id": "bl-bool-20",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "النحلة بتقدر تشوف الأشعة فوق البنفسجية",
+      "isTrue": true,
+      "explanationAr": "بتشوف علامات على الورد إحنا مش شايفينها."
+    },
+    {
+      "id": "bl-bool-21",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "حاسة الشم من أقوى الحواس ارتباطًا بالذكريات",
+      "isTrue": true,
+      "explanationAr": "إشارات الشم بتوصل لمراكز الذاكرة مباشرة."
+    },
+    {
+      "id": "bl-bool-22",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "البرق مستحيل يضرب نفس المكان مرتين",
+      "isTrue": false,
+      "explanationAr": "المباني العالية بتتضرب عشرات المرات في السنة."
+    },
+    {
+      "id": "bl-num-3",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الضوء بياخد كام دقيقة عشان يوصل من الشمس للأرض؟",
+      "correctValue": 8,
+      "tolerance": 1,
+      "unitAr": "دقيقة",
+      "explanationAr": "حوالي 8 دقايق وشوية."
+    },
+    {
+      "id": "bl-num-4",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "الأخطبوط عنده كام قلب؟",
+      "correctValue": 3,
+      "tolerance": 0,
+      "unitAr": "قلب",
+      "explanationAr": "قلبين للخياشيم وواحد للجسم."
+    },
+    {
+      "id": "bl-num-5",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "الإنسان عنده كام حاسة أساسية؟",
+      "correctValue": 5,
+      "tolerance": 0,
+      "unitAr": "حاسة",
+      "explanationAr": "الشم والتذوق واللمس والسمع والبصر."
+    },
+    {
+      "id": "bl-num-6",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "خندق ماريانا عمقه كام متر تقريبًا؟",
+      "correctValue": 11000,
+      "tolerance": 1000,
+      "unitAr": "متر",
+      "explanationAr": "أعمق من ارتفاع إيفرست بكتير."
+    },
+    {
+      "id": "bl-num-7",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الحوت الأزرق طوله كام متر تقريبًا؟",
+      "correctValue": 30,
+      "tolerance": 5,
+      "unitAr": "متر",
+      "explanationAr": "أكبر كائن عاش على الأرض."
+    },
+    {
+      "id": "bl-num-8",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "جرينلاند مساحتها كام مليون كيلومتر مربع تقريبًا؟",
+      "correctValue": 2,
+      "tolerance": 1,
+      "unitAr": "مليون كم²",
+      "explanationAr": "أكبر جزيرة في العالم."
+    },
+    {
+      "id": "bl-num-9",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "أصغر عظمة في جسم الإنسان طولها كام ملليمتر تقريبًا؟",
+      "correctValue": 3,
+      "tolerance": 1,
+      "unitAr": "ملليمتر",
+      "explanationAr": "عظمة الركاب في الأذن الوسطى."
+    },
+    {
+      "id": "bl-num-10",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "القمر بيبعد عن الأرض كام ألف كيلومتر تقريبًا؟",
+      "correctValue": 384,
+      "tolerance": 30,
+      "unitAr": "ألف كيلومتر",
+      "explanationAr": "الضوء بياخد ثانية وشوية عشان يقطعها."
+    },
+    {
+      "id": "bl-num-11",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "الإنسان بيرمش كام مرة في الدقيقة تقريبًا؟",
+      "correctValue": 17,
+      "tolerance": 8,
+      "unitAr": "مرة",
+      "explanationAr": "بتقل لما تركّز في شاشة."
+    },
+    {
+      "id": "bl-num-12",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "القارة القطبية الجنوبية فيها كام بالمية من ميه العالم العذبة؟",
+      "correctValue": 70,
+      "tolerance": 10,
+      "unitAr": "بالمية",
+      "explanationAr": "أغلبها متجمدة على شكل جليد."
+    },
+    {
+      "id": "bl-num-13",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "اللسان بيميّز كام طعم أساسي؟",
+      "correctValue": 5,
+      "tolerance": 0,
+      "unitAr": "طعم",
+      "explanationAr": "حلو ومالح وحامض ومر وأومامي."
+    },
+    {
+      "id": "bl-num-14",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "جسم الإنسان فيه كام عضلة تقريبًا؟",
+      "correctValue": 600,
+      "tolerance": 150,
+      "unitAr": "عضلة",
+      "explanationAr": "العدد بيختلف حسب طريقة العد."
+    },
+    {
+      "id": "bl-fill-3",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "أعمق نقطة في محيطات العالم اسمها خندق ____",
+      "answerAr": "ماريانا",
+      "aliases": [
+        "مريانا"
+      ],
+      "explanationAr": "في المحيط الهادي."
+    },
+    {
+      "id": "bl-fill-4",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "الحيوان اللي عنده تلات قلوب هو ____",
+      "answerAr": "الأخطبوط",
+      "aliases": [
+        "اخطبوط"
+      ],
+      "explanationAr": "قلبين للخياشيم وواحد للجسم."
+    },
+    {
+      "id": "bl-fill-5",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "أكبر جزيرة في العالم هي ____",
+      "answerAr": "جرينلاند",
+      "aliases": [
+        "غرينلاند",
+        "جرينلند"
+      ],
+      "explanationAr": "أغلبها مغطى بالتلج."
+    },
+    {
+      "id": "bl-fill-6",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "القارة اللي مفيهاش سكان دائمين هي القارة القطبية ____",
+      "answerAr": "الجنوبية",
+      "aliases": [
+        "جنوبية"
+      ],
+      "explanationAr": "فيها محطات أبحاث بس."
+    },
+    {
+      "id": "bl-fill-7",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "المادة اللي بتتكوّن منها الأظافر والشعر اسمها ____",
+      "answerAr": "الكيراتين",
+      "aliases": [
+        "كيراتين"
+      ],
+      "explanationAr": "نفس مادة قرون الحيوانات."
+    },
+    {
+      "id": "bl-fill-8",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "اللي بيدي الدم لونه الأحمر اسمه ____",
+      "answerAr": "الهيموجلوبين",
+      "aliases": [
+        "هيموجلوبين",
+        "الهيموغلوبين"
+      ],
+      "explanationAr": "بروتين فيه حديد."
+    },
+    {
+      "id": "bl-fill-9",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الخوف من المرتفعات اسمه ____",
+      "answerAr": "الأكروفوبيا",
+      "aliases": [
+        "اكروفوبيا"
+      ],
+      "explanationAr": "من أشهر أنواع الرهاب."
+    },
+    {
+      "id": "bl-fill-10",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الخوف من العناكب اسمه ____",
+      "answerAr": "الأراكنوفوبيا",
+      "aliases": [
+        "اراكنوفوبيا"
+      ],
+      "explanationAr": "من الكلمة اليونانية للعنكبوت."
+    },
+    {
+      "id": "bl-fill-11",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "الكوكب اللي بيلف عكس اتجاه معظم الكواكب هو ____",
+      "answerAr": "الزهرة",
+      "aliases": [
+        "كوكب الزهرة",
+        "زهرة"
+      ],
+      "explanationAr": "الشمس بتطلع من الغرب هناك."
+    },
+    {
+      "id": "bl-fill-12",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أطول نهر في أمريكا الجنوبية هو نهر ____",
+      "answerAr": "الأمازون",
+      "aliases": [
+        "امازون"
+      ],
+      "explanationAr": "وأكبر نهر في العالم من حيث كمية الميه."
+    },
+    {
+      "id": "bl-fill-13",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الطاير اللي بيقدر يلف راسه لورا بزاوية كبيرة هو ____",
+      "answerAr": "البومة",
+      "aliases": [
+        "بومة",
+        "البوم"
+      ],
+      "explanationAr": "عينها ثابتة فبتلف راسها بدالها."
+    },
+    {
+      "id": "bl-fill-14",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الغاز اللي بيخلي البالونة تطير وبيغيّر الصوت اسمه ____",
+      "answerAr": "الهيليوم",
+      "aliases": [
+        "هيليوم"
+      ],
+      "explanationAr": "أخف من الهوا."
+    },
+    {
+      "id": "bl-prog-3",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا كائن بحري",
+        "عندي تمن أذرع",
+        "عندي تلات قلوب وبغيّر لوني عشان أتخفى"
+      ],
+      "answerAr": "الأخطبوط",
+      "aliases": [
+        "اخطبوط"
+      ],
+      "explanationAr": "من أذكى الكائنات البحرية."
+    },
+    {
+      "id": "bl-prog-4",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا جزيرة كبيرة أوي",
+        "أغلبي مغطى بالتلج طول السنة",
+        "أكبر جزيرة في العالم وتابعة للدنمارك"
+      ],
+      "answerAr": "جرينلاند",
+      "aliases": [
+        "غرينلاند",
+        "جرينلند"
+      ],
+      "explanationAr": "مساحتها أكبر من دول كتير."
+    },
+    {
+      "id": "bl-prog-5",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا طاير بصحى بالليل",
+        "عيني كبيرة وبشوف كويس في الضلمة",
+        "بقدر ألف راسي لورا بزاوية كبيرة أوي"
+      ],
+      "answerAr": "البومة",
+      "aliases": [
+        "بومة",
+        "البوم"
+      ],
+      "explanationAr": "من أشهر الطيور الليلية."
+    },
+    {
+      "id": "bl-prog-6",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا حاجة بناكلها",
+        "النحل هو اللي بيعملني",
+        "عمليًا مبفسدش، ولقوني في مقابر فرعونية لسه صالح"
+      ],
+      "answerAr": "العسل",
+      "aliases": [
+        "عسل",
+        "عسل النحل"
+      ],
+      "explanationAr": "قلة الميه فيه بتمنع البكتيريا."
+    },
+    {
+      "id": "bl-prog-7",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مكان مفيهوش سكان دائمين",
+        "بتحسب أكبر صحرا في العالم",
+        "بغطي القطب الجنوبي وفيّا معظم ميه العالم العذبة"
+      ],
+      "answerAr": "القارة القطبية الجنوبية",
+      "aliases": [
+        "أنتاركتيكا",
+        "انتاركتيكا"
+      ],
+      "explanationAr": "الأمطار عليها أقل من الصحرا الكبرى."
+    },
+    {
+      "id": "bl-prog-8",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا مكان في المحيط الهادي",
+        "عمقي أكتر من ارتفاع إيفرست",
+        "أعمق نقطة معروفة في محيطات العالم"
+      ],
+      "answerAr": "خندق ماريانا",
+      "aliases": [
+        "ماريانا",
+        "مريانا"
+      ],
+      "explanationAr": "قليل جدًا من البشر نزلوا لقاعه."
+    },
+    {
+      "id": "bl-prog-9",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا مادة بروتينية",
+        "موجود في الشعر والأظافر",
+        "وموجود كمان في قرون الحيوانات وريش الطيور"
+      ],
+      "answerAr": "الكيراتين",
+      "aliases": [
+        "كيراتين"
+      ],
+      "explanationAr": "بروتين قوي وبيحمي الأنسجة."
+    },
+    {
+      "id": "bl-prog-10",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا كوكب في المجموعة الشمسية",
+        "حرارتي أعلى من عطارد رغم إني أبعد عن الشمس",
+        "بلف حوالين نفسي عكس اتجاه معظم الكواكب"
+      ],
+      "answerAr": "الزهرة",
+      "aliases": [
+        "كوكب الزهرة",
+        "زهرة"
+      ],
+      "explanationAr": "غلافه الجوي بيحبس الحرارة بشكل رهيب."
+    },
+    {
+      "id": "bl-ord-3",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب الأعماق دي من الأقل للأكتر",
+      "items": [
+        "حمام سباحة",
+        "أعمق نقطة في البحر الأحمر",
+        "خندق ماريانا"
+      ],
+      "labels": [],
+      "explanationAr": "خندق ماريانا أعمق من إيفرست ارتفاعًا."
+    },
+    {
+      "id": "bl-ord-4",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الجزر دي من الأكبر للأصغر",
+      "items": [
+        "جرينلاند",
+        "مدغشقر",
+        "صقلية"
+      ],
+      "labels": [],
+      "explanationAr": "جرينلاند أكبر منهم بمراحل."
+    },
+    {
+      "id": "bl-ord-5",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الأوساط دي حسب سرعة الصوت فيها من الأبطأ للأسرع",
+      "items": [
+        "الهوا",
+        "الميه",
+        "الحديد"
+      ],
+      "labels": [],
+      "explanationAr": "كل ما المادة كانت أكتف، الصوت أسرع."
+    },
+    {
+      "id": "bl-ord-6",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب العضم ده من الأصغر للأكبر",
+      "items": [
+        "عظمة الركاب",
+        "عظمة الإصبع",
+        "عظمة الفخذ"
+      ],
+      "labels": [],
+      "explanationAr": "الركاب في الأذن والفخذ أطول عظمة."
+    },
+    {
+      "id": "bl-ord-7",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب الأماكن دي من الأبرد للأدفى",
+      "items": [
+        "القارة القطبية الجنوبية",
+        "سيبيريا",
+        "الصحرا الكبرى"
+      ],
+      "labels": [],
+      "explanationAr": "فرق الحرارة بينهم عشرات الدرجات."
+    },
+    {
+      "id": "bl-ord-8",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّبهم حسب بُعدهم عن الأرض من الأقرب للأبعد",
+      "items": [
+        "القمر",
+        "الشمس",
+        "أقرب نجم بعد الشمس"
+      ],
+      "labels": [],
+      "explanationAr": "أقرب نجم بعد الشمس على بعد أكتر من 4 سنين ضوئية."
+    },
+    {
+      "id": "bl-ord-9",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّبهم حسب السرعة من الأبطأ للأسرع",
+      "items": [
+        "الصوت",
+        "الصاروخ",
+        "الضوء"
+      ],
+      "labels": [],
+      "explanationAr": "الضوء أسرع حاجة في الكون."
+    },
+    {
+      "id": "bl-ord-10",
+      "shape": "ordering",
+      "difficulty": 1,
+      "textAr": "رتّب وحدات الوزن دي من الأصغر للأكبر",
+      "items": [
+        "جرام",
+        "كيلوجرام",
+        "طن"
+      ],
+      "labels": [],
+      "explanationAr": "الطن ألف كيلو، والكيلو ألف جرام."
+    },
+    {
+      "id": "bl-open-34",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "إيه اسم أطول عضلة في جسم الإنسان؟",
+      "answerAr": "العضلة الخياطية",
+      "aliases": [
+        "الخياطية",
+        "الخياطيه"
+      ],
+      "explanationAr": "بتمتد من الحوض لحد الركبة."
+    },
+    {
+      "id": "bl-open-35",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الجزء اللي بيحمي المخ في الراس؟",
+      "answerAr": "الجمجمة",
+      "aliases": [
+        "جمجمة",
+        "الجمجمه"
+      ],
+      "explanationAr": "عضم صلب بيحيط بالمخ من كل ناحية."
+    },
+    {
+      "id": "bl-open-36",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم أكبر شريان في جسم الإنسان؟",
+      "answerAr": "الشريان الأورطي",
+      "aliases": [
+        "الأورطي",
+        "الاورطي",
+        "الأبهر"
+      ],
+      "explanationAr": "بيطلع من القلب على طول."
+    },
+    {
+      "id": "bl-open-37",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه أسرع سمكة في البحر؟",
+      "answerAr": "سمكة أبو شراع",
+      "aliases": [
+        "أبو شراع",
+        "ابو شراع",
+        "السيلفيش"
+      ],
+      "explanationAr": "بتوصل لسرعات رهيبة في الميه."
+    },
+    {
+      "id": "bl-open-38",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "أنهي كائن بيقدر يجدد أطرافه لو اتقطعت؟",
+      "answerAr": "نجم البحر",
+      "aliases": [
+        "نجمة البحر",
+        "نجم بحر"
+      ],
+      "explanationAr": "وبعض الأنواع بتبني نفسها من ذراع واحدة."
+    },
+    {
+      "id": "bl-open-39",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم الطاير الوحيد اللي بيقدر يطير لورا؟",
+      "answerAr": "الطنان",
+      "aliases": [
+        "طنان",
+        "طائر الطنان"
+      ],
+      "explanationAr": "بيرفرف بجناحاته عشرات المرات في الثانية."
+    },
+    {
+      "id": "bl-open-40",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم العضو اللي بيخزّن العصارة الصفرا في الجسم؟",
+      "answerAr": "المرارة",
+      "aliases": [
+        "مرارة",
+        "الحوصلة الصفراوية"
+      ],
+      "explanationAr": "الكبد بينتجها والمرارة بتخزّنها."
+    },
+    {
+      "id": "bl-open-41",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الظاهرة اللي بيغطي فيها القمر الشمس؟",
+      "answerAr": "كسوف الشمس",
+      "aliases": [
+        "الكسوف",
+        "كسوف"
+      ],
+      "explanationAr": "القمر بيعدي بين الأرض والشمس."
+    },
+    {
+      "id": "bl-open-42",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الظاهرة اللي بيقع فيها ظل الأرض على القمر؟",
+      "answerAr": "خسوف القمر",
+      "aliases": [
+        "الخسوف",
+        "خسوف"
+      ],
+      "explanationAr": "الأرض بتقع بين الشمس والقمر."
+    },
+    {
+      "id": "bl-open-43",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم أقرب مجرة كبيرة لمجرتنا؟",
+      "answerAr": "أندروميدا",
+      "aliases": [
+        "اندروميدا",
+        "المرأة المسلسلة"
+      ],
+      "explanationAr": "وبتقرب مننا كل ثانية."
+    },
+    {
+      "id": "bl-open-44",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "إيه اسم أكبر بركان معروف في المجموعة الشمسية؟",
+      "answerAr": "أوليمبوس مونس",
+      "aliases": [
+        "أوليمبوس",
+        "اوليمبوس",
+        "جبل أوليمبوس"
+      ],
+      "explanationAr": "على كوكب المريخ."
+    },
+    {
+      "id": "bl-open-45",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم المقياس اللي بيتقاس بيه قوة الزلزال؟",
+      "answerAr": "مقياس ريختر",
+      "aliases": [
+        "ريختر",
+        "ريكتر"
+      ],
+      "explanationAr": "كل درجة أقوى بكتير من اللي قبلها."
+    },
+    {
+      "id": "bl-open-46",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "لو حسبنا الجبل من قاعدته في قاع البحر، إيه اسم أطول جبل؟",
+      "answerAr": "مونا كيا",
+      "aliases": [
+        "مونا كيا هاواي",
+        "مونا"
+      ],
+      "explanationAr": "في هاواي، وأغلبه تحت الميه."
+    },
+    {
+      "id": "bl-open-47",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه أكتر مشروب بيتشرب في العالم بعد الميه؟",
+      "answerAr": "الشاي",
+      "aliases": [
+        "شاي",
+        "الشاى"
+      ],
+      "explanationAr": "مش القهوة زي ما ناس كتير بتفتكر."
+    },
+    {
+      "id": "bl-open-48",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه أغلى نوع توابل في العالم بالوزن؟",
+      "answerAr": "الزعفران",
+      "aliases": [
+        "زعفران"
+      ],
+      "explanationAr": "بيتقطف بالإيد من زهرة صغيرة."
+    },
+    {
+      "id": "bl-open-49",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "إيه اسم الفاكهة الممنوعة في أماكن كتير في آسيا بسبب ريحتها؟",
+      "answerAr": "الدوريان",
+      "aliases": [
+        "دوريان"
+      ],
+      "explanationAr": "ممنوعة في فنادق ومواصلات كتير."
+    },
+    {
+      "id": "bl-open-50",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "إيه اسم الكائن البحري اللي دمه أزرق وبيستخدموه في اختبارات طبية؟",
+      "answerAr": "سرطان حدوة الحصان",
+      "aliases": [
+        "حدوة الحصان",
+        "سرطان البحر حدوة الحصان"
+      ],
+      "explanationAr": "دمه بيكشف التلوث البكتيري."
+    },
+    {
+      "id": "bl-open-51",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم الجهاز اللي بيقيس ضغط الجو؟",
+      "answerAr": "البارومتر",
+      "aliases": [
+        "بارومتر"
+      ],
+      "explanationAr": "بيستخدم في التنبؤ بالطقس."
+    },
+    {
+      "id": "bl-open-52",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم الجهاز اللي بيقيس نسبة الرطوبة؟",
+      "answerAr": "الهيجرومتر",
+      "aliases": [
+        "هيجرومتر",
+        "الهايجرومتر"
+      ],
+      "explanationAr": "مهم في الأرصاد والزراعة."
+    },
+    {
+      "id": "bl-open-53",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم الظاهرة اللي بتلوّن سما القطبين بالليل؟",
+      "answerAr": "الشفق القطبي",
+      "aliases": [
+        "الشفق",
+        "الأورورا"
+      ],
+      "explanationAr": "بسبب جزيئات الشمس وهي بتصطدم بالغلاف الجوي."
+    },
+    {
+      "id": "bl-open-54",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "إيه أكتر معدن منتشر في قشرة الأرض؟",
+      "answerAr": "الألومنيوم",
+      "aliases": [
+        "الالومنيوم",
+        "ألومنيوم"
+      ],
+      "explanationAr": "أكتر من الحديد والنحاس."
+    },
+    {
+      "id": "bl-open-55",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه أكتر عنصر منتشر في الكون؟",
+      "answerAr": "الهيدروجين",
+      "aliases": [
+        "هيدروجين"
+      ],
+      "explanationAr": "النجوم كلها بتشتغل عليه."
+    },
+    {
+      "id": "bl-open-56",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه أطول نهر في آسيا؟",
+      "answerAr": "اليانجتسي",
+      "aliases": [
+        "يانجتسي",
+        "اليانغتسي"
+      ],
+      "explanationAr": "في الصين."
+    },
+    {
+      "id": "bl-open-57",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه أكبر كوكب صخري في المجموعة الشمسية؟",
+      "answerAr": "الأرض",
+      "aliases": [
+        "كوكب الأرض",
+        "الارض"
+      ],
+      "explanationAr": "أكبر من المريخ والزهرة وعطارد."
+    },
+    {
+      "id": "bl-open-58",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "أنهي كائن عنده أكبر عين في مملكة الحيوان؟",
+      "answerAr": "الحبار العملاق",
+      "aliases": [
+        "الحبار",
+        "حبار عملاق"
+      ],
+      "explanationAr": "عينه قد طبق الأكل."
+    },
+    {
+      "id": "bl-mcq-21",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي مقياس بيستخدم لقياس قوة الزلزال؟",
+      "options": [
+        "سيلسيوس",
+        "ريختر",
+        "بوفورت",
+        "موس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "كل درجة أقوى بكتير من اللي قبلها."
+    },
+    {
+      "id": "bl-mcq-22",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي مقياس بيستخدم لقياس صلابة المعادن؟",
+      "options": [
+        "ريختر",
+        "موس",
+        "بوفورت",
+        "سيلسيوس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "والماس بيجي في أعلى درجة فيه."
+    },
+    {
+      "id": "bl-mcq-23",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي مقياس بيستخدم لقياس سرعة الرياح؟",
+      "options": [
+        "ريختر",
+        "موس",
+        "بوفورت",
+        "ديسيبل"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "مقياس بوفورت بيوصف قوة الرياح."
+    },
+    {
+      "id": "bl-mcq-24",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه أكتر مشروب بيتشرب في العالم بعد الميه؟",
+      "options": [
+        "القهوة",
+        "الشاي",
+        "العصير",
+        "المشروبات الغازية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مش القهوة زي ما ناس كتير بتفتكر."
+    },
+    {
+      "id": "bl-mcq-25",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه أغلى توابل في العالم بالوزن؟",
+      "options": [
+        "الفانيليا",
+        "الزعفران",
+        "الهيل",
+        "الكمون"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "محتاج آلاف الزهور عشان تطلع كيلو."
+    },
+    {
+      "id": "bl-mcq-26",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي فاكهة ممنوعة في أماكن كتير في آسيا بسبب ريحتها؟",
+      "options": [
+        "المانجو",
+        "الدوريان",
+        "الليتشي",
+        "الجوافة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ممنوعة في فنادق ومواصلات."
+    },
+    {
+      "id": "bl-mcq-27",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه أثقل عضو داخلي في جسم الإنسان؟",
+      "options": [
+        "القلب",
+        "الكبد",
+        "الرئة",
+        "الكلى"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وزنه حوالي كيلو ونص."
+    },
+    {
+      "id": "bl-mcq-28",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه أكبر شريان في جسم الإنسان؟",
+      "options": [
+        "التاجي",
+        "الأورطي",
+        "السباتي",
+        "الرئوي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بيطلع من القلب على طول."
+    },
+    {
+      "id": "bl-mcq-29",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي طاير بيقدر يطير لورا؟",
+      "options": [
+        "النسر",
+        "الطنان",
+        "البطريق",
+        "النعامة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الوحيد اللي بيعمل كده."
+    },
+    {
+      "id": "bl-mcq-30",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي كائن بيقدر يجدد أطرافه لو اتقطعت؟",
+      "options": [
+        "السلحفاة",
+        "نجم البحر",
+        "القرش",
+        "الدلفين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وبعض الأنواع بتبني نفسها من ذراع واحدة."
+    },
+    {
+      "id": "bl-mcq-31",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه أسرع سمكة في البحر؟",
+      "options": [
+        "القرش",
+        "سمكة أبو شراع",
+        "التونة",
+        "الدلفين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "والدلفين مش سمكة أصلًا."
+    },
+    {
+      "id": "bl-mcq-32",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه اسم أقرب مجرة كبيرة لمجرتنا؟",
+      "options": [
+        "أندروميدا",
+        "سومبريرو",
+        "الدوامة",
+        "القبعة"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "وبتقرب مننا كل ثانية."
+    },
+    {
+      "id": "bl-mcq-33",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أكبر بركان معروف في المجموعة الشمسية موجود فين؟",
+      "options": [
+        "على الأرض",
+        "على المريخ",
+        "على الزهرة",
+        "على القمر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أوليمبوس مونس، وارتفاعه أضعاف إيفرست."
+    },
+    {
+      "id": "bl-mcq-34",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه أكتر عنصر منتشر في الكون؟",
+      "options": [
+        "الأكسجين",
+        "الهيدروجين",
+        "الكربون",
+        "الحديد"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "النجوم كلها بتشتغل عليه."
+    },
+    {
+      "id": "bl-mcq-35",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "إيه أكتر معدن منتشر في قشرة الأرض؟",
+      "options": [
+        "الحديد",
+        "الألومنيوم",
+        "النحاس",
+        "الذهب"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أكتر من الحديد نفسه."
+    },
+    {
+      "id": "bl-mcq-36",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الشفق القطبي بيظهر فين؟",
+      "options": [
+        "عند خط الاستواء",
+        "قرب القطبين",
+        "فوق الصحرا",
+        "فوق المحيطات بس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بسبب المجال المغناطيسي للأرض."
+    },
+    {
+      "id": "bl-mcq-37",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي جهاز بيقيس ضغط الجو؟",
+      "options": [
+        "الترمومتر",
+        "البارومتر",
+        "الهيجرومتر",
+        "البوصلة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بيستخدم في توقّع الطقس."
+    },
+    {
+      "id": "bl-mcq-38",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي جهاز بيقيس نسبة الرطوبة؟",
+      "options": [
+        "البارومتر",
+        "الهيجرومتر",
+        "الترمومتر",
+        "الأنيمومتر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مهم في الأرصاد والزراعة."
+    },
+    {
+      "id": "bl-mcq-39",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه أطول نهر في آسيا؟",
+      "options": [
+        "الجانج",
+        "اليانجتسي",
+        "ميكونج",
+        "الفرات"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في الصين."
+    },
+    {
+      "id": "bl-mcq-40",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي كوكب أقرب حاجة للأرض في الحجم؟",
+      "options": [
+        "المريخ",
+        "الزهرة",
+        "عطارد",
+        "نبتون"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وعشان كده بيقولوا عليه توأم الأرض."
+    },
+    {
+      "id": "bl-mcq-41",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي كائن عنده أكبر عين في مملكة الحيوان؟",
+      "options": [
+        "الحوت الأزرق",
+        "الحبار العملاق",
+        "الفيل",
+        "البومة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عينه قد طبق الأكل."
+    },
+    {
+      "id": "bl-mcq-42",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "لو حسبنا الجبل من قاعدته في قاع البحر، أنهي جبل يبقى الأطول؟",
+      "options": [
+        "إيفرست",
+        "مونا كيا",
+        "كليمنجارو",
+        "دينالي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في هاواي، وأغلبه تحت سطح الميه."
+    },
+    {
+      "id": "bl-mcq-43",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اللي بيحمي المخ في الراس؟",
+      "options": [
+        "الفقرات",
+        "الجمجمة",
+        "القفص الصدري",
+        "الحوض"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عضم صلب بيحيط بالمخ."
+    },
+    {
+      "id": "bl-mcq-44",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "إيه أطول عضلة في جسم الإنسان؟",
+      "options": [
+        "العضلة الرباعية",
+        "العضلة الخياطية",
+        "التوأمية",
+        "الدالية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بتمتد من الحوض للركبة."
+    },
+    {
+      "id": "bl-mcq-45",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي كائن بحري دمه أزرق وبيستخدموه في اختبارات طبية؟",
+      "options": [
+        "قنديل البحر",
+        "سرطان حدوة الحصان",
+        "نجم البحر",
+        "الإسفنج"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "دمه بيكشف التلوث البكتيري."
+    },
+    {
+      "id": "bl-bool-23",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الشاي أكتر مشروب بيتشرب في العالم بعد الميه",
+      "isTrue": true,
+      "explanationAr": "مش القهوة."
+    },
+    {
+      "id": "bl-bool-24",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الزعفران أغلى توابل في العالم بالوزن",
+      "isTrue": true,
+      "explanationAr": "بيتقطف بالإيد من زهرة صغيرة."
+    },
+    {
+      "id": "bl-bool-25",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الكبد أثقل عضو داخلي في جسم الإنسان",
+      "isTrue": true,
+      "explanationAr": "حوالي كيلو ونص."
+    },
+    {
+      "id": "bl-bool-26",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "الطنان بيقدر يطير لورا",
+      "isTrue": true,
+      "explanationAr": "الطاير الوحيد اللي بيعمل كده."
+    },
+    {
+      "id": "bl-bool-27",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "نجم البحر بيقدر يجدد أطرافه لو اتقطعت",
+      "isTrue": true,
+      "explanationAr": "وبعض الأنواع بتبني نفسها من ذراع."
+    },
+    {
+      "id": "bl-bool-28",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "الهيدروجين أكتر عنصر منتشر في الكون",
+      "isTrue": true,
+      "explanationAr": "النجوم كلها بتشتغل عليه."
+    },
+    {
+      "id": "bl-bool-29",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "الحديد أكتر معدن منتشر في قشرة الأرض",
+      "isTrue": false,
+      "explanationAr": "الألومنيوم أكتر منه في القشرة."
+    },
+    {
+      "id": "bl-bool-30",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "الشفق القطبي بيظهر عند خط الاستواء",
+      "isTrue": false,
+      "explanationAr": "بيظهر قرب القطبين."
+    },
+    {
+      "id": "bl-bool-31",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "البارومتر بيقيس ضغط الجو",
+      "isTrue": true,
+      "explanationAr": "والهيجرومتر بيقيس الرطوبة."
+    },
+    {
+      "id": "bl-bool-32",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "مقياس ريختر بيقيس صلابة المعادن",
+      "isTrue": false,
+      "explanationAr": "ريختر للزلازل، وموس للصلابة."
+    },
+    {
+      "id": "bl-bool-33",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "مقياس موس بيستخدم لقياس صلابة المعادن",
+      "isTrue": true,
+      "explanationAr": "والماس في أعلى درجة فيه."
+    },
+    {
+      "id": "bl-bool-34",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "أكبر بركان معروف في المجموعة الشمسية موجود على المريخ",
+      "isTrue": true,
+      "explanationAr": "أوليمبوس مونس."
+    },
+    {
+      "id": "bl-bool-35",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "أندروميدا أقرب مجرة كبيرة لمجرتنا",
+      "isTrue": true,
+      "explanationAr": "وبتقرب مننا كل ثانية."
+    },
+    {
+      "id": "bl-bool-36",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "كسوف الشمس بيحصل لما القمر يعدي بين الأرض والشمس",
+      "isTrue": true,
+      "explanationAr": "والخسوف لما ظل الأرض يقع على القمر."
+    },
+    {
+      "id": "bl-bool-37",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "خسوف القمر بيحصل لما ظل الأرض يقع على القمر",
+      "isTrue": true,
+      "explanationAr": "الأرض بتقع بين الشمس والقمر."
+    },
+    {
+      "id": "bl-bool-38",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "الأرض أكبر كوكب صخري في المجموعة الشمسية",
+      "isTrue": true,
+      "explanationAr": "أكبر من الزهرة والمريخ وعطارد."
+    },
+    {
+      "id": "bl-bool-39",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "الحبار العملاق عنده أكبر عين في مملكة الحيوان",
+      "isTrue": true,
+      "explanationAr": "عينه قد طبق الأكل."
+    },
+    {
+      "id": "bl-bool-40",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "إيفرست أطول جبل لو حسبناه من قاعدته مش من سطح البحر",
+      "isTrue": false,
+      "explanationAr": "مونا كيا أطول لو حسبناه من قاع البحر."
+    },
+    {
+      "id": "bl-bool-41",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "سمكة أبو شراع من أسرع الأسماك في البحر",
+      "isTrue": true,
+      "explanationAr": "بتوصل لسرعات رهيبة."
+    },
+    {
+      "id": "bl-bool-42",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "اليانجتسي أطول نهر في آسيا",
+      "isTrue": true,
+      "explanationAr": "في الصين."
+    },
+    {
+      "id": "bl-bool-43",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الجمجمة هي اللي بتحمي المخ",
+      "isTrue": true,
+      "explanationAr": "عضم صلب بيحيط بيه."
+    },
+    {
+      "id": "bl-bool-44",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "الشريان الأورطي أكبر شريان في جسم الإنسان",
+      "isTrue": true,
+      "explanationAr": "بيطلع من القلب على طول."
+    },
+    {
+      "id": "bl-num-15",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "مجرة أندروميدا بتبعد عننا كام مليون سنة ضوئية تقريبًا؟",
+      "correctValue": 2.5,
+      "tolerance": 0.7,
+      "unitAr": "مليون سنة ضوئية",
+      "explanationAr": "أقرب مجرة كبيرة لينا."
+    },
+    {
+      "id": "bl-num-16",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "أكبر بركان في المجموعة الشمسية ارتفاعه كام كيلومتر تقريبًا؟",
+      "correctValue": 22,
+      "tolerance": 5,
+      "unitAr": "كيلومتر",
+      "explanationAr": "حوالي تلات أضعاف إيفرست."
+    },
+    {
+      "id": "bl-num-17",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "جبل مونا كيا طوله كام متر من قاعدته في قاع البحر؟",
+      "correctValue": 10200,
+      "tolerance": 700,
+      "unitAr": "متر",
+      "explanationAr": "أطول من إيفرست لو حسبناه كده."
+    },
+    {
+      "id": "bl-num-18",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "نهر اليانجتسي طوله كام كيلومتر تقريبًا؟",
+      "correctValue": 6300,
+      "tolerance": 400,
+      "unitAr": "كيلومتر",
+      "explanationAr": "أطول نهر في آسيا."
+    },
+    {
+      "id": "bl-num-19",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "كام بالمية من مادة الكون تقريبًا هيدروجين؟",
+      "correctValue": 75,
+      "tolerance": 7,
+      "unitAr": "بالمية",
+      "explanationAr": "والباقي أغلبه هيليوم."
+    },
+    {
+      "id": "bl-num-20",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "الكبد وزنه كام جرام تقريبًا في الإنسان البالغ؟",
+      "correctValue": 1500,
+      "tolerance": 400,
+      "unitAr": "جرام",
+      "explanationAr": "أتقل عضو داخلي."
+    },
+    {
+      "id": "bl-num-21",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "الطنان بيرفرف بجناحاته كام مرة في الثانية تقريبًا؟",
+      "correctValue": 50,
+      "tolerance": 25,
+      "unitAr": "مرة",
+      "explanationAr": "وده سبب صوت الطنين."
+    },
+    {
+      "id": "bl-num-22",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "عين الحبار العملاق قطرها كام سنتيمتر تقريبًا؟",
+      "correctValue": 27,
+      "tolerance": 8,
+      "unitAr": "سم",
+      "explanationAr": "قد طبق الأكل."
+    },
+    {
+      "id": "bl-num-23",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "محتاج كام ألف زهرة تقريبًا عشان تطلع كيلو زعفران؟",
+      "correctValue": 150,
+      "tolerance": 60,
+      "unitAr": "ألف زهرة",
+      "explanationAr": "وده سبب سعره الرهيب."
+    },
+    {
+      "id": "bl-num-24",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "الشريان الأورطي قطره كام سنتيمتر تقريبًا؟",
+      "correctValue": 3,
+      "tolerance": 1,
+      "unitAr": "سم",
+      "explanationAr": "أكبر شريان في الجسم."
+    },
+    {
+      "id": "bl-fill-15",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "أكتر مشروب بيتشرب في العالم بعد الميه هو ____",
+      "answerAr": "الشاي",
+      "aliases": [
+        "شاي"
+      ],
+      "explanationAr": "مش القهوة."
+    },
+    {
+      "id": "bl-fill-16",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "أغلى توابل في العالم بالوزن اسمه ____",
+      "answerAr": "الزعفران",
+      "aliases": [
+        "زعفران"
+      ],
+      "explanationAr": "بيتقطف بالإيد."
+    },
+    {
+      "id": "bl-fill-17",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "أثقل عضو داخلي في جسم الإنسان هو ____",
+      "answerAr": "الكبد",
+      "aliases": [
+        "كبد"
+      ],
+      "explanationAr": "حوالي كيلو ونص."
+    },
+    {
+      "id": "bl-fill-18",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "الطاير الوحيد اللي بيقدر يطير لورا اسمه ____",
+      "answerAr": "الطنان",
+      "aliases": [
+        "طنان"
+      ],
+      "explanationAr": "بيرفرف عشرات المرات في الثانية."
+    },
+    {
+      "id": "bl-fill-19",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "أقرب مجرة كبيرة لمجرتنا اسمها ____",
+      "answerAr": "أندروميدا",
+      "aliases": [
+        "اندروميدا",
+        "المرأة المسلسلة"
+      ],
+      "explanationAr": "وبتقرب مننا كل ثانية."
+    },
+    {
+      "id": "bl-fill-20",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "أكتر عنصر منتشر في الكون هو ____",
+      "answerAr": "الهيدروجين",
+      "aliases": [
+        "هيدروجين"
+      ],
+      "explanationAr": "النجوم بتشتغل عليه."
+    },
+    {
+      "id": "bl-fill-21",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الجهاز اللي بيقيس ضغط الجو اسمه ____",
+      "answerAr": "البارومتر",
+      "aliases": [
+        "بارومتر"
+      ],
+      "explanationAr": "بيستخدم في توقّع الطقس."
+    },
+    {
+      "id": "bl-fill-22",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "الظاهرة اللي بتلوّن السما بالليل عند القطبين اسمها ____ القطبي",
+      "answerAr": "الشفق",
+      "aliases": [
+        "شفق",
+        "الأورورا"
+      ],
+      "explanationAr": "بسبب جزيئات الشمس وهي بتصطدم بالغلاف الجوي."
+    },
+    {
+      "id": "bl-fill-23",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "أطول نهر في آسيا اسمه ____",
+      "answerAr": "اليانجتسي",
+      "aliases": [
+        "يانجتسي",
+        "اليانغتسي"
+      ],
+      "explanationAr": "في الصين."
+    },
+    {
+      "id": "bl-fill-24",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "أكبر شريان في جسم الإنسان اسمه الشريان ____",
+      "answerAr": "الأورطي",
+      "aliases": [
+        "الاورطي",
+        "اورطي",
+        "الأبهر"
+      ],
+      "explanationAr": "بيطلع من القلب على طول."
+    },
+    {
+      "id": "bl-prog-11",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا طاير صغير أوي",
+        "جناحاتي بتعمل صوت زي الطنين",
+        "الطاير الوحيد اللي بيقدر يطير لورا"
+      ],
+      "answerAr": "الطنان",
+      "aliases": [
+        "طنان",
+        "طائر الطنان"
+      ],
+      "explanationAr": "من أصغر الطيور في العالم."
+    },
+    {
+      "id": "bl-prog-12",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا نوع من التوابل",
+        "بستخرج من زهرة صغيرة بالإيد",
+        "أغلى توابل في العالم بالوزن ولوني بيصبغ الأكل أصفر"
+      ],
+      "answerAr": "الزعفران",
+      "aliases": [
+        "زعفران"
+      ],
+      "explanationAr": "محتاج آلاف الزهور للكيلو الواحد."
+    },
+    {
+      "id": "bl-prog-13",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا ظاهرة طبيعية في السما",
+        "بظهر قرب القطبين",
+        "بلوّن السما بالأخضر والبنفسجي بالليل"
+      ],
+      "answerAr": "الشفق القطبي",
+      "aliases": [
+        "الشفق",
+        "الأورورا"
+      ],
+      "explanationAr": "بسبب المجال المغناطيسي للأرض."
+    },
+    {
+      "id": "bl-prog-14",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا مجرة",
+        "بتقرب من مجرتنا كل ثانية",
+        "أقرب مجرة كبيرة لدرب التبانة"
+      ],
+      "answerAr": "أندروميدا",
+      "aliases": [
+        "اندروميدا",
+        "المرأة المسلسلة"
+      ],
+      "explanationAr": "على بعد حوالي 2.5 مليون سنة ضوئية."
+    },
+    {
+      "id": "bl-ord-11",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّبهم حسب السعر بالوزن من الأرخص للأغلى",
+      "items": [
+        "الملح",
+        "الفلفل الأسود",
+        "الزعفران"
+      ],
+      "labels": [],
+      "explanationAr": "الزعفران أغلى منهم بمراحل."
+    },
+    {
+      "id": "bl-ord-12",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الأعضاء دي حسب الوزن من الأخف للأتقل",
+      "items": [
+        "القلب",
+        "المخ",
+        "الكبد"
+      ],
+      "labels": [
+        "300 جرام",
+        "1400 جرام",
+        "1500 جرام"
+      ],
+      "explanationAr": "الكبد أتقل عضو داخلي."
+    },
+    {
+      "id": "bl-ord-13",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الكائنات دي حسب سرعتها في الميه من الأبطأ للأسرع",
+      "items": [
+        "السلحفاة البحرية",
+        "الدلفين",
+        "سمكة أبو شراع"
+      ],
+      "labels": [],
+      "explanationAr": "أبو شراع من أسرع كائنات البحر."
+    },
+    {
+      "id": "bl-ord-14",
+      "shape": "ordering",
+      "difficulty": 5,
+      "textAr": "رتّب طبقات الغلاف الجوي من الأقرب للأرض للأبعد",
+      "items": [
+        "التروبوسفير",
+        "الستراتوسفير",
+        "الميزوسفير",
+        "الثيرموسفير"
+      ],
+      "labels": [],
+      "explanationAr": "الطيارات بتطير في أول طبقتين."
+    },
+    {
+      "id": "bl-mcq-46",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "العسل بيفسد بعد قد إيه لو اتخزن كويس؟",
+      "options": [
+        "سنة",
+        "خمس سنين",
+        "عشر سنين",
+        "مبيفسدش أبدًا"
+      ],
+      "correctIndex": 3,
+      "explanationAr": "لقوا عسل في مقابر فرعونية ولسه صالح."
+    },
+    {
+      "id": "bl-mcq-47",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "نبات الموز بيتصنّف نباتيًا على إنه إيه؟",
+      "options": [
+        "شجرة",
+        "عشب",
+        "شجيرة",
+        "نخلة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اللي شبه الجذع ده ورق ملفوف مش خشب."
+    },
+    {
+      "id": "bl-mcq-48",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الطماطم من الناحية النباتية بتتحسب إيه؟",
+      "options": [
+        "خضار",
+        "فاكهة",
+        "بقول",
+        "حبوب"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "لأنها بتيجي من زهرة وفيها بذور."
+    },
+    {
+      "id": "bl-mcq-49",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الفول السوداني من عيلة إيه؟",
+      "options": [
+        "المكسرات",
+        "البقوليات",
+        "الحبوب",
+        "الفواكه"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "قرايب الفول والعدس، مش قرايب اللوز."
+    },
+    {
+      "id": "bl-mcq-50",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "الجزر كان لونه إيه في الأصل قبل ما يبقى برتقالي؟",
+      "options": [
+        "برتقالي من الأول",
+        "بنفسجي",
+        "أزرق",
+        "أسود"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الهولنديون هم اللي طوّروا الصنف البرتقالي."
+    },
+    {
+      "id": "bl-mcq-51",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "مين الأقدم على الأرض: سمك القرش ولا الشجر؟",
+      "options": [
+        "الشجر أقدم",
+        "القرش أقدم",
+        "الاتنين ظهروا مع بعض",
+        "محدش يعرف"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "القروش موجودة من قبل ما يظهر أول شجر."
+    },
+    {
+      "id": "bl-mcq-52",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الأخطبوط عنده كام قلب؟",
+      "options": [
+        "واحد",
+        "اتنين",
+        "تلاتة",
+        "أربعة"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "اتنين للخياشيم وواحد للجسم."
+    },
+    {
+      "id": "bl-mcq-53",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "دم الأخطبوط لونه إيه؟",
+      "options": [
+        "أحمر",
+        "أزرق",
+        "أخضر",
+        "شفاف"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "لأنه بيعتمد على النحاس مش الحديد."
+    },
+    {
+      "id": "bl-mcq-54",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "الحلزون ممكن يفضل نايم لمدة توصل لقد إيه؟",
+      "options": [
+        "أسبوع",
+        "شهر",
+        "سنة",
+        "تلات سنين"
+      ],
+      "correctIndex": 3,
+      "explanationAr": "بيدخل في سبات لو الجو مش مناسب."
+    },
+    {
+      "id": "bl-mcq-55",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "النعامة بتدفن راسها في الرمل لما تخاف؟",
+      "options": [
+        "أيوه",
+        "لأ دي خرافة",
+        "أيوه عشان تنام",
+        "أيوه عشان تشرب"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "هي بتوطّي راسها على الأرض عشان تراقب بس."
+    },
+    {
+      "id": "bl-mcq-56",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الجمل بيخزن إيه في سنامه؟",
+      "options": [
+        "ميه",
+        "دهون",
+        "دم",
+        "هوا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "والدهون دي بتتحول لطاقة وميه وقت الحاجة."
+    },
+    {
+      "id": "bl-mcq-57",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الخفاش أعمى؟",
+      "options": [
+        "أيوه أعمى تمامًا",
+        "لأ بيشوف كويس",
+        "بيشوف بالنهار بس",
+        "معندوش عنين أصلًا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بيستعمل الصدى كمان، بس عينيه شغالة."
+    },
+    {
+      "id": "bl-mcq-58",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الدبانة بتعيش قد إيه تقريبًا؟",
+      "options": [
+        "يوم واحد",
+        "أسبوع",
+        "حوالي شهر",
+        "سنة"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "خرافة «اليوم الواحد» دي بتخص حشرة تانية."
+    },
+    {
+      "id": "bl-mcq-59",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "جسم الإنسان فيه كام عضلة تقريبًا؟",
+      "options": [
+        "حوالي 100",
+        "حوالي 300",
+        "أكتر من 600",
+        "أكتر من 2000"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "أكتر بكتير من عدد العظام."
+    },
+    {
+      "id": "bl-mcq-60",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الطفل بيتولد بعظام أكتر ولا أقل من البالغ؟",
+      "options": [
+        "أقل",
+        "أكتر",
+        "نفس العدد",
+        "مفيش عظام أصلًا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عظام كتير بتلتحم مع بعضها وهو بيكبر."
+    },
+    {
+      "id": "bl-mcq-61",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "بطانة المعدة بتتجدد كل قد إيه؟",
+      "options": [
+        "كل سنة",
+        "كل شهر",
+        "كل كام يوم",
+        "مبتتجددش"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "عشان الحمض ميأكلهاش."
+    },
+    {
+      "id": "bl-mcq-62",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي عضلة بتتقال إنها أقوى عضلة بالنسبة لحجمها؟",
+      "options": [
+        "القلب",
+        "عضلة الفك",
+        "عضلة الساق",
+        "اللسان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بتطلّع ضغط عضّ عالي جدًا."
+    },
+    {
+      "id": "bl-mcq-63",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "اللسان عبارة عن إيه؟",
+      "options": [
+        "عضلة واحدة",
+        "مجموعة عضلات",
+        "عظمة",
+        "غضروف"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "تمن عضلات بتشتغل مع بعض."
+    },
+    {
+      "id": "bl-mcq-64",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "التوأم المتطابق بصمته واحدة؟",
+      "options": [
+        "أيوه نفسها بالظبط",
+        "لأ مختلفة",
+        "نفسها في الإيد اليمين بس",
+        "التوأم معندوش بصمة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "البصمة بتتكوّن من ظروف الرحم مش من الجينات بس."
+    },
+    {
+      "id": "bl-mcq-65",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "سور الصين العظيم بيتشاف من الفضا بالعين المجردة؟",
+      "options": [
+        "أيوه بوضوح",
+        "لأ ده مش صحيح",
+        "أيوه بالليل بس",
+        "أيوه من على القمر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ضيّق جدًا ولونه زي الأرض حواليه."
+    },
+    {
+      "id": "bl-mcq-66",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "الشمس بتطلع من أنهي اتجاه على كوكب الزهرة؟",
+      "options": [
+        "الشرق",
+        "الغرب",
+        "الشمال",
+        "الجنوب"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "لأنه بيلف حوالين نفسه عكس باقي الكواكب."
+    },
+    {
+      "id": "bl-mcq-67",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "على كوكب الزهرة، اليوم أطول ولا السنة؟",
+      "options": [
+        "السنة أطول",
+        "اليوم أطول من السنة",
+        "متساويين",
+        "مفيش يوم أصلًا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بيلف حوالين نفسه ببطء شديد."
+    },
+    {
+      "id": "bl-mcq-68",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "لون الشمس الحقيقي إيه؟",
+      "options": [
+        "أصفر",
+        "أبيض",
+        "برتقالي",
+        "أحمر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الغلاف الجوي هو اللي بيخليها تبان صفرا."
+    },
+    {
+      "id": "bl-mcq-69",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين اللي بيسبق التاني: البرق ولا الرعد؟",
+      "options": [
+        "الرعد بيسبق",
+        "البرق بيسبق",
+        "بيحصلوا في نفس اللحظة عندنا",
+        "على حسب الجو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الضوء أسرع من الصوت بكتير."
+    },
+    {
+      "id": "bl-mcq-70",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "الميه السخنة ممكن تتجمد أسرع من الساقعة؟",
+      "options": [
+        "مستحيل",
+        "أيوه في ظروف معينة",
+        "بس في الفضا",
+        "مفيش فرق خالص"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ظاهرة اسمها «ممبيا» ولسه بتتناقش."
+    },
+    {
+      "id": "bl-mcq-71",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "الإزاز مادة إيه؟",
+      "options": [
+        "سائل بيسيل ببطء",
+        "صلبة غير متبلورة",
+        "غاز مضغوط",
+        "بلازما"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "حكاية «إزاز الكنايس بيسيل» دي خرافة."
+    },
+    {
+      "id": "bl-mcq-72",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الألماظ والفحم مصنوعين من نفس العنصر؟",
+      "options": [
+        "لأ خالص",
+        "أيوه، الكربون",
+        "أيوه، السيليكون",
+        "أيوه، الحديد"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الفرق في ترتيب الذرات والضغط."
+    },
+    {
+      "id": "bl-mcq-73",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الدهب موصل للكهربا إزاي؟",
+      "options": [
+        "وحش جدًا",
+        "كويس جدًا",
+        "عازل تمامًا",
+        "بيمنع الكهربا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عشان كده بيستعملوه في وصلات الإلكترونيات."
+    },
+    {
+      "id": "bl-mcq-74",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي معدن أخف معدن في الجدول الدوري؟",
+      "options": [
+        "الألومنيوم",
+        "الليثيوم",
+        "الماغنسيوم",
+        "التيتانيوم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "خفيف لدرجة إنه بيطفو على الميه."
+    },
+    {
+      "id": "bl-mcq-75",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "غاز الهيليوم بيعمل إيه في الصوت؟",
+      "options": [
+        "بيخليه أغلظ",
+        "بيخليه أرفع",
+        "مش بيغيّره",
+        "بيوقّفه خالص"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الصوت بيتحرك فيه أسرع من الهوا."
+    },
+    {
+      "id": "bl-mcq-76",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي عضلة بتتقال إنها أسرع عضلة في الجسم؟",
+      "options": [
+        "القلب",
+        "عضلات الرمش",
+        "اللسان",
+        "عضلة الفك"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الرمشة بتاخد أقل من عُشر ثانية."
+    },
+    {
+      "id": "bl-mcq-77",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "الأرنب بيقدر يرجّع اللي أكله؟",
+      "options": [
+        "أيوه عادي",
+        "لأ مبيقدرش",
+        "بس لما يمرض",
+        "مرة في السنة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "تركيب معدته مبيسمحش بكده."
+    },
+    {
+      "id": "bl-mcq-78",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الحصان بيقدر ينام وهو واقف؟",
+      "options": [
+        "لأ أبدًا",
+        "أيوه",
+        "الصغير بس",
+        "لو مربوط بس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عنده نظام بيقفل مفاصل رجليه."
+    },
+    {
+      "id": "bl-mcq-79",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "الزرافة رقبتها فيها كام فقرة؟",
+      "options": [
+        "7",
+        "14",
+        "20",
+        "32"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "نفس عدد فقرات رقبة الإنسان، بس أطول بكتير."
+    },
+    {
+      "id": "bl-mcq-80",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "مين بيسمع نطاق ترددات أوسع: القطة ولا الكلب؟",
+      "options": [
+        "الكلب",
+        "القطة",
+        "متساويين",
+        "الاتنين مبيسمعوش عالي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "القطة بتوصل لترددات أعلى من الكلب."
+    },
+    {
+      "id": "bl-mcq-81",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي كائن بيتحسب أطول كائن في العالم؟",
+      "options": [
+        "الحوت الأزرق",
+        "قنديل بحر عرف الأسد",
+        "الثعبان الشبكي",
+        "الزرافة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "لوامسه بتوصل لعشرات الأمتار."
+    },
+    {
+      "id": "bl-mcq-82",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "النمل بينام؟",
+      "options": [
+        "لأ خالص",
+        "أيوه بس قيلولات قصيرة جدًا",
+        "أيوه 8 ساعات",
+        "بينام الشتا كله"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "قيلولات بتتعد بالدقايق وبتتكرر مئات المرات."
+    },
+    {
+      "id": "bl-mcq-83",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "عين الدبانة المركبة فيها كام عدسة تقريبًا؟",
+      "options": [
+        "عشرات",
+        "مئات",
+        "آلاف",
+        "عدسة واحدة"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "عشان كده صعب تصطادها."
+    },
+    {
+      "id": "bl-mcq-84",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "البطريق بيعيش عند أنهي قطب؟",
+      "options": [
+        "الشمالي",
+        "الجنوبي",
+        "الاتنين",
+        "ولا واحد فيهم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "والدب القطبي عند القطب الشمالي."
+    },
+    {
+      "id": "bl-mcq-85",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "الدب القطبي جلده تحت الفرو لونه إيه؟",
+      "options": [
+        "أبيض",
+        "أسود",
+        "وردي",
+        "رمادي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الأسود بيمتص حرارة الشمس أكتر."
+    },
+    {
+      "id": "bl-bool-45",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "سمك القرش موجود على الأرض من قبل ما يظهر أول شجر",
+      "isTrue": true,
+      "explanationAr": "القروش أقدم من الأشجار بملايين السنين."
+    },
+    {
+      "id": "bl-bool-46",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "على كوكب الزهرة اليوم أطول من السنة",
+      "isTrue": true,
+      "explanationAr": "بيلف حوالين نفسه ببطء شديد."
+    },
+    {
+      "id": "bl-bool-47",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الجمل بيخزن ميه في سنامه",
+      "isTrue": false,
+      "explanationAr": "بيخزن دهون بتتحول لطاقة."
+    },
+    {
+      "id": "bl-bool-48",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "الدب القطبي جلده تحت الفرو لونه أسود",
+      "isTrue": true,
+      "explanationAr": "بيساعده يمتص حرارة الشمس."
+    },
+    {
+      "id": "bl-bool-49",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "الأرنب مش قادر يرجّع اللي أكله",
+      "isTrue": true,
+      "explanationAr": "تركيب معدته مبيسمحش."
+    },
+    {
+      "id": "bl-num-25",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "عين الدبانة المركبة فيها كام عدسة تقريبًا؟",
+      "correctValue": 4000,
+      "tolerance": 1500,
+      "unitAr": "عدسة",
+      "explanationAr": "عشان كده صعب تصطادها."
+    },
+    {
+      "id": "bl-num-26",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "الزرافة رقبتها فيها كام فقرة؟",
+      "correctValue": 7,
+      "tolerance": 0,
+      "unitAr": "فقرة",
+      "explanationAr": "نفس عدد فقرات رقبة الإنسان."
+    },
+    {
+      "id": "bl-num-27",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "الدبانة بتعيش كام يوم تقريبًا؟",
+      "correctValue": 28,
+      "tolerance": 12,
+      "unitAr": "يوم",
+      "explanationAr": "مش يوم واحد زي ما الناس فاكرة."
+    },
+    {
+      "id": "bl-num-28",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "بطانة المعدة بتتجدد كل كام يوم تقريبًا؟",
+      "correctValue": 4,
+      "tolerance": 2,
+      "unitAr": "يوم",
+      "explanationAr": "عشان الحمض ميأكلهاش."
+    },
+    {
+      "id": "bl-num-29",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "الحلزون ممكن يفضل نايم لحد كام سنة؟",
+      "correctValue": 3,
+      "tolerance": 0,
+      "unitAr": "سنة",
+      "explanationAr": "بيدخل في سبات لو الجو مش مناسب."
+    },
+    {
+      "id": "bl-prog-15",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا كائن بحري ذكي جدًا",
+        "عندي تمن أذرع وبقدر أغيّر لوني",
+        "دمي أزرق وعندي تلات قلوب"
+      ],
+      "answerAr": "الأخطبوط",
+      "aliases": [
+        "أخطبوط",
+        "الاخطبوط"
+      ],
+      "explanationAr": "دمه أزرق لأنه بيعتمد على النحاس."
+    },
+    {
+      "id": "bl-prog-16",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا أكل بيتعمل من غير مصنع",
+        "لقوني في مقابر فرعونية ولسه صالح للأكل",
+        "مبفسدش أبدًا لو اتخزنت كويس"
+      ],
+      "answerAr": "العسل",
+      "aliases": [
+        "عسل",
+        "عسل النحل"
+      ],
+      "explanationAr": "قلة الميه فيه بتمنع البكتيريا."
+    },
+    {
+      "id": "bl-prog-17",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا حيوان بعيش على الجليد",
+        "فروي أبيض بس جلدي تحته أسود",
+        "بصطاد الفقمة في القطب الشمالي"
+      ],
+      "answerAr": "الدب القطبي",
+      "aliases": [
+        "دب قطبي",
+        "الدب الابيض"
+      ],
+      "explanationAr": "الجلد الأسود بيمتص حرارة الشمس."
+    },
+    {
+      "id": "bl-prog-18",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا طاير بس مش بطير",
+        "بعوم أحسن بكتير مما بمشي",
+        "بعيش في القطب الجنوبي مش الشمالي"
+      ],
+      "answerAr": "البطريق",
+      "aliases": [
+        "بطريق",
+        "البطاريق"
+      ],
+      "explanationAr": "جناحاته اتحولت لزعانف للسباحة."
+    },
+    {
+      "id": "bl-prog-19",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا أطول حيوان بري",
+        "برعى ورق الشجر العالي",
+        "رقبتي فيها 7 فقرات بس زي الإنسان"
+      ],
+      "answerAr": "الزرافة",
+      "aliases": [
+        "زرافة",
+        "الزرافه"
+      ],
+      "explanationAr": "الفقرات نفس العدد بس أطول بكتير."
+    },
+    {
+      "id": "bl-prog-20",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا الثديي الوحيد اللي بيطير فعلًا",
+        "بتحرك بالليل وبستعمل الصدى",
+        "الناس فاكراني أعمى وأنا شايف كويس"
+      ],
+      "answerAr": "الخفاش",
+      "aliases": [
+        "خفاش",
+        "الوطواط"
+      ],
+      "explanationAr": "عينيه شغالة، بس الصدى أدق في الضلمة."
+    },
+    {
+      "id": "bl-prog-21",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا أصلب مادة طبيعية معروفة",
+        "بتتعمل مني الخواتم الغالية",
+        "أنا والفحم من نفس العنصر: الكربون"
+      ],
+      "answerAr": "الألماظ",
+      "aliases": [
+        "الماس",
+        "الالماظ",
+        "الألماس"
+      ],
+      "explanationAr": "الفرق في ترتيب الذرات والضغط."
+    },
+    {
+      "id": "bl-prog-22",
+      "shape": "progressive",
+      "difficulty": 5,
+      "hints": [
+        "أنا كوكب جار للأرض وقريب من الشمس",
+        "سطحي حار جدًا وسحبي حمضية",
+        "يومي أطول من سنتي والشمس بتطلع عندي من الغرب"
+      ],
+      "answerAr": "كوكب الزهرة",
+      "aliases": [
+        "الزهرة",
+        "الزهره",
+        "فينوس"
+      ],
+      "explanationAr": "بيلف حوالين نفسه عكس باقي الكواكب."
+    },
+    {
+      "id": "bl-prog-23",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا حيوان صحراوي",
+        "بستحمل العطش أيام طويلة",
+        "الناس فاكرة إني بخزن ميه في سنامي وهو دهون"
+      ],
+      "answerAr": "الجمل",
+      "aliases": [
+        "جمل",
+        "البعير"
+      ],
+      "explanationAr": "الدهون بتتحول لطاقة وميه وقت الحاجة."
+    },
+    {
+      "id": "bl-prog-24",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا غاز أخف من الهوا",
+        "بملّي البالونات وبطيّرها",
+        "لو اتنفستني صوتك بيبقى رفيع ومضحك"
+      ],
+      "answerAr": "الهيليوم",
+      "aliases": [
+        "هيليوم",
+        "غاز الهيليوم"
+      ],
+      "explanationAr": "الصوت بيتحرك فيه أسرع من الهوا."
+    },
+    {
+      "id": "bl-mcq-86",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "الفراولة من الناحية النباتية إيه؟",
+      "options": [
+        "فاكهة حقيقية",
+        "مش فاكهة حقيقية، والحبوب اللي عليها هي الثمار",
+        "خضار ورقي",
+        "من المكسرات"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الجزء الأحمر ده قاعدة الزهرة المتضخمة."
+    },
+    {
+      "id": "bl-mcq-87",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "نسبة الميه في البطيخ قد إيه؟",
+      "options": [
+        "حوالي 50%",
+        "حوالي 70%",
+        "أكتر من 90%",
+        "حوالي 30%"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "عشان كده بيرطّب في الصيف."
+    },
+    {
+      "id": "bl-mcq-88",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "النحلة الواحدة بتعمل قد إيه عسل في حياتها كلها؟",
+      "options": [
+        "كيلو",
+        "نص كيلو",
+        "ملعقة كبيرة",
+        "أقل من ملعقة صغيرة"
+      ],
+      "correctIndex": 3,
+      "explanationAr": "عشان كده برطمان العسل شغل آلاف النحل."
+    },
+    {
+      "id": "bl-mcq-89",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "اللبن لونه أبيض ليه؟",
+      "options": [
+        "بسبب الكالسيوم",
+        "بسبب البروتين والدهون اللي بتشتت الضوء",
+        "بسبب السكر",
+        "بسبب الميه"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الجزيئات بتعكس كل أطوال الموجات."
+    },
+    {
+      "id": "bl-mcq-90",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إحساس الحرقان من الشطة سببه أنهي مادة؟",
+      "options": [
+        "الحمض",
+        "الكابسيسين",
+        "الملح",
+        "السكر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بتخدع مستقبلات الحرارة في اللسان."
+    },
+    {
+      "id": "bl-mcq-91",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه أحسن حاجة بتخفف حرقان الشطة؟",
+      "options": [
+        "الميه",
+        "اللبن",
+        "العصير",
+        "التلج"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الدهون بتذوّب المادة الحارقة والميه لأ."
+    },
+    {
+      "id": "bl-mcq-92",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "البصل بيبكّي ليه؟",
+      "options": [
+        "رايحته القوية",
+        "غاز كبريتي بيتفاعل مع دموع العين",
+        "حموضته",
+        "سكرياته"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بيتكوّن حمض بسيط بيهيّج العين."
+    },
+    {
+      "id": "bl-mcq-93",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "سرعة الهوا في العطسة بتوصل لقد إيه تقريبًا؟",
+      "options": [
+        "20 كم/س",
+        "50 كم/س",
+        "أكتر من 100 كم/س",
+        "500 كم/س"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "عشان كده العطس بينشر الرذاذ لمسافة بعيدة."
+    },
+    {
+      "id": "bl-mcq-94",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الإنسان بيقضي حوالي قد إيه من عمره نايم؟",
+      "options": [
+        "العشر",
+        "الربع",
+        "التلت",
+        "النص"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "يعني حوالي 25 سنة لو عاش 75."
+    },
+    {
+      "id": "bl-mcq-95",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "القلب بينبض كام مرة في اليوم تقريبًا؟",
+      "options": [
+        "10 آلاف",
+        "50 ألف",
+        "100 ألف",
+        "مليون"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "حوالي 70 نبضة في الدقيقة."
+    },
+    {
+      "id": "bl-mcq-96",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "لو اتفردت الأوعية الدموية في جسم الإنسان هتوصل لقد إيه؟",
+      "options": [
+        "حوالي 10 كم",
+        "حوالي 100 كم",
+        "حوالي 1000 كم",
+        "عشرات الآلاف من الكيلومترات"
+      ],
+      "correctIndex": 3,
+      "explanationAr": "معظمها شعيرات دقيقة جدًا."
+    },
+    {
+      "id": "bl-mcq-97",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "المخ بيستهلك حوالي كام في المية من طاقة الجسم؟",
+      "options": [
+        "2%",
+        "10%",
+        "20%",
+        "50%"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "رغم إن وزنه 2% من الجسم بس."
+    },
+    {
+      "id": "bl-mcq-98",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الشعر والضوافر بيفضلوا يطوّلوا بعد الوفاة؟",
+      "options": [
+        "أيوه",
+        "لأ، الجلد بينكمش فبيبانوا أطول",
+        "الضوافر بس",
+        "الشعر بس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مفيش نمو حقيقي، مجرد خداع بصري."
+    },
+    {
+      "id": "bl-mcq-99",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الإنسان بيستعمل 10% من مخه بس؟",
+      "options": [
+        "أيوه",
+        "لأ دي خرافة",
+        "أيوه وقت النوم",
+        "أيوه في الطفولة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "كل مناطق المخ ليها وظيفة وبتشتغل."
+    },
+    {
+      "id": "bl-mcq-100",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الدم اللي في الأوردة لونه إيه فعلًا؟",
+      "options": [
+        "أزرق",
+        "أحمر غامق",
+        "أخضر",
+        "شفاف"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بيبان أزرق من خلال الجلد بس."
+    },
+    {
+      "id": "bl-mcq-101",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "الفراشة بتتذوق الأكل بإيه؟",
+      "options": [
+        "بلسانها",
+        "برجليها",
+        "بقرون الاستشعار",
+        "بجناحيها"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "فيها مستقبلات تذوق بتتعرّف على النبات."
+    },
+    {
+      "id": "bl-mcq-102",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "الضفدع بياخد الميه إزاي؟",
+      "options": [
+        "بيشربها بفمه",
+        "بيمتصها من خلال جلده",
+        "مبياخدش ميه",
+        "من عينه"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عشان كده لازم يفضل في مكان رطب."
+    },
+    {
+      "id": "bl-mcq-103",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "نجم البحر عنده مخ؟",
+      "options": [
+        "أيوه مخ كبير",
+        "لأ معندوش مخ",
+        "عنده مخين",
+        "مخه في وسطه"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عنده شبكة عصبية موزعة بدل المخ."
+    },
+    {
+      "id": "bl-mcq-104",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "دودة الأرض عندها كام تركيب بيشتغل زي القلب؟",
+      "options": [
+        "واحد",
+        "اتنين",
+        "خمسة",
+        "عشرة"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "خمس أقواس بتضخ الدم."
+    },
+    {
+      "id": "bl-mcq-105",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الفيل مش بيقدر يعمل إيه؟",
+      "options": [
+        "يجري",
+        "ينط",
+        "يعوم",
+        "ينام واقف"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وزنه وتركيب رجليه مبيسمحوش."
+    },
+    {
+      "id": "bl-mcq-106",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "الكنغر بيقدر يمشي لورا؟",
+      "options": [
+        "أيوه عادي",
+        "لأ مش بيقدر",
+        "الصغير بس",
+        "لما يخاف بس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بسبب شكل رجليه وديله."
+    },
+    {
+      "id": "bl-mcq-107",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "التمساح بيقدر يطلّع لسانه بره بقه؟",
+      "options": [
+        "بيطلعه عادي",
+        "لأ مش بيقدر",
+        "عنده لسانين",
+        "معندوش لسان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "لسانه ملتصق بقاع فمه."
+    },
+    {
+      "id": "bl-mcq-108",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "سمك القرش عنده عظام؟",
+      "options": [
+        "أيوه هيكل عظمي كامل",
+        "لأ، هيكله غضروفي",
+        "عنده عظمة واحدة",
+        "عظامه شفافة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الغضروف أخف من العظم فبيساعده يعوم."
+    },
+    {
+      "id": "bl-mcq-109",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "قنديل البحر جسمه ميه بنسبة قد إيه؟",
+      "options": [
+        "حوالي 30%",
+        "حوالي 50%",
+        "حوالي 70%",
+        "أكتر من 95%"
+      ],
+      "correctIndex": 3,
+      "explanationAr": "عشان كده بيختفي تقريبًا في الميه."
+    },
+    {
+      "id": "bl-mcq-110",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الشمبانزي بيشارك الإنسان قد إيه من الحمض النووي؟",
+      "options": [
+        "حوالي 60%",
+        "حوالي 80%",
+        "حوالي 98%",
+        "100%"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "أقرب كائن للإنسان جينيًا."
+    },
+    {
+      "id": "bl-mcq-111",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "الأرض بتلف حوالين نفسها بسرعة قد إيه عند خط الاستواء؟",
+      "options": [
+        "حوالي 100 كم/س",
+        "حوالي 500 كم/س",
+        "أكتر من 1600 كم/س",
+        "حوالي 50 كم/س"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "وإحنا مش بنحس لأننا بنتحرك معاها."
+    },
+    {
+      "id": "bl-mcq-112",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "لو نجم بعيد انفجر النهارده، إحنا هنشوفه إمتى؟",
+      "options": [
+        "في نفس اللحظة",
+        "بعد سنين أو آلاف السنين",
+        "بعد ساعة",
+        "مش هنشوفه أبدًا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الضوء بياخد وقت في الطريق، فإحنا بنبص على الماضي."
+    },
+    {
+      "id": "bl-mcq-113",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الصوت بيتنقل في الفضا؟",
+      "options": [
+        "أيوه عادي",
+        "لأ، محتاج وسط مادي",
+        "أيوه بس بطيء",
+        "أيوه قرب النجوم بس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الفضا فراغ، ومفيش جزيئات تنقل الاهتزاز."
+    },
+    {
+      "id": "bl-mcq-114",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "القمر بيقرّب من الأرض ولا بيبعد؟",
+      "options": [
+        "بيقرّب",
+        "بيبعد شوية كل سنة",
+        "ثابت تمامًا",
+        "بيتحرك عشوائي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "حوالي 4 سنتيمتر في السنة."
+    },
+    { "id": "bl-mcq-116", "shape": "mcq", "difficulty": 3, "textAr": "أنهي دولة عندها أكبر عدد مناطق زمنية في العالم بسبب أقاليمها المنتشرة؟", "options": ["روسيا", "الولايات المتحدة", "فرنسا", "المملكة المتحدة"], "correctIndex": 2, "explanationAr": "فرنسا عندها 12 منطقة زمنية بسبب أقاليمها ما وراء البحار المنتشرة حوالين العالم." },
+    { "id": "bl-mcq-117", "shape": "mcq", "difficulty": 4, "textAr": "أنهي دولة عندها أكبر عدد جزر مسجل رسميًا في العالم؟", "options": ["إندونيسيا", "الفلبين", "السويد", "اليونان"], "correctIndex": 2, "explanationAr": "السويد عندها حوالي 267 ألف جزيرة حسب إحصائها الرسمي، أغلبها غير مأهول." },
+    { "id": "bl-mcq-118", "shape": "mcq", "difficulty": 3, "textAr": "أنهي دولة فيها أهرامات أكتر من مصر بالعدد؟", "options": ["السودان", "بيرو", "المكسيك", "إثيوبيا"], "correctIndex": 0, "explanationAr": "السودان فيها حوالي 200-250 هرم من حضارة كوش، أكتر من ضعف عدد أهرامات مصر رغم إنها أصغر حجمًا." },
+    { "id": "bl-mcq-119", "shape": "mcq", "difficulty": 4, "textAr": "أول منتج في التاريخ اتم مسحه بجهاز الباركود في محل تجاري كان إيه؟", "options": ["علبة سجاير", "عبوة علكة", "قنينة مياه", "لوح شوكولاتة"], "correctIndex": 1, "explanationAr": "اتمسحت عبوة علكة ريجلي سنة 1974 في أوهايو كأول عملية مسح باركود تجارية." },
+    { "id": "bl-mcq-120", "shape": "mcq", "difficulty": 4, "textAr": "أقصر رحلة طيران تجارية منتظمة في العالم بتوصل مدتها لكام دقيقة تقريبًا؟", "options": ["أقل من دقيقتين", "10 دقايق", "20 دقيقة", "نص ساعة"], "correctIndex": 0, "explanationAr": "الرحلة بين جزيرتين اسكتلنديتين (ويستراي وبابا ويستراي) بتاخد حوالي دقيقة ونص بس." },
+    { "id": "bl-mcq-121", "shape": "mcq", "difficulty": 3, "textAr": "أنهي دولة عندها 3 عواصم رسمية مختلفة في نفس الوقت؟", "options": ["سويسرا", "جنوب أفريقيا", "ماليزيا", "بوليفيا"], "correctIndex": 1, "explanationAr": "بريتوريا (تنفيذية)، كيب تاون (تشريعية)، وبلومفونتين (قضائية)." },
+    { "id": "bl-mcq-122", "shape": "mcq", "difficulty": 3, "textAr": "أنهي دولة كانت أول دولة في العالم تدي المرأة حق التصويت رسميًا؟", "options": ["بريطانيا", "أمريكا", "نيوزيلندا", "فرنسا"], "correctIndex": 2, "explanationAr": "نيوزيلندا سنة 1893 كانت أول دولة ذات حكم ذاتي تدي المرأة حق التصويت." },
+    { "id": "bl-mcq-123", "shape": "mcq", "difficulty": 4, "textAr": "كلمة «OK» الإنجليزية الشهيرة أصلها اختصار هزلي لعبارة معناها إيه؟", "options": ["كله تمام مكتوبة غلط", "أوقات كويسة", "أول كلام", "أوامر كبيرة"], "correctIndex": 0, "explanationAr": "ظهرت سنة 1839 كاختصار لعبارة «oll korrect» وهي تهجئة متعمدة غلط لـ«all correct»." },
+    { "id": "bl-mcq-124", "shape": "mcq", "difficulty": 4, "textAr": "فيه مكتب بريد عائم فوق بحيرة في أي دولة، بيُعتبر الوحيد من نوعه في العالم؟", "options": ["الهند", "تايلاند", "فيتنام", "إندونيسيا"], "correctIndex": 0, "explanationAr": "مكتب البريد العائم موجود على بحيرة دال في كشمير الهندية من سنة 2011." },
+    { "id": "bl-mcq-125", "shape": "mcq", "difficulty": 3, "textAr": "الصرصور المقطوع رأسه ممكن يفضل عايش لحد كام؟", "options": ["ثواني بس", "ساعة", "أسبوع تقريبًا", "شهر كامل"], "correctIndex": 2, "explanationAr": "الصرصور بيتنفس من ثقوب في جسمه مش من رأسه، وبيموت في الآخر من العطش مش من الجرح." },
+    { "id": "bl-mcq-126", "shape": "mcq", "difficulty": 3, "textAr": "أنهي دولة بتنتج حوالي 90% من زعفران العالم؟", "options": ["إسبانيا", "الهند", "إيران", "المغرب"], "correctIndex": 2, "explanationAr": "إيران هي المصدر الأكبر عالميًا لإنتاج الزعفران بفارق كبير عن باقي الدول." },
+    { "id": "bl-mcq-127", "shape": "mcq", "difficulty": 4, "textAr": "أنهي حرف إنجليزي مش موجود خالص في اسم أي ولاية أمريكية؟", "options": ["Q", "X", "Z", "J"], "correctIndex": 0, "explanationAr": "حرف الـQ هو الوحيد من الـ26 حرف اللي معندوش أي ولاية أمريكية باسمها." },
+    { "id": "bl-mcq-128", "shape": "mcq", "difficulty": 3, "textAr": "أطول حدود برية دولية في العالم بين دولتين موجودة بين مين ومين؟", "options": ["روسيا والصين", "أمريكا وكندا", "الهند والصين", "كازاخستان وروسيا"], "correctIndex": 1, "explanationAr": "الحدود بين أمريكا وكندا طولها حوالي 8891 كيلومتر، أطول حدود برية بين دولتين في العالم." },
+    { "id": "bl-mcq-129", "shape": "mcq", "difficulty": 4, "textAr": "أقصر اسم مكان مسجل في العالم بيتكون من حرف واحد بس، وموجود في عدة قرى في شمال أوروبا. إيه هو؟", "options": ["Ö", "Å", "É", "Ü"], "correctIndex": 1, "explanationAr": "حرف Å بيعني «نهر» بلغات الشمال، ومستخدم كاسم لعدة قرى في النرويج والسويد والدنمارك." },
+    { "id": "bl-mcq-130", "shape": "mcq", "difficulty": 3, "textAr": "أنهي دولة عندها العلم الوطني الوحيد في العالم اللي شكله مش مستطيل؟", "options": ["سويسرا", "نيبال", "الفاتيكان", "بوتان"], "correctIndex": 1, "explanationAr": "علم نيبال عبارة عن مثلثين متراكبين، وهو العلم الرسمي الوحيد غير المستطيل في العالم." },
+    { "id": "bl-mcq-131", "shape": "mcq", "difficulty": 4, "textAr": "أقدم شركة في العالم لسه شغالة لحد دلوقتي بدأت شغلها سنة 578 ميلادية في أي مجال؟", "options": ["صناعة السفن", "بناء المعابد", "الزراعة", "صناعة الحرير"], "correctIndex": 1, "explanationAr": "شركة كونجو جومي اليابانية اتأسست سنة 578م لبناء وصيانة المعابد البوذية." },
+    { "id": "bl-mcq-132", "shape": "mcq", "difficulty": 3, "textAr": "أنهي حشرة معروفة بأقصر عمر بين الحشرات البالغة، وممكن تعيش يوم واحد بس كحشرة طايرة؟", "options": ["الذبابة", "ذبابة مايو (اليعسوب المائي)", "البعوضة", "النملة الطائرة"], "correctIndex": 1, "explanationAr": "ذبابة مايو بتعيش سنين تحت الماء كيرقة، لكن بعد ما تطلع حشرة بالغة بتعيش يوم واحد بس أحيانًا أقل." },
+    { "id": "bl-mcq-133", "shape": "mcq", "difficulty": 4, "textAr": "الرئيس الأمريكي جروفر كليفلاند مشهور بإنجاز نادر جدًا في تاريخ الرئاسة الأمريكية، مين شاركه فيه لاحقًا؟", "options": ["أبراهام لينكولن", "دونالد ترامب", "جورج واشنطن", "توماس جيفرسون"], "correctIndex": 1, "explanationAr": "كليفلاند فاز بفترتين رئاسة غير متتاليتين، وترامب بقى ثاني رئيس أمريكي يحقق نفس الإنجاز." },
+    { "id": "bl-mcq-134", "shape": "mcq", "difficulty": 3, "textAr": "أنهي دولة معترف فيها رسميًا بأكبر عدد لغات رسمية في نفس الوقت؟", "options": ["الهند", "سويسرا", "جنوب أفريقيا", "سنغافورة"], "correctIndex": 2, "explanationAr": "جنوب أفريقيا معترف فيها بـ12 لغة رسمية بعد إضافة لغة الإشارة الجنوب أفريقية سنة 2023." },
+    { "id": "bl-mcq-135", "shape": "mcq", "difficulty": 3, "textAr": "الكلبة السوفيتية «لايكا» اشتهرت لأنها أول كائن حي بيعمل إيه؟", "options": ["يوصل للقمر", "يدور حوالين الأرض في الفضاء", "يعيش في محطة فضائية", "يعبر المحيط طيران"], "correctIndex": 1, "explanationAr": "لايكا كانت أول كائن حي يدور حوالين الأرض في مدار فضائي سنة 1957." },
+    { "id": "bl-mcq-136", "shape": "mcq", "difficulty": 4, "textAr": "أول منتج اتباع فعليًا على موقع eBay لما كان لسه بيتسمى AuctionWeb سنة 1995 كان إيه؟", "options": ["ساعة قديمة", "مؤشر ليزر مكسور", "كتاب نادر", "كارت بوكيمون"], "correctIndex": 1, "explanationAr": "المؤسس باع مؤشر ليزر مكسور بـ14.83 دولار، والمشتري قال إنه بيجمع مؤشرات الليزر المكسورة." },
+    { "id": "bl-mcq-137", "shape": "mcq", "difficulty": 3, "textAr": "الروماني القديم كان بيستخدم بول الإنسان في إيه بشكل غريب من وجهة نظرنا دلوقتي؟", "options": ["تنظيف الملابس وتبييض الأسنان", "طبخ الخبز", "بناء الطرق", "صبغ الشعر"], "correctIndex": 0, "explanationAr": "الرومان كانوا بيجمعوا البول عشان الأمونيا اللي فيه، واستخدموه في غسيل الملابس وحتى تبييض الأسنان." },
+    { "id": "bl-mcq-138", "shape": "mcq", "difficulty": 2, "textAr": "في لعبة الشطرنج، أنهي قطعة بتتحرك بشكل مائل (قطري) بس ومتقدرش تتحرك دغري خالص؟", "options": ["الفيل", "الحصان", "الرخ (القلعة)", "الملكة"], "correctIndex": 0, "explanationAr": "الفيل بيتحرك بشكل مائل بس على طول اللعب، بعكس الرخ اللي بيتحرك دغري." },
+    { "id": "bl-mcq-139", "shape": "mcq", "difficulty": 3, "textAr": "أطول كلمة اشتهرت في فيلم «ماري بوبينز» ومكوّنة من 34 حرف، إيه هي؟", "options": ["Supercalifragilisticexpialidocious", "Antidisestablishmentarianism", "Pneumonoultramicroscopicsilicovolcanoconiosis", "Floccinaucinihilipilification"], "correctIndex": 0, "explanationAr": "الكلمة دي بقت من أشهر الكلمات الطويلة في الثقافة الشعبية بعد فيلم ماري بوبينز سنة 1964." },
+    { "id": "bl-mcq-140", "shape": "mcq", "difficulty": 4, "textAr": "الرومان القدماء كانوا بيغرقوا الكولوسيوم بالمياه أحيانًا عشان يعملوا إيه؟", "options": ["يربوا سمك للأكل", "يمثّلوا معارك بحرية وهمية بمراكب حقيقية", "يبرّدوا الجمهور في الصيف", "يعملوا حفلات سباحة"], "correctIndex": 1, "explanationAr": "المعارك دي كانت بتُسمى «نوماخيا» وكانت بتتم بمراكب حقيقية جوه الحلبة المغمورة بالمية." },
+    { "id": "bl-mcq-141", "shape": "mcq", "difficulty": 4, "textAr": "أعمق صندوق بريد تحت الماء في العالم موجود في اليابان على عمق حوالي كام متر؟", "options": ["3 أمتار", "10 أمتار", "25 متر", "50 متر"], "correctIndex": 1, "explanationAr": "صندوق البريد ده موجود في خليج سوسامي باليابان على عمق 10 أمتار تقريبًا، وسجل رقم غينيس." },
+    { "id": "bl-mcq-142", "shape": "mcq", "difficulty": 4, "textAr": "أول فيروس كمبيوتر في التاريخ سنة 1971 كان اسمه إيه، ومكانش بيعمل أي ضرر فعلي؟", "options": ["Creeper", "Melissa", "ILOVEYOU", "Morris"], "correctIndex": 0, "explanationAr": "برنامج Creeper كان تجربة أمنية بس، وكان بيظهر رسالة «امسكني لو تقدر» من غير أي ضرر." },
+    { "id": "bl-mcq-143", "shape": "mcq", "difficulty": 3, "textAr": "تقنية البلوتوث سُميت على اسم مين؟", "options": ["مخترع أمريكي", "ملك فايكنج دنماركي قديم", "عالم رياضيات سويدي", "شركة يابانية"], "correctIndex": 1, "explanationAr": "سُميت على اسم الملك الفايكنج هارالد «الأزرق السن» اللي وحّد الدنمارك، كرمز لتوحيد الأجهزة." },
+    { "id": "bl-mcq-144", "shape": "mcq", "difficulty": 4, "textAr": "كلمة «واي فاي» (Wi-Fi) الشهيرة فعليًا معناها إيه رسميًا؟", "options": ["اختصار لـ«دقة لاسلكية»", "مالهاش معنى رسمي، مجرد اسم تجاري", "اختصار لاسم الشركة المخترعة", "كلمة يابانية الأصل"], "correctIndex": 1, "explanationAr": "الاسم اتخترع كعلامة تجارية سنة 1999 من غير أي معنى رسمي، رغم انتشار الاعتقاد إنها اختصار لـ«Wireless Fidelity»." },
+    { "id": "bl-mcq-145", "shape": "mcq", "difficulty": 4, "textAr": "علامة الـ«@» بقت جزء أساسي من عنوان الإيميل بفضل مهندس سنة 1971، اختارها ليه؟", "options": ["لأنها كانت الرمز الوحيد اللي مش هيظهر في اسم حد", "لأنها بتشبه حرف a", "علشان جمالها الشكلي", "بالصدفة وهو بيلعب على الكيبورد"], "correctIndex": 0, "explanationAr": "راي توملينسون اختارها عشان تفصل اسم المستخدم عن اسم الجهاز من غير لبس مع أي اسم." },
+    { "id": "bl-mcq-146", "shape": "mcq", "difficulty": 3, "textAr": "«حرب النعام» الشهيرة سنة 1932 في أستراليا كانت بين الجيش الأسترالي وأنهي حيوان؟", "options": ["الكنغر", "طائر الإيمو", "الأرانب البرية", "الديناصورات الأسترالية"], "correctIndex": 1, "explanationAr": "الجيش استخدم رشاشات ضد طيور الإيمو اللي كانت بتدمر المحاصيل، لكن الطيور فازت عمليًا بصعوبة اصطيادها." },
+    { "id": "bl-mcq-147", "shape": "mcq", "difficulty": 4, "textAr": "إيه اللي دفع ألفريد نوبل (مخترع الديناميت) لإنشاء جائزة نوبل حسب رواية شائعة عنه؟", "options": ["نصيحة من صديق مقرب", "جريدة فرنسية نشرت نعيه بالغلط ولقبته بـ«تاجر الموت»", "حلم رآه قبل موته", "طلب من الحكومة السويدية"], "correctIndex": 1, "explanationAr": "جريدة فرنسية لخبطته بأخوه المتوفي ونشرت نعي قاسي وصفه بتاجر الموت، فاهتم بسمعته بعد وفاته." },
+    { "id": "bl-mcq-148", "shape": "mcq", "difficulty": 4, "textAr": "دولة الفاتيكان عندها بنية تحتية غريبة بالنسبة لحجمها الصغير، وهي إيه؟", "options": ["مطار خاص", "محطة سكة حديد خاصة بيها", "مترو أنفاق", "ميناء بحري"], "correctIndex": 1, "explanationAr": "محطة سكة حديد الفاتيكان بتوصلها بالشبكة الإيطالية، وهي أقصر شبكة سكة حديد وطنية في العالم." },
+    { "id": "bl-mcq-149", "shape": "mcq", "difficulty": 3, "textAr": "بلدة أمريكية في ألاسكا اسمها «نورث بول» (القطب الشمالي) بتستقبل آلاف رسائل الأطفال لبابا نويل كل سنة، ليه بالظبط؟", "options": ["فيها مصنع لعب أطفال", "اسمها الحرفي «القطب الشمالي» فالناس بتبعتله هناك", "فيها متحف عن بابا نويل بس", "قريبة جدًا من القطب الشمالي الحقيقي"], "correctIndex": 1, "explanationAr": "البلدة اسمها الرسمي «نورث بول» فعلًا، فكتير من الأطفال حول العالم بيبعتوا رسايلهم على عنوانها." },
+    { "id": "bl-mcq-150", "shape": "mcq", "difficulty": 3, "textAr": "أنهي دولة شعبها الأطول متوسط طول في العالم؟", "options": ["السويد", "هولندا", "الدنمارك", "ألمانيا"], "correctIndex": 1, "explanationAr": "هولندا محتلة المركز الأول عالميًا في متوسط طول السكان منذ عقود." },
+    { "id": "bl-mcq-151", "shape": "mcq", "difficulty": 4, "textAr": "أكبر جهة موظّفة في العالم من ناحية عدد العاملين هي أنهي جهة؟", "options": ["شركة أمازون", "وزارة الدفاع الأمريكية", "السكك الحديدية الهندية", "شركة وول مارت"], "correctIndex": 1, "explanationAr": "وزارة الدفاع الأمريكية عندها أكتر من 3 مليون موظف وجندي، أكبر جهة توظيف في العالم." },
+    { "id": "bl-mcq-152", "shape": "mcq", "difficulty": 4, "textAr": "أقدم نكتة مسجلة في التاريخ البشري موجودة على لوح طيني سومري، وموضوعها كان عن إيه؟", "options": ["ملك وخادمه", "عروس وريحة معينة", "تاجر ونصاب", "حمار وثعلب"], "correctIndex": 1, "explanationAr": "النكتة مكتوبة حوالي 1900 قبل الميلاد وموضوعها عروسة ما فسّتش قدام جوزها، غريبة الفكاهة لعصرنا." },
+    { "id": "bl-mcq-153", "shape": "mcq", "difficulty": 3, "textAr": "مهندس برج إيفل جوستاف إيفل بنى لنفسه إيه فوق البرج مفاجئ لزوار كتير؟", "options": ["مسبح خاص", "شقة سكنية خاصة به", "حديقة صغيرة", "مسرح مصغر"], "correctIndex": 1, "explanationAr": "الشقة كانت بتضم غرفة معيشة ومطبخ، واستضاف فيها توماس إديسون كضيف مشهور." },
+    { "id": "bl-mcq-154", "shape": "mcq", "difficulty": 3, "textAr": "سلسلة ماكدونالدز عندها مركز تدريب داخلي بيتخرج منه آلاف المديرين، اسمه إيه؟", "options": ["Burger College", "Hamburger University", "McDonald's Academy", "Fry School"], "correctIndex": 1, "explanationAr": "«جامعة الهامبورجر» اتأسست 1961 في شيكاجو، وليها فروع في عواصم عالمية تانية." },
+    { "id": "bl-mcq-155", "shape": "mcq", "difficulty": 3, "textAr": "الجزء البلاستيك أو المعدني الصغير في آخر رباط الحذاء اللي بيمنعه من التفرّط، إيه اسمه؟", "options": ["أجليت (Aglet)", "بكلة", "فيرول", "كليب"], "correctIndex": 0, "explanationAr": "الأجليت وظيفته يخلي طرف الرباط صلب عشان يعدّي بسهولة من الثقوب." },
+    { "id": "bl-mcq-156", "shape": "mcq", "difficulty": 3, "textAr": "أول كاميرا ويب في تاريخ الإنترنت (بجامعة كامبريدج سنة 1991) كانت موجهة على إيه بالظبط؟", "options": ["باب المعمل", "إبريق قهوة", "حوض سمك", "لوحة إعلانات"], "correctIndex": 1, "explanationAr": "الكاميرا كانت بترصد إبريق القهوة عشان الموظفين يعرفوا لو خلص قبل ما ينزلوا الدور." },
+    { "id": "bl-mcq-157", "shape": "mcq", "difficulty": 4, "textAr": "لعبة باك مان الشهيرة كان اسمها الأصلي في اليابان مختلف تمامًا، إيه هو؟", "options": ["Puck Man", "Muncher", "Gobble Man", "Dot Eater"], "correctIndex": 0, "explanationAr": "اتغير الاسم لأسواق أمريكا خوفًا من تخريب حرف P وتحويله لكلمة بذيئة." },
+    { "id": "bl-mcq-158", "shape": "mcq", "difficulty": 3, "textAr": "أول فيديو اتنزل على موقع يوتيوب سنة 2005 كان عن إيه؟", "options": ["أغنية موسيقية", "مؤسس الموقع بيتكلم قدام فيلة في حديقة حيوان", "فيديو رياضي", "إعلان تجاري"], "correctIndex": 1, "explanationAr": "الفيديو اسمه «أنا في حديقة الحيوان» ومدته حوالي 19 ثانية بس." },
+    { "id": "bl-mcq-159", "shape": "mcq", "difficulty": 4, "textAr": "وحدة قياس شدة الصوت «ديسيبل» سُميت تكريمًا لمين؟", "options": ["توماس إديسون", "ألكسندر جراهام بيل", "نيكولا تسلا", "جيمس واط"], "correctIndex": 1, "explanationAr": "سُميت الوحدة نسبة لمخترع الهاتف ألكسندر جراهام بيل." },
+    { "id": "bl-mcq-160", "shape": "mcq", "difficulty": 3, "textAr": "صحراء الصحراء الكبرى كانت شكلها مختلف تمامًا من آلاف السنين، كانت عبارة عن إيه؟", "options": ["محيط مائي كامل", "أرض خضرا فيها بحيرات وأنهار وحيوانات زي الفرس النهري", "جبال ثلجية", "غابات مطيرة استوائية"], "correctIndex": 1, "explanationAr": "الفترة دي بتُسمى «الصحراء الخضراء» واستمرت آلاف السنين قبل ما تتحول لصحراء جافة." },
+    { "id": "bl-mcq-161", "shape": "mcq", "difficulty": 3, "textAr": "مساحة صحراء الصحراء الكبرى قريبة جدًا من مساحة أنهي دولة كبيرة؟", "options": ["روسيا", "الولايات المتحدة الأمريكية", "الصين", "كندا"], "correctIndex": 1, "explanationAr": "مساحة الصحراء الكبرى حوالي 9.2 مليون كم²، قريبة جدًا من مساحة الولايات المتحدة." },
+    { "id": "bl-mcq-162", "shape": "mcq", "difficulty": 3, "textAr": "أنهي دولة عندها أطول اسم رسمي مسجل لبلدة موجودة فيها بلغتها المحلية؟", "options": ["ويلز في بريطانيا", "تايلاند", "اليابان", "فنلندا"], "correctIndex": 0, "explanationAr": "فيه بلدة في ويلز اسمها الرسمي مكوّن من عشرات الحروف، ومن أطول أسماء الأماكن المستخدمة فعليًا في أوروبا." },
+    { "id": "bl-mcq-163", "shape": "mcq", "difficulty": 3, "textAr": "أنهي دولة بتحتفظ بلقب أطول شبكة قطارات فائقة السرعة في العالم؟", "options": ["اليابان", "الصين", "فرنسا", "ألمانيا"], "correctIndex": 1, "explanationAr": "الصين عندها آلاف الكيلومترات من خطوط القطارات فائقة السرعة، أطول شبكة من نوعها عالميًا." },
+    { "id": "bl-mcq-164", "shape": "mcq", "difficulty": 3, "textAr": "أنهي دولة بيُنسب ليها اختراع لعبة الشطرنج في صورتها الأقرب للحديثة؟", "options": ["الصين", "الهند", "بلاد فارس", "مصر القديمة"], "correctIndex": 1, "explanationAr": "أقدم أشكال الشطرنج بتُنسب للعبة هندية قديمة اسمها «شاتورانجا»." },
+    { "id": "bl-mcq-165", "shape": "mcq", "difficulty": 3, "textAr": "أنهي دولة بتمتلك أكبر احتياطي معروف من الذهب في خزائنها الرسمية؟", "options": ["روسيا", "الصين", "ألمانيا", "الولايات المتحدة الأمريكية"], "correctIndex": 3, "explanationAr": "الولايات المتحدة عندها أكبر احتياطي ذهب رسمي معلن في العالم." },
+    { "id": "bl-mcq-166", "shape": "mcq", "difficulty": 4, "textAr": "أقدم جامعة لسه شغالة بشكل مستمر في التاريخ اتأسست سنة 859م بفضل مين؟", "options": ["خليفة عباسي", "امرأة مسلمة اسمها فاطمة الفهرية", "تاجر ثري مغربي", "عالم رياضيات أندلسي"], "correctIndex": 1, "explanationAr": "جامعة القرويين في فاس بالمغرب أسستها فاطمة الفهرية، ومسجلة في غينيس كأقدم جامعة مستمرة في العالم." },
+    { "id": "bl-mcq-167", "shape": "mcq", "difficulty": 4, "textAr": "طائر شعار تويتر الشهير (X حاليًا) كان ليه اسم رسمي، إيه هو؟", "options": ["لاري (Larry)", "توم (Tom)", "بيلي (Billy)", "جاك (Jack)"], "correctIndex": 0, "explanationAr": "الاسم اتسمى تكريمًا للاعب كرة السلة الأسطوري لاري بيرد." },
+    { "id": "bl-mcq-168", "shape": "mcq", "difficulty": 3, "textAr": "برج تايبيه 101 في تايوان كان صاحب لقب أطول مبنى في العالم قبل ما يظهر برج خليفة، لحد أنهي سنة؟", "options": ["2006", "2010", "2015", "2020"], "correctIndex": 1, "explanationAr": "احتفظ برج تايبيه 101 باللقب من 2004 لحد افتتاح برج خليفة سنة 2010." },
+    { "id": "bl-mcq-169", "shape": "mcq", "difficulty": 4, "textAr": "أول موبايل متاح تجاريًا للجمهور (موتورولا داينا تاك) سنة 1983 كان سعره تقريبًا كام دولار؟", "options": ["حوالي 400 دولار", "حوالي 4000 دولار", "حوالي 40 ألف دولار", "حوالي 400 ألف دولار"], "correctIndex": 1, "explanationAr": "سعره كان حوالي 3995 دولار وقتها، مبلغ ضخم يعادل آلاف الدولارات بقيمة اليوم." },
+    { "id": "bl-mcq-170", "shape": "mcq", "difficulty": 3, "textAr": "أول من استخدم شكل من أشكال العملة الورقية في التاريخ كانوا الصينيين، في عهد أنهي أسرة حاكمة؟", "options": ["أسرة هان", "أسرة تانغ", "أسرة مينغ", "أسرة تشينغ"], "correctIndex": 1, "explanationAr": "بدأت الفكرة كإيصالات ائتمان في عهد أسرة تانغ، وبعدين اتطورت رسميًا في عهد أسرة سونغ." },
+    { "id": "bl-mcq-171", "shape": "mcq", "difficulty": 3, "textAr": "ترتيب حروف لوحة المفاتيح المعروف بـ«QWERTY» اتصمم أصلًا ليه؟", "options": ["عشان يبقى أسرع في الكتابة", "عشان يقلل تشابك أذرع الحروف في الآلة الكاتبة القديمة", "بالصدفة البحتة", "عشان يناسب اللغة الفرنسية"], "correctIndex": 1, "explanationAr": "كريستوفر شولز رتب الحروف عشان يقلل تشابك الحروف المتجاورة اللي كانت بتتكتب ورا بعض بسرعة." },
+    { "id": "bl-mcq-172", "shape": "mcq", "difficulty": 4, "textAr": "أقدم فيلم سينمائي معروف لسه موجود في التاريخ اتصور سنة 1888 ومدته حوالي كام ثانية؟", "options": ["ثانيتين بس", "30 ثانية", "دقيقتين", "5 دقايق"], "correctIndex": 0, "explanationAr": "فيلم «مشهد حديقة راوندهاي» مدته حوالي ثانيتين بس، وبيُعتبر أقدم فيلم متحرك موجود لحد دلوقتي." },
+    { "id": "bl-mcq-173", "shape": "mcq", "difficulty": 3, "textAr": "مين اخترع مشروب كوكاكولا الأصلي، ومهنته كانت إيه؟", "options": ["طباخ فرنسي", "صيدلي أمريكي", "مزارع قطن", "طبيب عسكري"], "correctIndex": 1, "explanationAr": "الصيدلي جون بيمبرتون اخترع الشراب في أتلانتا سنة 1886." },
+    { "id": "bl-mcq-174", "shape": "mcq", "difficulty": 4, "textAr": "الاسم الرسمي الكامل لتمثال الحرية الأمريكي معناه إيه بالضبط؟", "options": ["الحرية تنير العالم", "أم المنفيين", "بوابة أمريكا الذهبية", "حارسة المحيط"], "correctIndex": 0, "explanationAr": "الاسم الرسمي الفرنسي الأصلي «La Liberté éclairant le monde» ومعناه الحرية تنير العالم." },
+    { "id": "bl-mcq-175", "shape": "mcq", "difficulty": 4, "textAr": "أول إشارة مرور ضوئية في التاريخ اتركبت في لندن سنة 1868، وحصل ليها إيه بعد أسابيع قليلة؟", "options": ["اتسرقت", "انفجرت بسبب تسريب غاز وجرحت الشرطي المسؤول عنها", "احترقت بسبب حريق", "اتنقلت لمدينة تانية"], "correctIndex": 1, "explanationAr": "كانت بتشتغل بمصابيح غاز، وحصل تسريب أدى لانفجار جرح الشرطي اللي كان بيشغلها." },
+    { "id": "bl-mcq-176", "shape": "mcq", "difficulty": 3, "textAr": "النودلز سريعة التحضير (الإندومي وأنواعها) اخترعها مين؟", "options": ["طباخ إيطالي", "رجل أعمال ياباني اسمه مومفوكو أندو", "شركة أمريكية", "طباخ كوري"], "correctIndex": 1, "explanationAr": "اخترعها مومفوكو أندو سنة 1958 في اليابان بعد فترة نقص غذاء ما بعد الحرب." },
+    { "id": "bl-mcq-177", "shape": "mcq", "difficulty": 3, "textAr": "مادة الفيلكرو (اللاصق اللي بيتفك ويترّبط) اتخترعت لما مهندس سويسري لاحظ إيه؟", "options": ["نسيج العنكبوت قوي جدًا", "بذور شوكية اتعلقت في فرو كلبه وملابسه أثناء نزهة", "صمغ النحل قوي وثابت", "جلد السلحفاة صعب يتقطع"], "correctIndex": 1, "explanationAr": "المهندس جورج دي ميسترال درس البذور الشوكية اللي علقت في كلبه تحت الميكروسكوب، ومن هنا جاله الإلهام." },
+    { "id": "bl-mcq-178", "shape": "mcq", "difficulty": 3, "textAr": "شركة ليجو الدنماركية الشهيرة بمكعباتها البلاستيكية كانت بتصنع إيه في بداياتها الأولى؟", "options": ["ألعاب معدنية", "ألعاب خشبية", "دباديب قماش", "عربيات أطفال حديدية"], "correctIndex": 1, "explanationAr": "الشركة بدأت سنة 1932 بتصنيع ألعاب خشبية قبل ما تتحول للبلاستيك في الأربعينيات." },
+    { "id": "bl-mcq-179", "shape": "mcq", "difficulty": 2, "textAr": "أكتر متحف بيزوره ناس في العالم حاليًا هو أنهي متحف؟", "options": ["المتحف البريطاني", "متحف اللوفر في باريس", "متحف الفاتيكان", "متحف المتروبوليتان"], "correctIndex": 1, "explanationAr": "متحف اللوفر بيستقبل أكتر من 9 مليون زائر سنويًا، رقم أعلى من أي متحف تاني." },
+    { "id": "bl-mcq-180", "shape": "mcq", "difficulty": 3, "textAr": "أول شخص يُعتبر «مبرمج كمبيوتر» في التاريخ، قبل ما تتخترع أجهزة الكمبيوتر أصلًا، كان مين؟", "options": ["رجل إنجليزي في القرن العشرين", "امرأة إنجليزية في القرن التاسع عشر اسمها أدا لافليس", "عالم ألماني في الحرب العالمية الثانية", "مهندس أمريكي في الستينيات"], "correctIndex": 1, "explanationAr": "أدا لافليس كتبت أول خوارزمية نظرية لآلة حسابية ميكانيكية في أربعينيات القرن التاسع عشر." },
+    { "id": "bl-mcq-181", "shape": "mcq", "difficulty": 2, "textAr": "أول لعبة كمبيوتر شهيرة سُميت أوليًا في اليابان بحرف مختلف تمامًا عن اسمها العالمي، أنهي لعبة؟", "options": ["سوبر ماريو", "باك مان", "تتريس", "سونيك"], "correctIndex": 1, "explanationAr": "اسمها الياباني كان «Puck Man»، اتغير خوفًا من تخريب حرف الـP لكلمة بذيئة." },
+    { "id": "bl-mcq-182", "shape": "mcq", "difficulty": 2, "textAr": "أول فيديو اتنزل رسميًا على منصة يوتيوب سنة 2005 كان بعنوان إيه؟", "options": ["أنا في حديقة الحيوان", "يوم في حياتي", "أول رحلة لي", "تجربة الكاميرا الجديدة"], "correctIndex": 0, "explanationAr": "الفيديو ده كان أول محتوى اتنزل على المنصة اللي بقت أضخم موقع فيديوهات في العالم." },
+    { "id": "bl-mcq-183", "shape": "mcq", "difficulty": 3, "textAr": "الشركة اللي اخترعت مادة الفيلكرو استلهمت الاسم من دمج كلمتين فرنسيتين معناهم إيه؟", "options": ["مخمل وخطاف", "قوة والتصاق", "شعر وأمان", "جلد وحرير"], "correctIndex": 0, "explanationAr": "الاسم Velcro مدمج من الكلمتين الفرنسيتين velours (مخمل) وcrochet (خطاف)." },
+    { "id": "bl-mcq-184", "shape": "mcq", "difficulty": 3, "textAr": "شركة ماكدونالدز اخترعت مصطلح تدريبي داخلي اسمه «جامعة الهامبورجر»، وبتديها اعتراف تعليمي من إيه؟", "options": ["منظمة الصحة العالمية", "مجلس أمريكي للتعليم بيعتبر شهاداتها معتمدة في كليات كتير", "الأمم المتحدة", "وزارة التجارة الأمريكية"], "correctIndex": 1, "explanationAr": "دورات جامعة الهامبورجر معترف بيها من مجلس التعليم الأمريكي كساعات معتمدة في آلاف الكليات." },
+    { "id": "bl-mcq-185", "shape": "mcq", "difficulty": 4, "textAr": "أضخم كنز عملات معدنية غارقة اتلقاه في التاريخ كان جوه حطام سفينة إسبانية غرقت محملة بذهب وفضة من أمريكا الجنوبية، في أنهي قرن؟", "options": ["القرن السادس عشر", "القرن السابع عشر", "القرن التاسع عشر", "القرن العشرين"], "correctIndex": 1, "explanationAr": "كنوز كتير من سفن الأسطول الإسباني الغارقة في القرن السابع عشر لسه بيتم اكتشافها لحد النهاردة." },
+    { "id": "bl-mcq-186", "shape": "mcq", "difficulty": 3, "textAr": "أقدم شكل معروف للعبة الشطرنج بيُنسب لحضارة قديمة في أنهي بلد؟", "options": ["الهند", "الصين", "بلاد فارس", "اليونان"], "correctIndex": 0, "explanationAr": "لعبة «شاتورانجا» الهندية القديمة بتُعتبر الجد الأقدم المعروف للشطرنج الحديث." },
+    { "id": "bl-mcq-187", "shape": "mcq", "difficulty": 3, "textAr": "أول ماكينة صرف آلي (ATM) في التاريخ اتركبت سنة 1967 قدام فرع بنك في أنهي دولة؟", "options": ["الولايات المتحدة", "بريطانيا", "اليابان", "ألمانيا"], "correctIndex": 1, "explanationAr": "أول ماكينة صرف آلي اتركبت قدام فرع بنك باركليز في لندن سنة 1967." },
+    { "id": "bl-mcq-188", "shape": "mcq", "difficulty": 4, "textAr": "شركة نينتندو قبل ما تدخل مجال ألعاب الفيديو، كانت شركة يابانية بتصنع إيه من سنة 1889؟", "options": ["ورق كوتشينة تقليدي (هانافودا)", "أدوات صيد", "ساعات يد", "دراجات هوائية"], "correctIndex": 0, "explanationAr": "نينتندو اتأسست كشركة صناعة كوتشينة يابانية تقليدية، وفضلت كده لعقود قبل التحول لصناعة الألعاب." },
+    { "id": "bl-mcq-189", "shape": "mcq", "difficulty": 3, "textAr": "الرقم القياسي لأطول رحلة هجرة لحيوان مسجل حاليًا محتفظ بيه طائر بحري اسمه إيه؟", "options": ["النسر الذهبي", "الخرشنة القطبية", "طائر الفلامنجو", "أبو منجل"], "correctIndex": 1, "explanationAr": "الخرشنة القطبية بتقطع رحلة سنوية بين القطبين بمسافة تعادل تقريبًا رحلة للقمر ورجوع على مدار حياتها." },
+    { "id": "bl-mcq-190", "shape": "mcq", "difficulty": 3, "textAr": "أول شركة طيران تجارية منتظمة في التاريخ بدأت رحلاتها سنة 1914 بين مدينتين في أنهي دولة؟", "options": ["بريطانيا", "فرنسا", "الولايات المتحدة الأمريكية", "ألمانيا"], "correctIndex": 2, "explanationAr": "الخط كان بين سانت بطرسبرج وتامبا في ولاية فلوريدا الأمريكية." },
+    { "id": "bl-mcq-191", "shape": "mcq", "difficulty": 3, "textAr": "لوحة الموناليزا اتسرقت من متحف اللوفر سنة 1911، مين كان السارق؟", "options": ["زائر عادي للمتحف", "موظف كان شغال في المتحف نفسه", "لص محترف مشهور", "أحد الحراس المتقاعدين"], "correctIndex": 1, "explanationAr": "فينسينزو بيروجا كان موظف عند مقاول بيشتغل مع اللوفر، وسرقها وهو لابس زي العمال الرسمي." },
+    { "id": "bl-mcq-192", "shape": "mcq", "difficulty": 3, "textAr": "الرسام فان جوخ حسب الرواية الشائعة باع لوحة واحدة بس طول حياته، اسمها إيه؟", "options": ["ليلة النجوم", "دوار الشمس", "الكرم الأحمر", "عباد الشمس الذابل"], "correctIndex": 2, "explanationAr": "لوحة «الكرم الأحمر» بيعتها فنانة بلجيكية سنة 1890، قبل وفاته بشهور قليلة." },
+    { "id": "bl-mcq-193", "shape": "mcq", "difficulty": 4, "textAr": "أقصر فترة حكم لملك في التاريخ استمرت حوالي 20 دقيقة بس، لمين كانت؟", "options": ["الملك لويس التاسع عشر ملك فرنسا", "الملك إدوارد الثامن", "الإمبراطور بيدرو الثاني", "الملك فاروق"], "correctIndex": 0, "explanationAr": "تنازل عن العرش بعد 20 دقيقة بس من توليه سنة 1830، بعد تنازل والده مباشرة." },
+    { "id": "bl-mcq-194", "shape": "mcq", "difficulty": 3, "textAr": "أول جسم من صنع الإنسان يوصل لسطح القمر كان مركبة سوفيتية سنة 1959، اسمها إيه؟", "options": ["سبوتنيك 1", "لونا 2", "فوستوك 1", "فوييجر 1"], "correctIndex": 1, "explanationAr": "لونا 2 اصطدمت بسطح القمر سنة 1959، أول جسم بشري الصنع يلمس جرم سماوي تاني." },
+    { "id": "bl-mcq-195", "shape": "mcq", "difficulty": 4, "textAr": "أول صورة فوتوغرافية دائمة في تاريخ البشرية اتلقطت حوالي سنة 1826 لمنظر إيه؟", "options": ["وجه إنسان", "منظر من شباك بيت المخترع", "حيوان أليف", "سفينة في ميناء"], "correctIndex": 1, "explanationAr": "المخترع الفرنسي نيبس التقط منظر من شباك بيته، واستغرق التصوير ساعات طويلة." },
+    { "id": "bl-mcq-196", "shape": "mcq", "difficulty": 4, "textAr": "أول بطل أولمبي مسجل بالاسم في التاريخ سنة 776 قبل الميلاد كانت مهنته الأصلية إيه؟", "options": ["جندي", "طباخ وخباز", "نجار", "راعي غنم"], "correctIndex": 1, "explanationAr": "كوروبوس من إيليس كان طباخ وفاز بسباق العدو في أول أولمبياد مسجل." },
+    { "id": "bl-mcq-197", "shape": "mcq", "difficulty": 3, "textAr": "جبل كليمنجارو في تنزانيا مشهور بلقب «أطول جبل منفرد» في العالم، معنى اللقب ده إيه بالظبط؟", "options": ["أطول جبل بشكل مطلق", "جبل مش جزء من أي سلسلة جبال تانية", "أطول جبل في القارة الأفريقية بس", "جبل بركاني نشط لسه"], "correctIndex": 1, "explanationAr": "كليمنجارو بيقف لوحده مش متصل بسلسلة جبلية، بعكس إفرست اللي جزء من سلسلة الهيمالايا." },
+    { "id": "bl-mcq-198", "shape": "mcq", "difficulty": 3, "textAr": "أول لغز كلمات متقاطعة اتنشر في جريدة أمريكية سنة 1913، مين اخترعه؟", "options": ["محرر صحفي بريطاني الأصل", "أستاذ جامعي", "لاعب شطرنج محترف", "كاتب روايات بوليسية"], "correctIndex": 0, "explanationAr": "آرثر واين، محرر في جريدة نيويورك وورلد، ابتكر اللغز الأول في قسم الترفيه بالجريدة." },
+    { "id": "bl-mcq-199", "shape": "mcq", "difficulty": 3, "textAr": "لغة الإشارة اللي بيستخدمها الصم حول العالم إيه طبيعتها؟", "options": ["لغة عالمية واحدة موحدة للجميع", "لغات مختلفة تمامًا من دولة لدولة زي اللغات المنطوقة", "نفس اللغة بس بلهجات بسيطة", "لغة رسمية معتمدة من الأمم المتحدة فقط"], "correctIndex": 1, "explanationAr": "فيه أكتر من 140 لغة إشارة مختلفة حول العالم، ومتحدثي لغة معينة مش بالضرورة يفهموا لغة تانية." },
+    { "id": "bl-mcq-200", "shape": "mcq", "difficulty": 4, "textAr": "أقدم رواية أدبية معروفة في التاريخ بالمعنى الحديث للكلمة كتبتها امرأة يابانية في القرن الحادي عشر، اسمها إيه؟", "options": ["حكاية جينجي", "ألف ليلة وليلة", "دون كيخوته", "حكايات كانتربري"], "correctIndex": 0, "explanationAr": "كتبتها موراساكي شيكيبو حوالي سنة 1010م، وبتُعتبر أقدم رواية بالمعنى الأدبي الحديث." },
+    { "id": "bl-mcq-201", "shape": "mcq", "difficulty": 3, "textAr": "شبكة الويب (اللي بتتصفحها بالمتصفح) اخترعها مين سنة 1989؟", "options": ["بيل جيتس", "تيم بيرنرز لي", "ستيف جوبز", "لاري بيج"], "correctIndex": 1, "explanationAr": "تيم بيرنرز لي اخترع الويب في مختبر سيرن، وده مختلف عن اختراع الإنترنت نفسه اللي أقدم بكتير." },
+    { "id": "bl-mcq-202", "shape": "mcq", "difficulty": 4, "textAr": "أول لعبة فيديو تفاعلية بغرض الترفيه بس في التاريخ اتعرضت سنة 1958 كانت لعبة إيه؟", "options": ["كرة قدم إلكترونية", "تنس على شاشة أوسيلوسكوب", "سباق سيارات", "لعبة متاهة"], "correctIndex": 1, "explanationAr": "لعبة «تنس للاتنين» اخترعها عالم فيزياء نووي وعرضها في يوم مفتوح لمعمل أبحاث." },
+    { "id": "bl-mcq-203", "shape": "mcq", "difficulty": 3, "textAr": "حجر رشيد الشهير ساعد العلماء يفكوا رموز الكتابة الهيروغليفية لأنه كان مكتوب عليه إيه؟", "options": ["نفس النص بثلاث كتابات مختلفة", "قاموس كامل للهيروغليفية", "خريطة لمصر القديمة", "قصيدة شعرية طويلة"], "correctIndex": 0, "explanationAr": "النص كان مكتوب بالهيروغليفية والديموطيقية واليونانية، وده اللي فتح الباب لفك رموز الهيروغليفية." },
+    { "id": "bl-mcq-204", "shape": "mcq", "difficulty": 3, "textAr": "هرم خوفو الأكبر في الجيزة احتفظ بلقب أطول مبنى صناعه الإنسان في العالم لمدة قد إيه تقريبًا؟", "options": ["حوالي 800 سنة", "حوالي 1500 سنة", "حوالي 3800 سنة", "حوالي 5000 سنة"], "correctIndex": 2, "explanationAr": "فضل الهرم صاحب اللقب لحوالي 3800 سنة لحد ما تخطاه مبنى كاتدرائية في إنجلترا سنة 1311." },
+    { "id": "bl-mcq-205", "shape": "mcq", "difficulty": 3, "textAr": "أول مخالفة سرعة رسمية في تاريخ السيارات اتحررت سنة 1896 لسائق كان بيقود بسرعة كام ميل في الساعة؟", "options": ["8 أميال في الساعة", "20 ميل في الساعة", "40 ميل في الساعة", "60 ميل في الساعة"], "correctIndex": 0, "explanationAr": "كان الحد الأقصى المسموح وقتها 2 ميل بس في الساعة، فسرعة 8 أميال اعتُبرت مخالفة جسيمة." },
+    { "id": "bl-mcq-206", "shape": "mcq", "difficulty": 4, "textAr": "أقدم علم وطني لسه مستخدم رسميًا لحد النهاردة من غير انقطاع موجود في أنهي دولة؟", "options": ["السويد", "الدنمارك", "بريطانيا", "اليابان"], "correctIndex": 1, "explanationAr": "علم الدنمارك «دانبروج» بيرجع استخدامه لقرون طويلة، وبيُعتبر أقدم علم وطني مستمر في العالم." },
+    { "id": "bl-mcq-207", "shape": "mcq", "difficulty": 4, "textAr": "اسم «بيج بن» الشهير في لندن بيشير رسميًا لإيه بالظبط؟", "options": ["البرج كله بما فيه الساعة", "الجرس الكبير جوه البرج بس", "الساعة نفسها بس", "الميدان المحيط بالبرج"], "correctIndex": 1, "explanationAr": "الاسم الرسمي للبرج نفسه هو «برج إليزابيث»، أما «بيج بن» فهو اسم الجرس الضخم جواه." },
+    { "id": "bl-mcq-208", "shape": "mcq", "difficulty": 3, "textAr": "زيمبابوي أصدرت ورقة نقدية بقيمة 100 تريليون دولار زيمبابوي سنة 2009 بسبب إيه؟", "options": ["احتفال بمناسبة وطنية", "تضخم اقتصادي جامح جدًا", "خطأ مطبعي في العملة", "عرض دعائي للبنك المركزي"], "correctIndex": 1, "explanationAr": "التضخم كان بيصل لمليارات النسب شهريًا، فاضطر البنك المركزي يطبع فئات ضخمة بشكل غير مسبوق." },
+    { "id": "bl-mcq-209", "shape": "mcq", "difficulty": 3, "textAr": "أول فأرة كمبيوتر في التاريخ سنة 1964 كانت مصنوعة من إيه؟", "options": ["بلاستيك", "خشب", "معدن صلب", "مطاط"], "correctIndex": 1, "explanationAr": "كانت عبارة عن قطعة خشب مجوفة بعجلتين صغيرتين، ومن هنا جالها اسم «الفأرة» لشكلها." },
+    { "id": "bl-mcq-210", "shape": "mcq", "difficulty": 3, "textAr": "ماري كوري هي الشخص الوحيد في التاريخ اللي فاز بجائزة نوبل في مجالين علميين مختلفين، إيه هما؟", "options": ["الطب والكيمياء", "الفيزياء والكيمياء", "الفيزياء والطب", "الكيمياء والأحياء"], "correctIndex": 1, "explanationAr": "فازت بجائزة الفيزياء سنة 1903 وجائزة الكيمياء سنة 1911، إنجاز فريد لحد دلوقتي." },
+    { "id": "bl-mcq-211", "shape": "mcq", "difficulty": 3, "textAr": "نداء الاستغاثة العالمي «Mayday» في الطيران والبحرية أصله من عبارة فرنسية معناها إيه؟", "options": ["يوم مايو", "ساعدوني", "خطر شديد", "توقفوا فورًا"], "correctIndex": 1, "explanationAr": "الكلمة مأخوذة من النطق الإنجليزي لعبارة «m'aidez» الفرنسية اللي معناها ساعدوني." },
+    { "id": "bl-mcq-212", "shape": "mcq", "difficulty": 4, "textAr": "القصة الشهيرة إن الإمبراطور الروماني نيرون كان بيعزف على آلة الكمان وقت حريق روما الكبير غلط تاريخيًا، ليه بالظبط؟", "options": ["كان بره روما وقت الحريق أصلًا", "آلة الكمان نفسها مكانتش موجودة في عصره", "نيرون ماكانش بيعرف يعزف خالص", "الحريق حصل بالليل وهو كان نايم"], "correctIndex": 1, "explanationAr": "آلة الكمان اتخترعت بعد عصر نيرون بقرون، فالقصة مستحيلة تاريخيًا من الأساس رغم شهرتها." },
+    { "id": "bl-mcq-213", "shape": "mcq", "difficulty": 4, "textAr": "الممرات اللي كانت بتتسمى «vomitorium» في المسارح والمدرجات الرومانية القديمة كانت بتُستخدم في إيه فعليًا؟", "options": ["مكان لتفريغ المعدة بعد الولائم", "ممرات لخروج ودخول الجمهور بسرعة", "غرف علاج طبي", "مخازن طعام"], "correctIndex": 1, "explanationAr": "الاسم مأخوذ من كلمة لاتينية معناها «يقذف»، بس المقصود قذف الجمهور للخارج مش القيء." },
+    { "id": "bl-mcq-214", "shape": "mcq", "difficulty": 3, "textAr": "جمع كلمة «أخطبوط» بالإنجليزية الصح لغويًا هو «Octopuses»، إيه المشكلة في الصيغة الشائعة التانية «Octopi»؟", "options": ["الكلمة أصلها يوناني مش لاتيني فمايصحش جمعها بالطريقة اللاتينية", "الكلمة مالهاش جمع خالص", "الصيغتين غلط", "الكلمة أصلها عربي"], "correctIndex": 0, "explanationAr": "الكلمة يونانية الأصل، فجمعها بطريقة الكلمات اللاتينية (بإضافة i) خطأ شائع منتشر." },
+    { "id": "bl-mcq-215", "shape": "mcq", "difficulty": 4, "textAr": "إشارة الاستغاثة «SOS» المستخدمة عالميًا معناها إيه فعليًا؟", "options": ["اختصار لعبارة «أنقذوا أرواحنا»", "مالهاش معنى، اتختارت بس لسهولة تمييزها في شفرة مورس", "اختصار لعبارة «أنقذوا سفينتنا»", "اسم أول سفينة استخدمتها"], "correctIndex": 1, "explanationAr": "الرمز اتختار لبساطته وتناظره في شفرة مورس، مش لأنه اختصار لأي عبارة." },
+    { "id": "bl-mcq-216", "shape": "mcq", "difficulty": 4, "textAr": "أول رمز تعبيري (إيموتيكون) موثّق في التاريخ :-) اتكتب سنة 1982 في منتدى جامعي، الهدف منه كان إيه؟", "options": ["الزينة في الرسايل", "التفرقة بين المزح والكلام الجاد في المنشورات النصية", "اختبار تقني للنظام", "تحية ترحيبية"], "correctIndex": 1, "explanationAr": "عالم كمبيوتر اقترحه عشان يميّز المنشورات الهزلية عن الجادة على لوحة إعلانات جامعية." },
+    { "id": "bl-mcq-217", "shape": "mcq", "difficulty": 4, "textAr": "أول رسالة إيميل دعائية غير مرغوب فيها (سبام) في التاريخ اتبعتت سنة 1978 كانت بتروّج لإيه؟", "options": ["عرض عطور", "دعوة لعرض أجهزة كمبيوتر جديدة", "بيع سيارات", "كتاب تعليمي"], "correctIndex": 1, "explanationAr": "موظف تسويق بعت دعوة لعرض أجهزة كمبيوتر جديدة لمئات المستخدمين على شبكة أربانت." },
+    { "id": "bl-mcq-218", "shape": "mcq", "difficulty": 4, "textAr": "مدينة بانكوك عاصمة تايلاند عندها اسم رسمي احتفالي طويل جدًا مسجل في غينيس، بيتكون من كام حرف تقريبًا؟", "options": ["حوالي 30 حرف", "حوالي 60 حرف", "أكتر من 160 حرف", "حوالي 20 حرف"], "correctIndex": 2, "explanationAr": "الاسم الكامل الاحتفالي لبانكوك من أطول أسماء المدن المستخدمة رسميًا في العالم." },
+    { "id": "bl-mcq-219", "shape": "mcq", "difficulty": 3, "textAr": "صلصة الكاتشب قبل ما تبقى من الطماطم، كانت في بريطانيا بتتعمل أساسًا من إيه؟", "options": ["الفطر", "الجزر", "البصل", "الخيار"], "correctIndex": 0, "explanationAr": "كاتشب الفطر كان النوع الشائع في القرنين السابع عشر والثامن عشر قبل ما الطماطم تحل محله." },
+    { "id": "bl-mcq-220", "shape": "mcq", "difficulty": 3, "textAr": "برج إيفل كان مهدد بالهدم فعليًا بعد 20 سنة من بنائه، إيه اللي أنقذه من التفكيك؟", "options": ["احتجاجات الفنانين", "استخدامه كهوائي إرسال لاسلكي مفيد للجيش", "تدخل ملكي", "تكلفة الهدم كانت عالية جدًا"], "correctIndex": 1, "explanationAr": "أهمية البرج كمحطة إرسال لاسلكي، خصوصًا للجيش الفرنسي، خلت باريس تجدد رخصة بقائه." },
+    { "id": "bl-mcq-221", "shape": "mcq", "difficulty": 2, "textAr": "الأرقام الرومانية (زي I وV وX) مالهاش رمز خاص لتمثيل إيه من الأرقام؟", "options": ["الصفر", "الواحد", "العشرة", "المية"], "correctIndex": 0, "explanationAr": "نظام الأرقام الرومانية اتطور قبل ما مفهوم الصفر الرياضي ينتشر في الحضارة الغربية." },
+    { "id": "bl-mcq-222", "shape": "mcq", "difficulty": 3, "textAr": "رهاب الرقم 13 (الخوف منه) اللي بيخلي مبانٍ كتير تتجاهل تسمية الدور الثالث عشر ليه اسم علمي، إيه هو؟", "options": ["تريسكايديكافوبيا", "أكروفوبيا", "كلاستروفوبيا", "أجورافوبيا"], "correctIndex": 0, "explanationAr": "الكلمة مكوّنة من مقاطع يونانية معناها الخوف من الرقم 13 تحديدًا." },
+    { "id": "bl-mcq-223", "shape": "mcq", "difficulty": 3, "textAr": "مجموعة من البوم بيُطلق عليها بالإنجليزية اسم غريب مرتبط بمؤسسة سياسية، إيه هو؟", "options": ["مجلس (Parliament)", "محكمة (Court)", "مجلس وزراء (Cabinet)", "سيناتو (Senate)"], "correctIndex": 0, "explanationAr": "الاسم مرتبط بارتباط البوم قديمًا بالحكمة، فاتسمت مجموعتهم «برلمان»." },
+    { "id": "bl-mcq-224", "shape": "mcq", "difficulty": 4, "textAr": "الثانية الكبيسة اللي بتتضاف أحيانًا للساعة العالمية بيرجع سببها التاريخي لإيه؟", "options": ["تسارع دوران الأرض حوالين نفسها", "تباطؤ دوران الأرض بسبب جاذبية القمر والمد والجزر", "خطأ في الساعات الذرية", "تغيير موعد السنة الكبيسة"], "correctIndex": 1, "explanationAr": "جاذبية القمر بتسبب احتكاك المد والجزر اللي بيبطّئ دوران الأرض تدريجيًا عبر آلاف السنين." },
+    { "id": "bl-mcq-225", "shape": "mcq", "difficulty": 3, "textAr": "أول لغة برمجة عالية المستوى منتشرة في التاريخ، اسمها «فورتران»، ظهرت سنة 1957 لخدمة أنهي مجال أساسًا؟", "options": ["الألعاب الإلكترونية", "الحسابات العلمية والهندسية", "تصميم المواقع", "الترجمة الآلية"], "correctIndex": 1, "explanationAr": "فورتران اتصممت لتسهيل كتابة المعادلات الرياضية والعلمية بدل الأكواد الرقمية المعقدة." },
+    { "id": "bl-mcq-226", "shape": "mcq", "difficulty": 3, "textAr": "أطول إنسان مسجل رسميًا في التاريخ بشهادة موثقة، طوله كان حوالي كام متر؟", "options": ["حوالي 2.3 متر", "حوالي 2.5 متر", "حوالي 2.72 متر", "حوالي 3 أمتار"], "correctIndex": 2, "explanationAr": "الأمريكي روبرت واودلو وصل لطول 2.72 متر بسبب اضطراب هرموني نادر، وهو الأطول موثّق طبيًا." },
+    { "id": "bl-mcq-227", "shape": "mcq", "difficulty": 3, "textAr": "أقصر لاعب لعب في تاريخ دوري كرة السلة الأمريكي NBA كان طوله حوالي كام؟", "options": ["حوالي 1.60 متر", "حوالي 1.75 متر", "حوالي 1.85 متر", "حوالي 1.95 متر"], "correctIndex": 0, "explanationAr": "اللاعب موجزي بوجز لعب في الدوري لمواسم طويلة رغم قصر طوله الاستثنائي مقارنة بزمايله." },
+    { "id": "bl-mcq-228", "shape": "mcq", "difficulty": 4, "textAr": "أول موقع إنترنت في تاريخ شبكة الويب اتنزل سنة 1991، وموجود لحد دلوقتي؟", "options": ["اتشال نهائيًا من زمان", "لسه شغال ومتاح للزيارة لحد النهاردة", "اتحول لمتحف افتراضي بس", "محدش يعرف مكانه بالظبط"], "correctIndex": 1, "explanationAr": "موقع مختبر سيرن الأصلي لسه متاح على الإنترنت، وبيعرض تفاصيل مشروع الويب الأولي." },
+    { "id": "bl-mcq-229", "shape": "mcq", "difficulty": 3, "textAr": "علامة «@» في لغات مختلفة حول العالم بيُطلق عليها أسماء طريفة، زي إيه في الفرنسية والإيطالية؟", "options": ["الفيل", "الحلزون", "الديك", "السلحفاة"], "correctIndex": 1, "explanationAr": "بيسموها «الحلزون» في لغات زي الفرنسية والإيطالية والكورية بسبب شكلها الملتف." },
+    { "id": "bl-mcq-230", "shape": "mcq", "difficulty": 3, "textAr": "حجر رشيد المصري القديم، اللي فتح الباب لفك رموز الهيروغليفية، اتلقى بالصدفة إزاي؟", "options": ["جنود نابليون في مصر لقوه أثناء حفر تحصينات", "اتلقاه بعثة أثرية بريطانية", "اتباع في سوق شعبي", "اتلقاه صياد على شاطئ النيل"], "correctIndex": 0, "explanationAr": "جنود نابليون لقوه أثناء حفر تحصينات في مدينة رشيد سنة 1799 خلال الحملة الفرنسية على مصر." },
+    {
+      "id": "bl-mcq-115",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "الأرض بتلف حوالين الشمس بسرعة قد إيه تقريبًا؟",
+      "options": [
+        "1 كم في الثانية",
+        "10 كم في الثانية",
+        "حوالي 30 كم في الثانية",
+        "300 كم في الثانية"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "أسرع بكتير من أي صاروخ."
+    },
+
+    { "id": "bl-odd-1", "shape": "odd_one_out", "textAr": "الدخيل بين أكبر محيطات العالم", "items": ["الهادي", "الأطلنطي", "الهندي", "قزوين"], "oddIndex": 3, "difficulty": 2, "reasonAr": "التلاتة التانيين محيطات حقيقية، وقزوين أكبر بحيرة في العالم مش محيط" },
+    { "id": "bl-odd-2", "shape": "odd_one_out", "textAr": "الدخيل بين المعادن السايلة أو القريبة من السيولة في حرارة الغرفة", "items": ["الزئبق", "الحديد", "الجاليوم", "السيزيوم"], "oddIndex": 1, "difficulty": 3, "reasonAr": "التلاتة التانيين معادن بتسيح عند حرارة قريبة أو أقل من حرارة الغرفة، والحديد محتاج حرارة عالية جدًا عشان يسيح" },
+    { "id": "bl-odd-3", "shape": "odd_one_out", "textAr": "الدخيل بين أكبر الدول من حيث المساحة", "items": ["روسيا", "كندا", "الصين", "موناكو"], "oddIndex": 3, "difficulty": 1, "reasonAr": "التلاتة التانيين من أكبر دول العالم مساحة، وموناكو من أصغر دول العالم" },
+    { "id": "bl-odd-4", "shape": "odd_one_out", "textAr": "الدخيل بين أعضاء جسم الإنسان الداخلية", "items": ["الكبد", "الكلى", "الرئة", "الجلد"], "oddIndex": 3, "difficulty": 2, "reasonAr": "التلاتة التانيين أعضاء داخلية، والجلد هو أكبر عضو لكنه عضو خارجي" },
+    { "id": "bl-odd-5", "shape": "odd_one_out", "textAr": "الدخيل بين الكواكب الصخرية في المجموعة الشمسية", "items": ["عطارد", "الزهرة", "المريخ", "المشتري"], "oddIndex": 3, "difficulty": 3, "reasonAr": "التلاتة التانيين كواكب صخرية صلبة، والمشتري كوكب غازي عملاق" },
+    { "id": "bl-odd-6", "shape": "odd_one_out", "textAr": "الدخيل بين الحواس الخمس", "items": ["البصر", "السمع", "التذوق", "التوازن"], "oddIndex": 3, "difficulty": 3, "reasonAr": "التلاتة التانيين من الحواس الخمس التقليدية، والتوازن حاسة إضافية مش من الخمسة الأساسيين" },
+    { "id": "bl-odd-7", "shape": "odd_one_out", "textAr": "الدخيل بين أعمق نقاط على الأرض", "items": ["خندق ماريانا", "خندق تونجا", "البحر الميت", "خندق فيليبين"], "oddIndex": 2, "difficulty": 3, "reasonAr": "التلاتة التانيين خنادق محيطية عميقة جدًا، والبحر الميت منخفض أرضي مش خندق محيطي" },
+    { "id": "bl-odd-8", "shape": "odd_one_out", "textAr": "الدخيل بين أصغر دول العالم مساحة", "items": ["الفاتيكان", "موناكو", "روسيا", "ناورو"], "oddIndex": 2, "difficulty": 1, "reasonAr": "التلاتة التانيين من أصغر دول العالم، وروسيا أكبر دولة في العالم" },
+    { "id": "bl-odd-9", "shape": "odd_one_out", "textAr": "الدخيل بين الحيوانات اللي بتُعتبر من أذكى الكائنات", "items": ["الأخطبوط", "الدولفين", "الغراب", "قنديل البحر"], "oddIndex": 3, "difficulty": 2, "reasonAr": "التلاتة التانيين حيوانات معروفة بذكائها العالي، وقنديل البحر مالوش دماغ أصلًا" },
+    { "id": "bl-odd-10", "shape": "odd_one_out", "textAr": "الدخيل بين وحدات قياس الوقت", "items": ["الثانية", "الدقيقة", "الساعة", "الكيلومتر"], "oddIndex": 3, "difficulty": 1, "reasonAr": "التلاتة التانيين وحدات لقياس الوقت، والكيلومتر وحدة لقياس المسافة" },
+    { "id": "bl-odd-11", "shape": "odd_one_out", "textAr": "الدخيل بين حالات المادة", "items": ["الصلبة", "السائلة", "الغازية", "الكهربائية"], "oddIndex": 3, "difficulty": 2, "reasonAr": "التلاتة التانيين حالات أساسية للمادة، والكهربائية مش حالة مادة" },
+    { "id": "bl-odd-12", "shape": "odd_one_out", "textAr": "الدخيل بين أطول الأنهار في العالم", "items": ["النيل", "الأمازون", "اليانغتسي", "البحر الأحمر"], "oddIndex": 3, "difficulty": 2, "reasonAr": "التلاتة التانيين أنهار طويلة جدًا، والبحر الأحمر بحر مش نهر" },
+    { "id": "bl-odd-13", "shape": "odd_one_out", "textAr": "الدخيل بين قارات العالم", "items": ["آسيا", "إفريقيا", "أوروبا", "جرينلاند"], "oddIndex": 3, "difficulty": 2, "reasonAr": "التلاتة التانيين قارات معترف بيها، وجرينلاند أكبر جزيرة في العالم مش قارة" },
+    { "id": "bl-odd-14", "shape": "odd_one_out", "textAr": "الدخيل بين اللغات الأكتر انتشارًا في العالم من حيث عدد المتحدثين", "items": ["الإنجليزية", "الماندرين الصينية", "الإسبانية", "اللاتينية"], "oddIndex": 3, "difficulty": 2, "reasonAr": "التلاتة التانيين لغات حية بملايين المتحدثين حاليًا، واللاتينية لغة قديمة مالهاش متحدثين أصليين دلوقتي" },
+    { "id": "bl-odd-15", "shape": "odd_one_out", "textAr": "الدخيل بين مصادر الطاقة المتجددة", "items": ["الطاقة الشمسية", "طاقة الرياح", "الفحم", "الطاقة المائية"], "oddIndex": 2, "difficulty": 2, "reasonAr": "التلاتة التانيين مصادر طاقة متجددة، والفحم مصدر أحفوري غير متجدد" },
+    { "id": "bl-odd-16", "shape": "odd_one_out", "textAr": "الدخيل بين الحديد وغيره من فلزات نادرة السيولة", "items": ["الذهب", "الفضة", "النحاس", "الهيليوم"], "oddIndex": 3, "difficulty": 2, "reasonAr": "التلاتة التانيين فلزات (معادن صلبة)، والهيليوم غاز خامل مش فلز" },
+    { "id": "bl-odd-17", "shape": "odd_one_out", "textAr": "الدخيل بين أنظمة الكتابة القديمة", "items": ["الهيروغليفية", "المسمارية", "الفينيقية", "البرايل"], "oddIndex": 3, "difficulty": 3, "reasonAr": "التلاتة التانيين أنظمة كتابة قديمة تاريخية، والبرايل نظام حديث لقراءة المكفوفين باللمس" },
+    { "id": "bl-odd-18", "shape": "odd_one_out", "textAr": "الدخيل بين وحدات قياس الكتلة والوزن", "items": ["الكيلوجرام", "الجرام", "الطن", "اللتر"], "oddIndex": 3, "difficulty": 1, "reasonAr": "التلاتة التانيين وحدات لقياس الكتلة، واللتر وحدة لقياس الحجم" },
+    { "id": "bl-odd-19", "shape": "odd_one_out", "textAr": "الدخيل بين عجائب الدنيا السبع القديمة", "items": ["أهرامات الجيزة", "حدائق بابل المعلقة", "تمثال زيوس", "برج إيفل"], "oddIndex": 3, "difficulty": 2, "reasonAr": "التلاتة التانيين من عجائب الدنيا السبع القديمة، وبرج إيفل بُني في القرن التاسع عشر" },
+    { "id": "bl-odd-20", "shape": "odd_one_out", "textAr": "الدخيل بين أنظمة الأعداد والترقيم القديمة", "items": ["الأرقام الرومانية", "الأرقام العربية", "الترقيم الهيروغليفي", "الأبجدية اللاتينية"], "oddIndex": 3, "difficulty": 3, "reasonAr": "التلاتة التانيين أنظمة لتمثيل الأرقام، والأبجدية اللاتينية نظام حروف للكتابة مش للأرقام" },
+    { "id": "bl-odd-21", "shape": "odd_one_out", "textAr": "الدخيل بين أكبر الصحاري في العالم", "items": ["الصحراء الكبرى", "صحراء جوبي", "صحراء أنتاركتيكا الجليدية", "غابة الأمازون"], "oddIndex": 3, "difficulty": 3, "reasonAr": "التلاتة التانيين من أكبر الصحاري في العالم (نعم القارة القطبية الجنوبية بتُعتبر صحراء من ناحية قلة الأمطار)، وغابة الأمازون غابة مطيرة مش صحراء" },
+    { "id": "bl-odd-22", "shape": "odd_one_out", "textAr": "الدخيل بين الكواكب اللي ليها حلقات واضحة", "items": ["زحل", "المشتري", "أورانوس", "الأرض"], "oddIndex": 3, "difficulty": 3, "reasonAr": "التلاتة التانيين كواكب ليها حلقات (زحل أوضحها)، والأرض مالهاش حلقات" },
+    { "id": "bl-odd-23", "shape": "odd_one_out", "textAr": "الدخيل بين اختراعات غيّرت التاريخ البشري", "items": ["الطباعة", "العجلة", "الكهرباء", "الديناصور"], "oddIndex": 3, "difficulty": 1, "reasonAr": "التلاتة التانيين اختراعات بشرية مهمة، والديناصور كائن حي مش اختراع" },
+    { "id": "bl-odd-24", "shape": "odd_one_out", "textAr": "الدخيل بين أشهر المتاحف العالمية", "items": ["اللوفر", "المتحف البريطاني", "متحف المتروبوليتان", "برج بيزا"], "oddIndex": 3, "difficulty": 2, "reasonAr": "التلاتة التانيين متاحف عالمية شهيرة، وبرج بيزا معلم معماري مش متحف" },
+
+    { "id": "bl-emj-1", "shape": "emoji", "difficulty": 2, "emojis": "🏔️", "answerAr": "قمة الجبل الجليدية", "aliases": ["جبل جليدي"] },
+    { "id": "bl-emj-2", "shape": "emoji", "difficulty": 2, "emojis": "🌊", "answerAr": "الموجة", "aliases": [] },
+    { "id": "bl-emj-3", "shape": "emoji", "difficulty": 2, "emojis": "🧪", "answerAr": "أنبوبة الاختبار", "aliases": ["المعمل"] },
+    { "id": "bl-emj-4", "shape": "emoji", "difficulty": 2, "emojis": "⚖️", "answerAr": "الميزان", "aliases": [] },
+    { "id": "bl-emj-5", "shape": "emoji", "difficulty": 2, "emojis": "🔬", "answerAr": "الميكروسكوب", "aliases": ["المجهر"] },
+    { "id": "bl-emj-6", "shape": "emoji", "difficulty": 1, "emojis": "⚡", "answerAr": "البرق", "aliases": [] },
+    { "id": "bl-emj-7", "shape": "emoji", "difficulty": 1, "emojis": "🌙", "answerAr": "القمر", "aliases": [] },
+    { "id": "bl-emj-8", "shape": "emoji", "difficulty": 2, "emojis": "🪐", "answerAr": "زحل", "aliases": ["كوكب زحل"] },
+    { "id": "bl-emj-9", "shape": "emoji", "difficulty": 1, "emojis": "🗽", "answerAr": "تمثال الحرية", "aliases": [] },
+    { "id": "bl-emj-10", "shape": "emoji", "difficulty": 1, "emojis": "🗼", "answerAr": "برج إيفل", "aliases": ["ايفل"] },
+    { "id": "bl-emj-11", "shape": "emoji", "difficulty": 2, "emojis": "🏛️", "answerAr": "المعبد اليوناني", "aliases": ["البارثينون"] },
+    { "id": "bl-emj-12", "shape": "emoji", "difficulty": 2, "emojis": "🕌", "answerAr": "المسجد", "aliases": [] },
+    { "id": "bl-emj-13", "shape": "emoji", "difficulty": 1, "emojis": "⛰️", "answerAr": "الجبل", "aliases": [] },
+    { "id": "bl-emj-14", "shape": "emoji", "difficulty": 1, "emojis": "🏜️", "answerAr": "الصحراء", "aliases": [] },
+    { "id": "bl-emj-15", "shape": "emoji", "difficulty": 2, "emojis": "🧊", "answerAr": "الثلج", "aliases": ["جليد"] },
+    { "id": "bl-emj-16", "shape": "emoji", "difficulty": 1, "emojis": "🔥", "answerAr": "النار", "aliases": [] },
+    { "id": "bl-emj-17", "shape": "emoji", "difficulty": 2, "emojis": "💎", "answerAr": "الألماس", "aliases": [] },
+    { "id": "bl-emj-18", "shape": "emoji", "difficulty": 2, "emojis": "🪶", "answerAr": "الريشة", "aliases": [] },
+    { "id": "bl-emj-19", "shape": "emoji", "difficulty": 2, "emojis": "🦴", "answerAr": "العظمة", "aliases": ["العظم"] },
+    { "id": "bl-emj-20", "shape": "emoji", "difficulty": 1, "emojis": "🧠", "answerAr": "المخ", "aliases": ["الدماغ"] },
+    { "id": "bl-emj-21", "shape": "emoji", "difficulty": 1, "emojis": "❤️", "answerAr": "القلب", "aliases": [] },
+    { "id": "bl-emj-22", "shape": "emoji", "difficulty": 2, "emojis": "🩸", "answerAr": "الدم", "aliases": [] },
+    { "id": "bl-emj-23", "shape": "emoji", "difficulty": 1, "emojis": "🦷", "answerAr": "السن", "aliases": ["الأسنان"] },
+    { "id": "bl-emj-24", "shape": "emoji", "difficulty": 2, "emojis": "🏺", "answerAr": "الفخار", "aliases": [] },
+    { "id": "bl-emj-25", "shape": "emoji", "difficulty": 2, "emojis": "📜", "answerAr": "البردية", "aliases": ["اللفافة"] },
+    { "id": "bl-emj-26", "shape": "emoji", "difficulty": 2, "emojis": "⚱️", "answerAr": "الجرة الفخارية", "aliases": [] },
+    { "id": "bl-emj-27", "shape": "emoji", "difficulty": 1, "emojis": "🧭", "answerAr": "البوصلة", "aliases": [] },
+    { "id": "bl-emj-28", "shape": "emoji", "difficulty": 2, "emojis": "⏳", "answerAr": "الساعة الرملية", "aliases": [] },
+    { "id": "bl-emj-29", "shape": "emoji", "difficulty": 1, "emojis": "🌍", "answerAr": "الكرة الأرضية", "aliases": ["الأرض"] },
+    { "id": "bl-emj-30", "shape": "emoji", "difficulty": 2, "emojis": "☄️", "answerAr": "المذنب", "aliases": ["النيزك"] },
+
+    { "id": "bl-ord-15", "shape": "ordering", "difficulty": 2, "textAr": "رتّب الكواكب دي حسب قربها من الشمس من الأقرب للأبعد", "items": ["عطارد", "الزهرة", "الأرض", "المريخ"], "labels": [] },
+    { "id": "bl-ord-16", "shape": "ordering", "difficulty": 3, "textAr": "رتّب سرعة أجهزة تخزين البيانات دي من الأبطأ للأسرع", "items": ["الشريط الممغنط", "القرص الصلب العادي", "قرص SSD"], "labels": [] },
+    { "id": "bl-ord-17", "shape": "ordering", "difficulty": 2, "textAr": "رتّب الكور الرياضية دي من الأصغر للأكبر", "items": ["كورة الجولف", "كورة التنس", "كورة القدم", "كورة السلة"], "labels": [] },
+    { "id": "bl-ord-18", "shape": "ordering", "difficulty": 3, "textAr": "رتّب أعلى قمم جبلية دي من الأقصر للأطول", "items": ["كليمنجارو", "K2", "إفرست"], "labels": [], "explanationAr": "إفرست أعلى قمة في العالم." },
+    { "id": "bl-ord-19", "shape": "ordering", "difficulty": 2, "textAr": "رتّب مراحل عمر الإنسان دي من الأصغر للأكبر", "items": ["الرضاعة", "الطفولة", "المراهقة", "الشيخوخة"], "labels": [] },
+    { "id": "bl-ord-20", "shape": "ordering", "difficulty": 3, "textAr": "رتّب القارات دي من الأصغر مساحة للأكبر", "items": ["أستراليا", "أوروبا", "إفريقيا", "آسيا"], "labels": [] },
+    { "id": "bl-ord-21", "shape": "ordering", "difficulty": 2, "textAr": "رتّب مدد الحبس أو الانتظار دي من الأقصر للأطول تقريبًا", "items": ["دقيقة واحدة", "ساعة", "يوم كامل", "أسبوع"], "labels": [] },
+    { "id": "bl-ord-22", "shape": "ordering", "difficulty": 3, "textAr": "رتّب اختراعات وسائل الاتصال دي من الأقدم للأحدث", "items": ["البرق الكهربائي", "التليفون", "الإنترنت"], "labels": [], "explanationAr": "كل اختراع بنى على اللي قبله." },
+    { "id": "bl-ord-23", "shape": "ordering", "difficulty": 2, "textAr": "رتّب أحجام التجمعات السكنية دي من الأصغر للأكبر", "items": ["قرية", "بلدة", "مدينة", "عاصمة"], "labels": [] },
+    { "id": "bl-ord-24", "shape": "ordering", "difficulty": 3, "textAr": "رتّب سرعة وسائل النقل دي من الأبطأ للأسرع", "items": ["الدراجة", "السيارة", "القطار السريع", "الطائرة"], "labels": [] },
+    { "id": "bl-ord-25", "shape": "ordering", "difficulty": 3, "textAr": "رتّب طول الأنهار دي من الأقصر للأطول", "items": ["نهر التايمز", "نهر الدانوب", "نهر النيل"], "labels": [], "explanationAr": "النيل من أطول أنهار العالم." },
+    { "id": "bl-ord-26", "shape": "ordering", "difficulty": 2, "textAr": "رتّب درجات حرارة الطقس دي من الأبرد للأسخن", "items": ["الصقيع", "الجو المعتدل", "موجة الحر"], "labels": [] },
+    { "id": "bl-ord-27", "shape": "ordering", "difficulty": 3, "textAr": "رتّب حجم النجوم والأجرام دي من الأصغر للأكبر", "items": ["الأرض", "الشمس", "نجم عملاق أحمر"], "labels": [], "explanationAr": "النجوم العملاقة الحمرا أكبر من شمسنا بمراحل." },
+    { "id": "bl-ord-28", "shape": "ordering", "difficulty": 2, "textAr": "رتّب مدة الرحلات دي من الأقصر للأطول تقريبًا", "items": ["رحلة داخل نفس المدينة", "رحلة بين دولتين متجاورتين", "رحلة بين قارتين"], "labels": [] },
+    { "id": "bl-ord-29", "shape": "ordering", "difficulty": 3, "textAr": "رتّب عدد سكان الدول دي من الأقل للأكتر", "items": ["الفاتيكان", "لوكسمبورج", "مصر"], "labels": [], "explanationAr": "الفاتيكان أقل دولة سكانًا في العالم." },
+    { "id": "bl-ord-30", "shape": "ordering", "difficulty": 2, "textAr": "رتّب كمية الأمطار في المناطق دي من الأقل للأكتر", "items": ["الصحراء", "المنطقة المعتدلة", "الغابة المطيرة الاستوائية"], "labels": [] },
+    { "id": "bl-ord-31", "shape": "ordering", "difficulty": 3, "textAr": "رتّب سرعة الحيوانات دي من الأبطأ للأسرع", "items": ["السلحفاة", "الإنسان وهو بيجري", "الحصان", "الفهد الصياد"], "labels": [] },
+    { "id": "bl-ord-32", "shape": "ordering", "difficulty": 2, "textAr": "رتّب أحجام المشروبات دي من الأصغر للأكبر", "items": ["فنجان قهوة", "كوباية عصير", "زجاجة مية", "برميل"], "labels": [] },
+
+    { "id": "bl-open-59", "shape": "open_answer", "difficulty": 3, "textAr": "إيه اسم الوحدة اللي بيتقاس بيها بُعد النجوم عن بعضها في الفضاء؟", "answerAr": "السنة الضوئية", "aliases": ["سنة ضوئية"] },
+
+    { "id": "bl-prog-25", "shape": "progressive", "difficulty": 3, "hints": ["أنا معلم أثري مصري قديم", "بُنيت عشان تكون مقبرة لملك", "أنا واحدة من عجائب الدنيا السبع القديمة الوحيدة الباقية"], "answerAr": "هرم خوفو", "aliases": ["الهرم الأكبر", "الأهرامات"] },
+    { "id": "bl-prog-26", "shape": "progressive", "difficulty": 3, "hints": ["أنا بحر لكني في الحقيقة أكبر بحيرة في العالم", "مالوش منفذ على أي محيط", "بيحد روسيا وإيران ودول تانية"], "answerAr": "بحر قزوين", "aliases": ["قزوين"] },
+    { "id": "bl-prog-27", "shape": "progressive", "difficulty": 2, "hints": ["أنا معدن ثمين لونه أصفر لامع", "بيتقاس نقاءه بوحدة القيراط", "الناس بتستثمر فيا وقت الأزمات"], "answerAr": "الذهب", "aliases": [] },
+    { "id": "bl-prog-28", "shape": "progressive", "difficulty": 3, "hints": ["أنا ظاهرة طبيعية بتحصل لما ضوء الشمس يتفرق في نقط المطر", "بتظهر بعد أو أثناء المطر", "عندي سبع ألوان مرتبة"], "answerAr": "قوس قزح", "aliases": [] },
+    { "id": "bl-prog-29", "shape": "progressive", "difficulty": 3, "hints": ["أنا عالم فيزياء شهير", "اشتهرت بنظرية النسبية", "شعري كان منفوش ومعروف بيه في كل الصور"], "answerAr": "ألبرت أينشتاين", "aliases": ["أينشتاين"] },
+    { "id": "bl-prog-30", "shape": "progressive", "difficulty": 2, "hints": ["أنا اختراع بشري قديم جدًا", "بيتكون من دايرة بتدور حوالين محور", "غيّرت شكل النقل والصناعة للأبد"], "answerAr": "العجلة", "aliases": [] },
+    { "id": "bl-prog-31", "shape": "progressive", "difficulty": 3, "hints": ["أنا مبنى أثري ديني في فرنسا", "بُنيت على مدى قرون في العصور الوسطى", "احترقت جزئيًا سنة 2019 وبعدين اتجدد ترميمها"], "answerAr": "كاتدرائية نوتردام", "aliases": ["نوتردام"] },
+    { "id": "bl-prog-32", "shape": "progressive", "difficulty": 3, "hints": ["أنا حدث فلكي بيحصل لما القمر يقف بين الأرض والشمس", "بيخلي النهار يظلم لدقايق قليلة", "الناس بتلبس نضارات خاصة عشان تتفرج عليّا بأمان"], "answerAr": "كسوف الشمس", "aliases": ["الكسوف"] },
+    { "id": "bl-prog-33", "shape": "progressive", "difficulty": 2, "hints": ["أنا آلة موسيقية أو أداة قياس، حسب المعنى", "بعض أنواعي بتتعزف بالنفخ", "النوع التاني مني بيقيس درجة الحرارة"], "answerAr": "الترمومتر", "aliases": [] },
+    { "id": "bl-prog-34", "shape": "progressive", "difficulty": 3, "hints": ["أنا مادة كيميائية أساسية للحياة", "بتتكون من ذرتين هيدروجين وذرة أكسجين", "بتغطي أكتر من 70% من سطح الأرض"], "answerAr": "المياه", "aliases": ["الماء"] },
+    { "id": "bl-prog-35", "shape": "progressive", "difficulty": 3, "hints": ["أنا حضارة قديمة عظيمة", "بنيت أهرامات ومعابد ضخمة", "نهر النيل كان شريان حياتي الأساسي"], "answerAr": "الحضارة المصرية القديمة", "aliases": ["مصر القديمة", "الفراعنة"] },
+    { "id": "bl-prog-36", "shape": "progressive", "difficulty": 2, "hints": ["أنا جهاز كهربائي منزلي", "بستخدم عشان أبرد الأكل والشرب", "من غيري الأكل كان هيبوظ بسرعة"], "answerAr": "الثلاجة", "aliases": [] },
+    { "id": "bl-prog-37", "shape": "progressive", "difficulty": 3, "hints": ["أنا مصطلح فلكي", "بحصل لما نجم ضخم ينهار على نفسه", "جاذبيتي قوية جدًا لدرجة إن الضوء نفسه ميقدرش يهرب مني"], "answerAr": "الثقب الأسود", "aliases": [] },
+    { "id": "bl-prog-38", "shape": "progressive", "difficulty": 2, "hints": ["أنا وسيلة نقل قديمة على المية", "بتتحرك بمساعدة الرياح غالبًا", "القراصنة كانوا بيستخدموني كتير في الأفلام"], "answerAr": "السفينة الشراعية", "aliases": ["السفينة", "المركب الشراعي"] },
+    { "id": "bl-prog-39", "shape": "progressive", "difficulty": 3, "hints": ["أنا فنان إيطالي عبقري من عصر النهضة", "رسمت لوحة الموناليزا الشهيرة", "كنت مخترع ومهندس كمان مش رسام بس"], "answerAr": "ليوناردو دافنشي", "aliases": ["دافنشي"] },
+    { "id": "bl-prog-40", "shape": "progressive", "difficulty": 2, "hints": ["أنا مبنى سكني عالي جدًا", "بيتكون من طوابق كتير فوق بعض", "لازم يكون فيه أسانسير عشان توصل لآخر طابق بسهولة"], "answerAr": "ناطحة السحاب", "aliases": ["ناطحة سحاب"] },
+    { "id": "bl-prog-41", "shape": "progressive", "difficulty": 3, "hints": ["أنا ظاهرة جوية عنيفة", "بتتكون من رياح دوارة قوية جدًا", "بتحصل كتير في أمريكا وبتتسمى توريدو أحيانًا"], "answerAr": "الإعصار", "aliases": ["التورنيدو"] },
+    { "id": "bl-prog-42", "shape": "progressive", "difficulty": 2, "hints": ["أنا جهاز بيتحكم فيه الإنسان بضغط زراير", "بستخدم عشان أغيّر قنوات التلفزيون من بعيد", "من غيري لازم تقوم تقفل التلفزيون بإيدك"], "answerAr": "الريموت كنترول", "aliases": ["الريموت"] },
+    { "id": "bl-prog-43", "shape": "progressive", "difficulty": 3, "hints": ["أنا قائد عسكري تاريخي شهير", "غزوت نصف العالم المعروف وقتها", "مت وأنا صغير السن نسبيًا بعد إمبراطورية ضخمة"], "answerAr": "الإسكندر الأكبر", "aliases": ["الإسكندر المقدوني"] },
+    { "id": "bl-prog-44", "shape": "progressive", "difficulty": 2, "hints": ["أنا مبنى شهير في الهند", "بُنيت من الرخام الأبيض", "بناها ملك حزين على زوجته اللي ماتت"], "answerAr": "تاج محل", "aliases": ["التاج محل"] },
+    { "id": "bl-prog-45", "shape": "progressive", "difficulty": 3, "hints": ["أنا علم بيدرس النجوم والكواكب", "العلماء بتوعي بيستخدموا تلسكوبات ضخمة", "الفلكي بيدرسني ويكتشف أجرام جديدة"], "answerAr": "علم الفلك", "aliases": ["الفلك"] },
+    { "id": "bl-prog-46", "shape": "progressive", "difficulty": 2, "hints": ["أنا وثيقة مهمة بتثبت هوية الشخص", "لازمة عشان تسافر بره بلدك", "فيها صورتك وبياناتك الشخصية"], "answerAr": "جواز السفر", "aliases": [] },
+    { "id": "bl-prog-47", "shape": "progressive", "difficulty": 3, "hints": ["أنا مادة متفجرة بتتحول من صلبة لغاز فجأة", "الصينيين اخترعوني الأول", "بتستخدموني في الاحتفالات عشان الألعاب النارية"], "answerAr": "البارود", "aliases": [] },
+    { "id": "bl-prog-48", "shape": "progressive", "difficulty": 2, "hints": ["أنا جهاز بيوصلك بالإنترنت في البيت", "بيبعت إشارة واي فاي", "من غيري النت هيبقى بطيء أو مقطوع"], "answerAr": "الراوتر", "aliases": ["الروتر"] },
+
+    { "id": "bl-fill-25", "shape": "fill_blank", "difficulty": 3, "textAr": "الكوكب اللي اتغيّر تصنيفه سنة 2006 من كوكب لكوكب قزم اسمه ____.", "answerAr": "بلوتو", "aliases": [] },
+    { "id": "bl-fill-26", "shape": "fill_blank", "difficulty": 2, "textAr": "أطول سور بناه الإنسان في التاريخ هو سور ____ العظيم.", "answerAr": "الصين", "aliases": [] },
+    { "id": "bl-fill-27", "shape": "fill_blank", "difficulty": 3, "textAr": "العالم اللي اكتشف الجاذبية بعد ما وقعت عليه تفاحة (حسب القصة الشهيرة) اسمه ____.", "answerAr": "إسحاق نيوتن", "aliases": ["نيوتن"] },
+    { "id": "bl-fill-28", "shape": "fill_blank", "difficulty": 2, "textAr": "المعدن اللي بيُستخدم في صناعة العملات المعدنية والمواسير غالبًا اسمه ____.", "answerAr": "النحاس", "aliases": [] },
+    { "id": "bl-fill-29", "shape": "fill_blank", "difficulty": 3, "textAr": "أول رائد فضاء وصل للقمر فعليًا كان اسمه نيل ____.", "answerAr": "أرمسترونج", "aliases": [] },
+    { "id": "bl-fill-30", "shape": "fill_blank", "difficulty": 2, "textAr": "الغاز اللي بنتنفسه ولازم لاستمرار الحياة اسمه ____.", "answerAr": "الأكسجين", "aliases": [] },
+    { "id": "bl-fill-31", "shape": "fill_blank", "difficulty": 3, "textAr": "العالم اللي اخترع المصباح الكهربائي بشكل عملي اسمه توماس ____.", "answerAr": "إديسون", "aliases": [] },
+    { "id": "bl-fill-32", "shape": "fill_blank", "difficulty": 2, "textAr": "أكبر صحراء رملية حارة في العالم اسمها الصحراء ____.", "answerAr": "الكبرى", "aliases": [] },
+    { "id": "bl-fill-33", "shape": "fill_blank", "difficulty": 3, "textAr": "المرض اللي بيسببه نقص فيتامين سي وكان بيصيب البحارة قديمًا اسمه ____.", "answerAr": "الاسقربوط", "aliases": [] },
+    { "id": "bl-fill-34", "shape": "fill_blank", "difficulty": 2, "textAr": "الآلة اللي بتحول الطاقة الميكانيكية لكهربائية والعكس بتُسمى ____.", "answerAr": "المولد", "aliases": ["الدينامو"] },
+    { "id": "bl-fill-35", "shape": "fill_blank", "difficulty": 3, "textAr": "أول قمر صناعي أطلقته البشرية للفضاء كان اسمه ____.", "answerAr": "سبوتنيك", "aliases": ["سبوتنيك 1"] },
+    { "id": "bl-fill-36", "shape": "fill_blank", "difficulty": 2, "textAr": "الجهاز اللي بيقيس ضغط الهواء الجوي بيُسمى ____.", "answerAr": "البارومتر", "aliases": [] },
+    { "id": "bl-fill-37", "shape": "fill_blank", "difficulty": 3, "textAr": "الفيلسوف اليوناني اللي كان أستاذ الإسكندر الأكبر اسمه ____.", "answerAr": "أرسطو", "aliases": [] },
+    { "id": "bl-fill-38", "shape": "fill_blank", "difficulty": 2, "textAr": "العملة الرسمية لدول الاتحاد الأوروبي بتُسمى ____.", "answerAr": "اليورو", "aliases": [] },
+    { "id": "bl-fill-39", "shape": "fill_blank", "difficulty": 3, "textAr": "الحيوان الأسطوري اللي بيُصوَّر بجسم حصان وقرن واحد فوق راسه اسمه ____.", "answerAr": "يونيكورن", "aliases": ["وحيد القرن الخرافي"] },
+    { "id": "bl-fill-40", "shape": "fill_blank", "difficulty": 2, "textAr": "أشهر لوحة فنية في العالم رسمها ليوناردو دافنشي اسمها ____.", "answerAr": "الموناليزا", "aliases": [] },
+    { "id": "bl-fill-41", "shape": "fill_blank", "difficulty": 3, "textAr": "الدولة اللي فيها أكبر عدد سكان في العالم حاليًا هي ____.", "answerAr": "الهند", "aliases": [] },
+    { "id": "bl-fill-42", "shape": "fill_blank", "difficulty": 2, "textAr": "المحيط الأصغر مساحة من بين محيطات العالم الخمسة هو المحيط ____.", "answerAr": "المتجمد الشمالي", "aliases": ["القطبي الشمالي"] },
+    { "id": "bl-fill-43", "shape": "fill_blank", "difficulty": 3, "textAr": "العالم اللي وضع نظرية التطور والانتخاب الطبيعي اسمه تشارلز ____.", "answerAr": "داروين", "aliases": [] },
+    { "id": "bl-fill-44", "shape": "fill_blank", "difficulty": 2, "textAr": "أعلى شلال في العالم من حيث الارتفاع اسمه شلال ____.", "answerAr": "أنجل", "aliases": [] },
+    { "id": "bl-fill-45", "shape": "fill_blank", "difficulty": 3, "textAr": "الوحدة اللي بتقيس شدة الزلازل بتُسمى مقياس ____.", "answerAr": "ريختر", "aliases": [] },
+    { "id": "bl-fill-46", "shape": "fill_blank", "difficulty": 2, "textAr": "أكبر جزيرة في العالم من حيث المساحة اسمها ____.", "answerAr": "جرينلاند", "aliases": [] },
+    { "id": "bl-fill-47", "shape": "fill_blank", "difficulty": 3, "textAr": "المرض المعدي اللي انتشر عالميًا سنة 2020 وسبب جائحة كبيرة اسمه ____-19.", "answerAr": "كوفيد", "aliases": ["كورونا"] },
+    { "id": "bl-fill-48", "shape": "fill_blank", "difficulty": 2, "textAr": "اللوح اللي بيحول ضوء الشمس لكهرباء مباشرة وبيتركب على أسطح البيوت بيُسمى اللوح ____.", "answerAr": "الشمسي", "aliases": ["اللوح الشمسي"] },
+    { "id": "bl-fill-49", "shape": "fill_blank", "difficulty": 3, "textAr": "مؤسس شركة مايكروسوفت اسمه بيل ____.", "answerAr": "غيتس", "aliases": [] },
+    { "id": "bl-fill-50", "shape": "fill_blank", "difficulty": 2, "textAr": "أول من طاف حول الكرة الأرضية بحرًا كان اسمه فرديناند ____.", "answerAr": "ماجلان", "aliases": [] },
+    { "id": "bl-fill-51", "shape": "fill_blank", "difficulty": 3, "textAr": "المصطلح العلمي لدرجة الحرارة اللي عندها بتتوقف كل الحركة الجزيئية بيُسمى الصفر ____.", "answerAr": "المطلق", "aliases": [] },
+    { "id": "bl-fill-52", "shape": "fill_blank", "difficulty": 2, "textAr": "الطائرة اللي بتقدر تطير أسرع من سرعة الصوت بتُسمى طائرة ____.", "answerAr": "فوق صوتية", "aliases": ["سوبرسونيك"] },
+    { "id": "bl-fill-53", "shape": "fill_blank", "difficulty": 3, "textAr": "المعمار المصري القديم اللي صمم أول هرم مدرج في التاريخ اسمه ____.", "answerAr": "إمحوتب", "aliases": [] },
+    { "id": "bl-fill-54", "shape": "fill_blank", "difficulty": 2, "textAr": "أشهر برج مايل في العالم موجود في مدينة إيطالية اسمها ____.", "answerAr": "بيزا", "aliases": [] },
+
+    { "id": "bl-num-30", "shape": "numeric", "difficulty": 3, "textAr": "اللغة العربية بيتكلم بيها كام دولة رسميًا تقريبًا؟", "correctValue": 22, "tolerance": 3, "unitAr": "دولة" },
+    { "id": "bl-num-31", "shape": "numeric", "difficulty": 3, "textAr": "الهيكل العظمي للإنسان البالغ بيتكوّن من كام عظمة؟", "correctValue": 206, "tolerance": 0, "unitAr": "عظمة" },
+    { "id": "bl-num-32", "shape": "numeric", "difficulty": 3, "textAr": "عدد الدول الأعضاء الكاملة العضوية في الأمم المتحدة كام تقريبًا؟", "correctValue": 193, "tolerance": 2, "unitAr": "دولة" },
+    { "id": "bl-num-33", "shape": "numeric", "difficulty": 4, "textAr": "سور الصين العظيم بكل فروعه وامتداداته طوله حوالي كام ألف كيلومتر؟", "correctValue": 21, "tolerance": 6, "unitAr": "ألف كم" },
+    { "id": "bl-num-34", "shape": "numeric", "difficulty": 3, "textAr": "عدد سكان العالم حاليًا تقريبًا كام مليار نسمة؟", "correctValue": 8, "tolerance": 1, "unitAr": "مليار" },
+    { "id": "bl-num-35", "shape": "numeric", "difficulty": 3, "textAr": "برج خليفة في دبي أطول مبنى في العالم ارتفاعه حوالي كام متر؟", "correctValue": 828, "tolerance": 30, "unitAr": "متر" },
+    { "id": "bl-num-36", "shape": "numeric", "difficulty": 2, "textAr": "الجسم البشري البالغ بيحتوي على حوالي كام لتر دم؟", "correctValue": 5, "tolerance": 1, "unitAr": "لتر" },
+    { "id": "bl-num-37", "shape": "numeric", "difficulty": 3, "textAr": "الغيوم بترتفع في السما لحوالي كام كيلومتر تقريبًا (الغيوم المنخفضة)؟", "correctValue": 2, "tolerance": 1, "unitAr": "كم" },
+    { "id": "bl-num-38", "shape": "numeric", "difficulty": 3, "textAr": "متوسط عمر الإنسان المتوقع عالميًا تقريبًا كام سنة؟", "correctValue": 73, "tolerance": 7, "unitAr": "سنة" },
+    { "id": "bl-num-39", "shape": "numeric", "difficulty": 3, "textAr": "متوسط عدد ساعات النوم اللي بينصح بيها الأطباء للبالغين يوميًا كام؟", "correctValue": 8, "tolerance": 1, "unitAr": "ساعة" },
+    { "id": "bl-num-40", "shape": "numeric", "difficulty": 3, "textAr": "أسرع لاعب عداء في العالم بيقطع 100 متر في حوالي كام ثانية؟", "correctValue": 10, "tolerance": 1, "unitAr": "ثانية" },
+    { "id": "bl-num-41", "shape": "numeric", "difficulty": 3, "textAr": "متوسط سرعة السيارة العادية على الطريق السريع حوالي كام كم/ساعة؟", "correctValue": 100, "tolerance": 20, "unitAr": "كم/ساعة" },
+    { "id": "bl-num-42", "shape": "numeric", "difficulty": 3, "textAr": "القدم الواحد (وحدة قياس طول) بيساوي تقريبًا كام سنتيمتر؟", "correctValue": 30, "tolerance": 2, "unitAr": "سم" },
+    { "id": "bl-num-43", "shape": "numeric", "difficulty": 3, "textAr": "الميل الواحد بيساوي تقريبًا كام كيلومتر؟", "correctValue": 1.6, "tolerance": 0.3, "unitAr": "كم" },
+    { "id": "bl-num-44", "shape": "numeric", "difficulty": 4, "textAr": "أطول جسر معلق في العالم (جسر جناق قلعة في تركيا) طول امتداده الرئيسي بين قاعدتيه حوالي كام متر؟", "correctValue": 2023, "tolerance": 200, "unitAr": "متر" },
+    { "id": "bl-num-45", "shape": "numeric", "difficulty": 3, "textAr": "كوكب الأرض بياخد كام يوم تقريبًا عشان يدور دورة كاملة حوالين الشمس؟", "correctValue": 365, "tolerance": 1, "unitAr": "يوم" },
+    { "id": "bl-num-46", "shape": "numeric", "difficulty": 3, "textAr": "أكبر ألماسة طبيعية اتكتشفت في التاريخ وزنها كام قيراط تقريبًا؟", "correctValue": 3106, "tolerance": 300, "unitAr": "قيراط" },
+    { "id": "bl-num-47", "shape": "numeric", "difficulty": 3, "textAr": "مقياس درجة حرارة غليان المية عند مستوى سطح البحر كام درجة مئوية؟", "correctValue": 100, "tolerance": 0, "unitAr": "°م" },
+    { "id": "bl-num-48", "shape": "numeric", "difficulty": 3, "textAr": "درجة تجمد المية عند الضغط الجوي العادي كام درجة مئوية؟", "correctValue": 0, "tolerance": 0, "unitAr": "°م" },
+    { "id": "bl-num-49", "shape": "numeric", "difficulty": 2, "textAr": "لوحة الشطرنج بيها كام مربع؟", "correctValue": 64, "tolerance": 0, "unitAr": "مربع" },
+    { "id": "bl-num-50", "shape": "numeric", "difficulty": 2, "textAr": "كوتشينة اللعب العادية فيها كام ورقة (من غير الجوكر)؟", "correctValue": 52, "tolerance": 0, "unitAr": "ورقة" },
+    { "id": "bl-num-51", "shape": "numeric", "difficulty": 2, "textAr": "عدد أحرف الأبجدية الإنجليزية كام؟", "correctValue": 26, "tolerance": 0, "unitAr": "حرف" },
+    { "id": "bl-num-52", "shape": "numeric", "difficulty": 3, "textAr": "عدد الكواكب الرسمية في المجموعة الشمسية بعد استبعاد بلوتو كام؟", "correctValue": 8, "tolerance": 0, "unitAr": "كوكب" },
+    { "id": "bl-num-53", "shape": "numeric", "difficulty": 3, "textAr": "المسافة التقريبية بين الأرض والشمس كام مليون كيلومتر؟", "correctValue": 150, "tolerance": 10, "unitAr": "مليون كم" },
+    { "id": "bl-num-54", "shape": "numeric", "difficulty": 3, "textAr": "متوسط سرعة الرصاصة وهي طايرة من مسدس عادي حوالي كام متر في الثانية؟", "correctValue": 400, "tolerance": 100, "unitAr": "م/ث" },
+    { "id": "bl-num-55", "shape": "numeric", "difficulty": 3, "textAr": "متوسط عدد نبضات قلب الإنسان البالغ في الدقيقة وهو مرتاح كام؟", "correctValue": 70, "tolerance": 15, "unitAr": "نبضة" },
+    { "id": "bl-num-56", "shape": "numeric", "difficulty": 2, "textAr": "الأسبوع الواحد فيه كام يوم؟", "correctValue": 7, "tolerance": 0, "unitAr": "يوم" },
+    { "id": "bl-num-57", "shape": "numeric", "difficulty": 2, "textAr": "الشهر العادي بيتكوّن من كام أسبوع تقريبًا؟", "correctValue": 4, "tolerance": 0, "unitAr": "أسبوع" },
+    { "id": "bl-num-58", "shape": "numeric", "difficulty": 4, "textAr": "المجموعة الشمسية عندها كام قمر تقريبًا معروف بيدور حوالين كواكبها مجتمعة؟", "correctValue": 442, "tolerance": 80, "unitAr": "قمر" },
+    { "id": "bl-num-59", "shape": "numeric", "difficulty": 3, "textAr": "متوسط طول الإنسان البالغ في مصر تقريبًا كام سنتيمتر؟", "correctValue": 170, "tolerance": 10, "unitAr": "سم" },
+    { "id": "bl-num-60", "shape": "numeric", "difficulty": 3, "textAr": "أطول نفق تحت المية في العالم (نفق سيكان بين جزيرتين يابانيتين) طوله حوالي كام كيلومتر؟", "correctValue": 54, "tolerance": 5, "unitAr": "كم" },
+    { "id": "bl-num-61", "shape": "numeric", "difficulty": 3, "textAr": "أكبر سفينة ركاب سياحية (كروز) في العالم بتستوعب حوالي كام ألف راكب؟", "correctValue": 7, "tolerance": 2, "unitAr": "ألف راكب" },
+    { "id": "bl-num-62", "shape": "numeric", "difficulty": 3, "textAr": "الجهاز الهضمي للإنسان طوله الكلي (كل الأمعاء مجتمعة) حوالي كام متر؟", "correctValue": 9, "tolerance": 2, "unitAr": "متر" },
+    { "id": "bl-num-63", "shape": "numeric", "difficulty": 3, "textAr": "عدد العضلات في جسم الإنسان تقريبًا كام مية عضلة؟", "correctValue": 6, "tolerance": 2, "unitAr": "مية عضلة" },
+    { "id": "bl-num-64", "shape": "numeric", "difficulty": 3, "textAr": "أكبر بيتزا اتعملت في التاريخ حسب رقم غينيس القياسي مساحتها حوالي كام متر مربع؟", "correctValue": 1300, "tolerance": 100, "unitAr": "متر مربع" },
+
+    { "id": "bl-bool-50", "shape": "boolean", "difficulty": 3, "textAr": "أقصر حرب مسجلة في التاريخ استمرت أقل من ساعة", "isTrue": true, "explanationAr": "حرب الأنجلو-زنجبار سنة 1896 استمرت حوالي 38 دقيقة بس." },
+    { "id": "bl-bool-51", "shape": "boolean", "difficulty": 4, "textAr": "جامعة أكسفورد أقدم من إمبراطورية الأزتيك", "isTrue": true, "explanationAr": "التدريس في أكسفورد بدأ سنة 1096، وإمبراطورية الأزتيك اتأسست بعد كده بقرون." },
+    { "id": "bl-bool-52", "shape": "boolean", "difficulty": 4, "textAr": "الملكة كليوباترا عاشت زمنيًا أقرب لهبوط الإنسان على القمر من زمن بناء الهرم الأكبر", "isTrue": true, "explanationAr": "الفرق بين كليوباترا وبناء الأهرامات أكتر من 2000 سنة، بينما الفرق بينها وهبوط القمر حوالي 2000 سنة بس." },
+    { "id": "bl-bool-53", "shape": "boolean", "difficulty": 3, "textAr": "التمساح مش قادر يخرّج لسانه من فمه", "isTrue": true, "explanationAr": "لسانه ملتصق بقاع فمه بغشاء خاص." },
+    { "id": "bl-bool-54", "shape": "boolean", "difficulty": 2, "textAr": "الموز من الناحية العلمية بيُصنّف كتوت مش كموزة عادية", "isTrue": true, "explanationAr": "الموز علميًا نوع من التوت، بينما الفراولة مش توت حقيقي رغم اسمها." },
+    { "id": "bl-bool-55", "shape": "boolean", "difficulty": 3, "textAr": "برج إيفل بيزيد طوله شوية في الصيف بسبب الحرارة", "isTrue": true, "explanationAr": "الحديد بيتمدد بالحرارة، فالبرج بيطول كذا سنتيمتر في الصيف." },
+    { "id": "bl-bool-56", "shape": "boolean", "difficulty": 2, "textAr": "الموناليزا لوحة مرسوم فيها شخصية من غير حواجب", "isTrue": true, "explanationAr": "من سمات اللوحة الغريبة إن الشخصية مالهاش حواجب واضحة." },
+    { "id": "bl-bool-57", "shape": "boolean", "difficulty": 3, "textAr": "تمثال الحرية كان هدية من فرنسا للولايات المتحدة", "isTrue": true },
+    { "id": "bl-bool-58", "shape": "boolean", "difficulty": 3, "textAr": "مجموعة الغربان بتتسمى بالإنجليزية «Murder» بمعنى جريمة قتل", "isTrue": true },
+    { "id": "bl-bool-59", "shape": "boolean", "difficulty": 3, "textAr": "أنف الإنسان بيقدر يميّز بين أكتر من تريليون رائحة مختلفة حسب دراسات علمية حديثة", "isTrue": true },
+    { "id": "bl-bool-60", "shape": "boolean", "difficulty": 2, "textAr": "نابليون بونابرت كان قصير جدًا مقارنة بمعاصريه", "isTrue": false, "explanationAr": "الاعتقاد ده غلط شائع؛ طوله كان قريب من متوسط طول الرجال في عصره، والالتباس جه من فرق في وحدات القياس الفرنسية والإنجليزية" },
+    { "id": "bl-bool-61", "shape": "boolean", "difficulty": 2, "textAr": "الشطرنج عدد الطرق الممكنة للعبه أكبر من عدد الذرات في الكون المرئي", "isTrue": true },
+    { "id": "bl-bool-62", "shape": "boolean", "difficulty": 3, "textAr": "الحيوان الوطني الرسمي لاسكتلندا هو حيوان خرافي اسمه اليونيكورن", "isTrue": true },
+    { "id": "bl-bool-63", "shape": "boolean", "difficulty": 2, "textAr": "الشعاب المرجانية العظيمة في أستراليا أكبر بنية حية على وجه الأرض", "isTrue": true },
+    { "id": "bl-bool-64", "shape": "boolean", "difficulty": 3, "textAr": "أول مايكروويف في التاريخ اتخترع بالصدفة لما لاحظ مهندس إن شوكولاتة داب في جيبه", "isTrue": true },
+    { "id": "bl-bool-65", "shape": "boolean", "difficulty": 2, "textAr": "الدولار الأمريكي هو أكتر عملة متداولة في العالم من حيث الاستخدام الدولي", "isTrue": true },
+    { "id": "bl-bool-66", "shape": "boolean", "difficulty": 2, "textAr": "برج بيزا المايل في إيطاليا بُني عن قصد بشكل مايل من الأول", "isTrue": false, "explanationAr": "البرج مال بسبب مشكلة في التربة غير المستقرة أثناء البناء، مش بشكل مقصود من المصمم" },
+    { "id": "bl-bool-67", "shape": "boolean", "difficulty": 3, "textAr": "بعض العملات الرومانية القديمة كانت بتُستخدم كأداة دفع رواتب الجنود، ومن هنا جات كلمة «salary» من كلمة الملح", "isTrue": true, "explanationAr": "كلمة سالاري الإنجليزية أصلها لاتيني مرتبط بالملح اللي كان الجنود الرومان بياخدوه كجزء من راتبهم." },
+    { "id": "bl-bool-68", "shape": "boolean", "difficulty": 2, "textAr": "أول فيلم سينمائي ناطق في التاريخ كان أبيض وأسود", "isTrue": true },
+    { "id": "bl-bool-69", "shape": "boolean", "difficulty": 3, "textAr": "الطابعة الحديثة (الطباعة بالحروف المتحركة) اخترعها الألماني يوهان غوتنبرغ", "isTrue": true },
+    { "id": "bl-bool-70", "shape": "boolean", "difficulty": 2, "textAr": "أول من صعد لقمة إفرست كانوا إدموند هيلاري وتينزينج نورجاي", "isTrue": true },
+    { "id": "bl-bool-71", "shape": "boolean", "difficulty": 3, "textAr": "المسافة اللي قطعها أول طيران للأخوين رايت كانت أقصر من طول أغلب الطائرات الحديثة", "isTrue": true, "explanationAr": "أول طيران للأخوين رايت سنة 1903 كانت مسافته حوالي 36 متر بس." },
+    { "id": "bl-bool-72", "shape": "boolean", "difficulty": 2, "textAr": "أول كمبيوتر في التاريخ كان بحجم غرفة كاملة تقريبًا", "isTrue": true },
+    { "id": "bl-bool-73", "shape": "boolean", "difficulty": 3, "textAr": "شركة نوكيا كانت في الأصل مصنع لب الورق والمطاط قبل ما تدخل صناعة الموبايلات", "isTrue": true },
+    { "id": "bl-bool-74", "shape": "boolean", "difficulty": 2, "textAr": "أول رسالة نصية (SMS) في التاريخ اتبعتت سنة 1992", "isTrue": true },
+    { "id": "bl-bool-75", "shape": "boolean", "difficulty": 3, "textAr": "الكتابة المسمارية السومرية بتُعتبر من أقدم أنظمة الكتابة المعروفة في التاريخ البشري", "isTrue": true },
+    { "id": "bl-bool-76", "shape": "boolean", "difficulty": 2, "textAr": "عملة اليورو بدأت التداول بيها فعليًا كعملة ورقية ومعدنية سنة 2002", "isTrue": true },
+    { "id": "bl-bool-77", "shape": "boolean", "difficulty": 3, "textAr": "أول قانون معروف مكتوب في التاريخ البشري هو قانون حمورابي", "isTrue": false, "explanationAr": "فيه قوانين أقدم من حمورابي زي قانون أور-نامو السومري، رغم إن حمورابي من أشهرهم وأكملهم" },
+    { "id": "bl-bool-78", "shape": "boolean", "difficulty": 2, "textAr": "أطول يوم في السنة من ناحية عدد ساعات النهار بيُسمى الانقلاب الصيفي", "isTrue": true },
+    { "id": "bl-bool-79", "shape": "boolean", "difficulty": 3, "textAr": "في نصف الكرة الشمالي، الانقلاب الشتوي بيحصل غالبًا في شهر ديسمبر", "isTrue": true },
+    { "id": "bl-bool-80", "shape": "boolean", "difficulty": 3, "textAr": "أول قمر صناعي للاتصالات كان اسمه سبوتنيك", "isTrue": false, "explanationAr": "سبوتنيك كان أول قمر صناعي بشكل عام مش للاتصالات تحديدًا؛ أول قمر اتصالات كان تليستار لاحقًا" },
+    { "id": "bl-bool-81", "shape": "boolean", "difficulty": 2, "textAr": "أول ألعاب أولمبية حديثة اتقامت في أثينا اليونان", "isTrue": true },
+    { "id": "bl-bool-82", "shape": "boolean", "difficulty": 3, "textAr": "الألعاب الأولمبية الحديثة بتُقام كل 4 سنين من غير أي استثناء في تاريخها", "isTrue": false, "explanationAr": "اتلغت الألعاب الأولمبية 3 مرات بسبب الحربين العالميتين (1916، 1940، 1944)" },
+
+    { "id": "bl-bool-83", "shape": "boolean", "difficulty": 3, "textAr": "روث حيوان الومبات الأسترالي بيطلع على هيئة مكعبات", "isTrue": true, "explanationAr": "الومبات الحيوان الوحيد المعروف اللي روثه بيتكوّن بشكل مكعّب تقريبًا." },
+    { "id": "bl-bool-84", "shape": "boolean", "difficulty": 3, "textAr": "مجموعة من طيور الفلامنجو بيُطلق عليها بالإنجليزية اسم «Flamboyance»", "isTrue": true },
+    { "id": "bl-bool-85", "shape": "boolean", "difficulty": 4, "textAr": "«الجيفي» (Jiffy) وحدة قياس زمن فعلية بتُستخدم في بعض المجالات العلمية مش مجرد تعبير عامي", "isTrue": true },
+    { "id": "bl-bool-86", "shape": "boolean", "difficulty": 3, "textAr": "في سويسرا القانون بيمنع تربية خنزير غينيا واحد لوحده بسبب حاجته الاجتماعية لرفيق", "isTrue": true, "explanationAr": "قانون رفاهية الحيوان السويسري بيعتبره حيوان اجتماعي، فلازم يتربى مع رفيق على الأقل." },
+    { "id": "bl-bool-87", "shape": "boolean", "difficulty": 3, "textAr": "قنادس البحر (سمك القرش البحري) بتمسك أيادي بعض وهي نايمة عشان ما تنجرفش بعيد عن بعض", "isTrue": true, "explanationAr": "قنادس البحر بتمسك أيادي بعضها البعض أثناء النوم على سطح الماء عشان التيار ما يفرّقهاش." },
+    { "id": "bl-bool-88", "shape": "boolean", "difficulty": 3, "textAr": "قلب الجمبري موجود في منطقة رأسه مش صدره", "isTrue": true },
+    { "id": "bl-bool-89", "shape": "boolean", "difficulty": 3, "textAr": "الفراشة بتتذوق الطعام بأرجلها مش بفمها بس", "isTrue": true },
+    { "id": "bl-bool-90", "shape": "boolean", "difficulty": 3, "textAr": "كوكب زحل كثافته أقل من كثافة الماء، ولو فيه حوض ماء كبير كفاية كان ممكن يطفو فوقه", "isTrue": true },
+    { "id": "bl-bool-91", "shape": "boolean", "difficulty": 2, "textAr": "الصوت بينتقل في الماء أسرع من انتقاله في الهواء", "isTrue": true },
+    { "id": "bl-bool-92", "shape": "boolean", "difficulty": 4, "textAr": "التركيبة الأصلية لمشروب كوكاكولا في القرن التاسع عشر كانت بتحتوي على أثر من مادة الكوكايين", "isTrue": true, "explanationAr": "المشروب كان بيحتوي على مستخلص من ورق الكوكا لحد أوائل القرن العشرين قبل ما يتشال." },
+    { "id": "bl-bool-93", "shape": "boolean", "difficulty": 3, "textAr": "قارة أستراليا أعرض من قطر سطح القمر", "isTrue": true },
+    { "id": "bl-bool-94", "shape": "boolean", "difficulty": 3, "textAr": "البرق أثناء الصاعقة بيبقى أسخن من سطح الشمس", "isTrue": true },
+    { "id": "bl-bool-95", "shape": "boolean", "difficulty": 3, "textAr": "الأبقار بتكوّن صداقات مع بعضها وبتتوتر لو اتفصلت عن صاحبتها", "isTrue": true },
+    { "id": "bl-bool-96", "shape": "boolean", "difficulty": 3, "textAr": "أول من اخترع ماسحة زجاج السيارة (المساحات) كانت امرأة", "isTrue": true, "explanationAr": "الأمريكية ماري أندرسون سجّلت براءة اختراع المساحات سنة 1903." },
+    { "id": "bl-bool-97", "shape": "boolean", "difficulty": 4, "textAr": "ولاية ألاسكا الأمريكية بتضم أقصى نقطة غربية وأقصى نقطة شرقية في الولايات المتحدة في نفس الوقت", "isTrue": true, "explanationAr": "جزر أليوشان التابعة لألاسكا بتمتد عبر خط الطول 180 لدرجة إن جزء منها بيقع في نصف الكرة الشرقي." },
+    { "id": "bl-bool-98", "shape": "boolean", "difficulty": 3, "textAr": "الرجل اللي اخترع علبة رقائق البرينجلز اتدفن جزء من رماده جوه علبة برينجلز فعلًا", "isTrue": true },
+    { "id": "bl-bool-99", "shape": "boolean", "difficulty": 3, "textAr": "تركيب مخ القطة أقرب لمخ الإنسان من تركيب مخ الكلب", "isTrue": true },
+    { "id": "bl-bool-100", "shape": "boolean", "difficulty": 3, "textAr": "ثمرة البرتقال في الأصل كانت لونها أخضر مش برتقالي", "isTrue": true, "explanationAr": "لون القشرة البرتقالي بيظهر بسبب البرودة اللي بتكسر الكلوروفيل الأخضر؛ في المناطق الحارة بتفضل خضرا." },
+    { "id": "bl-bool-101", "shape": "boolean", "difficulty": 2, "textAr": "الفول السوداني علميًا بيتصنّف كنوع من البقوليات مش المكسرات", "isTrue": true },
+    { "id": "bl-bool-102", "shape": "boolean", "difficulty": 3, "textAr": "شركة نينتندو اليابانية بدأت شغلها الأصلي في تصنيع ورق كوتشينة تقليدي قبل ما تدخل مجال الألعاب الإلكترونية", "isTrue": true, "explanationAr": "نينتندو اتأسست سنة 1889 كشركة كوتشينة يابانية تقليدية اسمها هانافودا قبل ما تتحول لصناعة الألعاب بعقود." },
+    { "id": "bl-bool-103", "shape": "boolean", "difficulty": 2, "textAr": "عجلة الملاهي «فيريس ويل» سُمّيت على اسم مخترعها جورج فيريس", "isTrue": true },
+    { "id": "bl-bool-104", "shape": "boolean", "difficulty": 2, "textAr": "بذور الفراولة موجودة على السطح الخارجي للثمرة مش جواها", "isTrue": true },
+    { "id": "bl-bool-105", "shape": "boolean", "difficulty": 3, "textAr": "بصمات الكوالا شبه بصمات الإنسان لدرجة صعوبة التفرقة بينهم أحيانًا", "isTrue": true },
+    { "id": "bl-bool-106", "shape": "boolean", "difficulty": 3, "textAr": "مجموعة من الباندا بيُطلق عليها بالإنجليزية اسم «Embarrassment»", "isTrue": true },
+    { "id": "bl-bool-107", "shape": "boolean", "difficulty": 4, "textAr": "صلصة الكاتشب في القرن التاسع عشر كانت بتُباع كدواء طبي قبل ما تبقى إضافة أكل", "isTrue": true, "explanationAr": "في ثلاثينيات القرن التاسع عشر كان فيه كاتشب طبي مسجل ببراءة اختراع كعلاج لمشاكل هضمية." },
+    { "id": "bl-bool-108", "shape": "boolean", "difficulty": 3, "textAr": "قمة جبل إفرست بتزيد ارتفاعها كل سنة بمقدار كذا مليمتر بسبب حركة الصفائح التكتونية", "isTrue": true },
+    { "id": "bl-bool-109", "shape": "boolean", "difficulty": 3, "textAr": "كوكب الزهرة أسخن كوكب في المجموعة الشمسية رغم إن عطارد أقرب للشمس منه", "isTrue": true, "explanationAr": "الغلاف الجوي الكثيف لكوكب الزهرة بيحبس الحرارة بتأثير الاحتباس الحراري القوي." },
+    { "id": "bl-bool-110", "shape": "boolean", "difficulty": 3, "textAr": "برج إيفل كان مفروض يتفكك بعد 20 سنة من بنائه ومكانش مصمم يفضل دائم", "isTrue": true, "explanationAr": "بُني سنة 1889 كبرج مؤقت لمعرض باريس الدولي." },
+    { "id": "bl-bool-111", "shape": "boolean", "difficulty": 4, "textAr": "بعض أنواع النحل قادرة تتعرف على وجوه البشر وتميّز بينها", "isTrue": true },
+    { "id": "bl-bool-112", "shape": "boolean", "difficulty": 3, "textAr": "عين النعامة أكبر حجمًا من مخها", "isTrue": true },
+    { "id": "bl-bool-113", "shape": "boolean", "difficulty": 3, "textAr": "لعبة كرة السلة لما اتخترعت أول مرة كانت بتُلعب بسلة خوخ حقيقية بدل الطوق الحالي", "isTrue": true },
+    { "id": "bl-bool-114", "shape": "boolean", "difficulty": 3, "textAr": "أول رحلة فضائية بشرية في التاريخ كانت أمريكية", "isTrue": false, "explanationAr": "أول إنسان يطير للفضاء كان السوفيتي يوري جاجارين سنة 1961، قبل أول رائد فضاء أمريكي." },
+    { "id": "bl-bool-115", "shape": "boolean", "difficulty": 3, "textAr": "شبكة الإنترنت اخترعها شخص واحد بمفرده", "isTrue": false, "explanationAr": "الإنترنت تطوّر تدريجيًا بجهود عشرات الباحثين والمؤسسات على مدى عقود، مش اختراع فردي." },
+    { "id": "bl-bool-116", "shape": "boolean", "difficulty": 3, "textAr": "للدلافين صفارات مميزة خاصة بكل واحد فيهم بتشتغل تقريبًا زي الاسم الشخصي", "isTrue": true }
+  ]
+}

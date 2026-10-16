@@ -1,0 +1,7405 @@
+{
+  "category": {
+    "id": "islamic",
+    "nameAr": "إسلاميات",
+    "emoji": "🕌"
+  },
+  "questions": [
+    {
+      "id": "is-mcq-1",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "أركان الإسلام كام ركن؟",
+      "options": [
+        "٣",
+        "٤",
+        "٥",
+        "٦"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "is-mcq-2",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أطول سورة في القرآن الكريم؟",
+      "options": [
+        "آل عمران",
+        "البقرة",
+        "النساء",
+        "الأعراف"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "is-mcq-3",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه أقصر سورة في القرآن الكريم؟",
+      "options": [
+        "الإخلاص",
+        "الكوثر",
+        "العصر",
+        "الناس"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "is-mcq-4",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه أول سورة نزلت من القرآن؟",
+      "options": [
+        "الفاتحة",
+        "المدثر",
+        "العلق",
+        "المزمل"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "أول ما نزل «اقرأ باسم ربك الذي خلق» من سورة العلق."
+    },
+    {
+      "id": "is-mcq-5",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "المسلمين بيصوموا في أنهي شهر؟",
+      "options": [
+        "شعبان",
+        "رجب",
+        "رمضان",
+        "شوال"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "is-mcq-6",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "غزوة بدر كانت في السنة كام من الهجرة؟",
+      "options": [
+        "الأولى",
+        "التانية",
+        "التالتة",
+        "الخامسة"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "is-mcq-7",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الحج بيكون في أنهي شهر هجري؟",
+      "options": [
+        "محرم",
+        "رمضان",
+        "ذي الحجة",
+        "شوال"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "is-mcq-8",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "القبلة اللي المسلمين بيصلوا ناحيتها فين؟",
+      "options": [
+        "القدس",
+        "المدينة المنورة",
+        "مكة المكرمة",
+        "الطائف"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "is-num-1",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "كام سورة في القرآن الكريم؟",
+      "correctValue": 114,
+      "tolerance": 0,
+      "unitAr": "سورة"
+    },
+    {
+      "id": "is-num-2",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "القرآن الكريم كام جزء؟",
+      "correctValue": 30,
+      "tolerance": 0,
+      "unitAr": "جزء"
+    },
+    {
+      "id": "is-num-3",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "صلاة المغرب كام ركعة؟",
+      "correctValue": 3,
+      "tolerance": 0,
+      "unitAr": "ركعة"
+    },
+    {
+      "id": "is-num-4",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "أركان الإسلام كام ركن؟",
+      "correctValue": 5,
+      "tolerance": 0,
+      "unitAr": "ركن"
+    },
+    {
+      "id": "is-num-5",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "المسلم بيصلي كام فرض في اليوم؟",
+      "correctValue": 5,
+      "tolerance": 0,
+      "unitAr": "فرض"
+    },
+    {
+      "id": "is-bool-1",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "صلاة الفجر ركعتين",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-2",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "سورة الفاتحة هي أول سورة في المصحف",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-3",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الحج بيكون في شهر رمضان",
+      "isTrue": false,
+      "explanationAr": "الحج في شهر ذي الحجة."
+    },
+    {
+      "id": "is-bool-4",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "عدد سور القرآن الكريم 114 سورة",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-5",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "الزكاة ركن من أركان الإسلام",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-6",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "سورة الإخلاص فيها أكتر من عشر آيات",
+      "isTrue": false,
+      "explanationAr": "سورة الإخلاص أربع آيات بس."
+    },
+    {
+      "id": "is-bool-7",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الكعبة موجودة في المدينة المنورة",
+      "isTrue": false,
+      "explanationAr": "الكعبة في مكة المكرمة."
+    },
+    {
+      "id": "is-fill-1",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "أول سورة في المصحف هي سورة ____",
+      "answerAr": "الفاتحة",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-2",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "المسلمين بيصوموا شهر ____",
+      "answerAr": "رمضان",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-3",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أطول سورة في القرآن هي سورة ____",
+      "answerAr": "البقرة",
+      "aliases": []
+    },
+    {
+      "id": "is-prog-1",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا شهر هجري",
+        "المسلمين بيصوموا فيا",
+        "فيا ليلة القدر"
+      ],
+      "answerAr": "رمضان",
+      "aliases": [
+        "شهر رمضان"
+      ]
+    },
+    {
+      "id": "is-prog-2",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا سورة في القرآن",
+        "أنا أطول سورة",
+        "بدايتي حروف مقطعة"
+      ],
+      "answerAr": "البقرة",
+      "aliases": [
+        "سورة البقرة"
+      ]
+    },
+    {
+      "id": "is-ord-1",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب السور حسب ترتيبها في المصحف",
+      "items": [
+        "الفاتحة",
+        "البقرة",
+        "آل عمران",
+        "النساء"
+      ],
+      "labels": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "id": "is-ord-2",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب الصلوات حسب وقتها في اليوم",
+      "items": [
+        "الفجر",
+        "الظهر",
+        "العصر",
+        "المغرب"
+      ],
+      "labels": []
+    },
+    {
+      "id": "is-mcq-9",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أركان الإيمان كام ركن؟",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "ستة أركان، أولها الإيمان بالله."
+    },
+    {
+      "id": "is-mcq-10",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أول شهر في السنة الهجرية؟",
+      "options": [
+        "صفر",
+        "المحرم",
+        "رجب",
+        "شعبان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "السنة الهجرية بتبدأ بشهر المحرم."
+    },
+    {
+      "id": "is-mcq-11",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه آخر شهر في السنة الهجرية؟",
+      "options": [
+        "ذو القعدة",
+        "ذو الحجة",
+        "المحرم",
+        "شوال"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ذو الحجة آخر شهر، وفيه موسم الحج."
+    },
+    {
+      "id": "is-mcq-12",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "صلاة العيد كام ركعة؟",
+      "options": [
+        "ركعة",
+        "ركعتين",
+        "تلات ركعات",
+        "أربع ركعات"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ركعتين بتكبيرات زيادة."
+    },
+    {
+      "id": "is-mcq-13",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "سورة الفاتحة بيتقال عليها كمان إيه؟",
+      "options": [
+        "قلب القرآن",
+        "أم الكتاب",
+        "خاتمة الكتاب",
+        "سورة النور"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من أسمائها أم الكتاب والسبع المثاني."
+    },
+    {
+      "id": "is-mcq-14",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي صلاة بتيجي بعد المغرب؟",
+      "options": [
+        "الظهر",
+        "العصر",
+        "العشاء",
+        "الفجر"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "ترتيب الصلوات: الفجر فالظهر فالعصر فالمغرب فالعشاء."
+    },
+    {
+      "id": "is-mcq-15",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "صلاة الظهر كام ركعة؟",
+      "options": [
+        "ركعتين",
+        "تلاتة",
+        "أربعة",
+        "خمسة"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "الظهر والعصر والعشاء كل واحدة أربع ركعات."
+    },
+    {
+      "id": "is-mcq-16",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه أول مسجد اتبنى في الإسلام؟",
+      "options": [
+        "المسجد الحرام",
+        "المسجد النبوي",
+        "مسجد قباء",
+        "المسجد الأقصى"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "مسجد قباء اتبنى أول ما النبي وصل المدينة."
+    },
+    {
+      "id": "is-mcq-17",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "الهجرة كانت من مكة لأنهي مدينة؟",
+      "options": [
+        "الطائف",
+        "المدينة المنورة",
+        "جدة",
+        "الكوفة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "كان اسمها يثرب وبقت المدينة المنورة."
+    },
+    {
+      "id": "is-mcq-18",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه القبلة الأولى للمسلمين؟",
+      "options": [
+        "الكعبة",
+        "المسجد الأقصى",
+        "مسجد قباء",
+        "المسجد النبوي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "كانت ناحية المسجد الأقصى قبل ما تتحوّل للكعبة."
+    },
+    {
+      "id": "is-mcq-19",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الزكاة بتجب على المال بعد ما يعدي عليه كام؟",
+      "options": [
+        "شهر",
+        "ستة شهور",
+        "سنة",
+        "سنتين"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "لازم يعدي على المال حول كامل يعني سنة."
+    },
+    {
+      "id": "is-mcq-20",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "السعي بيكون بين أنهي حاجتين؟",
+      "options": [
+        "عرفات ومنى",
+        "الصفا والمروة",
+        "أحد وثور",
+        "النور وحراء"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "السعي سبع أشواط بين الصفا والمروة."
+    },
+    {
+      "id": "is-mcq-21",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "النبي محمد ﷺ اتولد في أنهي مدينة؟",
+      "options": [
+        "المدينة المنورة",
+        "مكة المكرمة",
+        "الطائف",
+        "جدة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اتولد في مكة وهاجر منها للمدينة."
+    },
+    {
+      "id": "is-mcq-22",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم الغار اللي نزل فيه الوحي أول مرة؟",
+      "options": [
+        "غار ثور",
+        "غار حراء",
+        "غار الكهف",
+        "غار أحد"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "غار حراء في جبل النور بمكة."
+    },
+    {
+      "id": "is-mcq-23",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الدعوة استمرت كام سنة في مكة قبل الهجرة؟",
+      "options": [
+        "10",
+        "13",
+        "15",
+        "20"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "تلتاشر سنة في مكة، وعشرة في المدينة."
+    },
+    {
+      "id": "is-mcq-24",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه الكتاب اللي نزل على سيدنا موسى؟",
+      "options": [
+        "الإنجيل",
+        "الزبور",
+        "التوراة",
+        "الصحف"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "التوراة نزلت على موسى عليه السلام."
+    },
+    {
+      "id": "is-mcq-25",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه الكتاب اللي نزل على سيدنا داوود؟",
+      "options": [
+        "الزبور",
+        "التوراة",
+        "الإنجيل",
+        "الفرقان"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الزبور نزل على داوود عليه السلام."
+    },
+    {
+      "id": "is-mcq-26",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه الكتاب اللي نزل على سيدنا عيسى؟",
+      "options": [
+        "التوراة",
+        "الزبور",
+        "الإنجيل",
+        "الصحف"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "الإنجيل نزل على عيسى عليه السلام."
+    },
+    {
+      "id": "is-mcq-27",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم الملك الموكّل بالوحي؟",
+      "options": [
+        "ميكائيل",
+        "جبريل",
+        "إسرافيل",
+        "مالك"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "جبريل عليه السلام هو أمين الوحي."
+    },
+    {
+      "id": "is-mcq-28",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه آخر سورة في المصحف؟",
+      "options": [
+        "الفلق",
+        "الإخلاص",
+        "الناس",
+        "المسد"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "سورة الناس هي السورة رقم 114."
+    },
+    {
+      "id": "is-mcq-29",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين أول من أذّن في الإسلام؟",
+      "options": [
+        "أبو بكر الصديق",
+        "بلال بن رباح",
+        "عمر بن الخطاب",
+        "عثمان بن عفان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بلال بن رباح كان مؤذن النبي ﷺ."
+    },
+    {
+      "id": "is-mcq-30",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الوقوف بعرفة بيكون في اليوم كام من ذي الحجة؟",
+      "options": [
+        "السابع",
+        "التامن",
+        "التاسع",
+        "العاشر"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "يوم عرفة هو التاسع، والعاشر يوم العيد."
+    },
+    {
+      "id": "is-bool-8",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أركان الإيمان ستة",
+      "isTrue": true,
+      "explanationAr": "الإيمان بالله وملائكته وكتبه ورسله واليوم الآخر والقدر."
+    },
+    {
+      "id": "is-bool-9",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "الهجرة كانت من مكة للمدينة المنورة",
+      "isTrue": true,
+      "explanationAr": "والسنة الهجرية بتتحسب من وقتها."
+    },
+    {
+      "id": "is-bool-10",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "القبلة الأولى للمسلمين كانت المسجد الأقصى",
+      "isTrue": true,
+      "explanationAr": "وبعدين اتحوّلت القبلة ناحية الكعبة."
+    },
+    {
+      "id": "is-bool-11",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "صلاة الظهر أربع ركعات",
+      "isTrue": true,
+      "explanationAr": "زيها زي العصر والعشاء."
+    },
+    {
+      "id": "is-bool-12",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "صلاة العشاء ركعتين",
+      "isTrue": false,
+      "explanationAr": "العشاء أربع ركعات، والفجر هو اللي ركعتين."
+    },
+    {
+      "id": "is-bool-13",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "سورة الناس هي آخر سورة في المصحف",
+      "isTrue": true,
+      "explanationAr": "السورة رقم 114 في ترتيب المصحف."
+    },
+    {
+      "id": "is-bool-14",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الملك الموكّل بالوحي هو ميكائيل",
+      "isTrue": false,
+      "explanationAr": "أمين الوحي هو جبريل عليه السلام."
+    },
+    {
+      "id": "is-bool-15",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "التوراة نزلت على سيدنا موسى",
+      "isTrue": true,
+      "explanationAr": "زي ما القرآن نزل على النبي محمد ﷺ."
+    },
+    {
+      "id": "is-bool-16",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الزبور نزل على سيدنا عيسى",
+      "isTrue": false,
+      "explanationAr": "الزبور نزل على داوود، والإنجيل على عيسى."
+    },
+    {
+      "id": "is-bool-17",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الوقوف بعرفة ركن من أركان الحج",
+      "isTrue": true,
+      "explanationAr": "اللي يفوته الوقوف بعرفة يفوته الحج."
+    },
+    {
+      "id": "is-bool-18",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "السعي بيكون بين الصفا والمروة",
+      "isTrue": true,
+      "explanationAr": "سبع أشواط بين الجبلين."
+    },
+    {
+      "id": "is-bool-19",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "أول مسجد اتبنى في الإسلام هو المسجد النبوي",
+      "isTrue": false,
+      "explanationAr": "مسجد قباء هو الأول، والمسجد النبوي بعده."
+    },
+    {
+      "id": "is-bool-20",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "غار حراء هو المكان اللي نزل فيه الوحي أول مرة",
+      "isTrue": true,
+      "explanationAr": "الغار موجود في جبل النور بمكة."
+    },
+    {
+      "id": "is-bool-21",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "شهر شوال بيجي بعد رمضان على طول",
+      "isTrue": true,
+      "explanationAr": "وأول يوم فيه هو عيد الفطر."
+    },
+    {
+      "id": "is-bool-22",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "السنة الهجرية بتبدأ بشهر المحرم",
+      "isTrue": true,
+      "explanationAr": "والمحرم من الأشهر الحرم."
+    },
+    {
+      "id": "is-bool-23",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الزكاة بتجب على المال بعد ما يعدي عليه حول كامل",
+      "isTrue": true,
+      "explanationAr": "الحول يعني سنة هجرية كاملة."
+    },
+    {
+      "id": "is-bool-24",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "بلال بن رباح أول من أذّن في الإسلام",
+      "isTrue": true,
+      "explanationAr": "وكان مؤذن النبي ﷺ."
+    },
+    {
+      "id": "is-num-6",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "أركان الإيمان كام ركن؟",
+      "correctValue": 6,
+      "tolerance": 0,
+      "unitAr": "ركن",
+      "explanationAr": "ستة أركان."
+    },
+    {
+      "id": "is-num-7",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "صلاة الظهر كام ركعة؟",
+      "correctValue": 4,
+      "tolerance": 0,
+      "unitAr": "ركعة",
+      "explanationAr": "أربع ركعات."
+    },
+    {
+      "id": "is-num-8",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "صلاة العشاء كام ركعة؟",
+      "correctValue": 4,
+      "tolerance": 0,
+      "unitAr": "ركعة",
+      "explanationAr": "أربع ركعات زي الظهر والعصر."
+    },
+    {
+      "id": "is-num-9",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "السنة الهجرية كام شهر؟",
+      "correctValue": 12,
+      "tolerance": 0,
+      "unitAr": "شهر",
+      "explanationAr": "اتناشر شهر قمري."
+    },
+    {
+      "id": "is-num-10",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "الدعوة استمرت كام سنة في مكة قبل الهجرة؟",
+      "correctValue": 13,
+      "tolerance": 1,
+      "unitAr": "سنة",
+      "explanationAr": "تلتاشر سنة في مكة."
+    },
+    {
+      "id": "is-num-11",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "سورة الفاتحة كام آية؟",
+      "correctValue": 7,
+      "tolerance": 0,
+      "unitAr": "آية",
+      "explanationAr": "عشان كده بيقولوا عليها السبع المثاني."
+    },
+    {
+      "id": "is-num-12",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "سورة الإخلاص كام آية؟",
+      "correctValue": 4,
+      "tolerance": 0,
+      "unitAr": "آية",
+      "explanationAr": "أربع آيات قصيرة."
+    },
+    {
+      "id": "is-num-13",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الوقوف بعرفة في اليوم كام من ذي الحجة؟",
+      "correctValue": 9,
+      "tolerance": 0,
+      "explanationAr": "التاسع من ذي الحجة، وبعده يوم العيد."
+    },
+    {
+      "id": "is-num-14",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "صلاة العيد كام ركعة؟",
+      "correctValue": 2,
+      "tolerance": 0,
+      "unitAr": "ركعة",
+      "explanationAr": "ركعتين بتكبيرات زيادة."
+    },
+    {
+      "id": "is-num-15",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "سورة الكوثر كام آية؟",
+      "correctValue": 3,
+      "tolerance": 0,
+      "unitAr": "آية",
+      "explanationAr": "تلات آيات، وهي أقصر سورة في المصحف."
+    },
+    {
+      "id": "is-fill-4",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "الهجرة كانت من مكة إلى ____",
+      "answerAr": "المدينة المنورة",
+      "aliases": [
+        "المدينة",
+        "يثرب",
+        "المدينه"
+      ],
+      "explanationAr": "كان اسمها يثرب قبل الهجرة."
+    },
+    {
+      "id": "is-fill-5",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "القبلة الأولى للمسلمين كانت المسجد ____",
+      "answerAr": "الأقصى",
+      "aliases": [
+        "الاقصى",
+        "أقصى"
+      ],
+      "explanationAr": "قبل ما تتحوّل القبلة للكعبة."
+    },
+    {
+      "id": "is-fill-6",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الملك الموكّل بالوحي اسمه ____",
+      "answerAr": "جبريل",
+      "aliases": [
+        "جبرائيل",
+        "سيدنا جبريل"
+      ],
+      "explanationAr": "أمين الوحي عليه السلام."
+    },
+    {
+      "id": "is-fill-7",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الكتاب اللي نزل على سيدنا موسى اسمه ____",
+      "answerAr": "التوراة",
+      "aliases": [
+        "توراة"
+      ],
+      "explanationAr": "من الكتب السماوية."
+    },
+    {
+      "id": "is-fill-8",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الزبور نزل على سيدنا ____",
+      "answerAr": "داوود",
+      "aliases": [
+        "داود",
+        "داوود عليه السلام"
+      ],
+      "explanationAr": "الزبور من الكتب السماوية."
+    },
+    {
+      "id": "is-fill-9",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "السعي في الحج والعمرة بيكون بين الصفا و ____",
+      "answerAr": "المروة",
+      "aliases": [
+        "مروة",
+        "المروه"
+      ],
+      "explanationAr": "سبع أشواط بين الجبلين."
+    },
+    {
+      "id": "is-fill-10",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "أول مسجد اتبنى في الإسلام هو مسجد ____",
+      "answerAr": "قباء",
+      "aliases": [
+        "قبا"
+      ],
+      "explanationAr": "اتبنى أول ما النبي وصل المدينة."
+    },
+    {
+      "id": "is-fill-11",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الغار اللي نزل فيه الوحي أول مرة اسمه غار ____",
+      "answerAr": "حراء",
+      "aliases": [
+        "حرا"
+      ],
+      "explanationAr": "في جبل النور بمكة."
+    },
+    {
+      "id": "is-fill-12",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أول شهر في السنة الهجرية هو ____",
+      "answerAr": "المحرم",
+      "aliases": [
+        "محرم"
+      ],
+      "explanationAr": "ومن الأشهر الحرم."
+    },
+    {
+      "id": "is-fill-13",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "آخر سورة في المصحف هي سورة ____",
+      "answerAr": "الناس",
+      "aliases": [
+        "ناس"
+      ],
+      "explanationAr": "السورة رقم 114."
+    },
+    {
+      "id": "is-fill-14",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الشهر اللي بيجي بعد رمضان هو ____",
+      "answerAr": "شوال",
+      "aliases": [
+        "شوّال"
+      ],
+      "explanationAr": "وأول يوم فيه عيد الفطر."
+    },
+    {
+      "id": "is-fill-15",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "أول من أذّن في الإسلام هو ____ بن رباح",
+      "answerAr": "بلال",
+      "aliases": [
+        "بلال بن رباح"
+      ],
+      "explanationAr": "مؤذن النبي ﷺ."
+    },
+    {
+      "id": "is-open-1",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "إيه أول سورة في المصحف؟",
+      "answerAr": "الفاتحة",
+      "aliases": [
+        "فاتحة",
+        "سورة الفاتحة"
+      ],
+      "explanationAr": "ومن أسمائها أم الكتاب."
+    },
+    {
+      "id": "is-open-2",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه آخر سورة في المصحف؟",
+      "answerAr": "الناس",
+      "aliases": [
+        "سورة الناس"
+      ],
+      "explanationAr": "السورة رقم 114."
+    },
+    {
+      "id": "is-open-3",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "الهجرة كانت من مكة لأنهي مدينة؟",
+      "answerAr": "المدينة المنورة",
+      "aliases": [
+        "المدينة",
+        "يثرب"
+      ],
+      "explanationAr": "والسنة الهجرية بتتحسب من الهجرة."
+    },
+    {
+      "id": "is-open-4",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الملك الموكّل بالوحي؟",
+      "answerAr": "جبريل",
+      "aliases": [
+        "جبرائيل"
+      ],
+      "explanationAr": "أمين الوحي عليه السلام."
+    },
+    {
+      "id": "is-open-5",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم الغار اللي نزل فيه الوحي أول مرة؟",
+      "answerAr": "غار حراء",
+      "aliases": [
+        "حراء",
+        "حرا"
+      ],
+      "explanationAr": "في جبل النور بمكة."
+    },
+    {
+      "id": "is-open-6",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الكتاب اللي نزل على سيدنا موسى؟",
+      "answerAr": "التوراة",
+      "aliases": [
+        "توراة"
+      ],
+      "explanationAr": "من الكتب السماوية."
+    },
+    {
+      "id": "is-open-7",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "على مين نزل الزبور؟",
+      "answerAr": "داوود",
+      "aliases": [
+        "داود",
+        "سيدنا داوود"
+      ],
+      "explanationAr": "داوود عليه السلام."
+    },
+    {
+      "id": "is-open-8",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم أول مسجد اتبنى في الإسلام؟",
+      "answerAr": "مسجد قباء",
+      "aliases": [
+        "قباء",
+        "قبا"
+      ],
+      "explanationAr": "أول ما النبي وصل المدينة."
+    },
+    {
+      "id": "is-open-9",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "السعي بيكون بين الصفا وإيه؟",
+      "answerAr": "المروة",
+      "aliases": [
+        "مروة",
+        "المروه"
+      ],
+      "explanationAr": "سبع أشواط بين الجبلين."
+    },
+    {
+      "id": "is-open-10",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه أول شهر في السنة الهجرية؟",
+      "answerAr": "المحرم",
+      "aliases": [
+        "محرم"
+      ],
+      "explanationAr": "ومن الأشهر الحرم."
+    },
+    {
+      "id": "is-open-11",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين أول من أذّن في الإسلام؟",
+      "answerAr": "بلال بن رباح",
+      "aliases": [
+        "بلال"
+      ],
+      "explanationAr": "مؤذن النبي ﷺ."
+    },
+    {
+      "id": "is-open-12",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الشهر اللي بيجي بعد رمضان؟",
+      "answerAr": "شوال",
+      "aliases": [
+        "شوّال"
+      ],
+      "explanationAr": "وأول يوم فيه عيد الفطر."
+    },
+    {
+      "id": "is-prog-3",
+      "shape": "progressive",
+      "difficulty": 1,
+      "hints": [
+        "أنا مبنى في مدينة مقدسة",
+        "المسلمين بيتوجهوا ناحيتي في صلاتهم",
+        "الحجاج بيطوفوا حواليّا سبع أشواط"
+      ],
+      "answerAr": "الكعبة",
+      "aliases": [
+        "الكعبه",
+        "كعبة",
+        "بيت الله الحرام"
+      ],
+      "explanationAr": "قبلة المسلمين في كل مكان."
+    },
+    {
+      "id": "is-prog-4",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا مدينة في الجزيرة العربية",
+        "كان اسمي يثرب قبل الإسلام",
+        "النبي هاجر ليّا من مكة وفيّا مسجده الشريف"
+      ],
+      "answerAr": "المدينة المنورة",
+      "aliases": [
+        "المدينة",
+        "يثرب"
+      ],
+      "explanationAr": "تاني أقدس مدينة عند المسلمين."
+    },
+    {
+      "id": "is-prog-5",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مكان صغير في جبل",
+        "كان النبي بيتعبد فيّا قبل البعثة",
+        "نزل فيّا الوحي أول مرة بكلمة «اقرأ»"
+      ],
+      "answerAr": "غار حراء",
+      "aliases": [
+        "حراء",
+        "حرا"
+      ],
+      "explanationAr": "في جبل النور بمكة."
+    },
+    {
+      "id": "is-prog-6",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا ملك من الملائكة",
+        "مهمتي إني أوصّل رسالة",
+        "نزلت بالوحي على الأنبياء وبيقولوا عليّا الروح الأمين"
+      ],
+      "answerAr": "جبريل",
+      "aliases": [
+        "جبرائيل"
+      ],
+      "explanationAr": "أمين الوحي عليه السلام."
+    },
+    {
+      "id": "is-prog-7",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا صحابي أصلي من الحبشة",
+        "اتعذبت في مكة عشان إسلامي",
+        "صوتي كان أول أذان في الإسلام"
+      ],
+      "answerAr": "بلال بن رباح",
+      "aliases": [
+        "بلال"
+      ],
+      "explanationAr": "مؤذن النبي ﷺ."
+    },
+    {
+      "id": "is-prog-8",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا ركن من أركان الإسلام",
+        "بكون مرة واحدة في العمر على المستطيع",
+        "فيّا الطواف والسعي والوقوف بعرفة"
+      ],
+      "answerAr": "الحج",
+      "aliases": [
+        "حج"
+      ],
+      "explanationAr": "خامس أركان الإسلام."
+    },
+    {
+      "id": "is-prog-9",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا سورة قصيرة في المصحف",
+        "كل آياتي بتتكلم عن التوحيد",
+        "أربع آيات بس وبيقولوا إني بعدل تلت القرآن"
+      ],
+      "answerAr": "سورة الإخلاص",
+      "aliases": [
+        "الإخلاص",
+        "الاخلاص"
+      ],
+      "explanationAr": "قل هو الله أحد."
+    },
+    {
+      "id": "is-prog-10",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مسجد في مدينة مقدسة",
+        "كنت القبلة الأولى للمسلمين",
+        "تالت الحرمين وموجود في مدينة القدس"
+      ],
+      "answerAr": "المسجد الأقصى",
+      "aliases": [
+        "الأقصى",
+        "الاقصى"
+      ],
+      "explanationAr": "أولى القبلتين وتالت الحرمين."
+    },
+    {
+      "id": "is-ord-3",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أشهر السنة الهجرية دي بالترتيب",
+      "items": [
+        "المحرم",
+        "صفر",
+        "ربيع الأول",
+        "ربيع التاني"
+      ],
+      "labels": [],
+      "explanationAr": "دول أول أربع شهور في السنة الهجرية."
+    },
+    {
+      "id": "is-ord-4",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب مناسك العمرة بالترتيب الصح",
+      "items": [
+        "الإحرام",
+        "الطواف",
+        "السعي",
+        "الحلق أو التقصير"
+      ],
+      "labels": [],
+      "explanationAr": "دي خطوات العمرة من أولها لآخرها."
+    },
+    {
+      "id": "is-ord-5",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب الصلوات دي حسب عدد الركعات من الأقل للأكتر",
+      "items": [
+        "الفجر",
+        "المغرب",
+        "الظهر"
+      ],
+      "labels": [
+        "2",
+        "3",
+        "4"
+      ],
+      "explanationAr": "الفجر ركعتين والمغرب تلاتة والظهر أربعة."
+    },
+    {
+      "id": "is-ord-6",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب السور دي من الأقصر للأطول",
+      "items": [
+        "الكوثر",
+        "الإخلاص",
+        "الفاتحة",
+        "البقرة"
+      ],
+      "labels": [
+        "3",
+        "4",
+        "7",
+        "286"
+      ],
+      "explanationAr": "الأرقام دي عدد الآيات في كل سورة."
+    },
+    {
+      "id": "is-ord-7",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الكتب السماوية دي حسب ترتيب نزولها",
+      "items": [
+        "التوراة",
+        "الزبور",
+        "الإنجيل",
+        "القرآن"
+      ],
+      "labels": [],
+      "explanationAr": "من موسى لداوود لعيسى للنبي محمد ﷺ."
+    },
+    {
+      "id": "is-ord-8",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أحداث السيرة دي من الأقدم للأحدث",
+      "items": [
+        "نزول الوحي في غار حراء",
+        "الهجرة للمدينة",
+        "غزوة بدر"
+      ],
+      "labels": [],
+      "explanationAr": "بدر كانت في السنة التانية من الهجرة."
+    },
+    {
+      "id": "is-ord-9",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الشهور الهجرية دي بترتيبها في السنة",
+      "items": [
+        "رمضان",
+        "شوال",
+        "ذو القعدة",
+        "ذو الحجة"
+      ],
+      "labels": [],
+      "explanationAr": "دول آخر أربع شهور في السنة الهجرية."
+    },
+    {
+      "id": "is-ord-10",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب الوحدات دي من الأصغر للأكبر",
+      "items": [
+        "آية",
+        "سورة",
+        "جزء",
+        "المصحف"
+      ],
+      "labels": [],
+      "explanationAr": "كل واحدة جوه اللي بعدها."
+    },
+    {
+      "id": "is-mcq-31",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "كام نبي اتذكر بالاسم في القرآن الكريم؟",
+      "options": [
+        "20",
+        "25",
+        "30",
+        "40"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "خمسة وعشرين نبي مذكورين بأسمائهم."
+    },
+    {
+      "id": "is-mcq-32",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي نبي بيتلقب بـ«أبو الأنبياء»؟",
+      "options": [
+        "نوح",
+        "إبراهيم",
+        "موسى",
+        "آدم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "لأن أنبياء كتير من نسله."
+    },
+    {
+      "id": "is-mcq-33",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي نبي فضل يدعو قومه أطول فترة حسب القرآن؟",
+      "options": [
+        "إبراهيم",
+        "نوح",
+        "موسى",
+        "عيسى"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "القرآن ذكر إنه لبث فيهم قرون طويلة."
+    },
+    {
+      "id": "is-mcq-34",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي نبي بيتلقب بـ«كليم الله»؟",
+      "options": [
+        "إبراهيم",
+        "موسى",
+        "عيسى",
+        "يوسف"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "لأن الله كلّمه تكليمًا."
+    },
+    {
+      "id": "is-mcq-35",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي نبي اتبعت لقوم ثمود؟",
+      "options": [
+        "هود",
+        "صالح",
+        "شعيب",
+        "لوط"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وناقة صالح كانت معجزته."
+    },
+    {
+      "id": "is-mcq-36",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي نبي اتبعت لقوم عاد؟",
+      "options": [
+        "صالح",
+        "هود",
+        "شعيب",
+        "لوط"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وصالح اتبعت لثمود."
+    },
+    {
+      "id": "is-mcq-37",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي نبي ابتلعه الحوت؟",
+      "options": [
+        "يوسف",
+        "يونس",
+        "أيوب",
+        "إلياس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ودعا في الظلمات فاستجاب له الله."
+    },
+    {
+      "id": "is-mcq-38",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي نبي اشتهر بالصبر على البلاء؟",
+      "options": [
+        "يعقوب",
+        "أيوب",
+        "يوسف",
+        "زكريا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بقى مثل يُضرب في الصبر."
+    },
+    {
+      "id": "is-mcq-39",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي سورة بتحكي قصة نبي كاملة من أولها لآخرها؟",
+      "options": [
+        "مريم",
+        "يوسف",
+        "هود",
+        "إبراهيم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وبيتقال عليها «أحسن القصص»."
+    },
+    {
+      "id": "is-mcq-40",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي سورة هي الوحيدة اللي اتسمّت على اسم امرأة؟",
+      "options": [
+        "النساء",
+        "مريم",
+        "المجادلة",
+        "الممتحنة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "سورة مريم عليها السلام."
+    },
+    {
+      "id": "is-mcq-41",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي سورة بتبدأ من غير «بسم الله الرحمن الرحيم»؟",
+      "options": [
+        "الأنفال",
+        "التوبة",
+        "يونس",
+        "هود"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "السورة الوحيدة في المصحف من غير بسملة."
+    },
+    {
+      "id": "is-mcq-42",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي صحابي بيتلقب بـ«الصديق»؟",
+      "options": [
+        "عمر بن الخطاب",
+        "أبو بكر",
+        "عثمان بن عفان",
+        "علي بن أبي طالب"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "لأنه صدّق النبي في الإسراء من غير تردد."
+    },
+    {
+      "id": "is-mcq-43",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي صحابي بيتلقب بـ«الفاروق»؟",
+      "options": [
+        "أبو بكر",
+        "عمر بن الخطاب",
+        "عثمان بن عفان",
+        "علي بن أبي طالب"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "لأنه فرّق بين الحق والباطل."
+    },
+    {
+      "id": "is-mcq-44",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي صحابي بيتلقب بـ«سيف الله المسلول»؟",
+      "options": [
+        "سعد بن أبي وقاص",
+        "خالد بن الوليد",
+        "أبو عبيدة بن الجراح",
+        "عمرو بن العاص"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "القائد اللي ما انهزمش في معركة."
+    },
+    {
+      "id": "is-mcq-45",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الخلفاء الراشدين كام واحد؟",
+      "options": [
+        "تلاتة",
+        "أربعة",
+        "خمسة",
+        "ستة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أبو بكر وعمر وعثمان وعلي."
+    },
+    {
+      "id": "is-mcq-46",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي غزوة بيتقال عليها «يوم الفرقان»؟",
+      "options": [
+        "أحد",
+        "بدر",
+        "الخندق",
+        "حنين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "لأنها فرّقت بين الحق والباطل."
+    },
+    {
+      "id": "is-mcq-47",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي غزوة جت بعد بدر وحصل فيها ابتلاء للمسلمين؟",
+      "options": [
+        "الخندق",
+        "أحد",
+        "حنين",
+        "تبوك"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بسبب نزول الرماة من على الجبل."
+    },
+    {
+      "id": "is-mcq-48",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "صلح الحديبية كان بين المسلمين ومين؟",
+      "options": [
+        "اليهود",
+        "قريش",
+        "الروم",
+        "الفرس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وفتح الباب لدخول الناس في الإسلام."
+    },
+    {
+      "id": "is-mcq-49",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "فتح مكة كان في السنة كام من الهجرة؟",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "10"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "السنة التامنة من الهجرة."
+    },
+    {
+      "id": "is-mcq-50",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "حجة الوداع كانت في السنة كام من الهجرة؟",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "وكانت الحجة الوحيدة للنبي ﷺ."
+    },
+    {
+      "id": "is-mcq-51",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الزكاة على المال بتبقى كام بالمية؟",
+      "options": [
+        "1",
+        "2.5",
+        "5",
+        "10"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ربع العشر، يعني 2.5 بالمية."
+    },
+    {
+      "id": "is-mcq-52",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "خطبة الجمعة بتيجي قبل الصلاة ولا بعدها؟",
+      "options": [
+        "قبلها",
+        "بعدها",
+        "في نصها",
+        "مفيش خطبة"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الخطبة الأول وبعدها ركعتين."
+    },
+    {
+      "id": "is-mcq-53",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "يوم عاشوراء بيكون في أنهي شهر هجري؟",
+      "options": [
+        "صفر",
+        "المحرم",
+        "رجب",
+        "شعبان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "العاشر من المحرم."
+    },
+    {
+      "id": "is-mcq-54",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي ليلة وصفها القرآن بإنها «خير من ألف شهر»؟",
+      "options": [
+        "ليلة النصف من شعبان",
+        "ليلة القدر",
+        "ليلة الإسراء",
+        "ليلة الجمعة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في العشر الأواخر من رمضان."
+    },
+    {
+      "id": "is-mcq-55",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "رحلة الإسراء كانت من المسجد الحرام لأنهي مسجد؟",
+      "options": [
+        "المسجد النبوي",
+        "المسجد الأقصى",
+        "مسجد قباء",
+        "الجامع الأزهر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ومنه كان المعراج."
+    },
+    {
+      "id": "is-mcq-56",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الجامع الأزهر موجود في أنهي مدينة؟",
+      "options": [
+        "الإسكندرية",
+        "القاهرة",
+        "دمشق",
+        "بغداد"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اتبنى في العصر الفاطمي وبقى جامعة."
+    },
+    {
+      "id": "is-mcq-57",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«التيمم» بيتعمل بإيه؟",
+      "options": [
+        "بالميه",
+        "بالتراب الطاهر",
+        "بالرمل بس",
+        "بالحجر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بديل الوضوء عند عدم وجود ميه."
+    },
+    {
+      "id": "is-mcq-58",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "«القبلة» معناها إيه؟",
+      "options": [
+        "مكان الصلاة",
+        "الاتجاه اللي المسلم بيصلي ناحيته",
+        "وقت الصلاة",
+        "عدد الركعات"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وكلهم بيتوجهوا ناحية الكعبة."
+    },
+    {
+      "id": "is-mcq-59",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "«الشهادة» أول أركان الإسلام معناها إيه؟",
+      "options": [
+        "الصلاة خمس مرات",
+        "الإقرار بوحدانية الله ورسالة النبي",
+        "الصيام",
+        "الحج"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "لا إله إلا الله محمد رسول الله."
+    },
+    {
+      "id": "is-mcq-60",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«الحديث» في الإسلام معناه إيه؟",
+      "options": [
+        "آيات القرآن",
+        "كلام النبي ﷺ وأفعاله",
+        "الدعاء",
+        "خطبة الجمعة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "المصدر التاني للتشريع بعد القرآن."
+    },
+    {
+      "id": "is-bool-25",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "عدد الأنبياء المذكورين بالاسم في القرآن 25 نبي",
+      "isTrue": true,
+      "explanationAr": "وفي أنبياء تانيين مش مذكورين بأسمائهم."
+    },
+    {
+      "id": "is-bool-26",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "إبراهيم عليه السلام بيتلقب بأبو الأنبياء",
+      "isTrue": true,
+      "explanationAr": "لأن أنبياء كتير من نسله."
+    },
+    {
+      "id": "is-bool-27",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "موسى عليه السلام بيتلقب بكليم الله",
+      "isTrue": true,
+      "explanationAr": "لأن الله كلّمه تكليمًا."
+    },
+    {
+      "id": "is-bool-28",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "النبي اللي ابتلعه الحوت هو يونس عليه السلام",
+      "isTrue": true,
+      "explanationAr": "ودعا في الظلمات."
+    },
+    {
+      "id": "is-bool-29",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أيوب عليه السلام اشتهر بالصبر على البلاء",
+      "isTrue": true,
+      "explanationAr": "بقى مثل يُضرب في الصبر."
+    },
+    {
+      "id": "is-bool-30",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "سورة يوسف بتحكي قصة نبي كاملة",
+      "isTrue": true,
+      "explanationAr": "وبيتقال عليها أحسن القصص."
+    },
+    {
+      "id": "is-bool-31",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "سورة مريم هي السورة الوحيدة اللي اتسمّت على اسم امرأة",
+      "isTrue": true,
+      "explanationAr": "في المصحف كله."
+    },
+    {
+      "id": "is-bool-32",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "كل سور القرآن بتبدأ بالبسملة",
+      "isTrue": false,
+      "explanationAr": "سورة التوبة بتبدأ من غير بسملة."
+    },
+    {
+      "id": "is-bool-33",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "أبو بكر رضي الله عنه بيتلقب بالفاروق",
+      "isTrue": false,
+      "explanationAr": "أبو بكر «الصديق»، وعمر «الفاروق»."
+    },
+    {
+      "id": "is-bool-34",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "عمر بن الخطاب بيتلقب بالفاروق",
+      "isTrue": true,
+      "explanationAr": "لأنه فرّق بين الحق والباطل."
+    },
+    {
+      "id": "is-bool-35",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "خالد بن الوليد بيتلقب بسيف الله المسلول",
+      "isTrue": true,
+      "explanationAr": "القائد اللي ما انهزمش في معركة."
+    },
+    {
+      "id": "is-bool-36",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الخلفاء الراشدين أربعة",
+      "isTrue": true,
+      "explanationAr": "أبو بكر وعمر وعثمان وعلي."
+    },
+    {
+      "id": "is-bool-37",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "غزوة بدر بيتقال عليها «يوم الفرقان»",
+      "isTrue": true,
+      "explanationAr": "لأنها فرّقت بين الحق والباطل."
+    },
+    {
+      "id": "is-bool-38",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "صلح الحديبية كان بين المسلمين والروم",
+      "isTrue": false,
+      "explanationAr": "كان مع قريش."
+    },
+    {
+      "id": "is-bool-39",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "فتح مكة كان في السنة التامنة من الهجرة",
+      "isTrue": true,
+      "explanationAr": "ودخل الناس في دين الله أفواجًا."
+    },
+    {
+      "id": "is-bool-40",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "حجة الوداع كانت في السنة العاشرة من الهجرة",
+      "isTrue": true,
+      "explanationAr": "وكانت الحجة الوحيدة للنبي ﷺ."
+    },
+    {
+      "id": "is-bool-41",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الزكاة على المال ربع العشر يعني 2.5 بالمية",
+      "isTrue": true,
+      "explanationAr": "بعد ما يعدي على المال حول."
+    },
+    {
+      "id": "is-bool-42",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "صلاة الجمعة ركعتين",
+      "isTrue": true,
+      "explanationAr": "بعد الخطبة."
+    },
+    {
+      "id": "is-bool-43",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "ليلة القدر خير من ألف شهر",
+      "isTrue": true,
+      "explanationAr": "زي ما القرآن وصفها."
+    },
+    {
+      "id": "is-bool-44",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "رحلة الإسراء كانت من المسجد الحرام للمسجد الأقصى",
+      "isTrue": true,
+      "explanationAr": "ومنه كان المعراج."
+    },
+    {
+      "id": "is-bool-45",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الجامع الأزهر موجود في دمشق",
+      "isTrue": false,
+      "explanationAr": "الأزهر في القاهرة."
+    },
+    {
+      "id": "is-bool-46",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "التيمم بيتعمل بالتراب الطاهر",
+      "isTrue": true,
+      "explanationAr": "بديل الوضوء لما مفيش ميه."
+    },
+    {
+      "id": "is-bool-47",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الحديث معناه كلام النبي ﷺ وأفعاله",
+      "isTrue": true,
+      "explanationAr": "المصدر التاني للتشريع."
+    },
+    {
+      "id": "is-bool-48",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "نوح عليه السلام هو الملقّب بأبو الأنبياء",
+      "isTrue": false,
+      "explanationAr": "اللقب ده لإبراهيم عليه السلام."
+    },
+    {
+      "id": "is-num-16",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "كام نبي اتذكر بالاسم في القرآن؟",
+      "correctValue": 25,
+      "tolerance": 0,
+      "unitAr": "نبي",
+      "explanationAr": "خمسة وعشرين نبي بأسمائهم."
+    },
+    {
+      "id": "is-num-17",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الخلفاء الراشدين كام واحد؟",
+      "correctValue": 4,
+      "tolerance": 0,
+      "unitAr": "خليفة",
+      "explanationAr": "أبو بكر وعمر وعثمان وعلي."
+    },
+    {
+      "id": "is-num-18",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "فتح مكة كان في السنة كام من الهجرة؟",
+      "correctValue": 8,
+      "tolerance": 0,
+      "explanationAr": "السنة التامنة."
+    },
+    {
+      "id": "is-num-19",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "حجة الوداع كانت في السنة كام من الهجرة؟",
+      "correctValue": 10,
+      "tolerance": 0,
+      "explanationAr": "الحجة الوحيدة للنبي ﷺ."
+    },
+    {
+      "id": "is-num-20",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الزكاة على المال كام بالمية؟",
+      "correctValue": 2.5,
+      "tolerance": 0,
+      "unitAr": "بالمية",
+      "explanationAr": "ربع العشر."
+    },
+    {
+      "id": "is-num-21",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "صلاة الجمعة كام ركعة؟",
+      "correctValue": 2,
+      "tolerance": 0,
+      "unitAr": "ركعة",
+      "explanationAr": "ركعتين بعد الخطبة."
+    },
+    {
+      "id": "is-num-22",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "سورة يوسف كام آية؟",
+      "correctValue": 111,
+      "tolerance": 3,
+      "unitAr": "آية",
+      "explanationAr": "وبتحكي قصة كاملة."
+    },
+    {
+      "id": "is-num-23",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "سورة مريم كام آية؟",
+      "correctValue": 98,
+      "tolerance": 4,
+      "unitAr": "آية",
+      "explanationAr": "السورة الوحيدة باسم امرأة."
+    },
+    {
+      "id": "is-num-24",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "غزوة بدر كانت في السنة كام من الهجرة؟",
+      "correctValue": 2,
+      "tolerance": 0,
+      "explanationAr": "السنة التانية من الهجرة."
+    },
+    {
+      "id": "is-num-25",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "أطول سورة في القرآن كام آية؟",
+      "correctValue": 286,
+      "tolerance": 0,
+      "unitAr": "آية",
+      "explanationAr": "سورة البقرة."
+    },
+    {
+      "id": "is-num-26",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "سورة الناس كام آية؟",
+      "correctValue": 6,
+      "tolerance": 0,
+      "unitAr": "آية",
+      "explanationAr": "آخر سورة في المصحف."
+    },
+    {
+      "id": "is-num-27",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "القرآن نزل على مدى كام سنة تقريبًا؟",
+      "correctValue": 23,
+      "tolerance": 1,
+      "unitAr": "سنة",
+      "explanationAr": "تلتاشر في مكة وعشرة في المدينة."
+    },
+    {
+      "id": "is-fill-16",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "عدد الأنبياء المذكورين بالاسم في القرآن ____ نبي",
+      "answerAr": "25",
+      "aliases": [
+        "خمسة وعشرين",
+        "٢٥"
+      ],
+      "explanationAr": "وفي أنبياء تانيين مش مذكورين."
+    },
+    {
+      "id": "is-fill-17",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "إبراهيم عليه السلام بيتلقب بأبو ____",
+      "answerAr": "الأنبياء",
+      "aliases": [
+        "انبياء",
+        "الانبياء"
+      ],
+      "explanationAr": "لأن أنبياء كتير من نسله."
+    },
+    {
+      "id": "is-fill-18",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "موسى عليه السلام بيتلقب بـ ____ الله",
+      "answerAr": "كليم",
+      "aliases": [
+        "كليم الله"
+      ],
+      "explanationAr": "لأن الله كلّمه تكليمًا."
+    },
+    {
+      "id": "is-fill-19",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "النبي اللي ابتلعه الحوت اسمه ____",
+      "answerAr": "يونس",
+      "aliases": [
+        "يونس عليه السلام",
+        "ذو النون"
+      ],
+      "explanationAr": "ودعا في الظلمات."
+    },
+    {
+      "id": "is-fill-20",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "النبي اللي اشتهر بالصبر على البلاء اسمه ____",
+      "answerAr": "أيوب",
+      "aliases": [
+        "ايوب",
+        "أيوب عليه السلام"
+      ],
+      "explanationAr": "بقى مثل في الصبر."
+    },
+    {
+      "id": "is-fill-21",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "السورة الوحيدة اللي اتسمّت على اسم امرأة هي سورة ____",
+      "answerAr": "مريم",
+      "aliases": [
+        "مريم عليها السلام"
+      ],
+      "explanationAr": "في المصحف كله."
+    },
+    {
+      "id": "is-fill-22",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "السورة الوحيدة اللي بتبدأ من غير بسملة هي سورة ____",
+      "answerAr": "التوبة",
+      "aliases": [
+        "توبة",
+        "براءة"
+      ],
+      "explanationAr": "وبيتسميها بعض العلما «براءة»."
+    },
+    {
+      "id": "is-fill-23",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عمر بن الخطاب رضي الله عنه بيتلقب بـ ____",
+      "answerAr": "الفاروق",
+      "aliases": [
+        "فاروق"
+      ],
+      "explanationAr": "لأنه فرّق بين الحق والباطل."
+    },
+    {
+      "id": "is-fill-24",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "خالد بن الوليد بيتلقب بسيف الله ____",
+      "answerAr": "المسلول",
+      "aliases": [
+        "مسلول"
+      ],
+      "explanationAr": "القائد اللي ما انهزمش."
+    },
+    {
+      "id": "is-fill-25",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "غزوة بدر بيتقال عليها يوم ____",
+      "answerAr": "الفرقان",
+      "aliases": [
+        "فرقان"
+      ],
+      "explanationAr": "لأنها فرّقت بين الحق والباطل."
+    },
+    {
+      "id": "is-fill-26",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "الزكاة على المال بتبقى ربع ____",
+      "answerAr": "العشر",
+      "aliases": [
+        "عشر"
+      ],
+      "explanationAr": "يعني 2.5 بالمية."
+    },
+    {
+      "id": "is-fill-27",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "المسجد اللي اتبنى في العصر الفاطمي بالقاهرة وبقى جامعة اسمه الجامع ____",
+      "answerAr": "الأزهر",
+      "aliases": [
+        "ازهر",
+        "الازهر"
+      ],
+      "explanationAr": "من أقدم الجامعات في العالم."
+    },
+    {
+      "id": "is-open-13",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "أنهي نبي بيتلقب بأبو الأنبياء؟",
+      "answerAr": "إبراهيم",
+      "aliases": [
+        "ابراهيم",
+        "سيدنا إبراهيم"
+      ],
+      "explanationAr": "لأن أنبياء كتير من نسله."
+    },
+    {
+      "id": "is-open-14",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "أنهي نبي ابتلعه الحوت؟",
+      "answerAr": "يونس",
+      "aliases": [
+        "سيدنا يونس",
+        "ذو النون"
+      ],
+      "explanationAr": "ودعا في الظلمات فنجّاه الله."
+    },
+    {
+      "id": "is-open-15",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "أنهي نبي اشتهر بالصبر على البلاء؟",
+      "answerAr": "أيوب",
+      "aliases": [
+        "ايوب",
+        "سيدنا أيوب"
+      ],
+      "explanationAr": "بقى مثل يُضرب في الصبر."
+    },
+    {
+      "id": "is-open-16",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "أنهي سورة اتسمّت على اسم امرأة؟",
+      "answerAr": "مريم",
+      "aliases": [
+        "سورة مريم"
+      ],
+      "explanationAr": "الوحيدة في المصحف."
+    },
+    {
+      "id": "is-open-17",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "أنهي سورة بتبدأ من غير بسملة؟",
+      "answerAr": "التوبة",
+      "aliases": [
+        "توبة",
+        "براءة"
+      ],
+      "explanationAr": "الوحيدة في المصحف."
+    },
+    {
+      "id": "is-open-18",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "أنهي صحابي بيتلقب بالفاروق؟",
+      "answerAr": "عمر بن الخطاب",
+      "aliases": [
+        "عمر",
+        "ابن الخطاب"
+      ],
+      "explanationAr": "لأنه فرّق بين الحق والباطل."
+    },
+    {
+      "id": "is-open-19",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "أنهي صحابي بيتلقب بسيف الله المسلول؟",
+      "answerAr": "خالد بن الوليد",
+      "aliases": [
+        "خالد",
+        "ابن الوليد"
+      ],
+      "explanationAr": "ما انهزمش في معركة."
+    },
+    {
+      "id": "is-open-20",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "أنهي غزوة بيتقال عليها يوم الفرقان؟",
+      "answerAr": "بدر",
+      "aliases": [
+        "غزوة بدر"
+      ],
+      "explanationAr": "أول معركة كبيرة للمسلمين."
+    },
+    {
+      "id": "is-open-21",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم الجامع اللي اتبنى في العصر الفاطمي بالقاهرة وبقى جامعة؟",
+      "answerAr": "الأزهر",
+      "aliases": [
+        "الجامع الأزهر",
+        "ازهر"
+      ],
+      "explanationAr": "من أقدم الجامعات في العالم."
+    },
+    {
+      "id": "is-open-22",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "أنهي نبي بيتلقب بكليم الله؟",
+      "answerAr": "موسى",
+      "aliases": [
+        "سيدنا موسى",
+        "موسى عليه السلام"
+      ],
+      "explanationAr": "لأن الله كلّمه تكليمًا."
+    },
+    {
+      "id": "is-prog-11",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا نبي من أنبياء الله",
+        "قومي آمنوا كلهم بعد ما سبتهم",
+        "ابتلعني الحوت ودعيت في الظلمات"
+      ],
+      "answerAr": "يونس",
+      "aliases": [
+        "سيدنا يونس",
+        "ذو النون"
+      ],
+      "explanationAr": "قصته في سورة الصافات."
+    },
+    {
+      "id": "is-prog-12",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا نبي ابتليت في مالي وولدي وصحتي",
+        "صبرت سنين طويلة من غير شكوى",
+        "اسمي بقى مثل يُضرب في الصبر على البلاء"
+      ],
+      "answerAr": "أيوب",
+      "aliases": [
+        "ايوب",
+        "سيدنا أيوب"
+      ],
+      "explanationAr": "ورد الله له صحته وأهله."
+    },
+    {
+      "id": "is-prog-13",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا من الخلفاء الراشدين",
+        "تاني خليفة بعد الصديق",
+        "بيتلقب بالفاروق وفي عهدي اتفتحت بلاد كتير"
+      ],
+      "answerAr": "عمر بن الخطاب",
+      "aliases": [
+        "عمر",
+        "ابن الخطاب"
+      ],
+      "explanationAr": "أسس التقويم الهجري."
+    },
+    {
+      "id": "is-prog-14",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا سورة في القرآن",
+        "بحكي قصة كاملة من أولها لآخرها",
+        "بيقولوا عليّا أحسن القصص واسمي اسم نبي"
+      ],
+      "answerAr": "سورة يوسف",
+      "aliases": [
+        "يوسف",
+        "سوره يوسف"
+      ],
+      "explanationAr": "111 آية بتحكي قصة واحدة."
+    },
+    {
+      "id": "is-prog-15",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا قائد عسكري",
+        "حاربت ضد المسلمين قبل ما أسلم",
+        "بيتلقب بسيف الله المسلول"
+      ],
+      "answerAr": "خالد بن الوليد",
+      "aliases": [
+        "خالد",
+        "ابن الوليد"
+      ],
+      "explanationAr": "ما انهزمش في معركة بعد إسلامه."
+    },
+    {
+      "id": "is-prog-16",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مسجد في مدينة عربية كبيرة",
+        "اتبنيت في العصر الفاطمي",
+        "بقيت جامعة من أشهر جامعات العالم الإسلامي وموجود في القاهرة"
+      ],
+      "answerAr": "الجامع الأزهر",
+      "aliases": [
+        "الأزهر",
+        "ازهر"
+      ],
+      "explanationAr": "من أقدم الجامعات في العالم."
+    },
+    {
+      "id": "is-ord-11",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب الخلفاء الراشدين بالترتيب",
+      "items": [
+        "أبو بكر",
+        "عمر",
+        "عثمان",
+        "علي"
+      ],
+      "labels": [],
+      "explanationAr": "أربعتهم حكموا في تلاتين سنة تقريبًا."
+    },
+    {
+      "id": "is-ord-12",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب أحداث السيرة دي من الأقدم للأحدث",
+      "items": [
+        "غزوة بدر",
+        "غزوة أحد",
+        "صلح الحديبية",
+        "فتح مكة"
+      ],
+      "labels": [
+        "2 هـ",
+        "3 هـ",
+        "6 هـ",
+        "8 هـ"
+      ],
+      "explanationAr": "ست سنين بين بدر وفتح مكة."
+    },
+    {
+      "id": "is-ord-13",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الأنبياء دول حسب ترتيبهم الزمني",
+      "items": [
+        "نوح",
+        "إبراهيم",
+        "موسى",
+        "عيسى"
+      ],
+      "labels": [],
+      "explanationAr": "وبعدهم النبي محمد ﷺ."
+    },
+    {
+      "id": "is-ord-14",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب أركان الإسلام بالترتيب المشهور",
+      "items": [
+        "الشهادة",
+        "الصلاة",
+        "الزكاة",
+        "الصوم",
+        "الحج"
+      ],
+      "labels": [],
+      "explanationAr": "الشهادة الأول والحج على المستطيع."
+    },
+    {
+      "id": "is-ord-15",
+      "shape": "ordering",
+      "difficulty": 5,
+      "textAr": "رتّب الأشهر الحرم دي بترتيبها في السنة الهجرية",
+      "items": [
+        "المحرم",
+        "رجب",
+        "ذو القعدة",
+        "ذو الحجة"
+      ],
+      "labels": [
+        "1",
+        "7",
+        "11",
+        "12"
+      ],
+      "explanationAr": "الأشهر الحرم الأربعة."
+    },
+    {
+      "id": "is-ord-16",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب خطوات الوضوء دي بالترتيب",
+      "items": [
+        "غسل الوش",
+        "غسل الإيدين للمرفقين",
+        "مسح الراس",
+        "غسل الرجلين"
+      ],
+      "labels": [],
+      "explanationAr": "زي ما جت في آية الوضوء."
+    },
+    {
+      "id": "is-mcq-61",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "مين الصحابي اللي قال عنه النبي ﷺ «لكل نبي حواريّ وحواريّي الزبير»؟",
+      "options": [
+        "طلحة بن عبيد الله",
+        "الزبير بن العوام",
+        "سعد بن أبي وقاص",
+        "سعيد بن زيد"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من العشرة المبشرين بالجنة."
+    },
+    {
+      "id": "is-mcq-62",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "مين الصحابي الملقب بـ«أمين هذه الأمة»؟",
+      "options": [
+        "أبو بكر الصديق",
+        "أبو عبيدة بن الجراح",
+        "معاذ بن جبل",
+        "بلال بن رباح"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من العشرة المبشرين بالجنة."
+    },
+    {
+      "id": "is-mcq-63",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين الصحابي الملقب بـ«ترجمان القرآن»؟",
+      "options": [
+        "عبد الله بن مسعود",
+        "عبد الله بن عباس",
+        "أُبَي بن كعب",
+        "زيد بن ثابت"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ابن عم النبي ﷺ، ودعا له بالفقه في الدين."
+    },
+    {
+      "id": "is-mcq-64",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الصحابي اللي كان بيأذّن للنبي ﷺ في المدينة؟",
+      "options": [
+        "عبد الله بن أم مكتوم",
+        "بلال بن رباح",
+        "أبو محذورة",
+        "سعد القرظ"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "كان عبد واتعذب في مكة، وأبو بكر أعتقه."
+    },
+    {
+      "id": "is-mcq-65",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "غزوة «الخندق» ليها اسم تاني إيه؟",
+      "options": [
+        "غزوة الفتح",
+        "غزوة الأحزاب",
+        "غزوة الطائف",
+        "غزوة تبوك"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "لأن القبايل اتحزّبت على المسلمين."
+    },
+    {
+      "id": "is-mcq-66",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين اللي أشار على النبي ﷺ بفكرة حفر الخندق؟",
+      "options": [
+        "أبو بكر الصديق",
+        "سلمان الفارسي",
+        "عمر بن الخطاب",
+        "الزبير بن العوام"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من عادات بلاد فارس في الحرب."
+    },
+    {
+      "id": "is-mcq-67",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«صلح الحديبية» حصل في أنهي سنة هجرية؟",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وسمّاه القرآن فتحًا مبينًا."
+    },
+    {
+      "id": "is-mcq-68",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "فتح مكة حصل في أنهي سنة هجرية؟",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "10"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "بعد نقض قريش للصلح."
+    },
+    {
+      "id": "is-mcq-69",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«بيعة الرضوان» حصلت تحت شجرة في أنهي مكان؟",
+      "options": [
+        "بدر",
+        "الحديبية",
+        "منى",
+        "الطائف"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ورضي الله عن اللي بايعوا فيها."
+    },
+    {
+      "id": "is-mcq-70",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي سورة اشتهرت باسم «قلب القرآن»؟",
+      "options": [
+        "الرحمن",
+        "يس",
+        "الفاتحة",
+        "الكهف"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اسم شاع عند الناس من قديم."
+    },
+    {
+      "id": "is-mcq-71",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي سورة بتتكرر فيها «فبأي آلاء ربكما تكذبان»؟",
+      "options": [
+        "يس",
+        "الرحمن",
+        "الملك",
+        "الواقعة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اتكررت 31 مرة."
+    },
+    {
+      "id": "is-mcq-72",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«المعوذتان» هما أنهي سورتين؟",
+      "options": [
+        "الإخلاص والفلق",
+        "الفلق والناس",
+        "الناس والكوثر",
+        "الفاتحة والإخلاص"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "آخر سورتين في المصحف."
+    },
+    {
+      "id": "is-mcq-73",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي سورة في القرآن مبتبدأش بالبسملة؟",
+      "options": [
+        "الأنفال",
+        "التوبة",
+        "النمل",
+        "الحجر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "السورة الوحيدة اللي مفيهاش بسملة في أولها."
+    },
+    {
+      "id": "is-mcq-74",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي سورة فيها البسملة مرتين؟",
+      "options": [
+        "الفاتحة",
+        "النمل",
+        "التوبة",
+        "البقرة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "واحدة في أولها وواحدة في رسالة سليمان لبلقيس."
+    },
+    {
+      "id": "is-mcq-75",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أطول آية في القرآن اسمها إيه؟",
+      "options": [
+        "آية الكرسي",
+        "آية الدَّين",
+        "آية النور",
+        "آية المباهلة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في سورة البقرة، وبتتكلم عن كتابة الديون."
+    },
+    {
+      "id": "is-mcq-76",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«ليلة الإسراء والمعراج» بدأت من أنهي مسجد؟",
+      "options": [
+        "المسجد النبوي",
+        "المسجد الحرام",
+        "مسجد قباء",
+        "مسجد القبلتين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من المسجد الحرام للمسجد الأقصى وبعدين للسماوات."
+    },
+    {
+      "id": "is-mcq-77",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين النبي الملقب بـ«خليل الله»؟",
+      "options": [
+        "موسى",
+        "إبراهيم",
+        "نوح",
+        "آدم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "«واتخذ الله إبراهيم خليلًا»."
+    },
+    {
+      "id": "is-mcq-78",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين النبي اللي وصفه القرآن بأنه «كلمة الله وروح منه»؟",
+      "options": [
+        "يحيى",
+        "عيسى",
+        "زكريا",
+        "إدريس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ابن مريم عليهما السلام."
+    },
+    {
+      "id": "is-mcq-79",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي نبي بيتضرب بيه المثل في الصبر على البلاء؟",
+      "options": [
+        "يونس",
+        "أيوب",
+        "يعقوب",
+        "إسماعيل"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "صبر على المرض سنين طويلة."
+    },
+    {
+      "id": "is-mcq-80",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي نبي سخّر الله له الريح والجن؟",
+      "options": [
+        "داود",
+        "سليمان",
+        "موسى",
+        "إدريس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وكان بيفهم كلام الطير والنمل."
+    },
+    {
+      "id": "is-mcq-81",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي نبي كان الحديد بيلين في إيده وبيصنع الدروع؟",
+      "options": [
+        "نوح",
+        "داود",
+        "سليمان",
+        "إدريس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "«وألنّا له الحديد»."
+    },
+    {
+      "id": "is-mcq-82",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«زكاة الفطر» بتتدفع إمتى؟",
+      "options": [
+        "أول رمضان",
+        "قبل صلاة عيد الفطر",
+        "في عيد الأضحى",
+        "وقت الحج"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عشان الفقير ميحتاجش يوم العيد."
+    },
+    {
+      "id": "is-mcq-83",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "نصاب زكاة المال قد إيه بالذهب؟",
+      "options": [
+        "50 جرام",
+        "85 جرام",
+        "100 جرام",
+        "200 جرام"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "يعني عشرين مثقال تقريبًا."
+    },
+    {
+      "id": "is-mcq-84",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«الميقات» في الحج معناه إيه؟",
+      "options": [
+        "مكان الطواف",
+        "المكان أو الزمان اللي بيُحرم منه",
+        "مكان رمي الجمرات",
+        "مكان السعي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في مواقيت مكانية ومواقيت زمانية."
+    },
+    {
+      "id": "is-mcq-85",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«طواف الإفاضة» بيتعمل إمتى؟",
+      "options": [
+        "أول ما توصل مكة",
+        "يوم النحر بعد الوقوف بعرفة",
+        "وقت مغادرة مكة",
+        "قبل الإحرام"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وهو ركن من أركان الحج."
+    },
+    {
+      "id": "is-bool-49",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "الزبير بن العوام لقّبه النبي ﷺ بـ«حواريّ»",
+      "isTrue": true,
+      "explanationAr": "«لكل نبي حواريّ وحواريّي الزبير»."
+    },
+    {
+      "id": "is-bool-50",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "سلمان الفارسي هو اللي أشار بفكرة حفر الخندق",
+      "isTrue": true,
+      "explanationAr": "من عادات بلاد فارس في الحرب."
+    },
+    {
+      "id": "is-bool-51",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "غزوة الخندق ليها اسم تاني هو غزوة الأحزاب",
+      "isTrue": true,
+      "explanationAr": "لأن القبايل اتحزّبت على المسلمين."
+    },
+    {
+      "id": "is-bool-52",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "سورة التوبة مبتبدأش بالبسملة",
+      "isTrue": true,
+      "explanationAr": "السورة الوحيدة كده."
+    },
+    {
+      "id": "is-bool-53",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "سورة النمل فيها البسملة مرتين",
+      "isTrue": true,
+      "explanationAr": "واحدة في أولها وواحدة في رسالة سليمان."
+    },
+    {
+      "id": "is-bool-54",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "أطول آية في القرآن هي آية الكرسي",
+      "isTrue": false,
+      "explanationAr": "أطول آية هي آية الدَّين في سورة البقرة."
+    },
+    {
+      "id": "is-bool-55",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "موسى عليه السلام ملقب بـ«خليل الله»",
+      "isTrue": false,
+      "explanationAr": "موسى كليم الله، وإبراهيم خليل الله."
+    },
+    {
+      "id": "is-bool-56",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "سليمان عليه السلام سُخّرت له الريح والجن",
+      "isTrue": true,
+      "explanationAr": "وكان بيفهم كلام الطير."
+    },
+    {
+      "id": "is-bool-57",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "زكاة الفطر بتتدفع قبل صلاة عيد الفطر",
+      "isTrue": true,
+      "explanationAr": "عشان الفقير ميحتاجش يوم العيد."
+    },
+    {
+      "id": "is-bool-58",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "بيعة الرضوان حصلت في الحديبية",
+      "isTrue": true,
+      "explanationAr": "تحت شجرة، ورضي الله عن اللي بايعوا."
+    },
+    {
+      "id": "is-num-28",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "فتح مكة كان في أنهي سنة هجرية؟",
+      "correctValue": 8,
+      "tolerance": 0,
+      "unitAr": "هـ",
+      "explanationAr": "بعد نقض قريش للصلح."
+    },
+    {
+      "id": "is-num-29",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "الصحابة اللي بايعوا في بيعة الرضوان كانوا حوالي كام واحد؟",
+      "correctValue": 1400,
+      "tolerance": 250,
+      "unitAr": "صحابي",
+      "explanationAr": "الروايات بتقول حوالي ألف وأربعمية."
+    },
+    {
+      "id": "is-num-30",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "صلح الحديبية كان في أنهي سنة هجرية؟",
+      "correctValue": 6,
+      "tolerance": 0,
+      "unitAr": "هـ",
+      "explanationAr": "وسمّاه القرآن فتحًا مبينًا."
+    },
+    {
+      "id": "is-num-31",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "نصاب زكاة المال كام جرام ذهب تقريبًا؟",
+      "correctValue": 85,
+      "tolerance": 6,
+      "unitAr": "جرام",
+      "explanationAr": "عشرين مثقال من الذهب."
+    },
+    {
+      "id": "is-num-32",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "سورة النمل فيها كام بسملة؟",
+      "correctValue": 2,
+      "tolerance": 0,
+      "unitAr": "بسملة",
+      "explanationAr": "واحدة في أولها وواحدة في رسالة سليمان."
+    },
+    {
+      "id": "is-open-23",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين الصحابي الملقب بـ«سيف الله المسلول»؟",
+      "answerAr": "خالد بن الوليد",
+      "aliases": [
+        "خالد",
+        "خالد ابن الوليد"
+      ],
+      "explanationAr": "قائد ما اتهزمش في معركة."
+    },
+    {
+      "id": "is-open-24",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين اللي أشار على النبي ﷺ بحفر الخندق؟",
+      "answerAr": "سلمان الفارسي",
+      "aliases": [
+        "سلمان",
+        "سلمان الفارسى"
+      ],
+      "explanationAr": "من عادات بلاد فارس في الحرب."
+    },
+    {
+      "id": "is-open-25",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "أنهي سورة مبتبدأش بالبسملة؟",
+      "answerAr": "التوبة",
+      "aliases": [
+        "سورة التوبة",
+        "براءة"
+      ],
+      "explanationAr": "السورة الوحيدة كده."
+    },
+    {
+      "id": "is-open-26",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين النبي الملقب بـ«كليم الله»؟",
+      "answerAr": "موسى",
+      "aliases": [
+        "موسي",
+        "سيدنا موسى"
+      ],
+      "explanationAr": "لأن الله كلّمه تكليمًا."
+    },
+    {
+      "id": "is-open-27",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين النبي الملقب بـ«خليل الله»؟",
+      "answerAr": "إبراهيم",
+      "aliases": [
+        "ابراهيم",
+        "سيدنا إبراهيم"
+      ],
+      "explanationAr": "«واتخذ الله إبراهيم خليلًا»."
+    },
+    {
+      "id": "is-open-28",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "مين الصحابي الملقب بـ«ترجمان القرآن»؟",
+      "answerAr": "عبد الله بن عباس",
+      "aliases": [
+        "ابن عباس",
+        "عبدالله بن عباس"
+      ],
+      "explanationAr": "حبر الأمة وابن عم النبي ﷺ."
+    },
+    {
+      "id": "is-open-29",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "أنهي سورة فيها البسملة مرتين؟",
+      "answerAr": "النمل",
+      "aliases": [
+        "سورة النمل"
+      ],
+      "explanationAr": "في أولها وفي رسالة سليمان لبلقيس."
+    },
+    {
+      "id": "is-prog-17",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا صحابي وقائد عسكري",
+        "كنت بحارب ضد المسلمين قبل ما أسلم",
+        "لقبي سيف الله المسلول ومكسبتش عليّا معركة"
+      ],
+      "answerAr": "خالد بن الوليد",
+      "aliases": [
+        "خالد",
+        "خالد ابن الوليد"
+      ],
+      "explanationAr": "قاد الفتوح في الشام والعراق."
+    },
+    {
+      "id": "is-prog-18",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا صحابي أصلي من بلاد فارس",
+        "لفّيت أديان كتير لحد ما وصلت للإسلام",
+        "أنا اللي أشرت بحفر الخندق حوالين المدينة"
+      ],
+      "answerAr": "سلمان الفارسي",
+      "aliases": [
+        "سلمان",
+        "سلمان الفارسى"
+      ],
+      "explanationAr": "قال عنه النبي ﷺ «سلمان منا آل البيت»."
+    },
+    {
+      "id": "is-prog-19",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا سورة في القرآن",
+        "مبتديش بالبسملة زي باقي السور",
+        "بتكلم عن المنافقين وبراءة من المشركين"
+      ],
+      "answerAr": "التوبة",
+      "aliases": [
+        "سورة التوبة",
+        "براءة"
+      ],
+      "explanationAr": "السورة الوحيدة من غير بسملة."
+    },
+    {
+      "id": "is-prog-20",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا نبي وابن نبي",
+        "كنت بفهم كلام الطير والنمل",
+        "سُخّرت لي الريح والجن وملكت ملكًا عظيمًا"
+      ],
+      "answerAr": "سليمان",
+      "aliases": [
+        "سيدنا سليمان",
+        "سليمان عليه السلام"
+      ],
+      "explanationAr": "ابن داود عليهما السلام."
+    },
+    {
+      "id": "is-prog-21",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا نبي وملك في نفس الوقت",
+        "صوتي كان جميل وأنا بسبّح والجبال بتردد معايا",
+        "الحديد كان بيلين في إيدي وكنت بصنع الدروع"
+      ],
+      "answerAr": "داود",
+      "aliases": [
+        "سيدنا داود",
+        "داوود"
+      ],
+      "explanationAr": "أبو سليمان عليهما السلام."
+    },
+    {
+      "id": "is-prog-22",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا صحابي كنت عبد واتعذبت في مكة",
+        "أبو بكر اشتراني وأعتقني",
+        "كنت بأذّن للنبي ﷺ في المدينة"
+      ],
+      "answerAr": "بلال بن رباح",
+      "aliases": [
+        "بلال",
+        "بلال ابن رباح"
+      ],
+      "explanationAr": "أول مؤذن في الإسلام."
+    },
+    {
+      "id": "is-prog-23",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا صحابي وابن عم النبي ﷺ",
+        "النبي دعا لي بالفقه في الدين",
+        "لقبي ترجمان القرآن وحبر الأمة"
+      ],
+      "answerAr": "عبد الله بن عباس",
+      "aliases": [
+        "ابن عباس",
+        "عبدالله بن عباس"
+      ],
+      "explanationAr": "من أعلم الصحابة بالتفسير."
+    },
+    {
+      "id": "is-prog-24",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا غزوة حصلت عند المدينة",
+        "المسلمين حفروا حاجز طويل يمنع الجيوش",
+        "بتتسمى كمان غزوة الأحزاب"
+      ],
+      "answerAr": "غزوة الخندق",
+      "aliases": [
+        "الخندق",
+        "غزوه الخندق"
+      ],
+      "explanationAr": "القبايل اتحزّبت وحاصرت المدينة."
+    },
+    {
+      "id": "is-mcq-86",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين إمام المذهب الحنفي؟",
+      "options": [
+        "مالك بن أنس",
+        "أبو حنيفة النعمان",
+        "الشافعي",
+        "أحمد بن حنبل"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عاش في الكوفة، وأقدم الأئمة الأربعة."
+    },
+    {
+      "id": "is-mcq-87",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين إمام المذهب المالكي؟",
+      "options": [
+        "أبو حنيفة",
+        "مالك بن أنس",
+        "الشافعي",
+        "أحمد بن حنبل"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "إمام دار الهجرة، وصاحب «الموطأ»."
+    },
+    {
+      "id": "is-mcq-88",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين إمام المذهب الشافعي؟",
+      "options": [
+        "أبو حنيفة",
+        "مالك بن أنس",
+        "محمد بن إدريس الشافعي",
+        "أحمد بن حنبل"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "أسس علم أصول الفقه، ومدفون في مصر."
+    },
+    {
+      "id": "is-mcq-89",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين إمام المذهب الحنبلي؟",
+      "options": [
+        "أبو حنيفة",
+        "مالك بن أنس",
+        "الشافعي",
+        "أحمد بن حنبل"
+      ],
+      "correctIndex": 3,
+      "explanationAr": "صاحب «المسند»، وتلميذ الشافعي."
+    },
+    {
+      "id": "is-mcq-90",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي كتاب بيتحسب أصح الكتب بعد القرآن عند أهل السنة؟",
+      "options": [
+        "سنن أبي داود",
+        "صحيح البخاري",
+        "الموطأ",
+        "سنن الترمذي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وبعده صحيح مسلم."
+    },
+    {
+      "id": "is-mcq-91",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "مين مؤلف كتاب «صحيح مسلم»؟",
+      "options": [
+        "البخاري",
+        "مسلم بن الحجاج",
+        "النسائي",
+        "ابن ماجه"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من نيسابور، وتلميذ البخاري."
+    },
+    {
+      "id": "is-mcq-92",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الصحابي اللي روى أكتر عدد أحاديث عن النبي ﷺ؟",
+      "options": [
+        "ابن عمر",
+        "أبو هريرة",
+        "أنس بن مالك",
+        "عائشة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أكتر من 5000 حديث."
+    },
+    {
+      "id": "is-mcq-93",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي ملك موكّل بنزول الوحي على الأنبيا؟",
+      "options": [
+        "ميكائيل",
+        "جبريل",
+        "إسرافيل",
+        "مالك"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وبيتسمى «الروح الأمين»."
+    },
+    {
+      "id": "is-mcq-94",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي ملك موكّل بالمطر والنبات؟",
+      "options": [
+        "جبريل",
+        "ميكائيل",
+        "إسرافيل",
+        "رضوان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من الملائكة المقربين."
+    },
+    {
+      "id": "is-mcq-95",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي ملك موكّل بالنفخ في الصور؟",
+      "options": [
+        "جبريل",
+        "ميكائيل",
+        "إسرافيل",
+        "مالك"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "نفختين: نفخة الفزع ونفخة البعث."
+    },
+    {
+      "id": "is-mcq-96",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«الزبور» نزل على أنهي نبي؟",
+      "options": [
+        "موسى",
+        "داود",
+        "عيسى",
+        "إبراهيم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "«وآتينا داود زبورًا»."
+    },
+    {
+      "id": "is-mcq-97",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "«الإنجيل» نزل على أنهي نبي؟",
+      "options": [
+        "موسى",
+        "عيسى",
+        "داود",
+        "يحيى"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ابن مريم عليهما السلام."
+    },
+    {
+      "id": "is-mcq-98",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "«التوراة» نزلت على أنهي نبي؟",
+      "options": [
+        "عيسى",
+        "موسى",
+        "داود",
+        "هارون"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "كليم الله عليه السلام."
+    },
+    {
+      "id": "is-mcq-99",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "صلاة الفجر كام ركعة فرض؟",
+      "options": [
+        "ركعتين",
+        "تلاتة",
+        "أربعة",
+        "ركعة واحدة"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "وقبلها سنة ركعتين."
+    },
+    {
+      "id": "is-mcq-100",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "صلاة المغرب كام ركعة فرض؟",
+      "options": [
+        "ركعتين",
+        "تلاتة",
+        "أربعة",
+        "خمسة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الوحيدة الفردية في الفروض."
+    },
+    {
+      "id": "is-mcq-101",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«سجود السهو» بيتعمل ليه؟",
+      "options": [
+        "لزيادة الأجر",
+        "لجبر نقص أو زيادة في الصلاة",
+        "عند سماع الأذان",
+        "بعد كل صلاة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "سجدتين قبل السلام أو بعده."
+    },
+    {
+      "id": "is-mcq-102",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«التيمم» بديل عن إيه؟",
+      "options": [
+        "الصلاة",
+        "الوضوء بالميه",
+        "الصيام",
+        "الزكاة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عند عدم وجود ميه أو الضرر باستعمالها."
+    },
+    {
+      "id": "is-mcq-103",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "المسافر بيصلي الصلاة الرباعية كام ركعة؟",
+      "options": [
+        "واحدة",
+        "ركعتين",
+        "تلاتة",
+        "أربعة زي ما هي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ده اللي اسمه «قصر الصلاة»."
+    },
+    {
+      "id": "is-mcq-104",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«صلاة الوتر» بيبقى وقتها إمتى؟",
+      "options": [
+        "قبل الفجر مباشرة",
+        "بعد العشاء ولحد الفجر",
+        "بعد الظهر",
+        "قبل المغرب"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وبتتصلى بعدد فردي من الركعات."
+    },
+    {
+      "id": "is-mcq-105",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«الاعتكاف» بيبقى غالبًا في أنهي وقت؟",
+      "options": [
+        "أول رمضان",
+        "العشر الأواخر من رمضان",
+        "شهر شعبان",
+        "عيد الأضحى"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اقتداءً بالنبي ﷺ."
+    },
+    {
+      "id": "is-mcq-106",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«ليلة القدر» بيتحرّى عنها في أنهي عشر من رمضان؟",
+      "options": [
+        "الأولى",
+        "الوسطى",
+        "الأواخر",
+        "أول ليلة"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "خصوصًا في الليالي الفردية."
+    },
+    {
+      "id": "is-mcq-107",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«الأشهر الحُرُم» عددها كام؟",
+      "options": [
+        "اتنين",
+        "تلاتة",
+        "أربعة",
+        "ستة"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "محرم ورجب وذو القعدة وذو الحجة."
+    },
+    {
+      "id": "is-mcq-108",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«الصفا والمروة» بيتم بينهم إيه في الحج والعمرة؟",
+      "options": [
+        "الطواف",
+        "السعي",
+        "الرمي",
+        "الوقوف"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "سبعة أشواط، اقتداءً بهاجر أم إسماعيل."
+    },
+    {
+      "id": "is-mcq-109",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«يوم عرفة» بيوافق كام في ذي الحجة؟",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "12"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "والوقوف بعرفة ركن الحج الأعظم."
+    },
+    {
+      "id": "is-mcq-110",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«المزدلفة» بيبات فيها الحاج بعد أنهي يوم؟",
+      "options": [
+        "بعد الطواف الأول",
+        "بعد الوقوف بعرفة",
+        "بعد رمي الجمرات",
+        "قبل الإحرام"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وبيجمع منها حصى الرمي."
+    },
+    {
+      "id": "is-mcq-111",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«أيام التشريق» كام يوم؟",
+      "options": [
+        "يومين",
+        "تلاتة",
+        "أربعة",
+        "خمسة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بعد يوم النحر، وبيتم فيها رمي الجمرات."
+    },
+    {
+      "id": "is-mcq-112",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«العقيقة» بتتعمل إمتى؟",
+      "options": [
+        "عند الزواج",
+        "عند ولادة المولود",
+        "عند السفر",
+        "عند بناء بيت"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ذبيحة شكرًا لله في اليوم السابع غالبًا."
+    },
+    {
+      "id": "is-mcq-113",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين الخليفة الأموي اللي اشتهر بالعدل ولُقّب بخامس الخلفاء الراشدين؟",
+      "options": [
+        "معاوية بن أبي سفيان",
+        "عمر بن عبد العزيز",
+        "عبد الملك بن مروان",
+        "هشام بن عبد الملك"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "حكم سنتين ونص بس وسابع أثر كبير."
+    },
+    {
+      "id": "is-mcq-114",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين مؤسس الدولة الأموية؟",
+      "options": [
+        "عبد الملك بن مروان",
+        "معاوية بن أبي سفيان",
+        "يزيد بن معاوية",
+        "مروان بن الحكم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وعاصمتها كانت دمشق."
+    },
+    {
+      "id": "is-mcq-115",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«بيت الحكمة» اللي اشتهر بترجمة علوم اليونان كان فين؟",
+      "options": [
+        "دمشق",
+        "بغداد",
+        "القيروان",
+        "قرطبة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في عصر المأمون العباسي."
+    },
+    {
+      "id": "is-odd-1",
+      "shape": "odd_one_out",
+      "difficulty": 1,
+      "textAr": "التلاتة من أركان الإسلام الخمسة، وواحدة بس مش ركن منهم:",
+      "items": [
+        "الشهادة",
+        "الصلاة",
+        "الزكاة",
+        "الجهاد"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "أركان الإسلام الخمسة هي الشهادتان والصلاة والزكاة والصوم والحج، والجهاد مش ركن منهم."
+    },
+    {
+      "id": "is-odd-2",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة من أركان الإيمان الستة، وواحدة بس من أركان الإسلام:",
+      "items": [
+        "الإيمان بالله",
+        "الإيمان بالملائكة",
+        "الإيمان بالكتب",
+        "الصلاة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الصلاة ركن من أركان الإسلام، مش من أركان الإيمان الستة."
+    },
+    {
+      "id": "is-odd-3",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة من أولي العزم من الرسل، وواحد بس نبي مش من أولي العزم:",
+      "items": [
+        "نوح",
+        "إبراهيم",
+        "موسى",
+        "آدم"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "أولو العزم خمسة: نوح وإبراهيم وموسى وعيسى ومحمد ﷺ، وآدم مش منهم."
+    },
+    {
+      "id": "is-odd-4",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة كتب سماوية بيعتقد المسلمون إنها اتعرضت للتحريف، وواحد بس محفوظ من التحريف حسب العقيدة الإسلامية:",
+      "items": [
+        "التوراة",
+        "الإنجيل",
+        "الزبور",
+        "القرآن الكريم"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "المسلمون بيعتقدوا إن القرآن الكريم محفوظ من التحريف بضمان إلهي، على عكس الكتب السماوية التلاتة السابقة."
+    },
+    {
+      "id": "is-odd-5",
+      "shape": "odd_one_out",
+      "difficulty": 1,
+      "textAr": "التلاتة من الملائكة، وواحد بس مش ملاك:",
+      "items": [
+        "جبريل",
+        "ميكائيل",
+        "إسرافيل",
+        "إبليس"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "إبليس حسب الرأي الراجح من الجن مش من الملائكة، وعصى أمر ربه بالسجود لآدم."
+    },
+    {
+      "id": "is-odd-6",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة من العشرة المبشرين بالجنة، وواحد بس مش منهم:",
+      "items": [
+        "أبو بكر الصديق",
+        "عمر بن الخطاب",
+        "عثمان بن عفان",
+        "معاوية بن أبي سفيان"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "معاوية بن أبي سفيان صحابي جليل لكنه مش من العشرة المبشرين بالجنة بالاسم."
+    },
+    {
+      "id": "is-odd-7",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة من الخلفاء الراشدين، وواحد بس أول خليفة أموي:",
+      "items": [
+        "أبو بكر الصديق",
+        "عمر بن الخطاب",
+        "عثمان بن عفان",
+        "معاوية بن أبي سفيان"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "معاوية بن أبي سفيان أسس الدولة الأموية بعد فترة الخلافة الراشدة، مش من الخلفاء الراشدين الأربعة."
+    },
+    {
+      "id": "is-odd-8",
+      "shape": "odd_one_out",
+      "difficulty": 1,
+      "textAr": "التلاتة سور قصيرة من قصار المفصّل، وواحدة بس أطول سورة في القرآن:",
+      "items": [
+        "الإخلاص",
+        "الفلق",
+        "الناس",
+        "البقرة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "سورة البقرة أطول سورة في القرآن الكريم، بينما التلاتة التانيين من أقصر السور."
+    },
+    {
+      "id": "is-odd-9",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة سور مكية، وواحدة بس سورة مدنية:",
+      "items": [
+        "الإخلاص",
+        "الكوثر",
+        "الفلق",
+        "البقرة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "سورة البقرة سورة مدنية، بينما التلاتة التانيين سور مكية."
+    },
+    {
+      "id": "is-odd-10",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة من الأشهر الحُرُم الأربعة، وواحد بس مش من الأشهر الحُرُم:",
+      "items": [
+        "محرم",
+        "رجب",
+        "ذو القعدة",
+        "رمضان"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الأشهر الحُرُم الأربعة هي محرم ورجب وذو القعدة وذو الحجة، ورمضان مش منهم."
+    },
+    {
+      "id": "is-odd-11",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة من أركان الحج، وواحدة بس عمل مستحب مش ركن:",
+      "items": [
+        "الوقوف بعرفة",
+        "طواف الإفاضة",
+        "السعي بين الصفا والمروة",
+        "زيارة المسجد النبوي"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "زيارة المسجد النبوي عمل مستحب فاضل، مش من أركان الحج الأساسية."
+    },
+    {
+      "id": "is-odd-12",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة صلوات مفروضة، وواحدة بس سنة مؤكدة مش فرض:",
+      "items": [
+        "الفجر",
+        "الظهر",
+        "العصر",
+        "الوتر"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "صلاة الوتر سنة مؤكدة عن النبي ﷺ، مش من الصلوات الخمس المفروضة."
+    },
+    {
+      "id": "is-odd-13",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة من أصحاب كتب الحديث الصحاح المشهورة، وواحد بس مؤرخ ومفسّر مشهور:",
+      "items": [
+        "البخاري",
+        "مسلم",
+        "الترمذي",
+        "الطبري"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الطبري اشتهر كمؤرخ ومفسّر للقرآن، مش من أصحاب كتب الحديث الستة الصحاح."
+    },
+    {
+      "id": "is-odd-14",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة من الأئمة الأربعة أصحاب المذاهب الفقهية السنية، وواحد بس مش منهم:",
+      "items": [
+        "أبو حنيفة",
+        "مالك بن أنس",
+        "الشافعي",
+        "الطبري"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الأئمة الأربعة هم أبو حنيفة ومالك والشافعي وأحمد بن حنبل، والطبري مؤرخ ومفسّر مش منهم."
+    },
+    {
+      "id": "is-odd-15",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة غزوات خاضها النبي ﷺ، وواحدة بس معركة إسلامية بعد وفاته بقرون:",
+      "items": [
+        "بدر",
+        "أحد",
+        "الخندق",
+        "حطين"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "معركة حطين خاضها صلاح الدين الأيوبي بعد وفاة النبي ﷺ بقرون طويلة، مش من غزواته."
+    },
+    {
+      "id": "is-odd-16",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة أنبياء مذكورين في القرآن الكريم، وواحد بس طاغية قتله داود عليه السلام:",
+      "items": [
+        "نوح",
+        "هود",
+        "صالح",
+        "جالوت"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "جالوت طاغية قوي قتله النبي داود عليه السلام، مش من الأنبياء."
+    },
+    {
+      "id": "is-odd-17",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة من أسماء يوم القيامة في القرآن، وواحد بس يوم من أيام الحج في الدنيا:",
+      "items": [
+        "يوم الفصل",
+        "يوم الدين",
+        "يوم الحسرة",
+        "يوم عرفة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "يوم عرفة يوم في الدنيا من أيام الحج، مش من أسماء يوم القيامة في القرآن."
+    },
+    {
+      "id": "is-odd-18",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة من مفطرات الصيام، وواحد بس مبيفطرش الصيام:",
+      "items": [
+        "الأكل عمدًا",
+        "الشرب عمدًا",
+        "الجماع",
+        "الأكل نسيانًا"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "من أكل أو شرب ناسيًا فصيامه صحيح ولا يُفطره حسب الراجح من أقوال الفقهاء."
+    },
+    {
+      "id": "is-odd-19",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة من شروط وجوب الزكاة على المُزكّي، وواحد بس شرط استحقاق للزكاة مش وجوبها:",
+      "items": [
+        "بلوغ النصاب",
+        "مرور الحول",
+        "الملك التام",
+        "الفقر"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الفقر شرط في مين يستحق ياخد الزكاة، مش شرط في مين لازم يدفعها."
+    },
+    {
+      "id": "is-odd-20",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة من أركان الصلاة، وواحد بس إعلام بدخول الوقت مش ركن فيها:",
+      "items": [
+        "تكبيرة الإحرام",
+        "القيام",
+        "الركوع",
+        "الأذان"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الأذان إعلام بدخول وقت الصلاة، مش ركن من أركان الصلاة نفسها."
+    },
+    {
+      "id": "is-odd-21",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة من نواقض الوضوء، وواحد بس طهارة كبرى مش ناقض للوضوء:",
+      "items": [
+        "خروج البول",
+        "النوم الثقيل",
+        "مس الفرج",
+        "الاغتسال"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الاغتسال طهارة كبرى بيُطهّر الجسم كله، مش من نواقض الوضوء."
+    },
+    {
+      "id": "is-odd-22",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة من مستحبات يوم الجمعة، وواحد بس مكروه إفراده بالصيام حسب السنة:",
+      "items": [
+        "الغسل",
+        "التطيب",
+        "التبكير للمسجد",
+        "صيام يوم الجمعة منفردًا"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "إفراد يوم الجمعة بالصيام منفردًا مكروه حسب السنة النبوية، على عكس التلاتة التانيين اللي من المستحبات."
+    },
+    {
+      "id": "is-odd-23",
+      "shape": "odd_one_out",
+      "difficulty": 1,
+      "textAr": "التلاتة من أسماء الله الحسنى، وواحد بس مش من أسمائه سبحانه:",
+      "items": [
+        "الرحمن",
+        "الرحيم",
+        "الملك",
+        "الشيطان"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الشيطان مخلوق عاصي، مش من أسماء الله الحسنى."
+    },
+    {
+      "id": "is-odd-24",
+      "shape": "odd_one_out",
+      "difficulty": 1,
+      "textAr": "التلاتة من الأشهر الهجرية، وواحد بس شهر ميلادي:",
+      "items": [
+        "محرم",
+        "صفر",
+        "ربيع الأول",
+        "يناير"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "يناير شهر ميلادي من التقويم الشمسي، مش من الأشهر الهجرية القمرية."
+    },
+    {
+      "id": "is-emj-1",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🕋🖤🚶",
+      "answerAr": "الكعبة المشرفة",
+      "aliases": [
+        "الكعبة"
+      ]
+    },
+    {
+      "id": "is-emj-2",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🕌🏛️🌙",
+      "answerAr": "المسجد الأقصى",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-3",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "📖🕌✨",
+      "answerAr": "القرآن الكريم",
+      "aliases": [
+        "القرآن"
+      ]
+    },
+    {
+      "id": "is-emj-4",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🌙🍽️🕌",
+      "answerAr": "شهر رمضان",
+      "aliases": [
+        "رمضان"
+      ]
+    },
+    {
+      "id": "is-emj-5",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🌙🎉🍬",
+      "answerAr": "عيد الفطر",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-6",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🐑🕋🎉",
+      "answerAr": "عيد الأضحى",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-7",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🕋🚶‍♂️🤍",
+      "answerAr": "الحج",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-8",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🕋🌙🚶",
+      "answerAr": "العمرة",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-9",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🕌📢🌅",
+      "answerAr": "الأذان",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-10",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "💧🙌🕌",
+      "answerAr": "الوضوء",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-11",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "💰🤲❤️",
+      "answerAr": "الزكاة",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-12",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🤲💵❤️",
+      "answerAr": "الصدقة",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-13",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "💧🕋🏺",
+      "answerAr": "ماء زمزم",
+      "aliases": [
+        "زمزم"
+      ]
+    },
+    {
+      "id": "is-emj-14",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🕋🔄🚶",
+      "answerAr": "الطواف",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-15",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🏃‍♂️⛰️⛰️",
+      "answerAr": "السعي بين الصفا والمروة",
+      "aliases": [
+        "السعي"
+      ]
+    },
+    {
+      "id": "is-emj-16",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🌙✨📖",
+      "answerAr": "ليلة القدر",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-17",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🌇🍽️🌙",
+      "answerAr": "الإفطار",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-18",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🌃🍽️⏰",
+      "answerAr": "السحور",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-19",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🕌🌙🙏",
+      "answerAr": "صلاة التراويح",
+      "aliases": [
+        "التراويح"
+      ]
+    },
+    {
+      "id": "is-emj-20",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🕌🧎📖",
+      "answerAr": "الاعتكاف",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-21",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "⛰️🕳️📖",
+      "answerAr": "غار حراء",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-22",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🌙⭐",
+      "answerAr": "الهلال",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-23",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🧎🕌🟩",
+      "answerAr": "سجادة الصلاة",
+      "aliases": [
+        "السجادة"
+      ]
+    },
+    {
+      "id": "is-emj-24",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "📿",
+      "answerAr": "المسبحة",
+      "aliases": [
+        "السبحة"
+      ]
+    },
+    {
+      "id": "is-emj-25",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🐑🕋🍖",
+      "answerAr": "الأضحية",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-26",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "📢🎉🌙",
+      "answerAr": "تكبيرات العيد",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-27",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "💧🚿🕌",
+      "answerAr": "الغسل",
+      "aliases": [
+        "غسل الجنابة"
+      ]
+    },
+    {
+      "id": "is-emj-28",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🕋🧭🙏",
+      "answerAr": "القبلة",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-29",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "✍️📖🤲",
+      "answerAr": "البسملة",
+      "aliases": []
+    },
+    {
+      "id": "is-emj-30",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🌙📿🕌",
+      "answerAr": "قيام الليل",
+      "aliases": []
+    },
+    {
+      "id": "is-ord-17",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب السور دي حسب ترتيبها في المصحف",
+      "items": [
+        "المائدة",
+        "الأنعام",
+        "الأعراف",
+        "الأنفال"
+      ]
+    },
+    {
+      "id": "is-ord-18",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب مناسك الحج دي بترتيب حدوثها",
+      "items": [
+        "الإحرام من الميقات",
+        "الوقوف بعرفة",
+        "المبيت بمزدلفة",
+        "رمي جمرة العقبة"
+      ]
+    },
+    {
+      "id": "is-ord-19",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أحداث السيرة النبوية دي من الأقدم للأحدث",
+      "items": [
+        "الهجرة للمدينة",
+        "غزوة بدر",
+        "صلح الحديبية",
+        "حجة الوداع"
+      ]
+    },
+    {
+      "id": "is-ord-20",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب أركان الإيمان الستة بترتيبها المعتاد",
+      "items": [
+        "الإيمان بالله",
+        "الإيمان بالملائكة",
+        "الإيمان بالكتب",
+        "الإيمان بالرسل",
+        "الإيمان باليوم الآخر"
+      ]
+    },
+    {
+      "id": "is-ord-21",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أولي العزم من الرسل الخمسة حسب ترتيبهم الزمني",
+      "items": [
+        "نوح",
+        "إبراهيم",
+        "موسى",
+        "عيسى",
+        "محمد"
+      ]
+    },
+    {
+      "id": "is-ord-22",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب مراحل الدعوة الإسلامية دي من الأقدم للأحدث",
+      "items": [
+        "الدعوة السرية في مكة",
+        "الدعوة الجهرية في مكة",
+        "الهجرة للمدينة",
+        "الدعوة في المدينة"
+      ]
+    },
+    {
+      "id": "is-ord-23",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أيام عشر ذي الحجة دي حسب ترتيبها الزمني",
+      "items": [
+        "أول ذي الحجة",
+        "يوم عرفة",
+        "يوم النحر",
+        "آخر أيام التشريق"
+      ]
+    },
+    {
+      "id": "is-ord-24",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب مراحل تكوّن الجنين دي حسب وصف القرآن الكريم",
+      "items": [
+        "نطفة",
+        "علقة",
+        "مضغة",
+        "عظام"
+      ]
+    },
+    {
+      "id": "is-ord-25",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب مراحل الحياة الإنسانية دي حسب العقيدة الإسلامية",
+      "items": [
+        "الدنيا",
+        "البرزخ (القبر)",
+        "القيامة",
+        "الجنة أو النار"
+      ]
+    },
+    {
+      "id": "is-ord-26",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب كتب الحديث الأربعة دي حسب مكانتها المعتادة عند العلماء",
+      "items": [
+        "صحيح البخاري",
+        "صحيح مسلم",
+        "سنن أبي داود",
+        "سنن الترمذي"
+      ]
+    },
+    {
+      "id": "is-ord-27",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الأئمة الأربعة دول حسب ترتيبهم الزمني (تاريخ الميلاد)",
+      "items": [
+        "أبو حنيفة",
+        "مالك بن أنس",
+        "الشافعي",
+        "أحمد بن حنبل"
+      ]
+    },
+    {
+      "id": "is-ord-28",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب أركان الصلاة دي بترتيب حدوثها",
+      "items": [
+        "تكبيرة الإحرام",
+        "القراءة",
+        "الركوع",
+        "السجود"
+      ]
+    },
+    {
+      "id": "is-ord-29",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الأنبياء دول حسب ترتيبهم الزمني التقليدي بعد نوح",
+      "items": [
+        "هود",
+        "صالح",
+        "إبراهيم",
+        "لوط"
+      ]
+    },
+    {
+      "id": "is-ord-30",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب مراحل بداية نزول الوحي على النبي ﷺ دي",
+      "items": [
+        "التحنث في غار حراء",
+        "نزول جبريل عليه السلام",
+        "أمر «اقرأ باسم ربك»",
+        "رجوعه لسيدتنا خديجة"
+      ]
+    },
+    {
+      "id": "is-ord-31",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب المساجد الثلاثة اللي تُشد لها الرحال دي حسب فضلها",
+      "items": [
+        "المسجد الحرام",
+        "المسجد النبوي",
+        "المسجد الأقصى"
+      ]
+    },
+    {
+      "id": "is-ord-32",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أنواع التوحيد دي زي ما بيقسمها العلماء غالبًا",
+      "items": [
+        "توحيد الربوبية",
+        "توحيد الألوهية",
+        "توحيد الأسماء والصفات"
+      ]
+    },
+    {
+      "id": "is-bool-59",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "صلاة العصر أربع ركعات فرض",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-60",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "صلاة المغرب تلات ركعات فرض",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-61",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "صلاة العشاء آخر الصلوات الخمس المفروضة في اليوم",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-62",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أقل عدد ركعات صلاة الوتر ركعة واحدة",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-63",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "القرآن الكريم متقسّم لـ30 جزء",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-64",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "أطول سورة في القرآن هي سورة البقرة",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-65",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أقصر سورة في القرآن هي سورة الكوثر",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-66",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أول سورة نزلت من القرآن هي سورة العلق",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-67",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "سورة الفاتحة بتتسمى كمان «أم الكتاب»",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-68",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "سورة يس بتتلقب بـ«قلب القرآن»",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-69",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "سورة الرحمن بتتكرر فيها آية «فبأي آلاء ربكما تكذبان» عشرات المرات",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-70",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "المعوذتان هما سورة الفلق وسورة الناس",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-71",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "سورة الفيل بتحكي عن حادثة أصحاب الفيل اللي حاولوا هدم الكعبة",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-72",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "قراءة سورة الكهف يوم الجمعة من السنن المستحبة",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-73",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "آية الكرسي موجودة في سورة البقرة",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-74",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "أطول آية في القرآن الكريم هي آية الدَّيْن (المداينة)",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-75",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "القرآن الكريم نزل دفعة واحدة على النبي ﷺ من غير تفريق",
+      "isTrue": false,
+      "explanationAr": "القرآن نزل منجّمًا على دفعات على مدار حوالي 23 سنة، مش دفعة واحدة."
+    },
+    {
+      "id": "is-bool-76",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أول ما نزل من القرآن كان «اقرأ باسم ربك الذي خلق»",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-77",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "جبريل عليه السلام هو الملك الموكّل بنزول الوحي على الأنبياء",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-78",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "ميكائيل عليه السلام موكّل بالمطر والنبات",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-79",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "إسرافيل عليه السلام موكّل بالنفخ في الصور",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-80",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "عزرائيل معروف تقليديًا بملك الموت",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-81",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "مالك هو اسم خازن جهنم المذكور في القرآن",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-82",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "آدم عليه السلام أول الأنبياء وأبو البشر",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-83",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "إدريس عليه السلام معروف في الروايات بأنه أول من خط بالقلم",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-84",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "نوح عليه السلام دعا قومه قرابة 950 سنة حسب القرآن الكريم",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-85",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "هود عليه السلام أُرسل لقوم عاد",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-86",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "صالح عليه السلام أُرسل لقوم ثمود وكانت له ناقة معجزة",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-87",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "لوط عليه السلام كان ابن أخ إبراهيم عليه السلام",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-88",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "يعقوب عليه السلام هو نفسه إسرائيل، ومنه جاء اسم بني إسرائيل",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-89",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "يوسف عليه السلام اتلقى في بئر من إخوته",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-90",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أيوب عليه السلام ابتُلي بمرض طويل وصبر عليه",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-91",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "يونس عليه السلام دعا ربه وهو في بطن الحوت",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-92",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "داود عليه السلام أُنزل عليه كتاب الزبور",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-93",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "سليمان عليه السلام كان يفهم لغة الطير حسب القرآن",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-94",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "عيسى عليه السلام وُلد من غير أب حسب العقيدة الإسلامية",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-95",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "محمد ﷺ خاتم الأنبياء والمرسلين",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-96",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "النبي ﷺ اتولد في عام الفيل",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-97",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "نزل الوحي على النبي ﷺ وعمره 40 سنة",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-98",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "أبو طالب عم النبي ﷺ اللي كفله بعد وفاة جده",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-99",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "خديجة رضي الله عنها كانت أول زوجات النبي ﷺ وأول من آمن بيه",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-100",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "أبو بكر الصديق كان أول خليفة بعد وفاة النبي ﷺ",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-101",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "عمر بن الخطاب استشهد على إيد أبو لؤلؤة المجوسي",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-102",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "عثمان بن عفان هو اللي جمع القرآن في مصحف واحد موحّد",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-103",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "علي بن أبي طالب ابن عم النبي ﷺ وزوج ابنته فاطمة",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-104",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "بلال بن رباح كان من أوائل من أسلموا وعُذّب بسبب إسلامه",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-105",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "أبو هريرة رضي الله عنه أكتر الصحابة رواية للحديث النبوي",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-106",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "عائشة رضي الله عنها من أكتر أمهات المؤمنين علمًا ورواية للحديث",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-107",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "سعد بن أبي وقاص أول من رمى سهمًا في سبيل الله في الإسلام",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-108",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "زيد بن حارثة الصحابي الوحيد المذكور بالاسم صراحة في القرآن الكريم",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-109",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "عبد الله بن مسعود من أوائل من جهروا بقراءة القرآن في مكة",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-110",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "الطواف حول الكعبة بيكون سبع مرات",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-111",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "رمي الجمرات في الحج بيكون على تلات جمرات",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-112",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "المسافة بين الصفا والمروة اللي بيقطعها الساعي حوالي 400 متر تقريبًا في كل شوط",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-113",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الإحرام للحج أو العمرة بيبدأ من أماكن محددة اسمها المواقيت",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-114",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "صيام يوم عرفة مستحب لغير الحجاج",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-115",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "صيام ست من شوال بعد رمضان يعادل ثواب صيام الدهر كله حسب الحديث",
+      "isTrue": true
+    },
+    {
+      "id": "is-bool-116",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "العقيقة تُذبح عادةً في اليوم السابع من ولادة المولود",
+      "isTrue": true
+    },
+    {
+      "id": "is-num-33",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "صلاة الفجر هي الصلاة اللي وقتها بيبدأ من طلوع الفجر لطلوع الشمس، وعدد ركعاتها الفرض كام؟",
+      "correctValue": 2,
+      "tolerance": 0,
+      "unitAr": "ركعة"
+    },
+    {
+      "id": "is-num-34",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "صلاة العصر كام ركعة فرض؟",
+      "correctValue": 4,
+      "tolerance": 0,
+      "unitAr": "ركعة"
+    },
+    {
+      "id": "is-num-35",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "أقل عدد ركعات ممكن تُصلّى بيه صلاة الوتر؟",
+      "correctValue": 1,
+      "tolerance": 0,
+      "unitAr": "ركعة"
+    },
+    {
+      "id": "is-num-36",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "سورة الإخلاص فيها كام كلمة تقريبًا (من غير البسملة)؟",
+      "correctValue": 15,
+      "tolerance": 1,
+      "unitAr": "كلمة"
+    },
+    {
+      "id": "is-num-37",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "سورة الكافرون كام آية؟",
+      "correctValue": 6,
+      "tolerance": 0,
+      "unitAr": "آية"
+    },
+    {
+      "id": "is-num-38",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "سورة الفلق كام آية؟",
+      "correctValue": 5,
+      "tolerance": 0,
+      "unitAr": "آية"
+    },
+    {
+      "id": "is-num-39",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "سورة العصر كام آية؟",
+      "correctValue": 3,
+      "tolerance": 0,
+      "unitAr": "آية"
+    },
+    {
+      "id": "is-num-40",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "سورة الفيل كام آية؟",
+      "correctValue": 5,
+      "tolerance": 0,
+      "unitAr": "آية"
+    },
+    {
+      "id": "is-num-41",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "سورة قريش كام آية؟",
+      "correctValue": 4,
+      "tolerance": 0,
+      "unitAr": "آية"
+    },
+    {
+      "id": "is-num-42",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "سورة الماعون كام آية؟",
+      "correctValue": 7,
+      "tolerance": 0,
+      "unitAr": "آية"
+    },
+    {
+      "id": "is-num-43",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "سورة النصر كام آية؟",
+      "correctValue": 3,
+      "tolerance": 0,
+      "unitAr": "آية"
+    },
+    {
+      "id": "is-num-44",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "سورة المسد كام آية؟",
+      "correctValue": 5,
+      "tolerance": 0,
+      "unitAr": "آية"
+    },
+    {
+      "id": "is-num-45",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "سورة التكاثر كام آية؟",
+      "correctValue": 8,
+      "tolerance": 0,
+      "unitAr": "آية"
+    },
+    {
+      "id": "is-num-46",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "النبي ﷺ عاش كام سنة تقريبًا (بالتقويم الهجري القمري)؟",
+      "correctValue": 63,
+      "tolerance": 1,
+      "unitAr": "سنة"
+    },
+    {
+      "id": "is-num-47",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "نزل الوحي على النبي ﷺ وعمره كام سنة؟",
+      "correctValue": 40,
+      "tolerance": 0,
+      "unitAr": "سنة"
+    },
+    {
+      "id": "is-num-48",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "أبو بكر الصديق فضل خليفة قد كام سنة تقريبًا؟",
+      "correctValue": 2,
+      "tolerance": 1,
+      "unitAr": "سنة"
+    },
+    {
+      "id": "is-num-49",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "عمر بن الخطاب فضل خليفة قد كام سنة تقريبًا؟",
+      "correctValue": 10,
+      "tolerance": 1,
+      "unitAr": "سنة"
+    },
+    {
+      "id": "is-num-50",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "عثمان بن عفان فضل خليفة قد كام سنة تقريبًا؟",
+      "correctValue": 12,
+      "tolerance": 1,
+      "unitAr": "سنة"
+    },
+    {
+      "id": "is-num-51",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "علي بن أبي طالب فضل خليفة قد كام سنة تقريبًا؟",
+      "correctValue": 5,
+      "tolerance": 1,
+      "unitAr": "سنة"
+    },
+    {
+      "id": "is-num-52",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "المسلمون هُزموا فيها بعد نصر بدر بسبب مخالفة الرماة لأمر النبي ﷺ — دي غزوة أحد، حصلت في السنة كام من الهجرة؟",
+      "correctValue": 3,
+      "tolerance": 0,
+      "unitAr": "هـ"
+    },
+    {
+      "id": "is-num-53",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "غزوة الخندق (الأحزاب) كانت في السنة كام من الهجرة؟",
+      "correctValue": 5,
+      "tolerance": 0,
+      "unitAr": "هـ"
+    },
+    {
+      "id": "is-num-54",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "عدد الغزوات اللي خاضها النبي ﷺ بنفسه تقريبًا كام؟",
+      "correctValue": 27,
+      "tolerance": 3,
+      "unitAr": "غزوة"
+    },
+    {
+      "id": "is-num-55",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الاعتكاف المعتاد في رمضان بيكون في العشر الأواخر، يعني كام يوم؟",
+      "correctValue": 10,
+      "tolerance": 0,
+      "unitAr": "يوم"
+    },
+    {
+      "id": "is-num-56",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "عدد الأشهر الحُرُم في السنة الهجرية؟",
+      "correctValue": 4,
+      "tolerance": 0,
+      "unitAr": "شهر"
+    },
+    {
+      "id": "is-num-57",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "زكاة الفطر تقريبًا كام كيلو من الطعام للشخص الواحد؟",
+      "correctValue": 2.75,
+      "tolerance": 0.5,
+      "unitAr": "كيلوجرام"
+    },
+    {
+      "id": "is-num-58",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "أيام التشريق بعد يوم النحر كام يوم؟",
+      "correctValue": 3,
+      "tolerance": 0,
+      "unitAr": "يوم"
+    },
+    {
+      "id": "is-num-59",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "عدد الجمرات اللي بيترمى عليها الحاج؟",
+      "correctValue": 3,
+      "tolerance": 0,
+      "unitAr": "جمرة"
+    },
+    {
+      "id": "is-num-60",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "الطواف حول الكعبة بيكون كام شوط؟",
+      "correctValue": 7,
+      "tolerance": 0,
+      "unitAr": "شوط"
+    },
+    {
+      "id": "is-num-61",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "السعي بين الصفا والمروة بيكون كام شوط؟",
+      "correctValue": 7,
+      "tolerance": 0,
+      "unitAr": "شوط"
+    },
+    {
+      "id": "is-num-62",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "عدد أولي العزم من الرسل؟",
+      "correctValue": 5,
+      "tolerance": 0,
+      "unitAr": "رسول"
+    },
+    {
+      "id": "is-num-63",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "كتب الحديث المعروفة بـ«الكتب الستة» عددها كام؟",
+      "correctValue": 6,
+      "tolerance": 0,
+      "unitAr": "كتاب"
+    },
+    {
+      "id": "is-num-64",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "عدد الأئمة الأربعة أصحاب المذاهب الفقهية السنية المشهورة؟",
+      "correctValue": 4,
+      "tolerance": 0,
+      "unitAr": "إمام"
+    },
+    {
+      "id": "is-fill-28",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الصحابي اللي استشهد على إيد أبو لؤلؤة المجوسي اسمه ____ بن الخطاب",
+      "answerAr": "عمر",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-29",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أول زوجات النبي ﷺ وأول من آمن بيه اسمها ____ بنت خويلد",
+      "answerAr": "خديجة",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-30",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عم النبي ﷺ اللي كفله بعد وفاة جده اسمه أبو ____",
+      "answerAr": "طالب",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-31",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "النبي اللي كان يفهم لغة الطير حسب القرآن اسمه ____",
+      "answerAr": "سليمان",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-32",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "النبي اللي كانت له ناقة معجزة وأُرسل لقوم ثمود اسمه ____",
+      "answerAr": "صالح",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-33",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "النبي اللي أُرسل لقوم عاد اسمه ____",
+      "answerAr": "هود",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-34",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "النبي اللي وُلد من غير أب حسب العقيدة الإسلامية اسمه ____",
+      "answerAr": "عيسى",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-35",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "النبي اللي هو نفسه إسرائيل، ومنه جاء اسم بني إسرائيل، هو ____",
+      "answerAr": "يعقوب",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-36",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "النبي اللي اتلقى في بئر من إخوته اسمه ____",
+      "answerAr": "يوسف",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-37",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الملك الموكّل بالمطر والنبات اسمه ____",
+      "answerAr": "ميكائيل",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-38",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الملك الموكّل بالنفخ في الصور اسمه ____",
+      "answerAr": "إسرافيل",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-39",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "خازن جهنم المذكور في القرآن اسمه ____",
+      "answerAr": "مالك",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-40",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "السورة اللي بتتلقب بـ«قلب القرآن» هي سورة ____",
+      "answerAr": "يس",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-41",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "المعوذتان هما سورة الفلق وسورة ____",
+      "answerAr": "الناس",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-42",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "السورة اللي بتحكي عن حادثة أبرهة ومحاولته هدم الكعبة بجيش فيه حيوانات ضخمة هي سورة ____",
+      "answerAr": "الفيل",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-43",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أول ما نزل من القرآن كان «اقرأ باسم ____»",
+      "answerAr": "ربك",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-44",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الصحابي اللي أشار على النبي ﷺ بفكرة حفر الخندق اسمه ____ الفارسي",
+      "answerAr": "سلمان",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-45",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "المعركة اللي بيتقال عليها كمان «غزوة الأحزاب» هي غزوة ____",
+      "answerAr": "الخندق",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-46",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الاتفاقية اللي حصلت بين المسلمين وقريش سنة 6 هـ اسمها صلح ____",
+      "answerAr": "الحديبية",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-47",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "البيعة اللي حصلت تحت الشجرة في الحديبية اسمها بيعة ____",
+      "answerAr": "الرضوان",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-48",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الإمام صاحب المذهب الحنفي اسمه أبو ____",
+      "answerAr": "حنيفة",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-49",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الإمام صاحب المذهب المالكي اسمه مالك بن ____",
+      "answerAr": "أنس",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-50",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أشهر كتاب حديث صحيح عند أهل السنة ألّفه الإمام ____، واسم كتابه «الجامع الصحيح»",
+      "answerAr": "البخاري",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-51",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "الصحابي الوحيد المذكور بالاسم صراحة في القرآن الكريم اسمه ____ بن حارثة",
+      "answerAr": "زيد",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-52",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "أول من رمى سهمًا في سبيل الله في الإسلام هو سعد بن أبي ____",
+      "answerAr": "وقاص",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-53",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الصحابي اللي جمع القرآن في مصحف واحد موحّد اسمه ____ بن عفان",
+      "answerAr": "عثمان",
+      "aliases": []
+    },
+    {
+      "id": "is-fill-54",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "ابن عم النبي ﷺ وزوج ابنته فاطمة اسمه ____ بن أبي طالب",
+      "answerAr": "علي",
+      "aliases": []
+    },
+    {
+      "id": "is-open-30",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين النبي اللي كان يفهم لغة الطير حسب القرآن؟",
+      "answerAr": "سليمان",
+      "aliases": []
+    },
+    {
+      "id": "is-open-31",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين النبي اللي كانت له ناقة معجزة وأُرسل لقوم ثمود؟",
+      "answerAr": "صالح",
+      "aliases": []
+    },
+    {
+      "id": "is-open-32",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين النبي اللي أُرسل لقوم عاد؟",
+      "answerAr": "هود",
+      "aliases": []
+    },
+    {
+      "id": "is-open-33",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين النبي اللي هو نفسه إسرائيل، ومنه جاء اسم بني إسرائيل؟",
+      "answerAr": "يعقوب",
+      "aliases": []
+    },
+    {
+      "id": "is-open-34",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين النبي اللي اتلقى في بئر من إخوته؟",
+      "answerAr": "يوسف",
+      "aliases": []
+    },
+    {
+      "id": "is-open-35",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الملك الموكّل بالمطر والنبات؟",
+      "answerAr": "ميكائيل",
+      "aliases": []
+    },
+    {
+      "id": "is-open-36",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الملك الموكّل بالنفخ في الصور؟",
+      "answerAr": "إسرافيل",
+      "aliases": []
+    },
+    {
+      "id": "is-open-37",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم خازن جهنم المذكور في القرآن؟",
+      "answerAr": "مالك",
+      "aliases": []
+    },
+    {
+      "id": "is-open-38",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "أنهي سورة بتتلقب بـ«قلب القرآن»؟",
+      "answerAr": "يس",
+      "aliases": []
+    },
+    {
+      "id": "is-open-39",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "أنهي سورة بتحكي عن محاولة أبرهة هدم الكعبة بجيش فيه حيوانات ضخمة؟",
+      "answerAr": "الفيل",
+      "aliases": []
+    },
+    {
+      "id": "is-open-40",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم أول سورة نزلت كاملة على النبي ﷺ من القرآن؟",
+      "answerAr": "العلق",
+      "aliases": []
+    },
+    {
+      "id": "is-open-41",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الاتفاقية اللي حصلت بين المسلمين وقريش سنة 6 هـ؟",
+      "answerAr": "صلح الحديبية",
+      "aliases": [
+        "الحديبية"
+      ]
+    },
+    {
+      "id": "is-open-42",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم البيعة اللي حصلت تحت الشجرة في الحديبية؟",
+      "answerAr": "بيعة الرضوان",
+      "aliases": [
+        "الرضوان"
+      ]
+    },
+    {
+      "id": "is-open-43",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين إمام المذهب الحنفي؟",
+      "answerAr": "أبو حنيفة",
+      "aliases": []
+    },
+    {
+      "id": "is-open-44",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين إمام المذهب المالكي؟",
+      "answerAr": "مالك بن أنس",
+      "aliases": [
+        "مالك"
+      ]
+    },
+    {
+      "id": "is-open-45",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين مؤلف كتاب «الجامع الصحيح» اللي بيُعتبر أصح كتاب حديث عند أهل السنة؟",
+      "answerAr": "الإمام البخاري",
+      "aliases": [
+        "البخاري"
+      ]
+    },
+    {
+      "id": "is-open-46",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "مين الصحابي الوحيد المذكور بالاسم صراحة في القرآن الكريم؟",
+      "answerAr": "زيد بن حارثة",
+      "aliases": [
+        "زيد"
+      ]
+    },
+    {
+      "id": "is-open-47",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين أول من رمى سهمًا في سبيل الله في الإسلام؟",
+      "answerAr": "سعد بن أبي وقاص",
+      "aliases": []
+    },
+    {
+      "id": "is-open-48",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين الصحابي اللي جمع القرآن في مصحف واحد موحّد؟",
+      "answerAr": "عثمان بن عفان",
+      "aliases": [
+        "عثمان"
+      ]
+    },
+    {
+      "id": "is-open-49",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين ابن عم النبي ﷺ وزوج ابنته فاطمة؟",
+      "answerAr": "علي بن أبي طالب",
+      "aliases": [
+        "علي"
+      ]
+    },
+    {
+      "id": "is-open-50",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين أول زوجات النبي ﷺ وأول من آمن بيه؟",
+      "answerAr": "خديجة بنت خويلد",
+      "aliases": [
+        "خديجة"
+      ]
+    },
+    {
+      "id": "is-open-51",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين عم النبي ﷺ اللي كفله بعد وفاة جده؟",
+      "answerAr": "أبو طالب",
+      "aliases": []
+    },
+    {
+      "id": "is-open-52",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الصحابي اللي استشهد على إيد أبو لؤلؤة المجوسي؟",
+      "answerAr": "عمر بن الخطاب",
+      "aliases": [
+        "عمر"
+      ]
+    },
+    {
+      "id": "is-open-53",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين أكتر الصحابة رواية للحديث النبوي؟",
+      "answerAr": "أبو هريرة",
+      "aliases": []
+    },
+    {
+      "id": "is-open-54",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين أم المؤمنين اللي اشتهرت بعلمها الواسع وروايتها للحديث؟",
+      "answerAr": "عائشة بنت أبي بكر",
+      "aliases": [
+        "عائشة"
+      ]
+    },
+    {
+      "id": "is-open-55",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الصحابي اللي كان من أوائل من جهروا بقراءة القرآن في مكة؟",
+      "answerAr": "عبد الله بن مسعود",
+      "aliases": [
+        "ابن مسعود"
+      ]
+    },
+    {
+      "id": "is-open-56",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم البئر المقدسة الموجودة جوه الحرم المكي؟",
+      "answerAr": "زمزم",
+      "aliases": [
+        "بئر زمزم"
+      ]
+    },
+    {
+      "id": "is-open-57",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم المكان اللي بيبات فيه الحاج بعد يوم عرفة قبل رمي الجمرات؟",
+      "answerAr": "مزدلفة",
+      "aliases": []
+    },
+    {
+      "id": "is-open-58",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم الموضع اللي بيبدأ منه الحاج أو المعتمر إحرامه قبل ما يدخل حدود الحرم؟",
+      "answerAr": "الميقات",
+      "aliases": []
+    },
+    {
+      "id": "is-prog-25",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "نبي سُخّرت له الريح تجري بأمره",
+        "كان يفهم لغة الطير حسب القرآن",
+        "ورث الملك والنبوة عن والده داود عليه السلام"
+      ],
+      "answerAr": "سليمان",
+      "aliases": []
+    },
+    {
+      "id": "is-prog-26",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "نبي أُرسل لقوم ثمود",
+        "أعطاه الله معجزة ناقة خرجت من صخرة",
+        "قومه عقروا الناقة فحلّ بيهم العذاب"
+      ],
+      "answerAr": "صالح",
+      "aliases": []
+    },
+    {
+      "id": "is-prog-27",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "نبي أُرسل لقوم عاد",
+        "قومه كانوا مشهورين بقوتهم وبنيانهم الضخم",
+        "أهلك الله قومه بريح صرصر عاتية"
+      ],
+      "answerAr": "هود",
+      "aliases": []
+    },
+    {
+      "id": "is-prog-28",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "نبي من أبناء إبراهيم عليه السلام",
+        "له اسم تاني هو إسرائيل",
+        "منه جاء اسم بني إسرائيل، ووالد يوسف عليه السلام"
+      ],
+      "answerAr": "يعقوب",
+      "aliases": []
+    },
+    {
+      "id": "is-prog-29",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "نبي اتلقى في بئر من إخوته وهو صغير",
+        "اتباع في مصر بعد قصة طويلة",
+        "اتنسبت له أجمل سورة في القرآن حسب وصف بعض المفسرين"
+      ],
+      "answerAr": "يوسف",
+      "aliases": []
+    },
+    {
+      "id": "is-prog-30",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أحد الملائكة المذكورين بالاسم في القرآن",
+        "موكّل بالمطر والنبات والأرزاق",
+        "زميل جبريل في نزول الوحي حسب بعض الروايات"
+      ],
+      "answerAr": "ميكائيل",
+      "aliases": []
+    },
+    {
+      "id": "is-prog-31",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "ملك موكّل بالنفخ في الصور يوم القيامة",
+        "نفخته بتُعتبر إيذان بقيام الساعة",
+        "اسمه مذكور في كتب التفسير والحديث"
+      ],
+      "answerAr": "إسرافيل",
+      "aliases": []
+    },
+    {
+      "id": "is-prog-32",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "اسم مذكور في القرآن الكريم",
+        "موكّل بخزنة مكان معين في الآخرة",
+        "خازن جهنم اللي بيكلمه أهل النار"
+      ],
+      "answerAr": "مالك",
+      "aliases": []
+    },
+    {
+      "id": "is-prog-33",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "سورة قرآنية بتتلقب بلقب مميز",
+        "اللقب المشهور ليها هو «قلب القرآن»",
+        "اسمها حرفان من الحروف المقطعة"
+      ],
+      "answerAr": "يس",
+      "aliases": []
+    },
+    {
+      "id": "is-prog-34",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "سورة قصيرة في القرآن الكريم",
+        "بتحكي عن جيش بحيوانات ضخمة حاول هدم الكعبة",
+        "الله أرسل عليهم طيرًا أبابيل ترميهم بحجارة"
+      ],
+      "answerAr": "الفيل",
+      "aliases": []
+    },
+    {
+      "id": "is-prog-35",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "اتفاقية مهمة في السيرة النبوية",
+        "حصلت سنة 6 من الهجرة",
+        "كانت بين المسلمين وقريش وفتحت الباب لفتح مكة لاحقًا"
+      ],
+      "answerAr": "صلح الحديبية",
+      "aliases": [
+        "الحديبية"
+      ]
+    },
+    {
+      "id": "is-prog-36",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "حدث مرتبط بصلح الحديبية",
+        "حصل تحت شجرة معينة",
+        "الصحابة فيها بايعوا النبي ﷺ على الموت"
+      ],
+      "answerAr": "بيعة الرضوان",
+      "aliases": [
+        "الرضوان"
+      ]
+    },
+    {
+      "id": "is-prog-37",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "إمام من أئمة المذاهب الفقهية الأربعة",
+        "اسمه الحقيقي النعمان بن ثابت",
+        "مذهبه منتشر بقوة في تركيا وآسيا الوسطى وشبه القارة الهندية"
+      ],
+      "answerAr": "أبو حنيفة",
+      "aliases": []
+    },
+    {
+      "id": "is-prog-38",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "إمام من أئمة المذاهب الفقهية الأربعة",
+        "مذهبه منتشر بقوة في شمال أفريقيا",
+        "ألّف كتاب «الموطأ»"
+      ],
+      "answerAr": "مالك بن أنس",
+      "aliases": [
+        "مالك"
+      ]
+    },
+    {
+      "id": "is-prog-39",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "عالم حديث كبير من العصر العباسي",
+        "قضى سنين طويلة يجمع الأحاديث ويتحقق منها",
+        "ألّف أصح كتاب حديث عند أهل السنة"
+      ],
+      "answerAr": "البخاري",
+      "aliases": [
+        "الإمام البخاري"
+      ]
+    },
+    {
+      "id": "is-prog-40",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "صحابي جليل تبنّاه النبي ﷺ قبل الإسلام",
+        "الصحابي الوحيد المذكور بالاسم صراحة في القرآن",
+        "والد أسامة بن زيد"
+      ],
+      "answerAr": "زيد بن حارثة",
+      "aliases": [
+        "زيد"
+      ]
+    },
+    {
+      "id": "is-prog-41",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "صحابي جليل من أوائل من أسلموا",
+        "أول من رمى سهمًا في سبيل الله في الإسلام",
+        "قائد الجيش المسلم في معركة القادسية ضد الفرس"
+      ],
+      "answerAr": "سعد بن أبي وقاص",
+      "aliases": []
+    },
+    {
+      "id": "is-prog-42",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "الخليفة الراشد الثالث",
+        "تزوج بنتين من بنات النبي ﷺ على التوالي",
+        "جمع القرآن في مصحف واحد موحّد"
+      ],
+      "answerAr": "عثمان بن عفان",
+      "aliases": [
+        "عثمان"
+      ]
+    },
+    {
+      "id": "is-prog-43",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "الخليفة الراشد الرابع",
+        "ابن عم النبي ﷺ وزوج ابنته فاطمة",
+        "أول من أسلم من الصبيان حسب أغلب الروايات"
+      ],
+      "answerAr": "علي بن أبي طالب",
+      "aliases": [
+        "علي"
+      ]
+    },
+    {
+      "id": "is-prog-44",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "سيدة عربية كانت تاجرة ناجحة",
+        "أول زوجات النبي ﷺ وأول من آمن بيه",
+        "أم أغلب أولاد النبي ﷺ"
+      ],
+      "answerAr": "خديجة بنت خويلد",
+      "aliases": [
+        "خديجة"
+      ]
+    },
+    {
+      "id": "is-prog-45",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أم المؤمنين المعروفة بعلمها الواسع",
+        "روت مئات الأحاديث النبوية",
+        "ابنة أبو بكر الصديق"
+      ],
+      "answerAr": "عائشة بنت أبي بكر",
+      "aliases": [
+        "عائشة"
+      ]
+    },
+    {
+      "id": "is-prog-46",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "صحابي جليل من أوائل من جهروا بقراءة القرآن في مكة",
+        "اشتهر بمعرفته الواسعة بالقرآن وتفسيره",
+        "كان قريب الشبه من النبي ﷺ في المشي والهدي"
+      ],
+      "answerAr": "عبد الله بن مسعود",
+      "aliases": [
+        "ابن مسعود"
+      ]
+    },
+    {
+      "id": "is-prog-47",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "بئر مباركة في مكة المكرمة",
+        "قصة اكتشافها مرتبطة بهاجر وابنها إسماعيل",
+        "الحجاج بيشربوا منها ويأخذوا منها لبلادهم"
+      ],
+      "answerAr": "زمزم",
+      "aliases": [
+        "بئر زمزم"
+      ]
+    },
+    {
+      "id": "is-prog-48",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "مكان مهم في مناسك الحج",
+        "الحاج بيبيت فيه بعد الوقوف بعرفة",
+        "فيه بيجمع الحاج الحصى لرمي الجمرات"
+      ],
+      "answerAr": "مزدلفة",
+      "aliases": []
+    },
+    {
+      "id": "is-mcq-116",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين النبي اللي اتلقى في بئر من إخوته وهو صغير؟",
+      "options": [
+        "يوسف",
+        "يعقوب",
+        "بنيامين",
+        "يهوذا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-117",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين النبي اللي بيُعرف كمان باسم إسرائيل؟",
+      "options": [
+        "يعقوب",
+        "إسحاق",
+        "إبراهيم",
+        "يوسف"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-118",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين النبي اللي أُرسل لقوم عاد؟",
+      "options": [
+        "هود",
+        "صالح",
+        "شعيب",
+        "لوط"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-119",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين النبي اللي أعطاه الله معجزة ناقة خرجت من صخرة؟",
+      "options": [
+        "صالح",
+        "هود",
+        "شعيب",
+        "نوح"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-120",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين النبي اللي كان يفهم لغة الطير حسب القرآن؟",
+      "options": [
+        "سليمان",
+        "داود",
+        "يوسف",
+        "يعقوب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-121",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "مين النبي اللي بنى سفينة نجاة بأمر الله وقت الطوفان؟",
+      "options": [
+        "نوح",
+        "هود",
+        "صالح",
+        "إبراهيم"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-122",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين النبي اللي هُلك قومه بانقلاب مدينتهم عليهم؟",
+      "options": [
+        "لوط",
+        "هود",
+        "صالح",
+        "شعيب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-123",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين النبي اللي انقلبت عصاه لحية بمعجزة من الله أمام فرعون؟",
+      "options": [
+        "موسى",
+        "هارون",
+        "يوشع",
+        "إبراهيم"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-124",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين النبي اللي أحيا الله على يديه الموتى بإذن الله؟",
+      "options": [
+        "عيسى",
+        "موسى",
+        "إبراهيم",
+        "يوسف"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-125",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين النبي اللي بنى الكعبة مع ابنه إسماعيل؟",
+      "options": [
+        "إبراهيم",
+        "نوح",
+        "آدم",
+        "إسحاق"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-126",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين ابن النبي إبراهيم اللي شارك معاه في بناء الكعبة؟",
+      "options": [
+        "إسماعيل",
+        "إسحاق",
+        "يعقوب",
+        "لوط"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-127",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين النبي المعروف بلقب «ذو النون» صاحب الحوت؟",
+      "options": [
+        "يونس",
+        "يوسف",
+        "صالح",
+        "هود"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-128",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي اسم من دول نبي مذكور بالاسم صراحة في القرآن الكريم؟",
+      "options": [
+        "إلياس",
+        "جالوت",
+        "قارون",
+        "هامان"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "جالوت وقارون وهامان شخصيات مذكورة في القرآن لكنهم مش أنبياء."
+    },
+    {
+      "id": "is-mcq-129",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "لقمان الحكيم المذكور في القرآن، اللي وصّى ابنه بوصايا مشهورة، بيُعتبر عند جمهور العلماء إيه؟",
+      "options": [
+        "حكيم صالح مش نبي",
+        "نبي من أولي العزم",
+        "أحد الخلفاء الراشدين",
+        "ملك من ملوك بني إسرائيل"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "بلقيس ولقمان وذو القرنين شخصيات مهمة في القرآن لكنهم مش من الأنبياء بالإجماع."
+    },
+    {
+      "id": "is-mcq-130",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين النبي اللي أُرسل لأهل مدين؟",
+      "options": [
+        "شعيب",
+        "صالح",
+        "هود",
+        "لوط"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-131",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين ابن النبي إبراهيم اللي وُلد من زوجته سارة في سن الشيخوخة، وبُشّرت أمه بيه؟",
+      "options": [
+        "إسحاق",
+        "إسماعيل",
+        "يعقوب",
+        "لوط"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-132",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي سورة بتتلقب بـ«عروس القرآن»؟",
+      "options": [
+        "الرحمن",
+        "يس",
+        "الكهف",
+        "مريم"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-133",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي سورة من السنة المستحبة قراءتها يوم الجمعة؟",
+      "options": [
+        "الكهف",
+        "يس",
+        "الرحمن",
+        "الملك"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-134",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي سورة نزلت أول مرة على النبي ﷺ في غار حراء؟",
+      "options": [
+        "العلق",
+        "القلم",
+        "المدثر",
+        "المزمل"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-135",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي سورة فيها قصة أصحاب الأخدود؟",
+      "options": [
+        "البروج",
+        "الكهف",
+        "يس",
+        "مريم"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-136",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي سورة في القرآن بتحمل اسم كائن حي بيعيش في مستعمرات ومعروف بالعمل الجماعي المنظم؟",
+      "options": [
+        "النمل",
+        "العنكبوت",
+        "النحل",
+        "الفيل"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-137",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي سورة في القرآن سُميت باسم حيوان بيغزل الخيوط ويصنع بيته منها؟",
+      "options": [
+        "العنكبوت",
+        "النمل",
+        "النحل",
+        "الفيل"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-138",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي سورة في القرآن سُميت باسم حشرة بتنتج العسل؟",
+      "options": [
+        "النحل",
+        "النمل",
+        "العنكبوت",
+        "الفيل"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-139",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي نُسك من أنساك الحج بيجمع فيه الحاج بين العمرة والحج في نفس موسم الحج مع دفع هدي؟",
+      "options": [
+        "التمتع",
+        "الإفراد",
+        "القِران",
+        "الإحصار"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-140",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي نُسك من أنساك الحج بيُحرم فيه الحاج بالحج لوحده من غير عمرة؟",
+      "options": [
+        "الإفراد",
+        "التمتع",
+        "القِران",
+        "الإحصار"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-141",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي نُسك من أنساك الحج بيُحرم فيه الحاج بالعمرة والحج مع بعض من البداية؟",
+      "options": [
+        "القِران",
+        "التمتع",
+        "الإفراد",
+        "الإحصار"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-142",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي حاجة من محظورات الإحرام على الرجال تحديدًا؟",
+      "options": [
+        "لبس الملابس المفصّلة (المخيط)",
+        "الأكل",
+        "الشرب",
+        "النوم"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-143",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي حاجة من محظورات الإحرام على الجميع رجال ونساء؟",
+      "options": [
+        "الصيد البري",
+        "التسبيح",
+        "الدعاء",
+        "قراءة القرآن"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-144",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "زكاة الفطر واجبة على إيه من دول؟",
+      "options": [
+        "كل مسلم حتى الأطفال الصغار",
+        "الرجال البالغين بس",
+        "الأغنياء بس",
+        "التجار بس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-145",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«الغارمون» من مصارف الزكاة الثمانية معناهم إيه؟",
+      "options": [
+        "المدينون اللي عليهم ديون مثقلة",
+        "التجار الأثرياء",
+        "أصحاب العقارات",
+        "الموظفون الحكوميون"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-146",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«ابن السبيل» من مصارف الزكاة الثمانية معناهم إيه؟",
+      "options": [
+        "المسافر المنقطع عن ماله في بلد غريب",
+        "ابن القاضي",
+        "رجل الشرطة",
+        "التاجر المسافر للتجارة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-147",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«المؤلفة قلوبهم» من مصارف الزكاة معناهم إيه؟",
+      "options": [
+        "ناس بيُعطوا من الزكاة لتأليف قلوبهم للإسلام",
+        "أهل بيت النبي ﷺ",
+        "العلماء المجتهدون",
+        "حفظة القرآن"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-148",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "صلاة الجماعة بتفضل عن صلاة الفرد بكام درجة تقريبًا حسب الحديث النبوي؟",
+      "options": [
+        "27 درجة",
+        "10 درجات",
+        "50 درجة",
+        "100 درجة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-149",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "صلاة الاستسقاء (طلب نزول المطر) كام ركعة؟",
+      "options": [
+        "ركعتين",
+        "أربع ركعات",
+        "ركعة واحدة",
+        "لا ركعات محددة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-150",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "صلاة الكسوف (كسوف الشمس) بتتميز بإيه عن باقي الصلوات؟",
+      "options": [
+        "فيها ركوعين في كل ركعة",
+        "فيها سجدة واحدة بس",
+        "فيها أربع ركعات",
+        "مفيهاش قراءة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-151",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "سجدة التلاوة بتُفعل إمتى؟",
+      "options": [
+        "عند قراءة أو سماع آية فيها سجدة",
+        "في نهاية كل صلاة",
+        "قبل الأذان",
+        "بعد الوضوء مباشرة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-152",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "التيمم بيكون بديل عن الوضوء أو الغسل عند إيه؟",
+      "options": [
+        "فقدان الماء أو العجز عن استخدامه",
+        "دخول وقت الصلاة",
+        "السفر بس",
+        "دخول المسجد"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-153",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "سجود السهو بيُشرع لما إيه؟",
+      "options": [
+        "نسيان شيء من واجبات الصلاة",
+        "دخول وقت الأذان",
+        "انتهاء صلاة الجماعة",
+        "قبل تكبيرة الإحرام"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-154",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "القنوت في صلاة الوتر أو الفجر عادةً بيكون في أنهي ركعة؟",
+      "options": [
+        "الركعة الأخيرة",
+        "الركعة الأولى",
+        "كل الركعات",
+        "قبل التسليم بس في الجمعة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-155",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "«الحدث الأصغر» بينتقض بيه إيه من الطهارة؟",
+      "options": [
+        "الوضوء",
+        "الغسل الكامل",
+        "التيمم بس",
+        "الصيام"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-156",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "«الحدث الأكبر» زي الجنابة بيوجب إيه من الطهارة؟",
+      "options": [
+        "الغسل الكامل",
+        "الوضوء بس",
+        "التيمم بس",
+        "لا شيء"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-157",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الاستنجاء في الفقه الإسلامي معناه إيه؟",
+      "options": [
+        "التطهر من أثر البول والغائط",
+        "غسل اليدين قبل الأكل",
+        "الوضوء الكامل",
+        "الاغتسال يوم الجمعة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-158",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي صلاة بتُصلى وقت خسوف القمر؟",
+      "options": [
+        "صلاة الخسوف",
+        "صلاة الكسوف",
+        "صلاة الاستسقاء",
+        "صلاة الاستخارة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-159",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "صيام أنهي يوم من محرم بيُستحب بقوة حسب السنة؟",
+      "options": [
+        "يوم عاشوراء",
+        "أول يوم في محرم",
+        "آخر يوم في محرم",
+        "منتصف الشهر"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-160",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "من السنة صيام يوم قبل عاشوراء أو بعده كمان، والحكمة المذكورة في الحديث هي إيه؟",
+      "options": [
+        "مخالفة أهل الكتاب في إفراد اليوم بالصيام",
+        "زيادة الأجر بس",
+        "تخفيف مشقة الصيام",
+        "التقرب لشهر رمضان"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-161",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الحد الأدنى المستحب لعدد ركعات صلاة الضحى كام؟",
+      "options": [
+        "ركعتين",
+        "أربع ركعات",
+        "ست ركعات",
+        "ثمان ركعات"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-162",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الصحابي اللي بيُعتبر أول سفير للإسلام، أُرسل يعلّم أهل المدينة قبل الهجرة؟",
+      "options": [
+        "مصعب بن عمير",
+        "زيد بن ثابت",
+        "معاذ بن جبل",
+        "حذيفة بن اليمان"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-163",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الصحابي اللي خدم النبي ﷺ لمدة عشر سنين؟",
+      "options": [
+        "أنس بن مالك",
+        "زيد بن ثابت",
+        "بلال بن رباح",
+        "أبو هريرة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-164",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين أول شهيدة في تاريخ الإسلام؟",
+      "options": [
+        "سمية بنت خباط",
+        "فاطمة الزهراء",
+        "خديجة بنت خويلد",
+        "رفيدة الأسلمية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-165",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الصحابي اللي كان أبوه وأمه من أوائل من استُشهدوا في الإسلام؟",
+      "options": [
+        "عمار بن ياسر",
+        "بلال بن رباح",
+        "صهيب الرومي",
+        "خباب بن الأرت"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-166",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الصحابي الرومي اللي قال عنه النبي ﷺ «ربح البيع»؟",
+      "options": [
+        "صهيب الرومي",
+        "سلمان الفارسي",
+        "بلال بن رباح",
+        "زيد بن حارثة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-167",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الصحابي المعروف بلقب «الطيّار» اللي استُشهد في مؤتة؟",
+      "options": [
+        "جعفر بن أبي طالب",
+        "علي بن أبي طالب",
+        "عبيدة بن الحارث",
+        "زيد بن حارثة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-168",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الصحابي المعروف بكونه كاتب الوحي الأشهر للنبي ﷺ؟",
+      "options": [
+        "زيد بن ثابت",
+        "أبي بن كعب",
+        "معاذ بن جبل",
+        "عبد الله بن مسعود"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-169",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين الصحابية اللي اشتهرت بمعالجة الجرحى في الغزوات وبيُقال إنها كانت من أوائل الممرضات في الإسلام؟",
+      "options": [
+        "رفيدة الأسلمية",
+        "أم عمارة",
+        "أسماء بنت أبي بكر",
+        "الخنساء"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-170",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين الصحابي اللي بيُلقب بـ«غسيل الملائكة» لأنه استُشهد في أحد وهو جنب؟",
+      "options": [
+        "حنظلة بن أبي عامر",
+        "عمار بن ياسر",
+        "مصعب بن عمير",
+        "حمزة بن عبد المطلب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-171",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الصحابي اللي بيُلقب بـ«سيد القراء» لتميزه في تلاوة القرآن؟",
+      "options": [
+        "أبي بن كعب",
+        "عبد الله بن مسعود",
+        "زيد بن ثابت",
+        "معاذ بن جبل"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-172",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الصحابي اللي أرسله النبي ﷺ ليعلّم أهل اليمن أحكام الدين ويكون قاضيًا؟",
+      "options": [
+        "معاذ بن جبل",
+        "أبي بن كعب",
+        "حذيفة بن اليمان",
+        "عمرو بن العاص"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-173",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين الصحابي اللي بيُلقب بـ«صاحب سر النبي ﷺ» لأنه كان يعرف أسماء المنافقين؟",
+      "options": [
+        "حذيفة بن اليمان",
+        "معاذ بن جبل",
+        "أبو ذر الغفاري",
+        "سلمان الفارسي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-174",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الصحابي التاجر الثري من العشرة المبشرين بالجنة اللي أنفق ماله بسخاء في سبيل الله؟",
+      "options": [
+        "عبد الرحمن بن عوف",
+        "طلحة بن عبيد الله",
+        "سعد بن أبي وقاص",
+        "الزبير بن العوام"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-175",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين الصحابي من العشرة المبشرين بالجنة اللي بيُعرف بلقب «الفياض» لكرمه؟",
+      "options": [
+        "طلحة بن عبيد الله",
+        "عبد الرحمن بن عوف",
+        "سعيد بن زيد",
+        "أبو عبيدة بن الجراح"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-176",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين زوجة النبي ﷺ اللي كانت بنت أبي سفيان؟",
+      "options": [
+        "أم حبيبة",
+        "حفصة",
+        "صفية",
+        "ميمونة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-177",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين زوجة النبي ﷺ اللي كانت بنت عمر بن الخطاب؟",
+      "options": [
+        "حفصة",
+        "أم حبيبة",
+        "صفية",
+        "زينب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-178",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين ابنة النبي ﷺ اللي اتجوزت علي بن أبي طالب؟",
+      "options": [
+        "فاطمة الزهراء",
+        "رقية",
+        "أم كلثوم",
+        "زينب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-179",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين حفيدَي النبي ﷺ اللي وصفهم الحديث بـ«سيدا شباب أهل الجنة»؟",
+      "options": [
+        "الحسن والحسين",
+        "قاسم وإبراهيم",
+        "عبد الله وعثمان",
+        "الطاهر والطيب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-180",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الصحابي اللي اشتهر بلقب «أبو الدرداء» وبالزهد والحكمة؟",
+      "options": [
+        "عويمر بن مالك",
+        "خباب بن الأرت",
+        "عبادة بن الصامت",
+        "أبو ذر الغفاري"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-181",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين اللي قاد المسلمين في حروب الردة ضد المرتدين ومانعي الزكاة بعد وفاة النبي ﷺ؟",
+      "options": [
+        "أبو بكر الصديق",
+        "عمر بن الخطاب",
+        "خالد بن الوليد",
+        "أبو عبيدة بن الجراح"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-182",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "لقب «أمهات المؤمنين» بيُطلق على مين؟",
+      "options": [
+        "زوجات النبي ﷺ",
+        "بنات النبي ﷺ",
+        "عمات النبي ﷺ",
+        "الصحابيات عمومًا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-183",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين زوجة النبي ﷺ اللي كانت يهودية الأصل قبل ما تُسلم وتتجوزه؟",
+      "options": [
+        "صفية بنت حيي",
+        "حفصة",
+        "عائشة",
+        "سودة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-184",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين عم النبي ﷺ اللي بيُلقب بـ«سيد الشهداء» واستُشهد في غزوة أحد؟",
+      "options": [
+        "حمزة بن عبد المطلب",
+        "العباس بن عبد المطلب",
+        "أبو طالب",
+        "أبو لهب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-185",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عدد أسماء الله الحسنى المشهورة حسب الحديث النبوي كام؟",
+      "options": [
+        "99",
+        "100",
+        "90",
+        "114"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-186",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "اسم الله «الرحمن» معناه إيه؟",
+      "options": [
+        "الرحمة الواسعة الشاملة لكل الخلق",
+        "الرحمة الخاصة بالمؤمنين بس",
+        "القوة المطلقة",
+        "العلم الشامل"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-187",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "اسم الله «الرحيم» معناه إيه؟",
+      "options": [
+        "الرحمة الخاصة بالمؤمنين يوم القيامة",
+        "الرحمة الشاملة لكل الخلق",
+        "القدرة على كل شيء",
+        "العلم بكل شيء"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-188",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "اسم الله «الرزّاق» معناه إيه؟",
+      "options": [
+        "اللي بيرزق كل مخلوقاته",
+        "اللي بيغفر الذنوب",
+        "اللي بيحاسب الناس",
+        "اللي بيخلق من العدم"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-189",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «التوحيد» في العقيدة الإسلامية معناه إيه؟",
+      "options": [
+        "الإيمان بوحدانية الله وعدم إشراك أحد معاه",
+        "الإيمان بكل الأديان",
+        "الإيمان بالأنبياء بس",
+        "الإيمان بالملائكة بس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-190",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «الشرك» في العقيدة الإسلامية معناه إيه؟",
+      "options": [
+        "إشراك غير الله معاه في العبادة",
+        "الإيمان بالقدر",
+        "الصلاة جماعة",
+        "الحج مع الأصدقاء"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-191",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مصطلح «البدعة» في الفقه الإسلامي معناه إيه؟",
+      "options": [
+        "إحداث أمر جديد في الدين لم يكن معروفًا من قبل",
+        "التجديد في الدنيا",
+        "السفر للحج",
+        "الصدقة الزيادة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-192",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مصطلح «الإجماع» كمصدر من مصادر التشريع الإسلامي معناه إيه؟",
+      "options": [
+        "اتفاق العلماء المجتهدين على حكم شرعي في عصر معين",
+        "قرار فردي من عالم واحد",
+        "رأي عامة الناس",
+        "تصويت البرلمان"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-193",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مصطلح «القياس» كمصدر من مصادر التشريع الإسلامي معناه إيه؟",
+      "options": [
+        "إلحاق حكم مسألة جديدة بمسألة منصوص عليها لتشابه السبب",
+        "حفظ القرآن عن ظهر قلب",
+        "مقارنة الأديان ببعضها",
+        "قياس المسافة بين المساجد"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-194",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مصادر التشريع الإسلامي المتفق عليها عمومًا عندها أربعة، إيه هي؟",
+      "options": [
+        "القرآن والسنة والإجماع والقياس",
+        "القرآن والحديث والتاريخ والعرف",
+        "القرآن والفقه والفلسفة والمنطق",
+        "القرآن والتفسير والترجمة والشرح"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-195",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مصطلح «الحديث القدسي» معناه إيه؟",
+      "options": [
+        "كلام منسوب لله لكن بلفظ النبي ﷺ، مش من القرآن",
+        "آية من القرآن الكريم",
+        "قول أحد الصحابة",
+        "دعاء مأثور بس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-196",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "تصنيف الحديث لـ«صحيح» أو «ضعيف» بيرجع أساسًا لإيه؟",
+      "options": [
+        "قوة سند الحديث وثقة رواته",
+        "طول الحديث",
+        "عدد الكلمات فيه",
+        "اللغة اللي اتكتب بيها"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-197",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «السنة» في الاصطلاح الشرعي بيقصد بيه إيه؟",
+      "options": [
+        "أقوال وأفعال وتقريرات النبي ﷺ",
+        "آيات القرآن بس",
+        "أقوال الصحابة بس",
+        "عادات أهل مكة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-198",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مصطلح «الإسناد» في علم الحديث معناه إيه؟",
+      "options": [
+        "سلسلة الرواة اللي نقلوا الحديث واحد عن التاني",
+        "متن الحديث نفسه",
+        "تفسير معنى الحديث",
+        "ترجمة الحديث للغات تانية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-199",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أول جزء من أجزاء القرآن الثلاثين بيتسمى إيه، نسبة لأول كلماته؟",
+      "options": [
+        "جزء «الم»",
+        "جزء «عمّ»",
+        "جزء «قد سمع»",
+        "جزء «تبارك»"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-200",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الجزء الأخير من المصحف، اللي بيحتوي على أغلب السور القصيرة المحفوظة عادة، بيتسمى بالعامية إيه؟",
+      "options": [
+        "جزء «عمّ»",
+        "جزء «الم»",
+        "جزء «قد سمع»",
+        "جزء «تبارك»"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-201",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "تصنيف السور لـ«مكية» و«مدنية» بيرجع لإيه؟",
+      "options": [
+        "مكان أو زمان نزول السورة قبل أو بعد الهجرة",
+        "عدد آيات السورة",
+        "طول السورة بالصفحات",
+        "ترتيب السورة في المصحف"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-202",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "غالبًا السور المكية بتتميز بإيه؟",
+      "options": [
+        "قصر الآيات والتركيز على العقيدة والتوحيد",
+        "طول الآيات والتركيز على الأحكام",
+        "ذكر القصص التاريخية بس",
+        "عدم وجود أي آيات قصيرة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-203",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "غالبًا السور المدنية بتتميز بإيه؟",
+      "options": [
+        "طول الآيات والتركيز على الأحكام والتشريعات",
+        "قصر الآيات دايمًا",
+        "عدم ذكر أي أحكام فقهية",
+        "التركيز على القصص بس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-204",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مصطلح «أسباب النزول» في علوم القرآن معناه إيه؟",
+      "options": [
+        "الأحداث والمناسبات اللي نزلت الآيات بسببها",
+        "ترتيب نزول السور",
+        "عدد مرات تكرار الآية",
+        "أسماء رواة القرآن"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-205",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مصطلح «الناسخ والمنسوخ» في علوم القرآن معناه إيه؟",
+      "options": [
+        "حكم شرعي بيلغي حكمًا سابقًا نزل قبله",
+        "نسخ آيات من القرآن بخط اليد",
+        "ترجمة القرآن للغات تانية",
+        "تفسير آية بآية تانية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-206",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «التفسير» في علوم القرآن معناه إيه؟",
+      "options": [
+        "شرح وبيان معاني آيات القرآن الكريم",
+        "حفظ القرآن عن ظهر قلب",
+        "كتابة القرآن بخط جميل",
+        "ترتيل القرآن بصوت جميل"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-207",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «التجويد» في علوم القرآن معناه إيه؟",
+      "options": [
+        "علم القواعد الصحيحة لنطق حروف القرآن وتلاوته",
+        "حفظ القرآن كامل",
+        "كتابة القرآن بخط جميل",
+        "شرح معاني الآيات"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-208",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «الاستخارة» في الإسلام معناه إيه؟",
+      "options": [
+        "طلب الخيرة من الله قبل اتخاذ قرار مهم",
+        "الدعاء بعد الصلاة",
+        "قراءة القرآن يوميًا",
+        "الصدقة اليومية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-209",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "بعد صلاة الاستخارة، إيه اللي بيقوله المسلم عادةً للاستعانة بالله على اتخاذ القرار؟",
+      "options": [
+        "دعاء الاستخارة المأثور",
+        "آية الكرسي بس",
+        "سورة الفاتحة بس",
+        "التسبيح مية مرة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-210",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مصطلح «الرقية الشرعية» معناه إيه؟",
+      "options": [
+        "قراءة القرآن والأدعية المأثورة للعلاج والحماية",
+        "الذهاب للطبيب فقط",
+        "قراءة الكتب الدينية عمومًا",
+        "حفظ القرآن كامل"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-211",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مصطلح «التوبة النصوح» معناه إيه؟",
+      "options": [
+        "التوبة الصادقة الخالصة مع عدم العودة للذنب",
+        "الاستغفار مرة واحدة بس",
+        "الصدقة بعد الذنب",
+        "الحج للتكفير عن الذنوب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-212",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «الذكر» في العبادة الإسلامية معناه إيه؟",
+      "options": [
+        "تذكر الله بالقلب واللسان",
+        "قراءة القرآن بس",
+        "الصلاة بس",
+        "الصيام بس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-213",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «التسبيح» معناه إيه؟",
+      "options": [
+        "تنزيه الله عن كل نقص (قول سبحان الله)",
+        "طلب المغفرة من الله",
+        "الشهادة بوحدانية الله",
+        "الدعاء بالرزق"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-214",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «التهليل» معناه إيه؟",
+      "options": [
+        "قول لا إله إلا الله",
+        "قول الله أكبر",
+        "قول الحمد لله",
+        "قول سبحان الله"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-215",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «التكبير» معناه إيه؟",
+      "options": [
+        "قول الله أكبر",
+        "قول لا إله إلا الله",
+        "قول الحمد لله",
+        "قول سبحان الله"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-216",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "من السنة قبل البدء في الأكل قول إيه؟",
+      "options": [
+        "بسم الله",
+        "الحمد لله",
+        "الله أكبر",
+        "سبحان الله"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-217",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "من السنة بعد الانتهاء من الأكل قول إيه؟",
+      "options": [
+        "الحمد لله",
+        "بسم الله",
+        "الله أكبر",
+        "أستغفر الله"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-218",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «بر الوالدين» معناه إيه؟",
+      "options": [
+        "الإحسان للوالدين وطاعتهما",
+        "التبرع للجمعيات الخيرية",
+        "زيارة المسجد كل يوم",
+        "الصدقة على الفقراء"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-219",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «صلة الرحم» معناه إيه؟",
+      "options": [
+        "الإحسان للأقارب والتواصل معاهم",
+        "التبرع بالدم",
+        "زيارة المرضى بس",
+        "الحج مع الأهل"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-220",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «الأمانة» في الأخلاق الإسلامية معناها إيه؟",
+      "options": [
+        "حفظ حقوق الناس وردها لأصحابها",
+        "الصدق في الكلام بس",
+        "الشجاعة في الحرب",
+        "الكرم مع الضيوف"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-221",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "أنهي صفة دي عكس صفة الصدق؟",
+      "options": [
+        "الكذب",
+        "الأمانة",
+        "الشجاعة",
+        "الكرم"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-222",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "حسب حديث علامات المنافق التلاتة، أنهي صفة من دي علامة على النفاق؟",
+      "options": [
+        "الكذب إذا حدّث",
+        "الصدق دايمًا",
+        "الوفاء بالوعد",
+        "أداء الأمانة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-223",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «الغيبة» في الإسلام معناها إيه؟",
+      "options": [
+        "ذكر أخيك بما يكره في غيابه",
+        "السفر بعيدًا",
+        "عدم حضور الصلاة",
+        "النوم أثناء النهار"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-224",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «النميمة» معناها إيه؟",
+      "options": [
+        "نقل الكلام بين الناس بقصد الإفساد بينهم",
+        "مدح الناس بصدق",
+        "الدعاء للناس",
+        "السلام على الناس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-225",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "حسب حديث جبريل الشهير، مصطلح «الإحسان» معناه إيه؟",
+      "options": [
+        "أن تعبد الله كأنك تراه، فإن لم تكن تراه فإنه يراك",
+        "الصدقة الكتيرة بس",
+        "الحج كل سنة",
+        "حفظ القرآن كامل"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-226",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "حديث جبريل المشهور بيتكلم عن كام مرتبة للدين؟",
+      "options": [
+        "3 مراتب (الإسلام والإيمان والإحسان)",
+        "5 مراتب",
+        "2 مرتبة",
+        "7 مراتب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-227",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مصطلح «الورع» في الأخلاق الإسلامية معناه إيه؟",
+      "options": [
+        "ترك ما يريب الإنسان خوفًا من الوقوع في الحرام",
+        "الزهد في الطعام بس",
+        "الصمت الدائم",
+        "السفر للحج كل سنة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-228",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «الزهد» معناه إيه؟",
+      "options": [
+        "عدم التعلق الشديد بالدنيا وملذاتها",
+        "ترك الصلاة",
+        "ترك العمل والكسب",
+        "عدم الزواج"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-229",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «الحياء» في الأخلاق الإسلامية معناه إيه؟",
+      "options": [
+        "خُلق بيمنع الإنسان من فعل القبيح",
+        "الخوف من الناس بس",
+        "السكوت الدائم",
+        "الانطواء عن الآخرين"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "is-mcq-230",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «التواضع» عكس أنهي صفة مذمومة؟",
+      "options": [
+        "الكِبر",
+        "الشجاعة",
+        "الكرم",
+        "الصبر"
+      ],
+      "correctIndex": 0
+    }
+  ]
+}

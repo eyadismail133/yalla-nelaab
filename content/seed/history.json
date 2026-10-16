@@ -1,0 +1,7373 @@
+{
+  "category": {
+    "id": "history",
+    "nameAr": "تاريخ",
+    "emoji": "🏛️"
+  },
+  "questions": [
+    {
+      "id": "hs-mcq-1",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين أول رئيس لجمهورية مصر؟",
+      "options": [
+        "جمال عبد الناصر",
+        "محمد نجيب",
+        "أنور السادات",
+        "سعد زغلول"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اللواء محمد نجيب كان أول رئيس بعد إعلان الجمهورية سنة 1953."
+    },
+    {
+      "id": "hs-mcq-2",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "قناة السويس اتفتحت في عهد مين؟",
+      "options": [
+        "محمد علي",
+        "الخديوي إسماعيل",
+        "الخديوي توفيق",
+        "عباس حلمي"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "hs-mcq-3",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "معركة حطين كانت ضد مين؟",
+      "options": [
+        "المغول",
+        "الصليبيين",
+        "الفرس",
+        "الرومان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "صلاح الدين الأيوبي كسب الصليبيين في حطين سنة 1187."
+    },
+    {
+      "id": "hs-mcq-4",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين اللي اتبنى ليه الهرم الأكبر؟",
+      "options": [
+        "خفرع",
+        "منقرع",
+        "خوفو",
+        "زوسر"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "hs-mcq-5",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين اللي فك رموز اللغة المصرية القديمة؟",
+      "options": [
+        "شامبليون",
+        "نابليون",
+        "هوارد كارتر",
+        "ماريت"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-6",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين قائد ثورة 1919 في مصر؟",
+      "options": [
+        "مصطفى كامل",
+        "سعد زغلول",
+        "أحمد عرابي",
+        "محمد فريد"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "hs-mcq-7",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "حجر رشيد مكتوب بكام خط؟",
+      "options": [
+        "خطين",
+        "٣ خطوط",
+        "٤ خطوط",
+        "خط واحد"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الهيروغليفي والديموطيقي واليوناني القديم."
+    },
+    {
+      "id": "hs-mcq-8",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين اللي اكتشف مقبرة توت عنخ آمون؟",
+      "options": [
+        "شامبليون",
+        "هوارد كارتر",
+        "زاهي حواس",
+        "فلندرز بتري"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "hs-num-1",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "ثورة يوليو كانت سنة كام؟",
+      "correctValue": 1952,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-2",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "قناة السويس اتفتحت للملاحة سنة كام؟",
+      "correctValue": 1869,
+      "tolerance": 2
+    },
+    {
+      "id": "hs-num-3",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "حرب أكتوبر كانت سنة كام؟",
+      "correctValue": 1973,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-4",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الحرب العالمية التانية خلصت سنة كام؟",
+      "correctValue": 1945,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-5",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "قناة السويس اتأمّمت سنة كام؟",
+      "correctValue": 1956,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-6",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "الهرم الأكبر ارتفاعه دلوقتي كام متر تقريبًا؟",
+      "correctValue": 139,
+      "tolerance": 6,
+      "unitAr": "متر",
+      "explanationAr": "كان حوالي 146 متر وقت البناء، وبقى حوالي 139 بعد ما اتآكلت القمة."
+    },
+    {
+      "id": "hs-bool-1",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "أهرامات الجيزة موجودة في مصر",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-2",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "كليوباترا كانت آخر حاكم للدولة البطلمية في مصر",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-3",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "حرب أكتوبر كانت سنة 1967",
+      "isTrue": false,
+      "explanationAr": "حرب أكتوبر كانت 1973، و1967 كانت النكسة."
+    },
+    {
+      "id": "hs-bool-4",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "نابليون دخل مصر سنة 1798",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-5",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "صلاح الدين الأيوبي حرر القدس من الصليبيين",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-6",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "محمد علي باشا اتلقب بمؤسس مصر الحديثة",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-7",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الحضارة الفرعونية أقدم من الحضارة الرومانية",
+      "isTrue": true
+    },
+    {
+      "id": "hs-fill-1",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "العالم اللي فك رموز حجر رشيد اسمه ____",
+      "answerAr": "شامبليون",
+      "aliases": [
+        "جان فرانسوا شامبليون"
+      ]
+    },
+    {
+      "id": "hs-fill-2",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "ثورة 23 ____ سنة 1952",
+      "answerAr": "يوليو",
+      "aliases": [
+        "يوليه"
+      ]
+    },
+    {
+      "id": "hs-fill-3",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "القائد اللي كسب الصليبيين في معركة حطين هو ____ الأيوبي",
+      "answerAr": "صلاح الدين",
+      "aliases": [
+        "صلاح الدين الأيوبي"
+      ]
+    },
+    {
+      "id": "hs-open-1",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم المركب اللي غرقت سنة 1912 في أول رحلة ليها؟",
+      "answerAr": "تيتانيك",
+      "aliases": [
+        "التيتانيك"
+      ]
+    },
+    {
+      "id": "hs-open-2",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم الحائط اللي كان بيقسم برلين؟",
+      "answerAr": "حائط برلين",
+      "aliases": [
+        "سور برلين",
+        "جدار برلين"
+      ]
+    },
+    {
+      "id": "hs-prog-1",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا قائد مسلم",
+        "حاربت الصليبيين",
+        "حررت القدس بعد معركة حطين"
+      ],
+      "answerAr": "صلاح الدين",
+      "aliases": [
+        "صلاح الدين الأيوبي"
+      ]
+    },
+    {
+      "id": "hs-prog-2",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا ملكة حكمت مصر",
+        "كنت آخر حكام البطالمة",
+        "ارتبط اسمي بيوليوس قيصر"
+      ],
+      "answerAr": "كليوباترا",
+      "aliases": [
+        "كليوباترة"
+      ]
+    },
+    {
+      "id": "hs-ord-1",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّبهم من الأقدم للأحدث",
+      "items": [
+        "ثورة يوليو",
+        "تأميم قناة السويس",
+        "النكسة",
+        "حرب أكتوبر"
+      ],
+      "labels": [
+        "1952",
+        "1956",
+        "1967",
+        "1973"
+      ]
+    },
+    {
+      "id": "hs-ord-2",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّبهم من الأقدم للأحدث",
+      "items": [
+        "بناء الهرم الأكبر",
+        "حكم كليوباترا",
+        "الفتح الإسلامي لمصر",
+        "حملة نابليون"
+      ],
+      "labels": [
+        "~2560 ق.م",
+        "51 ق.م",
+        "641 م",
+        "1798 م"
+      ]
+    },
+    {
+      "id": "hs-mcq-9",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الحرب العالمية الأولى بدأت سنة كام؟",
+      "options": [
+        "1912",
+        "1914",
+        "1918",
+        "1920"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بدأت سنة 1914 وخلصت سنة 1918."
+    },
+    {
+      "id": "hs-mcq-10",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين أول رئيس لأمريكا؟",
+      "options": [
+        "توماس جيفرسون",
+        "جورج واشنطن",
+        "أبراهام لينكولن",
+        "بنجامين فرانكلين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "جورج واشنطن اتولى الرئاسة سنة 1789."
+    },
+    {
+      "id": "hs-mcq-11",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الأهرامات اتبنت في عهد أنهي حضارة؟",
+      "options": [
+        "الرومانية",
+        "اليونانية",
+        "المصرية القديمة",
+        "الفارسية"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "الأهرامات من أعظم إنجازات المصريين القدماء."
+    },
+    {
+      "id": "hs-mcq-12",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مدينة القاهرة اتأسست في عهد أنهي دولة؟",
+      "options": [
+        "الأيوبية",
+        "الفاطمية",
+        "المملوكية",
+        "العثمانية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "جوهر الصقلي أسسها للفاطميين سنة 969."
+    },
+    {
+      "id": "hs-mcq-13",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين القائد اللي أسس مدينة القاهرة؟",
+      "options": [
+        "عمرو بن العاص",
+        "جوهر الصقلي",
+        "صلاح الدين",
+        "المعز لدين الله"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "جوهر الصقلي قائد جيش المعز لدين الله."
+    },
+    {
+      "id": "hs-mcq-14",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الجيش اللي فتح مصر في العصر الإسلامي كان بقيادة مين؟",
+      "options": [
+        "خالد بن الوليد",
+        "عمرو بن العاص",
+        "سعد بن أبي وقاص",
+        "أبو عبيدة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عمرو بن العاص فتح مصر وأسس الفسطاط."
+    },
+    {
+      "id": "hs-mcq-15",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "معركة عين جالوت كانت ضد مين؟",
+      "options": [
+        "الصليبيين",
+        "المغول",
+        "الرومان",
+        "الفرس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "المماليك وقفوا زحف المغول في عين جالوت سنة 1260."
+    },
+    {
+      "id": "hs-mcq-16",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين القائد المملوكي اللي كسب المغول في عين جالوت؟",
+      "options": [
+        "قطز",
+        "بيبرس",
+        "قلاوون",
+        "برقوق"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "السلطان قطز قاد المعركة ومعاه بيبرس."
+    },
+    {
+      "id": "hs-mcq-17",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي حضارة بنت الكولوسيوم في روما؟",
+      "options": [
+        "اليونانية",
+        "الرومانية",
+        "الفارسية",
+        "البيزنطية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الكولوسيوم من أشهر آثار الإمبراطورية الرومانية."
+    },
+    {
+      "id": "hs-mcq-18",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "سور الصين العظيم اتبنى في أنهي دولة؟",
+      "options": [
+        "اليابان",
+        "الصين",
+        "منغوليا",
+        "كوريا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اتبنى على مراحل عبر قرون طويلة لحماية الحدود."
+    },
+    {
+      "id": "hs-mcq-19",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين مؤسس الدولة الأيوبية؟",
+      "options": [
+        "نور الدين زنكي",
+        "صلاح الدين الأيوبي",
+        "العادل",
+        "الكامل"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "صلاح الدين أسسها بعد نهاية الدولة الفاطمية."
+    },
+    {
+      "id": "hs-mcq-20",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الرئيس المصري اللي أمّم قناة السويس؟",
+      "options": [
+        "محمد نجيب",
+        "جمال عبد الناصر",
+        "أنور السادات",
+        "حسني مبارك"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عبد الناصر أعلن التأميم سنة 1956."
+    },
+    {
+      "id": "hs-mcq-21",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الرئيس المصري اللي كانت حرب أكتوبر في عهده؟",
+      "options": [
+        "محمد نجيب",
+        "جمال عبد الناصر",
+        "أنور السادات",
+        "حسني مبارك"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "حرب أكتوبر 1973 كانت في عهد السادات."
+    },
+    {
+      "id": "hs-mcq-22",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي مدينة اتضربت بأول قنبلة ذرية في التاريخ؟",
+      "options": [
+        "ناجازاكي",
+        "هيروشيما",
+        "طوكيو",
+        "أوساكا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "هيروشيما اتضربت في أغسطس 1945، وبعدها ناجازاكي."
+    },
+    {
+      "id": "hs-mcq-23",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الثورة الفرنسية بدأت سنة كام؟",
+      "options": [
+        "1776",
+        "1789",
+        "1804",
+        "1815"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اقتحام الباستيل سنة 1789 هو بداية الثورة."
+    },
+    {
+      "id": "hs-mcq-24",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين اللي اخترع المطبعة بالحروف المتحركة في أوروبا؟",
+      "options": [
+        "جوتنبرج",
+        "جاليليو",
+        "نيوتن",
+        "دافنشي"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "يوهانس جوتنبرج غيّر شكل نشر المعرفة في العالم."
+    },
+    {
+      "id": "hs-mcq-25",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين المستكشف اللي وصل لأمريكا سنة 1492؟",
+      "options": [
+        "ماجلان",
+        "كولومبوس",
+        "فاسكو دي جاما",
+        "أميريجو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "كريستوفر كولومبوس عبر الأطلنطي سنة 1492."
+    },
+    {
+      "id": "hs-mcq-26",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مدينة الفسطاط اتأسست على إيد مين؟",
+      "options": [
+        "جوهر الصقلي",
+        "عمرو بن العاص",
+        "أحمد بن طولون",
+        "صلاح الدين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الفسطاط كانت أول عاصمة إسلامية لمصر."
+    },
+    {
+      "id": "hs-mcq-27",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الحضارة اللي اخترعت الكتابة المسمارية إيه؟",
+      "options": [
+        "المصرية القديمة",
+        "السومرية",
+        "الصينية",
+        "الرومانية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "السومريين في بلاد الرافدين اخترعوا الكتابة المسمارية."
+    },
+    {
+      "id": "hs-mcq-28",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "مين الحاكم اللي اتنسبت ليه أقدم مسلة قوانين مكتوبة؟",
+      "options": [
+        "حمورابي",
+        "نبوخذ نصر",
+        "سرجون",
+        "آشور بانيبال"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "مسلة حمورابي من أشهر النصوص القانونية القديمة."
+    },
+    {
+      "id": "hs-mcq-29",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الاتحاد السوفيتي اتفكك في أنهي عقد؟",
+      "options": [
+        "السبعينات",
+        "الثمانينات",
+        "التسعينات",
+        "الألفينات"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "اتفكك سنة 1991 في بداية التسعينات."
+    },
+    {
+      "id": "hs-mcq-30",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي مبنى في مصر معروف باسم «قلعة صلاح الدين»؟",
+      "options": [
+        "مبنى في الإسكندرية",
+        "قلعة في القاهرة",
+        "حصن في أسوان",
+        "برج في بورسعيد"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "القلعة بناها صلاح الدين على جبل المقطم بالقاهرة."
+    },
+    {
+      "id": "hs-bool-8",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الحرب العالمية الأولى بدأت سنة 1914",
+      "isTrue": true,
+      "explanationAr": "واستمرت لحد سنة 1918."
+    },
+    {
+      "id": "hs-bool-9",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "جورج واشنطن أول رئيس لأمريكا",
+      "isTrue": true,
+      "explanationAr": "اتولى الرئاسة سنة 1789."
+    },
+    {
+      "id": "hs-bool-10",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "مدينة القاهرة اتأسست في العصر العثماني",
+      "isTrue": false,
+      "explanationAr": "اتأسست في العصر الفاطمي سنة 969."
+    },
+    {
+      "id": "hs-bool-11",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "معركة عين جالوت كانت ضد المغول",
+      "isTrue": true,
+      "explanationAr": "المماليك وقفوا زحف المغول سنة 1260."
+    },
+    {
+      "id": "hs-bool-12",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "عمرو بن العاص هو اللي فتح مصر في العصر الإسلامي",
+      "isTrue": true,
+      "explanationAr": "وأسس مدينة الفسطاط."
+    },
+    {
+      "id": "hs-bool-13",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الكولوسيوم مبنى روماني",
+      "isTrue": true,
+      "explanationAr": "من أشهر آثار روما القديمة."
+    },
+    {
+      "id": "hs-bool-14",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "سور الصين العظيم موجود في اليابان",
+      "isTrue": false,
+      "explanationAr": "موجود في الصين زي ما اسمه بيقول."
+    },
+    {
+      "id": "hs-bool-15",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الثورة الفرنسية بدأت سنة 1789",
+      "isTrue": true,
+      "explanationAr": "باقتحام سجن الباستيل."
+    },
+    {
+      "id": "hs-bool-16",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "كولومبوس وصل لأمريكا سنة 1492",
+      "isTrue": true,
+      "explanationAr": "أول رحلاته عبر المحيط الأطلنطي."
+    },
+    {
+      "id": "hs-bool-17",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "أول قنبلة ذرية في التاريخ اتضربت على طوكيو",
+      "isTrue": false,
+      "explanationAr": "اتضربت على هيروشيما سنة 1945."
+    },
+    {
+      "id": "hs-bool-18",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "الكتابة المسمارية اخترعها المصريون القدماء",
+      "isTrue": false,
+      "explanationAr": "اخترعها السومريون، والمصريين كتبوا بالهيروغليفية."
+    },
+    {
+      "id": "hs-bool-19",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "جمال عبد الناصر هو اللي أمّم قناة السويس",
+      "isTrue": true,
+      "explanationAr": "أعلن التأميم سنة 1956."
+    },
+    {
+      "id": "hs-bool-20",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الاتحاد السوفيتي اتفكك سنة 1991",
+      "isTrue": true,
+      "explanationAr": "وانتهت معاه الحرب الباردة."
+    },
+    {
+      "id": "hs-bool-21",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "قلعة صلاح الدين موجودة في القاهرة",
+      "isTrue": true,
+      "explanationAr": "على جبل المقطم، بناها صلاح الدين للدفاع عن المدينة."
+    },
+    {
+      "id": "hs-bool-22",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "الفسطاط كانت أول عاصمة إسلامية لمصر",
+      "isTrue": true,
+      "explanationAr": "قبل العسكر والقطائع والقاهرة."
+    },
+    {
+      "id": "hs-bool-23",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "المطبعة اخترعها جاليليو",
+      "isTrue": false,
+      "explanationAr": "جوتنبرج هو اللي عمل المطبعة بالحروف المتحركة."
+    },
+    {
+      "id": "hs-bool-24",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "حرب أكتوبر كانت في عهد الرئيس السادات",
+      "isTrue": true,
+      "explanationAr": "سنة 1973."
+    },
+    {
+      "id": "hs-num-7",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الحرب العالمية الأولى بدأت سنة كام؟",
+      "correctValue": 1914,
+      "tolerance": 0,
+      "explanationAr": "واستمرت أربع سنين."
+    },
+    {
+      "id": "hs-num-8",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الثورة الفرنسية بدأت سنة كام؟",
+      "correctValue": 1789,
+      "tolerance": 0,
+      "explanationAr": "باقتحام الباستيل في 14 يوليو."
+    },
+    {
+      "id": "hs-num-9",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "كولومبوس وصل لأمريكا سنة كام؟",
+      "correctValue": 1492,
+      "tolerance": 0,
+      "explanationAr": "في رحلته الأولى عبر الأطلنطي."
+    },
+    {
+      "id": "hs-num-10",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "مدينة القاهرة اتأسست سنة كام؟",
+      "correctValue": 969,
+      "tolerance": 2,
+      "explanationAr": "أسسها جوهر الصقلي للفاطميين."
+    },
+    {
+      "id": "hs-num-11",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "معركة عين جالوت كانت سنة كام؟",
+      "correctValue": 1260,
+      "tolerance": 2,
+      "explanationAr": "المماليك أوقفوا زحف المغول."
+    },
+    {
+      "id": "hs-num-12",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "الاتحاد السوفيتي اتفكك سنة كام؟",
+      "correctValue": 1991,
+      "tolerance": 0,
+      "explanationAr": "ودي نهاية الحرب الباردة."
+    },
+    {
+      "id": "hs-num-13",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "معركة حطين كانت سنة كام؟",
+      "correctValue": 1187,
+      "tolerance": 3,
+      "explanationAr": "وبعدها حرر صلاح الدين القدس."
+    },
+    {
+      "id": "hs-num-14",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الحرب العالمية التانية بدأت سنة كام؟",
+      "correctValue": 1939,
+      "tolerance": 0,
+      "explanationAr": "بغزو ألمانيا لبولندا."
+    },
+    {
+      "id": "hs-num-15",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "الهرم الأكبر اتبنى من كام سنة تقريبًا؟",
+      "correctValue": 4500,
+      "tolerance": 500,
+      "unitAr": "سنة",
+      "explanationAr": "اتبنى في عهد الملك خوفو من حوالي 4500 سنة."
+    },
+    {
+      "id": "hs-fill-4",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "القائد اللي فتح مصر في العصر الإسلامي هو عمرو بن ____",
+      "answerAr": "العاص",
+      "aliases": [
+        "عاص"
+      ],
+      "explanationAr": "وأسس مدينة الفسطاط."
+    },
+    {
+      "id": "hs-fill-5",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "مدينة القاهرة أسسها القائد جوهر ____",
+      "answerAr": "الصقلي",
+      "aliases": [
+        "صقلي"
+      ],
+      "explanationAr": "كان قائد جيش المعز لدين الله الفاطمي."
+    },
+    {
+      "id": "hs-fill-6",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "المماليك أوقفوا زحف المغول في معركة عين ____",
+      "answerAr": "جالوت",
+      "aliases": [
+        "جالوت "
+      ],
+      "explanationAr": "المعركة كانت سنة 1260."
+    },
+    {
+      "id": "hs-fill-7",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أول رئيس لأمريكا اسمه جورج ____",
+      "answerAr": "واشنطن",
+      "aliases": [
+        "واشنجتن",
+        "واشنطون"
+      ],
+      "explanationAr": "العاصمة اتسمّت على اسمه."
+    },
+    {
+      "id": "hs-fill-8",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "المستكشف اللي وصل لأمريكا سنة 1492 اسمه كريستوفر ____",
+      "answerAr": "كولومبوس",
+      "aliases": [
+        "كولومبس",
+        "كولمبوس"
+      ],
+      "explanationAr": "أبحر من إسبانيا وعبر الأطلنطي."
+    },
+    {
+      "id": "hs-fill-9",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "أول قنبلة ذرية في التاريخ اتضربت على مدينة ____",
+      "answerAr": "هيروشيما",
+      "aliases": [
+        "هيروشيمة"
+      ],
+      "explanationAr": "في أغسطس سنة 1945."
+    },
+    {
+      "id": "hs-fill-10",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الرئيس المصري اللي أمّم قناة السويس هو جمال عبد ____",
+      "answerAr": "الناصر",
+      "aliases": [
+        "ناصر",
+        "عبد الناصر"
+      ],
+      "explanationAr": "التأميم كان سنة 1956."
+    },
+    {
+      "id": "hs-fill-11",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "الكتابة المسمارية اخترعها ____ في بلاد الرافدين",
+      "answerAr": "السومريون",
+      "aliases": [
+        "السومريين",
+        "سومر"
+      ],
+      "explanationAr": "من أقدم أنظمة الكتابة في التاريخ."
+    },
+    {
+      "id": "hs-fill-12",
+      "shape": "fill_blank",
+      "difficulty": 5,
+      "textAr": "أقدم مسلة قوانين مكتوبة منسوبة للملك ____",
+      "answerAr": "حمورابي",
+      "aliases": [
+        "حامورابي"
+      ],
+      "explanationAr": "حاكم بابل، ومسلته محفوظة لحد دلوقتي."
+    },
+    {
+      "id": "hs-fill-13",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "أول عاصمة إسلامية لمصر كانت مدينة ____",
+      "answerAr": "الفسطاط",
+      "aliases": [
+        "فسطاط"
+      ],
+      "explanationAr": "أسسها عمرو بن العاص بعد الفتح."
+    },
+    {
+      "id": "hs-fill-14",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "مؤسس الدولة الأيوبية هو ____ الأيوبي",
+      "answerAr": "صلاح الدين",
+      "aliases": [
+        "صلاح",
+        "صلاح الدين يوسف"
+      ],
+      "explanationAr": "أسسها بعد نهاية الدولة الفاطمية."
+    },
+    {
+      "id": "hs-fill-15",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "المطبعة بالحروف المتحركة في أوروبا اخترعها يوهانس ____",
+      "answerAr": "جوتنبرج",
+      "aliases": [
+        "جوتنبرغ",
+        "غوتنبرغ",
+        "جوتنبيرج"
+      ],
+      "explanationAr": "اختراعه غيّر شكل انتشار المعرفة."
+    },
+    {
+      "id": "hs-open-3",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين القائد اللي فتح مصر في العصر الإسلامي؟",
+      "answerAr": "عمرو بن العاص",
+      "aliases": [
+        "عمرو ابن العاص",
+        "ابن العاص"
+      ],
+      "explanationAr": "وأسس مدينة الفسطاط بعد الفتح."
+    },
+    {
+      "id": "hs-open-4",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين أول رئيس لأمريكا؟",
+      "answerAr": "جورج واشنطن",
+      "aliases": [
+        "واشنطن",
+        "واشنجتن"
+      ],
+      "explanationAr": "اتولى الرئاسة سنة 1789."
+    },
+    {
+      "id": "hs-open-5",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين المستكشف اللي عبر الأطلنطي ووصل أمريكا سنة 1492؟",
+      "answerAr": "كولومبوس",
+      "aliases": [
+        "كريستوفر كولومبوس",
+        "كولومبس"
+      ],
+      "explanationAr": "أبحر من إسبانيا بتمويل من الملكة إيزابيلا."
+    },
+    {
+      "id": "hs-open-6",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم المعركة اللي أوقف فيها المماليك زحف المغول؟",
+      "answerAr": "عين جالوت",
+      "aliases": [
+        "معركة عين جالوت"
+      ],
+      "explanationAr": "سنة 1260 في فلسطين."
+    },
+    {
+      "id": "hs-open-7",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم أول عاصمة إسلامية لمصر؟",
+      "answerAr": "الفسطاط",
+      "aliases": [
+        "فسطاط"
+      ],
+      "explanationAr": "قبل العسكر والقطائع والقاهرة."
+    },
+    {
+      "id": "hs-open-8",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "أنهي مدينة يابانية اتضربت بأول قنبلة ذرية؟",
+      "answerAr": "هيروشيما",
+      "aliases": [
+        "هيروشيمة"
+      ],
+      "explanationAr": "في أغسطس 1945."
+    },
+    {
+      "id": "hs-open-9",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الرئيس المصري اللي أمّم قناة السويس؟",
+      "answerAr": "جمال عبد الناصر",
+      "aliases": [
+        "عبد الناصر",
+        "ناصر"
+      ],
+      "explanationAr": "التأميم كان سنة 1956."
+    },
+    {
+      "id": "hs-open-10",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "مين القائد اللي أسس مدينة القاهرة؟",
+      "answerAr": "جوهر الصقلي",
+      "aliases": [
+        "الصقلي",
+        "جوهر"
+      ],
+      "explanationAr": "أسسها سنة 969 للفاطميين."
+    },
+    {
+      "id": "hs-open-11",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "مين مؤسس الدولة الأيوبية؟",
+      "answerAr": "صلاح الدين",
+      "aliases": [
+        "صلاح الدين الأيوبي",
+        "صلاح"
+      ],
+      "explanationAr": "أسسها بعد نهاية الدولة الفاطمية."
+    },
+    {
+      "id": "hs-open-12",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "مين اللي اخترع المطبعة بالحروف المتحركة في أوروبا؟",
+      "answerAr": "جوتنبرج",
+      "aliases": [
+        "يوهانس جوتنبرج",
+        "جوتنبرغ",
+        "غوتنبرغ"
+      ],
+      "explanationAr": "اختراعه في القرن الخمستاشر."
+    },
+    {
+      "id": "hs-prog-3",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مدينة عربية",
+        "اتأسست في القرن العاشر الميلادي",
+        "عاصمة مصر ومن ألقابها «المعزية» و«مدينة الألف مئذنة»"
+      ],
+      "answerAr": "القاهرة",
+      "aliases": [
+        "قاهرة",
+        "مصر القاهرة"
+      ],
+      "explanationAr": "أسسها جوهر الصقلي سنة 969."
+    },
+    {
+      "id": "hs-prog-4",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا قائد عربي مسلم",
+        "قدت جيش على مصر في القرن السابع الميلادي",
+        "أسست مدينة الفسطاط بعد ما فتحت مصر"
+      ],
+      "answerAr": "عمرو بن العاص",
+      "aliases": [
+        "ابن العاص",
+        "عمرو"
+      ],
+      "explanationAr": "أول والي مسلم على مصر."
+    },
+    {
+      "id": "hs-prog-5",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مبنى ضخم من العالم القديم",
+        "اتبنيت من ملايين الكتل الحجرية",
+        "أشهر مقبرة ملكية في الجيزة واتبنيت للملك خوفو"
+      ],
+      "answerAr": "الهرم الأكبر",
+      "aliases": [
+        "هرم خوفو",
+        "الهرم"
+      ],
+      "explanationAr": "الوحيد الباقي من عجايب الدنيا السبع القديمة."
+    },
+    {
+      "id": "hs-prog-6",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا حرب استمرت 6 سنين",
+        "اشتركت فيها معظم دول العالم",
+        "بدأت سنة 1939 وخلصت سنة 1945"
+      ],
+      "answerAr": "الحرب العالمية التانية",
+      "aliases": [
+        "الحرب العالمية الثانية",
+        "الحرب العالميه التانيه"
+      ],
+      "explanationAr": "أكبر صراع في تاريخ البشرية."
+    },
+    {
+      "id": "hs-prog-7",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا سلطان مملوكي",
+        "حكمت مصر لفترة قصيرة",
+        "قدت المسلمين في عين جالوت وأوقفت زحف المغول"
+      ],
+      "answerAr": "قطز",
+      "aliases": [
+        "سيف الدين قطز",
+        "المظفر قطز"
+      ],
+      "explanationAr": "معركة عين جالوت غيّرت مسار التاريخ."
+    },
+    {
+      "id": "hs-prog-8",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا ممر مائي من صنع الإنسان",
+        "افتتحت للملاحة في القرن التسعتاشر",
+        "بختصر الطريق بين أوروبا وآسيا وبمر في مصر"
+      ],
+      "answerAr": "قناة السويس",
+      "aliases": [
+        "السويس",
+        "قناه السويس"
+      ],
+      "explanationAr": "اتفتحت سنة 1869 في عهد الخديوي إسماعيل."
+    },
+    {
+      "id": "hs-prog-9",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا مستكشف من القرن الخمستاشر",
+        "أبحرت بتمويل من مملكة إسبانيا",
+        "وصلت لأمريكا سنة 1492 وأنا فاكر إني في الهند"
+      ],
+      "answerAr": "كولومبوس",
+      "aliases": [
+        "كريستوفر كولومبوس",
+        "كولومبس"
+      ],
+      "explanationAr": "من هنا جه اسم «الهنود الحمر»."
+    },
+    {
+      "id": "hs-prog-10",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا حجر أثري اتلقيت في مصر",
+        "عليّا نص مكتوب بأكتر من خط",
+        "بفضلي اتفكّت رموز اللغة المصرية القديمة"
+      ],
+      "answerAr": "حجر رشيد",
+      "aliases": [
+        "رشيد",
+        "حجر رشيدة"
+      ],
+      "explanationAr": "شامبليون استخدمه في فك رموز الهيروغليفية."
+    },
+    {
+      "id": "hs-ord-3",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الأحداث المصرية دي من الأقدم للأحدث",
+      "items": [
+        "افتتاح قناة السويس",
+        "ثورة 1919",
+        "ثورة يوليو",
+        "حرب أكتوبر"
+      ],
+      "labels": [
+        "1869",
+        "1919",
+        "1952",
+        "1973"
+      ],
+      "explanationAr": "أربع محطات فاصلة في تاريخ مصر الحديث."
+    },
+    {
+      "id": "hs-ord-4",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الأحداث العالمية دي من الأقدم للأحدث",
+      "items": [
+        "الثورة الفرنسية",
+        "الحرب العالمية الأولى",
+        "الحرب العالمية التانية",
+        "تفكك الاتحاد السوفيتي"
+      ],
+      "labels": [
+        "1789",
+        "1914",
+        "1939",
+        "1991"
+      ],
+      "explanationAr": "قرنين من التاريخ في أربع محطات."
+    },
+    {
+      "id": "hs-ord-5",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الدول اللي حكمت مصر دي من الأقدم للأحدث",
+      "items": [
+        "الفاطمية",
+        "الأيوبية",
+        "المملوكية",
+        "العثمانية"
+      ],
+      "labels": [],
+      "explanationAr": "كل دولة جت بعد اللي قبلها على طول."
+    },
+    {
+      "id": "hs-ord-6",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب عواصم مصر الإسلامية دي من الأقدم للأحدث",
+      "items": [
+        "الفسطاط",
+        "العسكر",
+        "القطائع",
+        "القاهرة"
+      ],
+      "labels": [],
+      "explanationAr": "كل عاصمة اتبنت جنب اللي قبلها."
+    },
+    {
+      "id": "hs-ord-7",
+      "shape": "ordering",
+      "difficulty": 5,
+      "textAr": "رتّب المعارك دي من الأقدم للأحدث",
+      "items": [
+        "حطين",
+        "عين جالوت",
+        "الجزائر الحديثة"
+      ],
+      "labels": [
+        "1187",
+        "1260",
+        "الحديث"
+      ],
+      "explanationAr": "حطين وعين جالوت بينهم أقل من قرن."
+    },
+    {
+      "id": "hs-ord-8",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب رؤساء مصر دول بالترتيب الزمني",
+      "items": [
+        "محمد نجيب",
+        "جمال عبد الناصر",
+        "أنور السادات",
+        "حسني مبارك"
+      ],
+      "labels": [],
+      "explanationAr": "أول أربع رؤساء للجمهورية بالترتيب."
+    },
+    {
+      "id": "hs-ord-9",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الحضارات دي من الأقدم للأحدث",
+      "items": [
+        "المصرية القديمة",
+        "اليونانية",
+        "الرومانية",
+        "الإسلامية"
+      ],
+      "labels": [],
+      "explanationAr": "كل حضارة بنت على اللي قبلها."
+    },
+    {
+      "id": "hs-ord-10",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب العصور التاريخية دي من الأقدم للأحدث",
+      "items": [
+        "العصر الحجري",
+        "العصر البرونزي",
+        "العصر الحديدي",
+        "العصر الحديث"
+      ],
+      "labels": [],
+      "explanationAr": "التقسيم ده على أساس المواد اللي الإنسان استعملها."
+    },
+    {
+      "id": "hs-mcq-31",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الملك اللي تنازل عن العرش بعد ثورة يوليو 1952؟",
+      "options": [
+        "فؤاد الأول",
+        "فاروق",
+        "عباس حلمي",
+        "توفيق"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الملك فاروق سافر لإيطاليا بعد التنازل."
+    },
+    {
+      "id": "hs-mcq-32",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الأسرة اللي حكمت مصر قبل ثورة يوليو أسسها مين؟",
+      "options": [
+        "أحمد عرابي",
+        "محمد علي",
+        "إسماعيل",
+        "سعيد"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "محمد علي باشا، مؤسس مصر الحديثة."
+    },
+    {
+      "id": "hs-mcq-33",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "حدائق بابل المعلقة كانت في أنهي بلد حاليًا؟",
+      "options": [
+        "سوريا",
+        "العراق",
+        "إيران",
+        "تركيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بابل كانت جنوب بغداد الحالية."
+    },
+    {
+      "id": "hs-mcq-34",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الملك اللي بنى معبد أبو سمبل؟",
+      "options": [
+        "توت عنخ آمون",
+        "رمسيس التاني",
+        "أخناتون",
+        "خوفو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ونقل المعبد كامل في الستينات عشان السد العالي."
+    },
+    {
+      "id": "hs-mcq-35",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين الملك الفرعوني اللي دعا لعبادة إله واحد؟",
+      "options": [
+        "رمسيس التاني",
+        "أخناتون",
+        "تحتمس",
+        "مينا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أخناتون دعا لعبادة آتون ونقل العاصمة."
+    },
+    {
+      "id": "hs-mcq-36",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الملكة الفرعونية اللي حكمت مصر ولبست لحية الملوك؟",
+      "options": [
+        "نفرتيتي",
+        "حتشبسوت",
+        "كليوباترا",
+        "نفرتاري"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "معبدها في الدير البحري بالأقصر."
+    },
+    {
+      "id": "hs-mcq-37",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "مين اللي وحّد الوجهين القبلي والبحري في مصر القديمة؟",
+      "options": [
+        "خوفو",
+        "مينا",
+        "زوسر",
+        "رمسيس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الملك مينا، وبيسموه نارمر كمان."
+    },
+    {
+      "id": "hs-mcq-38",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الهرم المدرج في سقارة اتبنى لأنهي ملك؟",
+      "options": [
+        "خوفو",
+        "زوسر",
+        "خفرع",
+        "منقرع"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أقدم بناء حجري ضخم في التاريخ."
+    },
+    {
+      "id": "hs-mcq-39",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "مين المهندس اللي بنى الهرم المدرج؟",
+      "options": [
+        "سنموت",
+        "إيمحوتب",
+        "حميونو",
+        "رع حتب"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "إيمحوتب اتعبد بعد كده كإله للطب."
+    },
+    {
+      "id": "hs-mcq-40",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي معركة انتصر فيها المسلمين على الفرس؟",
+      "options": [
+        "اليرموك",
+        "القادسية",
+        "حطين",
+        "عين جالوت"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "القادسية فتحت الطريق للعراق وفارس."
+    },
+    {
+      "id": "hs-mcq-41",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي معركة انتصر فيها المسلمين على الروم في الشام؟",
+      "options": [
+        "القادسية",
+        "اليرموك",
+        "بدر",
+        "الخندق"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اليرموك حسمت مصير بلاد الشام."
+    },
+    {
+      "id": "hs-mcq-42",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "عاصمة الدولة الأموية كانت فين؟",
+      "options": [
+        "بغداد",
+        "دمشق",
+        "القاهرة",
+        "الكوفة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "دمشق كانت مركز الخلافة الأموية."
+    },
+    {
+      "id": "hs-mcq-43",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "عاصمة الدولة العباسية كانت فين؟",
+      "options": [
+        "دمشق",
+        "بغداد",
+        "القاهرة",
+        "قرطبة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بغداد اتبنت خصيصًا كعاصمة للعباسيين."
+    },
+    {
+      "id": "hs-mcq-44",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«الأندلس» هو الاسم القديم لأنهي منطقة؟",
+      "options": [
+        "جنوب فرنسا",
+        "إسبانيا والبرتغال",
+        "شمال المغرب",
+        "جنوب إيطاليا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "شبه الجزيرة الإيبيرية."
+    },
+    {
+      "id": "hs-mcq-45",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "قصر الحمراء الأندلسي موجود في أنهي مدينة؟",
+      "options": [
+        "قرطبة",
+        "غرناطة",
+        "إشبيلية",
+        "طليطلة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "آخر معاقل المسلمين في الأندلس."
+    },
+    {
+      "id": "hs-mcq-46",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين القائد المسلم اللي عبر بالجيش لإسبانيا؟",
+      "options": [
+        "موسى بن نصير",
+        "طارق بن زياد",
+        "عبد الرحمن الداخل",
+        "يوسف بن تاشفين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وجبل طارق اتسمى على اسمه."
+    },
+    {
+      "id": "hs-mcq-47",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "مين مؤسس الدولة الأموية في الأندلس؟",
+      "options": [
+        "طارق بن زياد",
+        "عبد الرحمن الداخل",
+        "المنصور",
+        "الحكم المستنصر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "هرب من الشام وأسس دولة في قرطبة."
+    },
+    {
+      "id": "hs-mcq-48",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الحرب العالمية الأولى انتهت بمعاهدة اسمها إيه؟",
+      "options": [
+        "فرساي",
+        "سايكس بيكو",
+        "لوزان",
+        "وستفاليا"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "اتوقعت في قصر فرساي سنة 1919."
+    },
+    {
+      "id": "hs-mcq-49",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "اتفاقية «سايكس بيكو» كانت بين أنهي دولتين؟",
+      "options": [
+        "بريطانيا وألمانيا",
+        "بريطانيا وفرنسا",
+        "فرنسا وروسيا",
+        "أمريكا وبريطانيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "قسّموا بيها المشرق العربي بينهم."
+    },
+    {
+      "id": "hs-mcq-50",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الثورة الصناعية بدأت في أنهي دولة؟",
+      "options": [
+        "فرنسا",
+        "بريطانيا",
+        "ألمانيا",
+        "أمريكا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ومنها انتشرت لباقي أوروبا."
+    },
+    {
+      "id": "hs-mcq-51",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي اختراع كان محرّك أساسي للثورة الصناعية؟",
+      "options": [
+        "المحرك الكهربائي",
+        "الآلة البخارية",
+        "المطبعة",
+        "التلغراف"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "غيّرت المصانع والقطارات والسفن."
+    },
+    {
+      "id": "hs-mcq-52",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الحرب الباردة كانت بين مين ومين؟",
+      "options": [
+        "أمريكا والصين",
+        "أمريكا والاتحاد السوفيتي",
+        "بريطانيا وألمانيا",
+        "فرنسا وروسيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "صراع من غير مواجهة عسكرية مباشرة."
+    },
+    {
+      "id": "hs-mcq-53",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "حائط برلين اتهد في أنهي سنة؟",
+      "options": [
+        "1985",
+        "1989",
+        "1991",
+        "1993"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وبعده بسنتين اتفكك الاتحاد السوفيتي."
+    },
+    {
+      "id": "hs-mcq-54",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين المستكشف اللي وصل للهند بحرًا حوالين أفريقيا؟",
+      "options": [
+        "كولومبوس",
+        "فاسكو دي جاما",
+        "ماجلان",
+        "ماركو بولو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "لف حوالين رأس الرجاء الصالح."
+    },
+    {
+      "id": "hs-mcq-55",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الرحّالة المسلم اللي طاف العالم وكتب رحلته؟",
+      "options": [
+        "ابن خلدون",
+        "ابن بطوطة",
+        "الإدريسي",
+        "المسعودي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "سافر حوالي تلاتين سنة."
+    },
+    {
+      "id": "hs-mcq-56",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين اللي كتب «المقدمة» وبيتحسب مؤسس علم الاجتماع؟",
+      "options": [
+        "ابن سينا",
+        "ابن خلدون",
+        "الفارابي",
+        "ابن رشد"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "كتاب سابق عصره بقرون."
+    },
+    {
+      "id": "hs-mcq-57",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين العالم المسلم اللي كتب «القانون في الطب»؟",
+      "options": [
+        "الرازي",
+        "ابن سينا",
+        "ابن النفيس",
+        "الزهراوي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اتدرّس في جامعات أوروبا قرون طويلة."
+    },
+    {
+      "id": "hs-mcq-58",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "مين العالم المسلم اللي وصف الدورة الدموية الصغرى؟",
+      "options": [
+        "ابن سينا",
+        "ابن النفيس",
+        "الرازي",
+        "الزهراوي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "سبق الأوروبيين بقرون في الوصف ده."
+    },
+    {
+      "id": "hs-mcq-59",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الإمبراطورية العثمانية سقطت بعد أنهي حرب؟",
+      "options": [
+        "الحرب العالمية الأولى",
+        "الحرب العالمية التانية",
+        "حرب القرم",
+        "الحروب الصليبية"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "وبعدها قامت الجمهورية التركية."
+    },
+    {
+      "id": "hs-mcq-60",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين اللي أسس الجمهورية التركية؟",
+      "options": [
+        "عبد الحميد التاني",
+        "مصطفى كمال أتاتورك",
+        "أنور باشا",
+        "عصمت إينونو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "سنة 1923 بعد سقوط الدولة العثمانية."
+    },
+    {
+      "id": "hs-bool-25",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "رمسيس التاني هو اللي بنى معبد أبو سمبل",
+      "isTrue": true,
+      "explanationAr": "والمعبد اتنقل كامل في الستينات."
+    },
+    {
+      "id": "hs-bool-26",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "أخناتون دعا لعبادة إله واحد",
+      "isTrue": true,
+      "explanationAr": "ونقل العاصمة لتل العمارنة."
+    },
+    {
+      "id": "hs-bool-27",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "حتشبسوت كانت ملكة حكمت مصر القديمة",
+      "isTrue": true,
+      "explanationAr": "ومعبدها في الدير البحري."
+    },
+    {
+      "id": "hs-bool-28",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "الهرم المدرج في سقارة اتبنى للملك خوفو",
+      "isTrue": false,
+      "explanationAr": "اتبنى للملك زوسر، وخوفو صاحب الهرم الأكبر."
+    },
+    {
+      "id": "hs-bool-29",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "إيمحوتب هو مهندس الهرم المدرج",
+      "isTrue": true,
+      "explanationAr": "واتعبد بعد كده كإله للطب."
+    },
+    {
+      "id": "hs-bool-30",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "معركة القادسية كانت ضد الروم",
+      "isTrue": false,
+      "explanationAr": "القادسية ضد الفرس، واليرموك ضد الروم."
+    },
+    {
+      "id": "hs-bool-31",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "عبد الرحمن الداخل هو مؤسس الدولة الأموية في الأندلس",
+      "isTrue": true,
+      "explanationAr": "هرب من الشام وأسس دولة في قرطبة."
+    },
+    {
+      "id": "hs-bool-32",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "عاصمة الدولة الأموية كانت دمشق",
+      "isTrue": true,
+      "explanationAr": "والعباسية كانت بغداد."
+    },
+    {
+      "id": "hs-bool-33",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "بغداد اتبنت خصيصًا عشان تبقى عاصمة للدولة العباسية",
+      "isTrue": true,
+      "explanationAr": "بناها المنصور في القرن التامن."
+    },
+    {
+      "id": "hs-bool-34",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الأندلس هي الاسم القديم لإسبانيا والبرتغال",
+      "isTrue": true,
+      "explanationAr": "شبه الجزيرة الإيبيرية."
+    },
+    {
+      "id": "hs-bool-35",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "قصر الحمراء موجود في مدينة غرناطة",
+      "isTrue": true,
+      "explanationAr": "آخر معاقل المسلمين في الأندلس."
+    },
+    {
+      "id": "hs-bool-36",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "طارق بن زياد هو اللي عبر بالجيش المسلم لإسبانيا",
+      "isTrue": true,
+      "explanationAr": "وجبل طارق اتسمى على اسمه."
+    },
+    {
+      "id": "hs-bool-37",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "معاهدة فرساي هي اللي أنهت الحرب العالمية الأولى",
+      "isTrue": true,
+      "explanationAr": "اتوقعت سنة 1919."
+    },
+    {
+      "id": "hs-bool-38",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "اتفاقية سايكس بيكو كانت بين بريطانيا وفرنسا",
+      "isTrue": true,
+      "explanationAr": "قسّموا بيها المشرق العربي."
+    },
+    {
+      "id": "hs-bool-39",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الثورة الصناعية بدأت في فرنسا",
+      "isTrue": false,
+      "explanationAr": "بدأت في بريطانيا وانتشرت منها."
+    },
+    {
+      "id": "hs-bool-40",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الآلة البخارية كان ليها دور أساسي في الثورة الصناعية",
+      "isTrue": true,
+      "explanationAr": "غيّرت المصانع والمواصلات."
+    },
+    {
+      "id": "hs-bool-41",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الحرب الباردة كانت بين أمريكا والاتحاد السوفيتي",
+      "isTrue": true,
+      "explanationAr": "صراع من غير مواجهة عسكرية مباشرة."
+    },
+    {
+      "id": "hs-bool-42",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "حائط برلين اتهد سنة 1989",
+      "isTrue": true,
+      "explanationAr": "وبعده بسنتين اتفكك الاتحاد السوفيتي."
+    },
+    {
+      "id": "hs-bool-43",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "فاسكو دي جاما وصل للهند بحرًا حوالين أفريقيا",
+      "isTrue": true,
+      "explanationAr": "لف حوالين رأس الرجاء الصالح."
+    },
+    {
+      "id": "hs-bool-44",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "ابن بطوطة رحّالة مسلم طاف العالم وكتب رحلته",
+      "isTrue": true,
+      "explanationAr": "سافر حوالي تلاتين سنة."
+    },
+    {
+      "id": "hs-bool-45",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "ابن خلدون هو اللي كتب «المقدمة»",
+      "isTrue": true,
+      "explanationAr": "وبيتحسب مؤسس علم الاجتماع."
+    },
+    {
+      "id": "hs-bool-46",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "ابن سينا هو اللي كتب «القانون في الطب»",
+      "isTrue": true,
+      "explanationAr": "اتدرّس في أوروبا قرون طويلة."
+    },
+    {
+      "id": "hs-bool-47",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الإمبراطورية العثمانية سقطت بعد الحرب العالمية التانية",
+      "isTrue": false,
+      "explanationAr": "سقطت بعد الحرب العالمية الأولى."
+    },
+    {
+      "id": "hs-bool-48",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "مصطفى كمال أتاتورك هو اللي أسس الجمهورية التركية",
+      "isTrue": true,
+      "explanationAr": "سنة 1923."
+    },
+    {
+      "id": "hs-num-16",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "حائط برلين اتهد سنة كام؟",
+      "correctValue": 1989,
+      "tolerance": 0,
+      "explanationAr": "بداية نهاية الحرب الباردة."
+    },
+    {
+      "id": "hs-num-17",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "معاهدة فرساي اتوقعت سنة كام؟",
+      "correctValue": 1919,
+      "tolerance": 1,
+      "explanationAr": "بعد نهاية الحرب العالمية الأولى بسنة."
+    },
+    {
+      "id": "hs-num-18",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "اتفاقية سايكس بيكو كانت سنة كام؟",
+      "correctValue": 1916,
+      "tolerance": 1,
+      "explanationAr": "في وسط الحرب العالمية الأولى."
+    },
+    {
+      "id": "hs-num-19",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "معركة القادسية كانت سنة كام ميلادي؟",
+      "correctValue": 636,
+      "tolerance": 4,
+      "explanationAr": "وفتحت الطريق للعراق وفارس."
+    },
+    {
+      "id": "hs-num-20",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "الدولة الأموية اتأسست سنة كام ميلادي؟",
+      "correctValue": 661,
+      "tolerance": 6,
+      "explanationAr": "وعاصمتها كانت دمشق."
+    },
+    {
+      "id": "hs-num-21",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "الدولة العباسية قامت سنة كام ميلادي؟",
+      "correctValue": 750,
+      "tolerance": 6,
+      "explanationAr": "بعد سقوط الأمويين."
+    },
+    {
+      "id": "hs-num-22",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "المسلمين دخلوا الأندلس سنة كام ميلادي؟",
+      "correctValue": 711,
+      "tolerance": 4,
+      "explanationAr": "بقيادة طارق بن زياد."
+    },
+    {
+      "id": "hs-num-23",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "غرناطة سقطت سنة كام؟",
+      "correctValue": 1492,
+      "tolerance": 0,
+      "explanationAr": "نفس السنة اللي وصل فيها كولومبوس لأمريكا."
+    },
+    {
+      "id": "hs-num-24",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "الهرم المدرج في سقارة ارتفاعه كام متر تقريبًا؟",
+      "correctValue": 62,
+      "tolerance": 8,
+      "unitAr": "متر",
+      "explanationAr": "أقدم بناء حجري ضخم في التاريخ."
+    },
+    {
+      "id": "hs-num-25",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "ابن بطوطة قضى كام سنة في الترحال تقريبًا؟",
+      "correctValue": 30,
+      "tolerance": 5,
+      "unitAr": "سنة",
+      "explanationAr": "طاف أفريقيا وآسيا وأوروبا."
+    },
+    {
+      "id": "hs-num-26",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "الجمهورية التركية اتأسست سنة كام؟",
+      "correctValue": 1923,
+      "tolerance": 1,
+      "explanationAr": "على إيد مصطفى كمال أتاتورك."
+    },
+    {
+      "id": "hs-num-27",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "الثورة الصناعية بدأت في أنهي قرن؟",
+      "correctValue": 18,
+      "tolerance": 0,
+      "unitAr": "قرن",
+      "explanationAr": "في بريطانيا، وامتدت للقرن التسعتاشر."
+    },
+    {
+      "id": "hs-fill-16",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "معبد أبو سمبل بناه الملك رمسيس ____",
+      "answerAr": "التاني",
+      "aliases": [
+        "الثاني",
+        "٢"
+      ],
+      "explanationAr": "من أشهر ملوك مصر القديمة."
+    },
+    {
+      "id": "hs-fill-17",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "الملك الفرعوني اللي دعا لعبادة إله واحد اسمه ____",
+      "answerAr": "أخناتون",
+      "aliases": [
+        "اخناتون",
+        "إخناتون"
+      ],
+      "explanationAr": "ونقل العاصمة لتل العمارنة."
+    },
+    {
+      "id": "hs-fill-18",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الملكة الفرعونية اللي لبست لحية الملوك اسمها ____",
+      "answerAr": "حتشبسوت",
+      "aliases": [
+        "حتشبسوت الملكة"
+      ],
+      "explanationAr": "معبدها في الدير البحري."
+    },
+    {
+      "id": "hs-fill-19",
+      "shape": "fill_blank",
+      "difficulty": 5,
+      "textAr": "مهندس الهرم المدرج في سقارة اسمه ____",
+      "answerAr": "إيمحوتب",
+      "aliases": [
+        "ايمحوتب",
+        "امحوتب"
+      ],
+      "explanationAr": "واتعبد بعد كده كإله للطب."
+    },
+    {
+      "id": "hs-fill-20",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "عاصمة الدولة الأموية كانت مدينة ____",
+      "answerAr": "دمشق",
+      "aliases": [
+        "الشام"
+      ],
+      "explanationAr": "والعباسية كانت بغداد."
+    },
+    {
+      "id": "hs-fill-21",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "عاصمة الدولة العباسية كانت مدينة ____",
+      "answerAr": "بغداد",
+      "aliases": [
+        "بغداد العاصمة"
+      ],
+      "explanationAr": "اتبنت خصيصًا للعباسيين."
+    },
+    {
+      "id": "hs-fill-22",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "قصر الحمراء الأندلسي موجود في مدينة ____",
+      "answerAr": "غرناطة",
+      "aliases": [
+        "غرناطه"
+      ],
+      "explanationAr": "آخر معاقل المسلمين في الأندلس."
+    },
+    {
+      "id": "hs-fill-23",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "القائد اللي عبر بالمسلمين لإسبانيا اسمه طارق بن ____",
+      "answerAr": "زياد",
+      "aliases": [
+        "زيادة"
+      ],
+      "explanationAr": "وجبل طارق اتسمى على اسمه."
+    },
+    {
+      "id": "hs-fill-24",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "المعاهدة اللي أنهت الحرب العالمية الأولى اسمها معاهدة ____",
+      "answerAr": "فرساي",
+      "aliases": [
+        "فرساى",
+        "فيرساي"
+      ],
+      "explanationAr": "اتوقعت في قصر فرساي بفرنسا."
+    },
+    {
+      "id": "hs-fill-25",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الرحّالة المسلم اللي طاف العالم اسمه ابن ____",
+      "answerAr": "بطوطة",
+      "aliases": [
+        "بطوطه"
+      ],
+      "explanationAr": "سافر حوالي تلاتين سنة."
+    },
+    {
+      "id": "hs-fill-26",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "اللي كتب «المقدمة» اسمه ابن ____",
+      "answerAr": "خلدون",
+      "aliases": [
+        "خلدون العلامة"
+      ],
+      "explanationAr": "مؤسس علم الاجتماع."
+    },
+    {
+      "id": "hs-fill-27",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "اللي أسس الجمهورية التركية اسمه مصطفى كمال ____",
+      "answerAr": "أتاتورك",
+      "aliases": [
+        "اتاتورك"
+      ],
+      "explanationAr": "سنة 1923."
+    },
+    {
+      "id": "hs-open-13",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الملك اللي بنى معبد أبو سمبل؟",
+      "answerAr": "رمسيس التاني",
+      "aliases": [
+        "رمسيس",
+        "رمسيس الثاني"
+      ],
+      "explanationAr": "من أشهر ملوك مصر القديمة."
+    },
+    {
+      "id": "hs-open-14",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الملكة الفرعونية اللي حكمت مصر ولبست لحية الملوك؟",
+      "answerAr": "حتشبسوت",
+      "aliases": [
+        "حتشبسوت الملكة"
+      ],
+      "explanationAr": "معبدها في الدير البحري."
+    },
+    {
+      "id": "hs-open-15",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "مين مهندس الهرم المدرج في سقارة؟",
+      "answerAr": "إيمحوتب",
+      "aliases": [
+        "ايمحوتب",
+        "امحوتب"
+      ],
+      "explanationAr": "أقدم مهندس معروف بالاسم في التاريخ."
+    },
+    {
+      "id": "hs-open-16",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم عاصمة الدولة الأموية؟",
+      "answerAr": "دمشق",
+      "aliases": [
+        "الشام"
+      ],
+      "explanationAr": "والعباسية كانت بغداد."
+    },
+    {
+      "id": "hs-open-17",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "قصر الحمراء في أنهي مدينة؟",
+      "answerAr": "غرناطة",
+      "aliases": [
+        "غرناطه"
+      ],
+      "explanationAr": "في الأندلس."
+    },
+    {
+      "id": "hs-open-18",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين القائد اللي عبر بالمسلمين لإسبانيا؟",
+      "answerAr": "طارق بن زياد",
+      "aliases": [
+        "طارق",
+        "ابن زياد"
+      ],
+      "explanationAr": "وجبل طارق اتسمى على اسمه."
+    },
+    {
+      "id": "hs-open-19",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم المعاهدة اللي أنهت الحرب العالمية الأولى؟",
+      "answerAr": "معاهدة فرساي",
+      "aliases": [
+        "فرساي",
+        "فيرساي"
+      ],
+      "explanationAr": "اتوقعت سنة 1919."
+    },
+    {
+      "id": "hs-open-20",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الرحّالة المسلم اللي طاف العالم وكتب رحلته؟",
+      "answerAr": "ابن بطوطة",
+      "aliases": [
+        "بطوطة",
+        "ابن بطوطه"
+      ],
+      "explanationAr": "سافر حوالي تلاتين سنة."
+    },
+    {
+      "id": "hs-open-21",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "مين اللي كتب «القانون في الطب»؟",
+      "answerAr": "ابن سينا",
+      "aliases": [
+        "سينا",
+        "الشيخ الرئيس"
+      ],
+      "explanationAr": "اتدرّس في أوروبا قرون."
+    },
+    {
+      "id": "hs-open-22",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين اللي أسس الجمهورية التركية؟",
+      "answerAr": "أتاتورك",
+      "aliases": [
+        "مصطفى كمال أتاتورك",
+        "اتاتورك"
+      ],
+      "explanationAr": "سنة 1923."
+    },
+    {
+      "id": "hs-prog-11",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا ملك من ملوك مصر القديمة",
+        "حكمت فترة طويلة جدًا وتماثيلي في كل حتة",
+        "بنيت معبد أبو سمبل واتنقل كامل عشان السد العالي"
+      ],
+      "answerAr": "رمسيس التاني",
+      "aliases": [
+        "رمسيس",
+        "رمسيس الثاني"
+      ],
+      "explanationAr": "من أشهر ملوك مصر القديمة."
+    },
+    {
+      "id": "hs-prog-12",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا من حكام مصر القديمة",
+        "معبدي في الدير البحري بالأقصر",
+        "ملكة حكمت مصر ولبست لحية الملوك"
+      ],
+      "answerAr": "حتشبسوت",
+      "aliases": [
+        "حتشبسوت الملكة"
+      ],
+      "explanationAr": "من أقوى من حكموا مصر القديمة."
+    },
+    {
+      "id": "hs-prog-13",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا عالم عربي من القرن الرابعتاشر",
+        "اشتغلت في السياسة والقضا",
+        "كتبت «المقدمة» وبيقولوا عليّا مؤسس علم الاجتماع"
+      ],
+      "answerAr": "ابن خلدون",
+      "aliases": [
+        "خلدون"
+      ],
+      "explanationAr": "كتاب سابق عصره بقرون."
+    },
+    {
+      "id": "hs-prog-14",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا قصر في إسبانيا",
+        "اتبنيت في العصر الإسلامي",
+        "في مدينة غرناطة وبيتفرج عليّا ملايين كل سنة"
+      ],
+      "answerAr": "قصر الحمراء",
+      "aliases": [
+        "الحمراء",
+        "قصر الحمرا"
+      ],
+      "explanationAr": "من أجمل آثار الأندلس."
+    },
+    {
+      "id": "hs-prog-15",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا حاجة اتبنيت وبعدين اتهدّت",
+        "كنت بقسم مدينة لنصين",
+        "سقوطي سنة 1989 كان بداية نهاية الحرب الباردة"
+      ],
+      "answerAr": "حائط برلين",
+      "aliases": [
+        "جدار برلين",
+        "سور برلين"
+      ],
+      "explanationAr": "قسّم ألمانيا لشرقية وغربية."
+    },
+    {
+      "id": "hs-prog-16",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا عالم مسلم",
+        "اشتغلت في الطب والفلسفة",
+        "كتبت «القانون في الطب» واتدرّس في أوروبا قرون"
+      ],
+      "answerAr": "ابن سينا",
+      "aliases": [
+        "سينا",
+        "الشيخ الرئيس"
+      ],
+      "explanationAr": "من أعظم أطباء التاريخ."
+    },
+    {
+      "id": "hs-ord-11",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الدول الإسلامية دي من الأقدم للأحدث",
+      "items": [
+        "الأموية",
+        "العباسية",
+        "الفاطمية",
+        "العثمانية"
+      ],
+      "labels": [],
+      "explanationAr": "بينهم أكتر من ستة قرون."
+    },
+    {
+      "id": "hs-ord-12",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الأحداث دي من الأقدم للأحدث",
+      "items": [
+        "دخول المسلمين الأندلس",
+        "سقوط غرناطة",
+        "اتفاقية سايكس بيكو",
+        "سقوط حائط برلين"
+      ],
+      "labels": [
+        "711",
+        "1492",
+        "1916",
+        "1989"
+      ],
+      "explanationAr": "أكتر من 1200 سنة بين أولهم وآخرهم."
+    },
+    {
+      "id": "hs-ord-13",
+      "shape": "ordering",
+      "difficulty": 5,
+      "textAr": "رتّب ملوك مصر القديمة دول حسب ترتيبهم الزمني",
+      "items": [
+        "زوسر",
+        "خوفو",
+        "حتشبسوت",
+        "رمسيس التاني"
+      ],
+      "labels": [],
+      "explanationAr": "زوسر من الأسرة التالتة ورمسيس من التاسعة عشر."
+    },
+    {
+      "id": "hs-ord-14",
+      "shape": "ordering",
+      "difficulty": 5,
+      "textAr": "رتّب العلماء المسلمين دول حسب القرن اللي عاشوا فيه",
+      "items": [
+        "ابن سينا",
+        "ابن النفيس",
+        "ابن خلدون"
+      ],
+      "labels": [
+        "القرن 11",
+        "القرن 13",
+        "القرن 14"
+      ],
+      "explanationAr": "تلاتة من أهم علماء الحضارة الإسلامية."
+    },
+    {
+      "id": "hs-ord-15",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الصراعات دي حسب بدايتها من الأقدم للأحدث",
+      "items": [
+        "الحرب العالمية الأولى",
+        "الحرب العالمية التانية",
+        "الحرب الباردة"
+      ],
+      "labels": [
+        "1914",
+        "1939",
+        "1947"
+      ],
+      "explanationAr": "الحرب الباردة بدأت بعد التانية على طول."
+    },
+    {
+      "id": "hs-ord-16",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب العواصم الإسلامية دي حسب ترتيبها التاريخي",
+      "items": [
+        "المدينة المنورة",
+        "دمشق",
+        "بغداد",
+        "القاهرة"
+      ],
+      "labels": [],
+      "explanationAr": "كل دولة نقلت العاصمة لمكان جديد."
+    },
+    {
+      "id": "hs-mcq-61",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي إمبراطورية كانت عاصمتها القسطنطينية قبل سنة 1453؟",
+      "options": [
+        "الرومانية الغربية",
+        "البيزنطية",
+        "الفارسية",
+        "المغولية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "امتداد شرقي للإمبراطورية الرومانية."
+    },
+    {
+      "id": "hs-mcq-62",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي شعب اخترع أول أبجدية؟",
+      "options": [
+        "السومريون",
+        "الفينيقيون",
+        "الرومان",
+        "البابليون"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وكل الأبجديات بعدها اتفرعت منها."
+    },
+    {
+      "id": "hs-mcq-63",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«قانون حمورابي» يرجع لأنهي حضارة؟",
+      "options": [
+        "آشور",
+        "بابل",
+        "سومر",
+        "الفرس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من أقدم القوانين المكتوبة في التاريخ."
+    },
+    {
+      "id": "hs-mcq-64",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي حضارة بنت مدينة «ماتشو بيتشو»؟",
+      "options": [
+        "المايا",
+        "الإنكا",
+        "الأزتيك",
+        "الأولمك"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "فوق جبال الأنديز في بيرو."
+    },
+    {
+      "id": "hs-mcq-65",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "حضارة «الأزتيك» كانت في أنهي دولة حاليًا؟",
+      "options": [
+        "بيرو",
+        "المكسيك",
+        "جواتيمالا",
+        "كولومبيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وعاصمتها كانت مكان مدينة مكسيكو."
+    },
+    {
+      "id": "hs-mcq-66",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«طريق الحرير» كان بيربط الصين بإيه؟",
+      "options": [
+        "أستراليا",
+        "أوروبا والشرق الأوسط",
+        "أمريكا الجنوبية",
+        "جنوب أفريقيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "شبكة طرق تجارية عمرها آلاف السنين."
+    },
+    {
+      "id": "hs-mcq-67",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي رحلة أول رحلة دارت حوالين العالم؟",
+      "options": [
+        "رحلة كولومبوس",
+        "رحلة ماجلان",
+        "رحلة دا جاما",
+        "رحلة ماركو بولو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ماجلان نفسه مات في الطريق وطاقمه كمّل."
+    },
+    {
+      "id": "hs-mcq-68",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين الرحّالة الإيطالي اللي وصف رحلته للصين في كتاب مشهور؟",
+      "options": [
+        "كولومبوس",
+        "ماركو بولو",
+        "ماجلان",
+        "أميريجو فسبوتشي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من البندقية في القرن التلتاشر."
+    },
+    {
+      "id": "hs-mcq-69",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«الباستيل» اللي اتهاجم في بداية الثورة الفرنسية كان إيه؟",
+      "options": [
+        "قصر",
+        "سجن",
+        "كنيسة",
+        "ثكنة عسكرية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وبقى يوم اقتحامه العيد الوطني لفرنسا."
+    },
+    {
+      "id": "hs-mcq-70",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين إمبراطور فرنسا اللي اتهزم في معركة واترلو؟",
+      "options": [
+        "لويس السادس عشر",
+        "نابليون بونابرت",
+        "شارل ديجول",
+        "روبسبير"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "واتنفى بعدها لجزيرة سانت هيلانة."
+    },
+    {
+      "id": "hs-mcq-71",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "معركة واترلو حصلت سنة كام؟",
+      "options": [
+        "1789",
+        "1805",
+        "1815",
+        "1830"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "ونهاية عصر نابليون."
+    },
+    {
+      "id": "hs-mcq-72",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«أزمة الصواريخ الكوبية» حصلت في أنهي سنة؟",
+      "options": [
+        "1956",
+        "1962",
+        "1968",
+        "1975"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أقرب لحظة لحرب نووية في التاريخ."
+    },
+    {
+      "id": "hs-mcq-73",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي مدينة فضلت مقسومة لشرقية وغربية طول الحرب الباردة؟",
+      "options": [
+        "فيينا",
+        "برلين",
+        "براغ",
+        "وارسو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "واتوحدت تاني سنة 1990."
+    },
+    {
+      "id": "hs-mcq-74",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الاتحاد السوفيتي اتفكك سنة كام؟",
+      "options": [
+        "1989",
+        "1990",
+        "1991",
+        "1993"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "واتقسم لـ15 دولة."
+    },
+    {
+      "id": "hs-mcq-75",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«معاهدة فرساي» أنهت أنهي حرب؟",
+      "options": [
+        "الحرب العالمية الأولى",
+        "الحرب العالمية التانية",
+        "حرب القرم",
+        "حرب الثلاثين سنة"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "وشروطها القاسية على ألمانيا مهّدت للتانية."
+    },
+    {
+      "id": "hs-mcq-76",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "بعد هيروشيما، أنهي مدينة يابانية تانية اتضربت بقنبلة نووية؟",
+      "options": [
+        "طوكيو",
+        "ناجازاكي",
+        "أوساكا",
+        "كيوتو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بعدها بتلات أيام في أغسطس 1945."
+    },
+    {
+      "id": "hs-mcq-77",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الرئيس الأمريكي اللي اتقتل في دالاس سنة 1963؟",
+      "options": [
+        "أبراهام لينكولن",
+        "جون كينيدي",
+        "رونالد ريجان",
+        "ريتشارد نيكسون"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وهو راكب موكب مكشوف."
+    },
+    {
+      "id": "hs-mcq-78",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الرئيس الأمريكي اللي ألغى العبودية؟",
+      "options": [
+        "جورج واشنطن",
+        "أبراهام لينكولن",
+        "فرانكلين روزفلت",
+        "وودرو ويلسون"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "واتقتل في المسرح سنة 1865."
+    },
+    {
+      "id": "hs-mcq-79",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«الماجنا كارتا» اتوقعت في أنهي دولة؟",
+      "options": [
+        "فرنسا",
+        "إنجلترا",
+        "ألمانيا",
+        "إيطاليا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "سنة 1215، وبتتحسب أساس تقييد سلطة الملك."
+    },
+    {
+      "id": "hs-mcq-80",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين أول امرأة كسبت جايزة نوبل؟",
+      "options": [
+        "فلورنس نايتنجيل",
+        "ماري كوري",
+        "الأم تريزا",
+        "روزاليند فرانكلين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وخدتها مرتين في مجالين مختلفين."
+    },
+    {
+      "id": "hs-mcq-81",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين قائد نضال الهند ضد الاستعمار بالمقاومة السلمية؟",
+      "options": [
+        "نهرو",
+        "المهاتما غاندي",
+        "طاغور",
+        "جناح"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وسيلته كانت العصيان المدني والصيام."
+    },
+    {
+      "id": "hs-mcq-82",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين اللي فضل مسجون 27 سنة وبقى رئيس جنوب أفريقيا؟",
+      "options": [
+        "ديزموند توتو",
+        "نيلسون مانديلا",
+        "ستيف بيكو",
+        "ثابو مبيكي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وكسب نوبل للسلام."
+    },
+    {
+      "id": "hs-mcq-83",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي حدث اعتبر شرارة الحرب العالمية الأولى؟",
+      "options": [
+        "غزو بولندا",
+        "اغتيال ولي عهد النمسا",
+        "هجوم بيرل هاربر",
+        "سقوط باريس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في سراييفو سنة 1914."
+    },
+    {
+      "id": "hs-mcq-84",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي حدث بدأ بيه الحرب العالمية التانية في أوروبا؟",
+      "options": [
+        "اغتيال ولي عهد النمسا",
+        "غزو ألمانيا لبولندا",
+        "معركة العلمين",
+        "إنزال نورماندي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في سبتمبر 1939."
+    },
+    {
+      "id": "hs-mcq-85",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«إنزال نورماندي» حصل على سواحل أنهي دولة؟",
+      "options": [
+        "بلجيكا",
+        "فرنسا",
+        "هولندا",
+        "إيطاليا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "يوم 6 يونيو 1944، وبيتسمى يوم النصر."
+    },
+    {
+      "id": "hs-bool-49",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "الفينيقيون هم اللي اخترعوا أول أبجدية",
+      "isTrue": true,
+      "explanationAr": "وكل الأبجديات بعدها اتفرعت منها."
+    },
+    {
+      "id": "hs-bool-50",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "قانون حمورابي يرجع لحضارة بابل",
+      "isTrue": true,
+      "explanationAr": "من أقدم القوانين المكتوبة."
+    },
+    {
+      "id": "hs-bool-51",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "مدينة ماتشو بيتشو بناها شعب المايا",
+      "isTrue": false,
+      "explanationAr": "بناها الإنكا في بيرو."
+    },
+    {
+      "id": "hs-bool-52",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "نابليون اتهزم في معركة واترلو",
+      "isTrue": true,
+      "explanationAr": "واتنفى بعدها لجزيرة سانت هيلانة."
+    },
+    {
+      "id": "hs-bool-53",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "أزمة الصواريخ الكوبية حصلت سنة 1962",
+      "isTrue": true,
+      "explanationAr": "بين أمريكا والاتحاد السوفيتي."
+    },
+    {
+      "id": "hs-bool-54",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "ماركو بولو رحّالة إيطالي كتب عن رحلته للصين",
+      "isTrue": true,
+      "explanationAr": "من البندقية في القرن التلتاشر."
+    },
+    {
+      "id": "hs-bool-55",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "طريق الحرير كان بيربط الصين بأوروبا",
+      "isTrue": true,
+      "explanationAr": "شبكة طرق تجارية قديمة جدًا."
+    },
+    {
+      "id": "hs-bool-56",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "أبراهام لينكولن هو الرئيس اللي ألغى العبودية في أمريكا",
+      "isTrue": true,
+      "explanationAr": "واتقتل سنة 1865."
+    },
+    {
+      "id": "hs-bool-57",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "ماري كوري أول امرأة تكسب جايزة نوبل",
+      "isTrue": true,
+      "explanationAr": "وخدتها مرتين."
+    },
+    {
+      "id": "hs-bool-58",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "إنزال نورماندي حصل على سواحل بلجيكا",
+      "isTrue": false,
+      "explanationAr": "حصل في فرنسا سنة 1944."
+    },
+    {
+      "id": "hs-num-28",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "أزمة الصواريخ الكوبية حصلت سنة كام؟",
+      "correctValue": 1962,
+      "tolerance": 1,
+      "explanationAr": "أخطر لحظة في الحرب الباردة."
+    },
+    {
+      "id": "hs-num-29",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "«الماجنا كارتا» اتوقعت سنة كام؟",
+      "correctValue": 1215,
+      "tolerance": 5,
+      "explanationAr": "في إنجلترا، وقيّدت سلطة الملك."
+    },
+    {
+      "id": "hs-num-30",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "معركة واترلو حصلت سنة كام؟",
+      "correctValue": 1815,
+      "tolerance": 2,
+      "explanationAr": "نهاية عصر نابليون."
+    },
+    {
+      "id": "hs-num-31",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "جون كينيدي اتقتل سنة كام؟",
+      "correctValue": 1963,
+      "tolerance": 1,
+      "explanationAr": "في مدينة دالاس بولاية تكساس."
+    },
+    {
+      "id": "hs-num-32",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "نيلسون مانديلا قعد كام سنة في السجن؟",
+      "correctValue": 27,
+      "tolerance": 1,
+      "unitAr": "سنة",
+      "explanationAr": "وخرج سنة 1990."
+    },
+    {
+      "id": "hs-open-23",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين الإمبراطور اللي اتهزم في معركة واترلو؟",
+      "answerAr": "نابليون",
+      "aliases": [
+        "نابليون بونابرت",
+        "بونابرت"
+      ],
+      "explanationAr": "واتنفى بعدها لجزيرة سانت هيلانة."
+    },
+    {
+      "id": "hs-open-24",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "أنهي حضارة بنت مدينة ماتشو بيتشو؟",
+      "answerAr": "الإنكا",
+      "aliases": [
+        "إنكا",
+        "الانكا"
+      ],
+      "explanationAr": "فوق جبال الأنديز في بيرو."
+    },
+    {
+      "id": "hs-open-25",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين أول امرأة كسبت جايزة نوبل؟",
+      "answerAr": "ماري كوري",
+      "aliases": [
+        "ماري كوريه",
+        "كوري"
+      ],
+      "explanationAr": "وخدتها مرتين في مجالين مختلفين."
+    },
+    {
+      "id": "hs-open-26",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الرئيس الأمريكي اللي اتقتل في دالاس سنة 1963؟",
+      "answerAr": "جون كينيدي",
+      "aliases": [
+        "كينيدي",
+        "جون كنيدي"
+      ],
+      "explanationAr": "وهو راكب موكب مكشوف."
+    },
+    {
+      "id": "hs-open-27",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "أنهي مدينة يابانية اتضربت بقنبلة نووية بعد هيروشيما؟",
+      "answerAr": "ناجازاكي",
+      "aliases": [
+        "ناغازاكي",
+        "نجازاكي"
+      ],
+      "explanationAr": "في أغسطس 1945."
+    },
+    {
+      "id": "hs-open-28",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين اللي قاد نضال الهند ضد الاستعمار بالمقاومة السلمية؟",
+      "answerAr": "غاندي",
+      "aliases": [
+        "المهاتما غاندي",
+        "مهاتما غاندي"
+      ],
+      "explanationAr": "وسيلته كانت العصيان المدني."
+    },
+    {
+      "id": "hs-open-29",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "أنهي شعب اخترع أول أبجدية؟",
+      "answerAr": "الفينيقيون",
+      "aliases": [
+        "الفينيقيين",
+        "فينيقيا"
+      ],
+      "explanationAr": "عاشوا على ساحل الشام."
+    },
+    {
+      "id": "hs-prog-17",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا قائد عسكري بقيت إمبراطور",
+        "غزيت نص أوروبا في أول القرن التسعتاشر",
+        "اتهزمت في واترلو ومتّ منفي في جزيرة"
+      ],
+      "answerAr": "نابليون",
+      "aliases": [
+        "نابليون بونابرت",
+        "بونابرت"
+      ],
+      "explanationAr": "من أشهر القادة في التاريخ."
+    },
+    {
+      "id": "hs-prog-18",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا مناضل أفريقي ضد التمييز العنصري",
+        "قعدت 27 سنة في السجن",
+        "بقيت أول رئيس أسود لبلدي وكسبت نوبل للسلام"
+      ],
+      "answerAr": "نيلسون مانديلا",
+      "aliases": [
+        "مانديلا",
+        "نيلسون منديلا"
+      ],
+      "explanationAr": "رمز عالمي للتسامح."
+    },
+    {
+      "id": "hs-prog-19",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا عالمة من أصل بولندي",
+        "اشتغلت على النشاط الإشعاعي",
+        "أول ست تاخد نوبل، وخدتها مرتين في مجالين"
+      ],
+      "answerAr": "ماري كوري",
+      "aliases": [
+        "ماري كوريه",
+        "كوري"
+      ],
+      "explanationAr": "اكتشفت الراديوم والبولونيوم."
+    },
+    {
+      "id": "hs-prog-20",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا زعيم هندي",
+        "اتخانقت مع الاستعمار من غير سلاح",
+        "طريقتي كانت العصيان المدني والصيام"
+      ],
+      "answerAr": "غاندي",
+      "aliases": [
+        "المهاتما غاندي",
+        "مهاتما غاندي"
+      ],
+      "explanationAr": "ألهم حركات حقوق مدنية في العالم كله."
+    },
+    {
+      "id": "hs-prog-21",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا حاجز اتبنى وسط مدينة أوروبية",
+        "فصلت شرق عن غرب طول الحرب الباردة",
+        "اتهديت سنة 1989 والناس فرحت وأنا بقع"
+      ],
+      "answerAr": "سور برلين",
+      "aliases": [
+        "حائط برلين",
+        "جدار برلين"
+      ],
+      "explanationAr": "وبعدها بسنة اتوحدت ألمانيا."
+    },
+    {
+      "id": "hs-prog-22",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا حضارة قامت في أمريكا الجنوبية",
+        "عاصمتي كانت كوسكو في بيرو",
+        "بنيت ماتشو بيتشو فوق الجبال"
+      ],
+      "answerAr": "الإنكا",
+      "aliases": [
+        "إنكا",
+        "الانكا"
+      ],
+      "explanationAr": "انهارت بعد وصول الإسبان."
+    },
+    {
+      "id": "hs-prog-23",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا شعب عاش على ساحل الشام",
+        "كنت تاجر وبحّار من الطراز الأول",
+        "اخترعت أول أبجدية والعالم كله أخد منها"
+      ],
+      "answerAr": "الفينيقيون",
+      "aliases": [
+        "الفينيقيين",
+        "فينيقيا"
+      ],
+      "explanationAr": "أسسوا قرطاج كمان."
+    },
+    {
+      "id": "hs-prog-24",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا رئيس أمريكي من القرن التسعتاشر",
+        "حكمت في وقت حرب أهلية",
+        "ألغيت العبودية واتقتلت وأنا في المسرح"
+      ],
+      "answerAr": "أبراهام لينكولن",
+      "aliases": [
+        "لينكولن",
+        "ابراهام لينكولن"
+      ],
+      "explanationAr": "من أشهر رؤساء أمريكا."
+    },
+    {
+      "id": "hs-mcq-86",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين القائد الروماني اللي عبر نهر الروبيكون بجيشه؟",
+      "options": [
+        "أغسطس",
+        "يوليوس قيصر",
+        "نيرون",
+        "ماركوس أوريليوس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وبقت «عبور الروبيكون» مثل على قرار مفيش رجوع فيه."
+    },
+    {
+      "id": "hs-mcq-87",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي مدينة يونانية بتتحسب مهد الديمقراطية الأولى؟",
+      "options": [
+        "إسبرطة",
+        "أثينا",
+        "طيبة",
+        "كورينث"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "المواطنين كانوا بيصوّتوا بنفسهم."
+    },
+    {
+      "id": "hs-mcq-88",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "الألعاب الأولمبية القديمة كانت بتتعمل فين؟",
+      "options": [
+        "أثينا",
+        "أولمبيا",
+        "دلفي",
+        "إسبرطة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في اليونان، تكريمًا للإله زيوس."
+    },
+    {
+      "id": "hs-mcq-89",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين الفيلسوف اليوناني اللي كان أستاذ أفلاطون؟",
+      "options": [
+        "أرسطو",
+        "سقراط",
+        "فيثاغورس",
+        "هيراقليطس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "واتحكم عليه بالإعدام بالسم."
+    },
+    {
+      "id": "hs-mcq-90",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين تلميذ أفلاطون اللي علّم الإسكندر الأكبر؟",
+      "options": [
+        "سقراط",
+        "أرسطو",
+        "إقليدس",
+        "أرشميدس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وأسس علوم المنطق والتصنيف."
+    },
+    {
+      "id": "hs-mcq-91",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الإسكندر الأكبر كان ملك أنهي مملكة؟",
+      "options": [
+        "أثينا",
+        "مقدونيا",
+        "إسبرطة",
+        "طروادة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في شمال اليونان."
+    },
+    {
+      "id": "hs-mcq-92",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«حصان طروادة» مرتبط بأنهي حكاية؟",
+      "options": [
+        "فتح روما",
+        "حرب طروادة",
+        "غزو مصر",
+        "حرب الفرس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "حيلة الإغريق لدخول المدينة المحصّنة."
+    },
+    {
+      "id": "hs-mcq-93",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«الماركو بولو» الصيني اللي زار أوروبا — أنهي أسرة كانت حاكمة الصين وقتها؟",
+      "options": [
+        "أسرة مينج",
+        "أسرة يوان المغولية",
+        "أسرة تشينج",
+        "أسرة هان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في عهد قوبلاي خان."
+    },
+    {
+      "id": "hs-mcq-94",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«عصر النهضة» بدأ في أنهي دولة؟",
+      "options": [
+        "فرنسا",
+        "إيطاليا",
+        "إنجلترا",
+        "ألمانيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من فلورنسا وانتشر في أوروبا."
+    },
+    {
+      "id": "hs-mcq-95",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين اللي نحت تمثال «داوود» ورسم سقف كنيسة سيستينا؟",
+      "options": [
+        "ليوناردو دافنشي",
+        "مايكل أنجلو",
+        "رافائيل",
+        "دوناتيلو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من عمالقة عصر النهضة."
+    },
+    {
+      "id": "hs-mcq-96",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين العالم اللي اتحاكم لأنه قال إن الأرض بتلف حوالين الشمس؟",
+      "options": [
+        "نيوتن",
+        "جاليليو",
+        "كبلر",
+        "برونو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "واتجبر إنه يتراجع عن كلامه."
+    },
+    {
+      "id": "hs-mcq-97",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«الثورة البلشفية» سنة 1917 حصلت في أنهي دولة؟",
+      "options": [
+        "ألمانيا",
+        "روسيا",
+        "المجر",
+        "بولندا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وأدت لقيام الاتحاد السوفيتي."
+    },
+    {
+      "id": "hs-mcq-98",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين صاحب نظرية التطور؟",
+      "options": [
+        "مندل",
+        "تشارلز داروين",
+        "لامارك",
+        "باستور"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في كتابه «أصل الأنواع»."
+    },
+    {
+      "id": "hs-mcq-99",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين العالم اللي طوّر التطعيم ضد الجدري؟",
+      "options": [
+        "لويس باستور",
+        "إدوارد جينر",
+        "روبرت كوخ",
+        "جوزيف ليستر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أول لقاح في التاريخ."
+    },
+    {
+      "id": "hs-mcq-100",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«الطاعون الأسود» ضرب أوروبا في أنهي قرن؟",
+      "options": [
+        "الثاني عشر",
+        "الرابع عشر",
+        "السادس عشر",
+        "الثامن عشر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وقتل تلت سكان القارة تقريبًا."
+    },
+    {
+      "id": "hs-mcq-101",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«الحروب الصليبية» بدأت في نهاية أنهي قرن؟",
+      "options": [
+        "التاسع",
+        "الحادي عشر",
+        "الثالث عشر",
+        "الخامس عشر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الحملة الأولى سنة 1096."
+    },
+    {
+      "id": "hs-mcq-102",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الخلافة العثمانية اتلغت رسميًا سنة كام؟",
+      "options": [
+        "1918",
+        "1922",
+        "1924",
+        "1930"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "بعد قيام الجمهورية التركية."
+    },
+    {
+      "id": "hs-mcq-103",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين أول رئيس لتركيا الحديثة؟",
+      "options": [
+        "عصمت إينونو",
+        "مصطفى كمال أتاتورك",
+        "عبد الحميد",
+        "عدنان مندريس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وغيّر الأبجدية من العربية للاتينية."
+    },
+    {
+      "id": "hs-mcq-104",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«حركة الإصلاح الديني» في أوروبا بدأها مين؟",
+      "options": [
+        "يوحنا كالفن",
+        "مارتن لوثر",
+        "هنري الثامن",
+        "إيراسموس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "علّق اعتراضاته على باب الكنيسة سنة 1517."
+    },
+    {
+      "id": "hs-mcq-105",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين اللي طوّر الآلة البخارية وخلّاها عملية؟",
+      "options": [
+        "توماس إديسون",
+        "جيمس واط",
+        "هنري فورد",
+        "جورج ستيفنسون"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ووحدة القدرة اتسمت على اسمه."
+    },
+    {
+      "id": "hs-mcq-106",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«حرب فيتنام» كانت بشكل أساسي بين مين ومين؟",
+      "options": [
+        "فرنسا والصين",
+        "أمريكا وفيتنام الشمالية",
+        "روسيا واليابان",
+        "الصين واليابان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وانتهت بانسحاب أمريكي سنة 1973."
+    },
+    {
+      "id": "hs-mcq-107",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "سور الصين العظيم اتبنى أساسًا ليه؟",
+      "options": [
+        "للزينة",
+        "للدفاع ضد الغزوات الشمالية",
+        "لتقسيم الأقاليم",
+        "لتوجيه مياه الري"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "واستغرق بناؤه قرون متتالية."
+    },
+    {
+      "id": "hs-mcq-108",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أهرامات الجيزة اتبنت أساسًا لغرض إيه؟",
+      "options": [
+        "مخازن غلال",
+        "مقابر للملوك",
+        "معابد للعبادة",
+        "قلاع حربية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وأشهرها هرم خوفو."
+    },
+    {
+      "id": "hs-mcq-109",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«حجر رشيد» ساعد في فك رموز إيه؟",
+      "options": [
+        "المسمارية",
+        "الهيروغليفية",
+        "الخط الفينيقي",
+        "الخط الصيني"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "لأنه مكتوب بتلات خطوط لنفس النص."
+    },
+    {
+      "id": "hs-mcq-110",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين اللي فك رموز الكتابة الهيروغليفية؟",
+      "options": [
+        "هوارد كارتر",
+        "شامبليون",
+        "ماريت",
+        "بلزوني"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عالم فرنسي، سنة 1822."
+    },
+    {
+      "id": "hs-mcq-111",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "منظمة «الأمم المتحدة» اتأسست سنة كام؟",
+      "options": [
+        "1919",
+        "1939",
+        "1945",
+        "1955"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "بعد نهاية الحرب العالمية التانية."
+    },
+    {
+      "id": "hs-mcq-112",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "المقر الرئيسي للأمم المتحدة فين؟",
+      "options": [
+        "جنيف",
+        "نيويورك",
+        "باريس",
+        "فيينا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وفي مقرات فرعية في جنيف وفيينا."
+    },
+    {
+      "id": "hs-mcq-113",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«عصبة الأمم» اتأسست بعد أنهي حرب؟",
+      "options": [
+        "الحرب العالمية الأولى",
+        "الحرب العالمية التانية",
+        "حرب القرم",
+        "الحرب الباردة"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "وفشلت في منع الحرب اللي بعدها."
+    },
+    {
+      "id": "hs-mcq-114",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "مقبرة توت عنخ آمون اتكشفت في أنهي مكان؟",
+      "options": [
+        "سقارة",
+        "وادي الملوك",
+        "الجيزة",
+        "أبو سمبل"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في الأقصر، سنة 1922."
+    },
+    {
+      "id": "hs-mcq-115",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«معركة هاستينجز» سنة 1066 أدت لإيه؟",
+      "options": [
+        "توحيد ألمانيا",
+        "الغزو النورماندي لإنجلترا",
+        "سقوط روما",
+        "استقلال إسبانيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وغيّرت لغة وحكم إنجلترا."
+    },
+    {
+      "id": "hs-odd-1",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة حضارات قديمة معروفة ببناء أهرامات، وواحدة بس معروفة بحاجة تانية:",
+      "items": [
+        "مصر القديمة",
+        "حضارة المايا",
+        "حضارة الأزتيك",
+        "الحضارة الفينيقية"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الفينيقيون اشتهروا بالتجارة البحرية وأول أبجدية، مش ببناء الأهرامات زي المصريين والمايا والأزتيك."
+    },
+    {
+      "id": "hs-odd-2",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة فراعنة مصريين قدماء، وواحد بس قائد إسلامي:",
+      "items": [
+        "توت عنخ آمون",
+        "رمسيس الثاني",
+        "تحتمس الثالث",
+        "صلاح الدين الأيوبي"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "صلاح الدين الأيوبي قائد من العصر الإسلامي، مش من مصر الفرعونية القديمة."
+    },
+    {
+      "id": "hs-odd-3",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة قادة كانوا في صف الحلفاء بالحرب العالمية التانية، وواحد بس في صف المحور:",
+      "items": [
+        "تشرشل",
+        "روزفلت",
+        "ستالين",
+        "هتلر"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "هتلر كان قائد ألمانيا النازية في صف دول المحور، أما التلاتة التانيين كانوا قادة دول الحلفاء."
+    },
+    {
+      "id": "hs-odd-4",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة معارك خاضها المسلمون في الفتوحات الإسلامية الأولى، وواحدة بس معركة أوروبية في العصور الوسطى:",
+      "items": [
+        "معركة اليرموك",
+        "معركة القادسية",
+        "معركة عين جالوت",
+        "معركة هاستينجز"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "معركة هاستينجز سنة 1066 كانت بين النورمان والإنجليز في أوروبا، مش من معارك الفتوحات الإسلامية."
+    },
+    {
+      "id": "hs-odd-5",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة قادة مسلمين في الفتوحات الإسلامية، وواحد بس قائد فرنسي حديث:",
+      "items": [
+        "خالد بن الوليد",
+        "عمرو بن العاص",
+        "طارق بن زياد",
+        "نابليون بونابرت"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "نابليون بونابرت قائد فرنسي من القرن التاسع عشر، مش من قادة الفتوحات الإسلامية."
+    },
+    {
+      "id": "hs-odd-6",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة عصور من تاريخ مصر الفرعونية القديمة، وواحدة بس دولة إسلامية لاحقة:",
+      "items": [
+        "الدولة القديمة",
+        "الدولة الوسطى",
+        "الدولة الحديثة",
+        "الدولة العثمانية"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الدولة العثمانية دولة إسلامية حكمت مصر في العصر الحديث نسبيًا، مش من عصور مصر الفرعونية."
+    },
+    {
+      "id": "hs-odd-7",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة أحداث حصلت خلال الحرب العالمية الأولى، وواحد بس بداية الحرب العالمية التانية:",
+      "items": [
+        "اغتيال ولي عهد النمسا",
+        "معركة السوم",
+        "دخول أمريكا الحرب سنة 1917",
+        "غزو ألمانيا لبولندا سنة 1939"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "غزو بولندا سنة 1939 كان الشرارة اللي بدأت بيها الحرب العالمية التانية، مش من أحداث الحرب الأولى."
+    },
+    {
+      "id": "hs-odd-8",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة معالم بنتها الحضارة الرومانية، وواحد بس بنته الحضارة الصينية:",
+      "items": [
+        "الكولوسيوم",
+        "قوس تيتوس",
+        "قنوات المياه الرومانية",
+        "سور الصين العظيم"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "سور الصين العظيم بنته الحضارة الصينية، مش الرومانية."
+    },
+    {
+      "id": "hs-odd-9",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة من قادة ثورة يوليو 1952 في مصر، وواحد بس الملك اللي اتنازل عن العرش بسببها:",
+      "items": [
+        "جمال عبد الناصر",
+        "محمد نجيب",
+        "أنور السادات",
+        "الملك فاروق"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الملك فاروق هو اللي اتنازل عن العرش بسبب الثورة، مش من قادتها."
+    },
+    {
+      "id": "hs-odd-10",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة أنظمة كتابة قديمة، وواحد بس نظام كتابة حديث نسبيًا:",
+      "items": [
+        "الكتابة المسمارية",
+        "الكتابة الهيروغليفية",
+        "الكتابة الصينية القديمة",
+        "الأبجدية اللاتينية الحديثة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الأبجدية اللاتينية بالشكل المستخدم حاليًا تطورت في العصور الحديثة نسبيًا، مش من أقدم أنظمة الكتابة زي التلاتة التانيين."
+    },
+    {
+      "id": "hs-odd-11",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة مستكشفين من عصر الاكتشافات الجغرافية الكبرى، وواحد بس رائد فضاء حديث:",
+      "items": [
+        "كريستوفر كولومبوس",
+        "فاسكو دا جاما",
+        "فرديناند ماجلان",
+        "نيل أرمسترونج"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "نيل أرمسترونج أول إنسان مشى على القمر في القرن العشرين، مش من مستكشفي عصر الاكتشافات الجغرافية."
+    },
+    {
+      "id": "hs-odd-12",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة خلافات إسلامية متعاقبة، وواحدة بس إمبراطورية غير إسلامية:",
+      "items": [
+        "الخلافة الراشدة",
+        "الخلافة الأموية",
+        "الخلافة العباسية",
+        "الإمبراطورية الرومانية"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الإمبراطورية الرومانية إمبراطورية وثنية ثم مسيحية، مش من الخلافات الإسلامية."
+    },
+    {
+      "id": "hs-odd-13",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة شخصيات مرتبطة بالحروب الصليبية، وواحد بس قائد مغولي في عصر تاني:",
+      "items": [
+        "صلاح الدين الأيوبي",
+        "ريتشارد قلب الأسد",
+        "نور الدين زنكي",
+        "جنكيز خان"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "جنكيز خان قائد مغولي عاش في فترة تانية ومنطقة تانية، مش من شخصيات الحروب الصليبية."
+    },
+    {
+      "id": "hs-odd-14",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة حضارات قديمة قامت في بلاد ما بين النهرين (العراق)، وواحدة بس قامت في مصر:",
+      "items": [
+        "السومريون",
+        "البابليون",
+        "الآشوريون",
+        "الفراعنة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الفراعنة حضارتهم قامت في وادي النيل بمصر، مش في بلاد ما بين النهرين."
+    },
+    {
+      "id": "hs-odd-15",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة قادة عاصروا فترة الحرب الباردة، وواحد بس توفي قبل ما تبدأ فعليًا:",
+      "items": [
+        "خروتشوف",
+        "كينيدي",
+        "بريجنيف",
+        "ونستون تشرشل"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "تشرشل ارتبط أساسًا بالحرب العالمية التانية، بينما التلاتة التانيين من الشخصيات المحورية في الحرب الباردة."
+    },
+    {
+      "id": "hs-odd-16",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة شخصيات مرتبطة بالثورة الفرنسية، وواحد بس مستشار ألماني في فترة تانية:",
+      "items": [
+        "لويس السادس عشر",
+        "روبسبير",
+        "نابليون بونابرت",
+        "أوتو فون بسمارك"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "بسمارك مستشار ألماني وحّد ألمانيا في القرن التاسع عشر، مش من شخصيات الثورة الفرنسية مباشرة."
+    },
+    {
+      "id": "hs-odd-17",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة فلاسفة يونانيين قدماء، وواحد بس فيلسوف مسلم من الأندلس:",
+      "items": [
+        "سقراط",
+        "أفلاطون",
+        "أرسطو",
+        "ابن رشد"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "ابن رشد فيلسوف مسلم عاش في الأندلس بالعصور الوسطى، مش من فلاسفة اليونان القدماء."
+    },
+    {
+      "id": "hs-odd-18",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة قادة من الإمبراطورية المغولية، وواحد بس قائد أيوبي من عصر تاني:",
+      "items": [
+        "جنكيز خان",
+        "هولاكو",
+        "قوبلاي خان",
+        "صلاح الدين الأيوبي"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "صلاح الدين الأيوبي قائد أيوبي عاش قبل قيام الإمبراطورية المغولية بفترة، مش من قادتها."
+    },
+    {
+      "id": "hs-odd-19",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة من الآباء المؤسسين لأمريكا، وواحد بس رئيس جاء بعدهم بعقود في فترة الحرب الأهلية:",
+      "items": [
+        "جورج واشنطن",
+        "توماس جيفرسون",
+        "بنجامين فرانكلين",
+        "أبراهام لينكولن"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "أبراهام لينكولن كان رئيسًا في فترة الحرب الأهلية الأمريكية، مش من الآباء المؤسسين وقت الاستقلال."
+    },
+    {
+      "id": "hs-odd-20",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة سلاطين عثمانيين، وواحد بس قائد أيوبي من دولة سابقة على العثمانيين:",
+      "items": [
+        "سليمان القانوني",
+        "محمد الفاتح",
+        "سليم الأول",
+        "صلاح الدين الأيوبي"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "صلاح الدين الأيوبي مؤسس الدولة الأيوبية، مش من سلاطين الدولة العثمانية."
+    },
+    {
+      "id": "hs-odd-21",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة دول كانت في صف المحور في الحرب العالمية التانية، وواحدة بس في صف الحلفاء:",
+      "items": [
+        "ألمانيا",
+        "إيطاليا",
+        "اليابان",
+        "بريطانيا"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "بريطانيا كانت من دول الحلفاء الرئيسية، أما التلاتة التانيين كانوا دول المحور."
+    },
+    {
+      "id": "hs-odd-22",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة أسرات حاكمة في الصين القديمة، وواحدة بس أسرة إسلامية حكمت مصر:",
+      "items": [
+        "أسرة هان",
+        "أسرة تانج",
+        "أسرة مينج",
+        "الأسرة الفاطمية"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الأسرة الفاطمية أسرة إسلامية حكمت مصر وشمال أفريقيا، مش من أسرات الصين القديمة."
+    },
+    {
+      "id": "hs-odd-23",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة فراعنة بنوا أهرامات الجيزة التلاتة الكبار، وواحد بس بنى معبد مختلف تمامًا في مكان تاني:",
+      "items": [
+        "خوفو",
+        "خفرع",
+        "منقرع",
+        "أخناتون"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "أخناتون بنى مدينة تل العمارنة الجديدة كعاصمة له، مش هرمًا في الجيزة."
+    },
+    {
+      "id": "hs-odd-24",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة حروب عربية إسرائيلية خاضتها مصر في القرن العشرين، وواحدة بس حرب عالمية شاملة:",
+      "items": [
+        "حرب 1948",
+        "حرب 1967",
+        "حرب أكتوبر 1973",
+        "الحرب العالمية الثانية"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الحرب العالمية الثانية حرب عالمية شاملة بين تحالفات دولية، مش من الحروب العربية الإسرائيلية."
+    },
+    {
+      "id": "hs-emj-1",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🔺🐫☀️",
+      "answerAr": "أهرامات الجيزة",
+      "aliases": [
+        "الأهرامات"
+      ]
+    },
+    {
+      "id": "hs-emj-2",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🦁👤🏜️",
+      "answerAr": "أبو الهول",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-3",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "👑⚱️🏺",
+      "answerAr": "توت عنخ آمون",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-4",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "👑🐍🛥️",
+      "answerAr": "كليوباترا",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-5",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🎩⚔️🇫🇷",
+      "answerAr": "نابليون بونابرت",
+      "aliases": [
+        "نابليون"
+      ]
+    },
+    {
+      "id": "hs-emj-6",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🏹🐎🏔️",
+      "answerAr": "جنكيز خان",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-7",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "⚔️🕌🦁",
+      "answerAr": "صلاح الدين الأيوبي",
+      "aliases": [
+        "صلاح الدين"
+      ]
+    },
+    {
+      "id": "hs-emj-8",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "⚔️👑🔻",
+      "answerAr": "الثورة الفرنسية",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-9",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "⚔️🌍1️⃣",
+      "answerAr": "الحرب العالمية الأولى",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-10",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "💣🌍2️⃣",
+      "answerAr": "الحرب العالمية الثانية",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-11",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🚬🎩✌️",
+      "answerAr": "ونستون تشرشل",
+      "aliases": [
+        "تشرشل"
+      ]
+    },
+    {
+      "id": "hs-emj-12",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🎩⛓️🗽",
+      "answerAr": "أبراهام لينكولن",
+      "aliases": [
+        "لينكولن"
+      ]
+    },
+    {
+      "id": "hs-emj-13",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🎩🌳🪓",
+      "answerAr": "جورج واشنطن",
+      "aliases": [
+        "واشنطن"
+      ]
+    },
+    {
+      "id": "hs-emj-14",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "⛵🌎🗺️",
+      "answerAr": "كريستوفر كولومبوس",
+      "aliases": [
+        "كولومبوس"
+      ]
+    },
+    {
+      "id": "hs-emj-15",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "⛵🌍🇵🇹",
+      "answerAr": "فاسكو دا جاما",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-16",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "⛵🌐🔄",
+      "answerAr": "فرديناند ماجلان",
+      "aliases": [
+        "ماجلان"
+      ]
+    },
+    {
+      "id": "hs-emj-17",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🪨📜🔤",
+      "answerAr": "حجر رشيد",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-18",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🧱🐉🏔️",
+      "answerAr": "سور الصين العظيم",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-19",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🗡️👑🌍",
+      "answerAr": "الإسكندر الأكبر",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-20",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "👑🗡️🏛️",
+      "answerAr": "يوليوس قيصر",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-21",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "⛓️⚔️🗿",
+      "answerAr": "سبارتاكوس",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-22",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🏛️🦉⚖️",
+      "answerAr": "أثينا القديمة",
+      "aliases": [
+        "أثينا"
+      ]
+    },
+    {
+      "id": "hs-emj-23",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🍷☠️💭",
+      "answerAr": "سقراط",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-24",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "👑☥🏺",
+      "answerAr": "الفراعنة",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-25",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🧻⚰️🏺",
+      "answerAr": "المومياء",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-26",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "⚔️🕌🏜️",
+      "answerAr": "عمرو بن العاص",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-27",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "⛵🔥🏔️",
+      "answerAr": "طارق بن زياد",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-28",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "⚔️🦁🐎",
+      "answerAr": "خالد بن الوليد",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-29",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "⚖️🕌👳",
+      "answerAr": "عمر بن الخطاب",
+      "aliases": []
+    },
+    {
+      "id": "hs-emj-30",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "⛵🌎📅",
+      "answerAr": "اكتشاف أمريكا",
+      "aliases": []
+    },
+    {
+      "id": "hs-ord-17",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الفراعنة دول حسب ترتيبهم الزمني من الأقدم للأحدث",
+      "items": [
+        "أحمس",
+        "إخناتون",
+        "توت عنخ آمون",
+        "رمسيس الثالث"
+      ]
+    },
+    {
+      "id": "hs-ord-18",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب حكام روما دول من الأقدم للأحدث",
+      "items": [
+        "يوليوس قيصر",
+        "أغسطس",
+        "نيرون",
+        "قسطنطين"
+      ]
+    },
+    {
+      "id": "hs-ord-19",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب قادة الإمبراطورية المغولية دول من الأقدم للأحدث",
+      "items": [
+        "جنكيز خان",
+        "أوقطاي خان",
+        "هولاكو",
+        "قوبلاي خان"
+      ]
+    },
+    {
+      "id": "hs-ord-20",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب رحلات المستكشفين دي من الأقدم للأحدث",
+      "items": [
+        "كريستوفر كولومبوس",
+        "فاسكو دا جاما",
+        "فرديناند ماجلان",
+        "الكابتن جيمس كوك"
+      ]
+    },
+    {
+      "id": "hs-ord-21",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب رؤساء أمريكا دول حسب ترتيبهم الزمني",
+      "items": [
+        "جورج واشنطن",
+        "أبراهام لينكولن",
+        "فرانكلين روزفلت",
+        "جون كينيدي"
+      ]
+    },
+    {
+      "id": "hs-ord-22",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أحداث الحرب العالمية الأولى دي من الأقدم للأحدث",
+      "items": [
+        "اغتيال ولي عهد النمسا",
+        "معركة السوم",
+        "الثورة البلشفية في روسيا",
+        "نهاية الحرب بهدنة 1918"
+      ]
+    },
+    {
+      "id": "hs-ord-23",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب الخلفاء الراشدين دول حسب ترتيب خلافتهم",
+      "items": [
+        "أبو بكر الصديق",
+        "عمر بن الخطاب",
+        "عثمان بن عفان",
+        "علي بن أبي طالب"
+      ]
+    },
+    {
+      "id": "hs-ord-24",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب سلاطين المماليك دول حسب ترتيبهم الزمني",
+      "items": [
+        "الظاهر بيبرس",
+        "قلاوون",
+        "الناصر محمد بن قلاوون",
+        "قانصوه الغوري"
+      ]
+    },
+    {
+      "id": "hs-ord-25",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب حضارات بلاد ما بين النهرين دي من الأقدم للأحدث",
+      "items": [
+        "السومريون",
+        "الأكاديون",
+        "البابليون",
+        "الآشوريون"
+      ]
+    },
+    {
+      "id": "hs-ord-26",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب حروب مصر الحديثة دي من الأقدم للأحدث",
+      "items": [
+        "حرب 1948",
+        "العدوان الثلاثي 1956",
+        "النكسة 1967",
+        "حرب أكتوبر 1973"
+      ]
+    },
+    {
+      "id": "hs-ord-27",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الاتفاقيات والوعود دي من الأقدم للأحدث",
+      "items": [
+        "اتفاقية سايكس بيكو",
+        "وعد بلفور",
+        "اتفاقية كامب ديفيد",
+        "اتفاقية أوسلو"
+      ]
+    },
+    {
+      "id": "hs-ord-28",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب خلفاء الدولة الأموية دول حسب ترتيبهم الزمني",
+      "items": [
+        "معاوية بن أبي سفيان",
+        "عبد الملك بن مروان",
+        "الوليد بن عبد الملك",
+        "عمر بن عبد العزيز"
+      ]
+    },
+    {
+      "id": "hs-ord-29",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب سقوط الإمبراطوريات دي من الأقدم للأحدث",
+      "items": [
+        "سقوط روما الغربية",
+        "سقوط القسطنطينية",
+        "سقوط الدولة العثمانية",
+        "سقوط الاتحاد السوفيتي"
+      ]
+    },
+    {
+      "id": "hs-ord-30",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الاختراعات والأحداث دي من الأقدم للأحدث",
+      "items": [
+        "اختراع المطبعة",
+        "اكتشاف أمريكا",
+        "اختراع الهاتف",
+        "الهبوط على القمر"
+      ]
+    },
+    {
+      "id": "hs-ord-31",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب خلفاء الدولة الفاطمية دول حسب ترتيبهم الزمني",
+      "items": [
+        "المعز لدين الله",
+        "العزيز بالله",
+        "الحاكم بأمر الله",
+        "المستنصر بالله"
+      ]
+    },
+    {
+      "id": "hs-ord-32",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أحداث تاريخ الأندلس دي من الأقدم للأحدث",
+      "items": [
+        "دخول طارق بن زياد الأندلس",
+        "تأسيس إمارة قرطبة الأموية",
+        "سقوط الخلافة الأموية بالأندلس",
+        "سقوط غرناطة"
+      ]
+    },
+    {
+      "id": "hs-bool-59",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الملك سنفرو هو مؤسس الأسرة الرابعة الفرعونية ووالد خوفو",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-60",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "رمسيس الثاني حكم مصر أكتر من 60 سنة",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-61",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "نفرتيتي كانت زوجة الملك إخناتون",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-62",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الملك مينا (نارمر) هو اللي وحّد القطرين المصريين",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-63",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "الملكة زنوبيا حكمت مملكة تدمر في سوريا",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-64",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "هانيبال قائد قرطاجي عبر جبال الألب بالفيلة عشان يحارب روما",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-65",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "إسبارطة كانت مدينة يونانية قديمة مشهورة بجيشها القوي",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-66",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أثينا القديمة طوّرت أول نظام ديمقراطي معروف في التاريخ",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-67",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الإمبراطورية الرومانية انقسمت لإمبراطورية شرقية وغربية",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-68",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "القسطنطينية سقطت في إيد العثمانيين سنة 1453",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-69",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "محمد الفاتح هو اللي فتح القسطنطينية",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-70",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الدولة العباسية أسسها أبو العباس السفاح",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-71",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "هارون الرشيد كان من أشهر خلفاء الدولة العباسية",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-72",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "بيت الحكمة في بغداد كان مركز علمي مهم في العصر العباسي",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-73",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "المغول دمروا مدينة بغداد سنة 1258",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-74",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "هولاكو هو قائد المغول اللي دمّر بغداد",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-75",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الأندلس فقدت آخر معاقلها الإسلامية بسقوط غرناطة سنة 1492",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-76",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الحروب الصليبية استمرت حوالي قرنين من الزمن تقريبًا",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-77",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "القدس اتحررت على إيد صلاح الدين سنة 1187",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-78",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "ريتشارد قلب الأسد كان ملك إنجلترا وقت الحملة الصليبية التالتة",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-79",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الثورة البلشفية في روسيا حصلت سنة 1917",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-80",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "لينين هو اللي قاد الثورة البلشفية",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-81",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "ستالين خلف لينين في قيادة الاتحاد السوفيتي",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-82",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "هتلر أصبح مستشار ألمانيا سنة 1933",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-83",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "الحرب العالمية التانية انتهت سنة 1945",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-84",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أول قنبلة ذرية استُخدمت في الحرب اتضربت على هيروشيما",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-85",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "اليابان استسلمت في الحرب العالمية التانية بعد ضرب هيروشيما وناجازاكي",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-86",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الأمم المتحدة اتأسست بعد الحرب العالمية التانية مباشرة",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-87",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "عصبة الأمم كانت المنظمة الدولية اللي سبقت الأمم المتحدة",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-88",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الهند استقلت عن بريطانيا سنة 1947",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-89",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "غاندي قاد حركة استقلال الهند بأسلوب اللاعنف",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-90",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "نيلسون مانديلا كان أول رئيس أسود لجنوب أفريقيا",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-91",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "نظام الفصل العنصري (الأبارتايد) كان معمول بيه في جنوب أفريقيا",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-92",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "ثورة 1919 المصرية قادها سعد زغلول",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-93",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "معاهدة 1936 نظّمت العلاقة بين مصر وبريطانيا",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-94",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "مصر أصبحت جمهورية رسميًا سنة 1953",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-95",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الوحدة بين مصر وسوريا (الجمهورية العربية المتحدة) بدأت سنة 1958",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-96",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الوحدة بين مصر وسوريا استمرت لحد سنة 1971",
+      "isTrue": false,
+      "explanationAr": "الوحدة انتهت فعليًا سنة 1961 بانفصال سوريا، مش 1971."
+    },
+    {
+      "id": "hs-bool-97",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "حرب الاستنزاف كانت بين مصر وإسرائيل بعد هزيمة 1967",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-98",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "اتفاقية كامب ديفيد وقّعها الرئيس السادات ورئيس وزراء إسرائيل مناحم بيجن",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-99",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الملك فاروق هو آخر ملوك مصر من أسرة محمد علي",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-100",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "محمد علي باشا كان أصله من ألبانيا",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-101",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الخديوي إسماعيل هو اللي افتتح قناة السويس رسميًا",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-102",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "قناة السويس افتُتحت سنة 1869",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-103",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "حرب القرم كانت بين روسيا وتحالف يضم بريطانيا وفرنسا والدولة العثمانية",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-104",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الثورة الأمريكية أدت لاستقلال أمريكا عن بريطانيا سنة 1776",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-105",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "إعلان الاستقلال الأمريكي كتبه توماس جيفرسون أساسًا",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-106",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الحرب الأهلية الأمريكية كانت بين الشمال والجنوب بسبب قضية العبودية أساسًا",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-107",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "مارتن لوثر كينج قاد حركة الحقوق المدنية للسود في أمريكا",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-108",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "سقوط جدار برلين كان بداية لتوحيد ألمانيا",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-109",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "ألمانيا اتوحدت رسميًا سنة 1990",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-110",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "تفكك يوغوسلافيا حصل خلال التسعينات",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-111",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الملكة إليزابيث التانية حكمت بريطانيا لأكتر من 70 سنة",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-112",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الملك هنري التامن كان ملك إنجلترا اللي انفصل عن الكنيسة الكاثوليكية",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-113",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الملكة فيكتوريا حكمت بريطانيا في العصر المعروف باسم العصر الفيكتوري",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-114",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "يوري جاجارين قام بأول رحلة مدارية حول الأرض للإنسان",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-115",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "ماو تسي تونج قاد الثورة الثقافية في الصين",
+      "isTrue": true
+    },
+    {
+      "id": "hs-bool-116",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الحرب الكورية أدت لترسيخ انقسام شبه الجزيرة الكورية لشمال وجنوب",
+      "isTrue": true
+    },
+    {
+      "id": "hs-num-33",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الثورة البلشفية الروسية حصلت سنة كام؟",
+      "correctValue": 1917,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-34",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "هتلر بقى مستشار ألمانيا سنة كام؟",
+      "correctValue": 1933,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-35",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "القسطنطينية سقطت في إيد العثمانيين سنة كام؟",
+      "correctValue": 1453,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-36",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "الحروب الصليبية استمرت تقريبًا كام سنة من بدايتها لنهايتها؟",
+      "correctValue": 195,
+      "tolerance": 20,
+      "unitAr": "سنة"
+    },
+    {
+      "id": "hs-num-37",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الفتح الإسلامي لمصر تم بشكل كامل سنة كام ميلادي؟",
+      "correctValue": 641,
+      "tolerance": 3
+    },
+    {
+      "id": "hs-num-38",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "بغداد سقطت في إيد المغول سنة كام؟",
+      "correctValue": 1258,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-39",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الوحدة بين مصر وسوريا (الجمهورية العربية المتحدة) بدأت سنة كام؟",
+      "correctValue": 1958,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-40",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الوحدة بين مصر وسوريا انتهت بانفصال سوريا سنة كام؟",
+      "correctValue": 1961,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-41",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "مصر أصبحت جمهورية رسميًا سنة كام؟",
+      "correctValue": 1953,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-42",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "ثورة 1919 المصرية قامت سنة كام؟",
+      "correctValue": 1919,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-43",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "العدوان الثلاثي على مصر حصل سنة كام؟",
+      "correctValue": 1956,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-44",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "اتفاقية كامب ديفيد بين مصر وإسرائيل اتوقعت سنة كام؟",
+      "correctValue": 1978,
+      "tolerance": 1
+    },
+    {
+      "id": "hs-num-45",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "معاهدة السلام المصرية الإسرائيلية الرسمية اتوقعت سنة كام؟",
+      "correctValue": 1979,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-46",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الهند استقلت عن بريطانيا سنة كام؟",
+      "correctValue": 1947,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-47",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "جنوب أفريقيا شهدت أول انتخابات متعددة الأعراق وانتهاء رسمي للأبارتايد سنة كام؟",
+      "correctValue": 1994,
+      "tolerance": 1
+    },
+    {
+      "id": "hs-num-48",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "نيلسون مانديلا خرج من السجن سنة كام؟",
+      "correctValue": 1990,
+      "tolerance": 1
+    },
+    {
+      "id": "hs-num-49",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "ألمانيا اتوحدت رسميًا سنة كام؟",
+      "correctValue": 1990,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-50",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الحرب الكورية بدأت سنة كام؟",
+      "correctValue": 1950,
+      "tolerance": 1
+    },
+    {
+      "id": "hs-num-51",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الحرب الكورية انتهت بهدنة سنة كام؟",
+      "correctValue": 1953,
+      "tolerance": 1
+    },
+    {
+      "id": "hs-num-52",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "حرب فيتنام انتهت سنة كام؟",
+      "correctValue": 1975,
+      "tolerance": 1
+    },
+    {
+      "id": "hs-num-53",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "إعلان الاستقلال الأمريكي كان سنة كام؟",
+      "correctValue": 1776,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-54",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الحرب الأهلية الأمريكية بدأت سنة كام؟",
+      "correctValue": 1861,
+      "tolerance": 1
+    },
+    {
+      "id": "hs-num-55",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الحرب الأهلية الأمريكية انتهت سنة كام؟",
+      "correctValue": 1865,
+      "tolerance": 1
+    },
+    {
+      "id": "hs-num-56",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "أبراهام لينكولن اتقتل سنة كام؟",
+      "correctValue": 1865,
+      "tolerance": 1
+    },
+    {
+      "id": "hs-num-57",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "مارتن لوثر كينج اتقتل سنة كام؟",
+      "correctValue": 1968,
+      "tolerance": 1
+    },
+    {
+      "id": "hs-num-58",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "يوري جاجارين قام برحلته الفضائية المدارية التاريخية سنة كام؟",
+      "correctValue": 1961,
+      "tolerance": 1
+    },
+    {
+      "id": "hs-num-59",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "الملكة إليزابيث التانية اعتلت عرش بريطانيا سنة كام؟",
+      "correctValue": 1952,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-60",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "يوغوسلافيا بدأت تتفكك سنة كام تقريبًا؟",
+      "correctValue": 1991,
+      "tolerance": 1
+    },
+    {
+      "id": "hs-num-61",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الثورة الثقافية في الصين بدأت سنة كام؟",
+      "correctValue": 1966,
+      "tolerance": 1
+    },
+    {
+      "id": "hs-num-62",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "ماو تسي تونج أسس جمهورية الصين الشعبية سنة كام؟",
+      "correctValue": 1949,
+      "tolerance": 0
+    },
+    {
+      "id": "hs-num-63",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "حرب الاستنزاف بين مصر وإسرائيل استمرت من 1967 لحد سنة كام؟",
+      "correctValue": 1970,
+      "tolerance": 1
+    },
+    {
+      "id": "hs-num-64",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "عمرو بن العاص دخل بجيشه أرض مصر لأول مرة سنة كام ميلادي؟",
+      "correctValue": 639,
+      "tolerance": 2
+    },
+    {
+      "id": "hs-fill-28",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "القائد المغولي اللي دمّر بغداد سنة 1258 اسمه ____",
+      "answerAr": "هولاكو",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-29",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "مؤسس الدولة العباسية هو أبو العباس ____",
+      "answerAr": "السفاح",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-30",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "خليفة عباسي شهير بحكمه الذهبي ومجلسه العلمي اسمه هارون ____",
+      "answerAr": "الرشيد",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-31",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "الملكة اللي حكمت مملكة تدمر في سوريا القديمة اسمها ____",
+      "answerAr": "زنوبيا",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-32",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "القائد القرطاجي اللي عبر جبال الألب بالفيلة عشان يحارب روما اسمه ____",
+      "answerAr": "هانيبال",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-33",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "السلطان العثماني اللي فتح القسطنطينية لقبه محمد ____",
+      "answerAr": "الفاتح",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-34",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "مؤسس إمارة قرطبة الأموية بالأندلس اسمه عبد الرحمن ____",
+      "answerAr": "الداخل",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-35",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "العالم المسلم اللي بيُلقّب بـ«الشيخ الرئيس» وبرع في الطب والفلسفة اسمه ابن ____",
+      "answerAr": "سينا",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-36",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الرحّالة الإيطالي اللي كتب عن رحلته الشهيرة للصين اسمه ماركو ____",
+      "answerAr": "بولو",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-37",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "قائد الثورة البلشفية الروسية سنة 1917 اسمه ____",
+      "answerAr": "لينين",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-38",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الزعيم اللي حكم الاتحاد السوفيتي بعد لينين اسمه ____",
+      "answerAr": "ستالين",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-39",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "المستشار الألماني اللي بدأ الحرب العالمية التانية اسمه أدولف ____",
+      "answerAr": "هتلر",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-40",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "رئيس وزراء بريطانيا وقت الحرب العالمية التانية اسمه ونستون ____",
+      "answerAr": "تشرشل",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-41",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "قائد حركة استقلال الهند بأسلوب اللاعنف اسمه المهاتما ____",
+      "answerAr": "غاندي",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-42",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أول رئيس أسود لجنوب أفريقيا اسمه نيلسون ____",
+      "answerAr": "مانديلا",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-43",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "قائد حركة الحقوق المدنية للسود في أمريكا اسمه مارتن لوثر ____",
+      "answerAr": "كينج",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-44",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الرئيس الأمريكي اللي ألغى العبودية اسمه أبراهام ____",
+      "answerAr": "لينكولن",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-45",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أول رائد فضاء سوفيتي طاف مدار الأرض كاملًا سنة 1961 اسمه يوري ____",
+      "answerAr": "جاجارين",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-46",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الزعيم الصيني اللي أسس جمهورية الصين الشعبية اسمه ماو تسي ____",
+      "answerAr": "تونج",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-47",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "القائد اللي وحّد القطرين المصريين قبل عصر الأسرات اسمه الملك ____",
+      "answerAr": "مينا",
+      "aliases": [
+        "نارمر"
+      ]
+    },
+    {
+      "id": "hs-fill-48",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "مؤسس الأسرة الفرعونية الرابعة ووالد الملك خوفو اسمه الملك ____",
+      "answerAr": "سنفرو",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-49",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "زوجة الملك إخناتون الملكة الشهيرة اسمها ____",
+      "answerAr": "نفرتيتي",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-50",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "الرئيس المصري اللي وقّع اتفاقية كامب ديفيد اسمه أنور ____",
+      "answerAr": "السادات",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-51",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "الرئيس المصري اللي تولى الحكم بعد السادات اسمه حسني ____",
+      "answerAr": "مبارك",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-52",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أول رئيس لجمهورية مصر اسمه محمد ____",
+      "answerAr": "نجيب",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-53",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الملك المصري اللي اتنازل عن العرش بعد ثورة 1952 اسمه الملك ____",
+      "answerAr": "فاروق",
+      "aliases": []
+    },
+    {
+      "id": "hs-fill-54",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "مؤسس مصر الحديثة حسب اللقب الشائع اسمه محمد ____ باشا",
+      "answerAr": "علي",
+      "aliases": []
+    },
+    {
+      "id": "hs-open-30",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين قائد الثورة البلشفية الروسية؟",
+      "answerAr": "لينين",
+      "aliases": []
+    },
+    {
+      "id": "hs-open-31",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين الزعيم اللي حكم الاتحاد السوفيتي بعد لينين؟",
+      "answerAr": "ستالين",
+      "aliases": []
+    },
+    {
+      "id": "hs-open-32",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "مين المستشار الألماني اللي بدأ الحرب العالمية التانية؟",
+      "answerAr": "هتلر",
+      "aliases": [
+        "أدولف هتلر"
+      ]
+    },
+    {
+      "id": "hs-open-33",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين رئيس وزراء بريطانيا وقت الحرب العالمية التانية؟",
+      "answerAr": "تشرشل",
+      "aliases": [
+        "ونستون تشرشل"
+      ]
+    },
+    {
+      "id": "hs-open-34",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين أول رئيس أسود لجنوب أفريقيا؟",
+      "answerAr": "نيلسون مانديلا",
+      "aliases": [
+        "مانديلا"
+      ]
+    },
+    {
+      "id": "hs-open-35",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين قائد حركة الحقوق المدنية للسود في أمريكا؟",
+      "answerAr": "مارتن لوثر كينج",
+      "aliases": []
+    },
+    {
+      "id": "hs-open-36",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين الرئيس الأمريكي اللي ألغى العبودية؟",
+      "answerAr": "أبراهام لينكولن",
+      "aliases": [
+        "لينكولن"
+      ]
+    },
+    {
+      "id": "hs-open-37",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين أول رائد فضاء طاف مدار الأرض كاملًا؟",
+      "answerAr": "يوري جاجارين",
+      "aliases": [
+        "جاجارين"
+      ]
+    },
+    {
+      "id": "hs-open-38",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين الزعيم اللي أسس جمهورية الصين الشعبية؟",
+      "answerAr": "ماو تسي تونج",
+      "aliases": []
+    },
+    {
+      "id": "hs-open-39",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين القائد اللي وحّد القطرين المصريين قبل عصر الأسرات؟",
+      "answerAr": "مينا",
+      "aliases": [
+        "نارمر"
+      ]
+    },
+    {
+      "id": "hs-open-40",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين زوجة الملك إخناتون الملكة الشهيرة بجمالها؟",
+      "answerAr": "نفرتيتي",
+      "aliases": []
+    },
+    {
+      "id": "hs-open-41",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "مين الرئيس المصري اللي وقّع اتفاقية كامب ديفيد؟",
+      "answerAr": "أنور السادات",
+      "aliases": [
+        "السادات"
+      ]
+    },
+    {
+      "id": "hs-open-42",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "مين الرئيس المصري اللي تولى الحكم بعد السادات؟",
+      "answerAr": "حسني مبارك",
+      "aliases": [
+        "مبارك"
+      ]
+    },
+    {
+      "id": "hs-open-43",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين أول رئيس لجمهورية مصر؟",
+      "answerAr": "محمد نجيب",
+      "aliases": []
+    },
+    {
+      "id": "hs-open-44",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين الملك المصري اللي اتنازل عن العرش بعد ثورة 1952؟",
+      "answerAr": "الملك فاروق",
+      "aliases": [
+        "فاروق"
+      ]
+    },
+    {
+      "id": "hs-open-45",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين اللي بيُلقّب بمؤسس مصر الحديثة؟",
+      "answerAr": "محمد علي باشا",
+      "aliases": [
+        "محمد علي"
+      ]
+    },
+    {
+      "id": "hs-open-46",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين القائد المغولي اللي دمّر بغداد سنة 1258؟",
+      "answerAr": "هولاكو",
+      "aliases": []
+    },
+    {
+      "id": "hs-open-47",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين مؤسس الدولة العباسية؟",
+      "answerAr": "أبو العباس السفاح",
+      "aliases": [
+        "السفاح"
+      ]
+    },
+    {
+      "id": "hs-open-48",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين خليفة عباسي اشتهر بحكمه الذهبي ومجلسه العلمي؟",
+      "answerAr": "هارون الرشيد",
+      "aliases": []
+    },
+    {
+      "id": "hs-open-49",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "مين الملكة اللي حكمت مملكة تدمر في سوريا القديمة؟",
+      "answerAr": "زنوبيا",
+      "aliases": []
+    },
+    {
+      "id": "hs-open-50",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين القائد القرطاجي اللي عبر جبال الألب بالفيلة عشان يحارب روما؟",
+      "answerAr": "هانيبال",
+      "aliases": []
+    },
+    {
+      "id": "hs-open-51",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين السلطان العثماني اللي فتح القسطنطينية؟",
+      "answerAr": "محمد الفاتح",
+      "aliases": []
+    },
+    {
+      "id": "hs-open-52",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين مؤسس إمارة قرطبة الأموية بالأندلس؟",
+      "answerAr": "عبد الرحمن الداخل",
+      "aliases": []
+    },
+    {
+      "id": "hs-open-53",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين الرحّالة الإيطالي اللي كتب عن رحلته الشهيرة للصين؟",
+      "answerAr": "ماركو بولو",
+      "aliases": []
+    },
+    {
+      "id": "hs-open-54",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين الملك البابلي اللي اتنسب له أقدم مجموعة قوانين مكتوبة؟",
+      "answerAr": "حمورابي",
+      "aliases": []
+    },
+    {
+      "id": "hs-open-55",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم السفينة اللي أقلت أوائل المستوطنين الإنجليز لأمريكا سنة 1620؟",
+      "answerAr": "مايفلاور",
+      "aliases": []
+    },
+    {
+      "id": "hs-open-56",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم الوثيقة الإنجليزية اللي حدّت من سلطة الملك سنة 1215؟",
+      "answerAr": "الماجنا كارتا",
+      "aliases": [
+        "ماجنا كارتا"
+      ]
+    },
+    {
+      "id": "hs-open-57",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الإمبراطور الروماني اللي اعتنق المسيحية وسمح بحرية العبادة ليها في الإمبراطورية؟",
+      "answerAr": "قسطنطين",
+      "aliases": []
+    },
+    {
+      "id": "hs-open-58",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين قائد الحملة الفرنسية على مصر سنة 1798؟",
+      "answerAr": "نابليون بونابرت",
+      "aliases": [
+        "نابليون"
+      ]
+    },
+    {
+      "id": "hs-prog-25",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "قائد ثورة روسية كبرى سنة 1917",
+        "أسس أول دولة شيوعية في التاريخ",
+        "جسده محنّط ومعروض في ميدان أحمر بموسكو"
+      ],
+      "answerAr": "لينين",
+      "aliases": []
+    },
+    {
+      "id": "hs-prog-26",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "حكم الاتحاد السوفيتي لعقود بقبضة حديدية",
+        "قاد بلاده خلال الحرب العالمية التانية ضد ألمانيا",
+        "خلف لينين في قيادة الدولة"
+      ],
+      "answerAr": "ستالين",
+      "aliases": []
+    },
+    {
+      "id": "hs-prog-27",
+      "shape": "progressive",
+      "difficulty": 1,
+      "hints": [
+        "مستشار ألماني بدأ أكبر حرب في التاريخ",
+        "حكم ألمانيا النازية من سنة 1933",
+        "انتحر في برلين قبل نهاية الحرب بأيام"
+      ],
+      "answerAr": "هتلر",
+      "aliases": [
+        "أدولف هتلر"
+      ]
+    },
+    {
+      "id": "hs-prog-28",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "رئيس وزراء بريطاني اشتهر بخطبه الحماسية",
+        "قاد بلاده خلال الحرب العالمية التانية",
+        "معروف بإشارة النصر بأصبعين"
+      ],
+      "answerAr": "تشرشل",
+      "aliases": [
+        "ونستون تشرشل"
+      ]
+    },
+    {
+      "id": "hs-prog-29",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "سجن أكتر من 27 سنة بسبب مقاومته للتمييز العنصري",
+        "أصبح أول رئيس أسود لبلاده",
+        "رمز عالمي لمناهضة نظام الفصل العنصري"
+      ],
+      "answerAr": "نيلسون مانديلا",
+      "aliases": [
+        "مانديلا"
+      ]
+    },
+    {
+      "id": "hs-prog-30",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "قائد أمريكي قاد حركة الحقوق المدنية للسود",
+        "ألقى خطاب «عندي حلم» الشهير",
+        "اغتيل سنة 1968"
+      ],
+      "answerAr": "مارتن لوثر كينج",
+      "aliases": []
+    },
+    {
+      "id": "hs-prog-31",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "رئيس أمريكي قاد بلاده وقت الحرب الأهلية",
+        "أصدر إعلان تحرير العبيد",
+        "اغتيل في مسرح بعد نهاية الحرب بأيام"
+      ],
+      "answerAr": "أبراهام لينكولن",
+      "aliases": [
+        "لينكولن"
+      ]
+    },
+    {
+      "id": "hs-prog-32",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "رائد فضاء سوفيتي حقق إنجازًا تاريخيًا سنة 1961",
+        "أول إنسان يطوف مدار الأرض بالكامل",
+        "رحلته استمرت أقل من ساعتين"
+      ],
+      "answerAr": "يوري جاجارين",
+      "aliases": [
+        "جاجارين"
+      ]
+    },
+    {
+      "id": "hs-prog-33",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "زعيم صيني قاد ثورة شيوعية كبرى",
+        "أسس جمهورية الصين الشعبية سنة 1949",
+        "قاد لاحقًا حملة الثورة الثقافية"
+      ],
+      "answerAr": "ماو تسي تونج",
+      "aliases": []
+    },
+    {
+      "id": "hs-prog-34",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أول حاكم معروف بالاسم في تاريخ مصر القديمة",
+        "بيُنسب له توحيد الوجه القبلي والبحري",
+        "اسمه بيظهر أحيانًا باسم نارمر"
+      ],
+      "answerAr": "مينا",
+      "aliases": [
+        "نارمر"
+      ]
+    },
+    {
+      "id": "hs-prog-35",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "ملكة مصرية اشتهرت بجمالها",
+        "زوجة فرعون دعا لعبادة إله واحد",
+        "رأسها الشهير محفوظ في متحف ببرلين"
+      ],
+      "answerAr": "نفرتيتي",
+      "aliases": []
+    },
+    {
+      "id": "hs-prog-36",
+      "shape": "progressive",
+      "difficulty": 1,
+      "hints": [
+        "رئيس مصري وقّع أول معاهدة سلام مع إسرائيل",
+        "قاد حرب أكتوبر 1973",
+        "اغتيل سنة 1981 خلال عرض عسكري"
+      ],
+      "answerAr": "أنور السادات",
+      "aliases": [
+        "السادات"
+      ]
+    },
+    {
+      "id": "hs-prog-37",
+      "shape": "progressive",
+      "difficulty": 1,
+      "hints": [
+        "رئيس مصري حكم لفترة طويلة تجاوزت العقدين",
+        "تولى الحكم بعد اغتيال سابقه",
+        "كان طيارًا حربيًا قبل الرئاسة"
+      ],
+      "answerAr": "حسني مبارك",
+      "aliases": [
+        "مبارك"
+      ]
+    },
+    {
+      "id": "hs-prog-38",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أول رئيس لجمهورية مصر بعد إعلانها",
+        "كان من قادة ثورة يوليو 1952",
+        "اتنحى بعد فترة قصيرة لصالح عبد الناصر"
+      ],
+      "answerAr": "محمد نجيب",
+      "aliases": []
+    },
+    {
+      "id": "hs-prog-39",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "آخر ملوك مصر من أسرة محمد علي",
+        "اتنازل عن العرش بعد ثورة 1952",
+        "عاش باقي حياته في المنفى بإيطاليا"
+      ],
+      "answerAr": "الملك فاروق",
+      "aliases": [
+        "فاروق"
+      ]
+    },
+    {
+      "id": "hs-prog-40",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "حاكم مصري من أصل ألباني",
+        "بيُلقّب بمؤسس مصر الحديثة",
+        "أسس أسرة حكمت مصر لأكتر من قرن"
+      ],
+      "answerAr": "محمد علي باشا",
+      "aliases": [
+        "محمد علي"
+      ]
+    },
+    {
+      "id": "hs-prog-41",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "قائد مغولي حفيد جنكيز خان",
+        "دمّر مدينة بغداد سنة 1258",
+        "أنهى الخلافة العباسية فعليًا"
+      ],
+      "answerAr": "هولاكو",
+      "aliases": []
+    },
+    {
+      "id": "hs-prog-42",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "خليفة عباسي عاصر فترة ازدهار حضاري كبير",
+        "كانت بغداد في عهده مركز علم وثقافة",
+        "اشتهر بقصص «ألف ليلة وليلة» رغم إنها خيالية أساسًا"
+      ],
+      "answerAr": "هارون الرشيد",
+      "aliases": []
+    },
+    {
+      "id": "hs-prog-43",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "ملكة عربية حكمت مملكة في الشرق الأوسط قديمًا",
+        "تحدّت الإمبراطورية الرومانية عسكريًا",
+        "هُزمت وأُسرت وعاصمتها كانت تدمر بسوريا"
+      ],
+      "answerAr": "زنوبيا",
+      "aliases": []
+    },
+    {
+      "id": "hs-prog-44",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "قائد عسكري من شمال أفريقيا القديمة",
+        "عبر جبالًا شاهقة بجيش فيه فيلة",
+        "حارب روما لسنين طويلة من غير ما ينتصر نهائيًا"
+      ],
+      "answerAr": "هانيبال",
+      "aliases": []
+    },
+    {
+      "id": "hs-prog-45",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "سلطان عثماني شاب حقق إنجازًا عسكريًا كبيرًا وهو صغير السن",
+        "فتح مدينة كانت عاصمة الإمبراطورية البيزنطية",
+        "حصل على لقب «الفاتح» بعد هذا الإنجاز"
+      ],
+      "answerAr": "محمد الفاتح",
+      "aliases": []
+    },
+    {
+      "id": "hs-prog-46",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أمير أموي هرب من الشام بعد سقوط دولته هناك",
+        "أسس إمارة إسلامية جديدة في أوروبا",
+        "بيُلقّب بصقر قريش"
+      ],
+      "answerAr": "عبد الرحمن الداخل",
+      "aliases": []
+    },
+    {
+      "id": "hs-prog-47",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "رحّالة إيطالي من مدينة البندقية",
+        "سافر لآسيا وعاش سنين طويلة في بلاط إمبراطور صيني مغولي",
+        "كتاب رحلته من أشهر كتب الرحلات في التاريخ"
+      ],
+      "answerAr": "ماركو بولو",
+      "aliases": []
+    },
+    {
+      "id": "hs-prog-48",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "ملك بابلي حكم بلاد ما بين النهرين قديمًا",
+        "بيُنسب له أقدم مجموعة قوانين مكتوبة معروفة",
+        "قانونه اشتهر بمبدأ «العين بالعين»"
+      ],
+      "answerAr": "حمورابي",
+      "aliases": []
+    },
+    {
+      "id": "hs-mcq-116",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الفرعون اللي بيُنسب له توحيد الوجهين القبلي والبحري لأول مرة؟",
+      "options": [
+        "مينا",
+        "خوفو",
+        "رمسيس الثاني",
+        "توت عنخ آمون"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "بيُعرف كمان باسم نارمر في بعض المصادر."
+    },
+    {
+      "id": "hs-mcq-117",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مؤسس الأسرة الفرعونية الرابعة ووالد الملك خوفو؟",
+      "options": [
+        "سنفرو",
+        "زوسر",
+        "أحمس الأول",
+        "تحتمس الأول"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-118",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الملكة الفرعونية اللي حكمت مصر بصلاحيات فرعون كامل؟",
+      "options": [
+        "حتشبسوت",
+        "نفرتيتي",
+        "كليوباترا",
+        "تي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-119",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الفرعون اللي دعا لعبادة إله واحد اسمه آتون؟",
+      "options": [
+        "إخناتون",
+        "أخناتون نفسه بيُكتب أحيانًا كده",
+        "توت عنخ آمون",
+        "رمسيس الثاني"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-120",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين زوجة إخناتون المعروفة بجمالها ورأسها المحفوظ في متحف ببرلين؟",
+      "options": [
+        "نفرتيتي",
+        "حتشبسوت",
+        "كليوباترا",
+        "نفرتاري"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-121",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "مين الفرعون الشاب اللي اكتُشفت مقبرته شبه سليمة سنة 1922؟",
+      "options": [
+        "توت عنخ آمون",
+        "خوفو",
+        "زوسر",
+        "أمنحتب الثالث"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-122",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين عالم المصريات الفرنسي اللي أسس أول متحف مصري في القاهرة؟",
+      "options": [
+        "أوجست مارييت",
+        "هوارد كارتر",
+        "جان شامبليون",
+        "فلندرز بيتري"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-123",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الفرعون اللي حكم مصر أطول فترة تقريبًا من كل الفراعنة؟",
+      "options": [
+        "رمسيس الثاني",
+        "خوفو",
+        "تحتمس الثالث",
+        "بيبي الثاني"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بيبي الثاني بيُقال إنه حكم أطول فترة (حوالي 90-94 سنة حسب بعض المصادر)، لكن رمسيس الثاني (66 سنة) هو الأشهر والأكتر توثيقًا."
+    },
+    {
+      "id": "hs-mcq-124",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين آخر ملكة حكمت مصر قبل ما تتحول لولاية رومانية؟",
+      "options": [
+        "كليوباترا",
+        "حتشبسوت",
+        "نفرتيتي",
+        "أرسينوي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-125",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين قائد الجيش المصري اللي طرد الهكسوس من مصر؟",
+      "options": [
+        "أحمس الأول",
+        "خوفو",
+        "تحتمس الثالث",
+        "رمسيس الأول"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-126",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "الهرم الأكبر في الجيزة بُني لمين؟",
+      "options": [
+        "خوفو",
+        "خفرع",
+        "منقرع",
+        "زوسر"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-127",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الهرم المدرج في سقارة، أقدم هرم حجري في مصر، بُني لمين؟",
+      "options": [
+        "زوسر",
+        "خوفو",
+        "خفرع",
+        "سنفرو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-128",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الهرم المدرج في سقارة اتبنى بطريقة مختلفة عن أهرامات الجيزة، بيتكون من كام مصطبة حجرية فوق بعض تقريبًا؟",
+      "options": [
+        "6 مصاطب",
+        "4 مصاطب",
+        "8 مصاطب",
+        "3 مصاطب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-129",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "تمثال أبو الهول بيُنسب عادة لرأسه إنه بيمثّل وش أنهي فرعون؟",
+      "options": [
+        "خفرع",
+        "خوفو",
+        "منقرع",
+        "زوسر"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-130",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الفرعون اللي بيُلقّب أحيانًا بـ«نابليون مصر القديمة» لكتر حملاته العسكرية الناجحة؟",
+      "options": [
+        "تحتمس الثالث",
+        "رمسيس الثاني",
+        "سيتي الأول",
+        "أمنحتب الثاني"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-131",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي إله مصري قديم بيُصوّر عادة برأس صقر ومرتبط بالملكية والسماء؟",
+      "options": [
+        "حورس",
+        "أنوبيس",
+        "سوبك",
+        "ست"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-132",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي إله مصري قديم بيُعتبر الإله الأساسي للشمس؟",
+      "options": [
+        "رع",
+        "أوزوريس",
+        "بتاح",
+        "تحوت"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-133",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي إله مصري قديم إله الموتى والعالم السفلي؟",
+      "options": [
+        "أوزوريس",
+        "رع",
+        "حورس",
+        "آمون"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-134",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الكتابة الهيروغليفية المصرية القديمة كانت بتُكتب غالبًا على مادة نباتية اسمها إيه؟",
+      "options": [
+        "البردي",
+        "الكتان",
+        "الجلد المدبوغ",
+        "الفخار"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-135",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "في عملية التحنيط عند المصريين القدماء، أنهي عضو داخلي كان بيتسابوا في مكانه من غير ما يتشال؟",
+      "options": [
+        "القلب",
+        "المخ",
+        "الكبد",
+        "المعدة"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "كانوا بيعتبروا القلب مركز التفكير والمشاعر، فبيسيبوه في الجسم، بينما بيشيلوا باقي الأعضاء زي المخ والكبد."
+    },
+    {
+      "id": "hs-mcq-136",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين المؤرخ اليوناني القديم اللي بيُلقّب بـ«أبو التاريخ» وكتب عن مصر القديمة؟",
+      "options": [
+        "هيرودوت",
+        "توسيديدس",
+        "بلوتارخ",
+        "بوليبيوس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-137",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الأسرة الحاكمة الأخيرة في مصر القديمة قبل الفتح الروماني كانت من أصل يوناني، اسمها إيه؟",
+      "options": [
+        "الأسرة البطلمية",
+        "الأسرة الفارسية",
+        "الأسرة الكوشية",
+        "الأسرة الصاوية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-138",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين مؤسس الأسرة البطلمية في مصر بعد وفاة الإسكندر الأكبر؟",
+      "options": [
+        "بطليموس الأول",
+        "بطليموس التاسع",
+        "قيصرون",
+        "بطليموس الثاني"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-139",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين قائد الثورة البلشفية الروسية سنة 1917؟",
+      "options": [
+        "لينين",
+        "ستالين",
+        "تروتسكي",
+        "خروتشوف"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-140",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الزعيم اللي حكم الاتحاد السوفيتي بعد لينين مباشرة تقريبًا؟",
+      "options": [
+        "ستالين",
+        "خروتشوف",
+        "بريجنيف",
+        "جورباتشوف"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-141",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين المستشار الألماني اللي حكم ألمانيا النازية؟",
+      "options": [
+        "هتلر",
+        "بسمارك",
+        "هيندنبورج",
+        "فون شليخر"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-142",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين رئيس وزراء بريطانيا الشهير وقت الحرب العالمية التانية؟",
+      "options": [
+        "ونستون تشرشل",
+        "نيفيل تشامبرلين",
+        "كليمنت أتلي",
+        "أنتوني إيدن"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-143",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الرئيس الأمريكي اللي كان في الحكم أثناء أغلب فترة الحرب العالمية التانية؟",
+      "options": [
+        "فرانكلين روزفلت",
+        "هاري ترومان",
+        "دوايت أيزنهاور",
+        "وودرو ويلسون"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-144",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الرئيس الأمريكي اللي أصدر قرار استخدام القنبلة الذرية على اليابان؟",
+      "options": [
+        "هاري ترومان",
+        "فرانكلين روزفلت",
+        "دوايت أيزنهاور",
+        "جون كينيدي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-145",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أول اسم عملية أطلقتها ألمانيا لغزو بولندا وبدأت بيها الحرب العالمية التانية؟",
+      "options": [
+        "عملية فايس",
+        "عملية بارباروسا",
+        "عملية أوفرلورد",
+        "عملية سي لاين"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "عملية بارباروسا كانت غزو ألمانيا للاتحاد السوفيتي لاحقًا، مش غزو بولندا."
+    },
+    {
+      "id": "hs-mcq-146",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي دولة كانت أول دولة تعلن الحرب على ألمانيا بعد غزو بولندا؟",
+      "options": [
+        "بريطانيا وفرنسا",
+        "الاتحاد السوفيتي",
+        "أمريكا",
+        "إيطاليا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-147",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إنزال نورماندي الشهير (D-Day) حصل سنة كام؟",
+      "options": [
+        "1944",
+        "1943",
+        "1945",
+        "1942"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-148",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أمريكا دخلت الحرب العالمية التانية بشكل مباشر بعد أنهي حدث؟",
+      "options": [
+        "هجوم بيرل هاربور",
+        "غزو بولندا",
+        "سقوط فرنسا",
+        "معركة ستالينجراد"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-149",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "هجوم بيرل هاربور اللي جرّ أمريكا للحرب كان من أنهي دولة؟",
+      "options": [
+        "اليابان",
+        "ألمانيا",
+        "إيطاليا",
+        "الاتحاد السوفيتي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-150",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الزعيم اللي أسس جمهورية الصين الشعبية سنة 1949؟",
+      "options": [
+        "ماو تسي تونج",
+        "شيانج كاي شيك",
+        "دنج شياو بينج",
+        "تشو إن لاي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-151",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين قائد استقلال الهند بأسلوب المقاومة السلمية؟",
+      "options": [
+        "المهاتما غاندي",
+        "جواهر لال نهرو",
+        "محمد علي جناح",
+        "سوباس تشاندرا بوس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-152",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين أول رئيس وزراء للهند بعد استقلالها؟",
+      "options": [
+        "جواهر لال نهرو",
+        "المهاتما غاندي",
+        "إنديرا غاندي",
+        "راجيف غاندي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-153",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مؤسس دولة باكستان اللي انفصلت عن الهند؟",
+      "options": [
+        "محمد علي جناح",
+        "جواهر لال نهرو",
+        "لياقت علي خان",
+        "ضياء الحق"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-154",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين أول رئيس أسود لجنوب أفريقيا بعد نهاية نظام الفصل العنصري؟",
+      "options": [
+        "نيلسون مانديلا",
+        "ديزموند توتو",
+        "ثابو مبيكي",
+        "إف دبليو دي كليرك"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-155",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين قائد حركة الحقوق المدنية للسود في أمريكا اللي اغتيل سنة 1968؟",
+      "options": [
+        "مارتن لوثر كينج",
+        "مالكوم إكس",
+        "روزا باركس",
+        "باراك أوباما"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-156",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين السيدة الأمريكية اللي رفضت تسيب مقعدها في الأتوبيس لراكب أبيض وأشعلت شرارة حركة الحقوق المدنية؟",
+      "options": [
+        "روزا باركس",
+        "إليانور روزفلت",
+        "هارييت توبمان",
+        "مايا أنجيلو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-157",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين أول إنسان طاف مدار الأرض بالفضاء؟",
+      "options": [
+        "يوري جاجارين",
+        "نيل أرمسترونج",
+        "فالنتينا تيريشكوفا",
+        "ألان شيبرد"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-158",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "بعثة أبولو 11 اللي هبطت على القمر لأول مرة كانت سنة كام؟",
+      "options": [
+        "1969",
+        "1968",
+        "1970",
+        "1965"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-159",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أزمة الصواريخ الكوبية كانت مواجهة مباشرة بين أمريكا وأنهي دولة؟",
+      "options": [
+        "الاتحاد السوفيتي",
+        "الصين",
+        "ألمانيا الشرقية",
+        "كوبا لوحدها"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-160",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين نائب الرئيس اللي تولى الرئاسة الأمريكية فورًا بعد اغتيال كينيدي؟",
+      "options": [
+        "ليندون جونسون",
+        "ريتشارد نيكسون",
+        "هيوبرت همفري",
+        "جيرالد فورد"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-161",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الرئيس الأمريكي اللي استقال من منصبه بسبب فضيحة ووترجيت؟",
+      "options": [
+        "ريتشارد نيكسون",
+        "جيرالد فورد",
+        "جيمي كارتر",
+        "ليندون جونسون"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-162",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الحضارة السومرية اللي اخترعت الكتابة المسمارية قامت في أنهي منطقة؟",
+      "options": [
+        "جنوب بلاد ما بين النهرين",
+        "وادي النيل",
+        "شبه الجزيرة الأناضولية",
+        "بلاد الشام"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-163",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين القائد الأكادي اللي بيُعتبر أول من أسس إمبراطورية موحّدة في التاريخ؟",
+      "options": [
+        "سرجون الأكادي",
+        "حمورابي",
+        "آشور بانيبال",
+        "نبوخذ نصر"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-164",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الملك البابلي اللي بنى حدائق بابل المعلقة حسب الرواية التقليدية؟",
+      "options": [
+        "نبوخذ نصر الثاني",
+        "حمورابي",
+        "سرجون الأكادي",
+        "آشور بانيبال"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-165",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي مدينة يونانية قديمة كانت بتضم أشهر معبد لعرافة تنبؤات في العالم القديم؟",
+      "options": [
+        "دلفي",
+        "أثينا",
+        "إسبارطة",
+        "كورنثة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-166",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي مدينة يونانية قديمة اشتهرت بنظامها العسكري الصارم؟",
+      "options": [
+        "إسبارطة",
+        "أثينا",
+        "ديلفي",
+        "أوليمبيا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-167",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الفيلسوف اليوناني اللي اتحاكم بتهمة إفساد الشباب وأُعدم بالسم؟",
+      "options": [
+        "سقراط",
+        "أفلاطون",
+        "أرسطو",
+        "ديوجين"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-168",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الفيلسوف اليوناني اللي أسس الأكاديمية وكان تلميذ سقراط؟",
+      "options": [
+        "أفلاطون",
+        "أرسطو",
+        "زينون",
+        "إبيقور"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-169",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الفيلسوف اليوناني اللي بيُعتبر مؤسس المنطق الأرسطي وعلم الأحياء المبكر؟",
+      "options": [
+        "أرسطو",
+        "أفلاطون",
+        "سقراط",
+        "ديموقريطس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-170",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الإسكندر الأكبر بنى إمبراطورية شاسعة، إيه اسم عاصمته الجديدة اللي أسسها في مصر؟",
+      "options": [
+        "الإسكندرية",
+        "طيبة",
+        "ممفيس",
+        "بابل"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-171",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين القائد الروماني اللي شارك يوليوس قيصر السلطة ضمن الحكم الثلاثي الأول قبل ما يصير خصمه؟",
+      "options": [
+        "بومبي",
+        "أغسطس",
+        "مارك أنطونيو",
+        "كراسوس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-172",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين أول إمبراطور روماني رسمي بعد نهاية الجمهورية الرومانية؟",
+      "options": [
+        "أغسطس",
+        "يوليوس قيصر",
+        "نيرون",
+        "تراجان"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-173",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الإمبراطور الروماني اللي اشتهر بحكمه القاسي واتهامه بحرق روما؟",
+      "options": [
+        "نيرون",
+        "أغسطس",
+        "كاليجولا",
+        "قسطنطين"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-174",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الإمبراطور الروماني اللي اعتنق المسيحية وسمح بحرية العبادة ليها؟",
+      "options": [
+        "قسطنطين",
+        "نيرون",
+        "أغسطس",
+        "ديوكلتيانوس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-175",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الكولوسيوم الروماني الشهير كان بيُستخدم أساسًا في إيه؟",
+      "options": [
+        "مبارزات المصارعين والعروض العامة",
+        "التجارة",
+        "الاجتماعات السياسية",
+        "العبادة الدينية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-176",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين القائد القرطاجي اللي عبر جبال الألب بالفيلة عشان يهاجم روما؟",
+      "options": [
+        "هانيبال",
+        "حملقار برقة",
+        "ماجو برقة",
+        "حسدروبال"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-177",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الحروب البونيقية كانت صراع طويل بين روما وأنهي حضارة قديمة؟",
+      "options": [
+        "قرطاج",
+        "اليونان",
+        "فارس",
+        "مصر"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-178",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الملك الفارسي اللي بيُنسب له إنشاء أول إمبراطورية فارسية كبرى (الأخمينية)؟",
+      "options": [
+        "كورش الكبير",
+        "داريوس الأول",
+        "خشايارشا",
+        "قمبيز"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-179",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين الملك الفارسي اللي قاد الحملة الشهيرة على اليونان ووقعت في عهده معركة سلاميس البحرية؟",
+      "options": [
+        "خشايارشا (زركسيس)",
+        "كورش الكبير",
+        "داريوس الأول",
+        "قمبيز"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-180",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي معركة اشتهرت بمقاومة 300 مقاتل إسبارطي ضد الجيش الفارسي الضخم؟",
+      "options": [
+        "معركة ثيرموبيلاي",
+        "معركة ماراثون",
+        "معركة سلاميس",
+        "معركة بلاتيا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-181",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي معركة اشتهرت بجري رسول يوناني مسافة طويلة عشان يوصل خبر النصر لأثينا؟",
+      "options": [
+        "معركة ماراثون",
+        "معركة ثيرموبيلاي",
+        "معركة سلاميس",
+        "معركة بلاتيا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-182",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الألعاب الأولمبية القديمة كانت بتتقام تكريمًا لمين من آلهة اليونان؟",
+      "options": [
+        "زيوس",
+        "بوسيدون",
+        "أبولو",
+        "أريس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-183",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الحرب الأسطورية اللي دارت حواليها ملحمة الإلياذة كانت بين اليونانيين وأنهي مدينة؟",
+      "options": [
+        "طروادة",
+        "إسبارطة",
+        "قرطاج",
+        "بابل"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-184",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الشاعر اليوناني اللي بيُنسب له تأليف ملحمتي الإلياذة والأوديسة؟",
+      "options": [
+        "هوميروس",
+        "هيسيود",
+        "سافو",
+        "بندار"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-185",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين قائد حركة استقلال أمريكا اللاتينية المعروف بلقب «المحرر» في فنزويلا وكولومبيا؟",
+      "options": [
+        "سيمون بوليفار",
+        "خوسيه دي سان مارتين",
+        "ميغيل هيدالغو",
+        "برناردو أوهيجينز"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-186",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين قائد استقلال الأرجنتين المعروف بعبوره جبال الأنديز عسكريًا لتحرير تشيلي وبيرو؟",
+      "options": [
+        "خوسيه دي سان مارتين",
+        "سيمون بوليفار",
+        "ميغيل هيدالغو",
+        "توسان لوفرتور"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-187",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين الكاهن اللي أطلق شرارة ثورة استقلال المكسيك عن إسبانيا؟",
+      "options": [
+        "ميغيل هيدالغو",
+        "سيمون بوليفار",
+        "سان مارتين",
+        "بورفيريو دياز"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-188",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين قائد ثورة العبيد في هايتي اللي أسست أول جمهورية سوداء مستقلة في التاريخ؟",
+      "options": [
+        "توسان لوفرتور",
+        "سيمون بوليفار",
+        "ميغيل هيدالغو",
+        "خوسيه مارتي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-189",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الزعيم اللي قاد غانا للاستقلال، أول دولة أفريقية جنوب الصحراء تستقل من الاستعمار؟",
+      "options": [
+        "كوامي نكروما",
+        "جومو كينياتا",
+        "جوليوس نيريري",
+        "نيلسون مانديلا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-190",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الزعيم اللي قاد حركة استقلال كينيا عن بريطانيا؟",
+      "options": [
+        "جومو كينياتا",
+        "كوامي نكروما",
+        "جوليوس نيريري",
+        "باتريس لومومبا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-191",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين الزعيم اللي قاد استقلال تنجانيقا (تنزانيا حاليًا) عن بريطانيا؟",
+      "options": [
+        "جوليوس نيريري",
+        "جومو كينياتا",
+        "كوامي نكروما",
+        "سام نجوما"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-192",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الجزائر استقلت عن فرنسا سنة كام بعد حرب استقلال دموية طويلة؟",
+      "options": [
+        "1962",
+        "1958",
+        "1966",
+        "1954"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-193",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين أول رئيس للجزائر بعد استقلالها؟",
+      "options": [
+        "أحمد بن بلة",
+        "هواري بومدين",
+        "الشاذلي بن جديد",
+        "عبد العزيز بوتفليقة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-194",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين السلطان العثماني اللي بيُعتبر أعظم سلاطين الدولة العثمانية وحكم في عصرها الذهبي؟",
+      "options": [
+        "سليمان القانوني",
+        "محمد الفاتح",
+        "سليم الأول",
+        "عبد الحميد الثاني"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-195",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين مؤسس الدولة العثمانية اللي اتسمت الدولة باسمه؟",
+      "options": [
+        "عثمان الأول",
+        "أورخان الأول",
+        "مراد الأول",
+        "بايزيد الأول"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-196",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين اللي اخترع المصباح الكهربائي العملي القابل للاستخدام التجاري؟",
+      "options": [
+        "توماس إديسون",
+        "نيكولا تسلا",
+        "جراهام بيل",
+        "بنجامين فرانكلين"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-197",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين اللي اخترع الهاتف؟",
+      "options": [
+        "ألكسندر جراهام بيل",
+        "توماس إديسون",
+        "جوليلمو ماركوني",
+        "نيكولا تسلا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-198",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين المخترع الألماني اللي أرسل أول إشارة راديو عملية واكتشف الموجات الكهرومغناطيسية؟",
+      "options": [
+        "هاينريش هيرتز",
+        "جوليلمو ماركوني",
+        "نيكولا تسلا",
+        "جيمس ماكسويل"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-199",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين العالم اللي بيُنسب له اكتشاف قانون الجاذبية حسب قصة سقوط تفاحة؟",
+      "options": [
+        "إسحاق نيوتن",
+        "ألبرت أينشتاين",
+        "جاليليو",
+        "كوبرنيكوس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-200",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين العالم اللي طوّر نظرية النسبية؟",
+      "options": [
+        "ألبرت أينشتاين",
+        "إسحاق نيوتن",
+        "ماكس بلانك",
+        "نيلز بور"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-201",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين العالم الألماني اللي حدد الميكروب المسبب لمرض السل والكوليرا وأسس علم الجراثيم الحديث؟",
+      "options": [
+        "روبرت كوخ",
+        "لويس باستور",
+        "إدوارد جينر",
+        "ألكسندر فليمنج"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-202",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين العالم الاسكتلندي اللي اكتشف مادة البنسلين المضادة للبكتيريا؟",
+      "options": [
+        "ألكسندر فليمنج",
+        "لويس باستور",
+        "إدوارد جينر",
+        "جوزيف ليستر"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-203",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين المهندس الألماني اللي بيُنسب له اختراع أول سيارة عملية بمحرك احتراق داخلي؟",
+      "options": [
+        "كارل بنز",
+        "هنري فورد",
+        "رودولف ديزل",
+        "فرديناند بورشه"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-204",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين اللي اخترع أول طائرة ناجحة قابلة للتحكم بالمحرك؟",
+      "options": [
+        "الأخوان رايت",
+        "لويس بليريو",
+        "ألبرتو سانتوس دومونت",
+        "أوتو ليلينتال"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-205",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين عالم الفلك البولندي اللي طرح فكرة إن الشمس هي مركز الكون بدل الأرض؟",
+      "options": [
+        "نيكولاس كوبرنيكوس",
+        "جاليليو جاليلي",
+        "يوهانس كيبلر",
+        "تيخو براهي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-206",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين عالم الفلك الألماني اللي وضع القوانين الثلاثة لحركة الكواكب حوالين الشمس؟",
+      "options": [
+        "يوهانس كيبلر",
+        "نيكولاس كوبرنيكوس",
+        "جاليليو جاليلي",
+        "إسحاق نيوتن"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-207",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين قائد المقاومة الجزائرية الشهير اللي حارب الاستعمار الفرنسي في القرن التاسع عشر؟",
+      "options": [
+        "الأمير عبد القادر الجزائري",
+        "أحمد بن بلة",
+        "هواري بومدين",
+        "مصطفى بن بولعيد"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-208",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الإمبراطور الصيني اللي وحّد الصين لأول مرة وبنى أجزاء كبيرة من سور الصين العظيم؟",
+      "options": [
+        "تشين شي هوانج",
+        "كوبلاي خان",
+        "وو تسه تيان",
+        "هان جاو تسو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-209",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين الإمبراطورة الوحيدة اللي حكمت الصين باسمها الخاص رسميًا في التاريخ الصيني؟",
+      "options": [
+        "وو تسه تيان",
+        "تسو شي",
+        "يانج جوي فاي",
+        "ماو تسي تونج زوجته"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-210",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين مؤسس الديانة البوذية في الهند القديمة؟",
+      "options": [
+        "بوذا (سيدهارتا جوتاما)",
+        "كونفوشيوس",
+        "ماهافيرا",
+        "جورو ناناك"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-211",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين الإمبراطور الهندي اللي اعتنق البوذية ونشرها بعد ندمه على حرب دموية شنّها؟",
+      "options": [
+        "أشوكا",
+        "بابر",
+        "أكبر الكبير",
+        "شاه جهان"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-212",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مؤسس إمبراطورية موغال الإسلامية في الهند؟",
+      "options": [
+        "بابر",
+        "أكبر الكبير",
+        "شاه جهان",
+        "أورنجزيب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-213",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "تاج محل بناه أنهي إمبراطور موغالي حزنًا على وفاة زوجته؟",
+      "options": [
+        "شاه جهان",
+        "أكبر الكبير",
+        "بابر",
+        "أورنجزيب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-214",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الإمبراطور الموغالي المعروف بتوسيع الإمبراطورية وسياسة التسامح الديني معاه؟",
+      "options": [
+        "أكبر الكبير",
+        "بابر",
+        "شاه جهان",
+        "همايون"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-215",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الثورة الهندية الكبرى ضد الحكم البريطاني (المعروفة بحرب الاستقلال الأولى) حصلت سنة كام تقريبًا؟",
+      "options": [
+        "1857",
+        "1847",
+        "1867",
+        "1877"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-216",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين قائد الثورة الفيتنامية الشيوعية اللي حارب فرنسا وبعدين أمريكا؟",
+      "options": [
+        "هو تشي منه",
+        "فو نجوين جياب",
+        "نجو دينه ديم",
+        "لي دوان"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-217",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الحرب الأولى ضد الاستعمار في فيتنام (قبل تدخل أمريكا) كانت ضد أنهي قوة أوروبية؟",
+      "options": [
+        "فرنسا",
+        "بريطانيا",
+        "هولندا",
+        "إسبانيا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-218",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين المسؤول البريطاني اللي بيُنسب له تأسيس سنغافورة الحديثة كمركز تجاري سنة 1819؟",
+      "options": [
+        "السير توماس ستامفورد رافلز",
+        "السير روبرت كلايف",
+        "اللورد كرومر",
+        "اللورد كورزون"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-219",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "هونج كونج كانت مستعمرة بريطانية لحد ما اترجعت لأنهي دولة سنة 1997؟",
+      "options": [
+        "الصين",
+        "اليابان",
+        "كوريا الجنوبية",
+        "تايوان"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-220",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين قائد الثورة الكوبية اللي أطاح بنظام باتيستا سنة 1959؟",
+      "options": [
+        "فيدل كاسترو",
+        "تشي جيفارا",
+        "راؤول كاسترو",
+        "كاميلو سيينفويجوس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-221",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين رفيق فيدل كاسترو الأرجنتيني الشهير في الثورة الكوبية؟",
+      "options": [
+        "تشي جيفارا",
+        "راؤول كاسترو",
+        "كاميلو سيينفويجوس",
+        "هوجو تشافيز"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-222",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين الرئيس التشيلي اللي مات في القصر الرئاسي وقت الانقلاب العسكري عليه سنة 1973؟",
+      "options": [
+        "سلفادور الليندي",
+        "أوغستو بينوشيه",
+        "إدواردو فراي",
+        "باتريسيو ألوين"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-223",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الجنرال اللي حكم تشيلي بقبضة عسكرية بعد الانقلاب على سلفادور الليندي؟",
+      "options": [
+        "أوغستو بينوشيه",
+        "سلفادور الليندي",
+        "إدواردو فراي",
+        "رامون كاستيلو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-224",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الملك المصري اللي حكم في فترة ما بين الحربين العالميتين، ووالد الملك فاروق؟",
+      "options": [
+        "الملك فؤاد الأول",
+        "الملك فاروق نفسه",
+        "الخديوي عباس حلمي",
+        "الملك أحمد فؤاد الثاني"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-225",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "اليونان استقلت عن الدولة العثمانية في أنهي قرن؟",
+      "options": [
+        "القرن التاسع عشر",
+        "القرن الثامن عشر",
+        "القرن العشرين",
+        "القرن السابع عشر"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-226",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين القائد العسكري الإيطالي المعروف بحملة «الألف» اللي ساهمت في توحيد إيطاليا؟",
+      "options": [
+        "جوزيبي غاريبالدي",
+        "كافور",
+        "فيكتور عمانويل الثاني",
+        "ماتزيني"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-227",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين رئيس الوزراء الإيطالي اللي قاد الجهد الدبلوماسي والسياسي لتوحيد إيطاليا؟",
+      "options": [
+        "كافور",
+        "غاريبالدي",
+        "فيكتور عمانويل الثاني",
+        "موسوليني"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-228",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين المستشار الألماني اللي قاد توحيد ألمانيا سياسيًا في القرن التاسع عشر؟",
+      "options": [
+        "أوتو فون بسمارك",
+        "فيلهلم الأول",
+        "فيلهلم الثاني",
+        "هيندنبورج"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-229",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين أول إمبراطور لألمانيا الموحّدة بعد التوحيد سنة 1871؟",
+      "options": [
+        "فيلهلم الأول",
+        "بسمارك",
+        "فيلهلم الثاني",
+        "فريدريش الثالث"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "hs-mcq-230",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الجنرال الأمريكي اللي قاد قوات الحلفاء في أوروبا خلال الحرب العالمية التانية وبقى رئيسًا لاحقًا؟",
+      "options": [
+        "دوايت أيزنهاور",
+        "جورج باتون",
+        "دوجلاس ماك آرثر",
+        "عمر برادلي"
+      ],
+      "correctIndex": 0
+    }
+  ]
+}

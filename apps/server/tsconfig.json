@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "types": ["node"],
+    "paths": {
+      "@game/shared": ["../../packages/shared/src/index.ts"],
+      "@game/rounds": ["../../packages/rounds/src/index.ts"]
+    }
+  },
+  "include": ["src/**/*"]
+}

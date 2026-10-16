@@ -1,0 +1,7466 @@
+{
+  "category": {
+    "id": "general",
+    "nameAr": "معلومات عامة",
+    "emoji": "💡"
+  },
+  "questions": [
+    {
+      "id": "gn-mcq-1",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "قوس قزح فيه كام لون؟",
+      "options": [
+        "٥",
+        "٦",
+        "٧",
+        "٨"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "gn-mcq-2",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "الميه بتغلي عند كام درجة مئوية؟",
+      "options": [
+        "٥٠",
+        "٨٠",
+        "١٠٠",
+        "١٢٠"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "gn-mcq-3",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أسرع حيوان بري في العالم؟",
+      "options": [
+        "الأسد",
+        "الفهد",
+        "الحصان",
+        "الغزال"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "gn-mcq-4",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أكبر كوكب في المجموعة الشمسية؟",
+      "options": [
+        "زحل",
+        "المشتري",
+        "نبتون",
+        "أورانوس"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "gn-mcq-5",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه الرمز الكيميائي للذهب؟",
+      "options": [
+        "Ag",
+        "Au",
+        "Gd",
+        "Go"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "gn-mcq-6",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أكبر حيوان على وجه الأرض؟",
+      "options": [
+        "الفيل الأفريقي",
+        "الحوت الأزرق",
+        "الزرافة",
+        "القرش الأبيض"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "gn-mcq-7",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "العضو المسؤول عن ضخ الدم في الجسم إيه؟",
+      "options": [
+        "الكبد",
+        "الرئة",
+        "القلب",
+        "الكلى"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "gn-mcq-8",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه أقرب كوكب للشمس؟",
+      "options": [
+        "الزهرة",
+        "عطارد",
+        "الأرض",
+        "المريخ"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "gn-num-1",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "جسم الإنسان البالغ فيه كام عظمة؟",
+      "correctValue": 206,
+      "tolerance": 4,
+      "unitAr": "عظمة"
+    },
+    {
+      "id": "gn-num-2",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "الميه بتغلي عند كام درجة مئوية؟",
+      "correctValue": 100,
+      "tolerance": 0,
+      "unitAr": "درجة"
+    },
+    {
+      "id": "gn-num-3",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "السنة الكبيسة فيها كام يوم؟",
+      "correctValue": 366,
+      "tolerance": 0,
+      "unitAr": "يوم"
+    },
+    {
+      "id": "gn-num-4",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "اليوم فيه كام دقيقة؟",
+      "correctValue": 1440,
+      "tolerance": 0,
+      "unitAr": "دقيقة"
+    },
+    {
+      "id": "gn-num-5",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "سرعة الضوء كام كيلومتر في الثانية تقريبًا؟",
+      "correctValue": 300000,
+      "tolerance": 15000,
+      "unitAr": "كم/ث"
+    },
+    {
+      "id": "gn-bool-1",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "الشمس نجم",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-2",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "العنكبوت من الحشرات",
+      "isTrue": false,
+      "explanationAr": "العنكبوت من العنكبوتيات وليه ٨ أرجل، والحشرات ليها ٦."
+    },
+    {
+      "id": "gn-bool-3",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الخفاش من الثدييات",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-4",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "الميه بتتجمد عند صفر درجة مئوية",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-5",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "القمر بيلف حوالين الأرض",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-6",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الدم جوه الجسم لونه أزرق",
+      "isTrue": false,
+      "explanationAr": "الدم أحمر دايمًا، والأوردة بتبان زرقا بسبب طريقة انعكاس الضوء في الجلد."
+    },
+    {
+      "id": "gn-bool-7",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "النحلة بتنتج العسل",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-8",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الأرض بتلف حوالين نفسها في ٢٤ ساعة تقريبًا",
+      "isTrue": true
+    },
+    {
+      "id": "gn-fill-1",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أكبر كوكب في المجموعة الشمسية هو ____",
+      "answerAr": "المشتري",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-2",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "الحيوان اللي بيقولوا عليه سفينة الصحرا هو ____",
+      "answerAr": "الجمل",
+      "aliases": [
+        "الجمال",
+        "البعير"
+      ]
+    },
+    {
+      "id": "gn-fill-3",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "اللي يشوف بلوى غيره تهون عليه ____",
+      "answerAr": "بلواه",
+      "aliases": [
+        "بلوته"
+      ]
+    },
+    {
+      "id": "gn-fill-4",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "القرد في عين أمه ____",
+      "answerAr": "غزال",
+      "aliases": [
+        "غزالة"
+      ]
+    },
+    {
+      "id": "gn-fill-5",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الجعان يحلم بسوق ____",
+      "answerAr": "العيش",
+      "aliases": [
+        "عيش"
+      ]
+    },
+    {
+      "id": "gn-open-1",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم الغاز اللي بنتنفسه ومحتاجينه عشان نعيش؟",
+      "answerAr": "الأكسجين",
+      "aliases": [
+        "اكسجين",
+        "أوكسجين"
+      ]
+    },
+    {
+      "id": "gn-open-2",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم أقرب نجم للأرض؟",
+      "answerAr": "الشمس",
+      "aliases": [
+        "شمس"
+      ]
+    },
+    {
+      "id": "gn-prog-1",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا كوكب",
+        "أنا أكبر كوكب في المجموعة الشمسية",
+        "عندي بقعة حمرا عملاقة"
+      ],
+      "answerAr": "المشتري",
+      "aliases": [
+        "كوكب المشتري"
+      ]
+    },
+    {
+      "id": "gn-prog-2",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا حيوان",
+        "بعيش في الصحرا وبستحمل العطش",
+        "بيقولوا عليا سفينة الصحرا"
+      ],
+      "answerAr": "الجمل",
+      "aliases": [
+        "جمل",
+        "البعير"
+      ]
+    },
+    {
+      "id": "gn-ord-1",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب الكواكب من الأقرب للشمس",
+      "items": [
+        "عطارد",
+        "الزهرة",
+        "الأرض",
+        "المريخ"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gn-ord-2",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب وحدات القياس من الأصغر للأكبر",
+      "items": [
+        "ملليمتر",
+        "سنتيمتر",
+        "متر",
+        "كيلومتر"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gn-prog-3",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا غاز",
+        "مالوش لون ولا ريحة",
+        "من غيري مفيش حياة على الأرض"
+      ],
+      "answerAr": "الأكسجين",
+      "aliases": [
+        "اكسجين",
+        "أوكسجين"
+      ]
+    },
+    {
+      "id": "gn-ord-3",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب وحدات الوقت من الأصغر للأكبر",
+      "items": [
+        "ثانية",
+        "دقيقة",
+        "ساعة",
+        "يوم"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gn-mcq-9",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه الرمز الكيميائي للحديد؟",
+      "options": [
+        "Fe",
+        "Ir",
+        "Hg",
+        "Ag"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "Fe جاية من الاسم اللاتيني Ferrum."
+    },
+    {
+      "id": "gn-mcq-10",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه الرمز الكيميائي للفضة؟",
+      "options": [
+        "Au",
+        "Ag",
+        "Al",
+        "As"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "Ag من الاسم اللاتيني Argentum."
+    },
+    {
+      "id": "gn-mcq-11",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "النباتات بتاخد أنهي غاز عشان تعمل التمثيل الضوئي؟",
+      "options": [
+        "الأكسجين",
+        "النيتروجين",
+        "ثاني أكسيد الكربون",
+        "الهيدروجين"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "بتاخد ثاني أكسيد الكربون وبتطلّع أكسجين."
+    },
+    {
+      "id": "gn-mcq-12",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي عضو بيخزّن السكر في الجسم؟",
+      "options": [
+        "الكلى",
+        "الكبد",
+        "الطحال",
+        "البنكرياس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الكبد بيخزّنه على شكل جليكوجين."
+    },
+    {
+      "id": "gn-mcq-13",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي عضو بيفلتر الدم في الجسم؟",
+      "options": [
+        "الكبد",
+        "المعدة",
+        "الكلى",
+        "الطحال"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "الكلى بتفلتر الدم وبتطلّع الفضلات في البول."
+    },
+    {
+      "id": "gn-mcq-14",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الإنسان البالغ عنده كام سنة في بقه؟",
+      "options": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "32 سنة، منهم 4 ضروس عقل."
+    },
+    {
+      "id": "gn-mcq-15",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أقسى مادة طبيعية معروفة؟",
+      "options": [
+        "الحديد",
+        "الجرانيت",
+        "الماس",
+        "الكوارتز"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "الماس أقسى مادة طبيعية على مقياس الصلابة."
+    },
+    {
+      "id": "gn-mcq-16",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "إيه أطول حيوان في العالم؟",
+      "options": [
+        "الفيل",
+        "الزرافة",
+        "الجمل",
+        "الحصان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الزرافة بتوصل لحوالي 5 متر ونص ارتفاع."
+    },
+    {
+      "id": "gn-mcq-17",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "كام لتر دم في جسم الإنسان البالغ تقريبًا؟",
+      "options": [
+        "3",
+        "5",
+        "8",
+        "12"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "حوالي 5 لتر في المتوسط."
+    },
+    {
+      "id": "gn-mcq-18",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "أنهي كوكب معروف بالكوكب الأحمر؟",
+      "options": [
+        "الزهرة",
+        "المريخ",
+        "عطارد",
+        "زحل"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "لونه أحمر بسبب أكسيد الحديد على سطحه."
+    },
+    {
+      "id": "gn-mcq-19",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي كوكب ليه حلقات واضحة حواليه؟",
+      "options": [
+        "المشتري",
+        "زحل",
+        "أورانوس",
+        "نبتون"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "حلقات زحل بتتشاف بالتليسكوب بسهولة."
+    },
+    {
+      "id": "gn-mcq-20",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه اسم أول قمر صناعي اتبعت للفضا؟",
+      "options": [
+        "أبولو",
+        "سبوتنيك",
+        "فوستوك",
+        "إكسبلورر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الاتحاد السوفيتي أطلق سبوتنيك سنة 1957."
+    },
+    {
+      "id": "gn-mcq-21",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين أول إنسان راح الفضا؟",
+      "options": [
+        "نيل أرمسترونج",
+        "يوري جاجارين",
+        "بوز ألدرين",
+        "جون جلين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "يوري جاجارين لف حوالين الأرض سنة 1961."
+    },
+    {
+      "id": "gn-mcq-22",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين أول إنسان مشي على سطح القمر؟",
+      "options": [
+        "يوري جاجارين",
+        "نيل أرمسترونج",
+        "بوز ألدرين",
+        "مايكل كولينز"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "نيل أرمسترونج نزل على القمر سنة 1969."
+    },
+    {
+      "id": "gn-mcq-23",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الأرض بتاخد قد إيه عشان تلف حوالين نفسها مرة؟",
+      "options": [
+        "ساعة",
+        "يوم",
+        "أسبوع",
+        "شهر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الدورة دي هي اللي بتعمل الليل والنهار."
+    },
+    {
+      "id": "gn-mcq-24",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اللي بينقل الأكسجين في الدم؟",
+      "options": [
+        "كرات الدم البيضا",
+        "الصفايح الدموية",
+        "كرات الدم الحمرا",
+        "البلازما"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "الهيموجلوبين في كرات الدم الحمرا بيشيل الأكسجين."
+    },
+    {
+      "id": "gn-mcq-25",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي فيتامين الجسم بيعمله لما يتعرّض للشمس؟",
+      "options": [
+        "فيتامين أ",
+        "فيتامين ب",
+        "فيتامين ج",
+        "فيتامين د"
+      ],
+      "correctIndex": 3,
+      "explanationAr": "الجلد بيصنّع فيتامين د من أشعة الشمس."
+    },
+    {
+      "id": "gn-mcq-26",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "نقص فيتامين ج بيسبب مرض اسمه إيه؟",
+      "options": [
+        "الكساح",
+        "الإسقربوط",
+        "الأنيميا",
+        "السكري"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الإسقربوط كان منتشر بين البحارة زمان."
+    },
+    {
+      "id": "gn-mcq-27",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الجدول الدوري فيه كام عنصر تقريبًا؟",
+      "options": [
+        "92",
+        "100",
+        "118",
+        "150"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "118 عنصر، منهم اللي اتصنّع في المعامل."
+    },
+    {
+      "id": "gn-mcq-28",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه أخف غاز في الطبيعة؟",
+      "options": [
+        "الهيليوم",
+        "الهيدروجين",
+        "النيتروجين",
+        "الأكسجين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الهيدروجين أخف عنصر في الجدول الدوري كله."
+    },
+    {
+      "id": "gn-mcq-29",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الصوت بيتحرك أسرع في إيه؟",
+      "options": [
+        "الهوا",
+        "الميه",
+        "الحديد",
+        "الفراغ"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "كل ما المادة كانت أكتف، الصوت بيمشي فيها أسرع."
+    },
+    {
+      "id": "gn-mcq-30",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "كام كروموسوم في خلية الإنسان الطبيعية؟",
+      "options": [
+        "23",
+        "46",
+        "48",
+        "64"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "46 كروموسوم، يعني 23 زوج."
+    },
+    {
+      "id": "gn-bool-9",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "البطريق طير بس مبيطيرش",
+      "isTrue": true,
+      "explanationAr": "البطريق طير، بس جناحاته اتحوّلت لزعانف للعوم."
+    },
+    {
+      "id": "gn-bool-10",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الطماطم من الناحية النباتية فاكهة",
+      "isTrue": true,
+      "explanationAr": "علميًا فاكهة، بس بنستعملها في المطبخ زي الخضار."
+    },
+    {
+      "id": "gn-bool-11",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الحوت الأزرق نوع من الأسماك",
+      "isTrue": false,
+      "explanationAr": "الحوت من الثدييات، بيتنفس هوا وبيرضّع صغاره."
+    },
+    {
+      "id": "gn-bool-12",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "الضوء أسرع من الصوت",
+      "isTrue": true,
+      "explanationAr": "وعشان كده بنشوف البرق قبل ما نسمع الرعد."
+    },
+    {
+      "id": "gn-bool-13",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الأرض بتلف حوالين الشمس مرة كل سنة",
+      "isTrue": true,
+      "explanationAr": "الدورة دي هي اللي بتحدد طول السنة."
+    },
+    {
+      "id": "gn-bool-14",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "المريخ معروف باسم الكوكب الأحمر",
+      "isTrue": true,
+      "explanationAr": "لونه من أكسيد الحديد اللي على سطحه."
+    },
+    {
+      "id": "gn-bool-15",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الماس أقسى مادة طبيعية معروفة",
+      "isTrue": true,
+      "explanationAr": "بيجي في أعلى درجة على مقياس موس للصلابة."
+    },
+    {
+      "id": "gn-bool-16",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الحديد بيصدي لما يتعرّض للهوا والميه",
+      "isTrue": true,
+      "explanationAr": "الصدأ ده أكسدة بتحصل مع الرطوبة."
+    },
+    {
+      "id": "gn-bool-17",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "النعامة بتطير مسافات طويلة",
+      "isTrue": false,
+      "explanationAr": "النعامة مبتطيرش خالص، بس بتجري بسرعة رهيبة."
+    },
+    {
+      "id": "gn-bool-18",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الدلفين من الأسماك",
+      "isTrue": false,
+      "explanationAr": "الدلفين من الثدييات زيه زي الحوت."
+    },
+    {
+      "id": "gn-bool-19",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أغلب جسم الإنسان مكوّن من ميه",
+      "isTrue": true,
+      "explanationAr": "حوالي 60 بالمية من وزن الجسم ميه."
+    },
+    {
+      "id": "gn-bool-20",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الصوت بيمشي في الفراغ عادي زي الضوء",
+      "isTrue": false,
+      "explanationAr": "الصوت محتاج وسط مادي، عشان كده الفضا ساكت."
+    },
+    {
+      "id": "gn-bool-21",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "القطط بتشوف في الضلمة الكاملة",
+      "isTrue": false,
+      "explanationAr": "بتشوف كويس في الضوء الخافت، بس مش في ضلمة كاملة."
+    },
+    {
+      "id": "gn-bool-22",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الهيليوم أخف من الهوا",
+      "isTrue": true,
+      "explanationAr": "عشان كده البالونات المليانة هيليوم بتطير."
+    },
+    {
+      "id": "gn-bool-23",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الكلى بتفلتر الدم في جسم الإنسان",
+      "isTrue": true,
+      "explanationAr": "بتنضّف الدم من الفضلات وبتطلّعها في البول."
+    },
+    {
+      "id": "gn-bool-24",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "الهيدروجين أخف عنصر في الجدول الدوري",
+      "isTrue": true,
+      "explanationAr": "الهيدروجين هو العنصر رقم 1 وأخفهم كلهم."
+    },
+    {
+      "id": "gn-num-6",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "كام كروموسوم في خلية الإنسان الطبيعية؟",
+      "correctValue": 46,
+      "tolerance": 0,
+      "explanationAr": "46 كروموسوم على شكل 23 زوج."
+    },
+    {
+      "id": "gn-num-7",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الإنسان البالغ عنده كام سنة في بقه؟",
+      "correctValue": 32,
+      "tolerance": 0,
+      "unitAr": "سنة",
+      "explanationAr": "32 سنة بما فيهم ضروس العقل."
+    },
+    {
+      "id": "gn-num-8",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "القلب بيدق كام مرة في الدقيقة وقت الراحة تقريبًا؟",
+      "correctValue": 72,
+      "tolerance": 15,
+      "unitAr": "دقة",
+      "explanationAr": "المعدل الطبيعي بين 60 و100 دقة في الدقيقة."
+    },
+    {
+      "id": "gn-num-9",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "الجدول الدوري فيه كام عنصر؟",
+      "correctValue": 118,
+      "tolerance": 2,
+      "unitAr": "عنصر",
+      "explanationAr": "118 عنصر معترف بيهم رسميًا."
+    },
+    {
+      "id": "gn-num-10",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "المجموعة الشمسية فيها كام كوكب؟",
+      "correctValue": 8,
+      "tolerance": 0,
+      "unitAr": "كوكب",
+      "explanationAr": "8 كواكب بعد ما بلوتو اتشال من القايمة."
+    },
+    {
+      "id": "gn-num-11",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "القفص الصدري للإنسان فيه كام ضلع؟",
+      "correctValue": 24,
+      "tolerance": 0,
+      "unitAr": "ضلع",
+      "explanationAr": "12 زوج، يعني 24 ضلع."
+    },
+    {
+      "id": "gn-num-12",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الأسبوع فيه كام ساعة؟",
+      "correctValue": 168,
+      "tolerance": 0,
+      "unitAr": "ساعة",
+      "explanationAr": "7 أيام × 24 ساعة."
+    },
+    {
+      "id": "gn-num-13",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الأرض بتلف حوالين نفسها في كام ساعة؟",
+      "correctValue": 24,
+      "tolerance": 0,
+      "unitAr": "ساعة",
+      "explanationAr": "وده سبب الليل والنهار."
+    },
+    {
+      "id": "gn-num-14",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "كام لتر دم في جسم الإنسان البالغ تقريبًا؟",
+      "correctValue": 5,
+      "tolerance": 1,
+      "unitAr": "لتر",
+      "explanationAr": "حوالي 5 لتر في المتوسط."
+    },
+    {
+      "id": "gn-num-15",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "الأرض بتبعد عن الشمس كام مليون كيلومتر تقريبًا؟",
+      "correctValue": 150,
+      "tolerance": 15,
+      "unitAr": "مليون كيلومتر",
+      "explanationAr": "حوالي 150 مليون كيلومتر، وبيسموها وحدة فلكية."
+    },
+    {
+      "id": "gn-fill-6",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "الكوكب المعروف بالكوكب الأحمر هو ____",
+      "answerAr": "المريخ",
+      "aliases": [
+        "مريخ"
+      ],
+      "explanationAr": "لونه من أكسيد الحديد على سطحه."
+    },
+    {
+      "id": "gn-fill-7",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أقسى مادة طبيعية معروفة هي ____",
+      "answerAr": "الماس",
+      "aliases": [
+        "ماس",
+        "الألماظ",
+        "الالماظ"
+      ],
+      "explanationAr": "بيتكوّن من الكربون تحت ضغط وحرارة عالية."
+    },
+    {
+      "id": "gn-fill-8",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "أول إنسان مشي على القمر اسمه نيل ____",
+      "answerAr": "أرمسترونج",
+      "aliases": [
+        "ارمسترونج",
+        "أرمسترونغ"
+      ],
+      "explanationAr": "نزل على القمر في يوليو 1969."
+    },
+    {
+      "id": "gn-fill-9",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "العضو اللي بيفلتر الدم في الجسم هو ____",
+      "answerAr": "الكلى",
+      "aliases": [
+        "كلى",
+        "الكلاوي"
+      ],
+      "explanationAr": "بتنضّف الدم من الفضلات."
+    },
+    {
+      "id": "gn-fill-10",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "اللي مالوش قديم مالوش ____",
+      "answerAr": "جديد",
+      "aliases": [
+        "الجديد"
+      ],
+      "explanationAr": "مثل بيقول إن اللي منكرش أصله مالوش مستقبل."
+    },
+    {
+      "id": "gn-fill-11",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "الطيور على أشكالها ____",
+      "answerAr": "تقع",
+      "aliases": [
+        "تقع "
+      ],
+      "explanationAr": "الناس بتتجمع مع اللي يشبهوها."
+    },
+    {
+      "id": "gn-fill-12",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "اللي على راسه بطحة ____ عليها",
+      "answerAr": "يحسس",
+      "aliases": [
+        "بيحسس",
+        "يحسّس"
+      ],
+      "explanationAr": "اللي عنده حاجة بيخبيها بيفضحها بنفسه."
+    },
+    {
+      "id": "gn-fill-13",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "إيد واحدة ما ____",
+      "answerAr": "تسقفش",
+      "aliases": [
+        "تصقفش",
+        "تصفقش",
+        "بتسقفش"
+      ],
+      "explanationAr": "التعاون هو اللي بيخلّص الشغل."
+    },
+    {
+      "id": "gn-fill-14",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "الغاز اللي النباتات بتاخده في التمثيل الضوئي هو ثاني أكسيد ____",
+      "answerAr": "الكربون",
+      "aliases": [
+        "كربون"
+      ],
+      "explanationAr": "وبتطلّع الأكسجين اللي بنتنفسه."
+    },
+    {
+      "id": "gn-fill-15",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الغاز اللي بيخلّي البالونات تطير في الهوا اسمه ____",
+      "answerAr": "الهيليوم",
+      "aliases": [
+        "هيليوم"
+      ],
+      "explanationAr": "الهيليوم أخف من الهوا."
+    },
+    {
+      "id": "gn-open-3",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين أول إنسان مشي على سطح القمر؟",
+      "answerAr": "نيل أرمسترونج",
+      "aliases": [
+        "أرمسترونج",
+        "ارمسترونج"
+      ],
+      "explanationAr": "كان ده سنة 1969 في رحلة أبولو 11."
+    },
+    {
+      "id": "gn-open-4",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه أكبر عضو داخلي في جسم الإنسان؟",
+      "answerAr": "الكبد",
+      "aliases": [
+        "كبد"
+      ],
+      "explanationAr": "الجلد أكبر عضو بشكل عام، بس الكبد أكبر عضو داخلي."
+    },
+    {
+      "id": "gn-open-5",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "أنهي كوكب بيسموه الكوكب الأحمر؟",
+      "answerAr": "المريخ",
+      "aliases": [
+        "مريخ"
+      ],
+      "explanationAr": "بسبب أكسيد الحديد اللي على سطحه."
+    },
+    {
+      "id": "gn-open-6",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه أقسى مادة طبيعية معروفة؟",
+      "answerAr": "الماس",
+      "aliases": [
+        "ماس",
+        "الألماظ"
+      ],
+      "explanationAr": "بيقطع أي مادة تانية تقريبًا."
+    },
+    {
+      "id": "gn-open-7",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه الغاز اللي بيشكّل أغلب الغلاف الجوي للأرض؟",
+      "answerAr": "النيتروجين",
+      "aliases": [
+        "نيتروجين",
+        "الآزوت"
+      ],
+      "explanationAr": "حوالي 78 بالمية نيتروجين و21 أكسجين."
+    },
+    {
+      "id": "gn-open-8",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "إيه أطول حيوان في العالم؟",
+      "answerAr": "الزرافة",
+      "aliases": [
+        "زرافة"
+      ],
+      "explanationAr": "بتوصل لحوالي 5 متر ونص."
+    },
+    {
+      "id": "gn-open-9",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "أنهي فيتامين بنجيبه من الشمس؟",
+      "answerAr": "فيتامين د",
+      "aliases": [
+        "د",
+        "فيتامين دال"
+      ],
+      "explanationAr": "الجلد بيصنّعه لما يتعرّض للشمس."
+    },
+    {
+      "id": "gn-open-10",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "مين أول إنسان طلع الفضا؟",
+      "answerAr": "يوري جاجارين",
+      "aliases": [
+        "جاجارين",
+        "يوري غاغارين"
+      ],
+      "explanationAr": "لف حوالين الأرض سنة 1961."
+    },
+    {
+      "id": "gn-open-11",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "أنهي معدن بيستخدم أكتر حاجة في الأسلاك الكهربائية؟",
+      "answerAr": "النحاس",
+      "aliases": [
+        "نحاس"
+      ],
+      "explanationAr": "النحاس موصل ممتاز للكهربا ورخيص نسبيًا."
+    },
+    {
+      "id": "gn-open-12",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "أنهي كوكب مشهور بالحلقات اللي حواليه؟",
+      "answerAr": "زحل",
+      "aliases": [
+        "كوكب زحل"
+      ],
+      "explanationAr": "حلقاته مكوّنة من تلج وصخور."
+    },
+    {
+      "id": "gn-prog-4",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا كوكب في المجموعة الشمسية",
+        "لوني بيميل للأحمر بسبب أكسيد الحديد",
+        "الكوكب الرابع من الشمس والبشر بيحلموا يوصلوني"
+      ],
+      "answerAr": "المريخ",
+      "aliases": [
+        "مريخ"
+      ],
+      "explanationAr": "أقرب كوكب ممكن البشر يوصلوه."
+    },
+    {
+      "id": "gn-prog-5",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا كوكب غازي كبير",
+        "عندي أقمار كتير أوي",
+        "أشهر حاجة فيّا الحلقات اللي لافّة حواليّا"
+      ],
+      "answerAr": "زحل",
+      "aliases": [
+        "كوكب زحل"
+      ],
+      "explanationAr": "حلقاته من أشهر المناظر في الفضا."
+    },
+    {
+      "id": "gn-prog-6",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا مادة طبيعية غالية",
+        "اتكوّنت من الكربون تحت ضغط رهيب",
+        "أقسى مادة طبيعية وبيستعملوني في المجوهرات"
+      ],
+      "answerAr": "الماس",
+      "aliases": [
+        "ماس",
+        "الألماظ"
+      ],
+      "explanationAr": "كربون نقي اتشكّل جوه الأرض."
+    },
+    {
+      "id": "gn-prog-7",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا عضو في جسمك",
+        "بحميك من البكتيريا ومن الشمس",
+        "أكبر عضو في جسم الإنسان وبتلمسني دلوقتي"
+      ],
+      "answerAr": "الجلد",
+      "aliases": [
+        "جلد"
+      ],
+      "explanationAr": "خط الدفاع الأول للجسم."
+    },
+    {
+      "id": "gn-prog-8",
+      "shape": "progressive",
+      "difficulty": 1,
+      "hints": [
+        "أنا حشرة صغيرة",
+        "بشتغل في مجموعة منظمة جدًا",
+        "بعمل العسل وبلسع اللي يقرب مني"
+      ],
+      "answerAr": "النحلة",
+      "aliases": [
+        "نحلة",
+        "النحل"
+      ],
+      "explanationAr": "خلية النحل من أنظم المجتمعات في الطبيعة."
+    },
+    {
+      "id": "gn-prog-9",
+      "shape": "progressive",
+      "difficulty": 1,
+      "hints": [
+        "أنا حيوان بعيش في أفريقيا",
+        "رقبتي طويلة أوي",
+        "أطول حيوان في العالم وباكل من فوق الشجر"
+      ],
+      "answerAr": "الزرافة",
+      "aliases": [
+        "زرافة"
+      ],
+      "explanationAr": "رقبتها بتوصل لحوالي مترين."
+    },
+    {
+      "id": "gn-prog-10",
+      "shape": "progressive",
+      "difficulty": 1,
+      "hints": [
+        "أنا مش كوكب ولا نجم",
+        "بلف حوالين الأرض كل شهر تقريبًا",
+        "بتشوفني بالليل وشكلي بيتغير من هلال لبدر"
+      ],
+      "answerAr": "القمر",
+      "aliases": [
+        "قمر"
+      ],
+      "explanationAr": "القمر تابع طبيعي للأرض."
+    },
+    {
+      "id": "gn-ord-4",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الكواكب دي من الأصغر للأكبر",
+      "items": [
+        "عطارد",
+        "المريخ",
+        "الأرض",
+        "المشتري"
+      ],
+      "labels": [],
+      "explanationAr": "المشتري لوحده أكبر من كل الكواكب التانية مجموعة."
+    },
+    {
+      "id": "gn-ord-5",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب أحداث غزو الفضا دي من الأقدم للأحدث",
+      "items": [
+        "إطلاق سبوتنيك",
+        "أول إنسان في الفضا",
+        "أول إنسان على القمر"
+      ],
+      "labels": [
+        "1957",
+        "1961",
+        "1969"
+      ],
+      "explanationAr": "12 سنة بس بين أول قمر صناعي وأول خطوة على القمر."
+    },
+    {
+      "id": "gn-ord-6",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب مراحل نمو الفراشة بالترتيب الصح",
+      "items": [
+        "البيضة",
+        "اليرقة",
+        "الشرنقة",
+        "الفراشة"
+      ],
+      "labels": [],
+      "explanationAr": "العملية دي اسمها التحوّل الكامل."
+    },
+    {
+      "id": "gn-ord-7",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب درجات الحرارة دي من الأبرد للأسخن",
+      "items": [
+        "تجمّد الميه",
+        "حرارة جسم الإنسان",
+        "غليان الميه"
+      ],
+      "labels": [
+        "0",
+        "37",
+        "100"
+      ],
+      "explanationAr": "كلها بالدرجة المئوية."
+    },
+    {
+      "id": "gn-ord-8",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب الكائنات دي حسب سرعتها من الأبطأ للأسرع",
+      "items": [
+        "السلحفاة",
+        "الإنسان",
+        "الحصان",
+        "الفهد"
+      ],
+      "labels": [],
+      "explanationAr": "الفهد بيوصل لأكتر من 100 كيلومتر في الساعة."
+    },
+    {
+      "id": "gn-ord-9",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب طبقات الأرض من بره لجوه",
+      "items": [
+        "القشرة",
+        "الوشاح",
+        "اللب الخارجي",
+        "اللب الداخلي"
+      ],
+      "labels": [],
+      "explanationAr": "اللب الداخلي صلب رغم الحرارة الرهيبة."
+    },
+    {
+      "id": "gn-ord-10",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب ألوان قوس قزح دي زي ما بتظهر من بره لجوه",
+      "items": [
+        "أحمر",
+        "أصفر",
+        "أخضر",
+        "أزرق",
+        "بنفسجي"
+      ],
+      "labels": [],
+      "explanationAr": "الأحمر دايمًا في الطرف الخارجي والبنفسجي في الداخلي."
+    },
+    {
+      "id": "gn-mcq-31",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "كام صفر في المليون؟",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مليون = 1 وورا 6 أصفار."
+    },
+    {
+      "id": "gn-mcq-32",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "الزاوية القائمة كام درجة؟",
+      "options": [
+        "45",
+        "60",
+        "90",
+        "180"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "زي ركن المربع بالظبط."
+    },
+    {
+      "id": "gn-mcq-33",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مجموع زوايا المثلث كام درجة؟",
+      "options": [
+        "90",
+        "180",
+        "270",
+        "360"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أي مثلث مهما كان شكله."
+    },
+    {
+      "id": "gn-mcq-34",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الشكل اللي ليه تمن أضلاع اسمه إيه؟",
+      "options": [
+        "مسدس",
+        "مثمّن",
+        "خماسي",
+        "معيّن"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "زي علامة «قف» في الشارع."
+    },
+    {
+      "id": "gn-mcq-35",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "كام حرف في اللغة العربية؟",
+      "options": [
+        "26",
+        "28",
+        "29",
+        "30"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من الألف للياء، 28 حرف."
+    },
+    {
+      "id": "gn-mcq-36",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الفاعل في الجملة العربية إعرابه إيه؟",
+      "options": [
+        "مرفوع",
+        "منصوب",
+        "مجرور",
+        "مجزوم"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "والمفعول به هو اللي بيبقى منصوب."
+    },
+    {
+      "id": "gn-mcq-37",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين اللي اخترع التليفون؟",
+      "options": [
+        "توماس إديسون",
+        "جراهام بيل",
+        "نيكولا تسلا",
+        "ماركوني"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ألكسندر جراهام بيل سنة 1876."
+    },
+    {
+      "id": "gn-mcq-38",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين اللي اكتشف البنسلين؟",
+      "options": [
+        "لويس باستير",
+        "ألكسندر فلمنج",
+        "روبرت كوخ",
+        "جوزيف ليستر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اكتشفه بالصدفة من عفن في معمله."
+    },
+    {
+      "id": "gn-mcq-39",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين صاحب نظرية النسبية؟",
+      "options": [
+        "نيوتن",
+        "أينشتاين",
+        "جاليليو",
+        "هوكينج"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ألبرت أينشتاين في بداية القرن العشرين."
+    },
+    {
+      "id": "gn-mcq-40",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين اللي حط قوانين الحركة والجاذبية؟",
+      "options": [
+        "أينشتاين",
+        "نيوتن",
+        "كوبرنيكوس",
+        "كبلر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "إسحاق نيوتن في القرن السبعتاشر."
+    },
+    {
+      "id": "gn-mcq-41",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«WWW» اختصار لإيه؟",
+      "options": [
+        "World Wide Web",
+        "Wireless Web Work",
+        "Web World Wide",
+        "World Web Wire"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الشبكة العنكبوتية العالمية."
+    },
+    {
+      "id": "gn-mcq-42",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي وحدة بتقيس حجم بيانات الكمبيوتر؟",
+      "options": [
+        "الهرتز",
+        "البايت",
+        "الواط",
+        "الأوم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "والهرتز بيقيس التردد."
+    },
+    {
+      "id": "gn-mcq-43",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الكيلوبايت فيه كام بايت؟",
+      "options": [
+        "100",
+        "512",
+        "1024",
+        "2048"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "لأن الكمبيوتر بيحسب بالنظام الثنائي."
+    },
+    {
+      "id": "gn-mcq-44",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي وحدة بتقيس القدرة الكهربائية؟",
+      "options": [
+        "الواط",
+        "اللتر",
+        "الجرام",
+        "المتر"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "عشان كده اللمبة مكتوب عليها عدد وات."
+    },
+    {
+      "id": "gn-mcq-45",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الرمز الكيميائي للمياه إيه؟",
+      "options": [
+        "HO2",
+        "H2O",
+        "OH2",
+        "H3O"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ذرتين هيدروجين وذرة أكسجين."
+    },
+    {
+      "id": "gn-mcq-46",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "ملح الطعام اسمه الكيميائي إيه؟",
+      "options": [
+        "كربونات الكالسيوم",
+        "كلوريد الصوديوم",
+        "أكسيد الحديد",
+        "نترات البوتاسيوم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "صوديوم + كلور."
+    },
+    {
+      "id": "gn-mcq-47",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي حالة من حالات المادة ملهاش شكل ولا حجم ثابت؟",
+      "options": [
+        "الصلب",
+        "السائل",
+        "الغاز",
+        "مفيش"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "الغاز بياخد شكل وحجم الإناء كله."
+    },
+    {
+      "id": "gn-mcq-48",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "تحوّل الميه لبخار اسمه إيه؟",
+      "options": [
+        "التكاثف",
+        "التبخر",
+        "التجمد",
+        "الانصهار"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وبيحصل بالحرارة."
+    },
+    {
+      "id": "gn-mcq-49",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "تحوّل البخار لميه تاني اسمه إيه؟",
+      "options": [
+        "التبخر",
+        "التكاثف",
+        "التسامي",
+        "الانصهار"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "زي اللي بيحصل على الكوباية الساقعة."
+    },
+    {
+      "id": "gn-mcq-50",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "المطر بيتكوّن نتيجة إيه؟",
+      "options": [
+        "تبخر الميه من البحر",
+        "تكاثف بخار الميه في السحاب",
+        "ذوبان التلج",
+        "الرياح القوية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "البخار بيبرد فوق وبيتحوّل لنقط ميه."
+    },
+    {
+      "id": "gn-mcq-51",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "قوس قزح بيظهر بسبب إيه؟",
+      "options": [
+        "انعكاس الشمس على البحر",
+        "انكسار الضوء في قطرات الميه",
+        "الغبار في الجو",
+        "البرق"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الضوء الأبيض بيتفكك لألوانه."
+    },
+    {
+      "id": "gn-mcq-52",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي لون بيمتص الحرارة أكتر؟",
+      "options": [
+        "الأبيض",
+        "الأسود",
+        "الأصفر",
+        "الفضي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الأبيض بيعكس والأسود بيمتص."
+    },
+    {
+      "id": "gn-mcq-53",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "شدة الصوت بتتقاس بأنهي وحدة؟",
+      "options": [
+        "الهرتز",
+        "الديسيبل",
+        "الواط",
+        "النيوتن"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "والهرتز بيقيس تردد الصوت مش شدته."
+    },
+    {
+      "id": "gn-mcq-54",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي جزء في العين بيكبر ويصغّر عشان يتحكم في الضوء الداخل؟",
+      "options": [
+        "القرنية",
+        "الحدقة",
+        "الشبكية",
+        "الجفن"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بتضيق في النور وبتتوسّع في الضلمة."
+    },
+    {
+      "id": "gn-mcq-55",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "المعدة بتفرز أنهي حمض عشان تهضم الأكل؟",
+      "options": [
+        "حمض الكبريتيك",
+        "حمض الهيدروكلوريك",
+        "حمض النيتريك",
+        "حمض الخليك"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "قوي لدرجة إنه يقدر يدوّب المعدن."
+    },
+    {
+      "id": "gn-mcq-56",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "كام غرفة في قلب الإنسان؟",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "أذينين وبطينين."
+    },
+    {
+      "id": "gn-mcq-57",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي فصيلة دم بيقولوا عليها «المتبرع العام»؟",
+      "options": [
+        "A موجب",
+        "O سالب",
+        "AB موجب",
+        "B سالب"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بتنفع تتدي لأي فصيلة تانية."
+    },
+    {
+      "id": "gn-mcq-58",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي فصيلة دم بيقولوا عليها «المستقبل العام»؟",
+      "options": [
+        "O سالب",
+        "AB موجب",
+        "A سالب",
+        "B موجب"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بتقدر تستقبل من أي فصيلة."
+    },
+    {
+      "id": "gn-mcq-59",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الكيلوجرام فيه كام جرام؟",
+      "options": [
+        "100",
+        "500",
+        "1000",
+        "10000"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "و«كيلو» معناها ألف."
+    },
+    {
+      "id": "gn-mcq-60",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "درجة غليان الميه بالفهرنهايت كام؟",
+      "options": [
+        "100",
+        "180",
+        "212",
+        "250"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "يعني 100 مئوية = 212 فهرنهايت."
+    },
+    {
+      "id": "gn-bool-25",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "مجموع زوايا المثلث 180 درجة",
+      "isTrue": true,
+      "explanationAr": "في أي مثلث مهما كان شكله."
+    },
+    {
+      "id": "gn-bool-26",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "اللغة العربية فيها 28 حرف",
+      "isTrue": true,
+      "explanationAr": "من الألف للياء."
+    },
+    {
+      "id": "gn-bool-27",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "جراهام بيل هو اللي اخترع التليفون",
+      "isTrue": true,
+      "explanationAr": "سنة 1876."
+    },
+    {
+      "id": "gn-bool-28",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "توماس إديسون هو اللي اكتشف البنسلين",
+      "isTrue": false,
+      "explanationAr": "البنسلين اكتشفه ألكسندر فلمنج."
+    },
+    {
+      "id": "gn-bool-29",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أينشتاين صاحب نظرية النسبية",
+      "isTrue": true,
+      "explanationAr": "غيّرت فهمنا للزمن والمكان."
+    },
+    {
+      "id": "gn-bool-30",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "نيوتن هو اللي حط قوانين الحركة والجاذبية",
+      "isTrue": true,
+      "explanationAr": "في القرن السبعتاشر."
+    },
+    {
+      "id": "gn-bool-31",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "الكيلوبايت فيه 1024 بايت",
+      "isTrue": true,
+      "explanationAr": "بسبب النظام الثنائي في الكمبيوتر."
+    },
+    {
+      "id": "gn-bool-32",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الرمز الكيميائي للمياه هو H2O",
+      "isTrue": true,
+      "explanationAr": "ذرتين هيدروجين وذرة أكسجين."
+    },
+    {
+      "id": "gn-bool-33",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "ملح الطعام اسمه الكيميائي كلوريد الصوديوم",
+      "isTrue": true,
+      "explanationAr": "صوديوم مع كلور."
+    },
+    {
+      "id": "gn-bool-34",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الغاز ليه شكل ثابت زي الجسم الصلب",
+      "isTrue": false,
+      "explanationAr": "الغاز بياخد شكل وحجم الإناء."
+    },
+    {
+      "id": "gn-bool-35",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "التبخر معناه تحوّل الميه لبخار",
+      "isTrue": true,
+      "explanationAr": "وبيحصل لما الحرارة تزيد."
+    },
+    {
+      "id": "gn-bool-36",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "التكاثف معناه تحوّل البخار لميه",
+      "isTrue": true,
+      "explanationAr": "زي نقط الميه على الكوباية الساقعة."
+    },
+    {
+      "id": "gn-bool-37",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "قوس قزح بيظهر بسبب انكسار الضوء في قطرات الميه",
+      "isTrue": true,
+      "explanationAr": "الضوء الأبيض بيتفكك لسبع ألوان."
+    },
+    {
+      "id": "gn-bool-38",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "اللون الأبيض بيمتص الحرارة أكتر من الأسود",
+      "isTrue": false,
+      "explanationAr": "العكس: الأسود بيمتص والأبيض بيعكس."
+    },
+    {
+      "id": "gn-bool-39",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "شدة الصوت بتتقاس بالديسيبل",
+      "isTrue": true,
+      "explanationAr": "والهرتز بيقيس التردد."
+    },
+    {
+      "id": "gn-bool-40",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "المعدة بتفرز حمض الهيدروكلوريك",
+      "isTrue": true,
+      "explanationAr": "وفيها بطانة بتحميها منه."
+    },
+    {
+      "id": "gn-bool-41",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "قلب الإنسان فيه أربع غرف",
+      "isTrue": true,
+      "explanationAr": "أذينين وبطينين."
+    },
+    {
+      "id": "gn-bool-42",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "فصيلة الدم O سالب بيقولوا عليها المتبرع العام",
+      "isTrue": true,
+      "explanationAr": "بتنفع لأي فصيلة."
+    },
+    {
+      "id": "gn-bool-43",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "الزاوية القائمة 90 درجة",
+      "isTrue": true,
+      "explanationAr": "ربع الدايرة."
+    },
+    {
+      "id": "gn-bool-44",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "المليون فيه ستة أصفار",
+      "isTrue": true,
+      "explanationAr": "والمليار فيه تسعة."
+    },
+    {
+      "id": "gn-bool-45",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الفاعل في الجملة العربية بيبقى منصوب",
+      "isTrue": false,
+      "explanationAr": "الفاعل مرفوع، والمفعول به منصوب."
+    },
+    {
+      "id": "gn-bool-46",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الواط وحدة لقياس القدرة الكهربائية",
+      "isTrue": true,
+      "explanationAr": "عشان كده مكتوبة على اللمبة."
+    },
+    {
+      "id": "gn-bool-47",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "البايت وحدة لقياس حجم البيانات",
+      "isTrue": true,
+      "explanationAr": "والكيلوبايت والميجابايت مضاعفاته."
+    },
+    {
+      "id": "gn-bool-48",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "المطر بيتكوّن من تكاثف بخار الميه في السحاب",
+      "isTrue": true,
+      "explanationAr": "جزء من دورة الميه في الطبيعة."
+    },
+    {
+      "id": "gn-num-16",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "مجموع زوايا المثلث كام درجة؟",
+      "correctValue": 180,
+      "tolerance": 0,
+      "unitAr": "درجة",
+      "explanationAr": "في أي مثلث."
+    },
+    {
+      "id": "gn-num-17",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "اللغة العربية فيها كام حرف؟",
+      "correctValue": 28,
+      "tolerance": 0,
+      "unitAr": "حرف",
+      "explanationAr": "من الألف للياء."
+    },
+    {
+      "id": "gn-num-18",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "الكيلوبايت فيه كام بايت؟",
+      "correctValue": 1024,
+      "tolerance": 24,
+      "unitAr": "بايت",
+      "explanationAr": "2 أس 10."
+    },
+    {
+      "id": "gn-num-19",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "قلب الإنسان فيه كام غرفة؟",
+      "correctValue": 4,
+      "tolerance": 0,
+      "unitAr": "غرفة",
+      "explanationAr": "أذينين وبطينين."
+    },
+    {
+      "id": "gn-num-20",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "كام صفر في المليون؟",
+      "correctValue": 6,
+      "tolerance": 0,
+      "unitAr": "صفر",
+      "explanationAr": "والمليار تسعة أصفار."
+    },
+    {
+      "id": "gn-num-21",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "الزاوية القائمة كام درجة؟",
+      "correctValue": 90,
+      "tolerance": 0,
+      "unitAr": "درجة",
+      "explanationAr": "ربع الدايرة."
+    },
+    {
+      "id": "gn-num-22",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "مجموع زوايا المربع كام درجة؟",
+      "correctValue": 360,
+      "tolerance": 0,
+      "unitAr": "درجة",
+      "explanationAr": "أربع زوايا قائمة."
+    },
+    {
+      "id": "gn-num-23",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "المثمّن ليه كام ضلع؟",
+      "correctValue": 8,
+      "tolerance": 0,
+      "unitAr": "ضلع",
+      "explanationAr": "زي علامة «قف»."
+    },
+    {
+      "id": "gn-num-24",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "المتر فيه كام سنتيمتر؟",
+      "correctValue": 100,
+      "tolerance": 0,
+      "unitAr": "سم",
+      "explanationAr": "و«سنتي» معناها جزء من مية."
+    },
+    {
+      "id": "gn-num-25",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "الكيلوجرام فيه كام جرام؟",
+      "correctValue": 1000,
+      "tolerance": 0,
+      "unitAr": "جرام",
+      "explanationAr": "«كيلو» معناها ألف."
+    },
+    {
+      "id": "gn-num-26",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "الميه بتغلي عند كام درجة فهرنهايت؟",
+      "correctValue": 212,
+      "tolerance": 3,
+      "unitAr": "فهرنهايت",
+      "explanationAr": "يعني 100 مئوية."
+    },
+    {
+      "id": "gn-num-27",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "الإنسان عنده كام رئة؟",
+      "correctValue": 2,
+      "tolerance": 0,
+      "unitAr": "رئة",
+      "explanationAr": "واحدة يمين وواحدة شمال."
+    },
+    {
+      "id": "gn-fill-16",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "مجموع زوايا المثلث ____ درجة",
+      "answerAr": "180",
+      "aliases": [
+        "مية وتمانين",
+        "١٨٠"
+      ],
+      "explanationAr": "في أي مثلث."
+    },
+    {
+      "id": "gn-fill-17",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "اللغة العربية فيها ____ حرف",
+      "answerAr": "28",
+      "aliases": [
+        "تمانية وعشرين",
+        "٢٨"
+      ],
+      "explanationAr": "من الألف للياء."
+    },
+    {
+      "id": "gn-fill-18",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "اللي اخترع التليفون اسمه جراهام ____",
+      "answerAr": "بيل",
+      "aliases": [
+        "بل"
+      ],
+      "explanationAr": "ألكسندر جراهام بيل."
+    },
+    {
+      "id": "gn-fill-19",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "اللي اكتشف البنسلين اسمه ألكسندر ____",
+      "answerAr": "فلمنج",
+      "aliases": [
+        "فليمنج",
+        "فلمينج"
+      ],
+      "explanationAr": "اكتشفه بالصدفة من عفن."
+    },
+    {
+      "id": "gn-fill-20",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "صاحب نظرية النسبية اسمه ألبرت ____",
+      "answerAr": "أينشتاين",
+      "aliases": [
+        "اينشتاين",
+        "أينشتين"
+      ],
+      "explanationAr": "أشهر عالم فيزياء في القرن العشرين."
+    },
+    {
+      "id": "gn-fill-21",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "تحوّل الميه لبخار اسمه ____",
+      "answerAr": "التبخر",
+      "aliases": [
+        "تبخر"
+      ],
+      "explanationAr": "بيحصل بالحرارة."
+    },
+    {
+      "id": "gn-fill-22",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "تحوّل البخار لميه اسمه ____",
+      "answerAr": "التكاثف",
+      "aliases": [
+        "تكاثف"
+      ],
+      "explanationAr": "زي نقط الميه على الكوباية الساقعة."
+    },
+    {
+      "id": "gn-fill-23",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "شدة الصوت بتتقاس بوحدة ____",
+      "answerAr": "الديسيبل",
+      "aliases": [
+        "ديسيبل"
+      ],
+      "explanationAr": "والهرتز للتردد."
+    },
+    {
+      "id": "gn-fill-24",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "المعدة بتفرز حمض ____ عشان تهضم الأكل",
+      "answerAr": "الهيدروكلوريك",
+      "aliases": [
+        "هيدروكلوريك"
+      ],
+      "explanationAr": "حمض قوي جدًا."
+    },
+    {
+      "id": "gn-fill-25",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الرمز الكيميائي للمياه هو ____",
+      "answerAr": "H2O",
+      "aliases": [
+        "h2o",
+        "اتش تو او"
+      ],
+      "explanationAr": "ذرتين هيدروجين وذرة أكسجين."
+    },
+    {
+      "id": "gn-fill-26",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "ملح الطعام اسمه الكيميائي كلوريد ____",
+      "answerAr": "الصوديوم",
+      "aliases": [
+        "صوديوم"
+      ],
+      "explanationAr": "صوديوم مع كلور."
+    },
+    {
+      "id": "gn-fill-27",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "قلب الإنسان فيه ____ غرف",
+      "answerAr": "أربع",
+      "aliases": [
+        "4",
+        "اربع",
+        "٤"
+      ],
+      "explanationAr": "أذينين وبطينين."
+    },
+    {
+      "id": "gn-open-13",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين اللي اخترع التليفون؟",
+      "answerAr": "جراهام بيل",
+      "aliases": [
+        "بيل",
+        "ألكسندر جراهام بيل"
+      ],
+      "explanationAr": "سنة 1876."
+    },
+    {
+      "id": "gn-open-14",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين اللي اكتشف البنسلين؟",
+      "answerAr": "ألكسندر فلمنج",
+      "aliases": [
+        "فلمنج",
+        "فليمنج"
+      ],
+      "explanationAr": "اكتشاف غيّر الطب للأبد."
+    },
+    {
+      "id": "gn-open-15",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين صاحب نظرية النسبية؟",
+      "answerAr": "أينشتاين",
+      "aliases": [
+        "اينشتاين",
+        "ألبرت أينشتاين"
+      ],
+      "explanationAr": "أشهر عالم فيزياء في القرن العشرين."
+    },
+    {
+      "id": "gn-open-16",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم تحوّل الميه لبخار؟",
+      "answerAr": "التبخر",
+      "aliases": [
+        "تبخر"
+      ],
+      "explanationAr": "أول خطوة في دورة الميه."
+    },
+    {
+      "id": "gn-open-17",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه الوحدة اللي بتقيس شدة الصوت؟",
+      "answerAr": "الديسيبل",
+      "aliases": [
+        "ديسيبل"
+      ],
+      "explanationAr": "فوق 85 ديسيبل بيأذي السمع."
+    },
+    {
+      "id": "gn-open-18",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه الرمز الكيميائي للمياه؟",
+      "answerAr": "H2O",
+      "aliases": [
+        "h2o",
+        "اتش تو او"
+      ],
+      "explanationAr": "ذرتين هيدروجين وذرة أكسجين."
+    },
+    {
+      "id": "gn-open-19",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه الاسم الكيميائي لملح الطعام؟",
+      "answerAr": "كلوريد الصوديوم",
+      "aliases": [
+        "كلوريد صوديوم",
+        "الصوديوم"
+      ],
+      "explanationAr": "صوديوم مع كلور."
+    },
+    {
+      "id": "gn-open-20",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم الحمض اللي بتفرزه المعدة؟",
+      "answerAr": "حمض الهيدروكلوريك",
+      "aliases": [
+        "الهيدروكلوريك",
+        "هيدروكلوريك"
+      ],
+      "explanationAr": "قوي لدرجة إنه يقدر يدوّب معدن."
+    },
+    {
+      "id": "gn-open-21",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "أنهي فصيلة دم بيقولوا عليها المتبرع العام؟",
+      "answerAr": "O سالب",
+      "aliases": [
+        "او سالب",
+        "o-",
+        "او نيجاتيف"
+      ],
+      "explanationAr": "بتنفع تتدي لأي فصيلة."
+    },
+    {
+      "id": "gn-open-22",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين اللي حط قوانين الحركة والجاذبية؟",
+      "answerAr": "نيوتن",
+      "aliases": [
+        "إسحاق نيوتن",
+        "اسحق نيوتن"
+      ],
+      "explanationAr": "في القرن السبعتاشر."
+    },
+    {
+      "id": "gn-prog-11",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا عالم فيزياء",
+        "معادلتي من أشهر المعادلات في العالم",
+        "صاحب نظرية النسبية وشكل شعري أشهر من أبحاثي"
+      ],
+      "answerAr": "أينشتاين",
+      "aliases": [
+        "اينشتاين",
+        "ألبرت أينشتاين"
+      ],
+      "explanationAr": "خد نوبل في الفيزياء سنة 1921."
+    },
+    {
+      "id": "gn-prog-12",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا عالم إنجليزي",
+        "بيقولوا إن تفاحة وقعت على راسي",
+        "حطيت قوانين الحركة والجاذبية"
+      ],
+      "answerAr": "نيوتن",
+      "aliases": [
+        "إسحاق نيوتن",
+        "اسحق نيوتن"
+      ],
+      "explanationAr": "حكاية التفاحة على الأغلب أسطورة."
+    },
+    {
+      "id": "gn-prog-13",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا ظاهرة طبيعية",
+        "بحصل لما الحرارة تزيد",
+        "بحوّل الميه لبخار وبيّا بتبدأ دورة الميه"
+      ],
+      "answerAr": "التبخر",
+      "aliases": [
+        "تبخر"
+      ],
+      "explanationAr": "أول خطوة في دورة الميه."
+    },
+    {
+      "id": "gn-prog-14",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا بظهر في السما بعد المطر",
+        "شكلي قوس ملون",
+        "فيّا سبع ألوان وبتكوّن من انكسار الضوء في نقط الميه"
+      ],
+      "answerAr": "قوس قزح",
+      "aliases": [
+        "قوس القزح",
+        "قوس"
+      ],
+      "explanationAr": "الأحمر بره والبنفسجي جوه."
+    },
+    {
+      "id": "gn-prog-15",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا دوا",
+        "اتكشفت بالصدفة من عفن في معمل",
+        "أول مضاد حيوي في التاريخ وأنقذت ملايين"
+      ],
+      "answerAr": "البنسلين",
+      "aliases": [
+        "بنسلين",
+        "البنسيلين"
+      ],
+      "explanationAr": "اكتشفه ألكسندر فلمنج."
+    },
+    {
+      "id": "gn-prog-16",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا وحدة قياس",
+        "بستعمل مع الصوت",
+        "بقيس شدة الصوت، و85 مني بيبدأ يأذي الودن"
+      ],
+      "answerAr": "الديسيبل",
+      "aliases": [
+        "ديسيبل"
+      ],
+      "explanationAr": "مقياس لوغاريتمي مش خطي."
+    },
+    {
+      "id": "gn-ord-11",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب الأعداد دي من الأصغر للأكبر",
+      "items": [
+        "ألف",
+        "مليون",
+        "مليار",
+        "تريليون"
+      ],
+      "labels": [
+        "3 أصفار",
+        "6 أصفار",
+        "9 أصفار",
+        "12 صفر"
+      ],
+      "explanationAr": "كل واحدة أكبر من اللي قبلها بألف مرة."
+    },
+    {
+      "id": "gn-ord-12",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب مراحل دورة الميه بالترتيب",
+      "items": [
+        "التبخر",
+        "التكاثف",
+        "تكوّن السحاب",
+        "المطر"
+      ],
+      "labels": [],
+      "explanationAr": "دورة بتتكرر من غير ما تقف."
+    },
+    {
+      "id": "gn-ord-13",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الاختراعات دي من الأقدم للأحدث",
+      "items": [
+        "المطبعة",
+        "التليفون",
+        "التليفزيون",
+        "الإنترنت"
+      ],
+      "labels": [],
+      "explanationAr": "بينهم قرون، وآخر اتنين في نفس القرن."
+    },
+    {
+      "id": "gn-ord-14",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب الأشكال دي حسب عدد الأضلاع من الأقل للأكتر",
+      "items": [
+        "مثلث",
+        "مربع",
+        "خماسي",
+        "مثمّن"
+      ],
+      "labels": [
+        "3",
+        "4",
+        "5",
+        "8"
+      ],
+      "explanationAr": "الاسم بيقول عدد الأضلاع."
+    },
+    {
+      "id": "gn-ord-15",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب وحدات البيانات دي من الأصغر للأكبر",
+      "items": [
+        "بايت",
+        "كيلوبايت",
+        "ميجابايت",
+        "جيجابايت"
+      ],
+      "labels": [],
+      "explanationAr": "كل واحدة حوالي ألف مرة اللي قبلها."
+    },
+    {
+      "id": "gn-ord-16",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب حالات المادة دي حسب تماسك جزيئاتها من الأقوى للأضعف",
+      "items": [
+        "الصلب",
+        "السائل",
+        "الغاز"
+      ],
+      "labels": [],
+      "explanationAr": "كل ما الحرارة تزيد، التماسك بيقل."
+    },
+    {
+      "id": "gn-mcq-61",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الأولمبياد بيتعمل كل كام سنة؟",
+      "options": [
+        "سنتين",
+        "3 سنين",
+        "4 سنين",
+        "5 سنين"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "والشتوي بقى في سنة مختلفة عن الصيفي."
+    },
+    {
+      "id": "gn-mcq-62",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "علم الأولمبياد فيه كام حلقة؟",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "كل حلقة بترمز لقارة."
+    },
+    {
+      "id": "gn-mcq-63",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الأولمبياد الحديث بدأ في أنهي مدينة؟",
+      "options": [
+        "باريس",
+        "أثينا",
+        "لندن",
+        "روما"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "سنة 1896، في بلد الأولمبياد القديم."
+    },
+    {
+      "id": "gn-mcq-64",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "في التنس، النتيجة «صفر» بيتقال عليها إيه؟",
+      "options": [
+        "زيرو",
+        "لاف",
+        "نيل",
+        "دوس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مصطلح غريب بس مستعمل من زمان."
+    },
+    {
+      "id": "gn-mcq-65",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "كام لاعب من الفريق في ملعب كرة السلة؟",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "خمسة لكل فريق."
+    },
+    {
+      "id": "gn-mcq-66",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي رياضة بيتسدد فيها الكورة بالإيد فوق شبكة عالية؟",
+      "options": [
+        "التنس",
+        "الكرة الطايرة",
+        "الهوكي",
+        "البيسبول"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ستة لاعيبة لكل فريق."
+    },
+    {
+      "id": "gn-mcq-67",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الشطرنج فيه كام قطعة لكل لاعب؟",
+      "options": [
+        "12",
+        "14",
+        "16",
+        "18"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "تمن بيادق وتمن قطع كبيرة."
+    },
+    {
+      "id": "gn-mcq-68",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "في الشطرنج، أنهي قطعة بتتحرك بشكل حرف L؟",
+      "options": [
+        "الفيل",
+        "الحصان",
+        "القلعة",
+        "الوزير"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "والوحيدة اللي بتنطّ فوق القطع."
+    },
+    {
+      "id": "gn-mcq-69",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أقوى قطعة في الشطرنج؟",
+      "options": [
+        "الملك",
+        "الوزير",
+        "القلعة",
+        "الفيل"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بتتحرك في كل الاتجاهات وأي مسافة."
+    },
+    {
+      "id": "gn-mcq-70",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي رياضة بتتلعب بمضرب وريشة؟",
+      "options": [
+        "التنس",
+        "الريشة الطايرة",
+        "الاسكواش",
+        "البيسبول"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "البادمنتون، ومن أسرع الرياضات بالمضرب."
+    },
+    {
+      "id": "gn-mcq-71",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "شهر فبراير في السنة الكبيسة كام يوم؟",
+      "options": [
+        "28",
+        "29",
+        "30",
+        "31"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بيزيد يوم كل 4 سنين."
+    },
+    {
+      "id": "gn-mcq-72",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الرقم «صفر» ظهر أول مرة في أنهي حضارة؟",
+      "options": [
+        "اليونانية",
+        "الهندية",
+        "الرومانية",
+        "المصرية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ووصل لأوروبا عن طريق العرب."
+    },
+    {
+      "id": "gn-mcq-73",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الأرقام اللي بنكتب بيها (1، 2، 3) بيسموها في الغرب إيه؟",
+      "options": [
+        "الرومانية",
+        "العربية",
+        "اليونانية",
+        "الصينية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "لأنها وصلتهم عن طريق العرب."
+    },
+    {
+      "id": "gn-mcq-74",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الرقم الروماني X معناه كام؟",
+      "options": [
+        "5",
+        "10",
+        "50",
+        "100"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "و V معناها خمسة."
+    },
+    {
+      "id": "gn-mcq-75",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«البورصة» مكان بيتباع فيه إيه؟",
+      "options": [
+        "العقارات",
+        "أسهم الشركات",
+        "السلع المستعملة",
+        "العملات القديمة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "سوق بيع وشرا حصص الشركات."
+    },
+    {
+      "id": "gn-mcq-76",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي فيتامين مهم لتخثر الدم؟",
+      "options": [
+        "فيتامين أ",
+        "فيتامين K",
+        "فيتامين ج",
+        "فيتامين ب12"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من غيره الجرح مبيقفش نزيف."
+    },
+    {
+      "id": "gn-mcq-77",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "نقص الحديد بيسبب مرض اسمه إيه؟",
+      "options": [
+        "السكري",
+        "الأنيميا",
+        "الكساح",
+        "النقرس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "فقر الدم، لأن الحديد أساس الهيموجلوبين."
+    },
+    {
+      "id": "gn-mcq-78",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي عضو بيفرز الأنسولين؟",
+      "options": [
+        "الكبد",
+        "البنكرياس",
+        "الكلى",
+        "الطحال"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "والأنسولين بينظّم السكر في الدم."
+    },
+    {
+      "id": "gn-mcq-79",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي غدة بتتحكم في سرعة الحرق في الجسم؟",
+      "options": [
+        "النخامية",
+        "الدرقية",
+        "الكظرية",
+        "اللعابية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "شكلها زي الفراشة في الرقبة."
+    },
+    {
+      "id": "gn-mcq-80",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الحوت بيتنفس إزاي؟",
+      "options": [
+        "بالخياشيم",
+        "برئتين من فتحة فوق راسه",
+        "من جلده",
+        "مبيتنفسش"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عشان كده بيطلع لسطح الميه."
+    },
+    {
+      "id": "gn-mcq-81",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي حيوان من الثدييات بس بيبيض؟",
+      "options": [
+        "الخفاش",
+        "خلد الماء",
+        "الكنغر",
+        "الدلفين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من أستراليا، ومنقاره زي البطة."
+    },
+    {
+      "id": "gn-mcq-82",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "أنهي طاير بيعتبر رمز للسلام؟",
+      "options": [
+        "النسر",
+        "الحمامة",
+        "البومة",
+        "الطاووس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وكانوا بيستعملوها في نقل الرسايل."
+    },
+    {
+      "id": "gn-mcq-83",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«الرأسمالية» و«الاشتراكية» أنظمة إيه؟",
+      "options": [
+        "رياضية",
+        "اقتصادية",
+        "لغوية",
+        "دينية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بتحدد مين بيملك وسائل الإنتاج."
+    },
+    {
+      "id": "gn-mcq-84",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«التضخم» في الاقتصاد معناه إيه؟",
+      "options": [
+        "زيادة الإنتاج",
+        "ارتفاع الأسعار وانخفاض قيمة الفلوس",
+        "زيادة الصادرات",
+        "انخفاض البطالة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "نفس المبلغ بيشتري أقل مع الوقت."
+    },
+    {
+      "id": "gn-mcq-85",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«الناتج المحلي الإجمالي» بيقيس إيه؟",
+      "options": [
+        "عدد السكان",
+        "قيمة كل السلع والخدمات اللي بلد بتنتجها",
+        "عدد الشركات",
+        "حجم الصادرات بس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بيتختصر GDP."
+    },
+    {
+      "id": "gn-bool-49",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الأولمبياد بيتعمل كل أربع سنين",
+      "isTrue": true,
+      "explanationAr": "والشتوي بقى في سنة مختلفة."
+    },
+    {
+      "id": "gn-bool-50",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "علم الأولمبياد فيه خمس حلقات",
+      "isTrue": true,
+      "explanationAr": "كل حلقة بترمز لقارة."
+    },
+    {
+      "id": "gn-bool-51",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "فريق كرة السلة بيبقى 5 لاعيبة في الملعب",
+      "isTrue": true,
+      "explanationAr": "والكرة الطايرة 6."
+    },
+    {
+      "id": "gn-bool-52",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "في الشطرنج، الحصان بيتحرك بشكل حرف L",
+      "isTrue": true,
+      "explanationAr": "والوحيد اللي بينطّ فوق القطع."
+    },
+    {
+      "id": "gn-bool-53",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أقوى قطعة في الشطرنج هي الملك",
+      "isTrue": false,
+      "explanationAr": "الوزير أقوى قطعة، والملك أهمها."
+    },
+    {
+      "id": "gn-bool-54",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "شهر فبراير في السنة الكبيسة بيبقى 29 يوم",
+      "isTrue": true,
+      "explanationAr": "بيزيد يوم كل أربع سنين."
+    },
+    {
+      "id": "gn-bool-55",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "البنكرياس هو اللي بيفرز الأنسولين",
+      "isTrue": true,
+      "explanationAr": "والأنسولين بينظّم السكر."
+    },
+    {
+      "id": "gn-bool-56",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "نقص الحديد بيسبب الأنيميا",
+      "isTrue": true,
+      "explanationAr": "لأن الحديد أساس الهيموجلوبين."
+    },
+    {
+      "id": "gn-bool-57",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الحوت بيتنفس بالخياشيم زي السمك",
+      "isTrue": false,
+      "explanationAr": "بيتنفس برئتين وبيطلع لسطح الميه."
+    },
+    {
+      "id": "gn-bool-58",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "خلد الماء من الثدييات اللي بتبيض",
+      "isTrue": true,
+      "explanationAr": "واحد من استثناءات قليلة جدًا."
+    },
+    {
+      "id": "gn-num-28",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الأولمبياد بيتعمل كل كام سنة؟",
+      "correctValue": 4,
+      "tolerance": 0,
+      "unitAr": "سنة",
+      "explanationAr": "زي كأس العالم بالظبط."
+    },
+    {
+      "id": "gn-num-29",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "علم الأولمبياد فيه كام حلقة؟",
+      "correctValue": 5,
+      "tolerance": 0,
+      "unitAr": "حلقة",
+      "explanationAr": "كل واحدة بترمز لقارة."
+    },
+    {
+      "id": "gn-num-30",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الشطرنج فيه كام قطعة لكل لاعب؟",
+      "correctValue": 16,
+      "tolerance": 0,
+      "unitAr": "قطعة",
+      "explanationAr": "تمن بيادق وتمن قطع كبيرة."
+    },
+    {
+      "id": "gn-num-31",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "شهر فبراير في السنة الكبيسة كام يوم؟",
+      "correctValue": 29,
+      "tolerance": 0,
+      "unitAr": "يوم",
+      "explanationAr": "بدل 28."
+    },
+    {
+      "id": "gn-num-32",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "الرقم الروماني C معناه كام؟",
+      "correctValue": 100,
+      "tolerance": 0,
+      "explanationAr": "و M معناها ألف."
+    },
+    {
+      "id": "gn-open-23",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "الأولمبياد الحديث بدأ في أنهي مدينة؟",
+      "answerAr": "أثينا",
+      "aliases": [
+        "اثينا",
+        "أثينة"
+      ],
+      "explanationAr": "سنة 1896 في اليونان."
+    },
+    {
+      "id": "gn-open-24",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "أنهي عضو بيفرز الأنسولين؟",
+      "answerAr": "البنكرياس",
+      "aliases": [
+        "بنكرياس"
+      ],
+      "explanationAr": "بينظّم السكر في الدم."
+    },
+    {
+      "id": "gn-open-25",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "نقص الحديد بيسبب أنهي مرض؟",
+      "answerAr": "الأنيميا",
+      "aliases": [
+        "انيميا",
+        "فقر الدم"
+      ],
+      "explanationAr": "لأن الحديد أساس الهيموجلوبين."
+    },
+    {
+      "id": "gn-open-26",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه أقوى قطعة في الشطرنج؟",
+      "answerAr": "الوزير",
+      "aliases": [
+        "وزير",
+        "الملكة"
+      ],
+      "explanationAr": "بتتحرك في كل الاتجاهات."
+    },
+    {
+      "id": "gn-open-27",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "أنهي حيوان من الثدييات وبيبيض؟",
+      "answerAr": "خلد الماء",
+      "aliases": [
+        "خلد المياه",
+        "منقار البط"
+      ],
+      "explanationAr": "من أستراليا، ومن أغرب الكائنات."
+    },
+    {
+      "id": "gn-open-28",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "إيه الطاير اللي بيعتبر رمز للسلام؟",
+      "answerAr": "الحمامة",
+      "aliases": [
+        "حمامة",
+        "الحمام"
+      ],
+      "explanationAr": "وكانوا بيستعملوها في نقل الرسايل."
+    },
+    {
+      "id": "gn-open-29",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم الغدة اللي بتتحكم في سرعة الحرق في الجسم؟",
+      "answerAr": "الغدة الدرقية",
+      "aliases": [
+        "الدرقية",
+        "الغده الدرقيه"
+      ],
+      "explanationAr": "شكلها زي الفراشة في الرقبة."
+    },
+    {
+      "id": "gn-prog-17",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا لعبة على رقعة مربعات",
+        "فيّا 64 مربع أبيض وأسود",
+        "كل لاعب عنده 16 قطعة وأقواهم الوزير"
+      ],
+      "answerAr": "الشطرنج",
+      "aliases": [
+        "شطرنج"
+      ],
+      "explanationAr": "من أقدم الألعاب الذهنية في التاريخ."
+    },
+    {
+      "id": "gn-prog-18",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا حدث بيتكرر كل 4 سنين",
+        "علمي فيه خمس حلقات ملونة",
+        "بدأت نسختي الحديثة في أثينا سنة 1896"
+      ],
+      "answerAr": "الأولمبياد",
+      "aliases": [
+        "الأولمبياد",
+        "الألعاب الأولمبية",
+        "الاولمبياد"
+      ],
+      "explanationAr": "أكبر حدث رياضي في العالم."
+    },
+    {
+      "id": "gn-prog-19",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا غدة في الجسم",
+        "بفرز إنزيمات بتساعد على الهضم",
+        "وبفرز الأنسولين اللي بينظّم السكر في الدم"
+      ],
+      "answerAr": "البنكرياس",
+      "aliases": [
+        "بنكرياس"
+      ],
+      "explanationAr": "غدة ليها وظيفتين مختلفتين."
+    },
+    {
+      "id": "gn-prog-20",
+      "shape": "progressive",
+      "difficulty": 5,
+      "hints": [
+        "أنا حيوان أصلي من أستراليا",
+        "من الثدييات بس ببيض",
+        "منقاري زي البطة وديلي زي القندس"
+      ],
+      "answerAr": "خلد الماء",
+      "aliases": [
+        "خلد المياه",
+        "منقار البط"
+      ],
+      "explanationAr": "من أغرب الكائنات في الطبيعة."
+    },
+    {
+      "id": "gn-prog-21",
+      "shape": "progressive",
+      "difficulty": 1,
+      "hints": [
+        "أنا طاير صغير",
+        "كانوا بيستعملوني في نقل الرسايل زمان",
+        "بقيت رمز للسلام في العالم كله"
+      ],
+      "answerAr": "الحمامة",
+      "aliases": [
+        "حمامة",
+        "الحمام"
+      ],
+      "explanationAr": "رمز عالمي للسلام."
+    },
+    {
+      "id": "gn-prog-22",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا حالة صحية منتشرة",
+        "بحصل من نقص الحديد غالبًا",
+        "بخلي الواحد تعبان ووشه أصفر ونفسه مقطوع"
+      ],
+      "answerAr": "الأنيميا",
+      "aliases": [
+        "انيميا",
+        "فقر الدم"
+      ],
+      "explanationAr": "بتتعالج بالحديد والتغذية."
+    },
+    {
+      "id": "gn-prog-23",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا مصطلح اقتصادي",
+        "بحصل لما الفلوس تزيد في السوق أكتر من السلع",
+        "الأسعار بتعلى وقيمة الفلوس بتقل"
+      ],
+      "answerAr": "التضخم",
+      "aliases": [
+        "تضخم"
+      ],
+      "explanationAr": "نفس المبلغ بيشتري أقل مع الوقت."
+    },
+    {
+      "id": "gn-prog-24",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا غدة في الرقبة",
+        "شكلي زي الفراشة",
+        "بتحكم في التمثيل الغذائي وسرعة الحرق"
+      ],
+      "answerAr": "الغدة الدرقية",
+      "aliases": [
+        "الدرقية",
+        "الغده الدرقيه"
+      ],
+      "explanationAr": "خللها بيأثر على الوزن والطاقة."
+    },
+    {
+      "id": "gn-mcq-86",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي آلة موسيقية ليها 88 مفتاح؟",
+      "options": [
+        "الأورج",
+        "البيانو",
+        "الأكورديون",
+        "الهارب"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "52 أبيض و36 أسود."
+    },
+    {
+      "id": "gn-mcq-87",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي آلة موسيقية بتتعزف بقوس؟",
+      "options": [
+        "الجيتار",
+        "الكمان",
+        "العود",
+        "البيانو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "القوس بيتعمل من شعر الحصان."
+    },
+    {
+      "id": "gn-mcq-88",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي آلة موسيقية عندها أوتار بتتشد على إطار مثلث كبير؟",
+      "options": [
+        "العود",
+        "الهارب",
+        "الكمان",
+        "الجيتار"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بتتعزف بالأصابع من غير ريشة."
+    },
+    {
+      "id": "gn-mcq-89",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين اللي بيقود الأوركسترا؟",
+      "options": [
+        "العازف الأول",
+        "المايسترو",
+        "المؤلف",
+        "المنتج"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بيضبط الإيقاع والتوازن بين الآلات."
+    },
+    {
+      "id": "gn-mcq-90",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي لغة عندها أكبر عدد متحدثين كلغة أم؟",
+      "options": [
+        "الإنجليزية",
+        "الصينية",
+        "الإسبانية",
+        "الهندية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الماندرين، بحكم عدد سكان الصين."
+    },
+    {
+      "id": "gn-mcq-91",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«الإسبرانتو» إيه؟",
+      "options": [
+        "نوع رقص",
+        "لغة اتصنعت مخصوص",
+        "عملة قديمة",
+        "آلة موسيقية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اتعملت في القرن التسعتاشر كلغة عالمية سهلة."
+    },
+    {
+      "id": "gn-mcq-92",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي وحدة بتتقاس بيها القوة؟",
+      "options": [
+        "جول",
+        "نيوتن",
+        "واط",
+        "أمبير"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "على اسم إسحاق نيوتن."
+    },
+    {
+      "id": "gn-mcq-93",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي وحدة بتتقاس بيها القدرة الكهربية؟",
+      "options": [
+        "فولت",
+        "واط",
+        "أمبير",
+        "أوم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "لمبة 100 واط بتستهلك أكتر من لمبة 40."
+    },
+    {
+      "id": "gn-mcq-94",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي وحدة بتتقاس بيها شدة التيار الكهربي؟",
+      "options": [
+        "فولت",
+        "أمبير",
+        "واط",
+        "أوم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "والفولت للجهد، والأوم للمقاومة."
+    },
+    {
+      "id": "gn-mcq-95",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«الميل البحري» بيساوي تقريبًا كام متر؟",
+      "options": [
+        "1000",
+        "1609",
+        "1852",
+        "2000"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "أطول من الميل البري."
+    },
+    {
+      "id": "gn-mcq-96",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«القدم» كوحدة قياس بتساوي تقريبًا كام سنتيمتر؟",
+      "options": [
+        "25 سم",
+        "30 سم",
+        "40 سم",
+        "50 سم"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "30.48 سم بالظبط."
+    },
+    {
+      "id": "gn-mcq-97",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«الصفر المطلق» بيساوي كام درجة سيلزيوس؟",
+      "options": [
+        "-100",
+        "-200",
+        "-273",
+        "-500"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "أقل درجة حرارة ممكنة نظريًا."
+    },
+    {
+      "id": "gn-mcq-98",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "طبقة «الأوزون» بتحمينا من إيه؟",
+      "options": [
+        "الأشعة تحت الحمرا",
+        "الأشعة فوق البنفسجية",
+        "الرياح",
+        "الأمطار"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اللي بتسبب سرطان الجلد."
+    },
+    {
+      "id": "gn-mcq-99",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«الاحتباس الحراري» سببه الأساسي إيه؟",
+      "options": [
+        "ثقب الأوزون",
+        "غازات الدفيئة زي ثاني أكسيد الكربون",
+        "البراكين",
+        "دوران الأرض"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بتحبس حرارة الشمس جوه الغلاف الجوي."
+    },
+    {
+      "id": "gn-mcq-100",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي مصدر من دول طاقة متجددة؟",
+      "options": [
+        "الفحم",
+        "الشمس",
+        "البترول",
+        "الغاز الطبيعي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ومعاها الرياح والمياه."
+    },
+    {
+      "id": "gn-mcq-101",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "الإنترنت بدأ في الأصل كمشروع تابع لإيه؟",
+      "options": [
+        "جامعة أكسفورد",
+        "وزارة الدفاع الأمريكية",
+        "شركة IBM",
+        "الأمم المتحدة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بدأ باسم «آربانت» في الستينات."
+    },
+    {
+      "id": "gn-mcq-102",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«WWW» اختصار لإيه؟",
+      "options": [
+        "نظام تشغيل",
+        "الشبكة العنكبوتية العالمية",
+        "بروتوكول أمان",
+        "لغة برمجة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "World Wide Web."
+    },
+    {
+      "id": "gn-mcq-103",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي شركة بتطوّر نظام «أندرويد»؟",
+      "options": [
+        "أبل",
+        "جوجل",
+        "مايكروسوفت",
+        "سامسونج"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وأبل عندها iOS."
+    },
+    {
+      "id": "gn-mcq-104",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«الرام» في الكمبيوتر وظيفتها إيه؟",
+      "options": [
+        "تخزين دائم للملفات",
+        "ذاكرة مؤقتة أثناء التشغيل",
+        "معالجة الصور",
+        "الاتصال بالإنترنت"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بتتمسح لما الجهاز يقفل."
+    },
+    {
+      "id": "gn-mcq-105",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«HTTP» بيستعمل في إيه؟",
+      "options": [
+        "إرسال الإيميل",
+        "نقل صفحات الويب",
+        "تشفير الملفات",
+        "الطباعة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "و«HTTPS» هو النسخة المشفّرة منه."
+    },
+    {
+      "id": "gn-mcq-106",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "خلط الأزرق مع الأصفر بيدي أنهي لون؟",
+      "options": [
+        "البرتقالي",
+        "الأخضر",
+        "البنفسجي",
+        "البني"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "والأحمر مع الأصفر بيدي برتقالي."
+    },
+    {
+      "id": "gn-mcq-107",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الألوان الأساسية في الطلا إيه؟",
+      "options": [
+        "الأحمر والأخضر والأزرق",
+        "الأحمر والأصفر والأزرق",
+        "الأبيض والأسود والرمادي",
+        "البرتقالي والبنفسجي والأخضر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "منها بيتكوّن أي لون تاني."
+    },
+    {
+      "id": "gn-mcq-108",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "الظاهرة اللي بتفصل ضوء الشمس لألوان في المنشور اسمها إيه؟",
+      "options": [
+        "الانعكاس",
+        "التشتت",
+        "الامتصاص",
+        "التداخل"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "كل لون بينكسر بزاوية مختلفة."
+    },
+    {
+      "id": "gn-mcq-109",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الأخوان رايت اخترعوا إيه؟",
+      "options": [
+        "القطار",
+        "الطيارة",
+        "العربية",
+        "المنطاد"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أول طيران بمحرك سنة 1903."
+    },
+    {
+      "id": "gn-mcq-110",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين اللي بيتنسب ليه اختراع التليفون؟",
+      "options": [
+        "توماس إديسون",
+        "جراهام بل",
+        "ماركوني",
+        "نيكولا تسلا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "سجّل البراءة سنة 1876."
+    },
+    {
+      "id": "gn-mcq-111",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين اللي طوّر أول مصباح كهربي عملي؟",
+      "options": [
+        "جراهام بل",
+        "توماس إديسون",
+        "نيكولا تسلا",
+        "أليساندرو فولتا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وأسس شركة كهربا كبيرة بعدها."
+    },
+    {
+      "id": "gn-mcq-112",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أول قمر صناعي في التاريخ اسمه إيه؟",
+      "options": [
+        "أبولو",
+        "سبوتنيك",
+        "فوستوك",
+        "إكسبلورر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أطلقه الاتحاد السوفيتي سنة 1957."
+    },
+    {
+      "id": "gn-mcq-113",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "«محطة الفضا الدولية» بتلف حوالين الأرض في حوالي كام دقيقة؟",
+      "options": [
+        "24 ساعة",
+        "90 دقيقة",
+        "12 ساعة",
+        "6 ساعات"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "يعني بتشوف 16 شروق وغروب في اليوم."
+    },
+    {
+      "id": "gn-mcq-114",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "إضافة الملح للميه بتعمل إيه في درجة الغليان؟",
+      "options": [
+        "بتقللها",
+        "بترفعها شوية",
+        "مبتأثرش",
+        "بتمنع الغليان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ظاهرة اسمها ارتفاع درجة الغليان."
+    },
+    {
+      "id": "gn-mcq-115",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«الجول» وحدة بتتقاس بيها إيه؟",
+      "options": [
+        "القوة",
+        "الطاقة والشغل",
+        "الضغط",
+        "التردد"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "والسعرات الحرارية بتتحول ليها."
+    },
+    {
+      "id": "gn-odd-1",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "الدخيل بين ألوان إشارة المرور",
+      "items": [
+        "أحمر",
+        "أصفر",
+        "أخضر",
+        "بنفسجي"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين ألوان إشارة المرور الرسمية، والبنفسجي مش منهم."
+    },
+    {
+      "id": "gn-odd-2",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "الدخيل بين أيام الأسبوع",
+      "items": [
+        "الاتنين",
+        "الثلاثاء",
+        "يناير",
+        "الأربع"
+      ],
+      "oddIndex": 2,
+      "reasonAr": "التلاتة التانيين أيام في الأسبوع، ويناير شهر مش يوم."
+    },
+    {
+      "id": "gn-odd-3",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "الدخيل بين العمليات الحسابية",
+      "items": [
+        "الجمع",
+        "الطرح",
+        "الضرب",
+        "المثلث"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين عمليات حسابية، والمثلث شكل هندسي."
+    },
+    {
+      "id": "gn-odd-4",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "الدخيل بين القارات",
+      "items": [
+        "آسيا",
+        "أوروبا",
+        "البرازيل",
+        "أفريقيا"
+      ],
+      "oddIndex": 2,
+      "reasonAr": "التلاتة التانيين قارات، والبرازيل دولة مش قارة."
+    },
+    {
+      "id": "gn-odd-5",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين وحدات القياس",
+      "items": [
+        "متر",
+        "كيلومتر",
+        "سنتيمتر",
+        "كيلوجرام"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين وحدات لقياس الطول، والكيلوجرام وحدة وزن."
+    },
+    {
+      "id": "gn-odd-6",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين الألوان الأساسية",
+      "items": [
+        "الأحمر",
+        "الأزرق",
+        "الأصفر",
+        "الأخضر"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين ألوان أساسية، والأخضر لون ثانوي ناتج من خلط الأزرق والأصفر."
+    },
+    {
+      "id": "gn-odd-7",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "الدخيل بين فصول السنة",
+      "items": [
+        "الشتاء",
+        "الصيف",
+        "الخريف",
+        "الظهر"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين فصول السنة، والظهر وقت في اليوم."
+    },
+    {
+      "id": "gn-odd-8",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين النوتات الموسيقية",
+      "items": [
+        "دو",
+        "ري",
+        "مي",
+        "بيانو"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين نوتات موسيقية، والبيانو آلة موسيقية."
+    },
+    {
+      "id": "gn-odd-9",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "الدخيل بين أجهزة المطبخ",
+      "items": [
+        "الثلاجة",
+        "الفرن",
+        "الغسالة",
+        "السيارة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين أجهزة منزلية، والسيارة مش من أجهزة المنزل."
+    },
+    {
+      "id": "gn-odd-10",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين لغات البرمجة",
+      "items": [
+        "بايثون",
+        "جافا",
+        "سي بلس بلس",
+        "الإنجليزية"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين لغات برمجة، والإنجليزية لغة بشرية."
+    },
+    {
+      "id": "gn-odd-11",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين قطع الشطرنج",
+      "items": [
+        "الفيل",
+        "الحصان",
+        "الملكة",
+        "النرد"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين قطع شطرنج، والنرد أداة لعبة الطاولة."
+    },
+    {
+      "id": "gn-odd-12",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "الدخيل بين ألعاب اللوح",
+      "items": [
+        "الشطرنج",
+        "الداما",
+        "الطاولة",
+        "الكوتشينة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين ألعاب لوح، والكوتشينة لعبة ورق."
+    },
+    {
+      "id": "gn-odd-13",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين الأحجار الكريمة",
+      "items": [
+        "الألماس",
+        "الياقوت",
+        "الزمرد",
+        "الحديد"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين أحجار كريمة، والحديد معدن عادي."
+    },
+    {
+      "id": "gn-odd-14",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين أبراج الفلك",
+      "items": [
+        "الحمل",
+        "الثور",
+        "الأسد",
+        "القمر"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين أبراج فلكية، والقمر جرم سماوي."
+    },
+    {
+      "id": "gn-odd-15",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "الدخيل بين وحدات قياس الزمن",
+      "items": [
+        "الثانية",
+        "الدقيقة",
+        "الساعة",
+        "المتر"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين وحدات زمن، والمتر وحدة طول."
+    },
+    {
+      "id": "gn-odd-16",
+      "shape": "odd_one_out",
+      "difficulty": 4,
+      "textAr": "الدخيل بين أنواع السحب",
+      "items": [
+        "السحب الركامية",
+        "السحب الطبقية",
+        "السحب الريشية",
+        "البرق"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين أنواع سحب، والبرق ظاهرة جوية مش نوع سحابة."
+    },
+    {
+      "id": "gn-odd-17",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "الدخيل بين الأنواع الموسيقية",
+      "items": [
+        "الجاز",
+        "الروك",
+        "الكلاسيك",
+        "الرسم"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين أنواع موسيقى، والرسم فن تشكيلي مش موسيقى."
+    },
+    {
+      "id": "gn-odd-18",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين الأديان السماوية والوضعية",
+      "items": [
+        "الإسلام",
+        "المسيحية",
+        "اليهودية",
+        "الشيوعية"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين أديان، والشيوعية إيديولوجية سياسية مش دين."
+    },
+    {
+      "id": "gn-odd-19",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين أنواع المثلثات",
+      "items": [
+        "متساوي الأضلاع",
+        "متساوي الساقين",
+        "قائم الزاوية",
+        "الدائرة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين أنواع مثلثات، والدائرة شكل هندسي مختلف تمامًا."
+    },
+    {
+      "id": "gn-odd-20",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين مخترعين وعلماء",
+      "items": [
+        "إديسون",
+        "جراهام بيل",
+        "نيوتن",
+        "شكسبير"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين علماء ومخترعين، وشكسبير كاتب مسرحي."
+    },
+    {
+      "id": "gn-odd-21",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين محيطات العالم",
+      "items": [
+        "الهادي",
+        "الأطلسي",
+        "الهندي",
+        "البحر الأحمر"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين محيطات، والبحر الأحمر بحر مش محيط."
+    },
+    {
+      "id": "gn-odd-22",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "الدخيل بين متاحف عالمية شهيرة",
+      "items": [
+        "اللوفر",
+        "المتروبوليتان",
+        "المتحف البريطاني",
+        "تاج محل"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين متاحف، وتاج محل ضريح ومبنى تاريخي مش متحف."
+    },
+    {
+      "id": "gn-odd-23",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "الدخيل بين الأشكال الهندسية المسطحة",
+      "items": [
+        "المربع",
+        "المثلث",
+        "الدائرة",
+        "المكعب"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين أشكال مسطحة (ثنائية الأبعاد)، والمكعب شكل مجسم (ثلاثي الأبعاد)."
+    },
+    {
+      "id": "gn-odd-24",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "الدخيل بين وسائل المواصلات البرية",
+      "items": [
+        "السيارة",
+        "الأتوبيس",
+        "القطار",
+        "الطائرة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "التلاتة التانيين وسايل مواصلات برية، والطيارة مواصلة جوية."
+    },
+    {
+      "id": "gn-emj-1",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🎪🤹",
+      "answerAr": "السيرك",
+      "aliases": []
+    },
+    {
+      "id": "gn-emj-2",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "💡",
+      "answerAr": "فكرة",
+      "aliases": [
+        "لمبة"
+      ]
+    },
+    {
+      "id": "gn-emj-3",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🕐",
+      "answerAr": "الوقت",
+      "aliases": [
+        "الساعة"
+      ]
+    },
+    {
+      "id": "gn-emj-4",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🌍",
+      "answerAr": "الأرض",
+      "aliases": [
+        "العالم",
+        "الكرة الأرضية"
+      ]
+    },
+    {
+      "id": "gn-emj-5",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "📚",
+      "answerAr": "الكتب",
+      "aliases": [
+        "القراءة"
+      ]
+    },
+    {
+      "id": "gn-emj-6",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🔬",
+      "answerAr": "العلوم",
+      "aliases": [
+        "المعمل",
+        "الميكروسكوب"
+      ]
+    },
+    {
+      "id": "gn-emj-7",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🎨",
+      "answerAr": "الفن",
+      "aliases": [
+        "الرسم"
+      ]
+    },
+    {
+      "id": "gn-emj-8",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🏛️",
+      "answerAr": "المتحف",
+      "aliases": [
+        "المبنى الأثري"
+      ]
+    },
+    {
+      "id": "gn-emj-9",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "💰",
+      "answerAr": "المال",
+      "aliases": [
+        "الفلوس"
+      ]
+    },
+    {
+      "id": "gn-emj-10",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🗺️",
+      "answerAr": "الخريطة",
+      "aliases": []
+    },
+    {
+      "id": "gn-emj-11",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "⏰",
+      "answerAr": "المنبه",
+      "aliases": [
+        "الساعة المنبهة"
+      ]
+    },
+    {
+      "id": "gn-emj-12",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🌡️",
+      "answerAr": "الترمومتر",
+      "aliases": [
+        "ميزان الحرارة"
+      ]
+    },
+    {
+      "id": "gn-emj-13",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🗺️📍🧭",
+      "answerAr": "تحديد الاتجاهات",
+      "aliases": [
+        "الملاحة"
+      ]
+    },
+    {
+      "id": "gn-emj-14",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🔭🌌🪐",
+      "answerAr": "رصد الفضاء",
+      "aliases": [
+        "علم الفلك"
+      ]
+    },
+    {
+      "id": "gn-emj-15",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🧪",
+      "answerAr": "التجربة الكيميائية",
+      "aliases": [
+        "أنبوبة الاختبار"
+      ]
+    },
+    {
+      "id": "gn-emj-16",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🏔️🧗",
+      "answerAr": "تسلق الجبال",
+      "aliases": []
+    },
+    {
+      "id": "gn-emj-17",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🏄‍♂️🌊",
+      "answerAr": "ركوب الأمواج",
+      "aliases": [
+        "السيرفينج"
+      ]
+    },
+    {
+      "id": "gn-emj-18",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🔥🧯",
+      "answerAr": "إطفاء الحريق",
+      "aliases": []
+    },
+    {
+      "id": "gn-emj-19",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "💧",
+      "answerAr": "الماء",
+      "aliases": [
+        "قطرة ماء"
+      ]
+    },
+    {
+      "id": "gn-emj-20",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "⛄❄️🧣",
+      "answerAr": "الجو البارد جدًا",
+      "aliases": [
+        "الشتاء القارس"
+      ]
+    },
+    {
+      "id": "gn-emj-21",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "⚡🔌",
+      "answerAr": "التيار الكهربائي",
+      "aliases": [
+        "الكهرباء"
+      ]
+    },
+    {
+      "id": "gn-emj-22",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🌙⭐🌃",
+      "answerAr": "الليل",
+      "aliases": []
+    },
+    {
+      "id": "gn-emj-23",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "⭐",
+      "answerAr": "النجمة",
+      "aliases": []
+    },
+    {
+      "id": "gn-emj-24",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🎭",
+      "answerAr": "المسرح",
+      "aliases": [
+        "التمثيل"
+      ]
+    },
+    {
+      "id": "gn-emj-25",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🎼🎤🎸",
+      "answerAr": "الحفلة الموسيقية",
+      "aliases": [
+        "الكونسيرت"
+      ]
+    },
+    {
+      "id": "gn-emj-26",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🏆",
+      "answerAr": "الكأس",
+      "aliases": [
+        "الفوز"
+      ]
+    },
+    {
+      "id": "gn-emj-27",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🧩",
+      "answerAr": "الأحجية",
+      "aliases": [
+        "اللغز",
+        "البازل"
+      ]
+    },
+    {
+      "id": "gn-emj-28",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🔑",
+      "answerAr": "المفتاح",
+      "aliases": []
+    },
+    {
+      "id": "gn-emj-29",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🎯",
+      "answerAr": "الهدف",
+      "aliases": [
+        "الدقة"
+      ]
+    },
+    {
+      "id": "gn-emj-30",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🧲🔩",
+      "answerAr": "الجذب المغناطيسي",
+      "aliases": []
+    },
+    {
+      "id": "gn-ord-17",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب المسافات دي من الأقصر للأطول",
+      "items": [
+        "طول قلم رصاص عادي",
+        "طول سيارة عادية",
+        "طول ملعب كورة قدم",
+        "ارتفاع برج خليفة"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gn-ord-18",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب درجات الشهادات الدراسية دي من الأقل للأعلى",
+      "items": [
+        "الثانوية العامة",
+        "البكالوريوس",
+        "الماجستير",
+        "الدكتوراه"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gn-ord-19",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الدول دي حسب عدد السكان من الأقل للأكتر",
+      "items": [
+        "نيجيريا",
+        "الولايات المتحدة",
+        "الصين",
+        "الهند"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gn-ord-20",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب أطول ناطحات سحاب في العالم دي من الأقصر للأطول",
+      "items": [
+        "برج شنغهاي",
+        "برج ميرديكا 118",
+        "برج خليفة"
+      ],
+      "labels": [
+        "632 متر",
+        "679 متر",
+        "828 متر"
+      ]
+    },
+    {
+      "id": "gn-ord-21",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب أول 4 نسخ من الألعاب الأولمبية الحديثة حسب سنتها",
+      "items": [
+        "أثينا",
+        "باريس",
+        "سانت لويس",
+        "لندن"
+      ],
+      "labels": [
+        "1896",
+        "1900",
+        "1904",
+        "1908"
+      ]
+    },
+    {
+      "id": "gn-ord-22",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب وسايل الاتصال دي من الأقدم اختراعًا للأحدث",
+      "items": [
+        "التلغراف",
+        "الراديو",
+        "التليفزيون",
+        "الإنترنت"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gn-ord-23",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب مراحل التعليم دي بالترتيب الصح",
+      "items": [
+        "الحضانة",
+        "الابتدائي",
+        "الإعدادي",
+        "الثانوي",
+        "الجامعة"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gn-ord-24",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب مراحل تحضير وجبة كاملة من الأول للآخر",
+      "items": [
+        "التسوق للمكونات",
+        "التقطيع والتجهيز",
+        "الطبخ",
+        "التقديم على المائدة"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gn-ord-25",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب مقاسات الملابس دي من الأصغر للأكبر",
+      "items": [
+        "صغير",
+        "وسط",
+        "كبير",
+        "كبير جدًا"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gn-ord-26",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب مراحل حياة الإنسان دي بالترتيب الصح",
+      "items": [
+        "الطفولة",
+        "المراهقة",
+        "الشباب",
+        "الشيخوخة"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gn-ord-27",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب وسايل المواصلات دي من الأبطأ للأسرع",
+      "items": [
+        "المشي",
+        "الدراجة",
+        "السيارة",
+        "الطائرة"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gn-ord-28",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب القارات دي من الأقل سكانًا للأكتر",
+      "items": [
+        "أوروبا",
+        "أفريقيا",
+        "آسيا"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gn-ord-29",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب أكبر جزر العالم دي من الأصغر للأكبر",
+      "items": [
+        "مدغشقر",
+        "بورنيو",
+        "غينيا الجديدة",
+        "جرينلاند"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gn-ord-30",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب عدد لاعبي الفريق الواحد في الرياضات دي من الأقل للأكتر",
+      "items": [
+        "التنس المفرد",
+        "الكرة الطايرة",
+        "كرة القدم",
+        "الركبي"
+      ],
+      "labels": [
+        "1",
+        "6",
+        "11",
+        "15"
+      ]
+    },
+    {
+      "id": "gn-ord-31",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب أجزاء اليوم دي بالترتيب الصح",
+      "items": [
+        "الصبح",
+        "الضهر",
+        "العصر",
+        "الليل"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gn-ord-32",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب فصول الدراسة في السنة الدراسية العادية بالترتيب",
+      "items": [
+        "بداية العام الدراسي",
+        "الفصل الدراسي الأول",
+        "الفصل الدراسي الثاني",
+        "الإجازة الصيفية"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gn-bool-59",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أمريكا مالهاش لغة رسمية معتمدة على المستوى الفيدرالي رغم إن الإنجليزية هي اللغة السايدة",
+      "isTrue": true,
+      "explanationAr": "الدستور الأمريكي ماحددش لغة رسمية فيدرالية رغم انتشار الإنجليزية."
+    },
+    {
+      "id": "gn-bool-60",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "اللغة الرسمية للبرازيل هي الإسبانية زي أغلب دول أمريكا الجنوبية",
+      "isTrue": false,
+      "explanationAr": "البرازيل لغتها الرسمية البرتغالية، وهي استثناء وسط دول ناطقة بالإسبانية."
+    },
+    {
+      "id": "gn-bool-61",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "أكبر مدينة في أستراليا من ناحية عدد السكان هي نفسها عاصمتها الرسمية",
+      "isTrue": false,
+      "explanationAr": "سيدني أكبر مدينة، لكن العاصمة الرسمية هي كانبيرا."
+    },
+    {
+      "id": "gn-bool-62",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الكنغر حيوان أصلي من أستراليا بشكل أساسي",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-63",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "عدد الدول الأعضا في منظمة الأمم المتحدة حاليًا حوالي 193 دولة",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-64",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الأبجدية العربية بتُكتب من الشمال لليمين زي الإنجليزية",
+      "isTrue": false,
+      "explanationAr": "العربية بتُكتب من اليمين للشمال، عكس اللغات اللاتينية."
+    },
+    {
+      "id": "gn-bool-65",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "كلمة «الجبر» في الرياضيات أصلها من كلمة عربية",
+      "isTrue": true,
+      "explanationAr": "الكلمة الإنجليزية Algebra أصلها من عنوان كتاب عربي لعالم الرياضيات الخوارزمي."
+    },
+    {
+      "id": "gn-bool-66",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "الأرقام اللي بنستخدمها دلوقتي (١٢٣٤٥٦٧٨٩٠) بتُسمى عالميًا بالأرقام العربية رغم إنها اتطورت أصلًا من الهند",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-67",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "كلمة «قهوة» بالإنجليزية (Coffee) أصلها من كلمة عربية",
+      "isTrue": true,
+      "explanationAr": "أصلها من كلمة «قهوة» العربية اللي انتقلت للتركية ثم للأوروبية."
+    },
+    {
+      "id": "gn-bool-68",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "كلمة «صفر» بالإنجليزية (Zero) أصلها من كلمة عربية",
+      "isTrue": true,
+      "explanationAr": "الكلمة العربية «صفر» انتقلت للاتينية ومنها لكلمة Zero الحديثة."
+    },
+    {
+      "id": "gn-bool-69",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "أول قاموس عربي منظم أبجديًا بشكل كامل ظهر في العصر الحديث بس",
+      "isTrue": false,
+      "explanationAr": "فيه معاجم عربية قديمة جدًا منظمة، أشهرها لسان العرب من القرن الثالث عشر الميلادي.\" "
+    },
+    {
+      "id": "gn-bool-70",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "حرف الألف هو أول حرف في الأبجدية العربية",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-71",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "ممكن الجملة العربية الكاملة تتكون من كلمة واحدة بس أحيانًا بسبب الضمائر المتصلة",
+      "isTrue": true,
+      "explanationAr": "زي كلمة «أذهبتموهن» اللي بتحمل فعل وفاعل ومفعول به في كلمة واحدة."
+    },
+    {
+      "id": "gn-bool-72",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "أسرع حاسة عند الإنسان من ناحية سرعة رد الفعل هي حاسة السمع",
+      "isTrue": true,
+      "explanationAr": "دراسات كتير بتأكد إن رد الفعل السمعي أسرع من البصري واللمسي بفارق ملحوظ."
+    },
+    {
+      "id": "gn-bool-73",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "المطبعة الأولى بحروف متحركة قابلة لإعادة الاستخدام ظهرت في أوروبا في القرن الخامس عشر",
+      "isTrue": true,
+      "explanationAr": "ظهرت على يد يوهان غوتنبرغ في ألمانيا حوالي سنة 1440."
+    },
+    {
+      "id": "gn-bool-74",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "الصين سبقت أوروبا في اختراع نوع من الطباعة قبل غوتنبرغ بقرون",
+      "isTrue": true,
+      "explanationAr": "الطباعة بالقوالب الخشبية كانت معروفة في الصين من قرون قبل اختراع غوتنبرغ الأوروبي."
+    },
+    {
+      "id": "gn-bool-75",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الساعة الرملية بتستخدم الرمل عشان تقيس فترة زمنية ثابتة",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-76",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "البوصلة بتستخدم المجال المغناطيسي للأرض عشان تحدد الاتجاهات",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-77",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "أول عملة معدنية في التاريخ ضربتها حضارة صينية قديمة",
+      "isTrue": false,
+      "explanationAr": "أول عملة معدنية معروفة تاريخيًا ضربتها مملكة ليديا القديمة في آسيا الصغرى."
+    },
+    {
+      "id": "gn-bool-78",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الشطرنج لعبة قديمة جدًا أصلها بيرجع لآسيا",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-79",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الفيل في لعبة الشطرنج بيتحرك بخط مستقيم دغري بس",
+      "isTrue": false,
+      "explanationAr": "الفيل بيتحرك بشكل مائل (قطري)، والرخ هو اللي بيتحرك بخط مستقيم."
+    },
+    {
+      "id": "gn-bool-80",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الكوتشينة (ورق اللعب) بتتكون عادةً من 52 ورقة من غير الجوكر",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-81",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "النرد (الزهر) في الألعاب بيبقى شكله دايمًا مكعب بستة أوجه",
+      "isTrue": false,
+      "explanationAr": "فيه أنواع نرد بأشكال هندسية تانية مختلفة تمامًا مستخدمة في ألعاب معينة."
+    },
+    {
+      "id": "gn-bool-82",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الدومينو لعبة بتعتمد على قطع مقسومة نصين وعليها نقط",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-83",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "العملة الورقية أقدم تاريخيًا من العملة المعدنية",
+      "isTrue": false,
+      "explanationAr": "العملة المعدنية سبقت الورقية بقرون طويلة في التاريخ البشري."
+    },
+    {
+      "id": "gn-bool-84",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "ألوان علم الأمم المتحدة الأساسية هي الأزرق الفاتح والأبيض",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-85",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "أول قمر صناعي في التاريخ أطلقه الاتحاد السوفيتي",
+      "isTrue": true,
+      "explanationAr": "كان اسمه سبوتنيك 1 سنة 1957."
+    },
+    {
+      "id": "gn-bool-86",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "أسماء أيام الأسبوع بالعربي (الاتنين، الثلاثاء...) بترجع لترتيبها كأرقام",
+      "isTrue": true,
+      "explanationAr": "الاتنين معناه اليوم التاني، الثلاثاء التالت، وهكذا حسب الترتيب من السبت أو الأحد."
+    },
+    {
+      "id": "gn-bool-87",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "التقويم الميلادي بيتكون من 12 شهر",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-88",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "التقويم الهجري بيعتمد على دورة القمر مش الشمس",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-89",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "السنة الهجرية أطول من السنة الميلادية بحوالي 11 يوم",
+      "isTrue": false,
+      "explanationAr": "العكس صحيح، السنة الهجرية أقصر من الميلادية بحوالي 10-11 يوم."
+    },
+    {
+      "id": "gn-bool-90",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الأسبوع بيتكون من 7 أيام",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-91",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "اللون الأزرق والأصفر لو اتخلطوا مع بعض بينتج اللون الأخضر",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-92",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "اللون الأحمر والأزرق لو اتخلطوا مع بعض بينتج اللون البنفسجي",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-93",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "خلط كل الألوان الأساسية للضوء مع بعض بينتج اللون الأبيض",
+      "isTrue": true,
+      "explanationAr": "ده عكس خلط ألوان الطلاء اللي بينتج لون غامق أقرب للأسود."
+    },
+    {
+      "id": "gn-bool-94",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الدايرة شكل هندسي مقفول من غير أي زوايا",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-95",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "المستطيل عنده 4 أضلاع متساوية الطول كلها",
+      "isTrue": false,
+      "explanationAr": "المستطيل عنده ضلعين طويلين وضلعين قصيرين، والمربع هو اللي أضلاعه الأربعة متساوية."
+    },
+    {
+      "id": "gn-bool-96",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "المربع نوع خاص من المستطيل بحيث كل أضلاعه متساوية",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-97",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "مجموع زوايا أي شكل رباعي بيساوي 360 درجة",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-98",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الرقم صفر بيُعتبر رقم زوجي في الرياضيات",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-99",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الرقم واحد بيُعتبر عدد أولي",
+      "isTrue": false,
+      "explanationAr": "العدد الأولي لازم يكون له بالظبط قاسمين (1 ونفسه)، والواحد له قاسم واحد بس فمش أولي."
+    },
+    {
+      "id": "gn-bool-100",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الرقم 2 هو العدد الأولي الوحيد الزوجي",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-101",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "حاصل ضرب أي رقم في صفر بيساوي نفس الرقم",
+      "isTrue": false,
+      "explanationAr": "حاصل ضرب أي رقم في صفر بيساوي صفر دايمًا."
+    },
+    {
+      "id": "gn-bool-102",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الكسر نصف بيساوي 0.5 في الصورة العشرية",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-103",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "النسبة المئوية 50% بتساوي نصف الكمية الكلية",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-104",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الساعة اليوم الواحد فيها 24 ساعة",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-105",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الدقيقة الواحدة فيها 100 ثانية",
+      "isTrue": false,
+      "explanationAr": "الدقيقة فيها 60 ثانية بس، والنظام الستيني ده أصله من الحضارة البابلية القديمة."
+    },
+    {
+      "id": "gn-bool-106",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "النظام الستيني لقياس الوقت (60 ثانية، 60 دقيقة) أصله من الحضارة البابلية القديمة",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-107",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الأسبوع الواحد فيه 5 أيام بس",
+      "isTrue": false,
+      "explanationAr": "الأسبوع فيه 7 أيام كاملة."
+    },
+    {
+      "id": "gn-bool-108",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "كلمة «الكحول» بالإنجليزية (Alcohol) أصلها من كلمة عربية",
+      "isTrue": true,
+      "explanationAr": "أصلها من كلمة «الكحل» العربية."
+    },
+    {
+      "id": "gn-bool-109",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "كلمة «السكر» بالإنجليزية (Sugar) أصلها من كلمة عربية",
+      "isTrue": true,
+      "explanationAr": "وصلت للإنجليزية عن طريق الفرنسية والإيطالية من الكلمة العربية «سكّر»."
+    },
+    {
+      "id": "gn-bool-110",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "كلمة «القطن» بالإنجليزية (Cotton) أصلها من كلمة عربية",
+      "isTrue": true,
+      "explanationAr": "أصلها من كلمة «قطن» العربية."
+    },
+    {
+      "id": "gn-bool-111",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الحروف الأبجدية العربية كلها متصلة ببعضها ومفيش حروف بتتكتب منفصلة",
+      "isTrue": false,
+      "explanationAr": "فيه حروف زي الألف والدال والذال والراء والزاي والواو بتتكتب من غير اتصال بالحرف اللي بعدها."
+    },
+    {
+      "id": "gn-bool-112",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "علامة الاستفهام في اللغة العربية شكلها معكوس عن الإنجليزية",
+      "isTrue": true,
+      "explanationAr": "علامة الاستفهام العربية (؟) مرسومة بشكل معكوس مقارنة بالإنجليزية."
+    },
+    {
+      "id": "gn-bool-113",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "اللغة العربية بتُكتب وتُقرأ بنفس الاتجاه اللي بتتكتب بيه اللغة الفارسية",
+      "isTrue": true,
+      "explanationAr": "الاتنين بيتكتبوا من اليمين للشمال رغم اختلاف الأصل اللغوي."
+    },
+    {
+      "id": "gn-bool-114",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "التنقيط على الحروف العربية (زي النقطة على الباء والتاء) كان موجود من أول ظهور الكتابة العربية",
+      "isTrue": false,
+      "explanationAr": "التنقيط اتضاف لاحقًا لتسهيل القراءة والتفرقة بين الحروف المتشابهة في الشكل."
+    },
+    {
+      "id": "gn-bool-115",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "عدد أصابع اليد الواحدة عند الإنسان 5 أصابع",
+      "isTrue": true
+    },
+    {
+      "id": "gn-bool-116",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الإنسان عنده 4 أرجل وإيدين",
+      "isTrue": false,
+      "explanationAr": "الإنسان عنده رجلين وإيدين بس، مش 4 أرجل."
+    },
+    {
+      "id": "gn-num-33",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "عدد الكواكب القزمة المعترف بيها رسميًا في المجموعة الشمسية كام؟",
+      "correctValue": 5,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-34",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "جمجمة الإنسان البالغ مكوّنة من كام عظمة؟",
+      "correctValue": 22,
+      "tolerance": 1
+    },
+    {
+      "id": "gn-num-35",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "العمود الفقري عند الإنسان بيتكون من كام فقرة قبل ما بعضها يلتحم في الطفولة؟",
+      "correctValue": 33,
+      "tolerance": 1
+    },
+    {
+      "id": "gn-num-36",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "محيط الأرض عند خط الاستواء حوالي كام ألف كيلومتر؟",
+      "correctValue": 40,
+      "tolerance": 2,
+      "unitAr": "ألف كيلومتر"
+    },
+    {
+      "id": "gn-num-37",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "سرعة دوران الأرض حوالين نفسها عند خط الاستواء حوالي كام كيلومتر في الساعة؟",
+      "correctValue": 1670,
+      "tolerance": 100,
+      "unitAr": "كم/ساعة"
+    },
+    {
+      "id": "gn-num-38",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "أنسجة العضلات في جسم الإنسان بتشكل حوالي كام بالمية من وزن الجسم الكلي؟",
+      "correctValue": 40,
+      "tolerance": 5,
+      "unitAr": "%"
+    },
+    {
+      "id": "gn-num-39",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "سرعة الصوت في الهواء حوالي كام متر في الثانية؟",
+      "correctValue": 343,
+      "tolerance": 20,
+      "unitAr": "متر/ثانية"
+    },
+    {
+      "id": "gn-num-40",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "عدد الدول الأعضا في منظمة الأمم المتحدة حاليًا كام دولة تقريبًا؟",
+      "correctValue": 193,
+      "tolerance": 2
+    },
+    {
+      "id": "gn-num-41",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الأبجدية الإنجليزية فيها كام حرف؟",
+      "correctValue": 26,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-42",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الأبجدية اليونانية فيها كام حرف؟",
+      "correctValue": 24,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-43",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "مجموعة أوراق الكوتشينة الكاملة فيها كام ورقة من غير الجوكر؟",
+      "correctValue": 52,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-44",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "المراحل الدراسية قبل الجامعة في النظام المصري (ابتدائي وإعدادي وثانوي) بتاخد كام سنة كلها؟",
+      "correctValue": 12,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-45",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الإنسان البالغ عنده كام سنة (ضرس ونابة وقاطعة) كاملة عادةً؟",
+      "correctValue": 32,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-46",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الطفل عنده كام سنة لبنية قبل ما تتبدل بالدايمة؟",
+      "correctValue": 20,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-47",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "العنكبوت عنده كام رجل؟",
+      "correctValue": 8,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-48",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الحشرة العادية (زي النملة) عندها كام رجل غالبًا؟",
+      "correctValue": 6,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-49",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "شهر فبراير في السنة العادية (مش الكبيسة) فيه كام يوم؟",
+      "correctValue": 28,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-50",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "كام شهر في السنة الميلادية عدد أيامه 31 يوم؟",
+      "correctValue": 7,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-51",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "من إجمالي شهور السنة الاتناشر، كام شهر بالظبط عدد أيامه ميوصلش لـ31 يوم؟",
+      "correctValue": 5,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-52",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الاتحاد الأفريقي (منظمة قارية) بيضم كام دولة عضو تقريبًا؟",
+      "correctValue": 55,
+      "tolerance": 3
+    },
+    {
+      "id": "gn-num-53",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "قلب الطفل حديث الولادة بيدق حوالي كام مرة في الدقيقة، أسرع من الكبير؟",
+      "correctValue": 140,
+      "tolerance": 20,
+      "unitAr": "دقة/دقيقة"
+    },
+    {
+      "id": "gn-num-54",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "جسم الإنسان البالغ حوالي كام بالمية منه ميه؟",
+      "correctValue": 60,
+      "tolerance": 5,
+      "unitAr": "%"
+    },
+    {
+      "id": "gn-num-55",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الإنسان البالغ بيتنفس حوالي كام مرة في الدقيقة وهو في حالة راحة؟",
+      "correctValue": 14,
+      "tolerance": 4,
+      "unitAr": "نفس/دقيقة"
+    },
+    {
+      "id": "gn-num-56",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "اليد الواحدة عند الإنسان فيها كام عظمة؟",
+      "correctValue": 27,
+      "tolerance": 1
+    },
+    {
+      "id": "gn-num-57",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "القدم الواحدة عند الإنسان فيها كام عظمة؟",
+      "correctValue": 26,
+      "tolerance": 1
+    },
+    {
+      "id": "gn-num-58",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "عدد أصابع اليدين والرجلين مجموعين عند الإنسان كام؟",
+      "correctValue": 20,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-59",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "فقرات الرقبة عند الإنسان (الفقرات العنقية) عددها كام؟",
+      "correctValue": 7,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-60",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "حواس الإنسان الأساسية التقليدية عددها كام؟",
+      "correctValue": 5,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-61",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "رقعة الشطرنج فيها كام مربع كله؟",
+      "correctValue": 64,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-62",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "رقعة الشطرنج فيها كام مربع من لون واحد بس (الأسود مثلًا)؟",
+      "correctValue": 32,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-63",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "البيانو العادي فيه كام مفتاح؟",
+      "correctValue": 88,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-num-64",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الجيتار العادي فيه كام وتر؟",
+      "correctValue": 6,
+      "tolerance": 0
+    },
+    {
+      "id": "gn-fill-28",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "مخترع الطباعة بالحروف المتحركة الأوروبي اسمه يوهان ____",
+      "answerAr": "غوتنبرغ",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-29",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "العالم الأمريكي اللي اشتهر بتجربة الطائرة الورقية والكهرباء اسمه بنجامين ____",
+      "answerAr": "فرانكلين",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-30",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "رسام لوحة الموناليزا الشهيرة اسمه ليوناردو ____",
+      "answerAr": "دافنشي",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-31",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "مؤلف رواية «دون كيخوته» الإسبانية الشهيرة اسمه ميغيل دي ____",
+      "answerAr": "سرفانتس",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-32",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "عالم عربي مسلم بيُعتبر مؤسس علم البصريات الحديث اسمه ابن ____",
+      "answerAr": "الهيثم",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-33",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "مخترع الراديو الإيطالي اسمه جوليلمو ____",
+      "answerAr": "ماركوني",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-34",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "عالم الرياضيات المسلم اللي بيُنسب ليه علم الجبر اسمه محمد بن موسى ____",
+      "answerAr": "الخوارزمي",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-35",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "العالم الفرنسي اللي اخترع طريقة تعقيم الحليب اسمها نسبة له، اسمه لويس ____",
+      "answerAr": "باستور",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-36",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "العالمة اللي فازت بجايزة نوبل في مجالين علميين مختلفين اسمها ماري ____",
+      "answerAr": "كوري",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-37",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "العالم الإنجليزي اللي رصد أنواع الطيور في جزر الجالاباجوس وطوّر منها نظرية علمية مشهورة، اسمه تشارلز ____",
+      "answerAr": "داروين",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-38",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "العالم الإيطالي اللي طوّر التلسكوب ودعم فكرة إن الأرض بتلف حوالين الشمس اسمه ____",
+      "answerAr": "جاليليو",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-39",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "عالم يوناني قديم اكتشف مبدأ الطفو وهو في الحمام وصرخ «يوريكا»، اسمه ____",
+      "answerAr": "أرخميدس",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-40",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الفيلسوف اليوناني اللي اتهم بإفساد عقول الشباب وأُعدم بالسم اسمه ____",
+      "answerAr": "سقراط",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-41",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الفيلسوف اليوناني تلميذ سقراط ومؤسس الأكاديمية الفلسفية الشهيرة اسمه ____",
+      "answerAr": "أفلاطون",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-42",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الفيلسوف اليوناني القديم اللي بيُعتبر أول من صنّف العلوم بشكل منهجي ودرّس الإسكندر الأكبر، اسمه ____",
+      "answerAr": "أرسطو",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-43",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "عالم وطبيب مسلم شهير كتب موسوعة «القانون في الطب» اسمه ابن ____",
+      "answerAr": "سينا",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-44",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "مؤرخ ومفكر مسلم بيُعتبر رائد علم الاجتماع بكتابه «المقدمة» اسمه ابن ____",
+      "answerAr": "خلدون",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-45",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الرسام الإسباني مؤسس المدرسة التكعيبية في الفن اسمه بابلو ____",
+      "answerAr": "بيكاسو",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-46",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الموسيقار النمساوي اللي ألّف مقطوعات كلاسيكية وهو لسه طفل صغير اسمه ____",
+      "answerAr": "موتسارت",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-47",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الموسيقار الألماني اللي فضل يؤلف موسيقى حتى بعد ما فقد سمعه اسمه ____",
+      "answerAr": "بيتهوفن",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-48",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الرحالة المسلم المغربي اللي طاف بلاد كتير وكتب عن رحلاته اسمه ابن ____",
+      "answerAr": "بطوطة",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-49",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الشاعر العربي القديم اللي اتلقب بـ«شاعر العرب الأكبر» اسمه ____",
+      "answerAr": "المتنبي",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-50",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الأديب والرسام اللبناني المهاجر لأمريكا، صاحب كتاب «النبي» المترجم لعشرات اللغات، اسمه الكامل جبران ____ جبران",
+      "answerAr": "خليل",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-51",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "الفرعون المصري الشاب اللي اتكشف قبره سليم ومليان بالكنوز اسمه ____ عنخ آمون",
+      "answerAr": "توت",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-52",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أشهر ملكة في تاريخ مصر القديمة، حبيبة يوليوس قيصر ومارك أنطونيو، اسمها ____",
+      "answerAr": "كليوباترا",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-53",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "القائد اليوناني اللي بنى إمبراطورية ضخمة قبل الميلاد وهو لسه شاب، اسمه ____ الأكبر",
+      "answerAr": "الإسكندر",
+      "aliases": []
+    },
+    {
+      "id": "gn-fill-54",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "القائد الروماني اللي اغتيل على إيد أعضاء مجلس الشيوخ اسمه يوليوس ____",
+      "answerAr": "قيصر",
+      "aliases": []
+    },
+    {
+      "id": "gn-open-30",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين رسام لوحة الموناليزا؟",
+      "answerAr": "ليوناردو دافنشي",
+      "aliases": [
+        "دافنشي"
+      ]
+    },
+    {
+      "id": "gn-open-31",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "مين مؤلف رواية «دون كيخوته» الإسبانية؟",
+      "answerAr": "ميغيل دي سرفانتس",
+      "aliases": [
+        "سرفانتس"
+      ]
+    },
+    {
+      "id": "gn-open-32",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين العالم العربي المسلم اللي بيُعتبر مؤسس علم البصريات الحديث؟",
+      "answerAr": "ابن الهيثم",
+      "aliases": []
+    },
+    {
+      "id": "gn-open-33",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين مخترع الراديو الإيطالي؟",
+      "answerAr": "ماركوني",
+      "aliases": [
+        "جوليلمو ماركوني"
+      ]
+    },
+    {
+      "id": "gn-open-34",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين العالم المسلم اللي بيُنسب ليه تأسيس علم الجبر؟",
+      "answerAr": "الخوارزمي",
+      "aliases": []
+    },
+    {
+      "id": "gn-open-35",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين العالم الفرنسي اللي طوّر طريقة تعقيم الحليب المنسوبة لاسمه؟",
+      "answerAr": "لويس باستور",
+      "aliases": [
+        "باستور"
+      ]
+    },
+    {
+      "id": "gn-open-36",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين العالمة اللي فازت بجايزة نوبل في مجالين علميين مختلفين؟",
+      "answerAr": "ماري كوري",
+      "aliases": [
+        "كوري"
+      ]
+    },
+    {
+      "id": "gn-open-37",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين صاحب نظرية التطور والانتخاب الطبيعي؟",
+      "answerAr": "تشارلز داروين",
+      "aliases": [
+        "داروين"
+      ]
+    },
+    {
+      "id": "gn-open-38",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين العالم الإيطالي اللي طوّر التلسكوب ودعم فكرة دوران الأرض حوالين الشمس؟",
+      "answerAr": "جاليليو",
+      "aliases": []
+    },
+    {
+      "id": "gn-open-39",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين العالم اليوناني اللي اكتشف مبدأ الطفو وهو في الحمام وصرخ «يوريكا»؟",
+      "answerAr": "أرخميدس",
+      "aliases": []
+    },
+    {
+      "id": "gn-open-40",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين الفيلسوف اليوناني اللي اتهم بإفساد عقول الشباب وأُعدم بالسم؟",
+      "answerAr": "سقراط",
+      "aliases": []
+    },
+    {
+      "id": "gn-open-41",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الفيلسوف اليوناني تلميذ سقراط ومؤسس الأكاديمية الفلسفية الشهيرة؟",
+      "answerAr": "أفلاطون",
+      "aliases": []
+    },
+    {
+      "id": "gn-open-42",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الفيلسوف اليوناني اللي كان معلّم الإسكندر الأكبر؟",
+      "answerAr": "أرسطو",
+      "aliases": []
+    },
+    {
+      "id": "gn-open-43",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين العالم المسلم المعروف بلقب «الشيخ الرئيس» وموسوعته الطبية الشهيرة كانت مرجع أوروبا الطبي لقرون؟",
+      "answerAr": "ابن سينا",
+      "aliases": []
+    },
+    {
+      "id": "gn-open-44",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "مين المفكر المسلم اللي بيُعتبر رائد علم الاجتماع بكتابه «المقدمة»؟",
+      "answerAr": "ابن خلدون",
+      "aliases": []
+    },
+    {
+      "id": "gn-open-45",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين الرسام الإسباني مؤسس المدرسة التكعيبية في الفن؟",
+      "answerAr": "بيكاسو",
+      "aliases": [
+        "بابلو بيكاسو"
+      ]
+    },
+    {
+      "id": "gn-open-46",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الموسيقار الألماني اللي فضل يؤلف موسيقى حتى بعد ما فقد سمعه؟",
+      "answerAr": "بيتهوفن",
+      "aliases": []
+    },
+    {
+      "id": "gn-open-47",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الرحالة المسلم المغربي اللي طاف بلاد كتير وكتب عن رحلاته؟",
+      "answerAr": "ابن بطوطة",
+      "aliases": []
+    },
+    {
+      "id": "gn-open-48",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الشاعر العربي القديم اللي اتلقب بـ«شاعر العرب الأكبر»؟",
+      "answerAr": "المتنبي",
+      "aliases": []
+    },
+    {
+      "id": "gn-open-49",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين ملكة مصر القديمة الشهيرة اللي ارتبطت بيوليوس قيصر ومارك أنطونيو؟",
+      "answerAr": "كليوباترا",
+      "aliases": []
+    },
+    {
+      "id": "gn-open-50",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين القائد اليوناني اللي بنى إمبراطورية ضخمة قبل الميلاد وهو لسه شاب؟",
+      "answerAr": "الإسكندر الأكبر",
+      "aliases": [
+        "الإسكندر المقدوني"
+      ]
+    },
+    {
+      "id": "gn-open-51",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين القائد الروماني اللي اغتيل على إيد أعضاء مجلس الشيوخ؟",
+      "answerAr": "يوليوس قيصر",
+      "aliases": []
+    },
+    {
+      "id": "gn-open-52",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم أشهر هرم في مصر، اللي بُني للملك خوفو؟",
+      "answerAr": "الهرم الأكبر",
+      "aliases": [
+        "هرم خوفو"
+      ]
+    },
+    {
+      "id": "gn-open-53",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم أقدم نظام كتابة معروف في التاريخ البشري؟",
+      "answerAr": "الكتابة المسمارية",
+      "aliases": []
+    },
+    {
+      "id": "gn-open-54",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين مخترع المصباح الكهربائي؟",
+      "answerAr": "توماس إديسون",
+      "aliases": [
+        "إديسون"
+      ]
+    },
+    {
+      "id": "gn-open-55",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين مخترع الطباعة بالحروف المتحركة في أوروبا؟",
+      "answerAr": "غوتنبرغ",
+      "aliases": [
+        "يوهان غوتنبرغ"
+      ]
+    },
+    {
+      "id": "gn-open-56",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "مين مؤلف مسرحية «هاملت»؟",
+      "answerAr": "شكسبير",
+      "aliases": [
+        "ويليام شكسبير"
+      ]
+    },
+    {
+      "id": "gn-open-57",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين رسام لوحة «الليلة المرصعة بالنجوم»؟",
+      "answerAr": "فان جوخ",
+      "aliases": [
+        "فنسنت فان جوخ"
+      ]
+    },
+    {
+      "id": "gn-open-58",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "مين الأديب اللبناني المهاجر لأمريكا اللي كتب كتاب «النبي» المترجم لعشرات اللغات؟",
+      "answerAr": "جبران خليل جبران",
+      "aliases": [
+        "جبران"
+      ]
+    },
+    {
+      "id": "gn-prog-25",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا فنان ومخترع إيطالي من عصر النهضة",
+        "رسمت لوحة الموناليزا الشهيرة",
+        "من أشهر عباقرة التاريخ في مجالات متعددة"
+      ],
+      "answerAr": "دافنشي",
+      "aliases": [
+        "ليوناردو دافنشي"
+      ]
+    },
+    {
+      "id": "gn-prog-26",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا كاتب إسباني",
+        "كتبت رواية عن فارس وهمي بيحارب طواحين الهوا",
+        "روايتي «دون كيخوته» من أهم روايات الأدب العالمي"
+      ],
+      "answerAr": "سرفانتس",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-27",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا عالم عربي مسلم",
+        "درست طبيعة الضوء والإبصار",
+        "بيُعتبرني كتير مؤسس علم البصريات الحديث"
+      ],
+      "answerAr": "ابن الهيثم",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-28",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مخترع إيطالي",
+        "طورت وسيلة اتصال لاسلكية غيّرت العالم",
+        "اخترعت الراديو"
+      ],
+      "answerAr": "ماركوني",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-29",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا عالم رياضيات مسلم",
+        "اسمي مرتبط بكلمة Algorithm بالإنجليزية",
+        "بيُنسب لي تأسيس علم الجبر"
+      ],
+      "answerAr": "الخوارزمي",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-30",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا عالم فرنسي",
+        "طوّرت طريقة لتعقيم الحليب باسمي",
+        "ساهمت في تطوير لقاحات مهمة"
+      ],
+      "answerAr": "باستور",
+      "aliases": [
+        "لويس باستور"
+      ]
+    },
+    {
+      "id": "gn-prog-31",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا عالمة بولندية فرنسية",
+        "فزت بجايزة نوبل مرتين في مجالين مختلفين",
+        "درست الإشعاع والراديوم"
+      ],
+      "answerAr": "ماري كوري",
+      "aliases": [
+        "كوري"
+      ]
+    },
+    {
+      "id": "gn-prog-32",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا عالم إنجليزي",
+        "سافرت لجزر الجالاباجوس ودرست الطيور",
+        "نظريتي عن التطور غيرت فهمنا للحياة"
+      ],
+      "answerAr": "داروين",
+      "aliases": [
+        "تشارلز داروين"
+      ]
+    },
+    {
+      "id": "gn-prog-33",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا عالم إيطالي",
+        "طورت التلسكوب واستخدمته لرصد السما",
+        "دعمت فكرة إن الأرض بتلف حوالين الشمس"
+      ],
+      "answerAr": "جاليليو",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-34",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا عالم يوناني قديم",
+        "اكتشفت مبدأ علمي وأنا في الحمام",
+        "صرخت «يوريكا» لما اكتشفت مبدأ الطفو"
+      ],
+      "answerAr": "أرخميدس",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-35",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا فيلسوف يوناني قديم",
+        "كنت بسأل أسئلة كتير عشان أوصل للحقيقة",
+        "اتهموني بإفساد الشباب وأعدموني بالسم"
+      ],
+      "answerAr": "سقراط",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-36",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا فيلسوف يوناني",
+        "كنت تلميذ سقراط",
+        "أسست أكاديمية فلسفية شهيرة"
+      ],
+      "answerAr": "أفلاطون",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-37",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا فيلسوف يوناني",
+        "كنت تلميذ أفلاطون",
+        "علّمت قائد عسكري صغير بقى إمبراطور شاب"
+      ],
+      "answerAr": "أرسطو",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-38",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا مفكر ومؤرخ مسلم",
+        "كتبت عن قوانين نشوء وسقوط الحضارات",
+        "بيُعتبرني كتير رائد علم الاجتماع"
+      ],
+      "answerAr": "ابن خلدون",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-39",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا رسام إسباني",
+        "طورت أسلوب فني جديد في الرسم",
+        "أسست المدرسة التكعيبية في الفن"
+      ],
+      "answerAr": "بيكاسو",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-40",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا موسيقار ألماني",
+        "فقدت سمعي في مرحلة من حياتي",
+        "استمريت أؤلف موسيقى عظيمة رغم الصمم"
+      ],
+      "answerAr": "بيتهوفن",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-41",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا رحالة مسلم مغربي",
+        "سافرت لمسافات هائلة عبر قارات مختلفة",
+        "كتبت كتاب عن رحلاتي بقى مرجع تاريخي"
+      ],
+      "answerAr": "ابن بطوطة",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-42",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا شاعر عربي قديم",
+        "اشتهرت بالفخر والحكمة في شعري",
+        "اتلقبت بشاعر العرب الأكبر"
+      ],
+      "answerAr": "المتنبي",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-43",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا ملكة مصرية قديمة",
+        "ارتبط اسمي بقادة رومان كبار",
+        "كنت آخر ملوك مصر البطلمية"
+      ],
+      "answerAr": "كليوباترا",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-44",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا قائد عسكري يوناني",
+        "بنيت إمبراطورية ضخمة وأنا لسه شاب",
+        "كان معلمي الفيلسوف أرسطو"
+      ],
+      "answerAr": "الإسكندر الأكبر",
+      "aliases": [
+        "الإسكندر المقدوني"
+      ]
+    },
+    {
+      "id": "gn-prog-45",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا قائد وسياسي روماني",
+        "وسّعت حدود الإمبراطورية الرومانية كتير",
+        "اتقتلت على إيد أعضاء مجلس الشيوخ"
+      ],
+      "answerAr": "يوليوس قيصر",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-46",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا مخترع ألماني",
+        "طورت آلة غيّرت طريقة نشر الكتب في العالم",
+        "اخترعت الطباعة بالحروف المتحركة"
+      ],
+      "answerAr": "غوتنبرغ",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-47",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا كاتب مسرحي إنجليزي",
+        "كتبت مسرحيات شهيرة زي روميو وجولييت",
+        "من أعظم كتّاب الأدب الإنجليزي على الإطلاق"
+      ],
+      "answerAr": "شكسبير",
+      "aliases": []
+    },
+    {
+      "id": "gn-prog-48",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا أديب ورسام لبناني",
+        "هاجرت لأمريكا وكتبت بالعربي والإنجليزي",
+        "كتابي «النبي» اتترجم لعشرات اللغات"
+      ],
+      "answerAr": "جبران خليل جبران",
+      "aliases": [
+        "جبران"
+      ]
+    },
+    {
+      "id": "gn-mcq-116",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين رسم لوحة الموناليزا؟",
+      "options": [
+        "ليوناردو دافنشي",
+        "مايكل أنجلو",
+        "رافائيل",
+        "بيكاسو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-117",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين مؤلف رواية «دون كيخوته» الإسبانية؟",
+      "options": [
+        "ميغيل دي سرفانتس",
+        "فيدور دوستويفسكي",
+        "فيكتور هوجو",
+        "ليو تولستوي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-118",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين العالم العربي المسلم اللي بيُعتبر مؤسس علم البصريات الحديث؟",
+      "options": [
+        "ابن الهيثم",
+        "ابن سينا",
+        "الخوارزمي",
+        "الرازي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-119",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين مخترع الراديو الإيطالي؟",
+      "options": [
+        "جوليلمو ماركوني",
+        "ألكسندر جراهام بيل",
+        "توماس إديسون",
+        "نيكولا تسلا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-120",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين العالم المسلم اللي كلمة «Algorithm» بالإنجليزية مشتقة من اسمه اللاتيني؟",
+      "options": [
+        "الخوارزمي",
+        "ابن الهيثم",
+        "ابن رشد",
+        "البيروني"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-121",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين العالم الفرنسي اللي طوّر طريقة تعقيم الحليب المنسوبة لاسمه؟",
+      "options": [
+        "لويس باستور",
+        "أنطوان لافوازييه",
+        "بيير كوري",
+        "رينيه ديكارت"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-122",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين العالمة اللي فازت بجايزة نوبل في مجالين علميين مختلفين؟",
+      "options": [
+        "ماري كوري",
+        "روزاليند فرانكلين",
+        "دوروثي هودجكن",
+        "ريتا ليفي مونتالشيني"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-123",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين العالم اللي رجع من رحلة على سفينة اسمها بيجل وطلع منها بنظرية غيّرت فهمنا للحياة؟",
+      "options": [
+        "تشارلز داروين",
+        "جريجور مندل",
+        "لويس باستور",
+        "ألفريد والاس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-124",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين العالم الإيطالي اللي طوّر التلسكوب ودعم فكرة دوران الأرض حوالين الشمس؟",
+      "options": [
+        "جاليليو",
+        "كوبرنيكوس",
+        "كيبلر",
+        "نيوتن"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-125",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين العالم اليوناني اللي اكتشف مبدأ الطفو وهو في الحمام وصرخ «يوريكا»؟",
+      "options": [
+        "أرخميدس",
+        "فيثاغورس",
+        "إقليدس",
+        "هيرودوت"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-126",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الفيلسوف اليوناني اللي اتهم بإفساد عقول الشباب وأُعدم بالسم؟",
+      "options": [
+        "سقراط",
+        "أفلاطون",
+        "أرسطو",
+        "ديوجين"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-127",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الفيلسوف اليوناني تلميذ سقراط ومؤسس الأكاديمية الفلسفية الشهيرة؟",
+      "options": [
+        "أفلاطون",
+        "أرسطو",
+        "زينون",
+        "إبيقور"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-128",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الفيلسوف اليوناني اللي كان معلّم الإسكندر الأكبر؟",
+      "options": [
+        "أرسطو",
+        "أفلاطون",
+        "سقراط",
+        "هوميروس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-129",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مين المفكر المسلم اللي بيُعتبر رائد علم الاجتماع بكتابه «المقدمة»؟",
+      "options": [
+        "ابن خلدون",
+        "ابن رشد",
+        "الفارابي",
+        "الغزالي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-130",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين الرسام الإسباني مؤسس المدرسة التكعيبية في الفن؟",
+      "options": [
+        "بابلو بيكاسو",
+        "سلفادور دالي",
+        "دييجو ريفيرا",
+        "جويا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-131",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الموسيقار الألماني اللي فضل يؤلف موسيقى حتى بعد ما فقد سمعه؟",
+      "options": [
+        "بيتهوفن",
+        "باخ",
+        "موتسارت",
+        "فاجنر"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-132",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الرحالة المسلم المغربي اللي طاف بلاد كتير وكتب عن رحلاته؟",
+      "options": [
+        "ابن بطوطة",
+        "ابن جبير",
+        "ابن فضلان",
+        "المقدسي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-133",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين الشاعر العربي القديم اللي اتلقب بـ«شاعر العرب الأكبر»؟",
+      "options": [
+        "المتنبي",
+        "امرؤ القيس",
+        "أبو نواس",
+        "البحتري"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-134",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين ملكة مصر القديمة الشهيرة اللي ارتبطت بيوليوس قيصر ومارك أنطونيو؟",
+      "options": [
+        "كليوباترا",
+        "نفرتيتي",
+        "حتشبسوت",
+        "إيزيس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-135",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين القائد اليوناني اللي بنى إمبراطورية ضخمة قبل الميلاد وهو لسه شاب؟",
+      "options": [
+        "الإسكندر الأكبر",
+        "فيليب المقدوني",
+        "بيريكليس",
+        "ليونيداس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-136",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين القائد الروماني اللي اغتيل على إيد أعضاء مجلس الشيوخ؟",
+      "options": [
+        "يوليوس قيصر",
+        "أغسطس",
+        "نيرون",
+        "هادريان"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-137",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين مخترع المصباح الكهربائي؟",
+      "options": [
+        "توماس إديسون",
+        "نيكولا تسلا",
+        "جراهام بيل",
+        "بنجامين فرانكلين"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-138",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين مخترع الطباعة بالحروف المتحركة في أوروبا؟",
+      "options": [
+        "يوهان غوتنبرغ",
+        "ليوناردو دافنشي",
+        "جوتفريد لايبنتز",
+        "يوهانس كيبلر"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-139",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مين مؤلف مسرحية «هاملت»؟",
+      "options": [
+        "ويليام شكسبير",
+        "كريستوفر مارلو",
+        "جورج برنارد شو",
+        "أوسكار وايلد"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-140",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مين رسام لوحة «الليلة المرصعة بالنجوم»؟",
+      "options": [
+        "فان جوخ",
+        "مونيه",
+        "رينوار",
+        "سيزان"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-141",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إله الرعد والبرق عند الإغريق القدماء اسمه إيه؟",
+      "options": [
+        "زيوس",
+        "بوسيدون",
+        "هاديس",
+        "أبولو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-142",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إله البحار عند الإغريق القدماء اسمه إيه؟",
+      "options": [
+        "بوسيدون",
+        "زيوس",
+        "آريس",
+        "هيرميس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-143",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إلهة الحكمة عند الإغريق القدماء اسمها إيه؟",
+      "options": [
+        "أثينا",
+        "أفروديت",
+        "هيرا",
+        "ديميتر"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-144",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "البطل الأسطوري الإغريقي المشهور بقوته الخارقة والاتناشر مهمة اللي عملهم اسمه إيه؟",
+      "options": [
+        "هرقل",
+        "أخيل",
+        "بيرسيوس",
+        "أوديسيوس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-145",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "كعب اللي كان نقطة ضعف البطل الإغريقي أخيل بيتسمى إيه في التعبيرات الحديثة؟",
+      "options": [
+        "كعب أخيل",
+        "قدم هرقل",
+        "ضعف زيوس",
+        "خط أفروديت"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "التعبير بقى يُستخدم للدلالة على نقطة الضعف الوحيدة عند شخص قوي."
+    },
+    {
+      "id": "gn-mcq-146",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إله الشمس عند المصريين القدماء اسمه إيه؟",
+      "options": [
+        "رع",
+        "أوزوريس",
+        "حورس",
+        "آنوبيس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-147",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إله الموتى والعالم السفلي عند المصريين القدماء اسمه إيه؟",
+      "options": [
+        "أوزوريس",
+        "رع",
+        "بتاح",
+        "تحوت"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-148",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الإله المصري القديم اللي بيُصوّر برأس ابن آوى ومرتبط بالتحنيط اسمه إيه؟",
+      "options": [
+        "آنوبيس",
+        "حورس",
+        "سوبك",
+        "خنوم"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-149",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اللغة الرسمية للفاتيكان؟",
+      "options": [
+        "اللاتينية",
+        "الإيطالية",
+        "الفرنسية",
+        "الألمانية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-150",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه أطول جدار دفاعي بناه البشر في التاريخ؟",
+      "options": [
+        "سور الصين العظيم",
+        "سور برلين",
+        "سور القسطنطينية",
+        "سور القاهرة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-151",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم الديانة اللي أسسها بوذا في الهند القديمة؟",
+      "options": [
+        "البوذية",
+        "الهندوسية",
+        "الجاينية",
+        "السيخية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-152",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم أكبر محيط مائي على وجه الأرض من ناحية المساحة؟",
+      "options": [
+        "المحيط الهادي",
+        "المحيط الأطلسي",
+        "المحيط الهندي",
+        "المحيط المتجمد الشمالي"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "سلسلة الأنديز في أمريكا الجنوبية أطول سلسلة جبلية فوق سطح الأرض من ناحية الطول الكلي، بينما الهيمالايا فيها أعلى قمة."
+    },
+    {
+      "id": "gn-mcq-153",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم أكبر صحراء باردة (متجمدة) في العالم؟",
+      "options": [
+        "القارة القطبية الجنوبية (أنتاركتيكا)",
+        "صحراء جوبي",
+        "صحراء أتاكاما",
+        "سيبيريا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-154",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم أكبر جزيرة مأهولة بالسكان في العالم من ناحية عدد السكان (مش المساحة)؟",
+      "options": [
+        "جافا في إندونيسيا",
+        "جرينلاند",
+        "مدغشقر",
+        "بريطانيا العظمى"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-155",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الطلاء أو الصبغة اللي بتديها الحرباء قدرتها على تغيير لونها بتساعدها في إيه أساسًا؟",
+      "options": [
+        "التمويه والتواصل",
+        "التبريد بس",
+        "الهضم",
+        "التنفس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-156",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم أول من صمم نظام تصنيف الكائنات الحية العلمي الحديث (الاسم الثنائي)؟",
+      "options": [
+        "كارل لينيوس",
+        "تشارلز داروين",
+        "جريجور مندل",
+        "لويس باستور"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-157",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم أشهر رحالة برتغالي وصل للهند بحرًا عن طريق الدوران حوالين أفريقيا؟",
+      "options": [
+        "فاسكو دا جاما",
+        "كريستوفر كولومبوس",
+        "ماجلان",
+        "هنري الملاح"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-158",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم الرحالة الإيطالي اللي رحل لأول رحلة استكشافية غيّرت وجهة الملاحة العالمية سنة 1492؟",
+      "options": [
+        "كريستوفر كولومبوس",
+        "ماركو بولو",
+        "أميريجو فسبوتشي",
+        "فاسكو دا جاما"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-159",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم أول من طاف حوالين العالم بحرًا بشكل كامل (رحلته اكتملت بعد وفاته)؟",
+      "options": [
+        "فرديناند ماجلان",
+        "كريستوفر كولومبوس",
+        "فاسكو دا جاما",
+        "جيمس كوك"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-160",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم القارة اللي بتحتوي على أكبر عدد من الدول في العالم؟",
+      "options": [
+        "أفريقيا",
+        "آسيا",
+        "أوروبا",
+        "أمريكا الجنوبية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-161",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم أكبر دولة في قارة أفريقيا من ناحية المساحة؟",
+      "options": [
+        "الجزائر",
+        "السودان",
+        "ليبيا",
+        "مصر"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-162",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أعلى قمة جبلية في العالم من ناحية الارتفاع فوق سطح البحر؟",
+      "options": [
+        "جبل إفرست",
+        "ك٢",
+        "كانشنجونجا",
+        "ماكالو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-163",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم أكبر جزيرة في العالم من ناحية المساحة؟",
+      "options": [
+        "جرينلاند",
+        "مدغشقر",
+        "بورنيو",
+        "غينيا الجديدة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-164",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم أطول نهر في قارة أوروبا؟",
+      "options": [
+        "الفولجا",
+        "الدانوب",
+        "الراين",
+        "السين"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-165",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم أكبر بحيرة في العالم من ناحية المساحة (تُعتبر بحيرة رغم إن ليها ملوحة عالية)؟",
+      "options": [
+        "بحر قزوين",
+        "بحيرة سوبيريور",
+        "بحيرة فيكتوريا",
+        "بحيرة بايكال"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-166",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "كلمة «سوفا» بالإنجليزية (Sofa) أصلها من كلمة عربية معناها إيه؟",
+      "options": [
+        "منصة مفروشة للجلوس",
+        "قطعة قماش",
+        "خيمة",
+        "سرير"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "أصلها من كلمة «صُفّة» العربية."
+    },
+    {
+      "id": "gn-mcq-167",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "كلمة «Magazine» الإنجليزية (بمعنى مجلة) أصلها من كلمة عربية معناها إيه؟",
+      "options": [
+        "مخزن",
+        "دكان",
+        "مكتب",
+        "مطبعة"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "أصلها من كلمة «مخازن» العربية."
+    },
+    {
+      "id": "gn-mcq-168",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "كلمة «Admiral» الإنجليزية (بمعنى أميرال بحري) أصلها من لقب عربي معناه إيه؟",
+      "options": [
+        "أمير البحر",
+        "قائد السفينة",
+        "ملك البحار",
+        "حاكم الميناء"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-169",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "كلمة «Safari» الإنجليزية أصلها من كلمة سواحيلية عربية الأصل معناها إيه؟",
+      "options": [
+        "رحلة",
+        "صيد",
+        "مغامرة",
+        "استكشاف"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "أصلها من كلمة «سفر» العربية."
+    },
+    {
+      "id": "gn-mcq-170",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "كلمة «Lemon» الإنجليزية (ليمون) أصلها من كلمة عربية جت أصلًا من الفارسية، صح؟",
+      "options": [
+        "صح، الكلمة انتقلت عبر العربية للأوروبية",
+        "غلط، الكلمة أوروبية أصلًا",
+        "غلط، الكلمة يابانية الأصل",
+        "صح بس أصلها هندي مباشرة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-171",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مصطلح «Checkmate» في الشطرنج (كش ملك) أصله من عبارة فارسية-عربية معناها إيه؟",
+      "options": [
+        "الملك مات (عاجز)",
+        "نهاية اللعبة",
+        "خذ الملك",
+        "الملك محاصر"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "أصل الكلمة من العبارة الفارسية «شاه مات» بمعنى الملك عاجز أو مات."
+    },
+    {
+      "id": "gn-mcq-172",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "كلمة «Tariff» الإنجليزية (بمعنى تعريفة جمركية) أصلها من كلمة عربية معناها إيه؟",
+      "options": [
+        "إعلان أو توضيح للأسعار",
+        "ضريبة",
+        "جمرك",
+        "ميناء"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "أصلها من كلمة «تعريف» العربية."
+    },
+    {
+      "id": "gn-mcq-173",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "نظام الأرقام الرومانية القديم مفيهوش رمز خاص بيمثّل قيمة العدد اللي بيدل على «اللاشيء»، إيه هو العدد ده؟",
+      "options": [
+        "الصفر",
+        "الواحد",
+        "العشرة",
+        "المية"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "نظام الأرقام الرومانية اتطور قبل ما مفهوم الصفر الرياضي ينتشر في الحضارة الغربية."
+    },
+    {
+      "id": "gn-mcq-174",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "لو شفت الرقم الروماني L مكتوب على ساعة أو نصب تذكاري قديم، يبقى بيمثّل قيمة كام بالنظام العشري؟",
+      "options": [
+        "50",
+        "10",
+        "100",
+        "500"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-175",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الرقم الروماني اللي بيستخدمه بعض المؤلفين لكتابة سنة إصدار كتاب قديم ومعناه 500، شكله إيه؟",
+      "options": [
+        "D",
+        "L",
+        "M",
+        "C"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-176",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "قيمة الرقم الروماني اللي بيرمز للألف الكاملة (1000) بيتكتب بحرف واحد بس، إيه هو؟",
+      "options": [
+        "M",
+        "D",
+        "L",
+        "C"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-177",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "في أفلام السينما القديمة، سنة الإنتاج كانت غالبًا بتتكتب بأرقام رومانية، والرقم اللي بيمثّل الرقم مية (100) شكله إيه؟",
+      "options": [
+        "C",
+        "D",
+        "L",
+        "M"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-178",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الرمز @ المستخدم في عناوين الإيميل بيُنطق بالإنجليزية إزاي؟",
+      "options": [
+        "At",
+        "And",
+        "Around",
+        "About"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-179",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "اختصار «FYI» الشائع في الإيميلات معناه إيه؟",
+      "options": [
+        "لعلمك فقط (For Your Information)",
+        "من فضلك رد (For Your Interest)",
+        "سؤال سريع (Fast Your Idea)",
+        "شكرًا لمعلوماتك"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-180",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "اختصار «ASAP» الشائع بيعني إيه؟",
+      "options": [
+        "في أسرع وقت ممكن",
+        "في أي وقت مناسب",
+        "لو سمحت اتصل بيا",
+        "عند الحاجة بس"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "اختصار As Soon As Possible."
+    },
+    {
+      "id": "gn-mcq-181",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مصطلح «PDF» بيرمز لإيه؟",
+      "options": [
+        "Portable Document Format",
+        "Personal Data File",
+        "Print Document Function",
+        "Public Data Format"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-182",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مصطلح «HTML» المستخدم في بناء صفحات الويب بيرمز لإيه؟",
+      "options": [
+        "HyperText Markup Language",
+        "High Text Modern Link",
+        "Home Tool Markup Language",
+        "Hyper Transfer Markup Link"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-183",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه معنى تعبير «كسر الجليد» في المحادثة؟",
+      "options": [
+        "بدء حوار في جو غريب أو رسمي عشان يبقى مريح",
+        "إنهاء نقاش بشكل مفاجئ",
+        "الاعتذار عن غلطة",
+        "تغيير الموضوع فجأة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-184",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه معنى تعبير «رمى الكرة في ملعبه»؟",
+      "options": [
+        "حمّله المسؤولية أو القرار",
+        "اتهمه بالخطأ",
+        "رفض التعاون معاه",
+        "طلب منه المساعدة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-185",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه معنى تعبير «قلب الطاولة»؟",
+      "options": [
+        "غيّر الموقف كله فجأة لصالحه",
+        "خسر اللعبة",
+        "اعتذر عن قرار سابق",
+        "وافق على كل الشروط"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-186",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "وحدة قياس المسافات البحرية والطيران المعروفة بـ«الميل البحري» بتساوي كام كيلومتر تقريبًا؟",
+      "options": [
+        "1.85 كم",
+        "1 كم",
+        "1.6 كم",
+        "2.5 كم"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-187",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "وحدة قياس سرعة السفن والطائرات المعروفة بـ«العقدة» (Knot) بتساوي إيه؟",
+      "options": [
+        "ميل بحري في الساعة",
+        "كيلومتر في الساعة",
+        "متر في الثانية",
+        "ميل أرضي في الساعة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-188",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "وحدة قياس المسافة الفلكية الكبيرة المعروفة بـ«السنة الضوئية» بتقيس إيه بالظبط؟",
+      "options": [
+        "المسافة اللي بيقطعها الضوء في سنة كاملة",
+        "الوقت اللي بياخده الضوء عشان يوصل للأرض",
+        "سرعة الضوء نفسها",
+        "عمر النجم بالسنين"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-189",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "وحدة قياس الطاقة الغذائية المعروفة بـ«السعر الحراري» (Calorie) بتقيس إيه؟",
+      "options": [
+        "كمية الطاقة اللي الجسم بياخدها من الأكل",
+        "وزن الطعام",
+        "حجم الطعام",
+        "درجة حرارة الطعام"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-190",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "مصطلح «بار» (Bar) المستخدم لقياس الضغط الجوي مشتق من كلمة يونانية معناها إيه؟",
+      "options": [
+        "ثقل أو وزن",
+        "هواء",
+        "ضغط",
+        "مساحة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-191",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم أول لعبة فيديو إلكترونية بيُتفق إنها أول لعبة ترفيهية بحتة في التاريخ (1958)؟",
+      "options": [
+        "تنس للاتنين",
+        "بونج",
+        "باك مان",
+        "سبيس إنفيدرز"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-192",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم أول متصفح إنترنت رسومي منتشر بشكل واسع في التسعينات؟",
+      "options": [
+        "نتسكيب نافيجيتور",
+        "إنترنت إكسبلورر",
+        "جوجل كروم",
+        "فايرفوكس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-193",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم أول شركة صنعت هاتف ذكي بشاشة لمس بالمعنى الحديث بنجاح تجاري واسع؟",
+      "options": [
+        "آبل (آيفون)",
+        "نوكيا",
+        "بلاك بيري",
+        "سامسونج"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-194",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم أول موقع تواصل اجتماعي عالمي انتشر بشكل واسع قبل فيسبوك؟",
+      "options": [
+        "ماي سبيس",
+        "تويتر",
+        "إنستجرام",
+        "سناب شات"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-195",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه معنى مصطلح «إيموجي» أصلًا في اللغة اليابانية؟",
+      "options": [
+        "صورة + حرف (رمز مصور)",
+        "وجه سعيد",
+        "رسالة قصيرة",
+        "لغة رقمية"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الكلمة اليابانية مكوّنة من «إي» بمعنى صورة و«موجي» بمعنى حرف أو رمز."
+    },
+    {
+      "id": "gn-mcq-196",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم أول قمر صناعي ناقل اتصالات فعّال استُخدم لنقل بث تليفزيوني عبر المحيط الأطلسي؟",
+      "options": [
+        "تيلستار",
+        "سبوتنيك",
+        "إنتلسات",
+        "إكسبلورر"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-197",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم الجهاز اللي بيحوّل الإشارة الرقمية لإشارة تناظرية عشان الكمبيوتر يتصل بخط التليفون قديمًا؟",
+      "options": [
+        "المودم",
+        "الراوتر",
+        "السيرفر",
+        "الهارد ديسك"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-198",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه معنى مصطلح «هاردوير» (Hardware) في الكمبيوتر؟",
+      "options": [
+        "الأجزاء المادية الملموسة للجهاز",
+        "البرامج والتطبيقات",
+        "الشبكة والإنترنت",
+        "الملفات المخزنة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-199",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه معنى مصطلح «سوفتوير» (Software) في الكمبيوتر؟",
+      "options": [
+        "البرامج والتطبيقات",
+        "الأجزاء المادية للجهاز",
+        "كابلات التوصيل",
+        "الشاشة نفسها"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-200",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه معنى مصطلح «فايروس» بالمعنى الحاسوبي؟",
+      "options": [
+        "برنامج ضار بينتشر ويأذي الأجهزة",
+        "برنامج حماية",
+        "ملف صوتي فاسد",
+        "خطأ برمجي بسيط"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-201",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه معنى «RAM» في مواصفات أي جهاز كمبيوتر أو موبايل؟",
+      "options": [
+        "ذاكرة الوصول العشوائي المؤقتة",
+        "مساحة التخزين الدائمة",
+        "سرعة المعالج",
+        "دقة الشاشة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-202",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه معنى «CPU» في مواصفات جهاز الكمبيوتر؟",
+      "options": [
+        "وحدة المعالجة المركزية",
+        "وحدة تخزين البيانات",
+        "بطاقة الشاشة",
+        "مصدر الطاقة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-203",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الألوان الأساسية المستخدمة في شاشات العرض الرقمية (RGB) هي إيه؟",
+      "options": [
+        "الأحمر والأخضر والأزرق",
+        "الأحمر والأصفر والأزرق",
+        "الأسود والأبيض والرمادي",
+        "البنفسجي والأخضر والأصفر"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-204",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الألوان الأساسية المستخدمة في الطباعة (CMYK) بتشمل إيه غير الأسود؟",
+      "options": [
+        "السماوي والأرجواني والأصفر",
+        "الأحمر والأخضر والأزرق",
+        "الأبيض والرمادي والبني",
+        "البنفسجي والوردي والأخضر"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-205",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم الظاهرة الجوية اللي بتحصل لما الضوء ينعكس وينكسر جوه قطرات المطر مكوّن قوس ألوان؟",
+      "options": [
+        "قوس قزح",
+        "الشفق القطبي",
+        "السحابة الملونة",
+        "هالة الشمس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-206",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم الظاهرة الضوئية الملونة اللي بتظهر في السما بالقرب من القطبين الشمالي والجنوبي؟",
+      "options": [
+        "الشفق القطبي",
+        "قوس قزح",
+        "هالة الشمس",
+        "الوهج الشمسي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-207",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم عملية تحوّل الميه السايلة مباشرة لبخار من غير ما تمر بمرحلة الغليان؟",
+      "options": [
+        "التبخر",
+        "التسامي",
+        "الانصهار",
+        "التجمد"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-208",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم عملية تحوّل مادة صلبة لغاز مباشرة من غير ما تمر بالحالة السائلة (زي الثلج الجاف)؟",
+      "options": [
+        "التسامي",
+        "التبخر",
+        "الانصهار",
+        "التكاثف"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-209",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم المادة اللي بتتفاعل مع مادة تانية وبتسرّع التفاعل من غير ما تتغير هي نفسها في النهاية؟",
+      "options": [
+        "العامل الحفّاز",
+        "المذيب",
+        "المحلول",
+        "الراسب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-210",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم المقياس المستخدم لتحديد درجة حموضة أو قاعدية محلول معين؟",
+      "options": [
+        "مقياس pH",
+        "مقياس ريختر",
+        "مقياس بوفورت",
+        "مقياس موس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-211",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم المقياس المستخدم لتحديد قوة الزلازل؟",
+      "options": [
+        "مقياس ريختر",
+        "مقياس pH",
+        "مقياس بوفورت",
+        "مقياس موس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-212",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم المقياس المستخدم لتحديد صلابة المعادن؟",
+      "options": [
+        "مقياس موس",
+        "مقياس ريختر",
+        "مقياس pH",
+        "مقياس بوفورت"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-213",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم المقياس المستخدم لتحديد شدة الرياح؟",
+      "options": [
+        "مقياس بوفورت",
+        "مقياس ريختر",
+        "مقياس موس",
+        "مقياس pH"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-214",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم الجهاز اللي بيقيس نسبة الرطوبة في الهواء؟",
+      "options": [
+        "الهيغرومتر",
+        "البارومتر",
+        "الترمومتر",
+        "الأنيمومتر"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الهيغرومتر مختلف عن الهيدرومتر اللي بيقيس كثافة السوايل."
+    },
+    {
+      "id": "gn-mcq-215",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم الجهاز اللي بيقيس كثافة السوايل زي كثافة الحليب أو الكحول؟",
+      "options": [
+        "الهيدروميتر (مقياس الكثافة)",
+        "البارومتر",
+        "الأنيمومتر",
+        "الترمومتر"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-216",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم الجهاز المستخدم لتسجيل اهتزازات الزلازل؟",
+      "options": [
+        "السيزموجراف",
+        "البارومتر",
+        "الأنيمومتر",
+        "الترمومتر"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-217",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "رقعة الشطرنج التقليدية بتتكون من كام مربع بالظبط؟",
+      "options": [
+        "64",
+        "100",
+        "81",
+        "49"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-218",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "كل لاعب في الشطرنج بيبدأ اللعبة بكام قطعة؟",
+      "options": [
+        "16",
+        "12",
+        "20",
+        "8"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-219",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "ورق الكوتشينة (الكارت) التقليدي بيتكون من كام فصيلة (شكل) مختلفة؟",
+      "options": [
+        "4",
+        "3",
+        "6",
+        "2"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الفصائل الأربعة هي: سباتي، كوبة، ديناري، وشكل."
+    },
+    {
+      "id": "gn-mcq-220",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "كام «ورقة وش» (كلاجة وملك ووليدة) موجودة في مجموعة الكوتشينة الكاملة الـ52 ورقة؟",
+      "options": [
+        "12",
+        "16",
+        "8",
+        "4"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "3 أوراق وش (كلاجة، ملك، وليدة/بنت) في كل فصيلة من الأربعة."
+    },
+    {
+      "id": "gn-mcq-221",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "المجموعة القياسية من قطع الدومينو (double-six) بتتكون من كام قطعة؟",
+      "options": [
+        "28",
+        "24",
+        "32",
+        "20"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-222",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "السنة الكبيسة بتحتوي على كام يوم؟",
+      "options": [
+        "366",
+        "365",
+        "367",
+        "364"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-223",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "خريطة العالم بتتقسّم عادةً لكام قارة؟",
+      "options": [
+        "7",
+        "5",
+        "6",
+        "9"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-224",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "يد الإنسان البالغة الواحدة (من غير الذراع) فيها كام عظمة؟",
+      "options": [
+        "27",
+        "21",
+        "32",
+        "19"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-225",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "ضوء الشمس بياخد قد إيه تقريبًا عشان يوصل لسطح الأرض؟",
+      "options": [
+        "حوالي 8 دقايق",
+        "حوالي 8 ثواني",
+        "حوالي ساعة",
+        "لحظي بدون تأخير"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-226",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "العلماء بيتفقوا على كام طعم أساسي بيقدر لسان الإنسان يميّزه (بما فيهم طعم الأومامي)؟",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "3"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-227",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "جايزة نوبل بتتوزّع على كام مجال أو فئة؟",
+      "options": [
+        "6",
+        "5",
+        "4",
+        "7"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "خمس فئات أصلية (فيزياء، كيمياء، طب، أدب، سلام) + فئة الاقتصاد اللي اتضافت سنة 1969."
+    },
+    {
+      "id": "gn-mcq-228",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "شعار الألعاب الأولمبية بيتكوّن من كام حلقة متشابكة؟",
+      "options": [
+        "5",
+        "6",
+        "4",
+        "7"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الخمس حلقات بترمز للقارات المأهولة الخمسة حسب الميثاق الأولمبي."
+    },
+    {
+      "id": "gn-mcq-229",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "دايرة الأبراج الفلكية بتتكون من كام برج؟",
+      "options": [
+        "12",
+        "10",
+        "8",
+        "14"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gn-mcq-230",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الأمم المتحدة معترفة بكام لغة رسمية بتُستخدم في وثايقها واجتماعاتها؟",
+      "options": [
+        "6",
+        "4",
+        "5",
+        "8"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "العربية والصينية والإنجليزية والفرنسية والروسية والإسبانية."
+    }
+  ]
+}

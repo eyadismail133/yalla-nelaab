@@ -1,0 +1,113 @@
+@import 'tailwindcss';
+
+/*
+ * `static` because most of these are only ever read through `var(--color-accent-…)` in an
+ * inline style — the round accent, the player seat colours — and never as a Tailwind utility
+ * class. Tailwind's default is to emit only the theme variables it can see used in class
+ * names, so `--color-accent-sky`, `-amber` and `-violet` were being dropped from the build
+ * entirely: `Screen accent="violet"` set `--accent` to an undefined variable and the screen
+ * quietly kept the previous round's colour. Only emerald and rose survived, because those two
+ * happen to appear as `text-accent-*` somewhere.
+ */
+@theme static {
+  --font-sans: 'Cairo', 'Segoe UI', 'Tahoma', system-ui, sans-serif;
+
+  /* A warm indigo-black instead of a flat blue-black — still dark and still readable, but it
+     reads as a playful game board rather than an admin panel. */
+  --color-ink: #120f1e;
+  --color-surface: #1c1730;
+  --color-surface-2: #26203f;
+  --color-line: #372c56;
+  --color-body: #f3efff;
+  --color-muted: #a89bcb;
+
+  /* Punched up a notch from the flat Tailwind 400s they started as — the whole point of this
+     pass is that a round's accent should feel like it is glowing off the dark background,
+     not just tinting it. */
+  --color-accent-emerald: #2ee6a8;
+  --color-accent-sky: #3dc7ff;
+  --color-accent-rose: #ff6b9d;
+  --color-accent-amber: #ffc94a;
+  --color-accent-violet: #b98cff;
+
+  /* Three more so eight players can each have their own colour on the board and the
+     scoreboard. Round types still only accent with the five above. */
+  --color-accent-lime: #c3ff4d;
+  --color-accent-fuchsia: #ff64d8;
+  --color-accent-orange: #ff9142;
+
+  /* Rounder across the board — every existing `rounded-xl`/`-2xl`/`-3xl` picks this up for
+     free, so cards and buttons everywhere get the same softer, friendlier corners without
+     touching each component. */
+  --radius-lg: 0.65rem;
+  --radius-xl: 1.05rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+}
+
+:root {
+  color-scheme: dark;
+  /* Overwritten per round so the whole screen changes character between game types. */
+  --accent: var(--color-accent-emerald);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-ink);
+  color: var(--color-body);
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+
+/* A soft, colour-matched glow under every tappable surface — the accent radius-lg/-2xl/-3xl
+   corners now read as bubbly rather than boxy, and a plain flat border felt flat to match.
+   Buttons opt in explicitly (see primitives.tsx); this alone does not draw anything. */
+.glow-accent {
+  box-shadow: 0 8px 24px -12px color-mix(in srgb, var(--accent) 70%, transparent);
+}
+
+/* Numerals stay Western even inside Arabic text — scores and countdowns are read at a glance,
+   and Western digits are faster to parse for every Arabic-speaking audience. */
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum';
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.pop-in {
+  animation: pop-in 240ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Every tap target in the game already carries `transition active:scale-[...]` from Tailwind
+   utilities written per-component — this is the one shared rule that turns that flat scale-down
+   into a little bouncy overshoot on release, everywhere, without editing each button. */
+button,
+[role='button'] {
+  transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pop-in {
+    animation: none;
+  }
+  * {
+    transition-duration: 1ms !important;
+  }
+}

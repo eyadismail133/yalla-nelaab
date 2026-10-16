@@ -1,0 +1,24 @@
+{
+  "name": "@game/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "start": "tsx src/main.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@game/rounds": "*",
+    "@game/shared": "*",
+    "express": "^4.21.2",
+    "nanoid": "^5.0.9",
+    "socket.io": "^4.8.1",
+    "tsx": "^4.19.2",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "socket.io-client": "^4.8.1"
+  }
+}

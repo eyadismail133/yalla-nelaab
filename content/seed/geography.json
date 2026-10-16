@@ -1,0 +1,7389 @@
+{
+  "category": {
+    "id": "geography",
+    "nameAr": "جغرافيا",
+    "emoji": "🌍"
+  },
+  "questions": [
+    {
+      "id": "gg-mcq-1",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة المغرب؟",
+      "options": [
+        "الدار البيضاء",
+        "الرباط",
+        "مراكش",
+        "فاس"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "gg-mcq-2",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "إيه عاصمة السعودية؟",
+      "options": [
+        "جدة",
+        "مكة",
+        "الرياض",
+        "الدمام"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "gg-mcq-3",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "إيه أطول نهر في أفريقيا؟",
+      "options": [
+        "الكونغو",
+        "النيجر",
+        "النيل",
+        "الزمبيزي"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "gg-mcq-4",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه أكبر دولة عربية من حيث المساحة؟",
+      "options": [
+        "السعودية",
+        "الجزائر",
+        "السودان",
+        "ليبيا"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "gg-mcq-5",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "البحر الأحمر بيفصل بين مصر و أنهي دولة؟",
+      "options": [
+        "السعودية",
+        "الأردن",
+        "فلسطين",
+        "اليمن"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-6",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أكبر صحرا حارة في العالم؟",
+      "options": [
+        "صحرا جوبي",
+        "الصحرا الكبرى",
+        "صحرا كالاهاري",
+        "الربع الخالي"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "gg-mcq-7",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة الأردن؟",
+      "options": [
+        "إربد",
+        "الزرقاء",
+        "عمّان",
+        "العقبة"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "gg-mcq-8",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "جبل إيفرست في أنهي سلسلة جبال؟",
+      "options": [
+        "الألب",
+        "الأنديز",
+        "الهيمالايا",
+        "الأطلس"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "gg-mcq-9",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة تونس؟",
+      "options": [
+        "صفاقس",
+        "تونس",
+        "سوسة",
+        "بنزرت"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "gg-num-1",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "كام دولة عضو في جامعة الدول العربية؟",
+      "correctValue": 22,
+      "tolerance": 0,
+      "unitAr": "دولة"
+    },
+    {
+      "id": "gg-num-2",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "مصر فيها كام محافظة؟",
+      "correctValue": 27,
+      "tolerance": 1,
+      "unitAr": "محافظة"
+    },
+    {
+      "id": "gg-num-3",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "نهر النيل طوله كام كيلومتر تقريبًا؟",
+      "correctValue": 6650,
+      "tolerance": 250,
+      "unitAr": "كم"
+    },
+    {
+      "id": "gg-num-4",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "العالم فيه كام قارة؟",
+      "correctValue": 7,
+      "tolerance": 0,
+      "unitAr": "قارة"
+    },
+    {
+      "id": "gg-bool-1",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "القاهرة هي عاصمة مصر",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-2",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "الإسكندرية على البحر المتوسط",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-3",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "السودان دولة عربية",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-4",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "جبل سانت كاترين موجود في سيناء",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-5",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "نهر الأمازون موجود في قارة أفريقيا",
+      "isTrue": false,
+      "explanationAr": "الأمازون في أمريكا الجنوبية."
+    },
+    {
+      "id": "gg-bool-6",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "المغرب بيطل على المحيط الأطلنطي",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-7",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "قناة السويس بتربط البحر المتوسط بالبحر الأحمر",
+      "isTrue": true
+    },
+    {
+      "id": "gg-fill-1",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة لبنان هي ____",
+      "answerAr": "بيروت",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-2",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أطول نهر في أفريقيا هو نهر ____",
+      "answerAr": "النيل",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-3",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "عاصمة العراق هي ____",
+      "answerAr": "بغداد",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-1",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم أعلى قمة جبل في العالم؟",
+      "answerAr": "إيفرست",
+      "aliases": [
+        "ايفرست",
+        "جبل إيفرست"
+      ]
+    },
+    {
+      "id": "gg-open-2",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم أكبر صحرا حارة في العالم؟",
+      "answerAr": "الصحرا الكبرى",
+      "aliases": [
+        "الصحراء الكبرى",
+        "الصحرا الكبرا"
+      ]
+    },
+    {
+      "id": "gg-prog-1",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا نهر",
+        "بمر في أكتر من دولة أفريقية",
+        "أنا أطول نهر في أفريقيا"
+      ],
+      "answerAr": "النيل",
+      "aliases": [
+        "نهر النيل"
+      ]
+    },
+    {
+      "id": "gg-prog-2",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مدينة عربية",
+        "أنا على البحر المتوسط",
+        "اتلقبت بعروس البحر المتوسط"
+      ],
+      "answerAr": "الإسكندرية",
+      "aliases": [
+        "اسكندرية",
+        "الاسكندرية"
+      ]
+    },
+    {
+      "id": "gg-ord-1",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّبهم من الأصغر للأكبر مساحة",
+      "items": [
+        "لبنان",
+        "الأردن",
+        "مصر",
+        "الجزائر"
+      ],
+      "labels": [
+        "10 آلاف",
+        "89 ألف",
+        "مليون",
+        "2.4 مليون"
+      ]
+    },
+    {
+      "id": "gg-ord-2",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب المحيطات من الأصغر للأكبر",
+      "items": [
+        "المتجمد الشمالي",
+        "الهندي",
+        "الأطلنطي",
+        "الهادي"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gg-prog-3",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا قناة",
+        "اتحفرت في القرن التسعتاشر",
+        "بربط البحر المتوسط بالبحر الأحمر"
+      ],
+      "answerAr": "قناة السويس",
+      "aliases": [
+        "السويس"
+      ]
+    },
+    {
+      "id": "gg-ord-3",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب المدن من الشمال للجنوب",
+      "items": [
+        "الإسكندرية",
+        "القاهرة",
+        "الأقصر",
+        "أسوان"
+      ],
+      "labels": []
+    },
+    {
+      "id": "gg-mcq-10",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "إيه عاصمة الإمارات؟",
+      "options": [
+        "دبي",
+        "أبو ظبي",
+        "الشارقة",
+        "العين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أبو ظبي العاصمة، ودبي أشهر مدينة سياحيًا."
+    },
+    {
+      "id": "gg-mcq-11",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة قطر؟",
+      "options": [
+        "المنامة",
+        "مسقط",
+        "الدوحة",
+        "الكويت"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "الدوحة عاصمة قطر وأكبر مدنها."
+    },
+    {
+      "id": "gg-mcq-12",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة الجزائر؟",
+      "options": [
+        "وهران",
+        "قسنطينة",
+        "الجزائر",
+        "عنابة"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "مدينة الجزائر عاصمة البلد وبتحمل نفس الاسم."
+    },
+    {
+      "id": "gg-mcq-13",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة سلطنة عُمان؟",
+      "options": [
+        "صلالة",
+        "مسقط",
+        "نزوى",
+        "صحار"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مسقط عاصمة عُمان وعلى ساحل بحر عُمان."
+    },
+    {
+      "id": "gg-mcq-14",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أطول نهر في العالم من حيث الطول؟",
+      "options": [
+        "الأمازون",
+        "النيل",
+        "المسيسيبي",
+        "اليانجتسي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "النيل بيتحسب أطول نهر في العالم بحوالي 6650 كم."
+    },
+    {
+      "id": "gg-mcq-15",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أكبر قارة في العالم من حيث المساحة؟",
+      "options": [
+        "أفريقيا",
+        "آسيا",
+        "أمريكا الشمالية",
+        "أوروبا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "آسيا أكبر قارة مساحةً وسكانًا."
+    },
+    {
+      "id": "gg-mcq-16",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي خط وهمي بيقسم الأرض لشرق وغرب؟",
+      "options": [
+        "خط الاستواء",
+        "خط جرينتش",
+        "مدار السرطان",
+        "مدار الجدي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "خط جرينتش هو خط الطول الأساسي."
+    },
+    {
+      "id": "gg-mcq-17",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه أصغر دولة في العالم من حيث المساحة؟",
+      "options": [
+        "موناكو",
+        "الفاتيكان",
+        "سان مارينو",
+        "مالطا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الفاتيكان مساحتها أقل من كيلومتر مربع واحد."
+    },
+    {
+      "id": "gg-mcq-18",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أكبر دولة في العالم من حيث المساحة؟",
+      "options": [
+        "كندا",
+        "الصين",
+        "روسيا",
+        "أمريكا"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "روسيا بتمتد على قارتين وفيها 11 منطقة زمنية."
+    },
+    {
+      "id": "gg-mcq-19",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة تركيا؟",
+      "options": [
+        "إسطنبول",
+        "أنقرة",
+        "إزمير",
+        "بورصة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أنقرة العاصمة، وإسطنبول أكبر مدينة."
+    },
+    {
+      "id": "gg-mcq-20",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي دولة عربية مالهاش سواحل على أي بحر؟",
+      "options": [
+        "الأردن",
+        "لبنان",
+        "العراق",
+        "مفيش دولة عربية كده"
+      ],
+      "correctIndex": 3,
+      "explanationAr": "كل الدول العربية ليها سواحل، حتى الأردن على خليج العقبة."
+    },
+    {
+      "id": "gg-mcq-21",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "البحر الميت بيقع بين أنهي دولتين؟",
+      "options": [
+        "مصر والسودان",
+        "الأردن وفلسطين",
+        "سوريا ولبنان",
+        "العراق وإيران"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "البحر الميت أوطى نقطة على سطح اليابسة."
+    },
+    {
+      "id": "gg-mcq-22",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي دولة فيها أكبر عدد سكان في العالم العربي؟",
+      "options": [
+        "السعودية",
+        "المغرب",
+        "مصر",
+        "الجزائر"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "مصر أكبر دولة عربية من حيث عدد السكان."
+    },
+    {
+      "id": "gg-mcq-23",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "جبال الأطلس موجودة في أنهي منطقة؟",
+      "options": [
+        "شمال أفريقيا",
+        "شرق آسيا",
+        "أمريكا الجنوبية",
+        "وسط أوروبا"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "بتمتد في المغرب والجزائر وتونس."
+    },
+    {
+      "id": "gg-mcq-24",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي دولة عربية بتطل على المحيط الهندي؟",
+      "options": [
+        "ليبيا",
+        "الصومال",
+        "الأردن",
+        "فلسطين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الصومال ليها أطول ساحل في أفريقيا."
+    },
+    {
+      "id": "gg-mcq-25",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة إيطاليا؟",
+      "options": [
+        "ميلانو",
+        "روما",
+        "نابولي",
+        "فينيسيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "روما عاصمة إيطاليا وفيها الفاتيكان جواها."
+    },
+    {
+      "id": "gg-mcq-26",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة اليابان؟",
+      "options": [
+        "أوساكا",
+        "كيوتو",
+        "طوكيو",
+        "ناجويا"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "طوكيو من أكبر المدن في العالم من حيث السكان."
+    },
+    {
+      "id": "gg-mcq-27",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي دولة أوروبية معروفة باسم «بلاد الألف بحيرة»؟",
+      "options": [
+        "السويد",
+        "فنلندا",
+        "النرويج",
+        "الدنمارك"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "فنلندا فيها عشرات الآلاف من البحيرات."
+    },
+    {
+      "id": "gg-mcq-28",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "خط الاستواء بيقسم الأرض لإيه؟",
+      "options": [
+        "شرق وغرب",
+        "شمال وجنوب",
+        "قديم وحديث",
+        "بر وبحر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بيقسمها لنصف الكرة الشمالي والجنوبي."
+    },
+    {
+      "id": "gg-mcq-29",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي مضيق بيربط البحر الأحمر بخليج عدن؟",
+      "options": [
+        "مضيق هرمز",
+        "باب المندب",
+        "مضيق جبل طارق",
+        "مضيق البوسفور"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "باب المندب من أهم الممرات البحرية في العالم."
+    },
+    {
+      "id": "gg-mcq-30",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مضيق جبل طارق بيفصل بين أنهي قارتين؟",
+      "options": [
+        "أوروبا وآسيا",
+        "أوروبا وأفريقيا",
+        "آسيا وأفريقيا",
+        "أوروبا وأمريكا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بيفصل إسبانيا عن المغرب بمسافة صغيرة."
+    },
+    {
+      "id": "gg-bool-8",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "روسيا أكبر دولة في العالم من حيث المساحة",
+      "isTrue": true,
+      "explanationAr": "بتمتد على أوروبا وآسيا."
+    },
+    {
+      "id": "gg-bool-9",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "نهر النيل بيصب في البحر المتوسط",
+      "isTrue": true,
+      "explanationAr": "بيصب عند دلتا النيل في شمال مصر."
+    },
+    {
+      "id": "gg-bool-10",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "إسطنبول هي عاصمة تركيا",
+      "isTrue": false,
+      "explanationAr": "العاصمة أنقرة، وإسطنبول أكبر مدينة بس."
+    },
+    {
+      "id": "gg-bool-11",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أستراليا قارة ودولة في نفس الوقت",
+      "isTrue": true,
+      "explanationAr": "الدولة بتغطي القارة كلها."
+    },
+    {
+      "id": "gg-bool-12",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "البحر الميت أوطى نقطة على سطح اليابسة",
+      "isTrue": true,
+      "explanationAr": "بيقع تحت مستوى سطح البحر بمئات الأمتار."
+    },
+    {
+      "id": "gg-bool-13",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الصحرا الكبرى موجودة في آسيا",
+      "isTrue": false,
+      "explanationAr": "الصحرا الكبرى في شمال أفريقيا."
+    },
+    {
+      "id": "gg-bool-14",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "دبي هي عاصمة الإمارات",
+      "isTrue": false,
+      "explanationAr": "أبو ظبي هي العاصمة."
+    },
+    {
+      "id": "gg-bool-15",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "آسيا أكبر قارة في العالم",
+      "isTrue": true,
+      "explanationAr": "أكبر مساحة وأكتر سكان."
+    },
+    {
+      "id": "gg-bool-16",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "المحيط الهادي أكبر من المحيط الأطلنطي",
+      "isTrue": true,
+      "explanationAr": "الهادي أكبر محيط على الأرض."
+    },
+    {
+      "id": "gg-bool-17",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "جبال الأطلس موجودة في شمال أفريقيا",
+      "isTrue": true,
+      "explanationAr": "بتمتد في المغرب والجزائر وتونس."
+    },
+    {
+      "id": "gg-bool-18",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "خط الاستواء بيقسم الأرض لشرق وغرب",
+      "isTrue": false,
+      "explanationAr": "بيقسمها لشمال وجنوب، وخط جرينتش هو اللي بيقسمها شرق وغرب."
+    },
+    {
+      "id": "gg-bool-19",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "مضيق باب المندب بيربط البحر الأحمر بخليج عدن",
+      "isTrue": true,
+      "explanationAr": "من أهم الممرات البحرية في التجارة العالمية."
+    },
+    {
+      "id": "gg-bool-20",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "روما هي عاصمة إيطاليا",
+      "isTrue": true,
+      "explanationAr": "وفيها دولة الفاتيكان جواها."
+    },
+    {
+      "id": "gg-bool-21",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الصومال بتطل على المحيط الهندي",
+      "isTrue": true,
+      "explanationAr": "ليها أطول ساحل في القارة الأفريقية."
+    },
+    {
+      "id": "gg-bool-22",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "نهر الفرات بيمر في العراق وسوريا وتركيا",
+      "isTrue": true,
+      "explanationAr": "بينبع من تركيا وبيعدي سوريا وبيصب في العراق."
+    },
+    {
+      "id": "gg-bool-23",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "طوكيو هي عاصمة الصين",
+      "isTrue": false,
+      "explanationAr": "طوكيو عاصمة اليابان، وبكين عاصمة الصين."
+    },
+    {
+      "id": "gg-bool-24",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "مضيق جبل طارق بيفصل بين أوروبا وأفريقيا",
+      "isTrue": true,
+      "explanationAr": "بيفصل إسبانيا عن المغرب."
+    },
+    {
+      "id": "gg-num-5",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "العالم فيه كام محيط؟",
+      "correctValue": 5,
+      "tolerance": 0,
+      "unitAr": "محيط",
+      "explanationAr": "الهادي والأطلنطي والهندي والمتجمد الشمالي والجنوبي."
+    },
+    {
+      "id": "gg-num-6",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "قناة السويس طولها كام كيلومتر تقريبًا؟",
+      "correctValue": 193,
+      "tolerance": 15,
+      "unitAr": "كيلومتر",
+      "explanationAr": "بتربط البحر المتوسط بالبحر الأحمر."
+    },
+    {
+      "id": "gg-num-7",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "جبل إيفرست ارتفاعه كام متر تقريبًا؟",
+      "correctValue": 8849,
+      "tolerance": 60,
+      "unitAr": "متر",
+      "explanationAr": "أعلى قمة فوق سطح البحر في العالم."
+    },
+    {
+      "id": "gg-num-8",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "روسيا فيها كام منطقة زمنية؟",
+      "correctValue": 11,
+      "tolerance": 0,
+      "unitAr": "منطقة",
+      "explanationAr": "بتمتد من أوروبا لآخر شرق آسيا."
+    },
+    {
+      "id": "gg-num-9",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الكرة الأرضية فيها كام خط طول رئيسي بيقسم اليوم لساعات؟",
+      "correctValue": 24,
+      "tolerance": 0,
+      "unitAr": "منطقة زمنية",
+      "explanationAr": "24 منطقة زمنية بعدد ساعات اليوم."
+    },
+    {
+      "id": "gg-num-10",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "الصحرا الكبرى بتغطي كام بالمية من قارة أفريقيا تقريبًا؟",
+      "correctValue": 30,
+      "tolerance": 8,
+      "unitAr": "بالمية",
+      "explanationAr": "حوالي تلت القارة صحرا."
+    },
+    {
+      "id": "gg-num-11",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "البحر الميت بيقع كام متر تحت مستوى سطح البحر تقريبًا؟",
+      "correctValue": 430,
+      "tolerance": 60,
+      "unitAr": "متر",
+      "explanationAr": "أوطى نقطة على اليابسة في العالم."
+    },
+    {
+      "id": "gg-num-12",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "أفريقيا فيها كام دولة تقريبًا؟",
+      "correctValue": 54,
+      "tolerance": 2,
+      "unitAr": "دولة",
+      "explanationAr": "54 دولة معترف بيها في الاتحاد الأفريقي."
+    },
+    {
+      "id": "gg-num-13",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "سيناء مساحتها كام ألف كيلومتر مربع تقريبًا؟",
+      "correctValue": 60,
+      "tolerance": 10,
+      "unitAr": "ألف كم²",
+      "explanationAr": "سيناء بتمثل حوالي 6 بالمية من مساحة مصر."
+    },
+    {
+      "id": "gg-num-14",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "خط الاستواء طوله كام ألف كيلومتر تقريبًا؟",
+      "correctValue": 40,
+      "tolerance": 3,
+      "unitAr": "ألف كيلومتر",
+      "explanationAr": "محيط الأرض عند خط الاستواء حوالي 40 ألف كم."
+    },
+    {
+      "id": "gg-num-15",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "مصر بتشترك في حدود برية مع كام دولة؟",
+      "correctValue": 4,
+      "tolerance": 0,
+      "unitAr": "دولة",
+      "explanationAr": "ليبيا والسودان وفلسطين وإسرائيل."
+    },
+    {
+      "id": "gg-fill-4",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "عاصمة الإمارات هي ____",
+      "answerAr": "أبو ظبي",
+      "aliases": [
+        "ابوظبي",
+        "أبوظبي",
+        "ابو ظبي"
+      ],
+      "explanationAr": "أبو ظبي العاصمة ودبي أشهر مدينة."
+    },
+    {
+      "id": "gg-fill-5",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "عاصمة قطر هي ____",
+      "answerAr": "الدوحة",
+      "aliases": [
+        "دوحة"
+      ],
+      "explanationAr": "الدوحة أكبر مدن قطر."
+    },
+    {
+      "id": "gg-fill-6",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أكبر دولة في العالم من حيث المساحة هي ____",
+      "answerAr": "روسيا",
+      "aliases": [
+        "روسيا الاتحادية"
+      ],
+      "explanationAr": "بتمتد على قارتين."
+    },
+    {
+      "id": "gg-fill-7",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أصغر دولة في العالم هي ____",
+      "answerAr": "الفاتيكان",
+      "aliases": [
+        "فاتيكان",
+        "دولة الفاتيكان"
+      ],
+      "explanationAr": "مساحتها أقل من كيلومتر مربع."
+    },
+    {
+      "id": "gg-fill-8",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة تركيا هي ____",
+      "answerAr": "أنقرة",
+      "aliases": [
+        "انقرة",
+        "أنقره"
+      ],
+      "explanationAr": "إسطنبول أكبر مدينة بس مش العاصمة."
+    },
+    {
+      "id": "gg-fill-9",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "أكبر محيط في العالم هو المحيط ____",
+      "answerAr": "الهادي",
+      "aliases": [
+        "الهادئ",
+        "الباسيفيكي"
+      ],
+      "explanationAr": "بيغطي تلت سطح الأرض تقريبًا."
+    },
+    {
+      "id": "gg-fill-10",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "المضيق اللي بيربط البحر الأحمر بخليج عدن اسمه باب ____",
+      "answerAr": "المندب",
+      "aliases": [
+        "مندب"
+      ],
+      "explanationAr": "من أهم الممرات البحرية في العالم."
+    },
+    {
+      "id": "gg-fill-11",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة اليابان هي ____",
+      "answerAr": "طوكيو",
+      "aliases": [
+        "توكيو"
+      ],
+      "explanationAr": "من أكبر المدن في العالم."
+    },
+    {
+      "id": "gg-fill-12",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "أوطى نقطة على سطح اليابسة هي البحر ____",
+      "answerAr": "الميت",
+      "aliases": [
+        "ميت"
+      ],
+      "explanationAr": "بين الأردن وفلسطين."
+    },
+    {
+      "id": "gg-fill-13",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "أكبر قارة في العالم هي ____",
+      "answerAr": "آسيا",
+      "aliases": [
+        "اسيا"
+      ],
+      "explanationAr": "أكبر مساحة وأكتر عدد سكان."
+    },
+    {
+      "id": "gg-fill-14",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة إيطاليا هي ____",
+      "answerAr": "روما",
+      "aliases": [
+        "روما العاصمة"
+      ],
+      "explanationAr": "وفيها الفاتيكان جواها."
+    },
+    {
+      "id": "gg-fill-15",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "الجبال اللي بتمتد في المغرب والجزائر وتونس اسمها جبال ____",
+      "answerAr": "الأطلس",
+      "aliases": [
+        "اطلس"
+      ],
+      "explanationAr": "بتفصل الساحل عن الصحرا الكبرى."
+    },
+    {
+      "id": "gg-open-3",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة الإمارات؟",
+      "answerAr": "أبو ظبي",
+      "aliases": [
+        "ابوظبي",
+        "أبوظبي"
+      ],
+      "explanationAr": "دبي أشهر بس أبو ظبي هي العاصمة."
+    },
+    {
+      "id": "gg-open-4",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه أكبر دولة في العالم من حيث المساحة؟",
+      "answerAr": "روسيا",
+      "aliases": [
+        "روسيا الاتحادية"
+      ],
+      "explanationAr": "بتمتد على قارتين وفيها 11 منطقة زمنية."
+    },
+    {
+      "id": "gg-open-5",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه أطول نهر في أوروبا؟",
+      "answerAr": "الفولجا",
+      "aliases": [
+        "فولجا",
+        "الفولغا"
+      ],
+      "explanationAr": "بيمر في روسيا وبيصب في بحر قزوين."
+    },
+    {
+      "id": "gg-open-6",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه أطول سلسلة جبال على سطح اليابسة؟",
+      "answerAr": "جبال الأنديز",
+      "aliases": [
+        "الأنديز",
+        "الانديز"
+      ],
+      "explanationAr": "بتمتد على طول غرب أمريكا الجنوبية."
+    },
+    {
+      "id": "gg-open-7",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة تركيا؟",
+      "answerAr": "أنقرة",
+      "aliases": [
+        "انقرة"
+      ],
+      "explanationAr": "مش إسطنبول زي ما ناس كتير بتفتكر."
+    },
+    {
+      "id": "gg-open-8",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم المضيق اللي بيفصل أوروبا عن أفريقيا؟",
+      "answerAr": "مضيق جبل طارق",
+      "aliases": [
+        "جبل طارق"
+      ],
+      "explanationAr": "بين إسبانيا والمغرب."
+    },
+    {
+      "id": "gg-open-9",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه أكبر قارة في العالم؟",
+      "answerAr": "آسيا",
+      "aliases": [
+        "اسيا",
+        "قارة آسيا"
+      ],
+      "explanationAr": "أكبر مساحةً وسكانًا."
+    },
+    {
+      "id": "gg-open-10",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم البحر اللي بيتحسب أوطى نقطة على اليابسة؟",
+      "answerAr": "البحر الميت",
+      "aliases": [
+        "الميت",
+        "بحر ميت"
+      ],
+      "explanationAr": "ملوحته عالية لدرجة إن الإنسان بيطفو فيه."
+    },
+    {
+      "id": "gg-open-11",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة اليابان؟",
+      "answerAr": "طوكيو",
+      "aliases": [
+        "توكيو"
+      ],
+      "explanationAr": "من أكبر التجمعات السكانية في العالم."
+    },
+    {
+      "id": "gg-open-12",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم الجبال اللي بتمتد في المغرب والجزائر وتونس؟",
+      "answerAr": "جبال الأطلس",
+      "aliases": [
+        "الأطلس",
+        "اطلس"
+      ],
+      "explanationAr": "بتفصل الساحل عن الصحرا."
+    },
+    {
+      "id": "gg-prog-4",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا دولة بتمتد على قارتين",
+        "عندي 11 منطقة زمنية",
+        "أكبر دولة في العالم مساحةً وعاصمتي موسكو"
+      ],
+      "answerAr": "روسيا",
+      "aliases": [
+        "روسيا الاتحادية"
+      ],
+      "explanationAr": "مساحتها أكبر من قارة كاملة."
+    },
+    {
+      "id": "gg-prog-5",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا محيط",
+        "بغطي حوالي تلت سطح الأرض",
+        "أكبر محيط في العالم وبيقع غرب أمريكا"
+      ],
+      "answerAr": "المحيط الهادي",
+      "aliases": [
+        "الهادي",
+        "الهادئ",
+        "الباسيفيكي"
+      ],
+      "explanationAr": "أكبر من كل اليابسة مجتمعة."
+    },
+    {
+      "id": "gg-prog-6",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا مدينة عربية على الخليج",
+        "عندي أطول مبنى في العالم",
+        "أشهر مدينة في الإمارات بس مش العاصمة"
+      ],
+      "answerAr": "دبي",
+      "aliases": [
+        "مدينة دبي"
+      ],
+      "explanationAr": "برج خليفة في دبي هو أطول مبنى في العالم."
+    },
+    {
+      "id": "gg-prog-7",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا بحر بس مليش سواحل على المحيط",
+        "ملوحتي عالية أوي والإنسان بيطفو فيّا",
+        "أوطى نقطة على سطح اليابسة بين الأردن وفلسطين"
+      ],
+      "answerAr": "البحر الميت",
+      "aliases": [
+        "الميت"
+      ],
+      "explanationAr": "ملوحته حوالي 10 أضعاف مياه البحر العادية."
+    },
+    {
+      "id": "gg-prog-8",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا دولة وقارة في نفس الوقت",
+        "عندي حيوانات مش موجودة في أي مكان تاني",
+        "الكنغر والكوالا من سكاني وعاصمتي كانبرا"
+      ],
+      "answerAr": "أستراليا",
+      "aliases": [
+        "استراليا"
+      ],
+      "explanationAr": "أستراليا أصغر قارة وأكبر جزيرة."
+    },
+    {
+      "id": "gg-prog-9",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مدينة بتقع على قارتين",
+        "كنت عاصمة لإمبراطوريتين",
+        "أكبر مدينة في تركيا بس مش العاصمة"
+      ],
+      "answerAr": "إسطنبول",
+      "aliases": [
+        "اسطنبول",
+        "الأستانة"
+      ],
+      "explanationAr": "مضيق البوسفور بيقسمها بين أوروبا وآسيا."
+    },
+    {
+      "id": "gg-prog-10",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا أصغر من أي مدينة كبيرة",
+        "مساحتي أقل من كيلومتر مربع",
+        "أصغر دولة في العالم وجوّه مدينة روما"
+      ],
+      "answerAr": "الفاتيكان",
+      "aliases": [
+        "فاتيكان",
+        "دولة الفاتيكان"
+      ],
+      "explanationAr": "دولة مستقلة جوه العاصمة الإيطالية."
+    },
+    {
+      "id": "gg-ord-4",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب القارات دي من الأكبر للأصغر في المساحة",
+      "items": [
+        "آسيا",
+        "أفريقيا",
+        "أمريكا الشمالية",
+        "أوروبا"
+      ],
+      "labels": [],
+      "explanationAr": "آسيا لوحدها حوالي تلت اليابسة."
+    },
+    {
+      "id": "gg-ord-5",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الدول العربية دي من الأكبر للأصغر في المساحة",
+      "items": [
+        "الجزائر",
+        "السعودية",
+        "ليبيا",
+        "مصر"
+      ],
+      "labels": [],
+      "explanationAr": "الجزائر أكبر دولة عربية بعد انفصال جنوب السودان."
+    },
+    {
+      "id": "gg-ord-6",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الأنهار دي من الأطول للأقصر",
+      "items": [
+        "النيل",
+        "الفرات",
+        "الأردن"
+      ],
+      "labels": [
+        "6650",
+        "2800",
+        "251"
+      ],
+      "explanationAr": "الأرقام بالكيلومتر تقريبًا."
+    },
+    {
+      "id": "gg-ord-7",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الجبال دي من الأعلى للأوطى",
+      "items": [
+        "إيفرست",
+        "كليمنجارو",
+        "سانت كاترين"
+      ],
+      "labels": [
+        "8849",
+        "5895",
+        "2629"
+      ],
+      "explanationAr": "الأرقام بالمتر فوق سطح البحر."
+    },
+    {
+      "id": "gg-ord-8",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب البحار والمسطحات دي زي ما تقابلها لو مشيت من الإسكندرية لجدة",
+      "items": [
+        "البحر المتوسط",
+        "قناة السويس",
+        "البحر الأحمر"
+      ],
+      "labels": [],
+      "explanationAr": "ده بالظبط مسار السفن بين أوروبا والخليج."
+    },
+    {
+      "id": "gg-ord-9",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الدول دي من الغرب للشرق",
+      "items": [
+        "المغرب",
+        "مصر",
+        "السعودية",
+        "عُمان"
+      ],
+      "labels": [],
+      "explanationAr": "ترتيبهم على خريطة العالم العربي من الغرب للشرق."
+    },
+    {
+      "id": "gg-ord-10",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب الوحدات الجغرافية دي من الأصغر للأكبر",
+      "items": [
+        "مدينة",
+        "محافظة",
+        "دولة",
+        "قارة"
+      ],
+      "labels": [],
+      "explanationAr": "كل واحدة بتحتوي اللي قبلها."
+    },
+    {
+      "id": "gg-mcq-31",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة اليابان اسمها إيه؟",
+      "options": [
+        "اليوان",
+        "الين",
+        "الوون",
+        "الروبية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "واليوان للصين والوون لكوريا."
+    },
+    {
+      "id": "gg-mcq-32",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة بريطانيا اسمها إيه؟",
+      "options": [
+        "اليورو",
+        "الجنيه الإسترليني",
+        "الفرنك",
+        "الدولار"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بريطانيا مدخلتش اليورو أصلًا."
+    },
+    {
+      "id": "gg-mcq-33",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "عملة تركيا اسمها إيه؟",
+      "options": [
+        "الدرهم",
+        "الليرة",
+        "الدينار",
+        "الريال"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الليرة التركية."
+    },
+    {
+      "id": "gg-mcq-34",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة السعودية اسمها إيه؟",
+      "options": [
+        "الدرهم",
+        "الدينار",
+        "الريال",
+        "الجنيه"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "والدرهم للإمارات والمغرب."
+    },
+    {
+      "id": "gg-mcq-35",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة الإمارات اسمها إيه؟",
+      "options": [
+        "الدرهم",
+        "الريال",
+        "الدينار",
+        "الليرة"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الدرهم الإماراتي."
+    },
+    {
+      "id": "gg-mcq-36",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي دولة علمها فيه شجرة أرز؟",
+      "options": [
+        "سوريا",
+        "لبنان",
+        "الأردن",
+        "فلسطين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الأرز رمز لبنان من آلاف السنين."
+    },
+    {
+      "id": "gg-mcq-37",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي دولة مكتوب على علمها الشهادة؟",
+      "options": [
+        "قطر",
+        "السعودية",
+        "الكويت",
+        "عُمان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وتحتها سيف، وعشان كده العلم مبينكّسش."
+    },
+    {
+      "id": "gg-mcq-38",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي دولة علمها فيه ورقة شجر القيقب؟",
+      "options": [
+        "أمريكا",
+        "كندا",
+        "النرويج",
+        "سويسرا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ورقة الميبل رمز كندا."
+    },
+    {
+      "id": "gg-mcq-39",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي دولة علمها دايرة حمرا على خلفية بيضا؟",
+      "options": [
+        "كوريا الجنوبية",
+        "اليابان",
+        "الصين",
+        "بنجلاديش"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الدايرة بترمز للشمس، ومن هنا «بلاد الشمس المشرقة»."
+    },
+    {
+      "id": "gg-mcq-40",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "اللغة الرسمية في البرازيل إيه؟",
+      "options": [
+        "الإسبانية",
+        "البرتغالية",
+        "الفرنسية",
+        "الإنجليزية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الوحيدة في أمريكا الجنوبية اللي بتتكلم برتغالي."
+    },
+    {
+      "id": "gg-mcq-41",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "اللغة الرسمية في النمسا إيه؟",
+      "options": [
+        "الفرنسية",
+        "الألمانية",
+        "الإيطالية",
+        "المجرية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "النمسا وألمانيا وجزء من سويسرا بيتكلموا ألماني."
+    },
+    {
+      "id": "gg-mcq-42",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "برج إيفل موجود في أنهي مدينة؟",
+      "options": [
+        "لندن",
+        "باريس",
+        "برلين",
+        "روما"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اتبنى سنة 1889 لمعرض باريس الدولي."
+    },
+    {
+      "id": "gg-mcq-43",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "تمثال الحرية موجود في أنهي مدينة؟",
+      "options": [
+        "واشنطن",
+        "نيويورك",
+        "بوسطن",
+        "شيكاجو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "هدية من فرنسا لأمريكا."
+    },
+    {
+      "id": "gg-mcq-44",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "تاج محل موجود في أنهي دولة؟",
+      "options": [
+        "باكستان",
+        "الهند",
+        "بنجلاديش",
+        "نيبال"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في مدينة أجرا شمال الهند."
+    },
+    {
+      "id": "gg-mcq-45",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "برج بيزا المايل في أنهي دولة؟",
+      "options": [
+        "إسبانيا",
+        "إيطاليا",
+        "اليونان",
+        "فرنسا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مال بسبب ضعف الأرض تحته."
+    },
+    {
+      "id": "gg-mcq-46",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "مدينة البتراء الأثرية في أنهي دولة؟",
+      "options": [
+        "سوريا",
+        "الأردن",
+        "لبنان",
+        "فلسطين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "منحوتة في الصخر الوردي."
+    },
+    {
+      "id": "gg-mcq-47",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه أكبر بحيرة في العالم؟",
+      "options": [
+        "بحيرة فيكتوريا",
+        "بحر قزوين",
+        "بحيرة سوبيريور",
+        "بحيرة بايكال"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "اسمه بحر بس هو بحيرة مقفولة."
+    },
+    {
+      "id": "gg-mcq-48",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه أكبر بحيرة في أفريقيا؟",
+      "options": [
+        "تشاد",
+        "فيكتوريا",
+        "تنجانيقا",
+        "ناصر"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بتتشارك فيها أوغندا وكينيا وتنزانيا."
+    },
+    {
+      "id": "gg-mcq-49",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "إيه أعمق بحيرة في العالم؟",
+      "options": [
+        "سوبيريور",
+        "بايكال",
+        "تنجانيقا",
+        "قزوين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بايكال في سيبيريا، وعمقها أكتر من كيلومتر ونص."
+    },
+    {
+      "id": "gg-mcq-50",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "المناخ الصحراوي بيتميز بإيه؟",
+      "options": [
+        "أمطار غزيرة",
+        "أمطار قليلة جدًا وفرق حرارة كبير",
+        "تلج طول السنة",
+        "رطوبة عالية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الليل بيبرد أوي والنهار بيسخن أوي."
+    },
+    {
+      "id": "gg-mcq-51",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي مناخ بيتميز بشتا ممطر وصيف حار جاف؟",
+      "options": [
+        "الاستوائي",
+        "مناخ البحر المتوسط",
+        "القطبي",
+        "الموسمي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "زي مناخ سواحل مصر ولبنان وإسبانيا."
+    },
+    {
+      "id": "gg-mcq-52",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي دولة ليها أطول ساحل في العالم؟",
+      "options": [
+        "روسيا",
+        "كندا",
+        "أستراليا",
+        "إندونيسيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بسبب آلاف الجزر في شمالها."
+    },
+    {
+      "id": "gg-mcq-53",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي دولة بتتكوّن من أكتر من 17 ألف جزيرة؟",
+      "options": [
+        "الفلبين",
+        "إندونيسيا",
+        "اليابان",
+        "ماليزيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أكبر دولة أرخبيلية في العالم."
+    },
+    {
+      "id": "gg-mcq-54",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي قناة بتربط المحيط الأطلنطي بالمحيط الهادي؟",
+      "options": [
+        "قناة السويس",
+        "قناة بنما",
+        "قناة كييل",
+        "قناة كورنثوس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بتوفّر على السفن لفة كاملة حوالين أمريكا الجنوبية."
+    },
+    {
+      "id": "gg-mcq-55",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي دولة صغيرة محاطة بإيطاليا وعاصمتها بنفس اسمها؟",
+      "options": [
+        "موناكو",
+        "سان مارينو",
+        "أندورا",
+        "ليختنشتاين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من أقدم الجمهوريات في العالم."
+    },
+    {
+      "id": "gg-mcq-56",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي دولة عاصمتها كانبرا؟",
+      "options": [
+        "نيوزيلندا",
+        "أستراليا",
+        "جنوب أفريقيا",
+        "كندا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مش سيدني زي ما ناس كتير بتفتكر."
+    },
+    {
+      "id": "gg-mcq-57",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي مضيق بيفصل بين آسيا وأمريكا الشمالية؟",
+      "options": [
+        "مضيق هرمز",
+        "مضيق بيرنج",
+        "مضيق ملقا",
+        "مضيق البوسفور"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بين روسيا وألاسكا، وعرضه صغير جدًا."
+    },
+    {
+      "id": "gg-mcq-58",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي مضيق بيقسم مدينة إسطنبول لنصين؟",
+      "options": [
+        "الدردنيل",
+        "البوسفور",
+        "جبل طارق",
+        "هرمز"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "نص المدينة في أوروبا ونصها في آسيا."
+    },
+    {
+      "id": "gg-mcq-59",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أعلى جبل في أفريقيا موجود في أنهي دولة؟",
+      "options": [
+        "كينيا",
+        "تنزانيا",
+        "إثيوبيا",
+        "أوغندا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "جبل كليمنجارو في تنزانيا."
+    },
+    {
+      "id": "gg-mcq-60",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي نهر بيمر في مدينة بغداد؟",
+      "options": [
+        "الفرات",
+        "دجلة",
+        "الأردن",
+        "العاصي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بغداد اتبنت على ضفاف دجلة."
+    },
+    {
+      "id": "gg-bool-25",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "عملة اليابان اسمها الين",
+      "isTrue": true,
+      "explanationAr": "واليوان للصين."
+    },
+    {
+      "id": "gg-bool-26",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "عملة الإمارات اسمها الدرهم",
+      "isTrue": true,
+      "explanationAr": "والمغرب كمان عملتها الدرهم."
+    },
+    {
+      "id": "gg-bool-27",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "اللغة الرسمية في البرازيل هي الإسبانية",
+      "isTrue": false,
+      "explanationAr": "البرازيل بتتكلم برتغالي."
+    },
+    {
+      "id": "gg-bool-28",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "علم لبنان فيه شجرة أرز",
+      "isTrue": true,
+      "explanationAr": "رمز لبنان من آلاف السنين."
+    },
+    {
+      "id": "gg-bool-29",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "علم كندا فيه ورقة شجر القيقب",
+      "isTrue": true,
+      "explanationAr": "ورقة الميبل."
+    },
+    {
+      "id": "gg-bool-30",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "برج إيفل موجود في لندن",
+      "isTrue": false,
+      "explanationAr": "برج إيفل في باريس."
+    },
+    {
+      "id": "gg-bool-31",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "تاج محل موجود في الهند",
+      "isTrue": true,
+      "explanationAr": "في مدينة أجرا."
+    },
+    {
+      "id": "gg-bool-32",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "مدينة البتراء موجودة في الأردن",
+      "isTrue": true,
+      "explanationAr": "منحوتة في الصخر الوردي."
+    },
+    {
+      "id": "gg-bool-33",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "بحر قزوين بيتحسب أكبر بحيرة في العالم",
+      "isTrue": true,
+      "explanationAr": "اسمه بحر بس هو بحيرة مقفولة."
+    },
+    {
+      "id": "gg-bool-34",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "بحيرة بايكال أعمق بحيرة في العالم",
+      "isTrue": true,
+      "explanationAr": "في سيبيريا، وعمقها أكتر من كيلومتر ونص."
+    },
+    {
+      "id": "gg-bool-35",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "كندا عندها أطول ساحل في العالم",
+      "isTrue": true,
+      "explanationAr": "بسبب آلاف الجزر في شمالها."
+    },
+    {
+      "id": "gg-bool-36",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "إندونيسيا بتتكوّن من آلاف الجزر",
+      "isTrue": true,
+      "explanationAr": "أكتر من 17 ألف جزيرة."
+    },
+    {
+      "id": "gg-bool-37",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "قناة بنما بتربط المحيط الأطلنطي بالمحيط الهادي",
+      "isTrue": true,
+      "explanationAr": "وقناة السويس بتربط المتوسط بالأحمر."
+    },
+    {
+      "id": "gg-bool-38",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "سان مارينو دولة محاطة بإيطاليا من كل ناحية",
+      "isTrue": true,
+      "explanationAr": "من أقدم الجمهوريات في العالم."
+    },
+    {
+      "id": "gg-bool-39",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "عاصمة أستراليا هي سيدني",
+      "isTrue": false,
+      "explanationAr": "العاصمة كانبرا، وسيدني أكبر مدينة."
+    },
+    {
+      "id": "gg-bool-40",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "مضيق البوسفور بيقسم مدينة إسطنبول لنصين",
+      "isTrue": true,
+      "explanationAr": "نص في أوروبا ونص في آسيا."
+    },
+    {
+      "id": "gg-bool-41",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "أعلى جبل في أفريقيا موجود في تنزانيا",
+      "isTrue": true,
+      "explanationAr": "جبل كليمنجارو."
+    },
+    {
+      "id": "gg-bool-42",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "نهر دجلة بيمر في بغداد",
+      "isTrue": true,
+      "explanationAr": "المدينة اتبنت على ضفافه."
+    },
+    {
+      "id": "gg-bool-43",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "مناخ البحر المتوسط شتاه ممطر وصيفه حار جاف",
+      "isTrue": true,
+      "explanationAr": "زي سواحل مصر ولبنان وإسبانيا."
+    },
+    {
+      "id": "gg-bool-44",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الصحرا بتتميز بأمطار غزيرة طول السنة",
+      "isTrue": false,
+      "explanationAr": "الصحرا معناها أمطار قليلة جدًا."
+    },
+    {
+      "id": "gg-bool-45",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "برج بيزا المايل موجود في إيطاليا",
+      "isTrue": true,
+      "explanationAr": "مال بسبب ضعف الأرض تحته."
+    },
+    {
+      "id": "gg-bool-46",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "تمثال الحرية موجود في نيويورك",
+      "isTrue": true,
+      "explanationAr": "هدية من فرنسا لأمريكا."
+    },
+    {
+      "id": "gg-bool-47",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "عملة السعودية اسمها الريال",
+      "isTrue": true,
+      "explanationAr": "زي عُمان واليمن وقطر."
+    },
+    {
+      "id": "gg-bool-48",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "مضيق بيرنج بيفصل بين آسيا وأمريكا الشمالية",
+      "isTrue": true,
+      "explanationAr": "بين روسيا وألاسكا."
+    },
+    {
+      "id": "gg-num-16",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "إندونيسيا فيها كام ألف جزيرة تقريبًا؟",
+      "correctValue": 17,
+      "tolerance": 3,
+      "unitAr": "ألف جزيرة",
+      "explanationAr": "أكبر دولة أرخبيلية في العالم."
+    },
+    {
+      "id": "gg-num-17",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "أعلى جبل في أفريقيا ارتفاعه كام متر تقريبًا؟",
+      "correctValue": 5895,
+      "tolerance": 150,
+      "unitAr": "متر",
+      "explanationAr": "كليمنجارو في تنزانيا."
+    },
+    {
+      "id": "gg-num-18",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "بحيرة بايكال عمقها كام متر تقريبًا؟",
+      "correctValue": 1642,
+      "tolerance": 200,
+      "unitAr": "متر",
+      "explanationAr": "أعمق بحيرة في العالم."
+    },
+    {
+      "id": "gg-num-19",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "قناة بنما طولها كام كيلومتر تقريبًا؟",
+      "correctValue": 82,
+      "tolerance": 12,
+      "unitAr": "كيلومتر",
+      "explanationAr": "أقصر بكتير من قناة السويس."
+    },
+    {
+      "id": "gg-num-20",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "كام بالمية من سطح الأرض مغطى بالميه؟",
+      "correctValue": 71,
+      "tolerance": 4,
+      "unitAr": "بالمية",
+      "explanationAr": "وعشان كده بيقولوا عليها الكوكب الأزرق."
+    },
+    {
+      "id": "gg-num-21",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "ساحل كندا طوله كام ألف كيلومتر تقريبًا؟",
+      "correctValue": 202,
+      "tolerance": 40,
+      "unitAr": "ألف كيلومتر",
+      "explanationAr": "أطول ساحل في العالم."
+    },
+    {
+      "id": "gg-num-22",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "نهر دجلة طوله كام كيلومتر تقريبًا؟",
+      "correctValue": 1850,
+      "tolerance": 250,
+      "unitAr": "كيلومتر",
+      "explanationAr": "بينبع من تركيا وبيصب في شط العرب."
+    },
+    {
+      "id": "gg-num-23",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "مضيق البوسفور طوله كام كيلومتر تقريبًا؟",
+      "correctValue": 30,
+      "tolerance": 6,
+      "unitAr": "كيلومتر",
+      "explanationAr": "قصير بس من أهم الممرات في العالم."
+    },
+    {
+      "id": "gg-num-24",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "برج إيفل ارتفاعه كام متر تقريبًا؟",
+      "correctValue": 330,
+      "tolerance": 25,
+      "unitAr": "متر",
+      "explanationAr": "كان أطول مبنى في العالم لأربعين سنة."
+    },
+    {
+      "id": "gg-num-25",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "كام دولة بتطل على البحر المتوسط تقريبًا؟",
+      "correctValue": 21,
+      "tolerance": 4,
+      "unitAr": "دولة",
+      "explanationAr": "من تلات قارات: أوروبا وأفريقيا وآسيا."
+    },
+    {
+      "id": "gg-num-26",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "سان مارينو مساحتها كام كيلومتر مربع تقريبًا؟",
+      "correctValue": 61,
+      "tolerance": 12,
+      "unitAr": "كم²",
+      "explanationAr": "أصغر من مدينة متوسطة."
+    },
+    {
+      "id": "gg-num-27",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "كام قارة فيها سكان دائمين؟",
+      "correctValue": 6,
+      "tolerance": 0,
+      "unitAr": "قارة",
+      "explanationAr": "كلهم ما عدا القارة القطبية الجنوبية."
+    },
+    {
+      "id": "gg-fill-16",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عملة اليابان اسمها ____",
+      "answerAr": "الين",
+      "aliases": [
+        "ين",
+        "الين الياباني"
+      ],
+      "explanationAr": "واليوان للصين."
+    },
+    {
+      "id": "gg-fill-17",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عملة الإمارات اسمها ____",
+      "answerAr": "الدرهم",
+      "aliases": [
+        "درهم"
+      ],
+      "explanationAr": "والمغرب كمان عملتها الدرهم."
+    },
+    {
+      "id": "gg-fill-18",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "اللغة الرسمية في البرازيل هي ____",
+      "answerAr": "البرتغالية",
+      "aliases": [
+        "برتغالية",
+        "البرتغالي"
+      ],
+      "explanationAr": "الوحيدة في أمريكا الجنوبية."
+    },
+    {
+      "id": "gg-fill-19",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "علم لبنان فيه شجرة ____",
+      "answerAr": "الأرز",
+      "aliases": [
+        "ارز",
+        "أرز"
+      ],
+      "explanationAr": "رمز لبنان التاريخي."
+    },
+    {
+      "id": "gg-fill-20",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "برج إيفل موجود في مدينة ____",
+      "answerAr": "باريس",
+      "aliases": [
+        "باريز"
+      ],
+      "explanationAr": "اتبنى سنة 1889."
+    },
+    {
+      "id": "gg-fill-21",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "تاج محل موجود في دولة ____",
+      "answerAr": "الهند",
+      "aliases": [
+        "هند"
+      ],
+      "explanationAr": "في مدينة أجرا."
+    },
+    {
+      "id": "gg-fill-22",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "مدينة البتراء الأثرية موجودة في ____",
+      "answerAr": "الأردن",
+      "aliases": [
+        "الاردن",
+        "اردن"
+      ],
+      "explanationAr": "منحوتة في الصخر الوردي."
+    },
+    {
+      "id": "gg-fill-23",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "أكبر بحيرة في العالم اسمها بحر ____",
+      "answerAr": "قزوين",
+      "aliases": [
+        "قزوين "
+      ],
+      "explanationAr": "اسمه بحر بس هو بحيرة."
+    },
+    {
+      "id": "gg-fill-24",
+      "shape": "fill_blank",
+      "difficulty": 5,
+      "textAr": "أعمق بحيرة في العالم اسمها بحيرة ____",
+      "answerAr": "بايكال",
+      "aliases": [
+        "بيكال"
+      ],
+      "explanationAr": "في سيبيريا بروسيا."
+    },
+    {
+      "id": "gg-fill-25",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "القناة اللي بتربط المحيط الأطلنطي بالهادي اسمها قناة ____",
+      "answerAr": "بنما",
+      "aliases": [
+        "بنمة"
+      ],
+      "explanationAr": "في أمريكا الوسطى."
+    },
+    {
+      "id": "gg-fill-26",
+      "shape": "fill_blank",
+      "difficulty": 4,
+      "textAr": "المضيق اللي بيقسم مدينة إسطنبول اسمه ____",
+      "answerAr": "البوسفور",
+      "aliases": [
+        "بوسفور"
+      ],
+      "explanationAr": "بيفصل أوروبا عن آسيا."
+    },
+    {
+      "id": "gg-fill-27",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "النهر اللي بيمر في بغداد اسمه ____",
+      "answerAr": "دجلة",
+      "aliases": [
+        "نهر دجلة"
+      ],
+      "explanationAr": "والفرات بيمر في مدن عراقية تانية."
+    },
+    {
+      "id": "gg-open-13",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم عملة اليابان؟",
+      "answerAr": "الين",
+      "aliases": [
+        "ين"
+      ],
+      "explanationAr": "واليوان للصين."
+    },
+    {
+      "id": "gg-open-14",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اللغة الرسمية في البرازيل؟",
+      "answerAr": "البرتغالية",
+      "aliases": [
+        "برتغالية",
+        "البرتغالي"
+      ],
+      "explanationAr": "الوحيدة في أمريكا الجنوبية."
+    },
+    {
+      "id": "gg-open-15",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "أنهي دولة علمها فيه شجرة أرز؟",
+      "answerAr": "لبنان",
+      "aliases": [
+        "لبنان الشقيق"
+      ],
+      "explanationAr": "رمز لبنان التاريخي."
+    },
+    {
+      "id": "gg-open-16",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "برج إيفل في أنهي مدينة؟",
+      "answerAr": "باريس",
+      "aliases": [
+        "باريز"
+      ],
+      "explanationAr": "اتبنى سنة 1889."
+    },
+    {
+      "id": "gg-open-17",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه أكبر بحيرة في العالم؟",
+      "answerAr": "بحر قزوين",
+      "aliases": [
+        "قزوين"
+      ],
+      "explanationAr": "اسمه بحر بس هو بحيرة مقفولة."
+    },
+    {
+      "id": "gg-open-18",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "إيه أعمق بحيرة في العالم؟",
+      "answerAr": "بحيرة بايكال",
+      "aliases": [
+        "بايكال",
+        "بيكال"
+      ],
+      "explanationAr": "في سيبيريا."
+    },
+    {
+      "id": "gg-open-19",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم القناة اللي بتربط الأطلنطي بالمحيط الهادي؟",
+      "answerAr": "قناة بنما",
+      "aliases": [
+        "بنما"
+      ],
+      "explanationAr": "في أمريكا الوسطى."
+    },
+    {
+      "id": "gg-open-20",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم المضيق اللي بيقسم إسطنبول؟",
+      "answerAr": "البوسفور",
+      "aliases": [
+        "بوسفور",
+        "مضيق البوسفور"
+      ],
+      "explanationAr": "بيفصل أوروبا عن آسيا."
+    },
+    {
+      "id": "gg-open-21",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "أنهي نهر بيمر في بغداد؟",
+      "answerAr": "دجلة",
+      "aliases": [
+        "نهر دجلة"
+      ],
+      "explanationAr": "بغداد اتبنت على ضفافه."
+    },
+    {
+      "id": "gg-open-22",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "أنهي دولة عندها أطول ساحل في العالم؟",
+      "answerAr": "كندا",
+      "aliases": [
+        "كندا "
+      ],
+      "explanationAr": "بسبب آلاف الجزر في شمالها."
+    },
+    {
+      "id": "gg-prog-11",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا دولة عربية صغيرة على البحر المتوسط",
+        "علمي فيه شجرة",
+        "عاصمتي بيروت وشجرة الأرز رمزي"
+      ],
+      "answerAr": "لبنان",
+      "aliases": [
+        "لبنان الشقيق"
+      ],
+      "explanationAr": "الأرز رمز لبنان من آلاف السنين."
+    },
+    {
+      "id": "gg-prog-12",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا ممر مائي من صنع الإنسان",
+        "بوفّر على السفن لفة حوالين أمريكا الجنوبية",
+        "بربط المحيط الأطلنطي بالمحيط الهادي"
+      ],
+      "answerAr": "قناة بنما",
+      "aliases": [
+        "بنما"
+      ],
+      "explanationAr": "طولها حوالي 82 كيلومتر بس."
+    },
+    {
+      "id": "gg-prog-13",
+      "shape": "progressive",
+      "difficulty": 5,
+      "hints": [
+        "أنا في سيبيريا بروسيا",
+        "فيّا نسبة كبيرة من ميه العالم العذبة السايلة",
+        "أعمق بحيرة في العالم"
+      ],
+      "answerAr": "بحيرة بايكال",
+      "aliases": [
+        "بايكال",
+        "بيكال"
+      ],
+      "explanationAr": "عمقها أكتر من كيلومتر ونص."
+    },
+    {
+      "id": "gg-prog-14",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا مضيق مائي",
+        "بفصل بين قارتين",
+        "بقسم مدينة إسطنبول لنصين"
+      ],
+      "answerAr": "البوسفور",
+      "aliases": [
+        "بوسفور",
+        "مضيق البوسفور"
+      ],
+      "explanationAr": "من أهم الممرات البحرية في العالم."
+    },
+    {
+      "id": "gg-prog-15",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا دولة في أمريكا الشمالية",
+        "علمي فيه ورقة شجر",
+        "عندي أطول ساحل في العالم وعاصمتي أوتاوا"
+      ],
+      "answerAr": "كندا",
+      "aliases": [
+        "كندا "
+      ],
+      "explanationAr": "تاني أكبر دولة في العالم مساحةً."
+    },
+    {
+      "id": "gg-prog-16",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مبنى من الرخام الأبيض",
+        "اتبنيت في القرن السبعتاشر",
+        "في مدينة أجرا بالهند واتبنيت لزوجة حاكم"
+      ],
+      "answerAr": "تاج محل",
+      "aliases": [
+        "تاج محال",
+        "التاج محل"
+      ],
+      "explanationAr": "من عجايب الدنيا السبع الجديدة."
+    },
+    {
+      "id": "gg-ord-11",
+      "shape": "ordering",
+      "difficulty": 5,
+      "textAr": "رتّب البحيرات دي من الأعمق للأقل عمقًا",
+      "items": [
+        "بايكال",
+        "تنجانيقا",
+        "سوبيريور"
+      ],
+      "labels": [
+        "1642",
+        "1470",
+        "406"
+      ],
+      "explanationAr": "الأرقام بالمتر."
+    },
+    {
+      "id": "gg-ord-12",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب الممرات المائية دي من الأقصر للأطول",
+      "items": [
+        "مضيق البوسفور",
+        "قناة بنما",
+        "قناة السويس"
+      ],
+      "labels": [
+        "30 كم",
+        "82 كم",
+        "193 كم"
+      ],
+      "explanationAr": "الطول مش دليل على الأهمية."
+    },
+    {
+      "id": "gg-ord-13",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الدول دي حسب قربها من خط الاستواء من الأقرب للأبعد",
+      "items": [
+        "إندونيسيا",
+        "مصر",
+        "النرويج"
+      ],
+      "labels": [],
+      "explanationAr": "خط الاستواء بيعدي في إندونيسيا نفسها."
+    },
+    {
+      "id": "gg-ord-14",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب المعالم دي من الأقدم للأحدث",
+      "items": [
+        "الأهرامات",
+        "البتراء",
+        "تاج محل",
+        "برج إيفل"
+      ],
+      "labels": [
+        "2500 ق.م",
+        "القرن الأول ق.م",
+        "القرن 17",
+        "1889"
+      ],
+      "explanationAr": "بين أقدمهم وأحدثهم أكتر من أربعة آلاف سنة."
+    },
+    {
+      "id": "gg-ord-15",
+      "shape": "ordering",
+      "difficulty": 1,
+      "textAr": "رتّب المسطحات المائية دي من الأصغر للأكبر",
+      "items": [
+        "بحيرة",
+        "بحر",
+        "محيط"
+      ],
+      "labels": [],
+      "explanationAr": "المحيط أكبرهم بمراحل."
+    },
+    {
+      "id": "gg-ord-16",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب المناطق المناخية دي من الأدفى للأبرد",
+      "items": [
+        "الاستوائية",
+        "المعتدلة",
+        "الباردة",
+        "القطبية"
+      ],
+      "labels": [],
+      "explanationAr": "كل ما تبعد عن خط الاستواء، الجو يبرد."
+    },
+    {
+      "id": "gg-mcq-61",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي دولة عاصمتها «هلسنكي»؟",
+      "options": [
+        "السويد",
+        "فنلندا",
+        "النرويج",
+        "الدنمارك"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "على بحر البلطيق في شمال أوروبا."
+    },
+    {
+      "id": "gg-mcq-62",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي مضيق بيفصل الجزء الأوروبي عن الآسيوي في تركيا؟",
+      "options": [
+        "جبل طارق",
+        "البوسفور",
+        "هرمز",
+        "ملقا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بيقسم إسطنبول لنصين."
+    },
+    {
+      "id": "gg-mcq-63",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي مضيق بيعدي منه معظم بترول الخليج؟",
+      "options": [
+        "باب المندب",
+        "هرمز",
+        "ملقا",
+        "البوسفور"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بين إيران وسلطنة عمان."
+    },
+    {
+      "id": "gg-mcq-64",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "مضيق باب المندب بيقع عند مدخل أنهي بحر؟",
+      "options": [
+        "بحر العرب",
+        "البحر الأحمر",
+        "الخليج العربي",
+        "البحر المتوسط"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بين اليمن وجيبوتي."
+    },
+    {
+      "id": "gg-mcq-65",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي جبل أعلى قمة في أفريقيا؟",
+      "options": [
+        "الأطلس",
+        "كليمنجارو",
+        "جبل كينيا",
+        "جبل الشيخ"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في تنزانيا، وعليه تلج رغم إنه قريب من خط الاستواء."
+    },
+    {
+      "id": "gg-mcq-66",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي جبل أعلى قمة في أوروبا؟",
+      "options": [
+        "مونت بلانك",
+        "إلبروس",
+        "ماترهورن",
+        "أولمبوس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في جبال القوقاز بروسيا."
+    },
+    {
+      "id": "gg-mcq-67",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي سلسلة جبال بتفصل بين فرنسا وإسبانيا؟",
+      "options": [
+        "الألب",
+        "البرانس",
+        "الكاربات",
+        "الأبنين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وفي وسطها دولة أندورا الصغيرة."
+    },
+    {
+      "id": "gg-mcq-68",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي سلسلة جبال أطول سلسلة على اليابسة؟",
+      "options": [
+        "الهيمالايا",
+        "الأنديز",
+        "الروكي",
+        "الألب"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بتمتد على طول غرب أمريكا الجنوبية."
+    },
+    {
+      "id": "gg-mcq-69",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي مكان بيتحسب أكبر صحرا باردة في العالم؟",
+      "options": [
+        "جوبي",
+        "القارة القطبية الجنوبية",
+        "سيبيريا",
+        "باتاجونيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الصحرا مش لازم تكون حارة، الشرط قلة الأمطار."
+    },
+    {
+      "id": "gg-mcq-70",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي دولة فيها أكبر عدد براكين نشطة؟",
+      "options": [
+        "اليابان",
+        "إندونيسيا",
+        "إيطاليا",
+        "أيسلندا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "واقعة على حزام النار في المحيط الهادي."
+    },
+    {
+      "id": "gg-mcq-71",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "بركان «فيزوف» موجود في أنهي دولة؟",
+      "options": [
+        "اليونان",
+        "إيطاليا",
+        "تركيا",
+        "إسبانيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "جنب نابولي، ودفن مدينة بومباي قديمًا."
+    },
+    {
+      "id": "gg-mcq-72",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي دولة بيتقال عليها «أرض النار والجليد»؟",
+      "options": [
+        "النرويج",
+        "أيسلندا",
+        "جرينلاند",
+        "فنلندا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "براكين وينابيع ساخنة جنب الأنهار الجليدية."
+    },
+    {
+      "id": "gg-mcq-73",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي دولة عاصمتها «ليما»؟",
+      "options": [
+        "تشيلي",
+        "بيرو",
+        "الإكوادور",
+        "بوليفيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "على ساحل المحيط الهادي."
+    },
+    {
+      "id": "gg-mcq-74",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي دولة عاصمتها «برن»؟",
+      "options": [
+        "النمسا",
+        "سويسرا",
+        "بلجيكا",
+        "هولندا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مش زيوريخ ولا جنيف."
+    },
+    {
+      "id": "gg-mcq-75",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي دولة عاصمتها «أوتاوا»؟",
+      "options": [
+        "أمريكا",
+        "كندا",
+        "أستراليا",
+        "أيرلندا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مش تورونتو ولا مونتريال."
+    },
+    {
+      "id": "gg-mcq-76",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي دولة عاصمتها «ولينجتون»؟",
+      "options": [
+        "أستراليا",
+        "نيوزيلندا",
+        "جنوب أفريقيا",
+        "تشيلي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مش أوكلاند رغم إنها أكبر."
+    },
+    {
+      "id": "gg-mcq-77",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "جنوب أفريقيا ليها كام عاصمة؟",
+      "options": [
+        "واحدة",
+        "اتنين",
+        "تلاتة",
+        "أربعة"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "بريتوريا وكيب تاون وبلومفونتين، كل واحدة لسلطة."
+    },
+    {
+      "id": "gg-mcq-78",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي دولة اسمها مأخوذ من خط الاستواء؟",
+      "options": [
+        "بيرو",
+        "الإكوادور",
+        "تشيلي",
+        "الأرجنتين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "«إكوادور» يعني خط الاستواء بالإسباني."
+    },
+    {
+      "id": "gg-mcq-79",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "خط جرينتش بيمر في أنهي مدينة؟",
+      "options": [
+        "باريس",
+        "لندن",
+        "أمستردام",
+        "برلين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وبيتحسب منه توقيت العالم كله."
+    },
+    {
+      "id": "gg-mcq-80",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "العالم متقسم لكام منطقة زمنية؟",
+      "options": [
+        "12",
+        "18",
+        "24",
+        "30"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "ساعة لكل 15 درجة طول."
+    },
+    {
+      "id": "gg-mcq-81",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "«الأراضي المنخفضة» ده المعنى الحرفي لاسم أنهي دولة؟",
+      "options": [
+        "بلجيكا",
+        "هولندا",
+        "الدنمارك",
+        "لوكسمبورج"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "جزء كبير منها تحت مستوى سطح البحر."
+    },
+    {
+      "id": "gg-mcq-82",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي مسطح مايي مالح ومقفول ومفيش ليه منفذ على المحيط؟",
+      "options": [
+        "البحر الأسود",
+        "بحر قزوين",
+        "البحر الأحمر",
+        "بحر البلطيق"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عشان كده في خلاف هل هو بحر ولا بحيرة."
+    },
+    {
+      "id": "gg-mcq-83",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي بحيرة أكبر بحيرة عذبة بالمساحة؟",
+      "options": [
+        "بايكال",
+        "سوبيريور",
+        "فيكتوريا",
+        "هورون"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من البحيرات العظمى بين أمريكا وكندا."
+    },
+    {
+      "id": "gg-mcq-84",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«البحر الميت» بيتميز بإيه؟",
+      "options": [
+        "أعمق بحر في العالم",
+        "أوطى نقطة على اليابسة وشديد الملوحة",
+        "أكبر بحيرة عذبة",
+        "أبرد مسطح مايي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الملوحة العالية بتخلي الواحد يطفو من غير مجهود."
+    },
+    {
+      "id": "gg-mcq-85",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي نهر أطول نهر في أوروبا؟",
+      "options": [
+        "الدانوب",
+        "الفولجا",
+        "الراين",
+        "اللوار"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في روسيا، وبيصب في بحر قزوين."
+    },
+    {
+      "id": "gg-bool-49",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "جبال البرانس بتفصل بين فرنسا وإسبانيا",
+      "isTrue": true,
+      "explanationAr": "وفي وسطها دولة أندورا."
+    },
+    {
+      "id": "gg-bool-50",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "مضيق هرمز بيعدي منه معظم بترول الخليج",
+      "isTrue": true,
+      "explanationAr": "عشان كده أهميته الاستراتيجية كبيرة."
+    },
+    {
+      "id": "gg-bool-51",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "جبل كليمنجارو أعلى قمة في أفريقيا",
+      "isTrue": true,
+      "explanationAr": "في تنزانيا."
+    },
+    {
+      "id": "gg-bool-52",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "الهيمالايا هي أطول سلسلة جبال على اليابسة",
+      "isTrue": false,
+      "explanationAr": "الأنديز أطول، والهيمالايا أعلى."
+    },
+    {
+      "id": "gg-bool-53",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "عاصمة سويسرا هي زيوريخ",
+      "isTrue": false,
+      "explanationAr": "العاصمة برن."
+    },
+    {
+      "id": "gg-bool-54",
+      "shape": "boolean",
+      "difficulty": 4,
+      "textAr": "عاصمة نيوزيلندا هي أوكلاند",
+      "isTrue": false,
+      "explanationAr": "العاصمة ولينجتون."
+    },
+    {
+      "id": "gg-bool-55",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "بحر قزوين مفيش ليه منفذ على أي محيط",
+      "isTrue": true,
+      "explanationAr": "مقفول من كل النواحي."
+    },
+    {
+      "id": "gg-bool-56",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "بركان فيزوف موجود في إيطاليا",
+      "isTrue": true,
+      "explanationAr": "جنب نابولي."
+    },
+    {
+      "id": "gg-bool-57",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "أيسلندا بيتقال عليها «أرض النار والجليد»",
+      "isTrue": true,
+      "explanationAr": "براكين وأنهار جليدية في نفس الجزيرة."
+    },
+    {
+      "id": "gg-bool-58",
+      "shape": "boolean",
+      "difficulty": 5,
+      "textAr": "نهر الفولجا هو أطول نهر في أوروبا",
+      "isTrue": true,
+      "explanationAr": "وبيصب في بحر قزوين."
+    },
+    {
+      "id": "gg-num-28",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "جنوب أفريقيا ليها كام عاصمة؟",
+      "correctValue": 3,
+      "tolerance": 0,
+      "unitAr": "عاصمة",
+      "explanationAr": "واحدة تنفيذية وواحدة تشريعية وواحدة قضائية."
+    },
+    {
+      "id": "gg-num-29",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "العالم متقسم لكام منطقة زمنية؟",
+      "correctValue": 24,
+      "tolerance": 0,
+      "unitAr": "منطقة",
+      "explanationAr": "ساعة لكل 15 درجة طول."
+    },
+    {
+      "id": "gg-num-30",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "ارتفاع قمة كليمنجارو كام متر تقريبًا؟",
+      "correctValue": 5895,
+      "tolerance": 250,
+      "unitAr": "متر",
+      "explanationAr": "أعلى نقطة في أفريقيا."
+    },
+    {
+      "id": "gg-num-31",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "مضيق جبل طارق عرضه كام كيلومتر في أضيق نقطة؟",
+      "correctValue": 14,
+      "tolerance": 3,
+      "unitAr": "كم",
+      "explanationAr": "مسافة قصيرة جدًا بين قارتين."
+    },
+    {
+      "id": "gg-num-32",
+      "shape": "numeric",
+      "difficulty": 5,
+      "textAr": "ارتفاع قمة إلبروس، أعلى قمة في أوروبا، كام متر تقريبًا؟",
+      "correctValue": 5642,
+      "tolerance": 250,
+      "unitAr": "متر",
+      "explanationAr": "في جبال القوقاز."
+    },
+    {
+      "id": "gg-open-23",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "أنهي مضيق بيفصل بين أوروبا وأفريقيا؟",
+      "answerAr": "مضيق جبل طارق",
+      "aliases": [
+        "جبل طارق",
+        "مضيق جبل طارق"
+      ],
+      "explanationAr": "عرضه 14 كم في أضيق نقطة."
+    },
+    {
+      "id": "gg-open-24",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "أعلى قمة في أفريقيا اسمها إيه؟",
+      "answerAr": "كليمنجارو",
+      "aliases": [
+        "كلمنجارو",
+        "جبل كليمنجارو"
+      ],
+      "explanationAr": "في تنزانيا."
+    },
+    {
+      "id": "gg-open-25",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "أنهي دولة عاصمتها هلسنكي؟",
+      "answerAr": "فنلندا",
+      "aliases": [
+        "فنلاندا",
+        "فينلندا"
+      ],
+      "explanationAr": "في شمال أوروبا."
+    },
+    {
+      "id": "gg-open-26",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "عاصمة أستراليا إيه؟",
+      "answerAr": "كانبيرا",
+      "aliases": [
+        "كانبرا",
+        "كانبيره"
+      ],
+      "explanationAr": "مش سيدني ولا ملبورن."
+    },
+    {
+      "id": "gg-open-27",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "أنهي قناة بتوصل المحيط الأطلنطي بالمحيط الهادي؟",
+      "answerAr": "قناة بنما",
+      "aliases": [
+        "بنما",
+        "قناه بنما"
+      ],
+      "explanationAr": "في أمريكا الوسطى."
+    },
+    {
+      "id": "gg-open-28",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم البركان اللي دفن مدينة بومباي القديمة؟",
+      "answerAr": "فيزوف",
+      "aliases": [
+        "فيزوفيوس",
+        "بركان فيزوف"
+      ],
+      "explanationAr": "في إيطاليا سنة 79 ميلادية."
+    },
+    {
+      "id": "gg-open-29",
+      "shape": "open_answer",
+      "difficulty": 5,
+      "textAr": "أنهي سلسلة جبال بتفصل بين فرنسا وإسبانيا؟",
+      "answerAr": "البرانس",
+      "aliases": [
+        "جبال البرانس",
+        "البرينيه",
+        "البيرينيه"
+      ],
+      "explanationAr": "وفي وسطها دولة أندورا."
+    },
+    {
+      "id": "gg-prog-17",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا جبل في شرق أفريقيا",
+        "موجود في تنزانيا",
+        "أعلى قمة في القارة وعليّا تلج رغم قربي من خط الاستواء"
+      ],
+      "answerAr": "كليمنجارو",
+      "aliases": [
+        "كلمنجارو",
+        "جبل كليمنجارو"
+      ],
+      "explanationAr": "ارتفاعه حوالي 5895 متر."
+    },
+    {
+      "id": "gg-prog-18",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا جزيرة ضخمة في أقصى الشمال",
+        "تابعة للدنمارك",
+        "أكبر جزيرة في العالم ومعظمي مغطى بالجليد"
+      ],
+      "answerAr": "جرينلاند",
+      "aliases": [
+        "جرينلند",
+        "الأرض الخضراء"
+      ],
+      "explanationAr": "اسمها معناه «الأرض الخضراء» رغم الجليد."
+    },
+    {
+      "id": "gg-prog-19",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا ممر مايي في أمريكا الوسطى",
+        "بستعمل أهوسة بترفع السفن وتنزلها",
+        "بوصّل المحيط الأطلنطي بالمحيط الهادي"
+      ],
+      "answerAr": "قناة بنما",
+      "aliases": [
+        "بنما",
+        "قناه بنما"
+      ],
+      "explanationAr": "افتتحت سنة 1914."
+    },
+    {
+      "id": "gg-prog-20",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا دولة جزيرة في شمال أوروبا",
+        "عندي براكين وينابيع ساخنة وأنهار جليدية",
+        "بيتقال عليّا أرض النار والجليد"
+      ],
+      "answerAr": "أيسلندا",
+      "aliases": [
+        "ايسلندا",
+        "آيسلندا"
+      ],
+      "explanationAr": "بتعتمد على الطاقة الحرارية الأرضية."
+    },
+    {
+      "id": "gg-prog-21",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مسطح مايي بين الأردن وفلسطين",
+        "ملوحتي عالية جدًا فمفيش كائنات عايشة فيّا",
+        "أوطى نقطة على سطح اليابسة"
+      ],
+      "answerAr": "البحر الميت",
+      "aliases": [
+        "البحر الميّت",
+        "بحر الميت"
+      ],
+      "explanationAr": "الملوحة بتخلي الواحد يطفو من غير مجهود."
+    },
+    {
+      "id": "gg-prog-22",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أنا ممر مايي ضيق",
+        "واقع بين إيران وسلطنة عمان",
+        "بيعدي مني معظم بترول الخليج للعالم"
+      ],
+      "answerAr": "مضيق هرمز",
+      "aliases": [
+        "هرمز",
+        "مضيق هرمذ"
+      ],
+      "explanationAr": "من أهم الممرات المايية في العالم."
+    },
+    {
+      "id": "gg-prog-23",
+      "shape": "progressive",
+      "difficulty": 5,
+      "hints": [
+        "أنا بحيرة في سيبيريا",
+        "بتجمد من فوق في الشتا",
+        "أعمق بحيرة في العالم وفيّا خُمس الميه العذبة السطحية"
+      ],
+      "answerAr": "بايكال",
+      "aliases": [
+        "بحيرة بايكال",
+        "بيكال"
+      ],
+      "explanationAr": "عمقها يزيد عن 1600 متر."
+    },
+    {
+      "id": "gg-prog-24",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مدينة في أستراليا",
+        "اتبنيت مخصوص عشان أبقى العاصمة",
+        "الناس بتفتكر إن سيدني هي العاصمة بدالي"
+      ],
+      "answerAr": "كانبيرا",
+      "aliases": [
+        "كانبرا",
+        "كانبيره"
+      ],
+      "explanationAr": "تسوية بين سيدني وملبورن."
+    },
+    {
+      "id": "gg-mcq-86",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي دولة عاصمتها «بانكوك»؟",
+      "options": [
+        "فيتنام",
+        "تايلاند",
+        "ماليزيا",
+        "ميانمار"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من أكتر المدن زيارة في العالم."
+    },
+    {
+      "id": "gg-mcq-87",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي دولة عاصمتها «أستانا»؟",
+      "options": [
+        "أوزبكستان",
+        "كازاخستان",
+        "طاجيكستان",
+        "قيرغيزستان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أكبر دولة حبيسة في العالم."
+    },
+    {
+      "id": "gg-mcq-88",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "عملة الهند اسمها إيه؟",
+      "options": [
+        "التاكا",
+        "الروبية",
+        "الروبل",
+        "الدينار"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ومستعملة في باكستان وسريلانكا كمان."
+    },
+    {
+      "id": "gg-mcq-89",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي دولة عاصمتها «أوسلو»؟",
+      "options": [
+        "السويد",
+        "النرويج",
+        "الدنمارك",
+        "فنلندا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مشهورة بالمضايق البحرية."
+    },
+    {
+      "id": "gg-mcq-90",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "عملة روسيا اسمها إيه؟",
+      "options": [
+        "الزلوتي",
+        "الروبل",
+        "الكرونة",
+        "الفورنت"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من أقدم العملات في أوروبا."
+    },
+    {
+      "id": "gg-mcq-91",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "عملة الصين اسمها إيه؟",
+      "options": [
+        "الين",
+        "اليوان",
+        "الوون",
+        "الرينجيت"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "واسمها الرسمي «الرنمينبي»."
+    },
+    {
+      "id": "gg-mcq-92",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي دولة عاصمتها «كوالالمبور»؟",
+      "options": [
+        "إندونيسيا",
+        "ماليزيا",
+        "تايلاند",
+        "سنغافورة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وفيها البرجين التوأم الشهيرين."
+    },
+    {
+      "id": "gg-mcq-93",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي دولة عاصمتها «هانوي»؟",
+      "options": [
+        "كمبوديا",
+        "فيتنام",
+        "لاوس",
+        "ميانمار"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في جنوب شرق آسيا."
+    },
+    {
+      "id": "gg-mcq-94",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي دولة عاصمتها «سيول»؟",
+      "options": [
+        "كوريا الشمالية",
+        "كوريا الجنوبية",
+        "اليابان",
+        "منغوليا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وعاصمة الشمالية بيونج يانج."
+    },
+    {
+      "id": "gg-mcq-95",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي دولة عاصمتها «مانيلا»؟",
+      "options": [
+        "إندونيسيا",
+        "الفلبين",
+        "فيتنام",
+        "تايوان"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "دولة مكوّنة من آلاف الجزر."
+    },
+    {
+      "id": "gg-mcq-96",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي دولة عاصمتها «بوينس آيرس»؟",
+      "options": [
+        "البرازيل",
+        "الأرجنتين",
+        "تشيلي",
+        "أوروجواي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في جنوب أمريكا الجنوبية."
+    },
+    {
+      "id": "gg-mcq-97",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي دولة عاصمتها «سانتياجو»؟",
+      "options": [
+        "بيرو",
+        "تشيلي",
+        "بوليفيا",
+        "باراجواي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "دولة طويلة وضيقة على المحيط الهادي."
+    },
+    {
+      "id": "gg-mcq-98",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي دولة عاصمتها «بوجوتا»؟",
+      "options": [
+        "فنزويلا",
+        "كولومبيا",
+        "الإكوادور",
+        "بنما"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في شمال أمريكا الجنوبية."
+    },
+    {
+      "id": "gg-mcq-99",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي دولة عاصمتها «نيروبي»؟",
+      "options": [
+        "تنزانيا",
+        "كينيا",
+        "أوغندا",
+        "إثيوبيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في شرق أفريقيا."
+    },
+    {
+      "id": "gg-mcq-100",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي دولة عاصمتها «أديس أبابا»؟",
+      "options": [
+        "إريتريا",
+        "إثيوبيا",
+        "الصومال",
+        "جيبوتي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ومقر الاتحاد الأفريقي."
+    },
+    {
+      "id": "gg-mcq-101",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي دولة عاصمتها «داكار»؟",
+      "options": [
+        "مالي",
+        "السنغال",
+        "غينيا",
+        "موريتانيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في أقصى غرب أفريقيا."
+    },
+    {
+      "id": "gg-mcq-102",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي مدينة بيتقال عليها «المدينة اللي مبتنامش»؟",
+      "options": [
+        "لندن",
+        "نيويورك",
+        "طوكيو",
+        "دبي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ولقبها التاني «التفاحة الكبيرة»."
+    },
+    {
+      "id": "gg-mcq-103",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي مدينة بيتقال عليها «مدينة النور»؟",
+      "options": [
+        "روما",
+        "باريس",
+        "فيينا",
+        "أمستردام"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من أوائل المدن اللي اتنوّرت بالكهربا."
+    },
+    {
+      "id": "gg-mcq-104",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي مدينة مبنية على قنوات وبيتنقل فيها بالقوارب؟",
+      "options": [
+        "أمستردام",
+        "البندقية",
+        "ستوكهولم",
+        "بروج"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في شمال إيطاليا، ومبنية على أكتر من مية جزيرة."
+    },
+    {
+      "id": "gg-mcq-105",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي منطقة حضرية أكبر تجمع سكاني في العالم؟",
+      "options": [
+        "دلهي",
+        "طوكيو",
+        "شنغهاي",
+        "القاهرة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أكتر من 35 مليون نسمة."
+    },
+    {
+      "id": "gg-mcq-106",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي بحر بيفصل بين إيطاليا وشبه جزيرة البلقان؟",
+      "options": [
+        "البحر الأسود",
+        "البحر الأدرياتيكي",
+        "بحر إيجه",
+        "بحر البلطيق"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "والبندقية على ساحله."
+    },
+    {
+      "id": "gg-mcq-107",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي محيط أصغر محيط في العالم؟",
+      "options": [
+        "الهندي",
+        "المتجمد الشمالي",
+        "الأطلنطي",
+        "الجنوبي"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "ومعظمه مغطى بالجليد."
+    },
+    {
+      "id": "gg-mcq-108",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي قارة أصغر قارة في العالم بالمساحة؟",
+      "options": [
+        "أوروبا",
+        "أستراليا",
+        "أمريكا الجنوبية",
+        "القطبية الجنوبية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وبتتحسب قارة وجزيرة كبيرة في نفس الوقت."
+    },
+    {
+      "id": "gg-mcq-109",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي قارة فيها أكبر عدد دول؟",
+      "options": [
+        "آسيا",
+        "أفريقيا",
+        "أوروبا",
+        "أمريكا الجنوبية"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أكتر من 50 دولة."
+    },
+    {
+      "id": "gg-mcq-110",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي دولة أكبر دولة في أفريقيا بالمساحة؟",
+      "options": [
+        "السودان",
+        "الجزائر",
+        "ليبيا",
+        "الكونغو"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بقت الأكبر بعد انفصال جنوب السودان."
+    },
+    {
+      "id": "gg-mcq-111",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي دولة عندها أكبر عدد سكان في أفريقيا؟",
+      "options": [
+        "مصر",
+        "نيجيريا",
+        "إثيوبيا",
+        "جنوب أفريقيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "أكتر من 200 مليون نسمة."
+    },
+    {
+      "id": "gg-mcq-112",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي دولة صغيرة بين فرنسا وإسبانيا في جبال البرانس؟",
+      "options": [
+        "موناكو",
+        "أندورا",
+        "سان مارينو",
+        "ليختنشتاين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "دولة جبلية صغيرة جدًا."
+    },
+    {
+      "id": "gg-mcq-113",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي دولة عاصمتها «كاتماندو»؟",
+      "options": [
+        "بوتان",
+        "نيبال",
+        "بنجلاديش",
+        "سريلانكا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في جبال الهيمالايا."
+    },
+    {
+      "id": "gg-mcq-114",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "أنهي دولة أكبر دولة حبيسة مفيش ليها سواحل؟",
+      "options": [
+        "منغوليا",
+        "كازاخستان",
+        "تشاد",
+        "بوليفيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مساحتها ضخمة ومفيش ليها منفذ على محيط."
+    },
+    {
+      "id": "gg-mcq-115",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي بلد بيتقال عليه «بلد الشمس المشرقة»؟",
+      "options": [
+        "الصين",
+        "اليابان",
+        "كوريا",
+        "تايلاند"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "وعلمها فيه دايرة حمرا ترمز للشمس."
+    },
+    {
+      "id": "gg-odd-1",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة دول دول عواصمهم في شمال أفريقيا، وواحدة بس مش كده:",
+      "items": [
+        "القاهرة (مصر)",
+        "الجزائر (الجزائر)",
+        "تونس (تونس)",
+        "نيروبي (كينيا)"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "نيروبي عاصمة كينيا في شرق أفريقيا، مش شمالها."
+    },
+    {
+      "id": "gg-odd-2",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة دول دول مش ليها ساحل بحري (محاطة باليابسة)، وواحدة بس ليها ساحل:",
+      "items": [
+        "سويسرا",
+        "النمسا",
+        "منغوليا",
+        "إسبانيا"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "إسبانيا ليها سواحل على المحيط الأطلسي والبحر المتوسط، أما التلاتة التانيين محاطين باليابسة تمامًا."
+    },
+    {
+      "id": "gg-odd-3",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة دول ممتدة على قارتين في نفس الوقت، وواحدة بس على قارة واحدة:",
+      "items": [
+        "مصر",
+        "تركيا",
+        "روسيا",
+        "اليابان"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "اليابان بالكامل في قارة آسيا، أما التلاتة التانيين ليهم أجزاء في قارتين (مصر: أفريقيا وآسيا عبر سيناء، تركيا وروسيا: أوروبا وآسيا)."
+    },
+    {
+      "id": "gg-odd-4",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة دول جزر بالكامل، وواحدة بس محاطة باليابسة:",
+      "items": [
+        "اليابان",
+        "إندونيسيا",
+        "سريلانكا",
+        "منغوليا"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "منغوليا دولة محاطة باليابسة تمامًا بين روسيا والصين، أما التلاتة التانيين دول جزرية."
+    },
+    {
+      "id": "gg-odd-5",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة دول غيّرت عاصمتها الرسمية في القرن العشرين، وواحدة بس فضلت عاصمتها زي ما هي:",
+      "items": [
+        "البرازيل",
+        "نيجيريا",
+        "كازاخستان",
+        "فرنسا"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "البرازيل نقلت عاصمتها من ريو دي جانيرو لبرازيليا (1960)، نيجيريا من لاجوس لأبوجا (1991)، وكازاخستان من ألماتي لأستانا (1997)، أما فرنسا فضلت باريس عاصمة من غير تغيير."
+    },
+    {
+      "id": "gg-odd-6",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة سلاسل جبلية، وواحدة بس مش سلسلة جبال:",
+      "items": [
+        "جبال الألب",
+        "جبال الأنديز",
+        "جبال الهيمالايا",
+        "الأخدود الأفريقي العظيم"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الأخدود الأفريقي العظيم عبارة عن صدع أرضي طويل (وادي منخفض)، مش سلسلة جبال."
+    },
+    {
+      "id": "gg-odd-7",
+      "shape": "odd_one_out",
+      "difficulty": 4,
+      "textAr": "التلاتة مسطحات مائية «بحر» بالاسم لكنها محاطة باليابسة تمامًا زي البحيرة، وواحدة بس متصلة فعليًا بمحيط:",
+      "items": [
+        "البحر الميت",
+        "بحر قزوين",
+        "بحر آرال",
+        "البحر الأحمر"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "البحر الأحمر متصل بالمحيط الهندي عبر مضيق باب المندب، أما التلاتة التانيين مغلقين تمامًا من غير أي منفذ بحري."
+    },
+    {
+      "id": "gg-odd-8",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة دول ليها ساحل على البحر الأحمر، وواحدة بس مالهاش:",
+      "items": [
+        "مصر",
+        "السعودية",
+        "اليمن",
+        "المغرب"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "المغرب سواحله على المحيط الأطلسي والبحر المتوسط بس، مالوش ساحل على البحر الأحمر."
+    },
+    {
+      "id": "gg-odd-9",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة دول ليها ساحل على البحر المتوسط في شمال أفريقيا، وواحدة بس مالهاش:",
+      "items": [
+        "مصر",
+        "ليبيا",
+        "تونس",
+        "السودان"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "السودان ساحله على البحر الأحمر بس، مالوش ساحل على البحر المتوسط."
+    },
+    {
+      "id": "gg-odd-10",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة دول في القرن الأفريقي، وواحدة بس في غرب أفريقيا:",
+      "items": [
+        "الصومال",
+        "إثيوبيا",
+        "جيبوتي",
+        "السنغال"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "السنغال دولة في غرب أفريقيا على المحيط الأطلسي، أما التلاتة التانيين في منطقة القرن الأفريقي."
+    },
+    {
+      "id": "gg-odd-11",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة دول خليجية ليها ساحل على الخليج العربي، وواحدة بس مالهاش:",
+      "items": [
+        "الكويت",
+        "قطر",
+        "البحرين",
+        "الأردن"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الأردن دولة عربية بس مالهاش أي ساحل على الخليج العربي."
+    },
+    {
+      "id": "gg-odd-12",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة أنهار في قارة آسيا، وواحد بس في أوروبا:",
+      "items": [
+        "نهر اليانجتسي",
+        "نهر الجانج",
+        "نهر الميكونج",
+        "نهر الدانوب"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "نهر الدانوب من أطول أنهار أوروبا، أما التلاتة التانيين في قارة آسيا."
+    },
+    {
+      "id": "gg-odd-13",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة دول خط الاستواء بيعدّي فيها، وواحدة بس بعيدة عن خط الاستواء:",
+      "items": [
+        "كينيا",
+        "الإكوادور",
+        "إندونيسيا",
+        "المغرب"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "المغرب في أقصى شمال أفريقيا بعيد عن خط الاستواء، أما التلاتة التانيين خط الاستواء بيعدّي منهم فعليًا."
+    },
+    {
+      "id": "gg-odd-14",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة عواصم موجودة على جزيرة، وواحدة بس على اليابسة الرئيسية:",
+      "items": [
+        "مانيلا (الفلبين)",
+        "جاكرتا (إندونيسيا)",
+        "كولومبو (سريلانكا)",
+        "بانكوك (تايلاند)"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "بانكوك على اليابسة الرئيسية لتايلاند، أما التلاتة التانيين عواصم موجودة على جزر."
+    },
+    {
+      "id": "gg-odd-15",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة مضايق بحرية طبيعية، وواحد بس ممر مائي صناعي محفور:",
+      "items": [
+        "مضيق جبل طارق",
+        "مضيق هرمز",
+        "مضيق ملقا",
+        "قناة السويس"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "قناة السويس ممر مائي صناعي حفره الإنسان، أما التلاتة التانيين مضايق بحرية طبيعية."
+    },
+    {
+      "id": "gg-odd-16",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة شبه جزر، وواحدة بس جزيرة كاملة:",
+      "items": [
+        "شبه جزيرة سيناء",
+        "شبه الجزيرة العربية",
+        "شبه جزيرة إيبيريا",
+        "جزيرة صقلية"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "صقلية جزيرة محاطة بالمية من كل الاتجاهات، أما التلاتة التانيين أشباه جزر متصلة بيابسة أكبر."
+    },
+    {
+      "id": "gg-odd-17",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة دول عاصمتها مش أكبر مدنها من ناحية عدد السكان، وواحدة بس عاصمتها هي أكبر مدنها:",
+      "items": [
+        "كندا",
+        "أستراليا",
+        "تركيا",
+        "مصر"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "القاهرة هي فعليًا أكبر مدينة في مصر، أما أوتاوا وكانبرا وأنقرة كلهم عواصم أصغر من مدن تانية في بلادهم (تورنتو، سيدني، إسطنبول)."
+    },
+    {
+      "id": "gg-odd-18",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة شلالات مشهورة، وواحدة بس بحيرة:",
+      "items": [
+        "شلالات نياجرا",
+        "شلالات فيكتوريا",
+        "شلالات إجوازو",
+        "بحيرة فيكتوريا"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "بحيرة فيكتوريا بحيرة مش شلال، حتى لو الاسم قريب من شلالات فيكتوريا."
+    },
+    {
+      "id": "gg-odd-19",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة دول أرخبيل (مجموعة جزر)، وواحدة بس دولة محاطة باليابسة:",
+      "items": [
+        "إندونيسيا",
+        "الفلبين",
+        "اليابان",
+        "سويسرا"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "سويسرا دولة جبلية محاطة باليابسة تمامًا، أما التلاتة التانيين دول مكونة من مجموعات جزر."
+    },
+    {
+      "id": "gg-odd-20",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة دول فيها أكتر من منطقة توقيت زمني رسمية، وواحدة بس منطقة زمنية واحدة بس:",
+      "items": [
+        "الولايات المتحدة",
+        "روسيا",
+        "أستراليا",
+        "مصر"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "مصر بالكامل على منطقة توقيت زمني واحدة رسمية، أما التلاتة التانيين بلاد شاسعة فيها أكتر من منطقة توقيت."
+    },
+    {
+      "id": "gg-odd-21",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة صحاري حقيقية، وواحدة بس سهل عشبي مش صحراء:",
+      "items": [
+        "الصحراء الكبرى",
+        "صحراء كالاهاري",
+        "صحراء جوبي",
+        "السافانا"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "السافانا سهل عشبي استوائي، مش صحراء رملية أو صخرية."
+    },
+    {
+      "id": "gg-odd-22",
+      "shape": "odd_one_out",
+      "difficulty": 3,
+      "textAr": "التلاتة دول ليها حدود برية مباشرة مع السعودية، وواحدة بس مالهاش:",
+      "items": [
+        "الأردن",
+        "العراق",
+        "الإمارات",
+        "المغرب"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "المغرب في أقصى شمال غرب أفريقيا وبعيد تمامًا عن السعودية، مالوش أي حدود برية معاها."
+    },
+    {
+      "id": "gg-odd-23",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة دول لغتها الرسمية العربية، وواحدة بس لغتها الرسمية مختلفة:",
+      "items": [
+        "مصر",
+        "السعودية",
+        "الأردن",
+        "تركيا"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "اللغة الرسمية في تركيا هي التركية، أما التلاتة التانيين لغتهم الرسمية العربية."
+    },
+    {
+      "id": "gg-odd-24",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة دول أكبر دول العالم من ناحية المساحة، وواحدة بس من أصغر دول العالم:",
+      "items": [
+        "روسيا",
+        "كندا",
+        "الصين",
+        "موناكو"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "موناكو من أصغر دول العالم مساحةً (حوالي 2 كم²)، أما التلاتة التانيين من أكبر عشر دول في العالم."
+    },
+    {
+      "id": "gg-emj-1",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🐫🔺🌊",
+      "answerAr": "مصر",
+      "aliases": [
+        "جمهورية مصر العربية"
+      ]
+    },
+    {
+      "id": "gg-emj-2",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🗾🌸⛩️",
+      "answerAr": "اليابان",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-3",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🦙⛰️🌄",
+      "answerAr": "بيرو",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-4",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🐉🏯🎍",
+      "answerAr": "الصين",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-5",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🐘🕌🌶️",
+      "answerAr": "الهند",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-6",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🦘🐨🏄",
+      "answerAr": "أستراليا",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-7",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🏺🌊🕌",
+      "answerAr": "تونس",
+      "aliases": [
+        "الجمهورية التونسية"
+      ]
+    },
+    {
+      "id": "gg-emj-8",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🕋🐪🛢️",
+      "answerAr": "السعودية",
+      "aliases": [
+        "المملكة العربية السعودية"
+      ]
+    },
+    {
+      "id": "gg-emj-9",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "💃🍷🐂",
+      "answerAr": "إسبانيا",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-10",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🍕🍝🏛️",
+      "answerAr": "إيطاليا",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-11",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🏛️🫒🌊",
+      "answerAr": "اليونان",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-12",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "❄️🐻🏰",
+      "answerAr": "روسيا",
+      "aliases": [
+        "الاتحاد الروسي"
+      ]
+    },
+    {
+      "id": "gg-emj-13",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🍁🦫❄️",
+      "answerAr": "كندا",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-14",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🌵🌮🎉",
+      "answerAr": "المكسيك",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-15",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🫖🕌🌉",
+      "answerAr": "تركيا",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-16",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🏔️🧀⌚",
+      "answerAr": "سويسرا",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-17",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🌷🌬️👞",
+      "answerAr": "هولندا",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-18",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🌌🐟⛰️",
+      "answerAr": "النرويج",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-19",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🌊🐊🛶",
+      "answerAr": "نهر النيل",
+      "aliases": [
+        "النيل"
+      ]
+    },
+    {
+      "id": "gg-emj-20",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🏔️❄️🧗",
+      "answerAr": "جبل إيفرست",
+      "aliases": [
+        "إيفرست"
+      ]
+    },
+    {
+      "id": "gg-emj-21",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🏜️🐫☀️",
+      "answerAr": "الصحراء الكبرى",
+      "aliases": [
+        "صحراء الصحراء الكبرى"
+      ]
+    },
+    {
+      "id": "gg-emj-22",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🌳🦜🐍",
+      "answerAr": "غابات الأمازون",
+      "aliases": [
+        "الأمازون"
+      ]
+    },
+    {
+      "id": "gg-emj-23",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🌊🐋🗺️",
+      "answerAr": "المحيط الهادئ",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-24",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "❄️🐻‍❄️🧊",
+      "answerAr": "القطب الشمالي",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-25",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🐧❄️🧊",
+      "answerAr": "القطب الجنوبي",
+      "aliases": [
+        "أنتاركتيكا"
+      ]
+    },
+    {
+      "id": "gg-emj-26",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🧂🌊🛌",
+      "answerAr": "البحر الميت",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-27",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🏝️🐠🌊",
+      "answerAr": "جزر المالديف",
+      "aliases": [
+        "المالديف"
+      ]
+    },
+    {
+      "id": "gg-emj-28",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🌍➖☀️",
+      "answerAr": "خط الاستواء",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-29",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "💦🌈🦛",
+      "answerAr": "شلالات فيكتوريا",
+      "aliases": []
+    },
+    {
+      "id": "gg-emj-30",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🌋🏝️🦎",
+      "answerAr": "إندونيسيا",
+      "aliases": []
+    },
+    {
+      "id": "gg-ord-17",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب العواصم دي من الأكبر للأصغر في عدد السكان (بالمنطقة الحضرية)",
+      "items": [
+        "طوكيو",
+        "القاهرة",
+        "لندن",
+        "أثينا"
+      ]
+    },
+    {
+      "id": "gg-ord-18",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب الدول دي من الأكبر للأصغر في عدد السكان",
+      "items": [
+        "الهند",
+        "أمريكا",
+        "إندونيسيا",
+        "البرازيل"
+      ]
+    },
+    {
+      "id": "gg-ord-19",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الصحاري دي من الأكبر للأصغر في المساحة",
+      "items": [
+        "الصحراء الكبرى",
+        "صحراء أستراليا الكبرى",
+        "صحراء الجزيرة العربية",
+        "صحراء كالاهاري"
+      ]
+    },
+    {
+      "id": "gg-ord-20",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الجزر دي من الأكبر للأصغر في عدد السكان",
+      "items": [
+        "جاوة",
+        "هونشو",
+        "بريطانيا العظمى",
+        "سريلانكا"
+      ]
+    },
+    {
+      "id": "gg-ord-21",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أعلى قمم القارات دي من الأعلى للأقل ارتفاعًا",
+      "items": [
+        "إيفرست (آسيا)",
+        "أكونكاجوا (أمريكا الجنوبية)",
+        "كليمنجارو (أفريقيا)",
+        "مونت بلان (أوروبا)"
+      ]
+    },
+    {
+      "id": "gg-ord-22",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أطول أنهار العالم دي من الأطول للأقصر",
+      "items": [
+        "النيل",
+        "الأمازون",
+        "اليانجتسي",
+        "المسيسيبي"
+      ]
+    },
+    {
+      "id": "gg-ord-23",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أصغر دول العالم دي من الأصغر للأكبر في المساحة",
+      "items": [
+        "الفاتيكان",
+        "موناكو",
+        "ناورو",
+        "توفالو"
+      ]
+    },
+    {
+      "id": "gg-ord-24",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب القارات دي حسب الكثافة السكانية من الأعلى للأقل",
+      "items": [
+        "آسيا",
+        "أوروبا",
+        "أفريقيا",
+        "أوقيانوسيا"
+      ]
+    },
+    {
+      "id": "gg-ord-25",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب المدن دي حسب بعدها عن القاهرة من الأقرب للأبعد",
+      "items": [
+        "بيروت",
+        "الرياض",
+        "لندن",
+        "طوكيو"
+      ]
+    },
+    {
+      "id": "gg-ord-26",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب أعلى شلالات العالم دي من الأعلى للأقل ارتفاعًا",
+      "items": [
+        "شلالات أنجل",
+        "شلالات توغيلا",
+        "شلالات نياجرا"
+      ]
+    },
+    {
+      "id": "gg-ord-27",
+      "shape": "ordering",
+      "difficulty": 4,
+      "textAr": "رتّب أعمق خنادق المحيطات دي من الأعمق للأقل عمقًا",
+      "items": [
+        "خندق ماريانا",
+        "خندق تونجا",
+        "خندق كيرمادك"
+      ]
+    },
+    {
+      "id": "gg-ord-28",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب البحيرات دي من الأكبر للأصغر في المساحة",
+      "items": [
+        "بحر قزوين",
+        "بحيرة سوبيريور",
+        "بحيرة فيكتوريا",
+        "بحيرة هورون"
+      ]
+    },
+    {
+      "id": "gg-ord-29",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب المدن العربية دي حسب بعدها عن مكة المكرمة من الأقرب للأبعد",
+      "items": [
+        "الرياض",
+        "بغداد",
+        "تونس",
+        "الرباط"
+      ]
+    },
+    {
+      "id": "gg-ord-30",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب سلاسل الجبال دي من الأطول للأقصر",
+      "items": [
+        "الأنديز",
+        "جبال الروكي",
+        "جبال الأورال",
+        "جبال الألب"
+      ]
+    },
+    {
+      "id": "gg-ord-31",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الدول دي من الأطول ساحلًا للأقصر ساحلًا",
+      "items": [
+        "كندا",
+        "إندونيسيا",
+        "روسيا",
+        "الفلبين"
+      ]
+    },
+    {
+      "id": "gg-ord-32",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب الممرات المائية الصناعية دي من الأطول للأقصر",
+      "items": [
+        "قناة السويس",
+        "قناة بنما",
+        "قناة كورنث"
+      ]
+    },
+    {
+      "id": "gg-bool-59",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "عمّان هي عاصمة الأردن",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-60",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "بغداد هي عاصمة العراق",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-61",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "بيروت هي عاصمة لبنان",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-62",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الدار البيضاء هي عاصمة المغرب",
+      "isTrue": false,
+      "explanationAr": "الرباط هي العاصمة، والدار البيضاء أكبر مدينة مغربية بس."
+    },
+    {
+      "id": "gg-bool-63",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "جوهانسبرج هي عاصمة جنوب أفريقيا",
+      "isTrue": false,
+      "explanationAr": "جنوب أفريقيا ليها 3 عواصم (بريتوريا، كيب تاون، بلومفونتين)، وجوهانسبرج أكبر مدنها بس مش عاصمة رسمية."
+    },
+    {
+      "id": "gg-bool-64",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "نيروبي هي عاصمة كينيا",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-65",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أبوجا هي عاصمة نيجيريا",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-66",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "لاجوس هي عاصمة نيجيريا الرسمية",
+      "isTrue": false,
+      "explanationAr": "أبوجا هي العاصمة الرسمية منذ 1991، ولاجوس أكبر مدن نيجيريا بس."
+    },
+    {
+      "id": "gg-bool-67",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "برازيليا هي عاصمة البرازيل",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-68",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أوتاوا هي عاصمة كندا",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-69",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "كانبرا هي عاصمة أستراليا",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-70",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "مدريد هي عاصمة إسبانيا",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-71",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "لشبونة هي عاصمة البرتغال",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-72",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "برن هي عاصمة سويسرا",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-73",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "فيينا هي عاصمة النمسا",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-74",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أوسلو هي عاصمة النرويج",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-75",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "ستوكهولم هي عاصمة السويد",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-76",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "هلسنكي هي عاصمة فنلندا",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-77",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "كوبنهاجن هي عاصمة الدنمارك",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-78",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "وارسو هي عاصمة بولندا",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-79",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "بودابست هي عاصمة المجر",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-80",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "بوخارست هي عاصمة رومانيا",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-81",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "بكين هي عاصمة الصين",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-82",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "سيول هي عاصمة كوريا الجنوبية",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-83",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "بيونج يانج هي عاصمة كوريا الشمالية",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-84",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "نيودلهي هي عاصمة الهند",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-85",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "إسلام آباد هي عاصمة باكستان",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-86",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "دكا هي عاصمة بنجلاديش",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-87",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "كوالالمبور هي عاصمة ماليزيا",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-88",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "جاكرتا هي عاصمة إندونيسيا الرسمية لحد دلوقتي",
+      "isTrue": true,
+      "explanationAr": "إندونيسيا بتبني عاصمة جديدة اسمها نوسانتارا، بس جاكرتا لسه العاصمة الرسمية قانونيًا."
+    },
+    {
+      "id": "gg-bool-89",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "مانيلا هي عاصمة الفلبين",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-90",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "بانكوك هي عاصمة تايلاند",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-91",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "هانوي هي عاصمة فيتنام",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-92",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "سنغافورة دولة ومدينة وجزيرة في نفس الوقت",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-93",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "كابول هي عاصمة أفغانستان",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-94",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "طهران هي عاصمة إيران",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-95",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أنقرة هي العاصمة الرسمية لتركيا",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-96",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "بحيرة تشاد فقدت معظم مساحتها خلال العقود الأخيرة بسبب الجفاف",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-97",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "قارة أستراليا وقارة أوقيانوسيا نفس الشيء بالظبط جغرافيًا",
+      "isTrue": false,
+      "explanationAr": "أوقيانوسيا منطقة أوسع بتشمل أستراليا ونيوزيلندا وآلاف جزر المحيط الهادي، مش مجرد اسم تاني لقارة أستراليا."
+    },
+    {
+      "id": "gg-bool-98",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أستراليا هي أصغر قارة في العالم من ناحية المساحة",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-99",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أنتاركتيكا مفيهاش سكان أصليين دائمين",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-100",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "المحيط المتجمد الشمالي هو أصغر محيطات العالم",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-101",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "جبل فوجي أعلى قمة في اليابان",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-102",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "جبل إلبروس أعلى قمة في قارة أوروبا",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-103",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "نهر الدانوب بيمر في أكتر من عشر دول أوروبية",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-104",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "بحيرة فيكتوريا أكبر بحيرة في قارة أفريقيا",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-105",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "صحراء الربع الخالي جزء من شبه الجزيرة العربية",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-106",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "جزر المالديف من أخفض دول العالم ارتفاعًا عن سطح البحر",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-107",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "سويسرا عضو رسمي في الاتحاد الأوروبي",
+      "isTrue": false,
+      "explanationAr": "سويسرا مش عضو في الاتحاد الأوروبي، بس ليها اتفاقيات تعاون خاصة معاه."
+    },
+    {
+      "id": "gg-bool-108",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "المملكة المتحدة بتتكون من إنجلترا واسكتلندا وويلز وأيرلندا الشمالية",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-109",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "جبل طارق تابع لإسبانيا سياسيًا",
+      "isTrue": false,
+      "explanationAr": "جبل طارق إقليم بريطاني ما وراء البحار، مش تابع لإسبانيا."
+    },
+    {
+      "id": "gg-bool-110",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "جزر الكناري تابعة لإسبانيا",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-111",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "جزر هاواي جزء من الولايات المتحدة الأمريكية",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-112",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "النمسا دولة ساحلية بتطل على بحر",
+      "isTrue": false,
+      "explanationAr": "النمسا دولة محاطة باليابسة تمامًا، مالهاش أي ساحل بحري."
+    },
+    {
+      "id": "gg-bool-113",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "تشاد دولة أفريقية محاطة باليابسة ومالهاش ساحل بحري",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-114",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "إثيوبيا من أكبر دول أفريقيا سكانًا ومالهاش ساحل بحري",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-115",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "جبال الروكي موجودة في قارة أمريكا الشمالية",
+      "isTrue": true
+    },
+    {
+      "id": "gg-bool-116",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "مدينة البندقية الإيطالية مبنية على مجموعة جزر وقنوات مائية",
+      "isTrue": true
+    },
+    {
+      "id": "gg-num-33",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الاتحاد الأوروبي فيه كام دولة عضو؟",
+      "correctValue": 27,
+      "tolerance": 0,
+      "unitAr": "دولة"
+    },
+    {
+      "id": "gg-num-34",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الأمم المتحدة فيها كام دولة عضو؟",
+      "correctValue": 193,
+      "tolerance": 2,
+      "unitAr": "دولة"
+    },
+    {
+      "id": "gg-num-35",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الصين مقسمة إداريًا لكام مقاطعة ومنطقة على مستوى الإقليم (شامل الأقاليم الذاتية والبلديات)؟",
+      "correctValue": 34,
+      "tolerance": 2,
+      "unitAr": "وحدة إدارية"
+    },
+    {
+      "id": "gg-num-36",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "نهر الأمازون طوله كام كيلومتر تقريبًا؟",
+      "correctValue": 6400,
+      "tolerance": 700,
+      "unitAr": "كيلومتر"
+    },
+    {
+      "id": "gg-num-37",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "نهر المسيسيبي (مع الميسوري) طوله كام كيلومتر تقريبًا؟",
+      "correctValue": 6275,
+      "tolerance": 300,
+      "unitAr": "كيلومتر"
+    },
+    {
+      "id": "gg-num-38",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الجزائر (أكبر دولة أفريقية مساحة) مساحتها كام مليون كيلومتر مربع تقريبًا؟",
+      "correctValue": 2.4,
+      "tolerance": 0.2,
+      "unitAr": "مليون كم²"
+    },
+    {
+      "id": "gg-num-39",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الهند مقسمة إداريًا لكام ولاية رسمية؟",
+      "correctValue": 28,
+      "tolerance": 2,
+      "unitAr": "ولاية"
+    },
+    {
+      "id": "gg-num-40",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "خندق ماريانا (أعمق نقطة في محيطات العالم) عمقه كام متر تقريبًا؟",
+      "correctValue": 10935,
+      "tolerance": 250,
+      "unitAr": "متر"
+    },
+    {
+      "id": "gg-num-41",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "حوض نهر الأمازون بيمتد عبر أراضي كام دولة في أمريكا الجنوبية؟",
+      "correctValue": 9,
+      "tolerance": 1,
+      "unitAr": "دولة"
+    },
+    {
+      "id": "gg-num-42",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "شلالات أنجل (أعلى شلال في العالم) ارتفاعها كام متر تقريبًا؟",
+      "correctValue": 979,
+      "tolerance": 60,
+      "unitAr": "متر"
+    },
+    {
+      "id": "gg-num-43",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "ساحل الفلبين طوله كام ألف كيلومتر تقريبًا؟",
+      "correctValue": 36,
+      "tolerance": 6,
+      "unitAr": "ألف كيلومتر"
+    },
+    {
+      "id": "gg-num-44",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "دولة الفاتيكان (أصغر دولة في العالم) مساحتها كام هكتار تقريبًا؟",
+      "correctValue": 44,
+      "tolerance": 5,
+      "unitAr": "هكتار"
+    },
+    {
+      "id": "gg-num-45",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "نهر النيل بيمر عبر أراضي كام دولة أفريقية؟",
+      "correctValue": 11,
+      "tolerance": 1,
+      "unitAr": "دولة"
+    },
+    {
+      "id": "gg-num-46",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "عدد سكان مصر كام مليون نسمة تقريبًا؟",
+      "correctValue": 110,
+      "tolerance": 10,
+      "unitAr": "مليون نسمة"
+    },
+    {
+      "id": "gg-num-47",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الصحراء الكبرى بتمتد عبر أراضي كام دولة أفريقية؟",
+      "correctValue": 10,
+      "tolerance": 1,
+      "unitAr": "دولة"
+    },
+    {
+      "id": "gg-num-48",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "اليابان فيها كام ألف جزيرة تقريبًا (حسب أحدث إحصاء رسمي)؟",
+      "correctValue": 14,
+      "tolerance": 3,
+      "unitAr": "ألف جزيرة"
+    },
+    {
+      "id": "gg-num-49",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "سلسلة جبال الأنديز طولها كام ألف كيلومتر تقريبًا؟",
+      "correctValue": 7,
+      "tolerance": 1,
+      "unitAr": "ألف كيلومتر"
+    },
+    {
+      "id": "gg-num-50",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "بحيرة تنجانيقا (ثاني أعمق بحيرة في العالم) عمقها كام متر تقريبًا؟",
+      "correctValue": 1470,
+      "tolerance": 200,
+      "unitAr": "متر"
+    },
+    {
+      "id": "gg-num-51",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "قمة أكونكاجوا (أعلى قمة في أمريكا الجنوبية) ارتفاعها كام متر تقريبًا؟",
+      "correctValue": 6961,
+      "tolerance": 150,
+      "unitAr": "متر"
+    },
+    {
+      "id": "gg-num-52",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "مدغشقر (أكبر جزيرة أفريقية) مساحتها كام ألف كيلومتر مربع تقريبًا؟",
+      "correctValue": 587,
+      "tolerance": 40,
+      "unitAr": "ألف كم²"
+    },
+    {
+      "id": "gg-num-53",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "نهر الفولجا (أطول نهر أوروبي) طوله كام كيلومتر تقريبًا؟",
+      "correctValue": 3530,
+      "tolerance": 250,
+      "unitAr": "كيلومتر"
+    },
+    {
+      "id": "gg-num-54",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "عدد سكان اليابان كام مليون نسمة تقريبًا؟",
+      "correctValue": 123,
+      "tolerance": 8,
+      "unitAr": "مليون نسمة"
+    },
+    {
+      "id": "gg-num-55",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "أستراليا مقسمة إداريًا لكام ولاية وإقليم رسمي؟",
+      "correctValue": 8,
+      "tolerance": 0,
+      "unitAr": "ولاية وإقليم"
+    },
+    {
+      "id": "gg-num-56",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "أعمق نقطة في البحر الأحمر كام متر تقريبًا؟",
+      "correctValue": 2850,
+      "tolerance": 300,
+      "unitAr": "متر"
+    },
+    {
+      "id": "gg-num-57",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "ساحل إندونيسيا طوله كام ألف كيلومتر تقريبًا؟",
+      "correctValue": 54,
+      "tolerance": 8,
+      "unitAr": "ألف كيلومتر"
+    },
+    {
+      "id": "gg-num-58",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "جبال الألب بتمتد عبر أراضي كام دولة أوروبية؟",
+      "correctValue": 8,
+      "tolerance": 1,
+      "unitAr": "دولة"
+    },
+    {
+      "id": "gg-num-59",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "نهر الكونغو (ثاني أطول نهر في أفريقيا) طوله كام كيلومتر تقريبًا؟",
+      "correctValue": 4700,
+      "tolerance": 300,
+      "unitAr": "كيلومتر"
+    },
+    {
+      "id": "gg-num-60",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "بحر قزوين (أكبر بحيرة مغلقة في العالم) مساحته كام ألف كيلومتر مربع تقريبًا؟",
+      "correctValue": 371,
+      "tolerance": 20,
+      "unitAr": "ألف كم²"
+    },
+    {
+      "id": "gg-num-61",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "بحيرة سوبيريور (أكبر البحيرات العظمى) أعمق نقطة فيها كام متر تقريبًا؟",
+      "correctValue": 406,
+      "tolerance": 40,
+      "unitAr": "متر"
+    },
+    {
+      "id": "gg-num-62",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "سلسلة جبال الهيمالايا طولها كام كيلومتر تقريبًا؟",
+      "correctValue": 2400,
+      "tolerance": 300,
+      "unitAr": "كيلومتر"
+    },
+    {
+      "id": "gg-num-63",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "الفلبين بتتكون من كام ألف جزيرة تقريبًا؟",
+      "correctValue": 7.6,
+      "tolerance": 1,
+      "unitAr": "ألف جزيرة"
+    },
+    {
+      "id": "gg-num-64",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "جبل فوجي (أعلى قمة في اليابان) ارتفاعه كام متر تقريبًا؟",
+      "correctValue": 3776,
+      "tolerance": 100,
+      "unitAr": "متر"
+    },
+    {
+      "id": "gg-fill-28",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "عاصمة الأردن هي ____",
+      "answerAr": "عمّان",
+      "aliases": [
+        "عمان"
+      ]
+    },
+    {
+      "id": "gg-fill-29",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "عاصمة السعودية هي ____",
+      "answerAr": "الرياض",
+      "aliases": [
+        "رياض"
+      ]
+    },
+    {
+      "id": "gg-fill-30",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة البحرين هي ____",
+      "answerAr": "المنامة",
+      "aliases": [
+        "منامة"
+      ]
+    },
+    {
+      "id": "gg-fill-31",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة عُمان هي ____",
+      "answerAr": "مسقط",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-32",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة اليمن هي ____",
+      "answerAr": "صنعاء",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-33",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "عاصمة سوريا هي ____",
+      "answerAr": "دمشق",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-34",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة السودان هي ____",
+      "answerAr": "الخرطوم",
+      "aliases": [
+        "خرطوم"
+      ]
+    },
+    {
+      "id": "gg-fill-35",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة ليبيا هي ____",
+      "answerAr": "طرابلس",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-36",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "عاصمة موريتانيا هي ____",
+      "answerAr": "نواكشوط",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-37",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "عاصمة الصومال هي ____",
+      "answerAr": "مقديشو",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-38",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة كندا هي ____",
+      "answerAr": "أوتاوا",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-39",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة أستراليا هي ____",
+      "answerAr": "كانبرا",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-40",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "عاصمة إسبانيا هي ____",
+      "answerAr": "مدريد",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-41",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة البرتغال هي ____",
+      "answerAr": "لشبونة",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-42",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة سويسرا هي ____",
+      "answerAr": "برن",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-43",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة النمسا هي ____",
+      "answerAr": "فيينا",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-44",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة النرويج هي ____",
+      "answerAr": "أوسلو",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-45",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة السويد هي ____",
+      "answerAr": "ستوكهولم",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-46",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "عاصمة فنلندا هي ____",
+      "answerAr": "هلسنكي",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-47",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة الدنمارك هي ____",
+      "answerAr": "كوبنهاجن",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-48",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "عاصمة بولندا هي ____",
+      "answerAr": "وارسو",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-49",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "عاصمة الصين هي ____",
+      "answerAr": "بكين",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-50",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة كوريا الجنوبية هي ____",
+      "answerAr": "سيول",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-51",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة الهند هي ____",
+      "answerAr": "نيودلهي",
+      "aliases": [
+        "دلهي"
+      ]
+    },
+    {
+      "id": "gg-fill-52",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "عاصمة باكستان هي ____",
+      "answerAr": "إسلام آباد",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-53",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة إندونيسيا هي ____",
+      "answerAr": "جاكرتا",
+      "aliases": []
+    },
+    {
+      "id": "gg-fill-54",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "عاصمة إيران هي ____",
+      "answerAr": "طهران",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-30",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "إيه عاصمة الأردن؟",
+      "answerAr": "عمّان",
+      "aliases": [
+        "عمان"
+      ]
+    },
+    {
+      "id": "gg-open-31",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "إيه عاصمة السعودية؟",
+      "answerAr": "الرياض",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-32",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "إيه عاصمة العراق؟",
+      "answerAr": "بغداد",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-33",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "إيه عاصمة سوريا؟",
+      "answerAr": "دمشق",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-34",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "إيه عاصمة مصر؟",
+      "answerAr": "القاهرة",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-35",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة السودان؟",
+      "answerAr": "الخرطوم",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-36",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة ليبيا؟",
+      "answerAr": "طرابلس",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-37",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "إيه عاصمة المغرب؟",
+      "answerAr": "الرباط",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-38",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة كندا؟",
+      "answerAr": "أوتاوا",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-39",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "إيه عاصمة إسبانيا؟",
+      "answerAr": "مدريد",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-40",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "إيه عاصمة ألمانيا؟",
+      "answerAr": "برلين",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-41",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "إيه عاصمة بريطانيا؟",
+      "answerAr": "لندن",
+      "aliases": [
+        "المملكة المتحدة"
+      ]
+    },
+    {
+      "id": "gg-open-42",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة هولندا؟",
+      "answerAr": "أمستردام",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-43",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة بلجيكا؟",
+      "answerAr": "بروكسل",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-44",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة اليونان؟",
+      "answerAr": "أثينا",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-45",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة البرتغال؟",
+      "answerAr": "لشبونة",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-46",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة السويد؟",
+      "answerAr": "ستوكهولم",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-47",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة الهند؟",
+      "answerAr": "نيودلهي",
+      "aliases": [
+        "دلهي"
+      ]
+    },
+    {
+      "id": "gg-open-48",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "إيه عاصمة الصين؟",
+      "answerAr": "بكين",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-49",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة إيران؟",
+      "answerAr": "طهران",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-50",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم ثاني أطول نهر في أفريقيا بعد النيل؟",
+      "answerAr": "الكونغو",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-51",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم ثاني أكبر جزيرة في العالم بعد جرينلاند؟",
+      "answerAr": "غينيا الجديدة",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-52",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم أكبر دولة في قارة أفريقيا من حيث المساحة؟",
+      "answerAr": "الجزائر",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-53",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم أكبر شبه جزيرة في العالم؟",
+      "answerAr": "شبه الجزيرة العربية",
+      "aliases": [
+        "الجزيرة العربية"
+      ]
+    },
+    {
+      "id": "gg-open-54",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم أعلى شلال في العالم؟",
+      "answerAr": "شلالات أنجل",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-55",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الخط الوهمي اللي بيقسم الكرة الأرضية لنصف شمالي ونصف جنوبي؟",
+      "answerAr": "خط الاستواء",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-56",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم القارة المعروفة بلقب «القارة البيضاء» أو «القارة المتجمدة»؟",
+      "answerAr": "أنتاركتيكا",
+      "aliases": [
+        "القارة القطبية الجنوبية"
+      ]
+    },
+    {
+      "id": "gg-open-57",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم أكبر تجمّع جزر (أرخبيل) في العالم؟",
+      "answerAr": "إندونيسيا",
+      "aliases": []
+    },
+    {
+      "id": "gg-open-58",
+      "shape": "open_answer",
+      "difficulty": 4,
+      "textAr": "إيه اسم أطول سلسلة جبال ممتدة تحت سطح الميه في العالم؟",
+      "answerAr": "السلسلة الأطلسية الوسطى",
+      "aliases": [
+        "حيد منتصف الأطلسي"
+      ]
+    },
+    {
+      "id": "gg-prog-25",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "عاصمة عربية اسمها القديم كان فيلادلفيا",
+        "بُنيت أصلًا على سبع تلال زي روما",
+        "عاصمة المملكة الأردنية الهاشمية"
+      ],
+      "answerAr": "عمّان",
+      "aliases": [
+        "عمان"
+      ]
+    },
+    {
+      "id": "gg-prog-26",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أكبر مدن شبه الجزيرة العربية مساحةً",
+        "قلب منطقة نجد في وسط شبه الجزيرة العربية",
+        "عاصمة المملكة العربية السعودية"
+      ],
+      "answerAr": "الرياض",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-27",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "من أقدم المدن المأهولة باستمرار في التاريخ",
+        "معروفة بسوق الحميدية التاريخي",
+        "عاصمة سوريا"
+      ],
+      "answerAr": "دمشق",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-28",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "بتقع عند التقاء النيل الأزرق بالنيل الأبيض",
+        "اسمها مستوحى من شكل الأرض زي خرطوم الفيل",
+        "عاصمة السودان"
+      ],
+      "answerAr": "الخرطوم",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-29",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أعلى عاصمة أوروبية ارتفاعًا عن سطح البحر",
+        "فيها ميدان بويرتا ديل سول الشهير",
+        "عاصمة إسبانيا"
+      ],
+      "answerAr": "مدريد",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-30",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "كانت مقسومة بجدار فاصل شهير لعقود",
+        "فيها بوابة براندنبورج التاريخية",
+        "عاصمة ألمانيا"
+      ],
+      "answerAr": "برلين",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-31",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "فيها نهر التايمز وساعة بيج بن",
+        "من أكتر مدن العالم اللي بيزورها سياح",
+        "عاصمة المملكة المتحدة"
+      ],
+      "answerAr": "لندن",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-32",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "فيها معبد قديم فوق تلة الأكروبوليس",
+        "بتُعتبر مهد الديمقراطية القديمة",
+        "عاصمة اليونان"
+      ],
+      "answerAr": "أثينا",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-33",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "مدينة أوروبية مليانة قنوات مائية وعجل",
+        "معروفة بمنازلها الضيقة المطلة على الترع",
+        "عاصمة هولندا"
+      ],
+      "answerAr": "أمستردام",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-34",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "مبنية على 14 جزيرة متصلة بجسور",
+        "بيتوزع فيها جوايز نوبل سنويًا ماعدا جايزة السلام",
+        "عاصمة السويد"
+      ],
+      "answerAr": "ستوكهولم",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-35",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "مدينة توأم جوه عاصمة هندية قديمة",
+        "فيها بوابة نصر تذكارية شهيرة",
+        "عاصمة الهند"
+      ],
+      "answerAr": "نيودلهي",
+      "aliases": [
+        "دلهي"
+      ]
+    },
+    {
+      "id": "gg-prog-36",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "فيها قصر إمبراطوري قديم يُعرف بالمدينة المحرمة",
+        "استضافت الأولمبياد الصيفي والشتوي",
+        "عاصمة الصين"
+      ],
+      "answerAr": "بكين",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-37",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أكبر مدن دولتها وعاصمتها",
+        "بتقع عند سفح سلسلة جبلية شمالية",
+        "عاصمة إيران"
+      ],
+      "answerAr": "طهران",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-38",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أكبر دولة إسلامية من ناحية عدد السكان",
+        "دولة مكوّنة من آلاف الجزر بينها جاوة وسومطرة",
+        "بتبني عاصمة جديدة اسمها نوسانتارا بدل عاصمتها الحالية"
+      ],
+      "answerAr": "إندونيسيا",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-39",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أكبر دولة في قارة أفريقيا من ناحية المساحة",
+        "جزء كبير من أراضيها جزء من الصحراء الكبرى",
+        "عاصمتها مدينة بنفس اسم الدولة تقريبًا"
+      ],
+      "answerAr": "الجزائر",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-40",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "ثاني أطول نهر في قارة أفريقيا بعد النيل",
+        "بيمر عبر غابات استوائية كثيفة وسط القارة",
+        "بينبع منه اسم دولتين أفريقيتين متجاورتين"
+      ],
+      "answerAr": "الكونغو",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-41",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "ثاني أكبر جزيرة في العالم بعد جرينلاند",
+        "مقسومة سياسيًا بين دولتين مختلفتين",
+        "نصفها الغربي تابع لإندونيسيا ونصفها الشرقي دولة مستقلة"
+      ],
+      "answerAr": "غينيا الجديدة",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-42",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أعلى شلال في العالم بفارق كبير عن أي شلال تاني",
+        "موجود في فنزويلا وسط الغابات",
+        "سُمّي على اسم طيار أمريكي اكتشفه بالصدفة من جو"
+      ],
+      "answerAr": "شلالات أنجل",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-43",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "خط وهمي بيقسم الكرة الأرضية لنصفين متساويين تقريبًا",
+        "درجة العرض عنده بتساوي صفر بالظبط",
+        "بيعدي من وسط دولة سميت على اسمه في أمريكا الجنوبية"
+      ],
+      "answerAr": "خط الاستواء",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-44",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أبرد قارة في العالم بفارق كبير",
+        "مفيهاش سكان أصليين دائمين",
+        "معظم مساحتها مغطاة بطبقة جليد سمكها كيلومترات"
+      ],
+      "answerAr": "أنتاركتيكا",
+      "aliases": [
+        "القارة القطبية الجنوبية"
+      ]
+    },
+    {
+      "id": "gg-prog-45",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أطول نهر في قارة آسيا بالكامل",
+        "بيمر من خلاله سد الممرات الثلاثة، أكبر سد كهرومائي في العالم",
+        "موجود بالكامل داخل الصين"
+      ],
+      "answerAr": "اليانجتسي",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-46",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أعلى قمة جبلية في العالم فوق سطح البحر",
+        "موجودة على الحدود بين نيبال والتبت",
+        "أول من تسلقها إدموند هيلاري وتينزينج نورجاي"
+      ],
+      "answerAr": "إيفرست",
+      "aliases": [
+        "جبل إيفرست"
+      ]
+    },
+    {
+      "id": "gg-prog-47",
+      "shape": "progressive",
+      "difficulty": 4,
+      "hints": [
+        "أكبر مسطح مائي مغلق في العالم",
+        "بيُصنّف علميًا كبحيرة رغم اسمه",
+        "بتطل عليه خمس دول بينها إيران وروسيا"
+      ],
+      "answerAr": "بحر قزوين",
+      "aliases": []
+    },
+    {
+      "id": "gg-prog-48",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أطول نهر في قارة أوروبا بالكامل",
+        "بيصب في بحر قزوين مش في محيط",
+        "موجود بالكامل داخل روسيا"
+      ],
+      "answerAr": "نهر الفولجا",
+      "aliases": [
+        "الفولجا"
+      ]
+    },
+    {
+      "id": "gg-mcq-116",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة ألمانيا؟",
+      "options": [
+        "برلين",
+        "ميونخ",
+        "فرانكفورت",
+        "هامبورج"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-117",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة أيرلندا؟",
+      "options": [
+        "دبلن",
+        "بلفاست",
+        "كورك",
+        "جالواي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-118",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة أيسلندا؟",
+      "options": [
+        "ريكيافيك",
+        "أوسلو",
+        "هلسنكي",
+        "بيرجن"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-119",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة جمهورية التشيك؟",
+      "options": [
+        "براغ",
+        "فيينا",
+        "بودابست",
+        "براتيسلافا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-120",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة سلوفاكيا؟",
+      "options": [
+        "براتيسلافا",
+        "براغ",
+        "وارسو",
+        "بودابست"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-121",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة كرواتيا؟",
+      "options": [
+        "زغرب",
+        "بلجراد",
+        "ليوبليانا",
+        "سراييفو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-122",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة صربيا؟",
+      "options": [
+        "بلجراد",
+        "زغرب",
+        "سراييفو",
+        "سكوبيه"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-123",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة أوكرانيا؟",
+      "options": [
+        "كييف",
+        "مينسك",
+        "موسكو",
+        "خاركيف"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-124",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة بيلاروسيا؟",
+      "options": [
+        "مينسك",
+        "كييف",
+        "ريجا",
+        "فيلنيوس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-125",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة جورجيا (الدولة القوقازية)؟",
+      "options": [
+        "تبليسي",
+        "يريفان",
+        "باكو",
+        "سوتشي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-126",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة أرمينيا؟",
+      "options": [
+        "يريفان",
+        "تبليسي",
+        "باكو",
+        "أنقرة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-127",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة أذربيجان؟",
+      "options": [
+        "باكو",
+        "يريفان",
+        "تبليسي",
+        "طهران"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-128",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة المكسيك؟",
+      "options": [
+        "مكسيكو سيتي",
+        "جوادالاخارا",
+        "كانكون",
+        "مونتيري"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-129",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة كوبا؟",
+      "options": [
+        "هافانا",
+        "سانتياجو دي كوبا",
+        "فاراديرو",
+        "كاماجوي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-130",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة فنزويلا؟",
+      "options": [
+        "كاراكاس",
+        "ماراكايبو",
+        "فالنسيا",
+        "بوغوتا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-131",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة الإكوادور؟",
+      "options": [
+        "كيتو",
+        "جوايكيل",
+        "ليما",
+        "بوغوتا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-132",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي مدينة هي مقر الحكومة الفعلي في بوليفيا؟",
+      "options": [
+        "لاباز",
+        "سوكري",
+        "كوتشابامبا",
+        "سانتا كروز"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "لاباز مقر الحكومة الفعلي، بينما سوكري هي العاصمة الدستورية ومقر السلطة القضائية."
+    },
+    {
+      "id": "gg-mcq-133",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة باراجواي؟",
+      "options": [
+        "أسونسيون",
+        "مونتيفيديو",
+        "كوردوبا",
+        "روزاريو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-134",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة أوروجواي؟",
+      "options": [
+        "مونتيفيديو",
+        "أسونسيون",
+        "بوينس آيرس",
+        "لاباز"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-135",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة غانا؟",
+      "options": [
+        "أكرا",
+        "لاجوس",
+        "أبيدجان",
+        "داكار"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-136",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة أوغندا؟",
+      "options": [
+        "كمبالا",
+        "نيروبي",
+        "كيجالي",
+        "بوجومبورا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-137",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه العاصمة الرسمية لتنزانيا حسب الدستور؟",
+      "options": [
+        "دودوما",
+        "دار السلام",
+        "زنجبار",
+        "أروشا"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "دودوما هي العاصمة الرسمية والتشريعية منذ 1996، بينما دار السلام لسه أكبر مدنها ومركزها الاقتصادي."
+    },
+    {
+      "id": "gg-mcq-138",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة زيمبابوي؟",
+      "options": [
+        "هراري",
+        "لوساكا",
+        "مابوتو",
+        "جابورون"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-139",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "عملة مصر اسمها إيه؟",
+      "options": [
+        "الجنيه المصري",
+        "الدينار المصري",
+        "الريال المصري",
+        "الدرهم المصري"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-140",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة الأردن اسمها إيه؟",
+      "options": [
+        "الدينار الأردني",
+        "الريال الأردني",
+        "الجنيه الأردني",
+        "الدرهم الأردني"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-141",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة الكويت اسمها إيه؟",
+      "options": [
+        "الدينار الكويتي",
+        "الريال الكويتي",
+        "الدرهم الكويتي",
+        "الجنيه الكويتي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-142",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة البحرين اسمها إيه؟",
+      "options": [
+        "الدينار البحريني",
+        "الريال البحريني",
+        "الدرهم البحريني",
+        "الجنيه البحريني"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-143",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة قطر اسمها إيه؟",
+      "options": [
+        "الريال القطري",
+        "الدينار القطري",
+        "الدرهم القطري",
+        "الجنيه القطري"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-144",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة سلطنة عُمان اسمها إيه؟",
+      "options": [
+        "الريال العُماني",
+        "الدينار العُماني",
+        "الدرهم العُماني",
+        "الجنيه العُماني"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-145",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "عملة إيران اسمها إيه؟",
+      "options": [
+        "الريال الإيراني",
+        "الدينار الإيراني",
+        "التومان الإيراني",
+        "الليرة الإيرانية"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الريال هو الاسم الرسمي، رغم إن التومان بيُستخدم بكتر في التعامل اليومي."
+    },
+    {
+      "id": "gg-mcq-146",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة كوريا الجنوبية اسمها إيه؟",
+      "options": [
+        "الوون",
+        "الين",
+        "اليوان",
+        "الروبية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-147",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة تايلاند اسمها إيه؟",
+      "options": [
+        "الباهت",
+        "الرينجت",
+        "الروبية",
+        "الدونج"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-148",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة إندونيسيا اسمها إيه؟",
+      "options": [
+        "الروبية الإندونيسية",
+        "الرينجت",
+        "الباهت",
+        "البيزو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-149",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة البرازيل اسمها إيه؟",
+      "options": [
+        "الريال البرازيلي",
+        "البيزو البرازيلي",
+        "الدولار البرازيلي",
+        "الكرونة البرازيلية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-150",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة المكسيك اسمها إيه؟",
+      "options": [
+        "البيزو المكسيكي",
+        "الريال المكسيكي",
+        "الدولار المكسيكي",
+        "الكرونة المكسيكية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-151",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة جنوب أفريقيا اسمها إيه؟",
+      "options": [
+        "الراند",
+        "النايرا",
+        "الشلن",
+        "البولا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-152",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة نيجيريا اسمها إيه؟",
+      "options": [
+        "النايرا",
+        "الراند",
+        "السيدي",
+        "الكواشا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-153",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة سويسرا اسمها إيه؟",
+      "options": [
+        "الفرنك السويسري",
+        "اليورو",
+        "المارك السويسري",
+        "الكرونة السويسرية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-154",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة السويد اسمها إيه؟",
+      "options": [
+        "الكرونة السويدية",
+        "اليورو",
+        "الفرنك السويدي",
+        "المارك السويدي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-155",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة النرويج اسمها إيه؟",
+      "options": [
+        "الكرونة النرويجية",
+        "اليورو",
+        "الفرنك النرويجي",
+        "الين النرويجي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-156",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "عملة بولندا اسمها إيه؟",
+      "options": [
+        "الزلوتي",
+        "اليورو",
+        "الفورنت",
+        "الكرونة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-157",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "عملة فيتنام اسمها إيه؟",
+      "options": [
+        "الدونج",
+        "الباهت",
+        "الوون",
+        "الرينجت"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-158",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة الفلبين اسمها إيه؟",
+      "options": [
+        "البيزو الفلبيني",
+        "الدونج",
+        "الرينجت",
+        "الروبية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-159",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "عملة باكستان اسمها إيه؟",
+      "options": [
+        "الروبية الباكستانية",
+        "الدينار الباكستاني",
+        "الريال الباكستاني",
+        "التاكا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-160",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "عملة أفغانستان اسمها إيه؟",
+      "options": [
+        "الأفغاني",
+        "الروبية الأفغانية",
+        "الدينار الأفغاني",
+        "التومان الأفغاني"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-161",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عملة اليمن اسمها إيه؟",
+      "options": [
+        "الريال اليمني",
+        "الدينار اليمني",
+        "الدرهم اليمني",
+        "الجنيه اليمني"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-162",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أكبر دولة في قارة آسيا مساحةً بعد استبعاد روسيا؟",
+      "options": [
+        "الصين",
+        "الهند",
+        "كازاخستان",
+        "السعودية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-163",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه أكبر دولة في قارة أوروبا من حيث عدد السكان؟",
+      "options": [
+        "ألمانيا",
+        "فرنسا",
+        "بريطانيا",
+        "إيطاليا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-164",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أكبر دولة في أمريكا الجنوبية مساحةً؟",
+      "options": [
+        "البرازيل",
+        "الأرجنتين",
+        "بيرو",
+        "كولومبيا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-165",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أكبر دولة في أمريكا الشمالية مساحةً؟",
+      "options": [
+        "كندا",
+        "أمريكا",
+        "المكسيك",
+        "جرينلاند"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-166",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم أطول نهر في قارة أستراليا؟",
+      "options": [
+        "نهر موراي-دارلنج",
+        "نهر السوان",
+        "نهر فيتزروي",
+        "نهر بيرديكيلا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-167",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه أطول نهر في أمريكا الشمالية؟",
+      "options": [
+        "نهر المسيسيبي",
+        "نهر ريو جراندي",
+        "نهر ماكنزي",
+        "نهر كولورادو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-168",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أعلى قمة جبلية في قارة أمريكا الشمالية موجودة في أنهي دولة؟",
+      "options": [
+        "الولايات المتحدة الأمريكية",
+        "كندا",
+        "المكسيك",
+        "جرينلاند"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-169",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم أعلى قمة جبلية في أمريكا الجنوبية؟",
+      "options": [
+        "أكونكاجوا",
+        "شيمبورازو",
+        "هوسكاران",
+        "كوتوباكسي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-170",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه اسم أعلى قمة جبلية في قارة أستراليا؟",
+      "options": [
+        "جبل كوسسيوسكو",
+        "جبل أولمبوس",
+        "بيك تاون",
+        "جبل باتشي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-171",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه اسم أعمق نقطة معروفة في المحيط الأطلسي؟",
+      "options": [
+        "خندق بورتوريكو",
+        "خندق ماريانا",
+        "خندق تونجا",
+        "خندق اليابان"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-172",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أكبر جزيرة في قارة أفريقيا؟",
+      "options": [
+        "مدغشقر",
+        "زنجبار",
+        "سقطرى",
+        "جزيرة الأمير إدوارد"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-173",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه أكبر جزيرة في قارة أوروبا؟",
+      "options": [
+        "بريطانيا العظمى",
+        "أيسلندا",
+        "إيرلندا",
+        "صقلية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-174",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه أكبر شبه جزيرة في قارة أوروبا؟",
+      "options": [
+        "شبه جزيرة إيبيريا",
+        "شبه جزيرة البلقان",
+        "شبه جزيرة إسكندنافيا",
+        "شبه جزيرة أبينين"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-175",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه أكبر بحيرة في قارة أمريكا الشمالية بالمساحة؟",
+      "options": [
+        "بحيرة سوبيريور",
+        "بحيرة هورون",
+        "بحيرة ميتشيجان",
+        "بحيرة إيري"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-176",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه أكبر غابة استوائية مطيرة في العالم؟",
+      "options": [
+        "غابات الأمازون",
+        "غابة الكونغو",
+        "غابة بورنيو",
+        "غابة السونديربانس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-177",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه اسم أطول سلسلة جبال ممتدة تحت سطح الميه في العالم؟",
+      "options": [
+        "السلسلة الأطلسية الوسطى",
+        "سلسلة جبال الأنديز",
+        "سلسلة جبال الأورال",
+        "سلسلة جبال الألب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-178",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم أشهر محمية طبيعية سفاري في تنزانيا معروفة بهجرة الحيوانات السنوية الضخمة؟",
+      "options": [
+        "السرنجيتي",
+        "ماساي مارا",
+        "كروجر",
+        "تشوبي"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "ماساي مارا في كينيا محمية مجاورة بتشارك في نفس مسار الهجرة، لكن السرنجيتي في تنزانيا هي الأشهر والأكبر."
+    },
+    {
+      "id": "gg-mcq-179",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه اسم أشهر أخدود طبيعي في الولايات المتحدة، حفره نهر كولورادو عبر ملايين السنين؟",
+      "options": [
+        "جراند كانيون",
+        "وادي الموت",
+        "وادي يوسمايت",
+        "أخدود أنتيلوب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-180",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم الهضبة اللي بيتقال عليها «سقف العالم» لارتفاعها الشاهق؟",
+      "options": [
+        "هضبة التبت",
+        "هضبة الأناضول",
+        "هضبة الديكان",
+        "هضبة إثيوبيا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-181",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم أكبر صحراء باردة في آسيا (غير الصحاري القطبية)؟",
+      "options": [
+        "صحراء جوبي",
+        "صحراء كيزيل كوم",
+        "صحراء تار",
+        "صحراء كاراكوم"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-182",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم المحيط اللي بيحيط بقارة أنتاركتيكا بالكامل؟",
+      "options": [
+        "المحيط الجنوبي",
+        "المحيط الهندي",
+        "المحيط الأطلنطي",
+        "المحيط الهادي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-183",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه اسم أكبر منطقة أراضي رطبة استوائية في العالم، موجودة في أمريكا الجنوبية؟",
+      "options": [
+        "البانتانال",
+        "الإيفرجليدز",
+        "دلتا الأوكافانجو",
+        "أهوار العراق"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-184",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه اسم أكبر دلتا نهرية في العالم، موجودة بين الهند وبنجلاديش؟",
+      "options": [
+        "دلتا الجانج-براهمابوترا",
+        "دلتا النيل",
+        "دلتا الميسيسيبي",
+        "دلتا الميكونج"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-185",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي دولة بيتقال عليها تاريخيًا «بلاد الرافدين»؟",
+      "options": [
+        "العراق",
+        "مصر",
+        "سوريا",
+        "إيران"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-186",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي دولة بيتقال عليها «أرض الفراعنة»؟",
+      "options": [
+        "مصر",
+        "السودان",
+        "ليبيا",
+        "تونس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-187",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي مدينة بيتقال عليها «مدينة الضباب» بسبب طقسها المعروف؟",
+      "options": [
+        "لندن",
+        "باريس",
+        "برلين",
+        "أمستردام"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-188",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي مدينة بيتقال عليها «المدينة الخالدة» لتاريخها العريق؟",
+      "options": [
+        "روما",
+        "أثينا",
+        "القاهرة",
+        "إسطنبول"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-189",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي مدينة أمريكية بيتقال عليها «مدينة الرياح»؟",
+      "options": [
+        "شيكاغو",
+        "نيويورك",
+        "بوسطن",
+        "سياتل"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-190",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "اللغة الرسمية في المكسيك إيه؟",
+      "options": [
+        "الإسبانية",
+        "البرتغالية",
+        "الفرنسية",
+        "الإنجليزية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-191",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "اللغة الرسمية في إندونيسيا إيه؟",
+      "options": [
+        "الإندونيسية",
+        "الملايوية",
+        "الهندية",
+        "العربية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-192",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه أكتر لغة أم انتشارًا بين سكان جنوب أفريقيا؟",
+      "options": [
+        "الزولو",
+        "الإنجليزية",
+        "الأفريكانية",
+        "الخوزا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-193",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "اللغة الرسمية القومية في باكستان إيه؟",
+      "options": [
+        "الأردية",
+        "الهندية",
+        "البنجابية",
+        "الفارسية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-194",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "اللغة الرسمية في إيران إيه؟",
+      "options": [
+        "الفارسية",
+        "العربية",
+        "الأردية",
+        "التركية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-195",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "اللغة الرسمية في نيجيريا إيه؟",
+      "options": [
+        "الإنجليزية",
+        "الفرنسية",
+        "العربية",
+        "البرتغالية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-196",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "اللغة الرسمية في السنغال إيه؟",
+      "options": [
+        "الفرنسية",
+        "الإنجليزية",
+        "العربية",
+        "البرتغالية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-197",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي دولة أوروبية بتشترك في حدود برية مباشرة مع 8 دول مختلفة؟",
+      "options": [
+        "فرنسا",
+        "إسبانيا",
+        "إيطاليا",
+        "بولندا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-198",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي دولة آسيوية بتشترك في حدود برية مع أكبر عدد من الدول في العالم (بالتعادل مع روسيا)؟",
+      "options": [
+        "الصين",
+        "الهند",
+        "كازاخستان",
+        "منغوليا"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الصين وروسيا كل واحدة فيهم بتحد 14 دولة، الرقم الأعلى في العالم."
+    },
+    {
+      "id": "gg-mcq-199",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الرمز الموجود في نص علم كوريا الجنوبية اسمه إيه؟",
+      "options": [
+        "رمز التايجوك (يين ويانج)",
+        "عجلة أشوكا",
+        "نجمة سباعية",
+        "شمس مشرقة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-200",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "العبارة البرتغالية «نظام وتقدم» مكتوبة على علم أنهي دولة؟",
+      "options": [
+        "البرازيل",
+        "البرتغال",
+        "أنجولا",
+        "موزمبيق"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-201",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "العجلة الزرقاء الموجودة في نص علم الهند اسمها إيه؟",
+      "options": [
+        "عجلة أشوكا",
+        "عجلة الدارما التبتية",
+        "عجلة الحياة",
+        "عجلة النار"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-202",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي دولة عربية أصغر دولة عربية من ناحية المساحة؟",
+      "options": [
+        "البحرين",
+        "قطر",
+        "الكويت",
+        "لبنان"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-203",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي دولة عربية جزيرة بالكامل، مفيهاش أي حدود برية مع دولة تانية؟",
+      "options": [
+        "البحرين",
+        "قطر",
+        "الكويت",
+        "الإمارات"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-204",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي دولة أفريقية محاطة بالكامل بدولة واحدة بس من كل الجهات؟",
+      "options": [
+        "ليسوتو",
+        "سوازيلاند",
+        "رواندا",
+        "بوروندي"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "ليسوتو محاطة بالكامل بجنوب أفريقيا من كل الاتجاهات."
+    },
+    {
+      "id": "gg-mcq-205",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "أنهي دولة أوروبية صغيرة محاطة بالكامل بسويسرا والنمسا بس؟",
+      "options": [
+        "ليختنشتاين",
+        "لوكسمبورج",
+        "أندورا",
+        "سان مارينو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-206",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي دولة بيتقال عليها «أرض الألف تل» بسبب طبيعتها الجبلية الكثيفة؟",
+      "options": [
+        "رواندا",
+        "أوغندا",
+        "بوروندي",
+        "مالاوي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-207",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "اللغة الرسمية في اليونان إيه؟",
+      "options": [
+        "اليونانية",
+        "الإيطالية",
+        "التركية",
+        "اللاتينية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-208",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة الكاميرون؟",
+      "options": [
+        "ياوندي",
+        "دوالا",
+        "لاجوس",
+        "باماكو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-209",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة زامبيا؟",
+      "options": [
+        "لوساكا",
+        "هراري",
+        "لواندا",
+        "مابوتو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-210",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة أنجولا؟",
+      "options": [
+        "لواندا",
+        "مابوتو",
+        "لوساكا",
+        "ويندهوك"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-211",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة موزمبيق؟",
+      "options": [
+        "مابوتو",
+        "لواندا",
+        "هراري",
+        "بريتوريا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-212",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه عاصمة بوتسوانا؟",
+      "options": [
+        "جابورون",
+        "ويندهوك",
+        "مابوتو",
+        "لوساكا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-213",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه عاصمة ناميبيا؟",
+      "options": [
+        "ويندهوك",
+        "جابورون",
+        "لواندا",
+        "بريتوريا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-214",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة مدغشقر؟",
+      "options": [
+        "أنتاناناريفو",
+        "نيروبي",
+        "هراري",
+        "مابوتو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-215",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة جمهورية الكونغو الديمقراطية؟",
+      "options": [
+        "كينشاسا",
+        "برازافيل",
+        "لواندا",
+        "كيجالي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-216",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه العاصمة الرسمية لساحل العاج؟",
+      "options": [
+        "ياموسوكرو",
+        "أبيدجان",
+        "أكرا",
+        "داكار"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "ياموسوكرو العاصمة الرسمية، بينما أبيدجان لسه المركز الاقتصادي والعاصمة الفعلية."
+    },
+    {
+      "id": "gg-mcq-217",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة كوستاريكا؟",
+      "options": [
+        "سان خوسيه",
+        "بنما سيتي",
+        "ماناجوا",
+        "تيجوسيجالبا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-218",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة بنما؟",
+      "options": [
+        "مدينة بنما",
+        "سان خوسيه",
+        "كولون",
+        "ماناجوا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-219",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة جواتيمالا؟",
+      "options": [
+        "مدينة جواتيمالا",
+        "تيجوسيجالبا",
+        "سان سلفادور",
+        "ماناجوا"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-220",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه عاصمة هندوراس؟",
+      "options": [
+        "تيجوسيجالبا",
+        "ماناجوا",
+        "سان سلفادور",
+        "بليز سيتي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-221",
+      "shape": "mcq",
+      "difficulty": 4,
+      "textAr": "إيه عاصمة نيكاراجوا؟",
+      "options": [
+        "ماناجوا",
+        "تيجوسيجالبا",
+        "سان خوسيه",
+        "بنما سيتي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-222",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة جامايكا؟",
+      "options": [
+        "كينجستون",
+        "هافانا",
+        "ناسو",
+        "سانتو دومينجو"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-223",
+      "shape": "mcq",
+      "difficulty": 5,
+      "textAr": "إيه العاصمة الرسمية لسريلانكا؟",
+      "options": [
+        "سري جاياواردنابورا كوتي",
+        "كولومبو",
+        "كاندي",
+        "جافنا"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "سري جاياواردنابورا كوتي العاصمة الرسمية ومقر البرلمان، بينما كولومبو لسه أكبر مدنها ومركزها التجاري."
+    },
+    {
+      "id": "gg-mcq-224",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة ميانمار؟",
+      "options": [
+        "نايبيداو",
+        "يانجون",
+        "ماندالاي",
+        "باجان"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "نايبيداو بقت العاصمة الرسمية سنة 2006 بدل يانجون اللي لسه أكبر مدنها."
+    },
+    {
+      "id": "gg-mcq-225",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة كمبوديا؟",
+      "options": [
+        "بنوم بنه",
+        "فيينتيان",
+        "هانوي",
+        "بانكوك"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-226",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة لاوس؟",
+      "options": [
+        "فيينتيان",
+        "بنوم بنه",
+        "هانوي",
+        "ماندالاي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-227",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة منغوليا؟",
+      "options": [
+        "أولان باتور",
+        "بكين",
+        "ألماتي",
+        "بيشكيك"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-228",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "إيه عاصمة بنجلاديش؟",
+      "options": [
+        "دكا",
+        "كولكاتا",
+        "تشيتاجونج",
+        "إسلام آباد"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-229",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة تشاد؟",
+      "options": [
+        "نجامينا",
+        "الخرطوم",
+        "باماكو",
+        "نيامي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "gg-mcq-230",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "إيه عاصمة مالي؟",
+      "options": [
+        "باماكو",
+        "نجامينا",
+        "نيامي",
+        "واجادوجو"
+      ],
+      "correctIndex": 0
+    }
+  ]
+}

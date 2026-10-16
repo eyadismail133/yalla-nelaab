@@ -1,0 +1,3644 @@
+{
+  "category": {
+    "id": "friends",
+    "nameAr": "مين فينا",
+    "emoji": "🫵"
+  },
+  "questions": [
+    {
+      "id": "fr-poll-1",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين أكتر واحد فينا بيتأخر على المواعيد؟"
+    },
+    {
+      "id": "fr-poll-2",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا لو اتحط في جزيرة مهجورة هيعيش أطول؟"
+    },
+    {
+      "id": "fr-poll-3",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيضحك على نكتة مش مضحكة؟"
+    },
+    {
+      "id": "fr-poll-4",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا أكتر واحد بيتكلم في التليفون؟"
+    },
+    {
+      "id": "fr-poll-5",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا هيبقى أغنى واحد بعد عشر سنين؟"
+    },
+    {
+      "id": "fr-poll-6",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بينسى أسماء الناس بسرعة؟"
+    },
+    {
+      "id": "fr-poll-7",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا لو ضاع منه الموبايل هيلاقيه بعد أسبوع؟"
+    },
+    {
+      "id": "fr-poll-8",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا أكتر واحد بياكل؟"
+    },
+    {
+      "id": "fr-poll-9",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيرد على الرسايل بعد يومين؟"
+    },
+    {
+      "id": "fr-poll-10",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا لو مثّل في فيلم هياخد أوسكار؟"
+    },
+    {
+      "id": "fr-poll-11",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا أكتر واحد بيتوه وهو سايق؟"
+    },
+    {
+      "id": "fr-poll-12",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيصحى بدري من غير منبه؟"
+    },
+    {
+      "id": "fr-poll-13",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا لو دخل مسابقة أكل هيكسب؟"
+    },
+    {
+      "id": "fr-poll-14",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيغني في الحمام؟"
+    },
+    {
+      "id": "fr-poll-15",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا أكتر واحد بيتفرج على مسلسلات؟"
+    },
+    {
+      "id": "fr-poll-16",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا لو حد زعّله هيفضل ساكت أسبوع؟"
+    },
+    {
+      "id": "fr-poll-17",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيقول «هاجي كمان خمس دقايق» وميجيش؟"
+    },
+    {
+      "id": "fr-poll-18",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا هو اللي بيدفع الحساب دايمًا؟"
+    },
+    {
+      "id": "fr-poll-19",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا أكتر واحد بيشرب قهوة؟"
+    },
+    {
+      "id": "fr-poll-20",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا لو اتسأل سؤال سهل هيفكر كتير؟"
+    },
+    {
+      "id": "fr-poll-21",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحفظ كلام الأغاني غلط؟"
+    },
+    {
+      "id": "fr-poll-22",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا هيبقى أحسن أب أو أم؟"
+    },
+    {
+      "id": "fr-poll-23",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بياخد أطول وقت عشان يجهز ويخرج؟"
+    },
+    {
+      "id": "fr-poll-24",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا لو سافر لوحده هيتوه في المطار؟"
+    },
+    {
+      "id": "fr-poll-25",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا أكتر واحد بيتكلم وهو بيلعب؟"
+    },
+    {
+      "id": "fr-open-1",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه أشهر أكلة مصرية بتتاكل على الفطار؟",
+      "answerAr": "الفول",
+      "aliases": [
+        "فول",
+        "الفول المدمس"
+      ]
+    },
+    {
+      "id": "fr-open-2",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم الحلويات اللي بتتعمل في رمضان وشكلها زي القرص؟",
+      "answerAr": "القطايف",
+      "aliases": [
+        "قطايف"
+      ]
+    },
+    {
+      "id": "fr-open-3",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم المشروب الشعبي اللي بيتشرب سخن في الشتا ولونه أحمر؟",
+      "answerAr": "الكركديه",
+      "aliases": [
+        "كركديه"
+      ]
+    },
+    {
+      "id": "fr-open-4",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم اللعبة الشعبية اللي بتتلعب بالحجر على الأرض؟",
+      "answerAr": "الحجلة",
+      "aliases": [
+        "حجلة",
+        "نط الحبل"
+      ]
+    },
+    {
+      "id": "fr-open-5",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه أشهر أكلة بتتاكل في شم النسيم؟",
+      "answerAr": "الفسيخ",
+      "aliases": [
+        "فسيخ",
+        "الرنجة"
+      ]
+    },
+    {
+      "id": "fr-mcq-1",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "الفول المدمس بيتاكل إمتى عادة؟",
+      "options": [
+        "الفطار",
+        "الغدا",
+        "العشا",
+        "بعد النوم"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-2",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "القطايف بتتعمل في أنهي شهر؟",
+      "options": [
+        "شعبان",
+        "رمضان",
+        "شوال",
+        "محرم"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "fr-num-1",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الأسبوع كام يوم؟",
+      "correctValue": 7,
+      "tolerance": 0,
+      "unitAr": "يوم"
+    },
+    {
+      "id": "fr-num-2",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "شهر رمضان بيبقى كام يوم بالكتير؟",
+      "correctValue": 30,
+      "tolerance": 0,
+      "unitAr": "يوم"
+    },
+    {
+      "id": "fr-bool-1",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "الفسيخ بيتاكل في شم النسيم",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-2",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "الكركديه بيتشرب سخن وبارد",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-3",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "القطايف بتتعمل في عيد الأضحى",
+      "isTrue": false,
+      "explanationAr": "القطايف من حلويات رمضان."
+    },
+    {
+      "id": "fr-bool-4",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "الشاي أشهر مشروب في مصر",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-5",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الكشري أكلة مصرية",
+      "isTrue": true
+    },
+    {
+      "id": "fr-fill-1",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "أشهر أكلة مصرية على الفطار هي ____",
+      "answerAr": "الفول",
+      "aliases": [
+        "فول"
+      ]
+    },
+    {
+      "id": "fr-fill-2",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "حلويات رمضان المشهورة اسمها ____",
+      "answerAr": "القطايف",
+      "aliases": [
+        "قطايف"
+      ]
+    },
+    {
+      "id": "fr-prog-1",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا أكلة مصرية",
+        "بتتاكل على الفطار",
+        "بتتعمل من الفول المدمس"
+      ],
+      "answerAr": "الفول",
+      "aliases": [
+        "فول",
+        "الفول المدمس"
+      ]
+    },
+    {
+      "id": "fr-prog-2",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا مشروب",
+        "بتشرب سخن وبارد",
+        "لوني أحمر وبتشرب كتير في رمضان"
+      ],
+      "answerAr": "الكركديه",
+      "aliases": [
+        "كركديه"
+      ]
+    },
+    {
+      "id": "fr-ord-1",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب وجبات اليوم بالترتيب",
+      "items": [
+        "الفطار",
+        "الغدا",
+        "العصرونية",
+        "العشا"
+      ],
+      "labels": []
+    },
+    {
+      "id": "fr-ord-2",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب أيام الأسبوع بالترتيب",
+      "items": [
+        "السبت",
+        "الأحد",
+        "الاتنين",
+        "التلات"
+      ],
+      "labels": []
+    },
+    {
+      "id": "fr-poll-26",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بينام آخر حد في الليل؟"
+    },
+    {
+      "id": "fr-poll-27",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا لو دخل المطبخ هيحرق الأكل؟"
+    },
+    {
+      "id": "fr-poll-28",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا بيقرا الشروط والأحكام قبل ما يوافق؟"
+    },
+    {
+      "id": "fr-poll-29",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيصوّر أكله قبل ما ياكله؟"
+    },
+    {
+      "id": "fr-poll-30",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا هيجري أول واحد لو شاف صرصار؟"
+    },
+    {
+      "id": "fr-poll-31",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا بيحكي نفس القصة كل مرة؟"
+    },
+    {
+      "id": "fr-poll-32",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا بيفتكر تفاصيل من زمان محدش فاكرها؟"
+    },
+    {
+      "id": "fr-poll-33",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا لو ركب مواصلة غلط هيكمّل عادي؟"
+    },
+    {
+      "id": "fr-poll-34",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيرد على «إنت فين؟» بـ«في السكة»؟"
+    },
+    {
+      "id": "fr-poll-35",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا بيشتري حاجات مش محتاجها؟"
+    },
+    {
+      "id": "fr-poll-36",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا هيبقى الأحسن في لعبة تمثيل صامت؟"
+    },
+    {
+      "id": "fr-poll-37",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بينام في أي مكان وأي وقت؟"
+    },
+    {
+      "id": "fr-poll-38",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا لو اتحبس في أسانسير هيفضل هادي؟"
+    },
+    {
+      "id": "fr-poll-39",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا بيغيّر رأيه في آخر لحظة؟"
+    },
+    {
+      "id": "fr-poll-40",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا بيعرف طريق مختصر لأي حتة؟"
+    },
+    {
+      "id": "fr-poll-41",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا لسه حاطط صورة من عشر سنين؟"
+    },
+    {
+      "id": "fr-poll-42",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيتكلم مع نفسه؟"
+    },
+    {
+      "id": "fr-poll-43",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا فاكر عيد ميلاد كل واحد فينا؟"
+    },
+    {
+      "id": "fr-poll-44",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيرد «أي حاجة» لما تسأله عايز تاكل إيه؟"
+    },
+    {
+      "id": "fr-poll-45",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا بيسيب المكالمات من غير رد؟"
+    },
+    {
+      "id": "fr-poll-46",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا هيبقى أول واحد يسيب الخروجة ويمشي؟"
+    },
+    {
+      "id": "fr-poll-47",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا لو خسر في لعبة هيطلب يلعب تاني على طول؟"
+    },
+    {
+      "id": "fr-poll-48",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا بيسأل «رايحين فين؟» وهو راكب في العربية أصلًا؟"
+    },
+    {
+      "id": "fr-poll-49",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا بيثق في الناس بسرعة؟"
+    },
+    {
+      "id": "fr-poll-50",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا لو حد قاله سر هيحافظ عليه؟"
+    },
+    {
+      "id": "fr-poll-51",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا بيتحمّس لخطط عارفين إنها مش هتحصل؟"
+    },
+    {
+      "id": "fr-poll-52",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا هيفاصل في السوق لحد ما ياخد السعر اللي عايزه؟"
+    },
+    {
+      "id": "fr-poll-53",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بينسى مفاتيحه أكتر من مرة في الأسبوع؟"
+    },
+    {
+      "id": "fr-poll-54",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا لو جاله امتحان مفاجئ هيعدّي؟"
+    },
+    {
+      "id": "fr-poll-55",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيبعت مسجات صوتية طويلة؟"
+    },
+    {
+      "id": "fr-poll-56",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا هيبقى أول واحد يرد لو حصلت مشكلة؟"
+    },
+    {
+      "id": "fr-poll-57",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا حافظ كل الأغاني القديمة؟"
+    },
+    {
+      "id": "fr-poll-58",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحب يجرّب أكل جديد؟"
+    },
+    {
+      "id": "fr-poll-59",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا لو بقى مشهور هيتغيّر؟"
+    },
+    {
+      "id": "fr-poll-60",
+      "shape": "poll",
+      "difficulty": 2,
+      "textAr": "مين فينا هيفضل صاحبنا بعد عشرين سنة؟"
+    },
+    {
+      "id": "fr-mcq-3",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "الكشري بيتعمل من إيه أساسًا؟",
+      "options": [
+        "رز ومكرونة وعدس",
+        "لحمة وخضار",
+        "فول وطعمية",
+        "عيش وجبنة"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "وفوقه صلصة وتقلية وحمص."
+    },
+    {
+      "id": "fr-mcq-4",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "الملوخية بتتاكل مع إيه عادةً؟",
+      "options": [
+        "الرز والفراخ",
+        "العيش والجبنة",
+        "المكرونة والتونة",
+        "البطاطس والسلطة"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الملوخية بالرز والفراخ من أشهر الأكلات المصرية."
+    },
+    {
+      "id": "fr-mcq-5",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "المحشي بيتحشى بإيه؟",
+      "options": [
+        "اللحمة المفرومة بس",
+        "الرز والخضرة",
+        "الجبنة",
+        "العدس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "رز وشبت وبقدونس وكزبرة وبصل."
+    },
+    {
+      "id": "fr-mcq-6",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الفطير المشلتت أكلة من أنهي بلد؟",
+      "options": [
+        "المغرب",
+        "مصر",
+        "لبنان",
+        "تونس"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "من أشهر الأكلات الريفية المصرية."
+    },
+    {
+      "id": "fr-mcq-7",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "إيه أول حاجة بتتعرض على الضيف في البيت المصري؟",
+      "options": [
+        "القهوة",
+        "الشاي",
+        "العصير",
+        "الكركديه"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الشاي هو المشروب الرسمي للضيافة."
+    },
+    {
+      "id": "fr-mcq-8",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "البسبوسة بتتعمل من إيه؟",
+      "options": [
+        "الدقيق",
+        "السميد",
+        "الرز",
+        "الشعير"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "السميد والزبادي والسكر، وبعدين شربات."
+    },
+    {
+      "id": "fr-mcq-9",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "شم النسيم بيجي بعد أنهي عيد؟",
+      "options": [
+        "عيد الفطر",
+        "عيد الأضحى",
+        "عيد القيامة",
+        "رأس السنة"
+      ],
+      "correctIndex": 2,
+      "explanationAr": "بيكون يوم الاتنين اللي بعد عيد القيامة."
+    },
+    {
+      "id": "fr-mcq-10",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الطعمية المصرية بتتعمل من إيه؟",
+      "options": [
+        "الحمص",
+        "الفول",
+        "العدس",
+        "اللوبيا"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "في مصر بالفول، وفي الشام بالحمص."
+    },
+    {
+      "id": "fr-mcq-11",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "أنهي مشروب بيتقدّم في العزا في مصر عادةً؟",
+      "options": [
+        "الشاي بلبن",
+        "القهوة السادة",
+        "العصير",
+        "الكركديه"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "القهوة السادة من غير سكر."
+    },
+    {
+      "id": "fr-mcq-12",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "الفسيخ نوع من إيه؟",
+      "options": [
+        "لحمة مجففة",
+        "سمك مملّح",
+        "جبنة قديمة",
+        "خضار مخلل"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "سمك بيتملّح وبيتسيب فترة."
+    },
+    {
+      "id": "fr-mcq-13",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي حلوى بترتبط بالمولد النبوي في مصر؟",
+      "options": [
+        "الكنافة",
+        "حلاوة المولد",
+        "البسبوسة",
+        "الأرز بلبن"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الملبن والحمصية والسمسمية وغيرهم."
+    },
+    {
+      "id": "fr-mcq-14",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "أنهي حلوى بترتبط بعيد الفطر في مصر؟",
+      "options": [
+        "البسبوسة",
+        "الكحك",
+        "أم علي",
+        "الكنافة"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "الكحك بالسكر البودرة من تقاليد العيد."
+    },
+    {
+      "id": "fr-mcq-15",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "«أم علي» نوع من إيه؟",
+      "options": [
+        "شوربة",
+        "حلو",
+        "سلطة",
+        "مشروب"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "حلو بيتعمل في الفرن بالعيش واللبن والمكسرات."
+    },
+    {
+      "id": "fr-mcq-16",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "إيه أشهر ساندويتش شعبي في الشارع المصري؟",
+      "options": [
+        "الفول والطعمية",
+        "البرجر",
+        "الشاورما",
+        "الجبنة"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "أرخص وأشهر فطار في مصر."
+    },
+    {
+      "id": "fr-mcq-17",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "«العرقسوس» و«التمر هندي» إيه؟",
+      "options": [
+        "حلويات",
+        "مشروبات",
+        "أكلات",
+        "توابل"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "مشروبات بترتبط برمضان في مصر."
+    },
+    {
+      "id": "fr-mcq-18",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«السبوع» مناسبة بتتعمل لمين؟",
+      "options": [
+        "للعروسين",
+        "للمولود الجديد",
+        "للناجحين",
+        "للمسافرين"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "بتتعمل بعد أسبوع من ولادة الطفل."
+    },
+    {
+      "id": "fr-mcq-19",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "المصريين بيروحوا فين عادةً في شم النسيم؟",
+      "options": [
+        "الجناين والحدايق",
+        "السينما",
+        "المولات",
+        "المكتبات"
+      ],
+      "correctIndex": 0,
+      "explanationAr": "الخروج للهوا الطلق من تقاليد اليوم ده."
+    },
+    {
+      "id": "fr-mcq-20",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "«الزلابيا» و«اللقمة» نوع من إيه؟",
+      "options": [
+        "المخللات",
+        "الحلويات المقلية",
+        "الشوربة",
+        "السلطات"
+      ],
+      "correctIndex": 1,
+      "explanationAr": "عجينة بتتقلي وبتتغمس في الشربات."
+    },
+    {
+      "id": "fr-bool-6",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الطعمية المصرية بتتعمل من الفول",
+      "isTrue": true,
+      "explanationAr": "وفي الشام بيعملوها بالحمص."
+    },
+    {
+      "id": "fr-bool-7",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "الكشري فيه رز ومكرونة وعدس",
+      "isTrue": true,
+      "explanationAr": "وفوقه صلصة وتقلية."
+    },
+    {
+      "id": "fr-bool-8",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "الكحك بيرتبط بعيد الفطر في مصر",
+      "isTrue": true,
+      "explanationAr": "كل بيت بيعمله قبل العيد."
+    },
+    {
+      "id": "fr-bool-9",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "الفسيخ نوع من الجبنة",
+      "isTrue": false,
+      "explanationAr": "الفسيخ سمك مملّح."
+    },
+    {
+      "id": "fr-bool-10",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "«أم علي» أكلة حلوة مش مالحة",
+      "isTrue": true,
+      "explanationAr": "بتتعمل في الفرن بالعيش واللبن."
+    },
+    {
+      "id": "fr-bool-11",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "شم النسيم بييجي يوم الاتنين اللي بعد عيد القيامة",
+      "isTrue": true,
+      "explanationAr": "وده اللي بيخلي تاريخه بيتغيّر كل سنة."
+    },
+    {
+      "id": "fr-bool-12",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "المحشي بيتحشى بالرز والخضرة",
+      "isTrue": true,
+      "explanationAr": "شبت وبقدونس وكزبرة وبصل مع الرز."
+    },
+    {
+      "id": "fr-bool-13",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "البسبوسة بتتعمل من السميد",
+      "isTrue": true,
+      "explanationAr": "سميد وزبادي وسكر وشربات."
+    },
+    {
+      "id": "fr-bool-14",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "القهوة السادة بتتقدّم في الأفراح في مصر",
+      "isTrue": false,
+      "explanationAr": "القهوة السادة بترتبط بالعزا مش الأفراح."
+    },
+    {
+      "id": "fr-bool-15",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "العرقسوس مشروب بيكتر في رمضان",
+      "isTrue": true,
+      "explanationAr": "زيه زي التمر هندي والخروب."
+    },
+    {
+      "id": "fr-bool-16",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "حلاوة المولد بترتبط بالمولد النبوي",
+      "isTrue": true,
+      "explanationAr": "الملبن والسمسمية والحمصية."
+    },
+    {
+      "id": "fr-bool-17",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "الملوخية بتتاكل مع الرز عادةً",
+      "isTrue": true,
+      "explanationAr": "الملوخية بالرز والفراخ أو الأرانب."
+    },
+    {
+      "id": "fr-bool-18",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "«السبوع» بيتعمل للمولود الجديد",
+      "isTrue": true,
+      "explanationAr": "بعد أسبوع من ولادته."
+    },
+    {
+      "id": "fr-bool-19",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الفطير المشلتت أكلة مصرية",
+      "isTrue": true,
+      "explanationAr": "من أشهر أكلات الريف المصري."
+    },
+    {
+      "id": "fr-bool-20",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الشاي في مصر بيتشرب من غير سكر دايمًا",
+      "isTrue": false,
+      "explanationAr": "أغلب الناس بتشربه بسكر، والسادة اختيار."
+    },
+    {
+      "id": "fr-num-3",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "السنة فيها كام فصل؟",
+      "correctValue": 4,
+      "tolerance": 0,
+      "unitAr": "فصل",
+      "explanationAr": "ربيع وصيف وخريف وشتا."
+    },
+    {
+      "id": "fr-num-4",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "اليوم كام ساعة؟",
+      "correctValue": 24,
+      "tolerance": 0,
+      "unitAr": "ساعة",
+      "explanationAr": "أربعة وعشرين ساعة."
+    },
+    {
+      "id": "fr-num-5",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "الساعة كام دقيقة؟",
+      "correctValue": 60,
+      "tolerance": 0,
+      "unitAr": "دقيقة",
+      "explanationAr": "ستين دقيقة."
+    },
+    {
+      "id": "fr-num-6",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "عيد الفطر بيبقى كام يوم؟",
+      "correctValue": 3,
+      "tolerance": 0,
+      "unitAr": "يوم",
+      "explanationAr": "تلات أيام."
+    },
+    {
+      "id": "fr-num-7",
+      "shape": "numeric",
+      "difficulty": 4,
+      "textAr": "الحج بيكون في الشهر رقم كام في السنة الهجرية؟",
+      "correctValue": 12,
+      "tolerance": 0,
+      "explanationAr": "ذو الحجة هو الشهر التاناشر والأخير."
+    },
+    {
+      "id": "fr-num-8",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "وجبات اليوم الأساسية كام وجبة؟",
+      "correctValue": 3,
+      "tolerance": 0,
+      "unitAr": "وجبة",
+      "explanationAr": "فطار وغدا وعشا."
+    },
+    {
+      "id": "fr-num-9",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الشهر بيبقى كام أسبوع تقريبًا؟",
+      "correctValue": 4,
+      "tolerance": 0,
+      "unitAr": "أسبوع",
+      "explanationAr": "أربع أسابيع وكام يوم."
+    },
+    {
+      "id": "fr-num-10",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "السنة العادية كام يوم؟",
+      "correctValue": 365,
+      "tolerance": 0,
+      "unitAr": "يوم",
+      "explanationAr": "والكبيسة 366."
+    },
+    {
+      "id": "fr-num-11",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "نص الساعة كام دقيقة؟",
+      "correctValue": 30,
+      "tolerance": 0,
+      "unitAr": "دقيقة",
+      "explanationAr": "تلاتين دقيقة."
+    },
+    {
+      "id": "fr-num-12",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الأسبوع فيه كام يوم إجازة رسمية في مصر عادةً؟",
+      "correctValue": 2,
+      "tolerance": 0,
+      "unitAr": "يوم",
+      "explanationAr": "الجمعة والسبت."
+    },
+    {
+      "id": "fr-fill-3",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "الأكلة المصرية اللي فيها رز ومكرونة وعدس اسمها ____",
+      "answerAr": "الكشري",
+      "aliases": [
+        "كشري",
+        "الكشرى"
+      ],
+      "explanationAr": "أشهر أكلة شعبية في مصر."
+    },
+    {
+      "id": "fr-fill-4",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "الحلوى اللي بترتبط بعيد الفطر في مصر اسمها ____",
+      "answerAr": "الكحك",
+      "aliases": [
+        "كحك",
+        "كحك العيد"
+      ],
+      "explanationAr": "بيتعمل قبل العيد بأيام."
+    },
+    {
+      "id": "fr-fill-5",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الفسيخ نوع من ____ المملّح",
+      "answerAr": "السمك",
+      "aliases": [
+        "سمك"
+      ],
+      "explanationAr": "بيتاكل في شم النسيم."
+    },
+    {
+      "id": "fr-fill-6",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "المشروب اللي بيتقدّم في العزا في مصر هو القهوة ____",
+      "answerAr": "السادة",
+      "aliases": [
+        "ساده",
+        "السادة"
+      ],
+      "explanationAr": "من غير سكر."
+    },
+    {
+      "id": "fr-fill-7",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الطعمية في مصر بتتعمل من ____",
+      "answerAr": "الفول",
+      "aliases": [
+        "فول",
+        "الفول المدشوش"
+      ],
+      "explanationAr": "وفي الشام بيعملوها بالحمص."
+    },
+    {
+      "id": "fr-fill-8",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "المناسبة اللي بتتعمل للمولود الجديد اسمها ____",
+      "answerAr": "السبوع",
+      "aliases": [
+        "سبوع"
+      ],
+      "explanationAr": "بعد أسبوع من الولادة."
+    },
+    {
+      "id": "fr-fill-9",
+      "shape": "fill_blank",
+      "difficulty": 1,
+      "textAr": "الملوخية بتتاكل عادةً مع ____",
+      "answerAr": "الرز",
+      "aliases": [
+        "رز",
+        "الأرز"
+      ],
+      "explanationAr": "الملوخية بالرز والفراخ."
+    },
+    {
+      "id": "fr-fill-10",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "البسبوسة بتتعمل من ____",
+      "answerAr": "السميد",
+      "aliases": [
+        "سميد"
+      ],
+      "explanationAr": "مع الزبادي والسكر والشربات."
+    },
+    {
+      "id": "fr-fill-11",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "من مشروبات رمضان المشهورة ____ هندي",
+      "answerAr": "التمر",
+      "aliases": [
+        "تمر"
+      ],
+      "explanationAr": "التمر هندي والعرقسوس والخروب."
+    },
+    {
+      "id": "fr-fill-12",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "من أشهر أنواع حلاوة المولد ____ والسمسمية",
+      "answerAr": "الملبن",
+      "aliases": [
+        "ملبن"
+      ],
+      "explanationAr": "الملبن والسمسمية والحمصية من أشهر أنواعها."
+    },
+    {
+      "id": "fr-open-6",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "إيه الأكلة المصرية اللي فيها رز ومكرونة وعدس؟",
+      "answerAr": "الكشري",
+      "aliases": [
+        "كشري"
+      ],
+      "explanationAr": "أشهر أكلة شعبية مصرية."
+    },
+    {
+      "id": "fr-open-7",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "إيه اسم الحلوى اللي بتتعمل في عيد الفطر في مصر؟",
+      "answerAr": "الكحك",
+      "aliases": [
+        "كحك",
+        "كحك العيد"
+      ],
+      "explanationAr": "بالسكر البودرة والعجمية."
+    },
+    {
+      "id": "fr-open-8",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم المناسبة اللي بتتعمل للمولود الجديد؟",
+      "answerAr": "السبوع",
+      "aliases": [
+        "سبوع"
+      ],
+      "explanationAr": "بعد أسبوع من الولادة."
+    },
+    {
+      "id": "fr-open-9",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه المشروب اللي بيتقدّم في العزا في مصر؟",
+      "answerAr": "القهوة السادة",
+      "aliases": [
+        "قهوة سادة",
+        "السادة",
+        "القهوه الساده"
+      ],
+      "explanationAr": "من غير سكر."
+    },
+    {
+      "id": "fr-open-10",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الأكلة اللي الخضار بيتفرّغ ويتحشى برز وخضرة؟",
+      "answerAr": "المحشي",
+      "aliases": [
+        "محشي",
+        "المحشى"
+      ],
+      "explanationAr": "كرنب وورق عنب وكوسة وفلفل."
+    },
+    {
+      "id": "fr-open-11",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الحلو المصري اللي بيتعمل في الفرن بالعيش واللبن والمكسرات؟",
+      "answerAr": "أم علي",
+      "aliases": [
+        "ام علي",
+        "أم على"
+      ],
+      "explanationAr": "من أشهر الحلويات المصرية."
+    },
+    {
+      "id": "fr-open-12",
+      "shape": "open_answer",
+      "difficulty": 1,
+      "textAr": "إيه اسم الأكل الشعبي اللي بيتعمل من الفول وبيتقلي؟",
+      "answerAr": "الطعمية",
+      "aliases": [
+        "طعمية",
+        "الفلافل"
+      ],
+      "explanationAr": "بتتاكل في ساندويتش على الفطار."
+    },
+    {
+      "id": "fr-prog-3",
+      "shape": "progressive",
+      "difficulty": 1,
+      "hints": [
+        "أنا أكلة شعبية مصرية",
+        "ليّا محلات مخصوصة بتبيعني بس",
+        "فيّا رز ومكرونة وعدس وفوقي صلصة وتقلية"
+      ],
+      "answerAr": "الكشري",
+      "aliases": [
+        "كشري"
+      ],
+      "explanationAr": "أشهر أكلة شعبية في مصر."
+    },
+    {
+      "id": "fr-prog-4",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا حلو بيتعمل في البيت",
+        "بيتحط عليّا سكر بودرة",
+        "بترتبط بعيد الفطر وكل بيت بيعملني قبله"
+      ],
+      "answerAr": "الكحك",
+      "aliases": [
+        "كحك",
+        "كحك العيد"
+      ],
+      "explanationAr": "من أهم تقاليد العيد في مصر."
+    },
+    {
+      "id": "fr-prog-5",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "ريحتي قوية أوي",
+        "ناس بتحبني وناس مش بتطيقني",
+        "سمك مملّح بيتاكل في شم النسيم"
+      ],
+      "answerAr": "الفسيخ",
+      "aliases": [
+        "فسيخ"
+      ],
+      "explanationAr": "من أقدم التقاليد المصرية في شم النسيم."
+    },
+    {
+      "id": "fr-prog-6",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا أكلة بتاخد وقت طويل في التحضير",
+        "الأمهات بتقعد ساعات تحضّرني",
+        "الخضار بيتفرّغ وبيتحشى برز وخضرة"
+      ],
+      "answerAr": "المحشي",
+      "aliases": [
+        "محشي"
+      ],
+      "explanationAr": "كرنب وورق عنب وكوسة وباذنجان."
+    },
+    {
+      "id": "fr-prog-7",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا حلو بيتقدّم سخن",
+        "بتتعمل في الفرن",
+        "عيش ولبن ومكسرات، واسمي اسم واحدة ست"
+      ],
+      "answerAr": "أم علي",
+      "aliases": [
+        "ام علي",
+        "أم على"
+      ],
+      "explanationAr": "من أشهر الحلويات المصرية."
+    },
+    {
+      "id": "fr-prog-8",
+      "shape": "progressive",
+      "difficulty": 1,
+      "hints": [
+        "أنا مشروب بيتشرب في أي وقت",
+        "أول حاجة بتتعرض على الضيف في مصر",
+        "بتشربني سخن وممكن بنعناع"
+      ],
+      "answerAr": "الشاي",
+      "aliases": [
+        "شاي",
+        "الشاى"
+      ],
+      "explanationAr": "المشروب الرسمي للضيافة المصرية."
+    },
+    {
+      "id": "fr-ord-3",
+      "shape": "ordering",
+      "difficulty": 1,
+      "textAr": "رتّب خطوات عمل كوباية شاي بالترتيب",
+      "items": [
+        "تغلي الميه",
+        "تحط الشاي",
+        "تحط السكر",
+        "تقلّب وتشرب"
+      ],
+      "labels": [],
+      "explanationAr": "أبسط طقس يومي في مصر."
+    },
+    {
+      "id": "fr-ord-4",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب المناسبات دي حسب ترتيبها في السنة الهجرية",
+      "items": [
+        "رمضان",
+        "عيد الفطر",
+        "عيد الأضحى"
+      ],
+      "labels": [],
+      "explanationAr": "الفطر أول شوال، والأضحى في ذي الحجة."
+    },
+    {
+      "id": "fr-ord-5",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب الأكل ده من الأخف للأتقل",
+      "items": [
+        "كوباية شاي",
+        "ساندويتش فول",
+        "طبق كشري"
+      ],
+      "labels": [],
+      "explanationAr": "الكشري بيقعد في المعدة."
+    },
+    {
+      "id": "fr-ord-6",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب المناسبات دي حسب عدد أيامها من الأقل للأكتر",
+      "items": [
+        "عيد الفطر",
+        "عيد الأضحى",
+        "رمضان"
+      ],
+      "labels": [
+        "3",
+        "4",
+        "30"
+      ],
+      "explanationAr": "رمضان شهر كامل، والأعياد أيام معدودة."
+    },
+    {
+      "id": "fr-ord-7",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب خطوات تحضير المحشي بالترتيب",
+      "items": [
+        "تفريغ الخضار",
+        "تحضير الحشو",
+        "الحشو",
+        "الطبخ"
+      ],
+      "labels": [],
+      "explanationAr": "أطول خطوة هي التفريغ والحشو."
+    },
+    {
+      "id": "fr-ord-8",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب المناسبات دي حسب ترتيبها في السنة الميلادية",
+      "items": [
+        "رأس السنة",
+        "شم النسيم",
+        "بداية الصيف"
+      ],
+      "labels": [
+        "يناير",
+        "أبريل أو مايو",
+        "يونيو"
+      ],
+      "explanationAr": "شم النسيم بيتغيّر تاريخه كل سنة."
+    },
+    {
+      "id": "fr-odd-1",
+      "shape": "odd_one_out",
+      "difficulty": 1,
+      "textAr": "التلاتة أكلات فطار مصرية شهيرة، وواحدة بس أكلة غدا:",
+      "items": [
+        "الفول",
+        "الطعمية",
+        "البيض",
+        "الكشري"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الكشري بياكله المصريين عادةً في الغدا، أما التلاتة التانيين من أكلات الفطار الشهيرة."
+    },
+    {
+      "id": "fr-odd-2",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة حلويات مرتبطة برمضان، وواحدة بس مرتبطة بعيد الفطر:",
+      "items": [
+        "القطايف",
+        "الكنافة",
+        "السمبوسك",
+        "الكحك"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الكحك من حلويات عيد الفطر، أما التلاتة التانيين من حلويات رمضان."
+    },
+    {
+      "id": "fr-odd-3",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة حلويات عيد الفطر الشهيرة، وواحدة بس حلوى رمضان:",
+      "items": [
+        "الكحك",
+        "البسكويت",
+        "الغريبة",
+        "القطايف"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "القطايف من حلويات رمضان، أما التلاتة التانيين من حلويات عيد الفطر."
+    },
+    {
+      "id": "fr-odd-4",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة مشروبات بتكتر في رمضان، وواحد بس بيتشرب طول السنة عادةً:",
+      "items": [
+        "قمر الدين",
+        "العرقسوس",
+        "التمر هندي",
+        "الشاي"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الشاي مشروب يومي طول السنة، أما التلاتة التانيين بيكترو في رمضان تحديدًا."
+    },
+    {
+      "id": "fr-odd-5",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة خضروات بتتحشى في الأكل المصري، وواحدة بس مكوّن الحشو نفسه:",
+      "items": [
+        "الكرنب",
+        "الكوسة",
+        "الفلفل",
+        "الأرز"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الأرز هو المكوّن اللي بيتحط جوه الخضار عشان يتحشى، مش نوع خضار بيتحشى."
+    },
+    {
+      "id": "fr-odd-6",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة أنواع سمك مملح أو مدخن شعبي، وواحدة بس نوع لحمة:",
+      "items": [
+        "الفسيخ",
+        "الرنجة",
+        "السردين",
+        "الكبدة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الكبدة نوع لحمة، أما التلاتة التانيين أنواع سمك."
+    },
+    {
+      "id": "fr-odd-7",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة مناسبات دينية إسلامية، وواحدة بس أصلها فرعوني قديم:",
+      "items": [
+        "المولد النبوي",
+        "رمضان",
+        "عيد الفطر",
+        "شم النسيم"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "شم النسيم مناسبة أصلها من مصر الفرعونية القديمة، مش مناسبة إسلامية."
+    },
+    {
+      "id": "fr-odd-8",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة أعياد قبطية مسيحية، وواحد بس عيد إسلامي:",
+      "items": [
+        "عيد القيامة",
+        "عيد الميلاد المجيد",
+        "عيد الغطاس",
+        "عيد الفطر"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "عيد الفطر عيد إسلامي، أما التلاتة التانيين أعياد قبطية مسيحية."
+    },
+    {
+      "id": "fr-odd-9",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة مشروبات بتتقدّم ساخنة عادةً، وواحد بس بيتقدّم بارد غالبًا:",
+      "items": [
+        "الشاي",
+        "القهوة",
+        "السحلب",
+        "العرقسوس"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "العرقسوس بيتقدّم بارد غالبًا، أما التلاتة التانيين بيتقدموا ساخنين عادةً."
+    },
+    {
+      "id": "fr-odd-10",
+      "shape": "odd_one_out",
+      "difficulty": 1,
+      "textAr": "التلاتة أكلات بتتباع كساندوتشات في الشارع المصري، وواحدة بس بتتاكل بطبق عادةً:",
+      "items": [
+        "الطعمية",
+        "الفول",
+        "الكبدة",
+        "الكشري"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الكشري بياكله الناس في طبق عادةً، مش كساندوتش زي التلاتة التانيين."
+    },
+    {
+      "id": "fr-odd-11",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة أدوات مطبخ تقليدية، وواحدة بس مش أداة مطبخ:",
+      "items": [
+        "الحلة",
+        "المِحماسة",
+        "الطاسة",
+        "السجادة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "السجادة مش أداة مطبخ، أما التلاتة التانيين أدوات مطبخ تقليدية."
+    },
+    {
+      "id": "fr-odd-12",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة مناسبات عائلية خاصة، وواحدة بس مناسبة عامة مش عائلية:",
+      "items": [
+        "السبوع",
+        "الخطوبة",
+        "الفرح",
+        "رأس السنة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "رأس السنة مناسبة عامة بيحتفل بيها الناس كلهم، مش مناسبة عائلية خاصة زي التلاتة التانيين."
+    },
+    {
+      "id": "fr-odd-13",
+      "shape": "odd_one_out",
+      "difficulty": 1,
+      "textAr": "التلاتة ألعاب شعبية حركية للأطفال، وواحدة بس لعبة ذهنية:",
+      "items": [
+        "الحجلة",
+        "الاستغماية",
+        "نط الحبل",
+        "الشطرنج"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الشطرنج لعبة ذهنية بتُلعب قاعد، أما التلاتة التانيين ألعاب حركية شعبية."
+    },
+    {
+      "id": "fr-odd-14",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة أشهر هجرية مرتبطة بمواسم دينية مشهورة، وواحد بس شهر ميلادي:",
+      "items": [
+        "رمضان",
+        "شوال",
+        "ذو الحجة",
+        "يناير"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "يناير شهر ميلادي، أما التلاتة التانيين أشهر هجرية."
+    },
+    {
+      "id": "fr-odd-15",
+      "shape": "odd_one_out",
+      "difficulty": 1,
+      "textAr": "التلاتة فصول من فصول السنة الأربعة، وواحدة بس مش فصل:",
+      "items": [
+        "الصيف",
+        "الشتا",
+        "الخريف",
+        "العيد"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "العيد مناسبة مش فصل من فصول السنة."
+    },
+    {
+      "id": "fr-odd-16",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة من الوجبات الرئيسية في اليوم، وواحدة بس وجبة خفيفة إضافية:",
+      "items": [
+        "الفطار",
+        "الغدا",
+        "العشا",
+        "العصرونية"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "العصرونية وجبة خفيفة بين الغدا والعشا، مش من الوجبات الرئيسية التلاتة."
+    },
+    {
+      "id": "fr-odd-17",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة أكلات مصرية أساسها الأرز أو النشويات، وواحدة بس معجنات مقلية:",
+      "items": [
+        "محشي الكرنب",
+        "محشي الكوسة",
+        "الكشري",
+        "الفطير المشلتت"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الفطير المشلتت عجين مقلي أو مخبوز، مش من أكلات الأرز."
+    },
+    {
+      "id": "fr-odd-18",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة من العجائن المقلية الحلوة، وواحدة بس شوربة خضار:",
+      "items": [
+        "الزلابيا",
+        "اللقمة القاضي",
+        "السمبوسك الحلو",
+        "الملوخية"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الملوخية شوربة خضار خضرا، مش من العجائن المقلية."
+    },
+    {
+      "id": "fr-odd-19",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة مأكولات شعبية بتنتشر في الشتا، وواحدة بس مشروب بارد:",
+      "items": [
+        "السحلب",
+        "الحمص الشام",
+        "الفول السوداني المحمص",
+        "العصير"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "العصير بيتقدّم بارد غالبًا، أما التلاتة التانيين مرتبطين بدفا الشتا."
+    },
+    {
+      "id": "fr-odd-20",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة أطعمة مرتبطة بالمولد النبوي، وواحدة بس مش مرتبطة بيه تحديدًا:",
+      "items": [
+        "حلاوة المولد",
+        "عرايس المولد",
+        "الحمص بالسكر",
+        "البسبوسة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "البسبوسة حلوى عامة مش مرتبطة بالمولد النبوي تحديدًا، عكس التلاتة التانيين."
+    },
+    {
+      "id": "fr-odd-21",
+      "shape": "odd_one_out",
+      "difficulty": 1,
+      "textAr": "التلاتة أطباق مصرية نباتية بحتة، وواحد بس فيه لحمة:",
+      "items": [
+        "الملوخية",
+        "البامية",
+        "الكشري",
+        "الكبدة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "الكبدة طبق لحمة، أما التلاتة التانيين ممكن يتعملوا نباتي بالكامل."
+    },
+    {
+      "id": "fr-odd-22",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة أشياء بترتبط بالعزاء في مصر، وواحدة بس بترتبط بالأفراح:",
+      "items": [
+        "قراءة القرآن",
+        "الشاي بلا سكر",
+        "السرادق الأسود",
+        "البالونات الملونة"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "البالونات الملونة من مظاهر الأفراح، مش العزاء."
+    },
+    {
+      "id": "fr-odd-23",
+      "shape": "odd_one_out",
+      "difficulty": 2,
+      "textAr": "التلاتة من مظاهر الأفراح المصرية، وواحدة بس من مظاهر العزاء:",
+      "items": [
+        "الزفة",
+        "الكوشة",
+        "الحلويات الملونة",
+        "السرادق الأسود"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "السرادق الأسود من مظاهر العزاء، مش الأفراح."
+    },
+    {
+      "id": "fr-odd-24",
+      "shape": "odd_one_out",
+      "difficulty": 1,
+      "textAr": "التلاتة توابل أو نكهات شائعة في الأكل المصري، وواحدة بس نوع خبز:",
+      "items": [
+        "الكمون",
+        "الكزبرة",
+        "الشطة",
+        "العيش الشمسي"
+      ],
+      "oddIndex": 3,
+      "reasonAr": "العيش الشمسي نوع خبز، مش توابل."
+    },
+    {
+      "id": "fr-emj-1",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🫘🍞🍋",
+      "answerAr": "الفول",
+      "aliases": [
+        "فول",
+        "الفول المدمس"
+      ]
+    },
+    {
+      "id": "fr-emj-2",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🟢🍞🫘",
+      "answerAr": "الطعمية",
+      "aliases": [
+        "طعمية"
+      ]
+    },
+    {
+      "id": "fr-emj-3",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🐟🧂🎊",
+      "answerAr": "الفسيخ",
+      "aliases": [
+        "فسيخ"
+      ]
+    },
+    {
+      "id": "fr-emj-4",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🍪🌙🎉",
+      "answerAr": "الكحك",
+      "aliases": [
+        "كحك"
+      ]
+    },
+    {
+      "id": "fr-emj-5",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🥞🌰🍯",
+      "answerAr": "القطايف",
+      "aliases": [
+        "قطايف"
+      ]
+    },
+    {
+      "id": "fr-emj-6",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🧀🍯🟠",
+      "answerAr": "الكنافة",
+      "aliases": [
+        "كنافة"
+      ]
+    },
+    {
+      "id": "fr-emj-7",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🥐🧈🍯",
+      "answerAr": "الفطير المشلتت",
+      "aliases": [
+        "فطير مشلتت"
+      ]
+    },
+    {
+      "id": "fr-emj-8",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🌺🍵❄️",
+      "answerAr": "الكركديه",
+      "aliases": [
+        "كركديه"
+      ]
+    },
+    {
+      "id": "fr-emj-9",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🖤🥤❄️",
+      "answerAr": "العرقسوس",
+      "aliases": [
+        "عرقسوس"
+      ]
+    },
+    {
+      "id": "fr-emj-10",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🟤🍯🌙",
+      "answerAr": "التمر هندي",
+      "aliases": []
+    },
+    {
+      "id": "fr-emj-11",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🥛🌰❄️",
+      "answerAr": "السحلب",
+      "aliases": [
+        "سحلب"
+      ]
+    },
+    {
+      "id": "fr-emj-12",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🕌🍬🐴",
+      "answerAr": "حلاوة المولد",
+      "aliases": []
+    },
+    {
+      "id": "fr-emj-13",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🌱🥚🐟",
+      "answerAr": "شم النسيم",
+      "aliases": []
+    },
+    {
+      "id": "fr-emj-14",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "👶🥁🕯️",
+      "answerAr": "السبوع",
+      "aliases": []
+    },
+    {
+      "id": "fr-emj-15",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🪨🦶🔢",
+      "answerAr": "الحجلة",
+      "aliases": []
+    },
+    {
+      "id": "fr-emj-16",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🍩🍯🎉",
+      "answerAr": "الزلابيا",
+      "aliases": [
+        "زلابيا"
+      ]
+    },
+    {
+      "id": "fr-emj-17",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🥛🍞🥜",
+      "answerAr": "أم علي",
+      "aliases": [
+        "امّ علي"
+      ]
+    },
+    {
+      "id": "fr-emj-18",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🌾🥛🍯",
+      "answerAr": "البليلة",
+      "aliases": [
+        "بليلة"
+      ]
+    },
+    {
+      "id": "fr-emj-19",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🍚🍞🧄",
+      "answerAr": "الفتة",
+      "aliases": [
+        "فتة"
+      ]
+    },
+    {
+      "id": "fr-emj-20",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🥟🥩🧀",
+      "answerAr": "الرقاق",
+      "aliases": []
+    },
+    {
+      "id": "fr-emj-21",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🍖🍞🌶️",
+      "answerAr": "الكبدة",
+      "aliases": [
+        "كبدة"
+      ]
+    },
+    {
+      "id": "fr-emj-22",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🌭🔥🇪🇬",
+      "answerAr": "السجق",
+      "aliases": [
+        "سجق"
+      ]
+    },
+    {
+      "id": "fr-emj-23",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🕊️🍚🔥",
+      "answerAr": "الحمام المحشي",
+      "aliases": []
+    },
+    {
+      "id": "fr-emj-24",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🍇🍚🌿",
+      "answerAr": "ورق العنب",
+      "aliases": [
+        "محشي ورق عنب"
+      ]
+    },
+    {
+      "id": "fr-emj-25",
+      "shape": "emoji",
+      "difficulty": 3,
+      "emojis": "🦆🔥🍽️",
+      "answerAr": "البط المحمر",
+      "aliases": [
+        "بط محمر"
+      ]
+    },
+    {
+      "id": "fr-emj-26",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🟤🍯🥜",
+      "answerAr": "الحلاوة الطحينية",
+      "aliases": [
+        "حلاوة طحينية"
+      ]
+    },
+    {
+      "id": "fr-emj-27",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🥮🍯🌰",
+      "answerAr": "البقلاوة",
+      "aliases": [
+        "بقلاوة"
+      ]
+    },
+    {
+      "id": "fr-emj-28",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🍪🧈🌙",
+      "answerAr": "الغريبة",
+      "aliases": [
+        "غريبة"
+      ]
+    },
+    {
+      "id": "fr-emj-29",
+      "shape": "emoji",
+      "difficulty": 1,
+      "emojis": "🍞🔥🌾",
+      "answerAr": "العيش الشمسي",
+      "aliases": [
+        "عيش شمسي",
+        "عيش بلدي"
+      ]
+    },
+    {
+      "id": "fr-emj-30",
+      "shape": "emoji",
+      "difficulty": 2,
+      "emojis": "🍬🧊🌸",
+      "answerAr": "الملبن",
+      "aliases": [
+        "ملبن"
+      ]
+    },
+    {
+      "id": "fr-wr-1",
+      "shape": "word_race",
+      "difficulty": 1,
+      "fieldsAr": [
+        "اسم",
+        "حيوان",
+        "جماد",
+        "بلاد"
+      ],
+      "letters": [
+        "م",
+        "ب",
+        "ن",
+        "ك",
+        "س",
+        "ت",
+        "ح",
+        "ع"
+      ]
+    },
+    {
+      "id": "fr-wr-2",
+      "shape": "word_race",
+      "difficulty": 2,
+      "fieldsAr": [
+        "اسم",
+        "نبات",
+        "طعام",
+        "مهنة"
+      ],
+      "letters": [
+        "ب",
+        "ت",
+        "س",
+        "ج",
+        "ك",
+        "م",
+        "ر"
+      ]
+    },
+    {
+      "id": "fr-wr-3",
+      "shape": "word_race",
+      "difficulty": 1,
+      "fieldsAr": [
+        "اسم",
+        "فاكهة",
+        "لون",
+        "رياضة"
+      ],
+      "letters": [
+        "ب",
+        "ت",
+        "ج",
+        "ز",
+        "ط",
+        "ك",
+        "م"
+      ]
+    },
+    {
+      "id": "fr-wr-4",
+      "shape": "word_race",
+      "difficulty": 2,
+      "fieldsAr": [
+        "اسم",
+        "دولة",
+        "عاصمة",
+        "لغة"
+      ],
+      "letters": [
+        "م",
+        "ف",
+        "ت",
+        "س",
+        "ي",
+        "ك"
+      ]
+    },
+    {
+      "id": "fr-wr-5",
+      "shape": "word_race",
+      "difficulty": 2,
+      "fieldsAr": [
+        "اسم",
+        "ممثل",
+        "فيلم",
+        "مسلسل"
+      ],
+      "letters": [
+        "أ",
+        "م",
+        "ه",
+        "ك",
+        "ن",
+        "س"
+      ]
+    },
+    {
+      "id": "fr-wr-6",
+      "shape": "word_race",
+      "difficulty": 2,
+      "fieldsAr": [
+        "اسم",
+        "لاعب كورة",
+        "نادي",
+        "منتخب"
+      ],
+      "letters": [
+        "م",
+        "ص",
+        "ر",
+        "ب",
+        "ك"
+      ]
+    },
+    {
+      "id": "fr-wr-7",
+      "shape": "word_race",
+      "difficulty": 2,
+      "fieldsAr": [
+        "اسم",
+        "مهنة",
+        "أداة",
+        "مكان عمل"
+      ],
+      "letters": [
+        "م",
+        "ط",
+        "ح",
+        "ن",
+        "ص"
+      ]
+    },
+    {
+      "id": "fr-wr-8",
+      "shape": "word_race",
+      "difficulty": 2,
+      "fieldsAr": [
+        "اسم",
+        "جماد",
+        "لون",
+        "شكل هندسي"
+      ],
+      "letters": [
+        "م",
+        "ك",
+        "ث",
+        "د",
+        "ص"
+      ]
+    },
+    {
+      "id": "fr-wr-9",
+      "shape": "word_race",
+      "difficulty": 1,
+      "fieldsAr": [
+        "اسم",
+        "حيوان أليف",
+        "طائر",
+        "حشرة"
+      ],
+      "letters": [
+        "ب",
+        "ن",
+        "ق",
+        "د",
+        "ع"
+      ]
+    },
+    {
+      "id": "fr-wr-10",
+      "shape": "word_race",
+      "difficulty": 2,
+      "fieldsAr": [
+        "اسم",
+        "أكلة مصرية",
+        "مشروب",
+        "حلوى"
+      ],
+      "letters": [
+        "ك",
+        "ف",
+        "م",
+        "ب",
+        "ط"
+      ]
+    },
+    {
+      "id": "fr-wr-11",
+      "shape": "word_race",
+      "difficulty": 2,
+      "fieldsAr": [
+        "اسم",
+        "مسلسل",
+        "أغنية",
+        "مطرب"
+      ],
+      "letters": [
+        "ع",
+        "م",
+        "ن",
+        "ح",
+        "س"
+      ]
+    },
+    {
+      "id": "fr-wr-12",
+      "shape": "word_race",
+      "difficulty": 2,
+      "fieldsAr": [
+        "اسم",
+        "مدينة مصرية",
+        "معلم سياحي",
+        "محافظة"
+      ],
+      "letters": [
+        "أ",
+        "ق",
+        "م",
+        "س",
+        "ط"
+      ]
+    },
+    {
+      "id": "fr-wr-13",
+      "shape": "word_race",
+      "difficulty": 2,
+      "fieldsAr": [
+        "اسم",
+        "شخصية كرتونية",
+        "فيلم أنيميشن",
+        "لعبة فيديو"
+      ],
+      "letters": [
+        "م",
+        "س",
+        "ب",
+        "ت"
+      ]
+    },
+    {
+      "id": "fr-wr-14",
+      "shape": "word_race",
+      "difficulty": 3,
+      "fieldsAr": [
+        "اسم",
+        "علامة تجارية",
+        "ماركة سيارة",
+        "شركة تكنولوجيا"
+      ],
+      "letters": [
+        "أ",
+        "س",
+        "ف",
+        "ت"
+      ]
+    },
+    {
+      "id": "fr-wr-15",
+      "shape": "word_race",
+      "difficulty": 2,
+      "fieldsAr": [
+        "اسم",
+        "بلد عربي",
+        "لهجة",
+        "أكلة عربية"
+      ],
+      "letters": [
+        "م",
+        "س",
+        "ل",
+        "ك"
+      ]
+    },
+    {
+      "id": "fr-ord-9",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب خطوات عمل الفول المدمس بالترتيب",
+      "items": [
+        "نقع الفول",
+        "السلق",
+        "الهرس",
+        "التتبيل"
+      ]
+    },
+    {
+      "id": "fr-ord-10",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب خطوات عمل الكشري بالترتيب",
+      "items": [
+        "سلق الرز والمكرونة والعدس",
+        "تحضير الصلصة الحمرا",
+        "التقلية",
+        "التقديم"
+      ]
+    },
+    {
+      "id": "fr-ord-11",
+      "shape": "ordering",
+      "difficulty": 3,
+      "textAr": "رتّب الأشهر الهجرية دي بترتيبها",
+      "items": [
+        "شعبان",
+        "رمضان",
+        "شوال",
+        "ذو القعدة"
+      ]
+    },
+    {
+      "id": "fr-ord-12",
+      "shape": "ordering",
+      "difficulty": 1,
+      "textAr": "رتّب فصول السنة بالترتيب المعتاد",
+      "items": [
+        "الربيع",
+        "الصيف",
+        "الخريف",
+        "الشتا"
+      ]
+    },
+    {
+      "id": "fr-ord-13",
+      "shape": "ordering",
+      "difficulty": 1,
+      "textAr": "رتّب خطوات عمل كوباية شاي بالنعناع بالترتيب",
+      "items": [
+        "غلي الميه",
+        "حط الشاي",
+        "حط النعناع",
+        "التصفية والتقديم"
+      ]
+    },
+    {
+      "id": "fr-ord-14",
+      "shape": "ordering",
+      "difficulty": 2,
+      "textAr": "رتّب خطوات عمل القهوة التركي بالترتيب",
+      "items": [
+        "حط البن والسكر والميه في الكنكة",
+        "التقليب",
+        "الغلي على النار الهادية",
+        "التقديم في الفنجان"
+      ]
+    },
+    {
+      "id": "fr-ord-15",
+      "shape": "ordering",
+      "difficulty": 1,
+      "textAr": "رتّب مراحل عمر الإنسان دي من الأصغر للأكبر",
+      "items": [
+        "طفل",
+        "مراهق",
+        "شاب",
+        "كبير السن"
+      ]
+    },
+    {
+      "id": "fr-ord-16",
+      "shape": "ordering",
+      "difficulty": 1,
+      "textAr": "رتّب مراحل نمو النبات دي بالترتيب",
+      "items": [
+        "البذرة",
+        "الشتلة",
+        "النبات الصغير",
+        "الشجرة الكاملة"
+      ]
+    },
+    {
+      "id": "fr-bool-21",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الحلاوة الطحينية بتتعمل من السمسم أساسًا",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-22",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "البقلاوة حلوى شرقية بتتعمل بعجين رقيق ومكسرات",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-23",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الغريبة نوع حلويات بتتعمل بالسمن أو الزبدة",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-24",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الرقاق نوع من المعجنات المصرية المحشية بلحمة أو جبنة",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-25",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "السجق نوع من اللحوم المتبلة",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-26",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الحمام المحشي بيتحشى عادةً بالفريك أو الرز",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-27",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "ورق العنب من الأكلات اللي بتحتاج وقت طويل نسبيًا في التحضير واللف",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-28",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "البط المحمر أكلة مصرية شعبية من الطيور",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-29",
+      "shape": "boolean",
+      "difficulty": 3,
+      "textAr": "الملبن نوع حلوى هلامية بتتعمل من النشا والسكر",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-30",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "العيش الشمسي نوع خبز مصري بلدي بيتخمر في الشمس",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-31",
+      "shape": "boolean",
+      "difficulty": 1,
+      "textAr": "السحلب مشروب ساخن بيتقدّم غالبًا في الشتا",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-32",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "حلاوة المولد بتتزين عادةً بأشكال العرايس والحصان الملونة",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-33",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الفطير المشلتت عجين بطبقات مقلي أو مخبوز",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-34",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الزلابيا حلوى مقلية بتتغطس في العسل أو الشربات",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-35",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "أم علي حلوى مصرية بتتعمل بالحليب والمكسرات والعجين",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-36",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "البليلة أكلة شعبية بتتعمل من القمح المسلوق",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-37",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الفتة أكلة مصرية بتتكون أساسًا من العيش والأرز والتوم",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-38",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "الكبدة الإسكندراني أكلة مصرية شعبية شهيرة",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-39",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "المولد النبوي بيُحتفل بيه في شهر ربيع الأول الهجري",
+      "isTrue": true
+    },
+    {
+      "id": "fr-bool-40",
+      "shape": "boolean",
+      "difficulty": 2,
+      "textAr": "شم النسيم بيُحتفل بيه في مصر منذ عصر الفراعنة القدماء",
+      "isTrue": true
+    },
+    {
+      "id": "fr-num-13",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "عيد الأضحى بيبقى كام يوم تقريبًا شامل أيام التشريق؟",
+      "correctValue": 4,
+      "tolerance": 1,
+      "unitAr": "يوم"
+    },
+    {
+      "id": "fr-num-14",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "كام سنة بتفصل بين سنة كبيسة والتانية عادةً؟",
+      "correctValue": 4,
+      "tolerance": 0,
+      "unitAr": "سنة"
+    },
+    {
+      "id": "fr-num-15",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "الدقيقة كام ثانية؟",
+      "correctValue": 60,
+      "tolerance": 0,
+      "unitAr": "ثانية"
+    },
+    {
+      "id": "fr-num-16",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "الساعة كام ثانية؟",
+      "correctValue": 3600,
+      "tolerance": 0,
+      "unitAr": "ثانية"
+    },
+    {
+      "id": "fr-num-17",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "السنة الميلادية فيها كام شهر؟",
+      "correctValue": 12,
+      "tolerance": 0,
+      "unitAr": "شهر"
+    },
+    {
+      "id": "fr-num-18",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "شهر فبراير بيبقى كام يوم عادةً (غير السنة الكبيسة)؟",
+      "correctValue": 28,
+      "tolerance": 0,
+      "unitAr": "يوم"
+    },
+    {
+      "id": "fr-num-19",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "شهر يناير بيبقى كام يوم؟",
+      "correctValue": 31,
+      "tolerance": 0,
+      "unitAr": "يوم"
+    },
+    {
+      "id": "fr-num-20",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "ربع الساعة كام دقيقة؟",
+      "correctValue": 15,
+      "tolerance": 0,
+      "unitAr": "دقيقة"
+    },
+    {
+      "id": "fr-num-21",
+      "shape": "numeric",
+      "difficulty": 2,
+      "textAr": "عدد ساعات النوم الموصى بيها للشخص البالغ يوميًا تقريبًا؟",
+      "correctValue": 8,
+      "tolerance": 1,
+      "unitAr": "ساعة"
+    },
+    {
+      "id": "fr-num-22",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "كام أذان بيتسمع في اليوم الواحد عادةً في مصر؟",
+      "correctValue": 5,
+      "tolerance": 0,
+      "unitAr": "أذان"
+    },
+    {
+      "id": "fr-num-23",
+      "shape": "numeric",
+      "difficulty": 3,
+      "textAr": "باقي كام شهر هجري بعد رمضان لحد نهاية السنة الهجرية؟",
+      "correctValue": 3,
+      "tolerance": 0,
+      "unitAr": "شهر"
+    },
+    {
+      "id": "fr-num-24",
+      "shape": "numeric",
+      "difficulty": 1,
+      "textAr": "العقد الواحد كام سنة؟",
+      "correctValue": 10,
+      "tolerance": 0,
+      "unitAr": "سنة"
+    },
+    {
+      "id": "fr-fill-13",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الحلوى اللي بتتعمل بالسمسم أساسًا اسمها الحلاوة ____",
+      "answerAr": "الطحينية",
+      "aliases": [
+        "طحينية"
+      ]
+    },
+    {
+      "id": "fr-fill-14",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الحلوى الشرقية اللي بتتعمل بعجين رقيق ومكسرات اسمها ____",
+      "answerAr": "البقلاوة",
+      "aliases": [
+        "بقلاوة"
+      ]
+    },
+    {
+      "id": "fr-fill-15",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الحلويات اللي بتتعمل بالسمن أو الزبدة وشكلها دايري اسمها ____",
+      "answerAr": "الغريبة",
+      "aliases": [
+        "غريبة"
+      ]
+    },
+    {
+      "id": "fr-fill-16",
+      "shape": "fill_blank",
+      "difficulty": 3,
+      "textAr": "المعجنات الرقيقة المحشية بلحمة أو جبنة اسمها ____",
+      "answerAr": "الرقاق",
+      "aliases": [
+        "رقاق"
+      ]
+    },
+    {
+      "id": "fr-fill-17",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "اللحمة المتبلة المصنّعة على شكل أصابع اسمها ____",
+      "answerAr": "السجق",
+      "aliases": [
+        "سجق"
+      ]
+    },
+    {
+      "id": "fr-fill-18",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الطائر اللي بيتحشى بالفريك أو الرز في الأكل المصري اسمه ____",
+      "answerAr": "الحمام",
+      "aliases": [
+        "حمام"
+      ]
+    },
+    {
+      "id": "fr-fill-19",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الورقة الخضرا اللي بتتحشى بالرز في المطبخ العربي اسمها ورق ____",
+      "answerAr": "العنب",
+      "aliases": [
+        "عنب"
+      ]
+    },
+    {
+      "id": "fr-fill-20",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الطائر اللي بيتحمر ويتقدّم في المناسبات المصرية اسمه ____",
+      "answerAr": "البط",
+      "aliases": [
+        "بط"
+      ]
+    },
+    {
+      "id": "fr-fill-21",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "المشروب الساخن الأبيض اللي بيتقدّم في الشتا ومعمول من نشا اسمه ____",
+      "answerAr": "السحلب",
+      "aliases": [
+        "سحلب"
+      ]
+    },
+    {
+      "id": "fr-fill-22",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الخبز البلدي اللي بيتخمر في الشمس اسمه العيش ____",
+      "answerAr": "الشمسي",
+      "aliases": []
+    },
+    {
+      "id": "fr-fill-23",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "الأكلة اللي بتتكون من عيش وأرز وتوم وبتتقدّم مع اللحمة اسمها ____",
+      "answerAr": "الفتة",
+      "aliases": [
+        "فتة"
+      ]
+    },
+    {
+      "id": "fr-fill-24",
+      "shape": "fill_blank",
+      "difficulty": 2,
+      "textAr": "القمح المسلوق اللي بيتقدّم كأكلة شعبية اسمه ____",
+      "answerAr": "البليلة",
+      "aliases": [
+        "بليلة"
+      ]
+    },
+    {
+      "id": "fr-open-13",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الحلوى اللي بتتعمل من السمسم أساسًا؟",
+      "answerAr": "الحلاوة الطحينية",
+      "aliases": [
+        "حلاوة طحينية",
+        "طحينية"
+      ]
+    },
+    {
+      "id": "fr-open-14",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الحلوى الشرقية اللي بتتعمل بعجين رقيق ومكسرات؟",
+      "answerAr": "البقلاوة",
+      "aliases": [
+        "بقلاوة"
+      ]
+    },
+    {
+      "id": "fr-open-15",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الحلويات اللي بتتعمل بالسمن أو الزبدة وشكلها دايري؟",
+      "answerAr": "الغريبة",
+      "aliases": [
+        "غريبة"
+      ]
+    },
+    {
+      "id": "fr-open-16",
+      "shape": "open_answer",
+      "difficulty": 3,
+      "textAr": "إيه اسم المعجنات الرقيقة المحشية بلحمة أو جبنة؟",
+      "answerAr": "الرقاق",
+      "aliases": [
+        "رقاق"
+      ]
+    },
+    {
+      "id": "fr-open-17",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم اللحمة المتبلة المصنّعة على شكل أصابع؟",
+      "answerAr": "السجق",
+      "aliases": [
+        "سجق"
+      ]
+    },
+    {
+      "id": "fr-open-18",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الطائر اللي بيتحشى بالفريك أو الرز في الأكل المصري؟",
+      "answerAr": "الحمام",
+      "aliases": [
+        "حمام"
+      ]
+    },
+    {
+      "id": "fr-open-19",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم المحشي اللي بيتلف في ورقة خضرا من شجر الكرم؟",
+      "answerAr": "ورق العنب",
+      "aliases": [
+        "محشي ورق عنب"
+      ]
+    },
+    {
+      "id": "fr-open-20",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الطائر اللي بيتحمر ويتقدّم في المناسبات المصرية؟",
+      "answerAr": "البط",
+      "aliases": [
+        "بط",
+        "البط المحمر"
+      ]
+    },
+    {
+      "id": "fr-open-21",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم المشروب الساخن الأبيض اللي بيتقدّم في الشتا ومعمول من نشا؟",
+      "answerAr": "السحلب",
+      "aliases": [
+        "سحلب"
+      ]
+    },
+    {
+      "id": "fr-open-22",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الخبز البلدي اللي بيتخمر في الشمس؟",
+      "answerAr": "العيش الشمسي",
+      "aliases": [
+        "عيش شمسي"
+      ]
+    },
+    {
+      "id": "fr-open-23",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم الأكلة اللي بتتكون من عيش وأرز وتوم وبتتقدّم مع اللحمة؟",
+      "answerAr": "الفتة",
+      "aliases": [
+        "فتة"
+      ]
+    },
+    {
+      "id": "fr-open-24",
+      "shape": "open_answer",
+      "difficulty": 2,
+      "textAr": "إيه اسم القمح المسلوق اللي بيتقدّم كأكلة شعبية باردة أو دافية؟",
+      "answerAr": "البليلة",
+      "aliases": [
+        "بليلة"
+      ]
+    },
+    {
+      "id": "fr-prog-9",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا حلوى شرقية",
+        "أساسي في السمسم المطحون",
+        "اسمي فيه كلمة «طحينية»"
+      ],
+      "answerAr": "الحلاوة الطحينية",
+      "aliases": [
+        "حلاوة طحينية",
+        "طحينية"
+      ]
+    },
+    {
+      "id": "fr-prog-10",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا حلوى شرقية شهيرة",
+        "عجيني رقيق جدًا وفيّا مكسرات",
+        "بيتحطلي شربات أو عسل بعد الفرن"
+      ],
+      "answerAr": "البقلاوة",
+      "aliases": [
+        "بقلاوة"
+      ]
+    },
+    {
+      "id": "fr-prog-11",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا حلوى بيتيّة بسيطة",
+        "بتتعمل بالسمن أو الزبدة",
+        "شكلي دايري وبتحطوا فوقيّا فستق أو لوز"
+      ],
+      "answerAr": "الغريبة",
+      "aliases": [
+        "غريبة"
+      ]
+    },
+    {
+      "id": "fr-prog-12",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا نوع من المعجنات",
+        "عجيني رقيق جدًا زي الورق",
+        "بيحشوني بلحمة أو جبنة ويقلوني"
+      ],
+      "answerAr": "الرقاق",
+      "aliases": [
+        "رقاق"
+      ]
+    },
+    {
+      "id": "fr-prog-13",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا نوع لحمة متبلة",
+        "شكلي زي الأصابع الطويلة",
+        "بتشوّوني على الفحم أو في الفرن"
+      ],
+      "answerAr": "السجق",
+      "aliases": [
+        "سجق"
+      ]
+    },
+    {
+      "id": "fr-prog-14",
+      "shape": "progressive",
+      "difficulty": 3,
+      "hints": [
+        "أنا طائر بيتاكل في المناسبات المصرية",
+        "بيحشوني بالفريك أو الرز",
+        "صوتي «هدهدة» معروف"
+      ],
+      "answerAr": "الحمام",
+      "aliases": [
+        "الحمام المحشي"
+      ]
+    },
+    {
+      "id": "fr-prog-15",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا مشروب ساخن أبيض",
+        "بيتقدّم غالبًا في الشتا",
+        "بتحطوا فوقيّا مكسرات وقرفة"
+      ],
+      "answerAr": "السحلب",
+      "aliases": [
+        "سحلب"
+      ]
+    },
+    {
+      "id": "fr-prog-16",
+      "shape": "progressive",
+      "difficulty": 2,
+      "hints": [
+        "أنا أكلة مصرية بسيطة",
+        "أساسي هو عيش وأرز وتوم",
+        "بتتقدّم مع اللحمة في المناسبات"
+      ],
+      "answerAr": "الفتة",
+      "aliases": [
+        "فتة"
+      ]
+    },
+    {
+      "id": "fr-mcq-21",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الحلاوة الطحينية بتتعمل أساسًا من إيه؟",
+      "options": [
+        "السمسم",
+        "الفول",
+        "الأرز",
+        "السميد"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-22",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "البقلاوة حلوى شرقية بتتميز بإيه؟",
+      "options": [
+        "عجين رقيق جدًا مع مكسرات وشربات",
+        "عجين سميك من غير حشو",
+        "خبز عادي بالسكر",
+        "أرز مطبوخ بالحليب"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-23",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الغريبة حلوى بتتعمل أساسًا من إيه؟",
+      "options": [
+        "السمن أو الزبدة مع الدقيق والسكر",
+        "السمسم بس",
+        "الفول المطحون",
+        "الأرز المسلوق"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-24",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الرقاق نوع معجنات بيتحشى عادةً بإيه؟",
+      "options": [
+        "لحمة مفرومة أو جبنة",
+        "فواكه مجففة بس",
+        "عسل بس",
+        "رز باللبن"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-25",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "السجق نوع من إيه؟",
+      "options": [
+        "اللحمة المتبلة المصنّعة",
+        "السمك المملّح",
+        "الخضار المحشي",
+        "الحلوى المقلية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-26",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الحمام المحشي بيتحشى عادةً بإيه؟",
+      "options": [
+        "الفريك أو الرز",
+        "المكرونة",
+        "البطاطس",
+        "الشعرية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-27",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "محشي ورق العنب بيتلف في شكل إيه قبل الطبخ؟",
+      "options": [
+        "أصابع رفيعة ملفوفة",
+        "كرات مستديرة",
+        "مربعات مسطحة",
+        "شرائح طويلة مفرودة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-28",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "البط المحمر من أطباق إيه؟",
+      "options": [
+        "الطيور",
+        "الأسماك",
+        "اللحوم الحمرا بس",
+        "الخضروات"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-29",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الملبن نوع حلوى إيه؟",
+      "options": [
+        "هلامية بتتعمل من النشا والسكر",
+        "مقلية بالزيت",
+        "مطبوخة على البخار",
+        "متجمدة زي الآيس كريم"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-30",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "العيش الشمسي بيتميز بإيه في طريقة تحضيره؟",
+      "options": [
+        "بيتخمر في الشمس قبل الخبيز",
+        "بيتقلى في الزيت",
+        "بيتعمل من غير عجين",
+        "بيتطهى في الميكرويف"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-31",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "السحلب مشروب بيتقدّم غالبًا في أنهي فصل؟",
+      "options": [
+        "الشتا",
+        "الصيف",
+        "الربيع",
+        "الخريف"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-32",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الزلابيا حلوى إيه؟",
+      "options": [
+        "مقلية بتتغطس في العسل أو الشربات",
+        "مخبوزة بس من غير حلاوة",
+        "مسلوقة بالحليب",
+        "متجمدة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-33",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "البليلة أكلة بتتعمل من إيه؟",
+      "options": [
+        "القمح المسلوق",
+        "الأرز المسلوق",
+        "الشعير المحمص",
+        "الذرة المشوية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-34",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الفتة المصرية بتتكون أساسًا من إيه؟",
+      "options": [
+        "عيش وأرز وتوم",
+        "مكرونة وجبنة",
+        "بطاطس ولحمة",
+        "فول وطعمية"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-35",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الكبدة الإسكندراني نوع أكلة إيه؟",
+      "options": [
+        "كبد متبل وسوتيه",
+        "سمك مشوي",
+        "رز باللبن",
+        "خضار مسلوق"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-36",
+      "shape": "mcq",
+      "difficulty": 1,
+      "textAr": "المناسبة اللي بتحتفل بيها العائلة للطفل حديث الولادة في يومه السابع اسمها إيه؟",
+      "options": [
+        "السبوع",
+        "الخطوبة",
+        "الفرح",
+        "العقيقة بس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-37",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "أنهي أكلة بترتبط بشم النسيم غير الفسيخ؟",
+      "options": [
+        "البيض الملون",
+        "الفطير المشلتت",
+        "الكشري",
+        "المحشي"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-38",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "عيد الأضحى بيرتبط عادةً بذبح إيه؟",
+      "options": [
+        "الأضحية (خروف أو عجل أو جمل)",
+        "الديك الرومي بس",
+        "السمك بس",
+        "الأرانب بس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-39",
+      "shape": "mcq",
+      "difficulty": 3,
+      "textAr": "الكنافة بتتحشى أحيانًا بإيه في بعض الوصفات؟",
+      "options": [
+        "القشطة أو المكسرات",
+        "الفول المدمس",
+        "الأرز الأبيض",
+        "اللحمة المفرومة"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-mcq-40",
+      "shape": "mcq",
+      "difficulty": 2,
+      "textAr": "الحمص الشام أكلة بتتقدّم غالبًا إمتى؟",
+      "options": [
+        "في الشتا كوجبة خفيفة ساخنة",
+        "في الصيف باردة",
+        "على الفطار بس",
+        "في الأفراح بس"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "fr-poll-61",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيرد على الإيميلات بعد شهر؟"
+    },
+    {
+      "id": "fr-poll-62",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحب يخطط لكل حاجة قبل ما تحصل بأسابيع؟"
+    },
+    {
+      "id": "fr-poll-63",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بينسى إنه واعد حد؟"
+    },
+    {
+      "id": "fr-poll-64",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيغيّر رأيه في الأكل كل شوية؟"
+    },
+    {
+      "id": "fr-poll-65",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحب يمشي لوحده بدل ما يركب مواصلة؟"
+    },
+    {
+      "id": "fr-poll-66",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيدخل في نقاش عن حاجة تافهة ويطوّل فيها؟"
+    },
+    {
+      "id": "fr-poll-67",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحب يشتري هدايا للناس؟"
+    },
+    {
+      "id": "fr-poll-68",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيقعد على السوشيال ميديا أكتر وقت؟"
+    },
+    {
+      "id": "fr-poll-69",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيعمل نفسه مشغول عشان ميخرجش؟"
+    },
+    {
+      "id": "fr-poll-70",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيقول «معلش بكرة» وميعملهاش؟"
+    },
+    {
+      "id": "fr-poll-71",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحب يتفرج على أفلام رعب؟"
+    },
+    {
+      "id": "fr-poll-72",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيخاف من حاجة غريبة وكل الناس عارفينها؟"
+    },
+    {
+      "id": "fr-poll-73",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحب يعمل خطط سفر مفاجئة؟"
+    },
+    {
+      "id": "fr-poll-74",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيتأخر في الرد على الجروب؟"
+    },
+    {
+      "id": "fr-poll-75",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيقول رأيه حتى لو محدش سأله؟"
+    },
+    {
+      "id": "fr-poll-76",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحفظ أرقام تليفونات الناس من غير ما يسيّفها؟"
+    },
+    {
+      "id": "fr-poll-77",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحب يطبخ لناس تانية؟"
+    },
+    {
+      "id": "fr-poll-78",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيقلق من أبسط حاجة؟"
+    },
+    {
+      "id": "fr-poll-79",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحب يعمل مقالب في الناس؟"
+    },
+    {
+      "id": "fr-poll-80",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيصدق أي خبر يشوفه أونلاين؟"
+    },
+    {
+      "id": "fr-poll-81",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحب يقرا كتب أكتر من متابعة الأفلام؟"
+    },
+    {
+      "id": "fr-poll-82",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحب يسافر لوحده؟"
+    },
+    {
+      "id": "fr-poll-83",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحب يفضل في نص أي مجموعة ناس؟"
+    },
+    {
+      "id": "fr-poll-84",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيشتغل تحت ضغط آخر لحظة؟"
+    },
+    {
+      "id": "fr-poll-85",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيخطط لحياته كلها بالتفصيل؟"
+    },
+    {
+      "id": "fr-poll-86",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيتفرج على نفس المسلسل أكتر من مرة؟"
+    },
+    {
+      "id": "fr-poll-87",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بينسى الخناقة بسرعة وميحملش في قلبه؟"
+    },
+    {
+      "id": "fr-poll-88",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحب يبقى قائد المجموعة دايمًا؟"
+    },
+    {
+      "id": "fr-poll-89",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيفضل يمشي وراء القرار بدل ما ياخده؟"
+    },
+    {
+      "id": "fr-poll-90",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيدفع الحساب بسرعة عشان الموضوع يخلص؟"
+    },
+    {
+      "id": "fr-poll-91",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيسأل أسئلة كتير في أي موقف جديد؟"
+    },
+    {
+      "id": "fr-poll-92",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيفتكر كل التفاصيل الصغيرة في أي قصة؟"
+    },
+    {
+      "id": "fr-poll-93",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا هيكسب لو اتحط في مسابقة ذكاء؟"
+    },
+    {
+      "id": "fr-poll-94",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيتكلم بصوت عالي من غير ما يحس؟"
+    },
+    {
+      "id": "fr-poll-95",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيفضّل يقعد لوحده بدل الخروجات؟"
+    },
+    {
+      "id": "fr-poll-96",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحب يخرج مع ناس جداد كل مرة؟"
+    },
+    {
+      "id": "fr-poll-97",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيقول آسف الأول لو حصلت خناقة؟"
+    },
+    {
+      "id": "fr-poll-98",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيشتري حاجات أونلاين أكتر من المحل؟"
+    },
+    {
+      "id": "fr-poll-99",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيجرّب رياضة جديدة كل فترة؟"
+    },
+    {
+      "id": "fr-poll-100",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيقعد صاحي لحد الفجر؟"
+    },
+    {
+      "id": "fr-poll-101",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيصحى متضايق أول ما يصحى؟"
+    },
+    {
+      "id": "fr-poll-102",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيعمل قايمة مهام يومية؟"
+    },
+    {
+      "id": "fr-poll-103",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بينسى قايمة المهام أصلًا؟"
+    },
+    {
+      "id": "fr-poll-104",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيصرف على الملابس أكتر من أي حاجة تانية؟"
+    },
+    {
+      "id": "fr-poll-105",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيوفّر فلوسه بدل ما يصرفها؟"
+    },
+    {
+      "id": "fr-poll-106",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيصرف فلوسه كلها أول ما ياخدها؟"
+    },
+    {
+      "id": "fr-poll-107",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيقعد على ألعاب الفيديو أكتر وقت؟"
+    },
+    {
+      "id": "fr-poll-108",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحب يتعلم لغة جديدة؟"
+    },
+    {
+      "id": "fr-poll-109",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيسوق بسرعة أوي؟"
+    },
+    {
+      "id": "fr-poll-110",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيسوق بحرص شديد؟"
+    },
+    {
+      "id": "fr-poll-111",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيعمل تمرين رياضي بانتظام؟"
+    },
+    {
+      "id": "fr-poll-112",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيقول هيعمل رياضة وميعملهاش؟"
+    },
+    {
+      "id": "fr-poll-113",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحكي نكت من غير ما حد يضحك؟"
+    },
+    {
+      "id": "fr-poll-114",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيضحك بصوت عالي أوي في أي حتة؟"
+    },
+    {
+      "id": "fr-poll-115",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيفضل هادي جدًا في المواقف الصعبة؟"
+    },
+    {
+      "id": "fr-poll-116",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيتنرفز بسرعة في أي موقف؟"
+    },
+    {
+      "id": "fr-poll-117",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيساعد أي حد يشوفه محتاج؟"
+    },
+    {
+      "id": "fr-poll-118",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيحب يبقى وسط الأضواء دايمًا؟"
+    },
+    {
+      "id": "fr-poll-119",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا بيفضّل يبعد عن الأضواء؟"
+    },
+    {
+      "id": "fr-poll-120",
+      "shape": "poll",
+      "difficulty": 1,
+      "textAr": "مين فينا هيتجوّز الأول فينا كلنا؟"
+    }
+  ]
+}
