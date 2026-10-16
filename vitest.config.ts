@@ -15,6 +15,7 @@ export default defineConfig({
     alias: {
       '@game/shared': r('./packages/shared/src/index.ts'),
       '@game/rounds': r('./packages/rounds/src/index.ts'),
+      '@game/engine': r('./packages/engine/src/index.ts'),
     },
   },
 });

@@ -9,6 +9,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@game/engine": "*",
     "@game/rounds": "*",
     "@game/shared": "*",
     "express": "^4.21.2",

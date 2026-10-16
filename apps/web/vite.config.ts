@@ -10,6 +10,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@game/shared': fileURLToPath(new URL('../../packages/shared/src/index.ts', import.meta.url)),
+      '@game/rounds': fileURLToPath(new URL('../../packages/rounds/src/index.ts', import.meta.url)),
+      '@game/engine': fileURLToPath(new URL('../../packages/engine/src/index.ts', import.meta.url)),
     },
   },
   server: {
