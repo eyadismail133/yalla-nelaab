@@ -2208,16 +2208,16 @@ export class FirebaseHostRuntime {
       this.cachedMeta = nextMeta;
       this.assertLive(currentGen);
 
+      if (this.hostPlayerId) {
+        const hostView = toView(nextState, this.hostPlayerId, categories, now);
+        this.notifyCommittedView(hostView);
+      }
+
       if (uid === this.hostUid) {
         this.notifyCommittedAck({
           commandId: cmd.commandId,
           ok: true,
         });
-      }
-
-      if (this.hostPlayerId) {
-        const hostView = toView(nextState, this.hostPlayerId, categories, now);
-        this.notifyCommittedView(hostView);
       }
     } catch (err) {
       // Unconditionally roll back in-memory engine state and dedup to backup
@@ -2367,6 +2367,11 @@ export class FirebaseHostRuntime {
           connected: false,
           leaseOwnerId: this.runtimeId,
         },
+        [`presence/${hostUid}`]: {
+          uid: hostUid,
+          connected: false,
+          updatedAtMs: now,
+        },
         snapshot: this.createSnapshotRecord(nextState, now),
       };
 
@@ -2410,19 +2415,6 @@ export class FirebaseHostRuntime {
         acquiredAtMs: this.acquiredAtMs,
         expiresAtMs: now - 100,
       });
-
-      if (hostUid) {
-        const activeRef = ref(db, `hosts/${hostUid}/activeRoom`);
-        await runTransaction(
-          activeRef,
-          (curr) => {
-            if (!curr) return null;
-            if (curr.roomId === this.roomId) return null;
-            return undefined;
-          },
-          { applyLocally: false },
-        ).catch(() => {});
-      }
 
       this.stopExecution('غادر الهوست الغرفة وتم نقل الاستضافة');
       return true;
