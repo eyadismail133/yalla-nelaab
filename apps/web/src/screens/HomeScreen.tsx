@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import { GameDiscovery } from '../experience/index.js';
 import { ar } from '../i18n/ar.js';
-import { Button, Card, Screen, TextField } from '../ui/primitives.js';
-import type { GameClient } from '../net/client.js';
 import { saveSession } from '../net/client.js';
+import type { GameTransport } from '../net/transport.js';
+import { isValidRoomCode, normalizeRoomCodeInput } from '../ui/InvitationPanel.js';
+import { Button, Card, Screen, TextField } from '../ui/primitives.js';
 
 export function HomeScreen({
   client,
@@ -10,32 +12,64 @@ export function HomeScreen({
   onError,
   initialCode,
 }: {
-  client: GameClient;
+  client: GameTransport;
   connected: boolean;
   onError: (message: string) => void;
   initialCode: string;
 }) {
   const [nickname, setNickname] = useState('');
-  const [code, setCode] = useState(initialCode);
+  const [code, setCode] = useState(() => normalizeRoomCodeInput(initialCode));
   const [mode, setMode] = useState<'menu' | 'join'>(initialCode ? 'join' : 'menu');
   const [busy, setBusy] = useState(false);
+  const [localError, setLocalError] = useState<string | null>(null);
+  const inFlightRef = useRef(false);
 
-  const run = async (fn: () => Promise<{ ok: boolean } & Record<string, unknown>>) => {
-    if (!nickname.trim()) return onError('اكتب اسمك الأول');
-    setBusy(true);
-    const result = await fn();
-    setBusy(false);
-    if (!result.ok) return onError(String(result.error ?? 'حصلت مشكلة'));
-    saveSession({
-      code: String(result.code),
-      playerId: String(result.playerId),
-      token: String(result.token),
-    });
+  const reportError = (msg: string) => {
+    setLocalError(msg);
+    onError(msg);
   };
 
+  const run = async (
+    fn: () => Promise<{ ok: boolean } & Record<string, unknown>>,
+  ) => {
+    if (inFlightRef.current || busy) return;
+    const trimmedName = nickname.trim();
+    if (!trimmedName) {
+      reportError('اكتب اسمك الأول');
+      return;
+    }
+
+    inFlightRef.current = true;
+    setBusy(true);
+    setLocalError(null);
+
+    try {
+      const result = await fn();
+      if (!result.ok) {
+        reportError(String(result.error ?? 'حصلت مشكلة'));
+        return;
+      }
+      saveSession({
+        code: String(result.code),
+        playerId: String(result.playerId),
+        token: String(result.token),
+      });
+    } catch (err) {
+      const message =
+        err instanceof Error && err.message ? err.message : 'حصلت مشكلة في الاتصال — جرب تاني';
+      reportError(message);
+    } finally {
+      inFlightRef.current = false;
+      setBusy(false);
+    }
+  };
+
+  const normalizedCode = normalizeRoomCodeInput(code);
+  const codeValid = isValidRoomCode(normalizedCode);
+
   return (
-    <Screen className="justify-center">
-      <header className="mb-2 text-center">
+    <Screen>
+      <header className="mt-2 text-center">
         <h1 className="text-5xl font-black tracking-tight" style={{ color: 'var(--accent)' }}>
           {ar.appName}
         </h1>
@@ -46,9 +80,17 @@ export function HomeScreen({
         <label className="flex flex-col gap-2">
           <span className="font-bold">{ar.nickname}</span>
           <TextField
+            lang="ar"
+            dir="rtl"
+            inputMode="text"
+            enterKeyHint={mode === 'join' ? 'next' : 'go'}
             value={nickname}
             maxLength={16}
-            onChange={(e) => setNickname(e.target.value)}
+            disabled={busy}
+            onChange={(e) => {
+              setNickname(e.target.value);
+              if (localError) setLocalError(null);
+            }}
             placeholder={ar.nicknamePlaceholder}
           />
         </label>
@@ -58,41 +100,94 @@ export function HomeScreen({
             <label className="flex flex-col gap-2">
               <span className="font-bold">{ar.roomCode}</span>
               <TextField
+                dir="ltr"
+                lang="en"
+                inputMode="text"
+                enterKeyHint="go"
+                autoCapitalize="characters"
+                autoCorrect="off"
+                autoComplete="off"
+                spellCheck={false}
                 value={code}
                 maxLength={5}
-                onChange={(e) => setCode(e.target.value.toUpperCase())}
+                disabled={busy}
+                onChange={(e) => {
+                  setCode(normalizeRoomCodeInput(e.target.value));
+                  if (localError) setLocalError(null);
+                }}
                 placeholder={ar.roomCodePlaceholder}
-                className="tabular text-center text-2xl font-black tracking-[0.4em]"
+                className="tabular text-center text-2xl font-black uppercase tracking-[0.35em]"
               />
             </label>
             <Button
+              type="button"
               variant="accent"
-              disabled={busy || !connected || code.trim().length !== 5}
-              onClick={() => run(() => client.joinRoom(code.trim(), nickname))}
+              disabled={busy || !connected || !codeValid}
+              onClick={() => {
+                if (!codeValid) {
+                  reportError('كود الغرفة لازم يكون ٥ حروف أو أرقام بالإنجليزي');
+                  return;
+                }
+                void run(() => client.joinRoom(normalizedCode, nickname.trim()));
+              }}
             >
-              {ar.join}
+              {busy ? ar.sendingAction : ar.join}
             </Button>
-            <Button variant="ghost" onClick={() => setMode('menu')}>
+            <Button
+              type="button"
+              variant="ghost"
+              disabled={busy}
+              onClick={() => {
+                setLocalError(null);
+                setMode('menu');
+              }}
+            >
               رجوع
             </Button>
           </>
         ) : (
           <>
             <Button
+              type="button"
               variant="accent"
               disabled={busy || !connected}
-              onClick={() => run(() => client.createRoom(nickname))}
+              onClick={() => void run(() => client.createRoom(nickname.trim()))}
             >
-              {ar.createRoom}
+              {busy ? ar.sendingAction : ar.createRoom}
             </Button>
-            <Button variant="ghost" onClick={() => setMode('join')}>
+            <Button
+              type="button"
+              variant="ghost"
+              disabled={busy}
+              onClick={() => {
+                setLocalError(null);
+                setMode('join');
+              }}
+            >
               {ar.joinRoom}
             </Button>
           </>
         )}
+
+        {localError ? (
+          <p
+            role="alert"
+            aria-live="assertive"
+            className="text-center text-sm font-bold text-accent-rose"
+          >
+            {localError}
+          </p>
+        ) : null}
       </Card>
 
-      {!connected ? <p className="text-center text-sm text-muted">{ar.connecting}</p> : null}
+      {!connected ? (
+        <p role="status" aria-live="polite" className="text-center text-sm text-muted">
+          {ar.connecting}
+        </p>
+      ) : null}
+
+      {/* Compact collapsed discovery & 18-game catalog below prominent create/join card */}
+      <GameDiscovery defaultHowToPlayOpen={false} defaultCatalogOpen={false} />
     </Screen>
   );
 }

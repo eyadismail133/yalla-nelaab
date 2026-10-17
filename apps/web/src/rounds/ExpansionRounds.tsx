@@ -13,12 +13,19 @@ import type {
   RoundProps,
   WordRaceView,
 } from './types.js';
+import {
+  RoundActionStatus,
+  reconcileSubmittedDraft,
+  useRoundAction,
+} from './useRoundAction.js';
 
 const LABELS = ['أ', 'ب', 'ج', 'د'];
 
 /* ------------------------------------------------------------------ الدخيل */
 
 export function OddOneOutRound({ view, roundNo, client }: RoundProps<OddOneOutView>) {
+  const { pending, error, act } = useRoundAction(client, roundNo);
+
   return (
     <div className="flex flex-1 flex-col gap-5">
       <p className="text-center text-sm text-muted">{ar.oddOneOutHint}</p>
@@ -36,12 +43,13 @@ export function OddOneOutRound({ view, roundNo, client }: RoundProps<OddOneOutVi
                   return (
                     <button
                       key={item}
+                      type="button"
                       onClick={() => {
-                        if (!answered) {
-                          void client.act(roundNo, { kind: 'answer', index: puzzleIndex, choice: itemIndex });
+                        if (!answered && !pending) {
+                          void act({ kind: 'answer', index: puzzleIndex, choice: itemIndex });
                         }
                       }}
-                      disabled={answered}
+                      disabled={answered || pending}
                       className={`min-h-14 rounded-xl border-2 px-3 text-center font-bold transition active:scale-[0.98] ${
                         picked
                           ? 'border-[var(--accent)] bg-surface-2'
@@ -58,6 +66,8 @@ export function OddOneOutRound({ view, roundNo, client }: RoundProps<OddOneOutVi
         })}
       </div>
 
+      <RoundActionStatus error={error} pending={pending} />
+
       <LockStatus locked={view.isDone} lockedCount={view.lockedCount} total={view.totalPlayers} />
     </div>
   );
@@ -72,11 +82,11 @@ export function EmojiRushRound({
   categories,
 }: RoundProps<EmojiRushView> & { categories: RoomView['availableCategories'] }) {
   const [text, setText] = useState('');
+  const { pending, error, submitDraft } = useRoundAction(client, roundNo);
 
   const submit = () => {
-    if (!text.trim() || !view.current) return;
-    void client.act(roundNo, { kind: 'submit', text });
-    setText('');
+    if (!text.trim() || !view.current || pending) return;
+    void submitDraft(text, setText, (submittedText) => ({ kind: 'submit', text: submittedText }));
   };
 
   if (view.isDone || !view.current) {
@@ -99,7 +109,9 @@ export function EmojiRushRound({
           <span
             key={i}
             className="h-2 w-8 rounded-full transition"
-            style={{ background: i < view.solvedCount ? 'var(--accent)' : 'var(--color-surface-2)' }}
+            style={{
+              background: i < view.solvedCount ? 'var(--accent)' : 'var(--color-surface-2)',
+            }}
           />
         ))}
       </div>
@@ -112,7 +124,9 @@ export function EmojiRushRound({
           {category.emoji} {category.nameAr}
         </p>
       ) : null}
-      {view.current.hintAr ? <p className="text-center text-sm text-muted">{view.current.hintAr}</p> : null}
+      {view.current.hintAr ? (
+        <p className="text-center text-sm text-muted">{view.current.hintAr}</p>
+      ) : null}
 
       <form
         className="flex flex-col gap-3"
@@ -123,15 +137,22 @@ export function EmojiRushRound({
       >
         <TextField
           autoFocus
+          lang="ar"
+          dir="rtl"
+          inputMode="text"
+          enterKeyHint="send"
+          aria-label={ar.typeAnswer}
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder={ar.typeAnswer}
           className="text-center font-bold"
         />
-        <Button type="submit" variant="accent" disabled={!text.trim()}>
-          {ar.submit}
+        <Button type="submit" variant="accent" disabled={!text.trim() || pending}>
+          {pending ? ar.sendingAction : ar.submit}
         </Button>
       </form>
+
+      <RoundActionStatus error={error} pending={pending} />
 
       <p className="tabular mt-auto text-center text-sm text-muted">
         {view.solvedCount} / {view.totalItems} {ar.emojiSolved}
@@ -143,8 +164,12 @@ export function EmojiRushRound({
 /* ------------------------------------------------------------------ السلّم */
 
 export function LadderRound({ view, roundNo, client }: RoundProps<LadderView>) {
+  const { pending, error, act } = useRoundAction(client, roundNo);
+
   const answer = (choice: number) => {
-    if (view.current) void client.act(roundNo, { kind: 'answer', choice });
+    if (view.current && !pending) {
+      void act({ kind: 'answer', choice });
+    }
   };
 
   return (
@@ -161,7 +186,10 @@ export function LadderRound({ view, roundNo, client }: RoundProps<LadderView>) {
               className={`tabular flex flex-1 flex-col items-center gap-1 rounded-xl border-2 py-2 text-xs font-black transition ${
                 isCurrent ? 'border-[var(--accent)]' : 'border-transparent'
               }`}
-              style={{ background: climbed ? 'var(--accent)' : 'var(--color-surface-2)', color: climbed ? 'var(--color-ink)' : 'var(--color-muted)' }}
+              style={{
+                background: climbed ? 'var(--accent)' : 'var(--color-surface-2)',
+                color: climbed ? 'var(--color-ink)' : 'var(--color-muted)',
+              }}
             >
               {value}
             </div>
@@ -182,23 +210,32 @@ export function LadderRound({ view, roundNo, client }: RoundProps<LadderView>) {
         </div>
       ) : view.current ? (
         <>
-          <p className="text-balance text-center text-xl font-bold leading-relaxed">{view.current.textAr}</p>
+          <p className="text-balance text-center text-xl font-bold leading-relaxed">
+            {view.current.textAr}
+          </p>
           <div className="grid gap-3">
             {view.current.options.map((option, index) => (
               <button
                 key={option}
+                type="button"
+                disabled={pending}
                 onClick={() => answer(index)}
-                className="flex min-h-14 items-center gap-3 rounded-2xl border border-line bg-surface px-4 text-start text-lg font-bold transition active:scale-[0.99]"
+                className="flex min-h-14 items-center gap-3 rounded-2xl border border-line bg-surface px-4 text-start text-lg font-bold transition active:scale-[0.99] disabled:opacity-45"
               >
                 <span className="grid size-8 shrink-0 place-items-center rounded-lg bg-surface-2 text-sm font-black text-muted">
                   {LABELS[index]}
                 </span>
-                <span className="flex-1">{option}</span>
+                <span className="flex-1 break-words">{option}</span>
               </button>
             ))}
           </div>
           {view.rung > 0 ? (
-            <Button variant="ghost" onClick={() => void client.act(roundNo, { kind: 'lock' })}>
+            <Button
+              type="button"
+              variant="ghost"
+              disabled={pending}
+              onClick={() => void act({ kind: 'lock' })}
+            >
               {ar.ladderBank} ({view.ladder[view.rung - 1]})
             </Button>
           ) : (
@@ -208,6 +245,8 @@ export function LadderRound({ view, roundNo, client }: RoundProps<LadderView>) {
       ) : (
         <p className="mt-auto text-center text-muted">{ar.waitingForOthers}</p>
       )}
+
+      <RoundActionStatus error={error} pending={pending} />
 
       <p className="tabular text-center text-sm text-muted">
         {view.doneCount} / {view.totalPlayers} خلصوا
@@ -219,6 +258,8 @@ export function LadderRound({ view, roundNo, client }: RoundProps<LadderView>) {
 /* ------------------------------------------------------------------ أعلى ولا أقل؟ */
 
 export function HigherLowerRound({ view, roundNo, client }: RoundProps<HigherLowerView>) {
+  const { pending, error, act } = useRoundAction(client, roundNo);
+
   if (view.isDone || !view.current) {
     return (
       <div className="flex flex-1 flex-col items-center justify-center gap-3 text-center">
@@ -231,7 +272,8 @@ export function HigherLowerRound({ view, roundNo, client }: RoundProps<HigherLow
   }
 
   const choose = (side: 'a' | 'b') => {
-    void client.act(roundNo, { kind: 'choose', index: view.current!.index, side });
+    if (pending || !view.current) return;
+    void act({ kind: 'choose', index: view.current.index, side });
   };
 
   return (
@@ -241,7 +283,9 @@ export function HigherLowerRound({ view, roundNo, client }: RoundProps<HigherLow
           <span
             key={i}
             className="h-2 w-8 rounded-full transition"
-            style={{ background: i < view.answeredCount ? 'var(--accent)' : 'var(--color-surface-2)' }}
+            style={{
+              background: i < view.answeredCount ? 'var(--accent)' : 'var(--color-surface-2)',
+            }}
           />
         ))}
       </div>
@@ -254,8 +298,10 @@ export function HigherLowerRound({ view, roundNo, client }: RoundProps<HigherLow
           return (
             <button
               key={side}
+              type="button"
+              disabled={pending}
               onClick={() => choose(side)}
-              className="flex flex-1 flex-col items-center justify-center gap-1 rounded-2xl border-2 border-line bg-surface p-5 text-center transition active:scale-[0.98]"
+              className="flex flex-1 flex-col items-center justify-center gap-1 rounded-2xl border-2 border-line bg-surface p-5 text-center transition active:scale-[0.98] disabled:opacity-45"
             >
               <p className="text-lg font-bold leading-relaxed">{item.textAr}</p>
               {item.unitAr ? <p className="text-sm text-muted">{item.unitAr}</p> : null}
@@ -263,6 +309,8 @@ export function HigherLowerRound({ view, roundNo, client }: RoundProps<HigherLow
           );
         })}
       </div>
+
+      <RoundActionStatus error={error} pending={pending} />
     </div>
   );
 }
@@ -275,7 +323,9 @@ export function RelayRound({
   client,
   players,
 }: RoundProps<RelayView> & { players: RoomView['players'] }) {
-  const nameOf = (id: string | null) => (id ? players.find((p) => p.id === id)?.nickname ?? '؟' : '؟');
+  const { pending, error, act } = useRoundAction(client, roundNo);
+  const nameOf = (id: string | null) =>
+    id ? players.find((p) => p.id === id)?.nickname ?? '؟' : '؟';
 
   return (
     <div className="flex flex-1 flex-col gap-5">
@@ -308,23 +358,30 @@ export function RelayRound({
 
       {view.current ? (
         <>
-          <p className="text-balance text-center text-xl font-bold leading-relaxed">{view.current.textAr}</p>
+          <p className="text-balance text-center text-xl font-bold leading-relaxed">
+            {view.current.textAr}
+          </p>
           <div className="grid gap-3">
             {view.current.options.map((option, index) => (
               <button
                 key={option}
+                type="button"
                 onClick={() => {
-                  if (view.canAnswer) void client.act(roundNo, { kind: 'answer', choice: index });
+                  if (view.canAnswer && !pending) {
+                    void act({ kind: 'answer', choice: index });
+                  }
                 }}
-                disabled={!view.canAnswer}
+                disabled={!view.canAnswer || pending}
                 className={`flex min-h-14 items-center gap-3 rounded-2xl border px-4 text-start text-lg font-bold transition active:scale-[0.99] ${
-                  view.canAnswer ? 'border-line bg-surface' : 'border-line bg-surface opacity-60'
+                  view.canAnswer && !pending
+                    ? 'border-line bg-surface'
+                    : 'border-line bg-surface opacity-60'
                 }`}
               >
                 <span className="grid size-8 shrink-0 place-items-center rounded-lg bg-surface-2 text-sm font-black text-muted">
                   {LABELS[index]}
                 </span>
-                <span className="flex-1">{option}</span>
+                <span className="flex-1 break-words">{option}</span>
               </button>
             ))}
           </div>
@@ -332,6 +389,8 @@ export function RelayRound({
       ) : (
         <p className="mt-auto text-center text-muted">{ar.waitingForOthers}</p>
       )}
+
+      <RoundActionStatus error={error} pending={pending} />
     </div>
   );
 }
@@ -345,23 +404,44 @@ export function WordRaceRound({
   players,
   meId,
 }: RoundProps<WordRaceView> & { players: RoomView['players']; meId: string }) {
-  if (view.stage === 'writing') return <WordRaceWriting view={view} roundNo={roundNo} client={client} />;
-  return <WordRaceVoting view={view} roundNo={roundNo} client={client} players={players} meId={meId} />;
+  if (view.stage === 'writing')
+    return <WordRaceWriting view={view} roundNo={roundNo} client={client} />;
+  return (
+    <WordRaceVoting
+      view={view}
+      roundNo={roundNo}
+      client={client}
+      players={players}
+      meId={meId}
+    />
+  );
 }
 
 function WordRaceWriting({ view, roundNo, client }: RoundProps<WordRaceView>) {
+  const { pending, error, act } = useRoundAction(client, roundNo);
+  const [drafts, setDrafts] = useState<string[]>(() =>
+    view.stage === 'writing' ? view.fieldsAr.map(() => '') : [],
+  );
+
   if (view.stage !== 'writing') return null;
-  const [drafts, setDrafts] = useState<string[]>(() => view.fieldsAr.map(() => ''));
 
   const submit = (field: number) => {
-    const text = drafts[field]?.trim();
-    if (!text || view.myAnswers[field] !== null) return;
-    void client.act(roundNo, { kind: 'write', field, text });
+    const rawDraft = drafts[field] ?? '';
+    const trimmed = rawDraft.trim();
+    if (!trimmed || view.myAnswers[field] !== null || pending) return;
+    void act({ kind: 'write', field, text: trimmed }, () => {
+      setDrafts((prev) =>
+        prev.map((val, i) => (i === field ? reconcileSubmittedDraft(val, rawDraft) : val)),
+      );
+    });
   };
 
   return (
     <div className="flex flex-1 flex-col gap-5">
-      <div className="rounded-2xl border-2 px-4 py-3 text-center" style={{ borderColor: 'var(--accent)' }}>
+      <div
+        className="rounded-2xl border-2 px-4 py-3 text-center"
+        style={{ borderColor: 'var(--accent)' }}
+      >
         <p className="text-sm text-muted">{ar.wordRaceLetterIs}</p>
         <p className="text-4xl font-black" style={{ color: 'var(--accent)' }}>
           {view.letter}
@@ -373,6 +453,7 @@ function WordRaceWriting({ view, roundNo, client }: RoundProps<WordRaceView>) {
         {view.fieldsAr.map((field, index) => {
           const mine = view.myAnswers[index];
           const locked = mine !== null;
+          const currentDraft = drafts[index] ?? '';
           return (
             <form
               key={field}
@@ -382,25 +463,41 @@ function WordRaceWriting({ view, roundNo, client }: RoundProps<WordRaceView>) {
                 submit(index);
               }}
             >
-              <span className="w-20 shrink-0 text-sm font-bold text-muted">{field}</span>
+              <span className="w-16 shrink-0 text-sm font-bold text-muted">{field}</span>
               {locked ? (
                 <div className="flex-1 rounded-2xl border-2 border-[var(--accent)] bg-surface px-4 py-3 font-bold">
                   {mine}
                 </div>
               ) : (
-                <TextField
-                  value={drafts[index] ?? ''}
-                  onChange={(e) =>
-                    setDrafts((prev) => prev.map((v, i) => (i === index ? e.target.value : v)))
-                  }
-                  placeholder={`${field}...`}
-                  className="flex-1"
-                />
+                <>
+                  <TextField
+                    lang="ar"
+                    dir="rtl"
+                    inputMode="text"
+                    enterKeyHint="send"
+                    aria-label={field}
+                    value={currentDraft}
+                    onChange={(e) =>
+                      setDrafts((prev) => prev.map((v, i) => (i === index ? e.target.value : v)))
+                    }
+                    placeholder={`${field}...`}
+                    className="min-w-0 flex-1"
+                  />
+                  <button
+                    type="submit"
+                    disabled={!currentDraft.trim() || pending}
+                    className="min-h-14 shrink-0 rounded-2xl border border-line bg-surface-2 px-3.5 text-sm font-bold text-body transition active:scale-[0.98] disabled:opacity-40"
+                  >
+                    {ar.submit}
+                  </button>
+                </>
               )}
             </form>
           );
         })}
       </div>
+
+      <RoundActionStatus error={error} pending={pending} />
 
       <LockStatus
         locked={view.myAnswers.every((a) => a !== null)}
@@ -418,6 +515,7 @@ function WordRaceVoting({
   players,
   meId,
 }: RoundProps<WordRaceView> & { players: RoomView['players']; meId: string }) {
+  const { pending, error, act } = useRoundAction(client, roundNo);
   if (view.stage !== 'voting') return null;
   const nameOf = (id: string) => players.find((p) => p.id === id)?.nickname ?? '؟';
 
@@ -433,38 +531,49 @@ function WordRaceVoting({
               <div className="mb-2 flex items-center gap-2">
                 <span
                   className="grid size-7 shrink-0 place-items-center rounded-full text-xs font-black"
-                  style={{ background: playerTint(players, row.authorId), color: 'var(--color-ink)' }}
+                  style={{
+                    background: playerTint(players, row.authorId),
+                    color: 'var(--color-ink)',
+                  }}
                 >
                   {nameOf(row.authorId).slice(0, 1)}
                 </span>
-                <span className="font-bold">{nameOf(row.authorId)}</span>
+                <span className="truncate font-bold">{nameOf(row.authorId)}</span>
               </div>
               <div className="flex flex-col gap-2">
                 {row.fields.map((field, index) => {
                   if (!field.text) return null;
                   // Nobody can reject their own answer — the button just isn't there for it.
-                  const canReject = !isMine && !field.rejectedByMe;
+                  const canReject = !isMine && !field.rejectedByMe && !pending;
                   return (
                     <div
                       key={`${row.authorId}-${index}`}
-                      className={`flex items-center justify-between rounded-xl px-3 py-2 text-sm ${
+                      className={`flex items-center justify-between gap-2 rounded-xl px-3 py-2 text-sm ${
                         field.rejectedByMe ? 'bg-surface-2 opacity-60' : 'bg-surface'
                       }`}
                     >
-                      <span className="font-bold">{field.text}</span>
+                      <span className="min-w-0 flex-1 break-words font-bold">{field.text}</span>
                       {isMine ? (
-                        <span className="tabular text-xs text-muted">{ar.wordRaceReject} ({field.rejectedCount})</span>
+                        <span className="tabular shrink-0 text-xs text-muted">
+                          {ar.wordRaceReject} ({field.rejectedCount})
+                        </span>
                       ) : (
                         <button
+                          type="button"
                           onClick={() => {
                             if (canReject) {
-                              void client.act(roundNo, { kind: 'reject', authorId: row.authorId, field: index });
+                              void act({
+                                kind: 'reject',
+                                authorId: row.authorId,
+                                field: index,
+                              });
                             }
                           }}
                           disabled={!canReject}
-                          className="tabular text-xs font-bold text-accent-rose disabled:text-muted"
+                          className="tabular shrink-0 text-xs font-bold text-accent-rose disabled:text-muted"
                         >
-                          {field.rejectedByMe ? ar.wordRaceRejected : ar.wordRaceReject} ({field.rejectedCount})
+                          {field.rejectedByMe ? ar.wordRaceRejected : ar.wordRaceReject} (
+                          {field.rejectedCount})
                         </button>
                       )}
                     </div>
@@ -476,13 +585,20 @@ function WordRaceVoting({
         })}
       </div>
 
+      <RoundActionStatus error={error} pending={pending} />
+
       {view.isReady ? (
         <p className="mt-auto text-center font-bold" style={{ color: 'var(--accent)' }}>
           {ar.locked}
         </p>
       ) : (
-        <Button variant="accent" onClick={() => void client.act(roundNo, { kind: 'ready' })}>
-          {ar.wordRaceReady}
+        <Button
+          type="button"
+          variant="accent"
+          disabled={pending}
+          onClick={() => void act({ kind: 'ready' })}
+        >
+          {pending ? ar.sendingAction : ar.wordRaceReady}
         </Button>
       )}
       <p className="tabular text-center text-sm text-muted">

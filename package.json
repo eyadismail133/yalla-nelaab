@@ -16,15 +16,20 @@
     "test:watch": "vitest",
     "typecheck": "tsc -p packages/shared && tsc -p packages/rounds && tsc -p packages/engine && tsc -p apps/server && tsc -p apps/web",
     "start": "npm run start --workspace=@game/server",
-    "build:web": "npm run build --workspace=@game/web"
+    "build:web": "npm run build --workspace=@game/web",
+    "build:firebase": "npm run build:firebase --workspace=@game/web",
+    "test:firebase:rules": "firebase emulators:exec --only database --project demo-yalla-nelaab \"vitest run --config vitest.emulator.config.ts apps/web/src/net/firebase-rules.emulator.test.ts\"",
+    "test:emulator": "firebase emulators:exec --only auth,database --project demo-yalla-nelaab \"vitest run --config vitest.emulator.config.ts\"",
+    "deploy:firebase": "npm run build:firebase && firebase deploy --only hosting,database --project yalla-nelaab-20261016"
   },
   "devDependencies": {
+    "@firebase/rules-unit-testing": "^6.0.0",
     "@types/node": "^22.10.2",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
     "vitest": "^2.1.8"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=24.12.0"
   }
 }

@@ -3,8 +3,12 @@ dist/
 build/
 .env
 .env.local
+.env.*.local
 *.tsbuildinfo
 .DS_Store
 coverage/
 .vite/
-
+.firebase/
+firebase-debug*.log
+database-debug*.log
+ui-debug*.log

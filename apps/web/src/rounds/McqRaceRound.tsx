@@ -1,12 +1,15 @@
 import { ar } from '../i18n/ar.js';
 import type { McqRaceView, RoundProps } from './types.js';
+import { RoundActionStatus, useRoundAction } from './useRoundAction.js';
 
 const LABELS = ['أ', 'ب', 'ج', 'د'];
 
 export function McqRaceRound({ view, roundNo, client }: RoundProps<McqRaceView>) {
+  const { pending, error, act } = useRoundAction(client, roundNo);
+
   const choose = (index: number) => {
-    if (view.hasAnswered) return;
-    void client.act(roundNo, { kind: 'answer', choice: index });
+    if (view.hasAnswered || pending) return;
+    void act({ kind: 'answer', choice: index });
   };
 
   return (
@@ -19,8 +22,9 @@ export function McqRaceRound({ view, roundNo, client }: RoundProps<McqRaceView>)
           return (
             <button
               key={option}
+              type="button"
               onClick={() => choose(index)}
-              disabled={view.hasAnswered}
+              disabled={view.hasAnswered || pending}
               className={`flex min-h-16 items-center gap-3 rounded-2xl border-2 px-4 text-start text-lg font-bold transition active:scale-[0.99] ${
                 mine
                   ? 'border-[var(--accent)] bg-surface-2'
@@ -37,11 +41,13 @@ export function McqRaceRound({ view, roundNo, client }: RoundProps<McqRaceView>)
               >
                 {LABELS[index]}
               </span>
-              <span className="flex-1">{option}</span>
+              <span className="flex-1 break-words">{option}</span>
             </button>
           );
         })}
       </div>
+
+      <RoundActionStatus error={error} pending={pending} />
 
       <LockStatus
         locked={view.hasAnswered}
@@ -62,7 +68,7 @@ export function LockStatus({
   total: number;
 }) {
   return (
-    <div className="mt-auto text-center">
+    <div className="mt-auto text-center" aria-live="polite">
       {locked ? (
         <p className="font-bold" style={{ color: 'var(--accent)' }}>
           {ar.locked} — {ar.waitingForOthers}

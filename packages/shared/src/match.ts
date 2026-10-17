@@ -70,6 +70,7 @@ export interface RoomPlayer extends PlayerRef {
   joinedAtMs: number;
   disconnectedAtMs: number | null;
   leftEarly: boolean;
+  ready?: boolean;
 }
 
 export interface SuddenDeathState {
@@ -152,6 +153,7 @@ export interface RoomView {
     rank: number | null;
     leftEarly: boolean;
     teamId: string | null;
+    ready?: boolean;
   }>;
   config: MatchConfig;
   round: {

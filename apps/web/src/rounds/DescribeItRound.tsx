@@ -2,14 +2,16 @@ import { useState } from 'react';
 import { ar } from '../i18n/ar.js';
 import { Button, TextField } from '../ui/primitives.js';
 import type { DescribeItView, RoundProps } from './types.js';
+import { RoundActionStatus, useRoundAction } from './useRoundAction.js';
 
 export function DescribeItRound({ view, roundNo, client }: RoundProps<DescribeItView>) {
   const [text, setText] = useState('');
+  const { pending, error, submitDraft } = useRoundAction(client, roundNo);
 
   const send = () => {
-    if (!text.trim()) return;
-    void client.act(roundNo, { kind: view.isDescriber ? 'clue' : 'guess', text });
-    setText('');
+    if (!text.trim() || pending) return;
+    const kind = view.isDescriber ? 'clue' : 'guess';
+    void submitDraft(text, setText, (submittedText) => ({ kind, text: submittedText }));
   };
 
   if (view.teamSolved) {
@@ -56,7 +58,9 @@ export function DescribeItRound({ view, roundNo, client }: RoundProps<DescribeIt
       </div>
 
       {view.lastClueRejected && view.isDescriber ? (
-        <p className="text-center text-sm font-bold text-accent-rose">{ar.clueRejected}</p>
+        <p role="alert" aria-live="polite" className="text-center text-sm font-bold text-accent-rose">
+          {ar.clueRejected}
+        </p>
       ) : null}
 
       <form
@@ -67,16 +71,23 @@ export function DescribeItRound({ view, roundNo, client }: RoundProps<DescribeIt
         }}
       >
         <TextField
+          lang="ar"
+          dir="rtl"
+          inputMode="text"
+          enterKeyHint="send"
+          aria-label={view.isDescriber ? ar.writeClue : ar.typeAnswer}
           value={text}
           maxLength={60}
           onChange={(e) => setText(e.target.value)}
           placeholder={view.isDescriber ? ar.writeClue : ar.typeAnswer}
           className="text-center font-bold"
         />
-        <Button type="submit" variant="accent" disabled={!text.trim()}>
-          {view.isDescriber ? ar.sendClue : ar.submit}
+        <Button type="submit" variant="accent" disabled={!text.trim() || pending}>
+          {pending ? ar.sendingAction : view.isDescriber ? ar.sendClue : ar.submit}
         </Button>
       </form>
+
+      <RoundActionStatus error={error} pending={pending} />
 
       <p className="tabular text-center text-sm text-muted">
         {view.solvedTeams} / {view.totalTeams} {ar.teamsSolved}

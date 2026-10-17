@@ -3,6 +3,7 @@ import { ar } from '../i18n/ar.js';
 import { playerTint } from '../ui/playerColors.js';
 import { LockStatus } from './McqRaceRound.js';
 import type { RoundProps, WhoAmongUsView } from './types.js';
+import { RoundActionStatus, useRoundAction } from './useRoundAction.js';
 
 export function WhoAmongUsRound({
   view,
@@ -10,11 +11,12 @@ export function WhoAmongUsRound({
   client,
   players,
 }: RoundProps<WhoAmongUsView> & { players: RoomView['players'] }) {
+  const { pending, error, act } = useRoundAction(client, roundNo);
   const nameOf = (id: string) => players.find((p) => p.id === id)?.nickname ?? '؟';
 
   const vote = (targetId: string) => {
-    if (view.hasVoted) return;
-    void client.act(roundNo, { kind: 'vote', targetId });
+    if (view.hasVoted || pending) return;
+    void act({ kind: 'vote', targetId });
   };
 
   return (
@@ -27,8 +29,9 @@ export function WhoAmongUsRound({
           return (
             <button
               key={id}
+              type="button"
               onClick={() => vote(id)}
-              disabled={view.hasVoted}
+              disabled={view.hasVoted || pending}
               className={`flex min-h-16 items-center gap-3 rounded-2xl border-2 px-4 text-start text-lg font-bold transition active:scale-[0.99] ${
                 picked
                   ? 'border-[var(--accent)] bg-surface-2'
@@ -41,11 +44,13 @@ export function WhoAmongUsRound({
               >
                 {nameOf(id).slice(0, 1)}
               </span>
-              <span className="flex-1">{nameOf(id)}</span>
+              <span className="flex-1 truncate">{nameOf(id)}</span>
             </button>
           );
         })}
       </div>
+
+      <RoundActionStatus error={error} pending={pending} />
 
       <p className="text-center text-sm text-muted">{ar.whoAmongUsHint}</p>
 

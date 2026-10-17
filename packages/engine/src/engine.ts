@@ -47,6 +47,8 @@ export interface EngineOptions {
   disconnectGraceMs: number;
   maxSuddenDeathAttempts: number;
   roomTtlMs: number;
+  /** Whether host role automatically migrates on disconnect/leave (false in fixed-host Firebase mode). */
+  transferHostOnLeave: boolean;
   now: () => number;
   rng: () => number;
 }
@@ -67,6 +69,7 @@ export const DEFAULT_OPTIONS: EngineOptions = {
   disconnectGraceMs: 90_000,
   maxSuddenDeathAttempts: 3,
   roomTtlMs: 4 * 60 * 60 * 1_000,
+  transferHostOnLeave: true,
   now: () => Date.now(),
   rng: Math.random,
 };
@@ -86,6 +89,9 @@ const asPlayerRefs = (players: RoomPlayer[]): PlayerRef[] =>
     teamId: p.teamId,
   }));
 
+const clearReadiness = (players: RoomPlayer[]): RoomPlayer[] =>
+  players.map((p) => ({ ...p, ready: false }));
+
 export class MatchEngine {
   private readonly opts: EngineOptions;
 
@@ -104,12 +110,19 @@ export class MatchEngine {
     config?: Partial<MatchConfig>,
   ): Promise<{ state: RoomState; playerId: string; token: string }> {
     const categories = await this.content.categories();
-    const merged = matchConfigSchema.parse({
-      format: 'mixed',
+    const rawConfig = {
+      format: 'mixed' as const,
       categoryIds: categories.map((c) => c.id),
-      roundCount: 10,
+      roundCount: 10 as const,
       ...config,
-    });
+    };
+    if (rawConfig.format !== 'focused') {
+      delete rawConfig.roundTypeId;
+    }
+    const merged = matchConfigSchema.parse(rawConfig);
+    if (merged.format !== 'focused') {
+      delete merged.roundTypeId;
+    }
 
     const code = await this.allocateCode();
     const now = this.opts.now();
@@ -174,7 +187,7 @@ export class MatchEngine {
       playerId = player.id;
       token = player.token;
 
-      const players = [...current.players, player];
+      const players = clearReadiness([...current.players, player]);
       return this.touch({
         ...current,
         // Somebody joining after teams were switched on still needs a side, and it has to be
@@ -204,16 +217,42 @@ export class MatchEngine {
       this.assertHost(current, playerId);
       if (current.phase !== 'lobby') throw new EngineError('مش هينفع تغيّر الإعدادات والماتش شغال');
 
-      const config = matchConfigSchema.parse({ ...current.config, ...patch });
+      const mergedPatch = { ...current.config, ...patch };
+      if (mergedPatch.format !== 'focused') {
+        delete mergedPatch.roundTypeId;
+      }
+      const config = matchConfigSchema.parse(mergedPatch);
+      if (config.format !== 'focused') {
+        delete config.roundTypeId;
+      }
       if (config.categoryIds.length === 0) throw new EngineError('اختار مجال واحد على الأقل');
 
       // Flipping teams on assigns sides immediately so the lobby shows the split rather than
       // making everybody wait until the match starts to find out who they are with.
-      const players = config.teams
+      const assigned = config.teams
         ? assignTeams(current.players)
         : current.players.map((p) => ({ ...p, teamId: null }));
+      const players = clearReadiness(assigned);
 
       return this.touch({ ...current, config, players });
+    });
+  }
+
+  async setReady(code: string, playerId: PlayerId, ready?: boolean): Promise<RoomState> {
+    return this.store.transition(code, null, (current) => {
+      if (current.phase !== 'lobby') {
+        throw new EngineError('مش هينفع تغيّر الاستعداد والماتش شغال');
+      }
+      const target = current.players.find((p) => p.id === playerId);
+      if (!target) {
+        throw new EngineError('مش لاقيين مقعدك في الغرفة دي');
+      }
+
+      const nextReady = ready !== undefined ? Boolean(ready) : !Boolean(target.ready);
+      const players = current.players.map((p) =>
+        p.id === playerId ? { ...p, ready: nextReady } : p,
+      );
+      return this.touch({ ...current, players });
     });
   }
 
@@ -221,8 +260,9 @@ export class MatchEngine {
     return this.store.transition(code, null, (current) => {
       this.assertHost(current, hostId);
       if (targetId === hostId) throw new EngineError('مش هتقدر تطرد نفسك');
-      const players = current.players.filter((p) => p.id !== targetId);
-      if (players.length === current.players.length) throw new EngineError('اللاعب ده مش موجود');
+      const remaining = current.players.filter((p) => p.id !== targetId);
+      if (remaining.length === current.players.length) throw new EngineError('اللاعب ده مش موجود');
+      const players = current.phase === 'lobby' ? clearReadiness(remaining) : remaining;
       return this.touch({
         ...current,
         // Removing somebody from a split room leaves it lopsided, and rooms fill back up one
@@ -242,7 +282,8 @@ export class MatchEngine {
     return this.store.transition(code, null, async (current) => {
       this.assertHost(current, playerId);
       if (current.phase !== 'lobby') throw new EngineError('الماتش شغال بالفعل');
-      if (current.players.length < MIN_PLAYERS) {
+      const connectedCount = current.players.filter((p) => p.connected && !p.leftEarly).length;
+      if (connectedCount < MIN_PLAYERS) {
         throw new EngineError(`محتاجين ${MIN_PLAYERS} لاعيبة على الأقل عشان نبدأ`);
       }
 
@@ -262,6 +303,7 @@ export class MatchEngine {
 
       const fresh: RoomState = {
         ...current,
+        players: clearReadiness(current.players),
         playlist,
         roundIndex: -1,
         totals: emptyTotals(current.players.map((p) => p.id)),
@@ -322,7 +364,7 @@ export class MatchEngine {
 
       // People who walked out do not get dragged into the next match, and the sides are
       // recomputed around whoever is left rather than kept from a room that no longer exists.
-      const remaining = current.players.filter((p) => p.connected);
+      const remaining = clearReadiness(current.players.filter((p) => p.connected));
       const staying = current.config.teams ? rebalanceTeams(remaining) : remaining;
 
       return this.touch({
@@ -467,7 +509,11 @@ export class MatchEngine {
         );
 
         const inLobby = current.phase === 'lobby';
-        const kept = inLobby ? players.filter((p) => !p.leftEarly) : players;
+        const filtered = inLobby ? players.filter((p) => !p.leftEarly) : players;
+        const kept =
+          inLobby && filtered.length !== current.players.length
+            ? clearReadiness(filtered)
+            : filtered;
         return this.touch(this.checkAbandonment({ ...current, players: kept }, nowMs));
       });
     } catch (error) {
@@ -496,9 +542,9 @@ export class MatchEngine {
       return await this.store.transition(code, null, (current) => {
         const players =
           current.phase === 'lobby'
-            ? current.players.filter((p) => p.id !== playerId)
+            ? clearReadiness(current.players.filter((p) => p.id !== playerId))
             : current.players.map((p) =>
-                p.id === playerId ? { ...p, connected: false, leftEarly: true } : p,
+                p.id === playerId ? { ...p, connected: false, leftEarly: true, ready: false } : p,
               );
 
         const withHost = this.transferHost({ ...current, players });
@@ -790,6 +836,7 @@ export class MatchEngine {
             connected,
             disconnectedAtMs: connected ? null : this.opts.now(),
             leftEarly: connected ? false : p.leftEarly,
+            ready: connected ? p.ready : false,
           }
         : p,
     );
@@ -798,6 +845,8 @@ export class MatchEngine {
 
   /** Without this the room dies with its host — nobody else can start or configure anything. */
   private transferHost(state: RoomState): RoomState {
+    if (!this.opts.transferHostOnLeave) return state;
+
     const host = state.players.find((p) => p.id === state.hostId);
     if (host?.connected && !host.leftEarly) return state;
 
@@ -873,6 +922,7 @@ export class MatchEngine {
       joinedAtMs: nowMs,
       disconnectedAtMs: null,
       leftEarly: false,
+      ready: false,
     };
   }
 

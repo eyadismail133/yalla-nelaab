@@ -1,7 +1,8 @@
+import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import type { RoomView } from '@game/shared';
 import { ar } from '../i18n/ar.js';
-import type { GameClient } from '../net/client.js';
+import type { GameTransport } from '../net/transport.js';
 import { Button, Card, Screen } from '../ui/primitives.js';
 import { useCountdown } from '../ui/useCountdown.js';
 import { playerTint } from '../ui/playerColors.js';
@@ -13,9 +14,10 @@ export function ResultScreen({
   onError,
 }: {
   view: RoomView;
-  client: GameClient;
+  client: GameTransport;
   onError: (message: string) => void;
 }) {
+  const [skipping, setSkipping] = useState(false);
   const round = view.round!;
   const gained = new Map(view.lastRoundScores?.map((s) => [s.playerId, s.points]) ?? []);
   const remaining = useCountdown(client, view.phaseEndsAtMs);
@@ -43,15 +45,27 @@ export function ResultScreen({
         </p>
         {view.you.isHost ? (
           <Button
+            type="button"
             variant="ghost"
+            disabled={skipping}
             onClick={async () => {
-              const result = await client.skip();
-              // A skip that lost the race to the sweeper is not worth a toast — the screen has
-              // already moved on and the player can see it did.
-              if (!result.ok && view.phase === 'round_result') onError(result.error);
+              if (skipping) return;
+              setSkipping(true);
+              try {
+                const result = await client.skip();
+                // A skip that lost the race to the sweeper is not worth a toast — the screen has
+                // already moved on and the player can see it did.
+                if (!result.ok && view.phase === 'round_result') onError(result.error);
+              } catch (err) {
+                if (view.phase === 'round_result') {
+                  onError(err instanceof Error && err.message ? err.message : ar.actionFailed);
+                }
+              } finally {
+                setSkipping(false);
+              }
             }}
           >
-            {ar.continueNow}
+            {skipping ? ar.sendingAction : ar.continueNow}
           </Button>
         ) : (
           <p className="text-center text-xs text-muted">{ar.discussHint}</p>
@@ -94,7 +108,7 @@ export function TeamScoreboard({ view }: { view: RoomView }) {
             }`}
           >
             <span className="text-2xl">{team?.emoji}</span>
-            <span className="flex-1 font-bold">{team?.nameAr}</span>
+            <span className="flex-1 truncate font-bold">{team?.nameAr}</span>
             <span className="tabular text-xl font-black">{standing.total}</span>
           </div>
         );

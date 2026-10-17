@@ -1,4 +1,4 @@
-import type { GameClient } from '../net/client.js';
+import type { GameTransport } from '../net/transport.js';
 
 /** Client-side mirrors of what each round type's `view()` returns. */
 
@@ -40,7 +40,7 @@ export interface FillBlankView {
 export interface RoundProps<V> {
   view: V;
   roundNo: number;
-  client: GameClient;
+  client: GameTransport;
 }
 
 export type FibbingView =

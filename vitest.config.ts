@@ -9,6 +9,7 @@ export default defineConfig({
     // in step with the round-type registry. Component rendering is not tested here; there is
     // no DOM environment configured and these assertions do not need one.
     include: ['packages/**/*.test.ts', 'apps/**/*.test.ts'],
+    exclude: ['**/node_modules/**', '**/dist/**', '**/*.emulator.test.ts'],
     environment: 'node',
   },
   resolve: {

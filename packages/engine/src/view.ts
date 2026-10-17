@@ -16,7 +16,12 @@ const ROUND_TYPE_SUMMARY = ROUND_TYPES.map((t) => ({
  * never copied across — `pendingContent` (raw questions with their answers) and the round's
  * internal state; the client only ever gets `type.view()` before the reveal.
  */
-export function toView(state: RoomState, playerId: PlayerId, categories: Category[]): RoomView {
+export function toView(
+  state: RoomState,
+  playerId: PlayerId,
+  categories: Category[],
+  serverNowMs: number = Date.now(),
+): RoomView {
   const me = state.players.find((p) => p.id === playerId);
   const standingsById = new Map(state.standings.map((s) => [s.playerId, s]));
   const revealed =
@@ -26,7 +31,7 @@ export function toView(state: RoomState, playerId: PlayerId, categories: Categor
     code: state.code,
     phase: state.phase,
     phaseEndsAtMs: state.phaseEndsAtMs,
-    serverNowMs: Date.now(),
+    serverNowMs,
     you: {
       id: playerId,
       nickname: me?.nickname ?? '',
@@ -41,6 +46,7 @@ export function toView(state: RoomState, playerId: PlayerId, categories: Categor
       rank: standingsById.get(p.id)?.rank ?? null,
       leftEarly: p.leftEarly,
       teamId: p.teamId,
+      ready: Boolean(p.ready),
     })),
     config: state.config,
     round: buildRoundView(state, playerId),

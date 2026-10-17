@@ -1,77 +1,264 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import type { RoomView } from '@game/shared';
-import { GameClient, clearSession, loadSession, saveSession } from './client.js';
+import { clearSession, loadSession, saveSession } from './client.js';
+import { isPermanentSessionError } from './session-error.js';
+import { createGameTransport, type GameTransport } from './transport.js';
 
 export interface GameState {
-  client: GameClient;
+  client: GameTransport;
   view: RoomView | null;
   connected: boolean;
+  hostUnresponsive: boolean;
   error: string | null;
+  connectionError: string | null;
   closedReason: string | null;
   setError: (message: string | null) => void;
   reset: () => void;
+  retry: () => Promise<void>;
 }
 
 /**
- * Holds the entire client state: one server-pushed view plus connection status.
+ * Holds the entire client state: one server-pushed view plus connection and host status.
  *
- * There is deliberately no client-side game state to keep in sync. The server is authoritative
+ * There is deliberately no client-side game state to keep in sync. The server/host is authoritative
  * and pushes a complete redacted view after every transition, so reconnecting is just "receive
- * the next state" — no replay log, no reconciliation, no chance of the two drifting apart.
+ * the next state" — no replay log, no reconciliation, no chance of drifting apart.
  */
 export function useGame(): GameState {
-  const client = useMemo(() => new GameClient(), []);
+  const [client] = useState(() => createGameTransport());
   const [view, setView] = useState<RoomView | null>(null);
   const [connected, setConnected] = useState(false);
+  const [hostUnresponsive, setHostUnresponsive] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [connectionError, setConnectionError] = useState<string | null>(null);
   const [closedReason, setClosedReason] = useState<string | null>(null);
 
-  useEffect(() => client.onState(setView), [client]);
+  const disposeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const mountedRef = useRef(true);
+  const opGenRef = useRef(0);
+  const activeResumeGenRef = useRef<number | null>(null);
+  const prevRoomRef = useRef<{ code: string; playerId: string } | null>(null);
 
-  useEffect(
-    () =>
-      client.onClosed(({ reason }) => {
-        setClosedReason(reason);
-        setView(null);
-        clearSession();
-      }),
-    [client],
-  );
+  const performResume = useCallback(async () => {
+    const session = loadSession();
+    if (!session || activeResumeGenRef.current !== null) return;
 
-  useEffect(
-    () =>
-      client.onConnectionChange(async (isConnected) => {
-        setConnected(isConnected);
-        if (!isConnected) return;
+    const myGen = ++opGenRef.current;
+    activeResumeGenRef.current = myGen;
+    const targetCode = session.code;
+    const targetToken = session.token;
 
-        await client.syncClock();
+    try {
+      if (client.syncClock) {
+        try {
+          await client.syncClock();
+        } catch {
+          // Clock sync fallback
+        }
+      }
 
-        // Rejoin automatically after a refresh or a dropped connection. Doing it here rather
-        // than on mount means it also covers a reconnect mid-match, which is the case that
-        // actually happens on phones.
-        const session = loadSession();
-        if (!session) return;
-        const result = await client.resume(session.code, session.token);
-        if (!result.ok) {
-          // The seat is gone — the room ended, or the server restarted. Clearing the view is
-          // the part that matters: without it the player is stranded on a stale screen for a
-          // room that no longer exists, with nothing on it that still works.
+      // Check current session identity and generation guard after syncClock
+      let currentSession = loadSession();
+      if (
+        !mountedRef.current ||
+        opGenRef.current !== myGen ||
+        !currentSession ||
+        currentSession.code !== targetCode ||
+        currentSession.token !== targetToken
+      ) {
+        return;
+      }
+
+      const result = await client.resume(session.code, session.token);
+
+      // Check current session identity and generation guard after resume
+      currentSession = loadSession();
+      if (
+        !mountedRef.current ||
+        opGenRef.current !== myGen ||
+        !currentSession ||
+        currentSession.code !== targetCode ||
+        currentSession.token !== targetToken
+      ) {
+        return;
+      }
+
+      if (!result.ok) {
+        const err = result.error || 'تعذر استعادة الجلسة';
+        if (isPermanentSessionError(err)) {
           clearSession();
           setView(null);
+          setConnectionError(null);
+          setError(err);
+        } else {
+          // Temporary failure preserves saved seat and exposes persistent connection error with retry
+          setConnectionError(err);
         }
-      }),
-    [client],
-  );
+      } else {
+        setConnectionError(null);
+      }
+    } catch (err) {
+      const currentSession = loadSession();
+      if (
+        mountedRef.current &&
+        opGenRef.current === myGen &&
+        currentSession &&
+        currentSession.code === targetCode &&
+        currentSession.token === targetToken
+      ) {
+        const msg =
+          err instanceof Error && err.message ? err.message : 'حصلت مشكلة في إعادة الاتصال';
+        setConnectionError(msg);
+      }
+    } finally {
+      // Only release coalescing ownership if this operation is still the active one
+      if (activeResumeGenRef.current === myGen) {
+        activeResumeGenRef.current = null;
+      }
+    }
+  }, [client]);
+
+  const retry = useCallback(async () => {
+    setError(null);
+    setConnectionError(null);
+    client.retryConnection();
+    await performResume();
+  }, [client, performResume]);
 
   const reset = useCallback(() => {
+    opGenRef.current += 1;
+    activeResumeGenRef.current = null;
+    prevRoomRef.current = null;
     clearSession();
     setView(null);
     setClosedReason(null);
     setError(null);
-    void client.leave();
+    setConnectionError(null);
+    setHostUnresponsive(false);
+    void client.leave().catch(() => {});
   }, [client]);
 
-  return { client, view, connected, error, closedReason, setError, reset };
+  // 1. Subscriptions: attached BEFORE eager connection startup so no event or initial state is missed.
+  useEffect(() => {
+    mountedRef.current = true;
+    const unsubs: Array<() => void> = [];
+
+    // State updates: preserve view, invalidate obsolete operations only on accepted room/seat identity change
+    unsubs.push(
+      client.onState((nextView) => {
+        if (!mountedRef.current) return;
+        if (
+          prevRoomRef.current &&
+          nextView &&
+          (prevRoomRef.current.code !== nextView.code ||
+            prevRoomRef.current.playerId !== nextView.you.id)
+        ) {
+          opGenRef.current += 1;
+          activeResumeGenRef.current = null;
+          setHostUnresponsive(false);
+          setConnectionError(null);
+        }
+        if (nextView) {
+          prevRoomRef.current = { code: nextView.code, playerId: nextView.you.id };
+        }
+        setView(nextView);
+      }),
+    );
+
+    // Room closed: clear state and all stale connection/status errors for a coherent end-state
+    unsubs.push(
+      client.onClosed(({ reason }) => {
+        if (!mountedRef.current) return;
+        opGenRef.current += 1;
+        activeResumeGenRef.current = null;
+        prevRoomRef.current = null;
+        setClosedReason(reason);
+        setView(null);
+        setHostUnresponsive(false);
+        setConnectionError(null);
+        setError(null);
+        clearSession();
+      }),
+    );
+
+    // Host status change: onHostStatusChange exclusively owns hostUnresponsive status
+    if (client.onHostStatusChange) {
+      unsubs.push(
+        client.onHostStatusChange((unresponsive) => {
+          if (!mountedRef.current) return;
+          setHostUnresponsive(unresponsive);
+        }),
+      );
+    }
+
+    // Optional transport initialization / retry error callback
+    const transportWithError = client as {
+      onError?: (handler: (message: string) => void) => () => void;
+    };
+    if (typeof transportWithError.onError === 'function') {
+      unsubs.push(
+        transportWithError.onError((msg: string) => {
+          if (!mountedRef.current) return;
+          setConnectionError(msg);
+          setError(msg);
+        }),
+      );
+    }
+
+    // Connection lifecycle and auto-resume
+    unsubs.push(
+      client.onConnectionChange(async (isConnected) => {
+        if (!mountedRef.current) return;
+        setConnected(isConnected);
+        if (!isConnected) return;
+
+        setConnectionError(null);
+        await performResume();
+      }),
+    );
+
+    return () => {
+      mountedRef.current = false;
+      for (const unsub of unsubs) {
+        try {
+          unsub();
+        } catch {
+          // Ignore subscription cleanup errors
+        }
+      }
+    };
+  }, [client, performResume]);
+
+  // 2. Eager startup and disposal lifecycle:
+  // Runs after subscriptions are attached. Cancels pending deferred disposal on StrictMode remount,
+  // calls retryConnection() to begin connecting, and defers disposal on unmount to survive
+  // StrictMode while guaranteeing true unmount eventually disposes.
+  useEffect(() => {
+    if (disposeTimerRef.current) {
+      clearTimeout(disposeTimerRef.current);
+      disposeTimerRef.current = null;
+    }
+    client.retryConnection();
+
+    return () => {
+      disposeTimerRef.current = setTimeout(() => {
+        client.dispose();
+      }, 150);
+    };
+  }, [client]);
+
+  return {
+    client,
+    view,
+    connected,
+    hostUnresponsive,
+    error,
+    connectionError,
+    closedReason,
+    setError,
+    reset,
+    retry,
+  };
 }
 
-export { saveSession, loadSession, clearSession };
+export { saveSession, loadSession, clearSession, isPermanentSessionError };

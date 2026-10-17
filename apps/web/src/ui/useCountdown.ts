@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { GameClient } from '../net/client.js';
+import type { GameTransport } from '../net/transport.js';
 
 /**
  * Milliseconds left until `endsAtMs`, measured on the server's clock.
@@ -8,7 +8,7 @@ import type { GameClient } from '../net/client.js';
  * animates smoothly at 10fps without the server sending a message per frame — and every player
  * sees the same number regardless of their latency.
  */
-export function useCountdown(client: GameClient, endsAtMs: number | null): number {
+export function useCountdown(client: GameTransport, endsAtMs: number | null): number {
   const [remaining, setRemaining] = useState(() =>
     endsAtMs === null ? 0 : Math.max(0, endsAtMs - client.serverNow()),
   );

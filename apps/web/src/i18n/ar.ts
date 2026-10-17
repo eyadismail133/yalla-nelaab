@@ -163,4 +163,18 @@ export const ar = {
   reconnecting: 'الاتصال قطع، بنحاول تاني...',
   roomClosed: 'الغرفة قفلت',
   backHome: 'ارجع للرئيسية',
+
+  ready: 'جاهز ✓',
+  notReady: 'لسه بيجهز',
+  markReady: 'أنا جاهز للعب ✓',
+  markUnready: 'لسه بجهز...',
+  readyStatusHint: 'الاستعداد بيطمن الهوست، بس الهوست يقدر يبدأ أول ما يكون فيه ٢ متصلين على الأقل',
+  inviteFriends: 'اعزم صحابك للغرفة',
+  inviteShareNative: 'مشاركة الدعوة 📤',
+  inviteWhatsApp: 'ابعت على واتساب 💬',
+  inviteQrAlt: 'كود QR للانضمام للغرفة',
+  inviteQrFallback: 'مقدرناش نرسم الـ QR دلوقتي — استخدم اللينك أو الكود فوق عادي',
+  guestSettingsSummary: 'إعدادات الماتش الحالية',
+  sendingAction: 'بنبعت...',
+  actionFailed: 'مقدرناش نسجل الحركة دي — جرب تاني',
 } as const;

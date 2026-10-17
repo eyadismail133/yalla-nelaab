@@ -167,6 +167,27 @@ describe('socket lifecycle', () => {
     expect(serverNowMs).toBeGreaterThanOrEqual(before);
     client.close();
   });
+
+  it('toggles own readiness in lobby, clears on config change, and rejects mid-match toggle', async () => {
+    const { host, guests, all } = await hostAndGuests(2);
+    await host.waitFor((v) => v.players.length === 2);
+
+    const readyAck = await guests[0]!.emit('room:ready', { ready: true });
+    expect(readyAck.ok).toBe(true);
+    await host.waitFor((v) => v.players.some((p) => p.id === guests[0]!.playerId && p.ready));
+
+    // Config change clears readiness
+    expect((await host.emit('room:configure', { roundCount: 5 })).ok).toBe(true);
+    await host.waitFor((v) => v.players.every((p) => !p.ready));
+
+    // Start match and verify mid-match toggle is rejected
+    expect((await host.emit('room:start')).ok).toBe(true);
+    await host.waitFor((v) => v.phase === 'round_intro' || v.phase === 'in_round');
+    const midMatchAck = await guests[0]!.emit('room:ready', { ready: true });
+    expect(midMatchAck.ok).toBe(false);
+
+    all.forEach((c) => c.close());
+  });
 });
 
 describe('playing a match over sockets', () => {

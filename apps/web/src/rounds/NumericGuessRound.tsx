@@ -4,14 +4,17 @@ import { ar } from '../i18n/ar.js';
 import { Button, TextField } from '../ui/primitives.js';
 import { LockStatus } from './McqRaceRound.js';
 import type { NumericGuessView, RoundProps } from './types.js';
+import { RoundActionStatus, useRoundAction } from './useRoundAction.js';
 
 export function NumericGuessRound({ view, roundNo, client }: RoundProps<NumericGuessView>) {
   const [text, setText] = useState('');
+  const { pending, error, submitDraft } = useRoundAction(client, roundNo);
   const parsed = parseNumericAnswer(text);
 
   const submit = () => {
-    if (parsed === null || view.hasGuessed) return;
-    void client.act(roundNo, { kind: 'guess', value: parsed });
+    if (parsed === null || view.hasGuessed || pending) return;
+    const value = parsed;
+    void submitDraft(text, setText, () => ({ kind: 'guess', value }));
   };
 
   return (
@@ -38,17 +41,21 @@ export function NumericGuessRound({ view, roundNo, client }: RoundProps<NumericG
             // `inputMode="numeric"` raises the number pad on phones without blocking Arabic-Indic
             // digits, which parseNumericAnswer accepts either way.
             inputMode="numeric"
+            enterKeyHint="send"
+            aria-label={view.unitAr ? `${ar.typeNumber} (${view.unitAr})` : ar.typeNumber}
             autoFocus
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder={view.unitAr ? `${ar.typeNumber} (${view.unitAr})` : ar.typeNumber}
             className="tabular text-center text-2xl font-black"
           />
-          <Button type="submit" variant="accent" disabled={parsed === null}>
-            {ar.submit}
+          <Button type="submit" variant="accent" disabled={parsed === null || pending}>
+            {pending ? ar.sendingAction : ar.submit}
           </Button>
         </form>
       )}
+
+      <RoundActionStatus error={error} pending={pending} />
 
       <LockStatus
         locked={view.hasGuessed}

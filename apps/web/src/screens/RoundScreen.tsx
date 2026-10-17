@@ -1,8 +1,9 @@
+import { useRef } from 'react';
 import type { RoomView } from '@game/shared';
 import { ar } from '../i18n/ar.js';
 import { CountdownRing, Screen } from '../ui/primitives.js';
 import { useCountdown } from '../ui/useCountdown.js';
-import type { GameClient } from '../net/client.js';
+import type { GameTransport } from '../net/transport.js';
 import { McqRaceRound } from '../rounds/McqRaceRound.js';
 import { NumericGuessRound } from '../rounds/NumericGuessRound.js';
 import { QuickfireRound } from '../rounds/QuickfireRound.js';
@@ -46,28 +47,55 @@ import type {
   WhoAmongUsView,
 } from '../rounds/types.js';
 
-export function RoundScreen({ view, client }: { view: RoomView; client: GameClient }) {
+/**
+ * Derives the total duration for the active round deadline, scoped by room code, round number,
+ * round type, and exact deadline instant so rematches or stage transitions never inherit a stale
+ * duration from an earlier match's `roundNo`.
+ */
+export function resolveRoundTotalMs(
+  view: Pick<RoomView, 'code' | 'phase' | 'phaseEndsAtMs' | 'serverNowMs'> & {
+    round: { roundNo: number; typeId: string } | null;
+  },
+  cache: Map<string, number>,
+): number {
+  if (!view.phaseEndsAtMs || !view.round) return 1;
+  const key = `${view.code}:${view.round.roundNo}:${view.round.typeId}:${view.phase}:${view.phaseEndsAtMs}`;
+  const existing = cache.get(key);
+  if (existing !== undefined) return existing;
+
+  const total = Math.max(1, view.phaseEndsAtMs - view.serverNowMs);
+  if (cache.size > 32) {
+    for (const staleKey of [...cache.keys()].slice(0, 16)) {
+      cache.delete(staleKey);
+    }
+  }
+  cache.set(key, total);
+  return total;
+}
+
+export function RoundScreen({ view, client }: { view: RoomView; client: GameTransport }) {
   const round = view.round!;
+  const lengthsRef = useRef<Map<string, number>>(new Map());
   const remaining = useCountdown(client, view.phaseEndsAtMs);
   const suddenDeath = view.phase === 'sudden_death';
   const spectating =
     suddenDeath && !!view.suddenDeath && !view.suddenDeath.contenders.includes(view.you.id);
 
-  const totalMs = view.phaseEndsAtMs && round ? guessRoundLength(view) : 1;
+  const totalMs = resolveRoundTotalMs(view, lengthsRef.current);
 
   return (
     <Screen accent={suddenDeath ? 'violet' : round.accent}>
       <header className="flex items-center gap-3">
         <CountdownRing remainingMs={remaining} totalMs={totalMs} />
-        <div className="flex-1">
-          <p className="font-bold">{suddenDeath ? ar.suddenDeath : round.nameAr}</p>
+        <div className="min-w-0 flex-1">
+          <p className="truncate font-bold">{suddenDeath ? ar.suddenDeath : round.nameAr}</p>
           <p className="tabular text-sm text-muted">
             {suddenDeath ? ar.suddenDeathHint : `${ar.round} ${round.index} ${ar.of} ${round.total}`}
           </p>
         </div>
         {round.isFinalRound && !suddenDeath ? (
           <span
-            className="rounded-full px-3 py-1 text-xs font-black text-ink"
+            className="shrink-0 rounded-full px-3 py-1 text-xs font-black text-ink"
             style={{ background: 'var(--accent)' }}
           >
             ×٢
@@ -83,13 +111,17 @@ export function RoundScreen({ view, client }: { view: RoomView; client: GameClie
           <p className="text-muted">{ar.suddenDeathHint}</p>
         </div>
       ) : (
-        <RoundBody view={view} client={client} />
+        <RoundBody
+          key={`${round.roundNo}:${round.typeId}`}
+          view={view}
+          client={client}
+        />
       )}
     </Screen>
   );
 }
 
-function RoundBody({ view, client }: { view: RoomView; client: GameClient }) {
+function RoundBody({ view, client }: { view: RoomView; client: GameTransport }) {
   const round = view.round!;
   const props = { roundNo: round.roundNo, client };
 
@@ -159,26 +191,4 @@ function RoundBody({ view, client }: { view: RoomView; client: GameClient }) {
     default:
       return <p className="text-center text-muted">اللعبة دي لسه مش جاهزة</p>;
   }
-}
-
-/**
- * Round length is not in the view, so it is derived from the deadline the first time a round
- * renders. Only the ring's fill ratio depends on it — the seconds shown always come straight
- * from the server deadline, so a bad estimate can never mislead a player about their time.
- *
- * Bounded because round numbers only ever climb: an unbounded map would grow for every round
- * of every match for as long as the tab stays open.
- */
-const lengths = new Map<number, number>();
-function guessRoundLength(view: RoomView): number {
-  const key = view.round!.roundNo;
-  const existing = lengths.get(key);
-  if (existing) return existing;
-
-  const total = Math.max(1, (view.phaseEndsAtMs ?? 0) - view.serverNowMs);
-  if (lengths.size > 32) {
-    for (const stale of [...lengths.keys()].slice(0, 16)) lengths.delete(stale);
-  }
-  lengths.set(key, total);
-  return total;
 }

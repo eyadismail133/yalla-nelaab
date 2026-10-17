@@ -4,7 +4,7 @@
 # proxy in front of two origins, and no CORS to configure. That matters more than it sounds:
 # the websocket and the page arrive from the same host, which is what makes a single tunnel or
 # a single PaaS service enough to play on.
-FROM node:22-slim AS build
+FROM node:24-slim AS build
 
 WORKDIR /app
 
@@ -12,6 +12,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 COPY packages/shared/package.json packages/shared/
 COPY packages/rounds/package.json packages/rounds/
+COPY packages/engine/package.json packages/engine/
 COPY apps/server/package.json apps/server/
 COPY apps/web/package.json apps/web/
 RUN npm ci
@@ -21,7 +22,7 @@ RUN npm run build:web
 
 # ---------------------------------------------------------------------------------------
 
-FROM node:22-slim AS runtime
+FROM node:24-slim AS runtime
 
 ENV NODE_ENV=production
 WORKDIR /app
@@ -29,6 +30,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 COPY packages/shared/package.json packages/shared/
 COPY packages/rounds/package.json packages/rounds/
+COPY packages/engine/package.json packages/engine/
 COPY apps/server/package.json apps/server/
 COPY apps/web/package.json apps/web/
 RUN npm ci --omit=dev

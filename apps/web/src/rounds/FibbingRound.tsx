@@ -3,6 +3,7 @@ import { ar } from '../i18n/ar.js';
 import { Button, TextField } from '../ui/primitives.js';
 import { LockStatus } from './McqRaceRound.js';
 import type { FibbingView, RoundProps } from './types.js';
+import { RoundActionStatus, useRoundAction } from './useRoundAction.js';
 
 export function FibbingRound({ view, roundNo, client }: RoundProps<FibbingView>) {
   if (view.stage === 'writing') return <WritingStage view={view} roundNo={roundNo} client={client} />;
@@ -11,11 +12,12 @@ export function FibbingRound({ view, roundNo, client }: RoundProps<FibbingView>)
 
 function WritingStage({ view, roundNo, client }: RoundProps<FibbingView>) {
   const [text, setText] = useState('');
+  const { pending, error, submitDraft } = useRoundAction(client, roundNo);
   if (view.stage !== 'writing') return null;
 
   const submit = () => {
-    if (!text.trim() || view.myLie) return;
-    void client.act(roundNo, { kind: 'lie', text });
+    if (!text.trim() || view.myLie || pending) return;
+    void submitDraft(text, setText, (submittedText) => ({ kind: 'lie', text: submittedText }));
   };
 
   return (
@@ -39,18 +41,25 @@ function WritingStage({ view, roundNo, client }: RoundProps<FibbingView>) {
         >
           <TextField
             autoFocus
+            lang="ar"
+            dir="rtl"
+            inputMode="text"
+            enterKeyHint="send"
+            aria-label={ar.writeLie}
             value={text}
             maxLength={60}
             onChange={(e) => setText(e.target.value)}
             placeholder={ar.writeLie}
             className="text-center font-bold"
           />
-          <Button type="submit" variant="accent" disabled={!text.trim()}>
-            {ar.submit}
+          <Button type="submit" variant="accent" disabled={!text.trim() || pending}>
+            {pending ? ar.sendingAction : ar.submit}
           </Button>
           <p className="text-center text-sm text-muted">{ar.fibbingWriteHint}</p>
         </form>
       )}
+
+      <RoundActionStatus error={error} pending={pending} />
 
       <LockStatus
         locked={!!view.myLie}
@@ -62,11 +71,12 @@ function WritingStage({ view, roundNo, client }: RoundProps<FibbingView>) {
 }
 
 function VotingStage({ view, roundNo, client }: RoundProps<FibbingView>) {
+  const { pending, error, act } = useRoundAction(client, roundNo);
   if (view.stage !== 'voting') return null;
 
   const choose = (optionId: string) => {
-    if (view.myVote || view.myOptionIds.includes(optionId)) return;
-    void client.act(roundNo, { kind: 'vote', optionId });
+    if (view.myVote || view.myOptionIds.includes(optionId) || pending) return;
+    void act({ kind: 'vote', optionId });
   };
 
   return (
@@ -81,8 +91,9 @@ function VotingStage({ view, roundNo, client }: RoundProps<FibbingView>) {
           return (
             <button
               key={option.id}
+              type="button"
               onClick={() => choose(option.id)}
-              disabled={mine || !!view.myVote}
+              disabled={mine || !!view.myVote || pending}
               className={`min-h-16 rounded-2xl border-2 px-4 py-3 text-center text-lg font-bold transition active:scale-[0.99] ${
                 picked
                   ? 'border-[var(--accent)] bg-surface-2'
@@ -99,6 +110,8 @@ function VotingStage({ view, roundNo, client }: RoundProps<FibbingView>) {
           );
         })}
       </div>
+
+      <RoundActionStatus error={error} pending={pending} />
 
       <LockStatus
         locked={!!view.myVote}

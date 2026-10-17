@@ -1,5 +1,6 @@
 import { io, type Socket } from 'socket.io-client';
 import type { AckResult, RoomView } from '@game/shared';
+import type { GameTransport } from './transport.js';
 
 /**
  * Where the socket connects.
@@ -12,12 +13,15 @@ import type { AckResult, RoomView } from '@game/shared';
  *
  * `VITE_SERVER_URL` stays as the escape hatch for running the two on separate origins.
  */
-const SERVER_URL = import.meta.env.VITE_SERVER_URL ?? '';
+const SERVER_URL = import.meta.env?.VITE_SERVER_URL ?? '';
 
 const SESSION_KEY = 'party-game-session';
 
 /** A dropped clock sample must not stall the reconnect that follows it. */
 const TIME_SYNC_TIMEOUT_MS = 2_000;
+
+/** Normal command timeout (10s) so buttons never stay stuck pending indefinitely. */
+const REQUEST_TIMEOUT_MS = 10_000;
 
 /**
  * A seat belongs to a tab, not to a browser — so the session lives in sessionStorage.
@@ -48,23 +52,33 @@ export function loadSession(): Session | null {
 }
 
 export function saveSession(session: Session): void {
-  store().setItem(SESSION_KEY, JSON.stringify(session));
+  try {
+    store().setItem(SESSION_KEY, JSON.stringify(session));
+  } catch {
+    // Ignore storage quota/security errors
+  }
 }
 
 export function clearSession(): void {
-  store().removeItem(SESSION_KEY);
+  try {
+    store().removeItem(SESSION_KEY);
+  } catch {
+    // Ignore storage errors
+  }
 }
 
-export class GameClient {
+export class GameClient implements GameTransport {
   readonly socket: Socket;
   /** serverNow − clientNow, so every player's countdown agrees regardless of latency. */
   private clockOffsetMs = 0;
 
-  constructor() {
+  constructor(socket?: Socket) {
     // An empty URL means "this origin", which is what the proxy and the production server
     // both serve. Polling stays in the list because some corporate and hotel networks kill
     // websockets outright, and a party game that fails there fails at a party.
-    this.socket = io(SERVER_URL, { transports: ['websocket', 'polling'] });
+    // autoConnect: false ensures constructor purity during React render passes;
+    // connection activation belongs strictly to useEffect via retryConnection().
+    this.socket = socket ?? io(SERVER_URL, { autoConnect: false, transports: ['websocket', 'polling'] });
   }
 
   onState(handler: (view: RoomView) => void): () => void {
@@ -82,10 +96,17 @@ export class GameClient {
     const down = () => handler(false);
     this.socket.on('connect', up);
     this.socket.on('disconnect', down);
+    if (this.socket.connected) {
+      handler(true);
+    }
     return () => {
       this.socket.off('connect', up);
       this.socket.off('disconnect', down);
     };
+  }
+
+  onHostStatusChange(_handler: (unresponsive: boolean) => void): () => void {
+    return () => {};
   }
 
   /**
@@ -142,9 +163,23 @@ export class GameClient {
     payload?: unknown,
   ): Promise<AckResult<T>> {
     return new Promise((resolve) => {
-      const done = (result: AckResult<T>) => resolve(result);
-      if (payload === undefined) this.socket.emit(event, done);
-      else this.socket.emit(event, payload, done);
+      const handleAck = (err: unknown, result?: AckResult<T>) => {
+        if (err) {
+          resolve({ ok: false, error: 'انتهت مهلة الطلب — جرب تاني' });
+          return;
+        }
+        if (!result) {
+          resolve({ ok: false, error: 'حصلت مشكلة في الاتصال' });
+          return;
+        }
+        resolve(result);
+      };
+
+      if (payload === undefined) {
+        this.socket.timeout(REQUEST_TIMEOUT_MS).emit(event, handleAck);
+      } else {
+        this.socket.timeout(REQUEST_TIMEOUT_MS).emit(event, payload, handleAck);
+      }
     });
   }
 
@@ -168,6 +203,10 @@ export class GameClient {
 
   configure(patch: Record<string, unknown>) {
     return this.request('room:configure', patch);
+  }
+
+  setReady(ready?: boolean) {
+    return this.request('room:ready', ready === undefined ? {} : { ready });
   }
 
   start() {
@@ -194,4 +233,17 @@ export class GameClient {
   act(roundNo: number, action: unknown) {
     return this.request('round:action', { roundNo, action });
   }
+
+  retryConnection(): void {
+    if (!this.socket.connected) {
+      this.socket.connect();
+    }
+  }
+
+  dispose(): void {
+    this.socket.removeAllListeners();
+    this.socket.disconnect();
+  }
 }
+
+export type { GameTransport };

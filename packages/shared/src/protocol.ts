@@ -27,6 +27,12 @@ export const resumeRoomSchema = z.object({
 
 export const configureRoomSchema = matchConfigSchema.partial();
 
+export const setReadySchema = z
+  .object({
+    ready: z.boolean().optional(),
+  })
+  .optional();
+
 export const kickPlayerSchema = z.object({ playerId: z.string().min(1) });
 
 export const roundActionSchema = z.object({
@@ -55,6 +61,7 @@ export interface ClientToServer {
     ack: (r: AckResult<{ code: string; playerId: string }>) => void,
   ) => void;
   'room:configure': (payload: z.infer<typeof configureRoomSchema>, ack: (r: AckResult) => void) => void;
+  'room:ready': (payload: z.infer<typeof setReadySchema>, ack: (r: AckResult) => void) => void;
   'room:start': (ack: (r: AckResult) => void) => void;
   'room:kick': (payload: z.infer<typeof kickPlayerSchema>, ack: (r: AckResult) => void) => void;
   /** Host only: cut the intro or result screen short and move on. */

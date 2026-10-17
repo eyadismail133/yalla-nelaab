@@ -2,15 +2,16 @@ import { useState } from 'react';
 import { ar } from '../i18n/ar.js';
 import { Button, TextField } from '../ui/primitives.js';
 import type { FillBlankView, RoundProps } from './types.js';
+import { RoundActionStatus, useRoundAction } from './useRoundAction.js';
 
 export function FillBlankRound({ view, roundNo, client }: RoundProps<FillBlankView>) {
   const [text, setText] = useState('');
+  const { pending, error, submitDraft } = useRoundAction(client, roundNo);
   const exhausted = view.attemptsLeft === 0;
 
   const submit = () => {
-    if (!text.trim() || view.hasSolved || exhausted) return;
-    void client.act(roundNo, { kind: 'submit', text });
-    setText('');
+    if (!text.trim() || view.hasSolved || exhausted || pending) return;
+    void submitDraft(text, setText, (submittedText) => ({ kind: 'submit', text: submittedText }));
   };
 
   const [before, after] = view.textAr.split('____');
@@ -44,19 +45,26 @@ export function FillBlankRound({ view, roundNo, client }: RoundProps<FillBlankVi
         >
           <TextField
             autoFocus
+            lang="ar"
+            dir="rtl"
+            inputMode="text"
+            enterKeyHint="send"
+            aria-label={ar.typeAnswer}
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder={ar.typeAnswer}
             className="text-center font-bold"
           />
-          <Button type="submit" variant="accent" disabled={!text.trim()}>
-            {ar.submit}
+          <Button type="submit" variant="accent" disabled={!text.trim() || pending}>
+            {pending ? ar.sendingAction : ar.submit}
           </Button>
           <p className="tabular text-center text-sm text-muted">
             {ar.attemptsLeft}: {view.attemptsLeft}
           </p>
         </form>
       )}
+
+      <RoundActionStatus error={error} pending={pending} />
 
       {view.myAttempts.length > 0 && !view.hasSolved ? (
         <div className="flex flex-wrap justify-center gap-2">

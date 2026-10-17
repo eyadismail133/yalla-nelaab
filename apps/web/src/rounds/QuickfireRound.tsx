@@ -1,10 +1,13 @@
 import { ar } from '../i18n/ar.js';
 import type { QuickfireView, RoundProps } from './types.js';
+import { RoundActionStatus, useRoundAction } from './useRoundAction.js';
 
 export function QuickfireRound({ view, roundNo, client }: RoundProps<QuickfireView>) {
+  const { pending, error, act } = useRoundAction(client, roundNo);
+
   const judge = (value: boolean) => {
-    if (!view.current) return;
-    void client.act(roundNo, { kind: 'judge', index: view.current.index, value });
+    if (!view.current || pending) return;
+    void act({ kind: 'judge', index: view.current.index, value });
   };
 
   if (view.isDone || !view.current) {
@@ -33,24 +36,30 @@ export function QuickfireRound({ view, roundNo, client }: RoundProps<QuickfireVi
         ))}
       </div>
 
-      <p className="flex flex-1 items-center text-balance text-center text-2xl font-bold leading-relaxed">
+      <p className="flex flex-1 items-center justify-center text-balance text-center text-2xl font-bold leading-relaxed">
         {view.current.textAr}
       </p>
 
       <div className="grid grid-cols-2 gap-3">
         <button
+          type="button"
+          disabled={pending}
           onClick={() => judge(true)}
-          className="min-h-20 rounded-2xl border-2 border-line bg-surface text-2xl font-black text-accent-emerald transition active:scale-[0.98]"
+          className="min-h-20 rounded-2xl border-2 border-line bg-surface text-2xl font-black text-accent-emerald transition active:scale-[0.98] disabled:opacity-45"
         >
           {ar.trueLabel}
         </button>
         <button
+          type="button"
+          disabled={pending}
           onClick={() => judge(false)}
-          className="min-h-20 rounded-2xl border-2 border-line bg-surface text-2xl font-black text-accent-rose transition active:scale-[0.98]"
+          className="min-h-20 rounded-2xl border-2 border-line bg-surface text-2xl font-black text-accent-rose transition active:scale-[0.98] disabled:opacity-45"
         >
           {ar.falseLabel}
         </button>
       </div>
+
+      <RoundActionStatus error={error} pending={pending} />
 
       <p className="text-center text-sm font-bold text-accent-rose">كل غلطة بتخصم ٢٠</p>
     </div>

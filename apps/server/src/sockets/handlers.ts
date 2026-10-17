@@ -7,6 +7,7 @@ import {
   kickPlayerSchema,
   resumeRoomSchema,
   roundActionSchema,
+  setReadySchema,
   type AckResult,
   type ContentSource,
 } from '@game/shared';
@@ -179,6 +180,19 @@ export function registerSocketHandlers({
 
       await attempt(socket, ack, async () => {
         await engine.configure(data.code!, data.playerId!, input);
+        await broadcast(data.code!);
+      });
+    });
+
+    socket.on('room:ready', async (payload: unknown, maybeAck?: Ack) => {
+      const ack: Ack = typeof payload === 'function' ? (payload as Ack) : (maybeAck as Ack);
+      const rawPayload = typeof payload === 'function' ? undefined : payload;
+      const parsed = setReadySchema.safeParse(rawPayload);
+      if (!parsed.success) return ack({ ok: false, error: 'البيانات اللي وصلت مش مظبوطة' });
+      if (!data.code || !data.playerId) return ack({ ok: false, error: 'مش في غرفة' });
+
+      await attempt(socket, ack, async () => {
+        await engine.setReady(data.code!, data.playerId!, parsed.data?.ready);
         await broadcast(data.code!);
       });
     });
