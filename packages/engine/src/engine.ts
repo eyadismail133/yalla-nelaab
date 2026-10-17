@@ -431,10 +431,14 @@ export class MatchEngine {
 
       // A stage can close early — once everyone has submitted their lie there is no reason to
       // sit out the rest of the writing clock — so the deadline is re-read after every action.
-      return this.touch({
+      const withDeadline: RoomState = {
         ...next,
         phaseEndsAtMs: type.nextDeadline(step.state) ?? current.phaseEndsAtMs,
-      });
+      };
+      if (this.allConnectedPlayersActed(withDeadline)) {
+        return this.touch(await this.advanceIfAllConnectedActed(withDeadline, now));
+      }
+      return this.touch(withDeadline);
     });
   }
 
@@ -526,9 +530,14 @@ export class MatchEngine {
 
   async setConnected(code: string, playerId: PlayerId, connected: boolean): Promise<RoomState | null> {
     try {
-      return await this.store.transition(code, null, (current) =>
-        this.touch(this.checkAbandonment(this.setConnectedIn(current, playerId, connected), this.opts.now())),
-      );
+      return await this.store.transition(code, null, async (current) => {
+        const now = this.opts.now();
+        const checked = this.checkAbandonment(this.setConnectedIn(current, playerId, connected), now);
+        if (!connected && this.allConnectedPlayersActed(checked)) {
+          return this.touch(await this.advanceIfAllConnectedActed(checked, now));
+        }
+        return this.touch(checked);
+      });
     } catch (error) {
       // A room that has already been reaped is the expected case here — a player leaving or
       // dropping after the match ended. Anything else is a defect and must not be silent.
@@ -539,7 +548,8 @@ export class MatchEngine {
 
   async leave(code: string, playerId: PlayerId): Promise<RoomState | null> {
     try {
-      return await this.store.transition(code, null, (current) => {
+      return await this.store.transition(code, null, async (current) => {
+        const now = this.opts.now();
         const players =
           current.phase === 'lobby'
             ? clearReadiness(current.players.filter((p) => p.id !== playerId))
@@ -548,7 +558,11 @@ export class MatchEngine {
               );
 
         const withHost = this.transferHost({ ...current, players });
-        return this.touch(this.checkAbandonment(withHost, this.opts.now()));
+        const checked = this.checkAbandonment(withHost, now);
+        if (this.allConnectedPlayersActed(checked)) {
+          return this.touch(await this.advanceIfAllConnectedActed(checked, now));
+        }
+        return this.touch(checked);
       });
     } catch (error) {
       // A room that has already been reaped is the expected case here — a player leaving or
@@ -610,10 +624,13 @@ export class MatchEngine {
 
     // The clock starts now, not when the content was fetched — otherwise a slow sweeper tick
     // silently shortens the round for everyone.
+    const activePlayers = state.players.filter((p) => !p.leftEarly);
     const participants =
       phase === 'sudden_death' && state.suddenDeath
-        ? state.players.filter((p) => state.suddenDeath!.contenders.includes(p.id))
-        : state.players;
+        ? activePlayers.filter((p) => state.suddenDeath!.contenders.includes(p.id))
+        : activePlayers.length >= 2
+          ? activePlayers
+          : state.players;
 
     const roundState = type.createState(state.pendingContent as ContentItem[], {
       players: asPlayerRefs(participants),
@@ -855,6 +872,77 @@ export class MatchEngine {
       .sort((a, b) => a.joinedAtMs - b.joinedAtMs)[0];
 
     return successor ? { ...state, hostId: successor.id } : state;
+  }
+
+  private isPlayerDoneInCurrentStage(
+    type: AnyRoundType,
+    roundState: unknown,
+    playerId: PlayerId,
+  ): boolean {
+    const view = type.view(roundState as never, playerId) as Record<string, unknown> | null;
+    if (!view || typeof view !== 'object') return false;
+
+    if (view.stage === 'writing') {
+      if ('myLie' in view) return view.myLie !== null && view.myLie !== undefined;
+      if (Array.isArray(view.myAnswers)) return view.myAnswers.every((v) => v !== null);
+    }
+    if (view.stage === 'voting') {
+      if ('myVote' in view) return view.myVote !== null && view.myVote !== undefined;
+      if ('isReady' in view) return view.isReady === true;
+    }
+    if (view.stage === 'answering') {
+      if ('hasAnswered' in view) return view.hasAnswered === true;
+      if ('isDone' in view) return view.myBid === null || view.isDone === true;
+    }
+    if (view.stage === 'stealing') {
+      return view.iWasCorrect === false || view.hasActed === true;
+    }
+    if (view.stage === 'bidding') {
+      return view.myBid !== null && view.myBid !== undefined;
+    }
+
+    if (view.hasAnswered === true) return true;
+    if (view.hasGuessed === true) return true;
+    if (view.hasVoted === true) return true;
+    if (view.isDone === true) return true;
+    if (view.isLocked === true || view.isBusted === true) return true;
+    if (view.hasSolved === true || view.attemptsLeft === 0) return true;
+
+    return false;
+  }
+
+  private allConnectedPlayersActed(state: RoomState): boolean {
+    if (state.phase !== 'in_round' && state.phase !== 'sudden_death') return false;
+    if (!state.roundTypeId || !state.roundState) return false;
+    const type = getRoundType(state.roundTypeId);
+    if (type.isFinished(state.roundState as never)) return false;
+
+    const participantIds = (state.roundState as { playerIds?: PlayerId[] }).playerIds;
+    if (!Array.isArray(participantIds) || participantIds.length === 0) return false;
+
+    const connectedParticipants = state.players.filter(
+      (p) => participantIds.includes(p.id) && p.connected && !p.leftEarly,
+    );
+    if (connectedParticipants.length === 0) return false;
+
+    return connectedParticipants.every((p) =>
+      this.isPlayerDoneInCurrentStage(type, state.roundState, p.id),
+    );
+  }
+
+  private async advanceIfAllConnectedActed(state: RoomState, nowMs: number): Promise<RoomState> {
+    let current = state;
+    for (let guard = 0; guard < 3; guard += 1) {
+      if (!this.allConnectedPlayersActed(current)) break;
+      if (current.roundTypeId === 'who_am_i' && current.roundState) {
+        current = {
+          ...current,
+          roundState: { ...(current.roundState as Record<string, unknown>), closed: true },
+        };
+      }
+      current = await this.advance(current, nowMs);
+    }
+    return current;
   }
 
   private async pickContent(

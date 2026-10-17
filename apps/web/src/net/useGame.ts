@@ -229,10 +229,10 @@ export function useGame(): GameState {
     };
   }, [client, performResume]);
 
-  // 2. Eager startup and disposal lifecycle:
+  // 2. Eager startup, mobile app-switch recovery, and disposal lifecycle:
   // Runs after subscriptions are attached. Cancels pending deferred disposal on StrictMode remount,
-  // calls retryConnection() to begin connecting, and defers disposal on unmount to survive
-  // StrictMode while guaranteeing true unmount eventually disposes.
+  // calls retryConnection() to begin connecting, listens for mobile foreground/visibility/network return,
+  // and defers disposal on unmount to survive StrictMode while guaranteeing true unmount eventually disposes.
   useEffect(() => {
     if (disposeTimerRef.current) {
       clearTimeout(disposeTimerRef.current);
@@ -240,12 +240,45 @@ export function useGame(): GameState {
     }
     client.retryConnection();
 
+    const handleForegroundOrOnline = () => {
+      if (!mountedRef.current) return;
+      if (typeof document !== 'undefined' && document.visibilityState === 'hidden') {
+        return;
+      }
+      setConnectionError(null);
+      client.retryConnection();
+      void performResume();
+    };
+
+    const handleVisibilityChange = () => {
+      if (typeof document !== 'undefined' && document.visibilityState === 'visible') {
+        handleForegroundOrOnline();
+      }
+    };
+
+    if (typeof document !== 'undefined' && typeof document.addEventListener === 'function') {
+      document.addEventListener('visibilitychange', handleVisibilityChange);
+    }
+    if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
+      window.addEventListener('pageshow', handleForegroundOrOnline);
+      window.addEventListener('focus', handleForegroundOrOnline);
+      window.addEventListener('online', handleForegroundOrOnline);
+    }
+
     return () => {
+      if (typeof document !== 'undefined' && typeof document.removeEventListener === 'function') {
+        document.removeEventListener('visibilitychange', handleVisibilityChange);
+      }
+      if (typeof window !== 'undefined' && typeof window.removeEventListener === 'function') {
+        window.removeEventListener('pageshow', handleForegroundOrOnline);
+        window.removeEventListener('focus', handleForegroundOrOnline);
+        window.removeEventListener('online', handleForegroundOrOnline);
+      }
       disposeTimerRef.current = setTimeout(() => {
         client.dispose();
       }, 150);
     };
-  }, [client]);
+  }, [client, performResume]);
 
   return {
     client,

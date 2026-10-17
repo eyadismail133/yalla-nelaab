@@ -186,4 +186,47 @@ describe('@game/engine package exports and behavioral parity', () => {
     const serialized = JSON.stringify(updated.config);
     expect(serialized).not.toContain('roundTypeId');
   });
+
+  it('advances round immediately when all connected players have acted without waiting for a disconnected player or host', async () => {
+    const store = new MemoryStore();
+    const engine = new MatchEngine(store, content);
+
+    const { state: created, playerId: hostId } = await engine.createRoom('يوسف', {
+      roundCount: 5,
+      format: 'focused',
+      roundTypeId: 'mcq_race',
+    });
+    const code = created.code;
+    const { playerId: guest1Id } = await engine.join(code, 'أحمد');
+    const { playerId: guest2Id } = await engine.join(code, 'سارة');
+
+    await engine.start(code, hostId);
+    // Advance from round_intro to in_round
+    let state = await engine.skipPhase(code, hostId);
+    expect(state.phase).toBe('in_round');
+    expect(state.roundNo).toBe(1);
+
+    // Scenario A: Guest 2 switches to another app (disconnects) before answering.
+    // Once Host and Guest 1 submit answers, round advances immediately to round_result!
+    await engine.setConnected(code, guest2Id, false);
+    await engine.submitAction(code, hostId, 1, { kind: 'answer', choice: 0 });
+    state = await engine.submitAction(code, guest1Id, 1, { kind: 'answer', choice: 1 });
+    expect(state.phase).toBe('round_result');
+
+    // Guest 2 returns and reconnects; advance to Round 2
+    await engine.setConnected(code, guest2Id, true);
+    await engine.skipPhase(code, hostId); // round_result -> round_intro
+    state = await engine.skipPhase(code, hostId); // round_intro -> in_round
+    expect(state.phase).toBe('in_round');
+    expect(state.roundNo).toBe(2);
+
+    // Scenario B: Guest 1 and Guest 2 answer first, then Host disconnects -> round advances immediately on disconnect!
+    await engine.submitAction(code, guest1Id, 2, { kind: 'answer', choice: 0 });
+    await engine.submitAction(code, guest2Id, 2, { kind: 'answer', choice: 0 });
+    expect((await store.get(code))?.phase).toBe('in_round');
+
+    state = (await engine.setConnected(code, hostId, false))!;
+    expect(state.phase).toBe('round_result');
+  });
 });
+

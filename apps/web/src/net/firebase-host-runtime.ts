@@ -29,8 +29,8 @@ import type { FirebaseSessionManager } from './firebase-session.js';
 import { HostDedupTracker, parseCommandId } from './sequence.js';
 
 export const SIX_HOURS_MS = 6 * 60 * 60 * 1_000;
-export const LEASE_TTL_MS = 8_000;
-export const HEARTBEAT_INTERVAL_MS = 5_000;
+export const LEASE_TTL_MS = 12_000;
+export const HEARTBEAT_INTERVAL_MS = 3_500;
 
 export interface HostRuntimeOptions {
   session: FirebaseSessionManager;
@@ -66,6 +66,19 @@ interface QueuedTask<T> {
   fn: () => Promise<T>;
   resolve: (value: T) => void;
   reject: (reason?: unknown) => void;
+}
+
+interface RoomMetaCache {
+  code: string;
+  hostUid: string;
+  createdAtMs: number;
+  expiresAtMs: number;
+  phase: string;
+  status: string;
+  memberCount: number;
+  admittedCount: number;
+  updatedAtMs: number;
+  leaseOwnerId: string;
 }
 
 /**
@@ -106,6 +119,24 @@ export class FirebaseHostRuntime {
   private commandsUnsub: Unsubscribe | null = null;
   private presenceUnsub: Unsubscribe | null = null;
   private leaseUnsub: Unsubscribe | null = null;
+  private metaUnsub: Unsubscribe | null = null;
+
+  private cachedMeta: RoomMetaCache | null = null;
+  private readonly latestJoinRequests = new Map<
+    string,
+    { commandId: string; uid: string; nickname: string; expiresAtMs: number }
+  >();
+  private readonly latestCommands = new Map<
+    string,
+    {
+      commandId: string;
+      uid: string;
+      type: string;
+      payloadJson: string;
+      expiresAtMs: number;
+      roundNo?: number;
+    }
+  >();
 
   private queue: QueuedTask<unknown>[] = [];
   private isProcessingQueue = false;
@@ -642,7 +673,7 @@ export class FirebaseHostRuntime {
         this.occupiedSlots.set('1', hostUid);
 
         // Stage 1: Room meta (memberCount: 1, admittedCount: 1)
-        await set(ref(db, `rooms/${candidateRoomId}/meta`), {
+        const initialMeta: RoomMetaCache = {
           code: candidateCode,
           hostUid,
           createdAtMs: bootstrapNow,
@@ -653,7 +684,9 @@ export class FirebaseHostRuntime {
           admittedCount: 1,
           updatedAtMs: bootstrapNow,
           leaseOwnerId: this.runtimeId,
-        });
+        };
+        await set(ref(db, `rooms/${candidateRoomId}/meta`), initialMeta);
+        this.cachedMeta = initialMeta;
         this.assertRestorationLive(currentGen);
 
         // Stage 2: Acquire execution lease (epoch 1) and start early renewal/observation
@@ -815,12 +848,13 @@ export class FirebaseHostRuntime {
   }
 
   /**
-   * Resumes host execution for an existing room after page refresh or temporary host disconnect.
+   * Resumes host execution for an existing room after page refresh, temporary host disconnect,
+   * or automatic host transfer to an admitted member when the previous host's lease has expired.
    */
   async resumeHost(
     roomId: string,
     code: string,
-    options?: { maxWaitMs?: number },
+    options?: { maxWaitMs?: number; allowTakeover?: boolean },
   ): Promise<BootstrapRoomResult> {
     if (this.disposed) {
       throw new Error('Host runtime is disposed');
@@ -839,25 +873,33 @@ export class FirebaseHostRuntime {
       this.roomId = roomId;
       this.code = code;
 
-      // 1. Read room meta and lease initially to check room validity and lease status
-      const [metaSnap, leaseSnap] = await Promise.all([
-        get(ref(db, `rooms/${roomId}/meta`)),
-        get(ref(db, `rooms/${roomId}/lease`)),
-      ]);
+      // 1. Read room meta first to check room validity and host identity
+      const metaSnap = await get(ref(db, `rooms/${roomId}/meta`));
       this.assertRestorationLive(currentGen);
 
       if (!metaSnap.exists() || metaSnap.val().status === 'closed') {
         throw new Error('الغرفة مقفولة أو مش موجودة');
       }
-      const metaVal = metaSnap.val();
-      if (metaVal.hostUid !== this.hostUid) {
+      const metaVal = metaSnap.val() as RoomMetaCache;
+      const previousHostUid = String(metaVal.hostUid);
+      const isMemberTakeover = previousHostUid !== this.hostUid;
+      if (isMemberTakeover && !options?.allowTakeover) {
         throw new Error('أنت لست الهوست لهذه الغرفة');
       }
 
-      let now = this.session.serverNow();
+      const now = this.session.serverNow();
       if (metaVal.expiresAtMs <= now) {
         throw new Error('انتهت صلاحية الغرفة');
       }
+
+      // Read lease (non-host member takeover can only read lease once it is expired per security rules)
+      let leaseSnap;
+      try {
+        leaseSnap = await get(ref(db, `rooms/${roomId}/lease`));
+      } catch {
+        throw new Error('يوجد هوست نشط آخر يدير هذه الغرفة حالياً');
+      }
+      this.assertRestorationLive(currentGen);
 
       // 2. Lease acquisition / recovery
       let leaseVal = leaseSnap.val();
@@ -872,9 +914,13 @@ export class FirebaseHostRuntime {
         this.epoch = leaseVal.epoch;
         this.acquiredAtMs = leaseVal.acquiredAtMs;
         this.leaseExpiresAtMs = currentServerNow + this.leaseTtlMs;
+        this.cachedMeta = metaVal;
       } else {
         // Foreign lease owner: check if currently unexpired
         if (leaseVal.expiresAtMs > currentServerNow) {
+          if (isMemberTakeover) {
+            throw new Error('يوجد هوست نشط آخر يدير هذه الغرفة حالياً');
+          }
           // Bounded wait for stale lease expiry in slices to react immediately to disposal or disconnect
           const maxWaitMs = options?.maxWaitMs ?? 10_000;
           const startTime = Date.now();
@@ -922,11 +968,21 @@ export class FirebaseHostRuntime {
           });
           this.assertRestorationLive(currentGen);
 
-          // Update meta.leaseOwnerId to match successor runtime
-          await update(ref(db, `rooms/${roomId}/meta`), {
+          // Update meta.leaseOwnerId (and meta.hostUid if a member took over) to match successor runtime
+          const metaPatch: Record<string, unknown> = {
             leaseOwnerId: this.runtimeId,
             updatedAtMs: currentServerNow,
-          });
+          };
+          if (isMemberTakeover) {
+            metaPatch.hostUid = this.hostUid;
+          }
+          await update(ref(db, `rooms/${roomId}/meta`), metaPatch);
+          this.cachedMeta = {
+            ...metaVal,
+            hostUid: isMemberTakeover ? this.hostUid : metaVal.hostUid,
+            leaseOwnerId: this.runtimeId,
+            updatedAtMs: currentServerNow,
+          };
           this.assertRestorationLive(currentGen);
         } else {
           throw new Error('انتهت مهلة استعادة الغرفة (60 ثانية)');
@@ -991,19 +1047,41 @@ export class FirebaseHostRuntime {
         }
       }
 
-      if (this.uidToPlayerId.size === 0 && membersSnap.exists()) {
-        const membersVal = membersSnap.val() as Record<string, { uid: string; playerId: string; role: string }>;
+      if (membersSnap.exists()) {
+        const membersVal = membersSnap.val() as Record<string, { uid: string; playerId: string; role: string; slot?: string }>;
         for (const m of Object.values(membersVal)) {
           if (m && m.uid && m.playerId) {
-            this.uidToPlayerId.set(m.uid, m.playerId);
-            this.playerIdToUid.set(m.playerId, m.uid);
-            if (m.uid === this.hostUid) {
-              this.hostPlayerId = m.playerId;
+            if (!this.uidToPlayerId.has(m.uid)) {
+              this.uidToPlayerId.set(m.uid, m.playerId);
+              this.playerIdToUid.set(m.playerId, m.uid);
+            }
+            if (m.slot && !this.uidToSlot.has(m.uid)) {
+              this.uidToSlot.set(m.uid, m.slot);
             }
           }
         }
-      } else {
-        this.hostPlayerId = this.uidToPlayerId.get(this.hostUid) ?? null;
+      }
+      this.hostPlayerId = this.uidToPlayerId.get(this.hostUid) ?? null;
+
+      if (isMemberTakeover) {
+        if (!this.hostPlayerId) {
+          throw new Error('اللاعب غير مسجل في الغرفة');
+        }
+        savedRoomState.hostId = this.hostPlayerId;
+        const oldHostPlayerId = this.uidToPlayerId.get(previousHostUid);
+        if (oldHostPlayerId) {
+          const oldHostPlayer = savedRoomState.players.find((p: RoomPlayer) => p.id === oldHostPlayerId);
+          if (oldHostPlayer && oldHostPlayer.connected) {
+            oldHostPlayer.connected = false;
+            oldHostPlayer.disconnectedAtMs = currentServerNow;
+          }
+        }
+        const promotedPlayer = savedRoomState.players.find((p: RoomPlayer) => p.id === this.hostPlayerId);
+        if (promotedPlayer && !promotedPlayer.connected) {
+          promotedPlayer.connected = true;
+          promotedPlayer.disconnectedAtMs = null;
+        }
+        savedRoomState.version += 1;
       }
 
       this.store = new MemoryStore();
@@ -1022,11 +1100,31 @@ export class FirebaseHostRuntime {
         hostToken = hostPlayer.token;
       }
 
+      if (isMemberTakeover && this.hostPlayerId) {
+        // Trigger connected check in engine so any round waiting only on the disconnected old host advances immediately
+        await this.engine.setConnected(code, this.hostPlayerId, true);
+        this.assertRestorationLive(currentGen);
+
+        const roleUpdates: Record<string, unknown> = {
+          [`members/${this.hostUid}/role`]: 'host',
+          [`members/${this.hostUid}/leaseOwnerId`]: this.runtimeId,
+        };
+        if (membersSnap.exists() && membersSnap.val()?.[previousHostUid]) {
+          roleUpdates[`members/${previousHostUid}/role`] = 'guest';
+          roleUpdates[`members/${previousHostUid}/leaseOwnerId`] = this.runtimeId;
+        }
+        await update(ref(db, `rooms/${roomId}`), roleUpdates);
+        this.assertRestorationLive(currentGen);
+      }
+
       // 4. Check and execute any overdue deadlines from the saved state using fresh server time
       const freshNow = this.session.serverNow();
       if (savedRoomState.phaseEndsAtMs !== null && freshNow >= savedRoomState.phaseEndsAtMs) {
         await this.engine.tick(freshNow);
         this.assertRestorationLive(currentGen);
+        await this.publishEngineState(db);
+        this.assertRestorationLive(currentGen);
+      } else if (isMemberTakeover) {
         await this.publishEngineState(db);
         this.assertRestorationLive(currentGen);
       } else {
@@ -1071,8 +1169,8 @@ export class FirebaseHostRuntime {
       if (!this.session.getIsConnected()) return;
 
       const now = this.session.serverNow();
-      if (now >= this.leaseExpiresAtMs - 1_000) {
-        // Lease close to expiring or expired
+      if (now >= this.leaseExpiresAtMs) {
+        // Lease expired
         this.stopExecution('انتهت صلاحية الحجز');
         return;
       }
@@ -1150,11 +1248,21 @@ export class FirebaseHostRuntime {
   private startInboxes(db: Database): void {
     if (!this.roomId) return;
 
+    // 0. Room Meta Cache Subscription
+    const metaRef = ref(db, `rooms/${this.roomId}/meta`);
+    this.metaUnsub = onValue(metaRef, (snap) => {
+      if (this.disposed || !snap.exists()) return;
+      this.cachedMeta = snap.val() as RoomMetaCache;
+    });
+
     // 1. Join Requests Inbox
     const joinReqRef = ref(db, `rooms/${this.roomId}/joinRequests`);
     this.joinRequestsUnsub = onValue(joinReqRef, (snap) => {
-      if (this.disposed || !snap.exists() || !this.isLive()) return;
+      if (this.disposed || !this.isLive()) return;
+      this.latestJoinRequests.clear();
+      if (!snap.exists()) return;
       const val = snap.val() as Record<string, unknown>;
+      const receivedAtMs = Date.now();
       for (const [slotKey, reqData] of Object.entries(val)) {
         if (reqData && typeof reqData === 'object') {
           const req = reqData as {
@@ -1163,7 +1271,8 @@ export class FirebaseHostRuntime {
             nickname: string;
             expiresAtMs: number;
           };
-          this.enqueue(() => this.processJoinRequest(db, slotKey, req)).catch(() => {});
+          this.latestJoinRequests.set(slotKey, req);
+          this.enqueue(() => this.processJoinRequest(db, slotKey, req, receivedAtMs)).catch(() => {});
         }
       }
     });
@@ -1171,8 +1280,11 @@ export class FirebaseHostRuntime {
     // 2. Member Commands Inbox
     const commandsRef = ref(db, `rooms/${this.roomId}/commands`);
     this.commandsUnsub = onValue(commandsRef, (snap) => {
-      if (this.disposed || !snap.exists() || !this.isLive()) return;
+      if (this.disposed || !this.isLive()) return;
+      this.latestCommands.clear();
+      if (!snap.exists()) return;
       const val = snap.val() as Record<string, unknown>;
+      const receivedAtMs = Date.now();
       for (const [uid, cmdData] of Object.entries(val)) {
         if (cmdData && typeof cmdData === 'object') {
           const cmd = cmdData as {
@@ -1183,7 +1295,8 @@ export class FirebaseHostRuntime {
             expiresAtMs: number;
             roundNo?: number;
           };
-          this.enqueue(() => this.processMemberCommand(db, uid, cmd)).catch(() => {});
+          this.latestCommands.set(uid, cmd);
+          this.enqueue(() => this.processMemberCommand(db, uid, cmd, receivedAtMs)).catch(() => {});
         }
       }
     });
@@ -1221,21 +1334,38 @@ export class FirebaseHostRuntime {
     });
   }
 
+  private async getRoomMeta(db: Database, currentGen: number): Promise<RoomMetaCache> {
+    if (this.cachedMeta) {
+      return this.cachedMeta;
+    }
+    const metaSnap = await get(ref(db, `rooms/${this.roomId}/meta`));
+    this.assertLive(currentGen);
+    const metaVal = metaSnap.val() as RoomMetaCache;
+    this.cachedMeta = metaVal;
+    return metaVal;
+  }
+
   private async processJoinRequest(
     db: Database,
     reqSlot: string,
     req: { commandId: string; uid: string; nickname: string; expiresAtMs: number },
+    receivedAtMs = 0,
   ): Promise<void> {
     const currentGen = this.generation;
     if (this.disposed || this.isStopped || !this.roomId || !this.code || !this.engine || !this.isLive() || this.generation !== currentGen) return;
 
-    // Read current joinRequests/$reqSlot to ensure request was not cleared or replaced
-    const currentJoinReqSnap = await get(ref(db, `rooms/${this.roomId}/joinRequests/${reqSlot}`));
-    this.assertLive(currentGen);
-    if (!currentJoinReqSnap.exists()) {
-      return; // Request was cleared by client
+    let currentJoinReq: { commandId: string; uid: string; nickname: string; expiresAtMs: number } | null = null;
+    if (receivedAtMs > 0 && Date.now() - receivedAtMs < 15 && this.latestJoinRequests.get(reqSlot)?.commandId === req.commandId) {
+      currentJoinReq = this.latestJoinRequests.get(reqSlot)!;
+    } else {
+      // Read current joinRequests/$reqSlot to ensure request was not cleared or replaced
+      const currentJoinReqSnap = await get(ref(db, `rooms/${this.roomId}/joinRequests/${reqSlot}`));
+      this.assertLive(currentGen);
+      if (!currentJoinReqSnap.exists()) {
+        return; // Request was cleared by client
+      }
+      currentJoinReq = currentJoinReqSnap.val();
     }
-    const currentJoinReq = currentJoinReqSnap.val();
     if (!currentJoinReq || currentJoinReq.commandId !== req.commandId) {
       return; // Request was replaced in this slot
     }
@@ -1280,18 +1410,27 @@ export class FirebaseHostRuntime {
             }
           }
 
+          const catStartMs = Date.now();
           const categories = await this.contentSource.categories();
+          const catElapsedMs = Date.now() - catStartMs;
           this.assertLive(currentGen);
 
-          const metaSnap = await get(ref(db, `rooms/${this.roomId}/meta`));
-          this.assertLive(currentGen);
-          const metaVal = metaSnap.val();
+          const metaVal = await this.getRoomMeta(db, currentGen);
 
-          // Recheck joinRequest before atomic commit
-          const preWriteJoinSnap = await get(ref(db, `rooms/${this.roomId}/joinRequests/${reqSlot}`));
-          this.assertLive(currentGen);
+          // Recheck joinRequest before atomic commit if async delay occurred
+          let preWriteReq: { commandId?: string; expiresAtMs?: number } | null = null;
+          let preWriteExists = true;
+          if (catElapsedMs < 15 && receivedAtMs > 0 && Date.now() - receivedAtMs < 25) {
+            const cachedReq = this.latestJoinRequests.get(reqSlot);
+            preWriteExists = Boolean(cachedReq);
+            preWriteReq = cachedReq ?? null;
+          } else {
+            const preWriteJoinSnap = await get(ref(db, `rooms/${this.roomId}/joinRequests/${reqSlot}`));
+            this.assertLive(currentGen);
+            preWriteExists = preWriteJoinSnap.exists();
+            preWriteReq = preWriteJoinSnap.val();
+          }
           const preWriteNow = this.session.serverNow();
-          const preWriteReq = preWriteJoinSnap.val();
           const preWriteExpiresAtMs =
             typeof preWriteReq?.expiresAtMs === 'number'
               ? preWriteReq.expiresAtMs
@@ -1300,7 +1439,7 @@ export class FirebaseHostRuntime {
                 : undefined;
 
           if (
-            !preWriteJoinSnap.exists() ||
+            !preWriteExists ||
             preWriteReq?.commandId !== req.commandId ||
             (preWriteExpiresAtMs !== undefined && preWriteExpiresAtMs <= preWriteNow)
           ) {
@@ -1331,6 +1470,9 @@ export class FirebaseHostRuntime {
 
           const updates: Record<string, unknown> = {
             snapshot: this.createSnapshotRecord(nextState, now),
+            [`members/${req.uid}/role`]: req.uid === this.hostUid ? 'host' : 'guest',
+            [`members/${req.uid}/removed`]: false,
+            [`members/${req.uid}/leaseOwnerId`]: this.runtimeId,
             [`joinResponses/${reqSlot}`]: {
               commandId: req.commandId,
               uid: req.uid,
@@ -1346,9 +1488,9 @@ export class FirebaseHostRuntime {
           };
 
           if (metaVal) {
-            updates['meta'] = {
+            const nextMeta: RoomMetaCache = {
               code: this.code,
-              hostUid: this.hostUid,
+              hostUid: this.hostUid!,
               createdAtMs: metaVal.createdAtMs,
               expiresAtMs: metaVal.expiresAtMs,
               phase: nextState.phase,
@@ -1358,6 +1500,8 @@ export class FirebaseHostRuntime {
               updatedAtMs: now,
               leaseOwnerId: this.runtimeId,
             };
+            updates['meta'] = nextMeta;
+            this.cachedMeta = nextMeta;
           }
 
           for (const p of nextState.players) {
@@ -1506,18 +1650,27 @@ export class FirebaseHostRuntime {
       const guestNickname = joinedPlayer ? joinedPlayer.nickname : req.nickname;
 
       // Step B: Atomically commit state, projections, metadata, membership, and joinResponse
+      const catStartMs = Date.now();
       const categories = await this.contentSource.categories();
+      const catElapsedMs = Date.now() - catStartMs;
       this.assertLive(currentGen);
-      const metaSnap = await get(ref(db, `rooms/${this.roomId}/meta`));
-      this.assertLive(currentGen);
-      const metaVal = metaSnap.val();
+      const metaVal = await this.getRoomMeta(db, currentGen);
       const admittedCount = isNewAdmission ? (metaVal.admittedCount ?? 1) + 1 : metaVal.admittedCount;
 
       // Recheck joinRequest before atomic commit
-      const preWriteJoinSnap = await get(ref(db, `rooms/${this.roomId}/joinRequests/${reqSlot}`));
-      this.assertLive(currentGen);
+      let preWriteReq: { commandId?: string; expiresAtMs?: number } | null = null;
+      let preWriteExists = true;
+      if (catElapsedMs < 15 && receivedAtMs > 0 && Date.now() - receivedAtMs < 25) {
+        const cachedReq = this.latestJoinRequests.get(reqSlot);
+        preWriteExists = Boolean(cachedReq);
+        preWriteReq = cachedReq ?? null;
+      } else {
+        const preWriteJoinSnap = await get(ref(db, `rooms/${this.roomId}/joinRequests/${reqSlot}`));
+        this.assertLive(currentGen);
+        preWriteExists = preWriteJoinSnap.exists();
+        preWriteReq = preWriteJoinSnap.val();
+      }
       const preWriteNow = this.session.serverNow();
-      const preWriteReq = preWriteJoinSnap.val();
       const preWriteExpiresAtMs = typeof preWriteReq?.expiresAtMs === 'number'
         ? preWriteReq.expiresAtMs
         : typeof req.expiresAtMs === 'number'
@@ -1525,7 +1678,7 @@ export class FirebaseHostRuntime {
           : undefined;
 
       if (
-        !preWriteJoinSnap.exists() ||
+        !preWriteExists ||
         preWriteReq?.commandId !== req.commandId ||
         (preWriteExpiresAtMs !== undefined && preWriteExpiresAtMs <= preWriteNow)
       ) {
@@ -1557,19 +1710,21 @@ export class FirebaseHostRuntime {
         return;
       }
 
+      const nextMeta: RoomMetaCache = {
+        code: this.code,
+        hostUid: this.hostUid!,
+        createdAtMs: metaVal.createdAtMs,
+        expiresAtMs: metaVal.expiresAtMs,
+        phase: joinResult.state.phase,
+        status: 'open',
+        memberCount: joinResult.state.players.length,
+        admittedCount,
+        updatedAtMs: now,
+        leaseOwnerId: this.runtimeId,
+      };
+
       const updates: Record<string, unknown> = {
-        meta: {
-          code: this.code,
-          hostUid: this.hostUid,
-          createdAtMs: metaVal.createdAtMs,
-          expiresAtMs: metaVal.expiresAtMs,
-          phase: joinResult.state.phase,
-          status: 'open',
-          memberCount: joinResult.state.players.length,
-          admittedCount,
-          updatedAtMs: now,
-          leaseOwnerId: this.runtimeId,
-        },
+        meta: nextMeta,
         [`members/${req.uid}`]: {
           uid: req.uid,
           slot,
@@ -1611,6 +1766,7 @@ export class FirebaseHostRuntime {
 
       this.assertLive(currentGen);
       await update(ref(db, `rooms/${this.roomId}`), updates);
+      this.cachedMeta = nextMeta;
       this.assertLive(currentGen);
 
       if (this.hostPlayerId) {
@@ -1664,17 +1820,23 @@ export class FirebaseHostRuntime {
       expiresAtMs: number;
       roundNo?: number;
     },
+    receivedAtMs = 0,
   ): Promise<void> {
     const currentGen = this.generation;
     if (this.disposed || this.isStopped || !this.roomId || !this.code || !this.engine || !this.isLive() || this.generation !== currentGen) return;
 
-    // 1. Inbox verification on entry: read current commands/${uid} before effects/replay/error publication
-    const currentCmdSnap = await get(ref(db, `rooms/${this.roomId}/commands/${uid}`));
-    this.assertLive(currentGen);
-    if (!currentCmdSnap.exists()) {
-      return; // Command was cleared by client
+    // 1. Inbox verification on entry: use live cache on immediate fast path, or read commands/${uid}
+    let currentCmd: { commandId: string; expiresAtMs?: number } | null = null;
+    if (receivedAtMs > 0 && Date.now() - receivedAtMs < 15 && this.latestCommands.get(uid)?.commandId === cmd.commandId) {
+      currentCmd = this.latestCommands.get(uid)!;
+    } else {
+      const currentCmdSnap = await get(ref(db, `rooms/${this.roomId}/commands/${uid}`));
+      this.assertLive(currentGen);
+      if (!currentCmdSnap.exists()) {
+        return; // Command was cleared by client
+      }
+      currentCmd = currentCmdSnap.val();
     }
-    const currentCmd = currentCmdSnap.val();
     if (!currentCmd || currentCmd.commandId !== cmd.commandId) {
       return; // Command was replaced in this inbox
     }
@@ -1915,17 +2077,26 @@ export class FirebaseHostRuntime {
 
       this.assertLive(currentGen);
 
+      const catStartMs = Date.now();
       const categories = await this.contentSource.categories();
+      const catElapsedMs = Date.now() - catStartMs;
       this.assertLive(currentGen);
-      const metaSnap = await get(ref(db, `rooms/${this.roomId}/meta`));
-      this.assertLive(currentGen);
-      const metaVal = metaSnap.val();
+      const metaVal = await this.getRoomMeta(db, currentGen);
 
       // Pre-write recheck before atomic commit: ensure command in inbox was not cleared, replaced, or expired
-      const preWriteCmdSnap = await get(ref(db, `rooms/${this.roomId}/commands/${uid}`));
-      this.assertLive(currentGen);
+      let preWriteCmd: { commandId?: string; expiresAtMs?: number } | null = null;
+      let preWriteExists = true;
+      if (catElapsedMs < 15 && receivedAtMs > 0 && Date.now() - receivedAtMs < 25) {
+        const cachedCmd = this.latestCommands.get(uid);
+        preWriteExists = Boolean(cachedCmd);
+        preWriteCmd = cachedCmd ?? null;
+      } else {
+        const preWriteCmdSnap = await get(ref(db, `rooms/${this.roomId}/commands/${uid}`));
+        this.assertLive(currentGen);
+        preWriteExists = preWriteCmdSnap.exists();
+        preWriteCmd = preWriteCmdSnap.val();
+      }
       const preWriteNow = this.session.serverNow();
-      const preWriteCmd = preWriteCmdSnap.val();
       const preWriteExpiresAtMs = typeof preWriteCmd?.expiresAtMs === 'number'
         ? preWriteCmd.expiresAtMs
         : typeof cmd.expiresAtMs === 'number'
@@ -1933,7 +2104,7 @@ export class FirebaseHostRuntime {
           : undefined;
 
       if (
-        !preWriteCmdSnap.exists() ||
+        !preWriteExists ||
         preWriteCmd?.commandId !== cmd.commandId ||
         (preWriteExpiresAtMs !== undefined && preWriteExpiresAtMs <= preWriteNow)
       ) {
@@ -1969,19 +2140,21 @@ export class FirebaseHostRuntime {
       // Atomic commit: snapshot, projections, responses, and kicked member updates
       this.dedup.recordAck(uid, cmd.commandId, dedupResult.seq, { ok: true }, preWriteNow);
 
+      const nextMeta: RoomMetaCache = {
+        code: this.code,
+        hostUid: this.hostUid!,
+        createdAtMs: metaVal.createdAtMs,
+        expiresAtMs: metaVal.expiresAtMs,
+        phase: nextState.phase,
+        status: 'open',
+        memberCount: nextState.players.length,
+        admittedCount: metaVal.admittedCount,
+        updatedAtMs: now,
+        leaseOwnerId: this.runtimeId,
+      };
+
       const updates: Record<string, unknown> = {
-        meta: {
-          code: this.code,
-          hostUid: this.hostUid,
-          createdAtMs: metaVal.createdAtMs,
-          expiresAtMs: metaVal.expiresAtMs,
-          phase: nextState.phase,
-          status: 'open',
-          memberCount: nextState.players.length,
-          admittedCount: metaVal.admittedCount,
-          updatedAtMs: now,
-          leaseOwnerId: this.runtimeId,
-        },
+        meta: nextMeta,
         snapshot: this.createSnapshotRecord(nextState, now),
         [`responses/${uid}`]: {
           slot,
@@ -2032,6 +2205,7 @@ export class FirebaseHostRuntime {
 
       this.assertLive(currentGen);
       await update(ref(db, `rooms/${this.roomId}`), updates);
+      this.cachedMeta = nextMeta;
       this.assertLive(currentGen);
 
       if (uid === this.hostUid) {
@@ -2105,23 +2279,23 @@ export class FirebaseHostRuntime {
     const now = this.session.serverNow();
     const categories = await this.contentSource.categories();
     this.assertLive(currentGen);
-    const metaSnap = await get(ref(db, `rooms/${this.roomId}/meta`));
-    this.assertLive(currentGen);
-    const metaVal = metaSnap.val();
+    const metaVal = await this.getRoomMeta(db, currentGen);
+
+    const nextMeta: RoomMetaCache = {
+      code: this.code,
+      hostUid: this.hostUid!,
+      createdAtMs: metaVal.createdAtMs,
+      expiresAtMs: metaVal.expiresAtMs,
+      phase: state.phase,
+      status: metaVal.status,
+      memberCount: state.players.length,
+      admittedCount: metaVal.admittedCount,
+      updatedAtMs: now,
+      leaseOwnerId: this.runtimeId,
+    };
 
     const updates: Record<string, unknown> = {
-      meta: {
-        code: this.code,
-        hostUid: this.hostUid,
-        createdAtMs: metaVal.createdAtMs,
-        expiresAtMs: metaVal.expiresAtMs,
-        phase: state.phase,
-        status: metaVal.status,
-        memberCount: state.players.length,
-        admittedCount: metaVal.admittedCount,
-        updatedAtMs: now,
-        leaseOwnerId: this.runtimeId,
-      },
+      meta: nextMeta,
       snapshot: this.createSnapshotRecord(state, now),
     };
 
@@ -2143,6 +2317,7 @@ export class FirebaseHostRuntime {
     try {
       this.assertLive(currentGen);
       await update(ref(db, `rooms/${this.roomId}`), updates);
+      this.cachedMeta = nextMeta;
       this.assertLive(currentGen);
       if (this.hostPlayerId) {
         const hostView = toView(state, this.hostPlayerId, categories, now);
@@ -2151,6 +2326,108 @@ export class FirebaseHostRuntime {
     } catch (err) {
       // Lease might be lost or expired
       this.stopExecution('فشل نشر تحديث الغرفة إلى قاعدة البيانات');
+    }
+  }
+
+  /**
+   * Relinquishes host duties when the host leaves while other connected members remain in the room.
+   * Marks the host as disconnected/left in engine state, sets heartbeat.connected = false, and
+   * expires the lease immediately so the oldest connected member can take over seamlessly.
+   * Returns true if handoff state was published (other connected members exist), or false if room should close.
+   */
+  async relinquishHost(): Promise<boolean> {
+    if (this.disposed || !this.roomId || !this.code || !this.engine || !this.hostPlayerId) {
+      return false;
+    }
+
+    try {
+      const state = await this.store.get(this.code);
+      if (!state) return false;
+
+      const otherConnected = state.players.filter(
+        (p) => p.id !== this.hostPlayerId && p.connected && !p.leftEarly,
+      );
+      if (otherConnected.length === 0) {
+        return false;
+      }
+
+      const authCtx = await this.session.ensureAuth();
+      const db = authCtx.database;
+      const hostUid = this.hostUid ?? authCtx.uid;
+      const now = this.session.serverNow();
+
+      // Mark departing host as disconnected (non-destructive if they later reconnect as a guest, or advance round if waiting on them)
+      const nextState = (await this.engine.setConnected(this.code, this.hostPlayerId, false)) ?? state;
+      const categories = await this.contentSource.categories();
+      const metaVal = this.cachedMeta ?? (await get(ref(db, `rooms/${this.roomId}/meta`))).val();
+
+      const updates: Record<string, unknown> = {
+        heartbeat: {
+          lastSeenAtMs: now,
+          connected: false,
+          leaseOwnerId: this.runtimeId,
+        },
+        snapshot: this.createSnapshotRecord(nextState, now),
+      };
+
+      if (metaVal) {
+        updates['meta'] = {
+          code: this.code,
+          hostUid,
+          createdAtMs: metaVal.createdAtMs,
+          expiresAtMs: metaVal.expiresAtMs,
+          phase: nextState.phase,
+          status: 'open',
+          memberCount: nextState.players.length,
+          admittedCount: metaVal.admittedCount,
+          updatedAtMs: now,
+          leaseOwnerId: this.runtimeId,
+        };
+      }
+
+      for (const p of nextState.players) {
+        const pUid = this.playerIdToUid.get(p.id);
+        const pSlot = pUid ? this.uidToSlot.get(pUid) : null;
+        if (pUid && pSlot) {
+          const view = toView(nextState, p.id, categories, now);
+          updates[`views/${pUid}`] = {
+            slot: pSlot,
+            json: JSON.stringify(view),
+            version: nextState.version,
+            updatedAtMs: now,
+            leaseOwnerId: this.runtimeId,
+          };
+        }
+      }
+
+      await update(ref(db, `rooms/${this.roomId}`), updates);
+
+      // Immediately expire the lease so the oldest connected member can claim it without waiting for TTL
+      await set(ref(db, `rooms/${this.roomId}/lease`), {
+        ownerId: this.runtimeId,
+        hostUid,
+        epoch: this.epoch,
+        acquiredAtMs: this.acquiredAtMs,
+        expiresAtMs: now - 100,
+      });
+
+      if (hostUid) {
+        const activeRef = ref(db, `hosts/${hostUid}/activeRoom`);
+        await runTransaction(
+          activeRef,
+          (curr) => {
+            if (!curr) return null;
+            if (curr.roomId === this.roomId) return null;
+            return undefined;
+          },
+          { applyLocally: false },
+        ).catch(() => {});
+      }
+
+      this.stopExecution('غادر الهوست الغرفة وتم نقل الاستضافة');
+      return true;
+    } catch {
+      return false;
     }
   }
 
@@ -2248,6 +2525,10 @@ export class FirebaseHostRuntime {
       this.leaseUnsub();
       this.leaseUnsub = null;
     }
+    if (this.metaUnsub) {
+      this.metaUnsub();
+      this.metaUnsub = null;
+    }
     if (this.heartbeatTimer) {
       clearInterval(this.heartbeatTimer);
       this.heartbeatTimer = null;
@@ -2268,6 +2549,8 @@ export class FirebaseHostRuntime {
       this.presenceUnsub();
       this.presenceUnsub = null;
     }
+    this.latestJoinRequests.clear();
+    this.latestCommands.clear();
   }
 
   dispose(): void {

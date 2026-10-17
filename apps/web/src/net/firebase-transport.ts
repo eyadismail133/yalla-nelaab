@@ -43,6 +43,7 @@ export interface FirebaseTransportOptions {
   onClonedDetected?: () => void;
   leaseTtlMs?: number;
   heartbeatIntervalMs?: number;
+  hostTakeoverGraceMs?: number;
 }
 
 function defaultSessionStorage(): Storage | null {
@@ -59,6 +60,7 @@ function defaultSessionStorage(): Storage | null {
 const COMMAND_TIMEOUT_MS = 10_000;
 const HOST_UNRESPONSIVE_THRESHOLD_MS = 15_000;
 const HOST_DEAD_THRESHOLD_MS = 60_000;
+const DEFAULT_HOST_TAKEOVER_GRACE_MS = 3_500;
 
 interface RoomAttachment {
   readonly id: number;
@@ -74,6 +76,7 @@ class ActiveRoomAttachment implements RoomAttachment {
   heartbeatUnsub: Unsubscribe | null = null;
   metaUnsub: Unsubscribe | null = null;
   pulseTimer: ReturnType<typeof setInterval> | null = null;
+  takeoverTimer: ReturnType<typeof setTimeout> | null = null;
   presenceDisconnect: ReturnType<typeof onDisconnect> | null = null;
 
   constructor(
@@ -107,6 +110,10 @@ class ActiveRoomAttachment implements RoomAttachment {
     if (this.pulseTimer) {
       clearInterval(this.pulseTimer);
       this.pulseTimer = null;
+    }
+    if (this.takeoverTimer) {
+      clearTimeout(this.takeoverTimer);
+      this.takeoverTimer = null;
     }
     if (this.presenceDisconnect) {
       void this.presenceDisconnect.cancel().catch(() => {});
@@ -149,7 +156,10 @@ export class FirebaseTransport implements GameTransport {
   private currentCode: string | null = null;
   private currentUid: string | null = null;
   private currentPlayerId: string | null = null;
+  private currentToken: string | null = null;
+  private latestRoomView: RoomView | null = null;
   private isHost = false;
+  private promotionInFlight = false;
 
   private isConnected = false;
   private hostUnresponsive = false;
@@ -431,6 +441,7 @@ export class FirebaseTransport implements GameTransport {
         this.currentRoomId = res.roomId;
         this.currentCode = res.code;
         this.currentPlayerId = res.playerId;
+        this.currentToken = res.token;
         this.isHost = true;
 
         saveSession({ code: res.code, playerId: res.playerId, token: res.token });
@@ -517,8 +528,11 @@ export class FirebaseTransport implements GameTransport {
         }
         const roomId = String(codeSnap.val().roomId);
 
-        // 2. Read room meta
-        const metaSnap = await get(ref(db, `rooms/${roomId}/meta`));
+        // 2. Read room meta and own member record in parallel to save 1 network round-trip
+        const [metaSnap, ownMemberSnap] = await Promise.all([
+          get(ref(db, `rooms/${roomId}/meta`)),
+          get(ref(db, `rooms/${roomId}/members/${authCtx.uid}`)),
+        ]);
         if (this.disposed || this.operationGeneration !== opGen || Date.now() >= startDeadlineMs) {
           return { ok: false, error: 'انتهت مهلة الانضمام — جرب تاني' };
         }
@@ -526,12 +540,6 @@ export class FirebaseTransport implements GameTransport {
           return { ok: false, error: 'الغرفة مقفولة' };
         }
         const meta = metaSnap.val();
-
-        // Check if UID already owns an admitted seat
-        const ownMemberSnap = await get(ref(db, `rooms/${roomId}/members/${authCtx.uid}`));
-        if (this.disposed || this.operationGeneration !== opGen || Date.now() >= startDeadlineMs) {
-          return { ok: false, error: 'انتهت مهلة الانضمام — جرب تاني' };
-        }
         const isExistingMember = ownMemberSnap.exists() && ownMemberSnap.val()?.removed !== true;
 
         if (!isExistingMember) {
@@ -545,7 +553,7 @@ export class FirebaseTransport implements GameTransport {
             return { ok: false, error: 'الغرفة وصلت للحد الأقصى من اللاعبين' };
           }
         } else if (meta.phase !== 'lobby') {
-          // Existing admitted member attempting recovery after match started
+          // Existing admitted member (including a former host returning as a member) attempting recovery after match started
           let recoveredCredentials: { code: string; playerId: string; token: string } | null = null;
           for (let s = 1; s <= 8; s += 1) {
             if (this.disposed || this.operationGeneration !== opGen || Date.now() >= startDeadlineMs) {
@@ -565,10 +573,30 @@ export class FirebaseTransport implements GameTransport {
               }
             } catch {}
           }
+          if (!recoveredCredentials && ownMemberSnap.val()?.playerId) {
+            let fallbackToken = this.currentToken || '';
+            if (!fallbackToken && this.storage) {
+              try {
+                const saved = JSON.parse(this.storage.getItem('party-game-session') || '{}');
+                if (saved?.code === normCode && saved?.token) {
+                  fallbackToken = String(saved.token);
+                }
+              } catch {}
+            }
+            recoveredCredentials = {
+              code: normCode,
+              playerId: String(ownMemberSnap.val().playerId),
+              token: fallbackToken,
+            };
+          }
           if (this.disposed || this.operationGeneration !== opGen || Date.now() >= startDeadlineMs) {
             return { ok: false, error: 'انتهت مهلة الانضمام — جرب تاني' };
           }
           if (recoveredCredentials) {
+            if (this.hostRuntime) {
+              this.hostRuntime.dispose();
+              this.hostRuntime = null;
+            }
             const attachRes = await this.attachRoomListeners(db, roomId, authCtx.uid, false, opGen, startDeadlineMs);
             if (!attachRes.ok || this.disposed || this.operationGeneration !== opGen || Date.now() >= startDeadlineMs) {
               return { ok: false, error: attachRes.error || 'تم إلغاء عملية الانضمام' };
@@ -576,6 +604,7 @@ export class FirebaseTransport implements GameTransport {
             this.currentRoomId = roomId;
             this.currentCode = normCode;
             this.currentPlayerId = recoveredCredentials.playerId;
+            this.currentToken = recoveredCredentials.token;
             this.isHost = false;
             saveSession({
               code: normCode,
@@ -670,15 +699,17 @@ export class FirebaseTransport implements GameTransport {
           return { ok: false, error: 'الخانات مشغولة حالياً — جرب تاني بعد لحظات' };
         }
 
-        // 4. Bounded get-polling on joinResponses/$claimedSlot
+        // 4. Low-latency bounded polling on joinResponses/$claimedSlot (starts at 25ms, then 50ms intervals)
         let joinResult: { code: string; playerId: string; token: string } | null = null;
         let joinError: string | null = null;
+        let pollDelayMs = 25;
 
         while (Date.now() < startDeadlineMs) {
           if (this.disposed || this.operationGeneration !== opGen) {
             break;
           }
-          await new Promise((resolve) => setTimeout(resolve, 200));
+          await new Promise((resolve) => setTimeout(resolve, pollDelayMs));
+          pollDelayMs = 50;
           if (this.disposed || this.operationGeneration !== opGen) {
             break;
           }
@@ -725,6 +756,11 @@ export class FirebaseTransport implements GameTransport {
           return { ok: false, error: 'انتهت مهلة الانضمام — جرب تاني' };
         }
 
+        if (this.hostRuntime) {
+          this.hostRuntime.dispose();
+          this.hostRuntime = null;
+        }
+
         const attachRes = await this.attachRoomListeners(db, roomId, authCtx.uid, false, opGen, startDeadlineMs);
         if (!attachRes.ok || this.disposed || this.operationGeneration !== opGen) {
           return { ok: false, error: attachRes.error || 'تم إلغاء عملية الانضمام' };
@@ -733,6 +769,7 @@ export class FirebaseTransport implements GameTransport {
         this.currentRoomId = roomId;
         this.currentCode = normCode;
         this.currentPlayerId = joinResult.playerId;
+        this.currentToken = joinResult.token;
         this.isHost = false;
 
         saveSession({
@@ -821,7 +858,7 @@ export class FirebaseTransport implements GameTransport {
 
     const executionPromise = (async (): Promise<AckResult<{ code: string; playerId: string }>> => {
       try {
-        const { session, authCtx, seatId } = await this.ensureSession();
+        const { session, authCtx } = await this.ensureSession();
         if (this.disposed || this.operationGeneration !== opGen || Date.now() >= startDeadlineMs) {
           return { ok: false, error: 'انتهت مهلة استعادة الجلسة — جرب تاني' };
         }
@@ -864,7 +901,7 @@ export class FirebaseTransport implements GameTransport {
           currentRuntime = runtime;
           this.hostRuntime = runtime;
 
-          runtime.onExecutionStopped((reason) => {
+          runtime.onExecutionStopped(() => {
             if (!this.disposed && this.operationGeneration === opGen && this.hostRuntime === runtime) {
               this.updateHostStatus(true);
             }
@@ -894,6 +931,7 @@ export class FirebaseTransport implements GameTransport {
           this.currentRoomId = roomId;
           this.currentCode = normCode;
           this.currentPlayerId = res.playerId;
+          this.currentToken = res.token;
           this.isHost = true;
 
           saveSession({ code: normCode, playerId: res.playerId, token: res.token });
@@ -905,7 +943,12 @@ export class FirebaseTransport implements GameTransport {
           };
         }
 
-        // Guest resume: verify membership
+        // Guest resume (or former host returning after host transfer to another member):
+        if (this.hostRuntime) {
+          this.hostRuntime.dispose();
+          this.hostRuntime = null;
+        }
+
         const memberSnap = await get(ref(db, `rooms/${roomId}/members/${authCtx.uid}`));
         if (this.disposed || this.operationGeneration !== opGen || Date.now() >= startDeadlineMs) {
           return { ok: false, error: 'انتهت مهلة استعادة الجلسة — جرب تاني' };
@@ -925,6 +968,7 @@ export class FirebaseTransport implements GameTransport {
         this.currentRoomId = roomId;
         this.currentCode = normCode;
         this.currentPlayerId = member.playerId;
+        this.currentToken = token;
         this.isHost = false;
 
         // Send resume command to notify engine of player return and propagate outcome
@@ -1265,6 +1309,8 @@ export class FirebaseTransport implements GameTransport {
     this.currentRoomId = null;
     this.currentCode = null;
     this.currentPlayerId = null;
+    this.currentToken = null;
+    this.latestRoomView = null;
     this.isHost = false;
     this.hostRuntime = null;
     this.currentRoomExpiresAtMs = 0;
@@ -1275,7 +1321,10 @@ export class FirebaseTransport implements GameTransport {
 
     if (departingIsHost && departingHostRuntime) {
       try {
-        await departingHostRuntime.closeRoom('أغلق الهوست الغرفة');
+        const relinquished = await departingHostRuntime.relinquishHost();
+        if (!relinquished) {
+          await departingHostRuntime.closeRoom('أغلق الهوست الغرفة');
+        }
         departingHostRuntime.dispose();
         return { ok: true };
       } catch (err) {
@@ -1400,6 +1449,137 @@ export class FirebaseTransport implements GameTransport {
     return this.sendCommand('round:action', { action }, roundNo);
   }
 
+  private getCandidateTakeoverRank(): number {
+    if (!this.latestRoomView || !this.currentPlayerId) return 0;
+    const candidates = this.latestRoomView.players.filter(
+      (p) => !p.isHost && p.connected && !p.leftEarly,
+    );
+    const idx = candidates.findIndex((p) => p.id === this.currentPlayerId);
+    return idx >= 0 ? idx : candidates.length;
+  }
+
+  private scheduleHostTakeover(
+    attachment: ActiveRoomAttachment,
+    roomId: string,
+    immediate: boolean,
+  ): void {
+    if (this.disposed || this.isHost || this.promotionInFlight || attachment.disposed) return;
+    if (attachment.takeoverTimer) return;
+
+    const rank = this.getCandidateTakeoverRank();
+    const delayMs = immediate ? rank * 250 + 50 : rank * 300 + 50;
+
+    attachment.takeoverTimer = setTimeout(() => {
+      attachment.takeoverTimer = null;
+      if (this.disposed || this.isHost || attachment.disposed || this.currentRoomId !== roomId) {
+        return;
+      }
+      void this.tryPromoteToHost(roomId);
+    }, delayMs);
+  }
+
+  private async tryPromoteToHost(roomId: string): Promise<void> {
+    if (
+      this.disposed ||
+      this.isHost ||
+      this.promotionInFlight ||
+      this.currentRoomId !== roomId ||
+      !this.currentCode
+    ) {
+      return;
+    }
+    this.promotionInFlight = true;
+    const code = this.currentCode;
+    let candidateRuntime: FirebaseHostRuntime | null = null;
+
+    try {
+      const { session, authCtx } = await this.ensureSession();
+      if (this.disposed || this.isHost || this.currentRoomId !== roomId) return;
+
+      const runtime = new FirebaseHostRuntime({
+        session,
+        contentSource: this.contentSource,
+        leaseTtlMs: this.options.leaseTtlMs,
+        heartbeatIntervalMs: this.options.heartbeatIntervalMs,
+      });
+      candidateRuntime = runtime;
+
+      const res = await runtime.resumeHost(roomId, code, {
+        maxWaitMs: 1_500,
+        allowTakeover: true,
+      });
+
+      if (this.disposed || this.currentRoomId !== roomId) {
+        runtime.dispose();
+        return;
+      }
+
+      if (this.hostRuntime && this.hostRuntime !== runtime) {
+        this.hostRuntime.dispose();
+      }
+      this.hostRuntime = runtime;
+      candidateRuntime = null;
+      this.isHost = true;
+      this.currentPlayerId = res.playerId;
+      if (res.token) {
+        this.currentToken = res.token;
+      }
+      this.updateHostStatus(false);
+
+      const currentOpGen = this.operationGeneration;
+      runtime.onExecutionStopped(() => {
+        if (!this.disposed && this.hostRuntime === runtime && this.isHost) {
+          this.updateHostStatus(true);
+        }
+      });
+
+      await this.attachRoomListeners(
+        authCtx.database,
+        roomId,
+        authCtx.uid,
+        true,
+        currentOpGen,
+        Date.now() + COMMAND_TIMEOUT_MS,
+      );
+
+      if (this.currentToken) {
+        saveSession({
+          code,
+          playerId: res.playerId,
+          token: this.currentToken,
+        });
+      }
+    } catch {
+      if (candidateRuntime) {
+        candidateRuntime.dispose();
+      }
+    } finally {
+      this.promotionInFlight = false;
+    }
+  }
+
+  private async demoteToGuest(db: Database, roomId: string, uid: string): Promise<void> {
+    if (this.disposed || !this.isHost || this.currentRoomId !== roomId) return;
+    this.isHost = false;
+    if (this.hostRuntime) {
+      this.hostRuntime.dispose();
+      this.hostRuntime = null;
+    }
+    this.updateHostStatus(false);
+    const currentOpGen = this.operationGeneration;
+    await this.attachRoomListeners(
+      db,
+      roomId,
+      uid,
+      false,
+      currentOpGen,
+      Date.now() + COMMAND_TIMEOUT_MS,
+    );
+    if (!this.disposed && this.currentRoomId === roomId && this.currentToken && !this.pendingCommand) {
+      void this.sendCommand('resume', { token: this.currentToken }).catch(() => {});
+    }
+  }
+
   private async attachRoomListeners(
     db: Database,
     roomId: string,
@@ -1474,12 +1654,14 @@ export class FirebaseTransport implements GameTransport {
         if (!isAttachmentActive()) {
           return;
         }
+        this.latestRoomView = view;
         for (const handler of this.stateListeners) {
           handler(view);
         }
       });
       const initialView = this.hostRuntime.getLatestCommittedView();
       if (initialView && isAttachmentActive()) {
+        this.latestRoomView = initialView;
         for (const handler of this.stateListeners) {
           handler(initialView);
         }
@@ -1496,6 +1678,7 @@ export class FirebaseTransport implements GameTransport {
           if (val && typeof val.json === 'string') {
             try {
               const parsedView = JSON.parse(val.json) as RoomView;
+              this.latestRoomView = parsedView;
               for (const handler of this.stateListeners) {
                 handler(parsedView);
               }
@@ -1514,7 +1697,7 @@ export class FirebaseTransport implements GameTransport {
       );
     }
 
-    // 3. Heartbeat & host unresponsive monitoring (for guests)
+    // 3. Heartbeat & host unresponsive / takeover monitoring (for guests)
     if (!isHost) {
       this.lastHostSeenAtMs = 0;
       const hbRef = ref(db, `rooms/${roomId}/heartbeat`);
@@ -1529,10 +1712,17 @@ export class FirebaseTransport implements GameTransport {
             this.lastHostSeenAtMs = val.lastSeenAtMs;
             const now = this.session.serverNow();
             const elapsed = now - val.lastSeenAtMs;
-            if (elapsed > HOST_UNRESPONSIVE_THRESHOLD_MS) {
+            if (val.connected === false) {
+              // Host explicitly left and relinquished lease -> trigger immediate staggered takeover
+              this.scheduleHostTakeover(attachment, roomId, true);
+            } else if (elapsed > HOST_UNRESPONSIVE_THRESHOLD_MS) {
               this.updateHostStatus(true);
             } else {
               this.updateHostStatus(false);
+              if (attachment.takeoverTimer) {
+                clearTimeout(attachment.takeoverTimer);
+                attachment.takeoverTimer = null;
+              }
             }
           }
         },
@@ -1563,16 +1753,25 @@ export class FirebaseTransport implements GameTransport {
         }
         if (this.lastHostSeenAtMs > 0) {
           const elapsed = now - this.lastHostSeenAtMs;
+          const effectiveLeaseTtlMs = this.options.leaseTtlMs ?? 12_000;
+          const takeoverGraceMs =
+            this.options.hostTakeoverGraceMs ?? DEFAULT_HOST_TAKEOVER_GRACE_MS;
+
           if (elapsed > HOST_DEAD_THRESHOLD_MS) {
             this.emitClosed('انتهت مهلة اتصال الهوست (أكثر من 60 ثانية)', roomId);
-          } else if (elapsed > HOST_UNRESPONSIVE_THRESHOLD_MS) {
-            this.updateHostStatus(true);
           } else {
-            this.updateHostStatus(false);
+            if (elapsed > HOST_UNRESPONSIVE_THRESHOLD_MS) {
+              this.updateHostStatus(true);
+            } else {
+              this.updateHostStatus(false);
+            }
+            if (elapsed >= effectiveLeaseTtlMs + takeoverGraceMs) {
+              this.scheduleHostTakeover(attachment, roomId, false);
+            }
           }
         }
       }
-    }, 2_000);
+    }, 1_000);
 
     // 5. Meta status monitoring
     const metaRef = ref(db, `rooms/${roomId}/meta`);
@@ -1592,6 +1791,9 @@ export class FirebaseTransport implements GameTransport {
             this.emitClosed(val.closedReason || 'انتهت الغرفة', roomId);
           } else if (val.expiresAtMs && now >= val.expiresAtMs) {
             this.emitClosed('انتهت صلاحية الغرفة', roomId);
+          } else if (this.isHost && val.hostUid && val.hostUid !== uid) {
+            // Another member legitimately took over host role after lease expiry; demote to guest
+            void this.demoteToGuest(db, roomId, uid);
           }
         }
       },
@@ -1649,6 +1851,8 @@ export class FirebaseTransport implements GameTransport {
     this.currentRoomId = null;
     this.currentCode = null;
     this.currentPlayerId = null;
+    this.currentToken = null;
+    this.latestRoomView = null;
     this.isHost = false;
     this.currentRoomExpiresAtMs = 0;
 
@@ -1686,25 +1890,38 @@ export class FirebaseTransport implements GameTransport {
 
     this.recoveryPromise = (async () => {
       try {
-        await this.ensureSession();
-        // If creator is host in current room but host runtime is dead/lease expired, attempt recovery
-        if (
-          !this.disposed &&
-          this.isHost &&
-          this.currentRoomId &&
-          this.currentCode &&
-          (!this.hostRuntime || !this.hostRuntime.isLive())
-        ) {
-          const saved =
-            typeof window !== 'undefined'
-              ? this.storage
-                ? JSON.parse(this.storage.getItem('party-game-session') || '{}')
-                : null
-              : null;
-          const token = saved?.token;
+        const { authCtx } = await this.ensureSession();
+        if (this.disposed || !this.currentRoomId || !this.currentCode) return;
+
+        let token = this.currentToken;
+        if (!token && typeof window !== 'undefined' && this.storage) {
+          try {
+            const saved = JSON.parse(this.storage.getItem('party-game-session') || '{}');
+            if (saved?.token) {
+              token = String(saved.token);
+            }
+          } catch {}
+        }
+
+        // If host in current room and host runtime stopped/expired (e.g. after switching apps on mobile),
+        // resume session (will resume as host if still hostUid, or seamlessly demote to guest if transferred!)
+        if (this.isHost && (!this.hostRuntime || !this.hostRuntime.isLive())) {
           if (token && this.currentCode) {
             await this.resume(this.currentCode, token);
           }
+          return;
+        }
+
+        // Re-assert presence immediately when returning from background/mobile app switch
+        await set(ref(authCtx.database, `rooms/${this.currentRoomId}/presence/${authCtx.uid}`), {
+          uid: authCtx.uid,
+          connected: true,
+          updatedAtMs: this.session.serverNow(),
+        }).catch(() => {});
+
+        const selfPlayer = this.latestRoomView?.players.find((p) => p.id === this.currentPlayerId);
+        if (!this.isHost && selfPlayer && !selfPlayer.connected && token && !this.pendingCommand) {
+          await this.sendCommand('resume', { token }).catch(() => {});
         }
       } catch (err) {
         const error = err instanceof Error ? err.message : 'فشل إعادة الاتصال';

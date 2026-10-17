@@ -2538,5 +2538,117 @@ describe('FirebaseTransport real emulator integration', () => {
       }
     }
   }, 15_000);
+
+  it('transfers host to the oldest connected member when host leaves and reconnects the former host as a regular member', async () => {
+    const hostStorage = createMemoryStorage();
+    const guest1Storage = createMemoryStorage();
+    const guest2Storage = createMemoryStorage();
+
+    const hostTransport = makeTransport('seat-host-transfer-orig', hostStorage, {
+      leaseTtlMs: 2_000,
+      heartbeatIntervalMs: 500,
+      hostTakeoverGraceMs: 400,
+    });
+    const guest1Transport = makeTransport('seat-guest1-transfer-oldest', guest1Storage, {
+      leaseTtlMs: 2_000,
+      heartbeatIntervalMs: 500,
+      hostTakeoverGraceMs: 400,
+    });
+    const guest2Transport = makeTransport('seat-guest2-transfer-newer', guest2Storage, {
+      leaseTtlMs: 2_000,
+      heartbeatIntervalMs: 500,
+      hostTakeoverGraceMs: 400,
+    });
+
+    try {
+      const createRes = await hostTransport.createRoom('الهوست الأصلي', {
+        roundCount: 5,
+        format: 'focused',
+        roundTypeId: 'mcq_race',
+      });
+      expect(createRes.ok).toBe(true);
+      if (!createRes.ok) return;
+
+      const code = createRes.code;
+      const origHostId = createRes.playerId;
+      const origHostToken = createRes.token;
+
+      const guest1Views: RoomView[] = [];
+      const guest2Views: RoomView[] = [];
+      guest1Transport.onState((v) => {
+        guest1Views.push(v);
+      });
+      guest2Transport.onState((v) => {
+        guest2Views.push(v);
+      });
+
+      const join1 = await guest1Transport.joinRoom(code, 'العضو الأقدم');
+      expect(join1.ok).toBe(true);
+      if (!join1.ok) return;
+      const guest1Id = join1.playerId;
+
+      const join2 = await guest2Transport.joinRoom(code, 'العضو الأحدث');
+      expect(join2.ok).toBe(true);
+      if (!join2.ok) return;
+
+      // Start the match
+      const startRes = await hostTransport.start();
+      expect(startRes.ok).toBe(true);
+
+      // Original host leaves mid-game while Guest 1 and Guest 2 are playing
+      const leaveRes = await hostTransport.leave();
+      expect(leaveRes.ok).toBe(true);
+
+      // Wait for Guest 1 (oldest connected member) to automatically promote to host
+      for (let i = 0; i < 40; i += 1) {
+        const g1Last = guest1Views[guest1Views.length - 1];
+        const g2Last = guest2Views[guest2Views.length - 1];
+        if (
+          g1Last?.you.isHost === true &&
+          g2Last?.players.find((p) => p.id === guest1Id)?.isHost === true
+        ) {
+          break;
+        }
+        await new Promise((r) => setTimeout(r, 100));
+      }
+
+      const g1Promoted = guest1Views[guest1Views.length - 1];
+      const g2Observed = guest2Views[guest2Views.length - 1];
+      expect(g1Promoted?.you.isHost).toBe(true);
+      expect(guest1Transport.getHostRuntime()?.isLive()).toBe(true);
+      expect(g2Observed?.players.find((p) => p.id === guest1Id)?.isHost).toBe(true);
+
+      // New host (Guest 1) can advance the game phase so the game continues without freezing
+      const skipRes = await guest1Transport.skip();
+      expect(skipRes.ok).toBe(true);
+      expect(guest1Views[guest1Views.length - 1]?.phase).toBe('in_round');
+
+      // Former host returns and reconnects using their session token -> joins as a regular member (isHost: false)!
+      const returningHostTransport = makeTransport('seat-host-transfer-orig', hostStorage, {
+        leaseTtlMs: 2_000,
+        heartbeatIntervalMs: 500,
+        hostTakeoverGraceMs: 400,
+      });
+      const returningHostViews: RoomView[] = [];
+      returningHostTransport.onState((v) => {
+        returningHostViews.push(v);
+      });
+
+      const resumeRes = await returningHostTransport.resume(code, origHostToken);
+      expect(resumeRes.ok).toBe(true);
+      const returningHostView = returningHostViews[returningHostViews.length - 1];
+      expect(returningHostView).toBeDefined();
+      expect(returningHostView!.you.id).toBe(origHostId);
+      expect(returningHostView!.you.isHost).toBe(false);
+      expect(returningHostView!.players.find((p) => p.id === guest1Id)?.isHost).toBe(true);
+
+      returningHostTransport.dispose();
+    } finally {
+      hostTransport.dispose();
+      guest1Transport.dispose();
+      guest2Transport.dispose();
+    }
+  }, 20_000);
 });
+
 
