@@ -89,6 +89,11 @@ export class BrowserContentSource implements ContentSource {
     return CATEGORIES.map((c) => ({ ...c }));
   }
 
+  async preload(categoryIds: string[]): Promise<void> {
+    const targets = new Set([...categoryIds.filter((id) => KNOWN_CATEGORY_IDS.has(id)), AGNOSTIC_CATEGORY_ID]);
+    await Promise.all([...targets].map((id) => this.loadCategory(id)));
+  }
+
   async countBy(categoryIds: string[], shape: ContentShape): Promise<number> {
     const items = await this.itemsFor(categoryIds, shape);
     return items.filter((i) => i.shape === shape && this.inScope(i, categoryIds, shape)).length;

@@ -9,6 +9,7 @@ import {
   type Auth,
   type User,
   browserSessionPersistence,
+  browserLocalPersistence,
   connectAuthEmulator,
   getAuth,
   setPersistence,
@@ -170,10 +171,15 @@ export class FirebaseSessionManager {
         }
       }
 
-      // Try browserSessionPersistence if in browser environment
+      // Each named app is scoped to its seat, so persistence survives a closed tab without
+      // merging the anonymous identities of different players in the same browser.
       try {
         if (typeof window !== 'undefined') {
-          await setPersistence(auth, browserSessionPersistence);
+          try {
+            await setPersistence(auth, browserLocalPersistence);
+          } catch {
+            await setPersistence(auth, browserSessionPersistence);
+          }
         }
       } catch {
         // Persistence not supported in some test/node environments; continue with default

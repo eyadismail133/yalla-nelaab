@@ -27,6 +27,9 @@ import {
 } from 'firebase/database';
 import type { FirebaseSessionManager } from './firebase-session.js';
 import { HostDedupTracker, parseCommandId } from './sequence.js';
+import { prepareViewPublication } from './view-publication.js';
+import { splitViewUpdates } from './split-view.js';
+import { questionSample } from './question-telemetry.js';
 
 export const SIX_HOURS_MS = 6 * 60 * 60 * 1_000;
 export const LEASE_TTL_MS = 12_000;
@@ -49,6 +52,7 @@ export interface BootstrapRoomResult {
 
 export interface HostSnapshotEnvelope {
   envelopeVersion: 1;
+  projectionFormat?: 2;
   state: RoomState;
   bindings: Array<{ uid: string; playerId: string; slot: string }>;
   occupiedSlots: Array<{ slot: string; uid: string }>;
@@ -122,6 +126,8 @@ export class FirebaseHostRuntime {
   private metaUnsub: Unsubscribe | null = null;
 
   private cachedMeta: RoomMetaCache | null = null;
+  private projectionFormat: 1 | 2 = 2;
+  private readonly committedViewSignatures = new Map<string, string>();
   private readonly latestJoinRequests = new Map<
     string,
     { commandId: string; uid: string; nickname: string; expiresAtMs: number }
@@ -250,6 +256,33 @@ export class FirebaseHostRuntime {
     }
   }
 
+  private async publishRoomUpdate(db: Database, proposed: Record<string, unknown>): Promise<void> {
+    if (this.projectionFormat === 2) {
+      await update(ref(db, `rooms/${this.roomId}`), splitViewUpdates(proposed));
+      this.recordQuestionSample(db, proposed);
+      return;
+    }
+    const publication = prepareViewPublication(proposed, this.committedViewSignatures);
+    await update(ref(db, `rooms/${this.roomId}`), publication.updates);
+    // Only a server-accepted publication may suppress a later retry.
+    for (const [path, signature] of publication.signatures) {
+      this.committedViewSignatures.set(path, signature);
+    }
+    this.recordQuestionSample(db, proposed);
+  }
+
+  private recordQuestionSample(db: Database, proposed: Record<string, unknown>): void {
+    const snapshot = proposed.snapshot as { json: string } | undefined;
+    if (!snapshot || !this.roomId) return;
+    const state = (JSON.parse(snapshot.json) as HostSnapshotEnvelope).state;
+    const sample = questionSample(state, this.roomId);
+    if (!sample) return;
+    const sampleRef = ref(db, `telemetry/${sample.questionId}/${sample.sampleId}`);
+    // An immutable room/round key prevents duplicated samples after retries and host transfer.
+    void runTransaction(sampleRef, (existing) => existing ? undefined : sample.aggregate, { applyLocally: false })
+      .catch((error) => console.warn('Question telemetry was not saved', error));
+  }
+
   onCommittedAck(handler: (ack: CommittedAck) => void): () => void {
     this.committedAckHandlers.push(handler);
     return () => {
@@ -287,6 +320,7 @@ export class FirebaseHostRuntime {
   private createSnapshotRecord(state: RoomState, now: number) {
     const envelope: HostSnapshotEnvelope = {
       envelopeVersion: 1,
+      ...(this.projectionFormat === 2 ? { projectionFormat: 2 as const } : {}),
       state,
       bindings: Array.from(this.uidToPlayerId.entries()).map(([uid, playerId]) => ({
         uid,
@@ -377,6 +411,11 @@ export class FirebaseHostRuntime {
     if (metaSnap.exists()) {
       const meta = metaSnap.val();
       const now = this.session.serverNow();
+
+      if (meta.hostUid === hostUid && meta.expiresAtMs < now - 3_600_000) {
+        await remove(ref(db, `rooms/${priorRoomId}`));
+        this.assertRestorationLive(currentGen);
+      }
 
       if (meta.hostUid === hostUid && meta.status === 'open' && meta.expiresAtMs > now) {
         const leaseSnap = await get(ref(db, `rooms/${priorRoomId}/lease`));
@@ -579,6 +618,8 @@ export class FirebaseHostRuntime {
         this.acquiredAtMs = 0;
         this.leaseExpiresAtMs = 0;
 
+        this.committedViewSignatures.clear();
+        this.projectionFormat = 2;
         this.store = new MemoryStore();
         this.engine = new MatchEngine(this.store, this.contentSource, {
           transferHostOnLeave: false,
@@ -720,7 +761,7 @@ export class FirebaseHostRuntime {
         const hostPlayer = candidateResult.state.players.find((p) => p.id === hostPlayerId);
         const hostNickname = hostPlayer ? hostPlayer.nickname : nickname;
 
-        await update(ref(db, `rooms/${candidateRoomId}`), {
+        await this.publishRoomUpdate(db, {
           heartbeat: {
             lastSeenAtMs: publishNow,
             connected: true,
@@ -1014,6 +1055,7 @@ export class FirebaseHostRuntime {
       this.occupiedSlots.clear();
 
       const parsedSnap = JSON.parse(snapSnap.val().json);
+      this.projectionFormat = parsedSnap?.projectionFormat === 2 ? 2 : 1;
       let savedRoomState: RoomState;
       if (parsedSnap && parsedSnap.envelopeVersion === 1) {
         savedRoomState = parsedSnap.state;
@@ -1084,6 +1126,7 @@ export class FirebaseHostRuntime {
         savedRoomState.version += 1;
       }
 
+      this.committedViewSignatures.clear();
       this.store = new MemoryStore();
       await this.store.create(savedRoomState);
       this.assertRestorationLive(currentGen);
@@ -1520,7 +1563,7 @@ export class FirebaseHostRuntime {
           }
 
           this.assertLive(currentGen);
-          await update(ref(db, `rooms/${this.roomId}`), updates);
+          await this.publishRoomUpdate(db, updates);
           this.assertLive(currentGen);
 
           if (this.hostPlayerId) {
@@ -1765,7 +1808,7 @@ export class FirebaseHostRuntime {
       }
 
       this.assertLive(currentGen);
-      await update(ref(db, `rooms/${this.roomId}`), updates);
+      await this.publishRoomUpdate(db, updates);
       this.cachedMeta = nextMeta;
       this.assertLive(currentGen);
 
@@ -2204,7 +2247,7 @@ export class FirebaseHostRuntime {
       }
 
       this.assertLive(currentGen);
-      await update(ref(db, `rooms/${this.roomId}`), updates);
+      await this.publishRoomUpdate(db, updates);
       this.cachedMeta = nextMeta;
       this.assertLive(currentGen);
 
@@ -2316,7 +2359,7 @@ export class FirebaseHostRuntime {
 
     try {
       this.assertLive(currentGen);
-      await update(ref(db, `rooms/${this.roomId}`), updates);
+      await this.publishRoomUpdate(db, updates);
       this.cachedMeta = nextMeta;
       this.assertLive(currentGen);
       if (this.hostPlayerId) {
@@ -2405,7 +2448,7 @@ export class FirebaseHostRuntime {
         }
       }
 
-      await update(ref(db, `rooms/${this.roomId}`), updates);
+      await this.publishRoomUpdate(db, updates);
 
       // Immediately expire the lease so the oldest connected member can claim it without waiting for TTL
       await set(ref(db, `rooms/${this.roomId}/lease`), {

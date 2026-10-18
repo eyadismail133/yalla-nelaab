@@ -387,7 +387,7 @@ export function GameDiscovery({
                   type="button"
                   aria-pressed={active}
                   onClick={() => setFilter(option.id)}
-                  className={`min-h-9 rounded-full border px-3 py-1 text-xs font-bold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)] ${
+                  className={`min-h-11 rounded-full border px-3 py-1 text-xs font-bold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)] ${
                     active
                       ? 'border-[var(--accent)] bg-surface-2 text-body'
                       : 'border-line bg-surface text-muted hover:text-body'

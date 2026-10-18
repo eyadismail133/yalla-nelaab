@@ -7,6 +7,19 @@ const GAME_SERVER = process.env.GAME_SERVER_URL ?? 'http://localhost:3001';
 
 export default defineConfig({
   plugins: [react(), tailwind()],
+  build: {
+    manifest: true,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          const path = id.replaceAll('\\', '/');
+          if (path.includes('/node_modules/@firebase/auth/')) return 'firebase-auth';
+          if (path.includes('/node_modules/@firebase/database/')) return 'firebase-database';
+          if (/\/node_modules\/(react|react-dom|scheduler)\//.test(path)) return 'react';
+        },
+      },
+    },
+  },
   resolve: {
     alias: {
       '@game/shared': fileURLToPath(new URL('../../packages/shared/src/index.ts', import.meta.url)),

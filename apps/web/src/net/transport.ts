@@ -53,6 +53,9 @@ export interface GameTransport {
   act(roundNo: number, action: unknown): Promise<AckResult<Record<string, unknown>>>;
   dispose(): void;
   retryConnection(): void;
+  preloadContent?(categoryIds: string[]): Promise<void>;
+  readonly latencyLabel?: string;
+  sampleLatency?(): Promise<number | null>;
 }
 
 function defaultSessionStorage(): Storage | null {

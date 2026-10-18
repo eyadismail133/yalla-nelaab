@@ -1,6 +1,6 @@
 # Private beta playtest
 
-These are pending real-device checks, not completed results. Use the deployed beta link only after the automated gates and independent review pass. Start with five invited friend groups; record problems before expanding promotion.
+These are pending real-device checks, not completed results. Responsive browser checks do not establish Android/iOS background behavior. See [the release verification record](verification/release-2026-10-18.md) for completed checks. Start with five invited friend groups; record problems before expanding promotion.
 
 ## Joining and setup
 
@@ -20,7 +20,9 @@ These are pending real-device checks, not completed results. Use the deployed be
 - [ ] Rapid taps do not submit twice. A failed/timed-out typed submission preserves the answer draft and releases the pending button.
 - [ ] Refresh a guest during a round. It restores the right player, score and private view; an old answer never affects the next round.
 - [ ] The creator's brief refresh/network interruption recovers using the same tab identity. Guests see waiting feedback when the host is unavailable. Keeping the host tab active is part of the beta instructions.
-- [ ] A host that cannot return within the recovery window ends the room with a useful new-room option. No other player silently becomes the execution host.
+- [ ] A disconnected host transfers execution to the oldest eligible connected member after the lease grace period. The original host returns to the same seat as a guest; scores and private views survive.
+- [ ] Close a mobile tab, reopen the site, and recover the named seat within 15 minutes. Trying to recover a seat still open in another tab is rejected.
+- [ ] Screen wake lock is requested during play where supported; reject/unsupported cases remain playable. Background/foreground and Wi-Fi/mobile-data handoffs recover without duplicate submissions.
 - [ ] Solo, team, tie and abandoned results tell a consistent story. A rematch works with the same group.
 - [ ] Download the result PNG and inspect Arabic text, names, scores and cropping. Try native image sharing where supported. The card contains the website origin, not the private room code or token.
 

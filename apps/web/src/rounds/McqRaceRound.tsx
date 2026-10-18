@@ -4,11 +4,13 @@ import { RoundActionStatus, useRoundAction } from './useRoundAction.js';
 
 const LABELS = ['أ', 'ب', 'ج', 'د'];
 
-export function McqRaceRound({ view, roundNo, client }: RoundProps<McqRaceView>) {
-  const { pending, error, act } = useRoundAction(client, roundNo);
+export function McqRaceRound({ view, roundNo, client, hiddenOptions = [] }: RoundProps<McqRaceView> & { hiddenOptions?: number[] }) {
+  const { pending, error, act, submittedAction } = useRoundAction<{ kind: 'answer'; choice: number }>(client, roundNo);
+  const locked = view.hasAnswered || submittedAction !== null;
+  const myChoice = view.myChoice ?? submittedAction?.choice;
 
   const choose = (index: number) => {
-    if (view.hasAnswered || pending) return;
+    if (locked || pending || hiddenOptions.includes(index)) return;
     void act({ kind: 'answer', choice: index });
   };
 
@@ -18,13 +20,13 @@ export function McqRaceRound({ view, roundNo, client }: RoundProps<McqRaceView>)
 
       <div className="grid gap-3">
         {view.options.map((option, index) => {
-          const mine = view.myChoice === index;
+          const mine = myChoice === index;
           return (
             <button
               key={option}
               type="button"
               onClick={() => choose(index)}
-              disabled={view.hasAnswered || pending}
+              disabled={locked || pending || hiddenOptions.includes(index)}
               className={`flex min-h-16 items-center gap-3 rounded-2xl border-2 px-4 text-start text-lg font-bold transition active:scale-[0.99] ${
                 mine
                   ? 'border-[var(--accent)] bg-surface-2'
@@ -41,7 +43,7 @@ export function McqRaceRound({ view, roundNo, client }: RoundProps<McqRaceView>)
               >
                 {LABELS[index]}
               </span>
-              <span className="flex-1 break-words">{option}</span>
+              <span className="flex-1 break-words">{hiddenOptions.includes(index) ? '📺 الفار استبعد الاختيار ده' : option}</span>
             </button>
           );
         })}
@@ -50,7 +52,7 @@ export function McqRaceRound({ view, roundNo, client }: RoundProps<McqRaceView>)
       <RoundActionStatus error={error} pending={pending} />
 
       <LockStatus
-        locked={view.hasAnswered}
+        locked={locked}
         lockedCount={view.lockedCount}
         total={view.totalPlayers}
       />

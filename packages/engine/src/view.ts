@@ -32,12 +32,23 @@ export function toView(
     phase: state.phase,
     phaseEndsAtMs: state.phaseEndsAtMs,
     serverNowMs,
+    resultReady: state.resultReady ?? [],
+    reactions: state.reactions ?? [],
     you: {
       id: playerId,
       nickname: me?.nickname ?? '',
       isHost: state.hostId === playerId,
+      isSpectator: Boolean(me?.spectator),
+      cards: {
+        varAvailable: !me?.spectator && state.matchCards?.[playerId]?.varRoundNo === undefined,
+        doubleAvailable: !me?.spectator && state.matchCards?.[playerId]?.doubleRoundNo === undefined,
+        doubleActive: state.matchCards?.[playerId]?.doubleRoundNo === state.roundNo,
+        varHint: state.matchCards?.[playerId]?.varRoundNo === state.roundNo
+          ? state.matchCards[playerId]!.varHint ?? null : null,
+      },
     },
     players: state.players.map((p) => ({
+      spectator: Boolean(p.spectator),
       id: p.id,
       nickname: p.nickname,
       connected: p.connected,
@@ -85,6 +96,12 @@ function buildRoundView(state: RoomState, playerId: PlayerId): RoomView['round']
     accent: type.accent,
     weight: isSuddenDeath ? 1 : (entry?.weight ?? 1),
     isFinalRound: !isSuddenDeath && state.roundIndex === state.playlist.length - 1,
-    view: playing && state.roundState ? type.view(state.roundState, playerId) : null,
+    view: playing && state.roundState ? (state.players.find((player) => player.id === playerId)?.spectator
+      ? spectatorPrompt(state.roundState) : type.view(state.roundState, playerId)) : null,
   };
+}
+
+function spectatorPrompt(roundState: unknown) {
+  const item = (roundState as { item?: { textAr?: string; options?: string[]; unitAr?: string } }).item;
+  return { textAr: item?.textAr ?? null, options: item?.options ?? [], unitAr: item?.unitAr ?? null };
 }

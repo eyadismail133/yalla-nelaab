@@ -246,6 +246,7 @@ describe('MatchPresets pure helper and preset definitions', () => {
 
   it('avoids exact minute claims in preset copy and explains the 4-player requirement for cooperative team games', () => {
     expect(MATCH_PRESETS.map((p) => p.id)).toEqual([
+      'football_derby',
       'quick_mixed',
       'football_night',
       'team_party',

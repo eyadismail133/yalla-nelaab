@@ -8,11 +8,12 @@ import { RoundActionStatus, useRoundAction } from './useRoundAction.js';
 
 export function NumericGuessRound({ view, roundNo, client }: RoundProps<NumericGuessView>) {
   const [text, setText] = useState('');
-  const { pending, error, submitDraft } = useRoundAction(client, roundNo);
+  const { pending, error, submitDraft, submittedAction } = useRoundAction<{ kind: 'guess'; value: number }>(client, roundNo);
+  const locked = view.hasGuessed || submittedAction !== null;
   const parsed = parseNumericAnswer(text);
 
   const submit = () => {
-    if (parsed === null || view.hasGuessed || pending) return;
+    if (parsed === null || locked || pending) return;
     const value = parsed;
     void submitDraft(text, setText, () => ({ kind: 'guess', value }));
   };
@@ -21,11 +22,11 @@ export function NumericGuessRound({ view, roundNo, client }: RoundProps<NumericG
     <div className="flex flex-1 flex-col gap-6">
       <p className="text-balance text-center text-2xl font-bold leading-relaxed">{view.textAr}</p>
 
-      {view.hasGuessed ? (
+      {locked ? (
         <div className="rounded-3xl border-2 border-[var(--accent)] bg-surface p-6 text-center">
           <p className="text-sm text-muted">{ar.yourAnswer}</p>
           <p className="tabular mt-1 text-4xl font-black" style={{ color: 'var(--accent)' }}>
-            {view.myGuess}
+            {view.myGuess ?? submittedAction?.value}
           </p>
           {view.unitAr ? <p className="mt-1 text-sm text-muted">{view.unitAr}</p> : null}
         </div>
@@ -58,7 +59,7 @@ export function NumericGuessRound({ view, roundNo, client }: RoundProps<NumericG
       <RoundActionStatus error={error} pending={pending} />
 
       <LockStatus
-        locked={view.hasGuessed}
+        locked={locked}
         lockedCount={view.lockedCount}
         total={view.totalPlayers}
       />

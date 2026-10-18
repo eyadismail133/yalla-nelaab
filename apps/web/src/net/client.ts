@@ -1,6 +1,7 @@
 import { io, type Socket } from 'socket.io-client';
 import type { AckResult, RoomView } from '@game/shared';
-import type { GameTransport } from './transport.js';
+import { getOrCreateTabSeatId, type GameTransport } from './transport.js';
+import { defendRecoverySeat, forgetRecovery, rememberRecovery, stopDefendingRecovery } from './recovery.js';
 
 /**
  * Where the socket connects.
@@ -37,6 +38,7 @@ const REQUEST_TIMEOUT_MS = 10_000;
 const store = (): Storage => window.sessionStorage;
 
 export interface Session {
+  nickname?: string;
   code: string;
   playerId: string;
   token: string;
@@ -54,13 +56,19 @@ export function loadSession(): Session | null {
 export function saveSession(session: Session): void {
   try {
     store().setItem(SESSION_KEY, JSON.stringify(session));
+    const seatId = getOrCreateTabSeatId(store());
+    if (seatId) rememberRecovery(seatId, session);
+    if (typeof window.addEventListener === 'function') defendRecoverySeat(seatId);
   } catch {
     // Ignore storage quota/security errors
   }
 }
 
 export function clearSession(): void {
+  stopDefendingRecovery();
   try {
+    const seatId = store().getItem('party-game-tab-seat-id');
+    if (seatId) forgetRecovery(seatId);
     store().removeItem(SESSION_KEY);
   } catch {
     // Ignore storage errors
@@ -156,6 +164,15 @@ export class GameClient implements GameTransport {
   /** Current time on the server's clock. */
   serverNow(): number {
     return Date.now() + this.clockOffsetMs;
+  }
+
+  readonly latencyLabel = 'اتصال السيرفر';
+
+  async sampleLatency(): Promise<number | null> {
+    if (!this.socket.connected) return null;
+    const started = performance.now();
+    const serverTime = await this.serverTime();
+    return serverTime === null || !this.socket.connected ? null : performance.now() - started;
   }
 
   private request<T extends Record<string, unknown>>(

@@ -7,6 +7,7 @@ import { Button, Card, Screen } from '../ui/primitives.js';
 import { useCountdown } from '../ui/useCountdown.js';
 import { playerTint } from '../ui/playerColors.js';
 import { REVEALS } from './reveals.js';
+import { RoundActionStatus, useRoundAction } from '../rounds/useRoundAction.js';
 
 export function ResultScreen({
   view,
@@ -21,6 +22,9 @@ export function ResultScreen({
   const round = view.round!;
   const gained = new Map(view.lastRoundScores?.map((s) => [s.playerId, s.points]) ?? []);
   const remaining = useCountdown(client, view.phaseEndsAtMs);
+  const readyAction = useRoundAction(client, round.roundNo);
+  const ready = view.resultReady?.includes(view.you.id) || readyAction.submittedAction !== null;
+  const connectedPlayers = view.players.filter((player) => player.connected && !player.leftEarly && !player.spectator);
 
   return (
     <Screen accent={round.accent}>
@@ -39,6 +43,11 @@ export function ResultScreen({
         can, or the loudest thumb in the room decides when the conversation is over.
       */}
       <div className="mt-auto flex flex-col items-center gap-2 pt-2">
+        {!view.you.isSpectator ? <Button variant="accent" disabled={readyAction.pending || ready}
+          onClick={() => void readyAction.act({ kind: 'result_ready' })}>
+          {ready ? 'جاهز ✓' : 'جاهز للجولة الجاية'} ({connectedPlayers.filter((player) => view.resultReady?.includes(player.id)).length}/{connectedPlayers.length})
+        </Button> : null}
+        <RoundActionStatus error={readyAction.error} pending={readyAction.pending} />
         <p className="tabular text-sm text-muted">
           {ar.nextRoundIn} {Math.ceil(remaining / 1000)}
           {ar.secondsShort}

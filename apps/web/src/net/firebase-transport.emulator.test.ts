@@ -2539,6 +2539,76 @@ describe('FirebaseTransport real emulator integration', () => {
     }
   }, 15_000);
 
+  it('runs cards, spectator admission, reactions, connected-player readiness, and spectator promotion under real rules', async () => {
+    const host = makeTransport('upgraded-flow-host');
+    const guest = makeTransport('upgraded-flow-guest');
+    const spectator = makeTransport('upgraded-flow-spectator');
+    try {
+      const created = await host.createRoom('host', { format: 'focused', roundTypeId: 'mcq_race', roundCount: 5 });
+      if (!created.ok) throw new Error(created.error);
+      const joined = await guest.joinRoom(created.code, 'guest');
+      expect(joined.ok).toBe(true);
+      expect((await host.start()).ok).toBe(true);
+      expect((await host.act(1, { kind: 'card', card: 'double_captain' })).ok).toBe(true);
+      expect((await host.skip()).ok).toBe(true);
+      expect((await guest.act(1, { kind: 'card', card: 'var' })).ok).toBe(true);
+      const late = await spectator.joinRoom(created.code, 'late');
+      expect(late.ok).toBe(true);
+      expect((await spectator.act(1, { kind: 'answer', choice: 0 })).ok).toBe(false);
+      const store = host.getHostRuntime()!.getStore();
+      let state = (await store.get(created.code))!;
+      expect(state.players.find((player) => late.ok && player.id === late.playerId)?.spectator).toBe(true);
+      const correct = (state.roundState as { item: { correctIndex: number } }).item.correctIndex;
+      await host.act(1, { kind: 'answer', choice: correct });
+      await guest.act(1, { kind: 'answer', choice: correct });
+      expect((await guest.act(1, { kind: 'reaction', emoji: '⚽' })).ok).toBe(true);
+      await host.act(1, { kind: 'result_ready' });
+      await guest.act(1, { kind: 'result_ready' });
+      state = (await store.get(created.code))!;
+      expect(state.phase).toBe('round_intro');
+      expect(state.roundNo).toBe(2);
+      await guest.leave();
+      expect((await store.get(created.code))!.phase).toBe('podium');
+      expect((await host.rematch()).ok).toBe(true);
+      expect((await store.get(created.code))!.players.find((player) => late.ok && player.id === late.playerId)?.spectator).toBe(false);
+    } finally { host.dispose(); guest.dispose(); spectator.dispose(); }
+  });
+
+  it('replays a brief offline answer after checking the current server projection and measures database RTT without mutation', async () => {
+    const host = makeTransport('offline-test-host');
+    const guest = makeTransport('offline-test-guest');
+    const created = await host.createRoom('host', { format: 'focused', roundTypeId: 'mcq_race', roundCount: 5 });
+    if (!created.ok) throw new Error(created.error);
+    const joined = await guest.joinRoom(created.code, 'guest');
+    expect(joined.ok).toBe(true);
+    const views: RoomView[] = [];
+    const unsubscribe = guest.onState((next) => { views.push(next); });
+    await host.start();
+    await host.skip();
+    const { database } = await guest.session.ensureAuth();
+    let connected = true;
+    const unsubscribeConnection = guest.onConnectionChange((next) => { connected = next; });
+    try {
+      for (let attempt = 0; attempt < 50 && views.at(-1)?.phase !== 'in_round'; attempt += 1) await new Promise((resolve) => setTimeout(resolve, 20));
+      expect(views.at(-1)?.phase).toBe('in_round');
+      const version = (await host.getHostRuntime()!.getStore().get(created.code))!.version;
+      expect(await guest.sampleLatency()).toBeGreaterThanOrEqual(0);
+      expect((await host.getHostRuntime()!.getStore().get(created.code))!.version).toBe(version);
+      goOffline(database);
+      for (let attempt = 0; attempt < 50 && connected; attempt += 1) await new Promise((resolve) => setTimeout(resolve, 10));
+      expect(connected).toBe(false);
+      const answer = guest.act(1, { kind: 'answer', choice: 0 });
+      goOnline(database);
+      expect((await answer).ok).toBe(true);
+      const canonical = (await host.getHostRuntime()!.getStore().get(created.code))!;
+      expect((canonical.roundState as { answers: Record<string, unknown> }).answers[joined.ok ? joined.playerId : '']).toBeDefined();
+    } finally {
+      goOnline(database);
+      unsubscribe(); unsubscribeConnection();
+      host.dispose(); guest.dispose();
+    }
+  });
+
   it('transfers host to the oldest connected member when host leaves and reconnects the former host as a regular member', async () => {
     const hostStorage = createMemoryStorage();
     const guest1Storage = createMemoryStorage();
@@ -2641,6 +2711,15 @@ describe('FirebaseTransport real emulator integration', () => {
       expect(returningHostView!.you.id).toBe(origHostId);
       expect(returningHostView!.you.isHost).toBe(false);
       expect(returningHostView!.players.find((p) => p.id === guest1Id)?.isHost).toBe(true);
+
+      // A former creator may open a new room without removing the migrated room's invite code.
+      const migratedRoomId = guest1Transport.getHostRuntime()!.getRoomId()!;
+      const replacement = await returningHostTransport.createRoom('غرفة جديدة');
+      expect(replacement.ok).toBe(true);
+      await testEnv.withSecurityRulesDisabled(async (ctx) => {
+        expect((await get(ref(ctx.database(), `codes/${code}`))).val()?.roomId).toBe(migratedRoomId);
+        expect((await get(ref(ctx.database(), `rooms/${migratedRoomId}/meta`))).val()?.status).toBe('open');
+      });
 
       returningHostTransport.dispose();
     } finally {

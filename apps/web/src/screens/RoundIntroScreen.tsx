@@ -1,6 +1,8 @@
 import type { RoomView } from '@game/shared';
 import { ar } from '../i18n/ar.js';
 import { Screen } from '../ui/primitives.js';
+import type { GameTransport } from '../net/transport.js';
+import { MatchCards } from '../rounds/MatchCards.js';
 
 /**
  * The three seconds that do most of the anti-boredom work.
@@ -9,7 +11,7 @@ import { Screen } from '../ui/primitives.js';
  * never spend the first five seconds of a round working out what they are looking at — and the
  * full-screen accent change is what makes a ten-round match feel like ten different things.
  */
-export function RoundIntroScreen({ view }: { view: RoomView }) {
+export function RoundIntroScreen({ view, client }: { view: RoomView; client?: GameTransport }) {
   const round = view.round!;
   const suddenDeath = view.phase === 'sudden_death_intro';
 
@@ -52,6 +54,7 @@ export function RoundIntroScreen({ view }: { view: RoomView }) {
           </>
         )}
 
+        {client && !suddenDeath ? <MatchCards view={view} client={client} /> : null}
         <p className="mt-6 animate-pulse text-2xl font-bold">{ar.getReady}</p>
       </div>
     </Screen>

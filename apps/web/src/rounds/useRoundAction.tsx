@@ -57,46 +57,56 @@ export async function performRoundAction(
   }
 }
 
-export function useRoundAction(client: GameTransport, roundNo: number) {
+export function useRoundAction<Action = unknown>(client: GameTransport, roundNo: number) {
   const [pending, setPending] = useState(false);
+  const [submittedAction, setSubmittedAction] = useState<Action | null>(null);
   const [error, setError] = useState<string | null>(null);
   const inFlightRef = useRef(false);
   const mountedRef = useRef(true);
+  const roundRef = useRef(roundNo);
+  roundRef.current = roundNo;
+  const requestRef = useRef(0);
 
   useEffect(() => {
     mountedRef.current = true;
     return () => {
       mountedRef.current = false;
+      requestRef.current += 1;
     };
   }, []);
 
   useEffect(() => {
     inFlightRef.current = false;
+    requestRef.current += 1;
     setPending(false);
+    setSubmittedAction(null);
     setError(null);
   }, [roundNo]);
 
-  const act = async (action: unknown, onSuccess?: () => void): Promise<boolean> => {
+  const act = async (action: Action, onSuccess?: () => void): Promise<boolean> => {
     if (inFlightRef.current) return false;
     inFlightRef.current = true;
+    const requestId = ++requestRef.current;
+    const isCurrent = () => mountedRef.current && roundRef.current === roundNo && requestRef.current === requestId;
     if (mountedRef.current) {
       setPending(true);
+      setSubmittedAction(action);
       setError(null);
     }
 
     try {
       const result = await performRoundAction(client, roundNo, action);
+      if (!isCurrent()) return false;
       if (!result.ok) {
-        if (mountedRef.current) {
-          setError(result.error);
-        }
+        setSubmittedAction(null);
+        setError(result.error);
         return false;
       }
       onSuccess?.();
       return true;
     } finally {
-      inFlightRef.current = false;
-      if (mountedRef.current) {
+      if (isCurrent()) {
+        inFlightRef.current = false;
         setPending(false);
       }
     }
@@ -105,7 +115,7 @@ export function useRoundAction(client: GameTransport, roundNo: number) {
   const submitDraft = async (
     draft: string,
     setDraft: Dispatch<SetStateAction<string>>,
-    buildAction: (submittedText: string) => unknown,
+    buildAction: (submittedText: string) => Action,
   ): Promise<boolean> => {
     const captured = draft;
     return act(buildAction(captured), () => {
@@ -115,6 +125,7 @@ export function useRoundAction(client: GameTransport, roundNo: number) {
 
   return {
     pending,
+    submittedAction,
     error,
     clearError: () => setError(null),
     act,

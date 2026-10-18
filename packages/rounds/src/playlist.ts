@@ -19,6 +19,7 @@ export interface PlaylistInput {
   availableShapes: ContentShape[];
   /** Required by the `focused` format. */
   roundTypeId?: string;
+  roundTypeIds?: string[];
   rng?: () => number;
   types?: AnyRoundType[];
 }
@@ -34,6 +35,7 @@ function eligibleTypes(input: PlaylistInput): AnyRoundType[] {
   const all = input.types ?? ROUND_TYPES;
   return all.filter(
     (t) =>
+      (!input.roundTypeIds || input.roundTypeIds.includes(t.id)) &&
       t.minPlayers <= input.playerCount &&
       (input.teams || !t.requiresTeams) &&
       t.contentShapes.every((shape) => input.availableShapes.includes(shape)),

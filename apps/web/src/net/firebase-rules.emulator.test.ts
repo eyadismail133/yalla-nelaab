@@ -294,6 +294,32 @@ describe('Firebase Realtime Database security rules (real emulator)', () => {
     }
   });
 
+  it('protects active rooms and preserves targeted expired-room cleanup', async () => {
+    const now = Date.now();
+    const { hostDb } = await bootstrapOpenRoom(now);
+    await assertFails(remove(ref(hostDb, `rooms/${ROOM_ID}`)));
+    const intruderDb = testEnv.authenticatedContext(INTRUDER_UID).database();
+    await assertFails(remove(ref(intruderDb, `rooms/${ROOM_ID}`)));
+    await testEnv.withSecurityRulesDisabled(async (ctx) => {
+      await update(ref(ctx.database(), `rooms/${ROOM_ID}/meta`), { expiresAtMs: now - 3_601_000 });
+    });
+    await assertSucceeds(remove(ref(hostDb, `rooms/${ROOM_ID}`)));
+  });
+
+  it('accepts one aggregate sample per room/round from the live host and rejects guest telemetry or extra identifiers', async () => {
+    const now = Date.now();
+    const { hostDb } = await bootstrapOpenRoom(now);
+    await update(ref(hostDb, `rooms/${ROOM_ID}/meta`), { phase: 'round_result', updatedAtMs: now, leaseOwnerId: RUNTIME_1 });
+    const sample = { roomId: ROOM_ID, roundNo: 1, plays: 2, answered: 1, correct: 1, totalSolveMs: 500 };
+    const path = `telemetry/question_1/${ROOM_ID}_1`;
+    const guestDb = testEnv.authenticatedContext(GUEST_1_UID).database();
+    await assertFails(set(ref(guestDb, path), sample));
+    await assertFails(set(ref(hostDb, path), { ...sample, nickname: 'must not be stored' }));
+    await assertSucceeds(set(ref(hostDb, path), sample));
+    await assertFails(set(ref(hostDb, path), { ...sample, correct: 0 }));
+    await assertFails(get(ref(testEnv.unauthenticatedContext().database(), 'telemetry/question_1')));
+  });
+
   it('allows full staged room bootstrap, bounded guest join slot, atomic state/view/response publication, and member commands without admin bypass', async () => {
     const now = Date.now();
     const { hostDb, expiresAtMs } = await bootstrapOpenRoom(now);

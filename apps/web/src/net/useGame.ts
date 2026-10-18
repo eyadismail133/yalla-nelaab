@@ -3,6 +3,7 @@ import type { RoomView } from '@game/shared';
 import { clearSession, loadSession, saveSession } from './client.js';
 import { isPermanentSessionError } from './session-error.js';
 import { createGameTransport, type GameTransport } from './transport.js';
+import { useScreenWakeLock } from './wake-lock.js';
 
 export interface GameState {
   client: GameTransport;
@@ -38,6 +39,27 @@ export function useGame(): GameState {
   const opGenRef = useRef(0);
   const activeResumeGenRef = useRef<number | null>(null);
   const prevRoomRef = useRef<{ code: string; playerId: string } | null>(null);
+  useScreenWakeLock(Boolean(view && ['round_intro', 'in_round', 'round_result', 'sudden_death_intro', 'sudden_death'].includes(view.phase)));
+
+  const preloadCategories = view && ['lobby', 'round_intro'].includes(view.phase)
+    ? JSON.stringify(view.config.categoryIds) : null;
+  useEffect(() => {
+    if (preloadCategories === null) return;
+    // Gameplay retries a failed chunk load; prefetch failure must not prevent entering a room.
+    void client.preloadContent?.(JSON.parse(preloadCategories) as string[]).catch(() => {});
+  }, [client, preloadCategories]);
+
+  useEffect(() => {
+    if (!view) return;
+    const refreshRecovery = () => {
+      const session = loadSession();
+      if (session?.code === view.code && session.playerId === view.you.id) saveSession(session);
+    };
+    refreshRecovery();
+    const timer = setInterval(refreshRecovery, 60_000);
+    window.addEventListener('pagehide', refreshRecovery);
+    return () => { clearInterval(timer); window.removeEventListener('pagehide', refreshRecovery); };
+  }, [view?.code, view?.you.id]);
 
   const performResume = useCallback(async () => {
     const session = loadSession();

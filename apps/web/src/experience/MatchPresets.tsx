@@ -2,7 +2,7 @@ import type { MatchConfig } from '@game/shared';
 import { CATEGORIES } from '../content/index.js';
 import { Card } from '../ui/primitives.js';
 
-export type MatchPresetId = 'quick_mixed' | 'football_night' | 'team_party';
+export type MatchPresetId = 'quick_mixed' | 'football_night' | 'team_party' | 'football_derby';
 
 export interface MatchPresetDefinition {
   id: MatchPresetId;
@@ -16,6 +16,11 @@ export interface MatchPresetDefinition {
 export const FOOTBALL_CATEGORY_ID = 'football';
 
 export const MATCH_PRESETS: readonly MatchPresetDefinition[] = [
+  {
+    id: 'football_derby', emoji: '🏟️', titleAr: 'ديربي الكورة',
+    subtitleAr: 'اختيارات، تخمين أرقام، مين أنا، والكذّابين — في عالم الكورة',
+    badgeAr: '~١٠ جولات • فردي • ٤ ألعاب كروية',
+  },
   {
     id: 'quick_mixed',
     emoji: '⚡',
@@ -65,6 +70,12 @@ export function buildPresetConfig(
   const allCategories = normalizeCategoryIds(availableCategoryIds);
 
   switch (presetId) {
+    case 'football_derby':
+      return {
+        format: 'mixed', roundCount: 10, teams: false,
+        categoryIds: allCategories.includes(FOOTBALL_CATEGORY_ID) ? [FOOTBALL_CATEGORY_ID] : [allCategories[0]!],
+        roundTypeIds: ['mcq_race', 'numeric_guess', 'who_am_i', 'fibbing'],
+      };
     case 'quick_mixed':
       return {
         format: 'mixed',
@@ -103,6 +114,7 @@ export function isPresetActive(
   if (currentConfig.roundTypeId !== undefined) return false;
 
   const expected = buildPresetConfig(presetId, availableCategoryIds);
+  if (JSON.stringify(currentConfig.roundTypeIds ?? []) !== JSON.stringify(expected.roundTypeIds ?? [])) return false;
   if (currentConfig.roundCount !== expected.roundCount) return false;
   if (currentConfig.teams !== expected.teams) return false;
 
@@ -139,7 +151,7 @@ export function MatchPresets({
       <div className="grid grid-cols-1 gap-2.5">
         {MATCH_PRESETS.map((preset) => {
           const active = isPresetActive(preset.id, currentConfig, normalizedCategories);
-          const isFootballUnavailable = preset.id === 'football_night' && !footballAvailable;
+          const isFootballUnavailable = ['football_night', 'football_derby'].includes(preset.id) && !footballAvailable;
           const buttonDisabled = disabled || isFootballUnavailable;
 
           return (

@@ -1,7 +1,8 @@
-import { useRef, useState } from 'react';
-import { GameDiscovery } from '../experience/index.js';
+import { useEffect, useRef, useState } from 'react';
+import { GameDiscovery } from '../experience/GameDiscovery.js';
 import { ar } from '../i18n/ar.js';
 import { saveSession } from '../net/client.js';
+import { listRecoveries, restoreRecovery } from '../net/recovery.js';
 import type { GameTransport } from '../net/transport.js';
 import { isValidRoomCode, normalizeRoomCodeInput } from '../ui/InvitationPanel.js';
 import { Button, Card, Screen, TextField } from '../ui/primitives.js';
@@ -23,6 +24,11 @@ export function HomeScreen({
   const [busy, setBusy] = useState(false);
   const [localError, setLocalError] = useState<string | null>(null);
   const inFlightRef = useRef(false);
+  const [recoveries, setRecoveries] = useState(() => listRecoveries());
+  useEffect(() => {
+    const timer = setInterval(() => setRecoveries(listRecoveries()), 60_000);
+    return () => clearInterval(timer);
+  }, []);
 
   const reportError = (msg: string) => {
     setLocalError(msg);
@@ -50,6 +56,7 @@ export function HomeScreen({
         return;
       }
       saveSession({
+        nickname: trimmedName,
         code: String(result.code),
         playerId: String(result.playerId),
         token: String(result.token),
@@ -75,6 +82,22 @@ export function HomeScreen({
         </h1>
         <p className="mt-2 text-muted">{ar.tagline}</p>
       </header>
+
+      {recoveries.length > 0 ? <Card className="flex flex-col gap-3">
+        <p className="text-sm text-muted">ماتش لعبته قريب؟ اقفل التاب القديم لو لسه مفتوح وارجع لمقعدك.</p>
+        {recoveries.map((recovery) => <Button key={recovery.seatId} variant="ghost" disabled={busy}
+          onClick={async () => {
+            if (inFlightRef.current) return;
+            inFlightRef.current = true;
+            setBusy(true);
+            try { await restoreRecovery(recovery.seatId); window.location.reload(); }
+            catch (error) { reportError(error instanceof Error ? error.message : 'تعذر استرجاع المقعد'); }
+            finally { inFlightRef.current = false; setBusy(false); }
+          }}>
+          العودة للماتش الشغال (غرفة {recovery.session.code})
+          {recovery.session.nickname ? ` — ${recovery.session.nickname}` : ''}
+        </Button>)}
+      </Card> : null}
 
       <Card className="flex flex-col gap-4">
         <label className="flex flex-col gap-2">

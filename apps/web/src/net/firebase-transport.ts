@@ -17,7 +17,7 @@ import {
 } from 'firebase/database';
 import { BrowserContentSource } from '../content/browser-source.js';
 import { clearSession, saveSession } from './client.js';
-import { FirebaseHostRuntime } from './firebase-host-runtime.js';
+import type { FirebaseHostRuntime } from './firebase-host-runtime.js';
 import {
   type AuthContext,
   FirebaseSessionManager,
@@ -25,6 +25,8 @@ import {
 } from './firebase-session.js';
 import { TabSeatManager } from './seat.js';
 import { ClientSequencer } from './sequence.js';
+import { OfflineActionQueue } from './offline-action.js';
+import { mergeSplitView, type ProjectionRecord } from './split-view.js';
 import {
   type FirebaseWebConfig,
   type GameTransport,
@@ -160,6 +162,7 @@ export class FirebaseTransport implements GameTransport {
   private latestRoomView: RoomView | null = null;
   private isHost = false;
   private promotionInFlight = false;
+  private promotionPromise: Promise<void> | null = null;
 
   private isConnected = false;
   private hostUnresponsive = false;
@@ -171,6 +174,7 @@ export class FirebaseTransport implements GameTransport {
   private connectionUnsub: Unsubscribe | null = null;
 
   private pendingCommand = false;
+  private readonly offlineActions = new OfflineActionQueue();
   private commandGeneration = 0;
   private operationGeneration = 0;
   private currentRoomExpiresAtMs = 0;
@@ -268,6 +272,7 @@ export class FirebaseTransport implements GameTransport {
       if (!this.connectionUnsub && this.sessionInstance) {
         this.connectionUnsub = this.sessionInstance.onConnectionChange((connected) => {
           this.isConnected = connected;
+          if (connected) queueMicrotask(() => this.flushOfflineActions());
           for (const handler of this.connectionListeners) {
             try {
               handler(connected);
@@ -374,6 +379,7 @@ export class FirebaseTransport implements GameTransport {
     }
 
     this.cancelActiveCommand('تم استبدال العملية بإنشاء غرفة جديدة');
+    this.offlineActions.cancel();
     const opGen = ++this.operationGeneration;
     const startDeadlineMs = Date.now() + COMMAND_TIMEOUT_MS;
 
@@ -388,7 +394,9 @@ export class FirebaseTransport implements GameTransport {
 
     const executionPromise = (async (): Promise<AckResult<{ code: string; playerId: string; token: string }>> => {
       try {
-        const { session, authCtx, seatId } = await this.ensureSession();
+        const [{ session, authCtx, seatId }, { FirebaseHostRuntime }] = await Promise.all([
+          this.ensureSession(), import('./firebase-host-runtime.js'),
+        ]);
         if (this.disposed || this.operationGeneration !== opGen || Date.now() >= startDeadlineMs) {
           return { ok: false, error: 'انتهت مهلة إنشاء الغرفة — جرب تاني' };
         }
@@ -498,6 +506,7 @@ export class FirebaseTransport implements GameTransport {
     }
 
     this.cancelActiveCommand('تم استبدال العملية بالانضمام لغرفة');
+    this.offlineActions.cancel();
     const opGen = ++this.operationGeneration;
     const startDeadlineMs = Date.now() + COMMAND_TIMEOUT_MS;
 
@@ -543,9 +552,6 @@ export class FirebaseTransport implements GameTransport {
         const isExistingMember = ownMemberSnap.exists() && ownMemberSnap.val()?.removed !== true;
 
         if (!isExistingMember) {
-          if (meta.phase !== 'lobby') {
-            return { ok: false, error: 'الماتش شغال مش هينفع تنضم دلوقتي' };
-          }
           if (meta.memberCount >= 8) {
             return { ok: false, error: 'الغرفة كاملة (8 لاعبين)' };
           }
@@ -886,6 +892,10 @@ export class FirebaseTransport implements GameTransport {
 
         const meta = metaSnap.val();
         if (meta.hostUid === authCtx.uid) {
+          const { FirebaseHostRuntime } = await import('./firebase-host-runtime.js');
+          if (this.disposed || this.operationGeneration !== opGen || Date.now() >= startDeadlineMs) {
+            return { ok: false, error: 'انتهت مهلة استعادة الجلسة — جرب تاني' };
+          }
           // Resuming as host
           if (this.hostRuntime) {
             this.hostRuntime.dispose();
@@ -1026,7 +1036,11 @@ export class FirebaseTransport implements GameTransport {
     type: string,
     payload: unknown = {},
     roundNo?: number,
+    timeoutMs = COMMAND_TIMEOUT_MS,
   ): Promise<AckResult<T>> {
+    // A promoted view may arrive before the local runtime's listeners are attached.
+    // Commands must choose their host/guest acknowledgement path after that transition.
+    if (this.promotionInFlight) await this.promotionPromise;
     if (this.disposed || !this.currentRoomId || !this.currentUid || !this.sequencer) {
       return { ok: false, error: 'الاتصال غير مهيأ' };
     }
@@ -1043,8 +1057,8 @@ export class FirebaseTransport implements GameTransport {
     const opGen = ++this.commandGeneration;
     const startNow = this.session.serverNow();
     const startLocalTime = Date.now();
-    const commandExpiresAtMs = startNow + COMMAND_TIMEOUT_MS;
-    const startDeadlineMs = startLocalTime + COMMAND_TIMEOUT_MS;
+    const commandExpiresAtMs = startNow + timeoutMs;
+    const startDeadlineMs = startLocalTime + timeoutMs;
 
     const roomId = this.currentRoomId;
     const uid = this.currentUid;
@@ -1107,7 +1121,7 @@ export class FirebaseTransport implements GameTransport {
       settleFn = resolve;
       timeoutTimer = setTimeout(() => {
         handle.cancel('انتهت مهلة الطلب — جرب تاني');
-      }, COMMAND_TIMEOUT_MS);
+      }, timeoutMs);
     });
 
     const executionPromise = (async (): Promise<AckResult<T>> => {
@@ -1261,6 +1275,7 @@ export class FirebaseTransport implements GameTransport {
       if (this.pendingCommand && this.commandGeneration === opGen) {
         this.pendingCommand = false;
       }
+      this.flushOfflineActions();
     }
   }
 
@@ -1289,6 +1304,7 @@ export class FirebaseTransport implements GameTransport {
   }
 
   async leave(): Promise<AckResult<Record<string, unknown>>> {
+    this.offlineActions.cancel();
     const departingRoomId = this.currentRoomId;
     const departingIsHost = this.isHost;
     const departingHostRuntime = this.hostRuntime;
@@ -1446,7 +1462,58 @@ export class FirebaseTransport implements GameTransport {
   }
 
   act(roundNo: number, action: unknown): Promise<AckResult<Record<string, unknown>>> {
+    const scope = this.roundActionScope();
+    if (!this.isConnected && scope && this.latestRoomView?.round?.roundNo === roundNo) {
+      const roomId = this.currentRoomId;
+      const deadline = Date.now() + 2_000;
+      return this.offlineActions.enqueue(scope, async () => {
+        const { authCtx } = await this.ensureSession();
+        const shared = await get(ref(authCtx.database, `rooms/${roomId}/publicView`));
+        let freshView: RoomView | null;
+        if (shared.exists()) {
+          const personal = await get(ref(authCtx.database, `rooms/${roomId}/privateViews/${authCtx.uid}`));
+          freshView = mergeSplitView(shared.val(), personal.val());
+        } else {
+          const legacy = await get(ref(authCtx.database, `rooms/${roomId}/views/${authCtx.uid}`));
+          freshView = legacy.exists() ? JSON.parse(legacy.val().json) as RoomView : null;
+        }
+        // A reconnect notification can precede delivery of the latest round. Validate a server
+        // read before replaying so an answer can never spill into the next question or stage.
+        if (this.disposed || !this.isConnected || Date.now() >= deadline || this.currentRoomId !== roomId ||
+          this.roundActionScope(freshView) !== scope) {
+          return { ok: false, error: 'انتهت فرصة إرسال الإجابة بعد رجوع الاتصال' };
+        }
+        return this.sendCommand('round:action', { action }, roundNo, 7_500);
+      });
+    }
     return this.sendCommand('round:action', { action }, roundNo);
+  }
+
+  private roundActionScope(view = this.latestRoomView): string | null {
+    if (!view?.round || !['in_round', 'sudden_death'].includes(view.phase) || !this.currentRoomId) return null;
+    if (view.phaseEndsAtMs !== null && this.session.serverNow() >= view.phaseEndsAtMs) return null;
+    const round = view.round.view as { stage?: string; current?: { index?: number }; rung?: number } | null;
+    return JSON.stringify([this.currentRoomId, view.round.roundNo, view.round.typeId,
+      round?.stage, round?.current?.index, round?.rung]);
+  }
+
+  private flushOfflineActions(): void {
+    this.offlineActions.flush(this.roundActionScope(), this.isConnected && !this.pendingCommand && !this.promotionInFlight);
+  }
+
+  async preloadContent(categoryIds: string[]): Promise<void> {
+    await this.contentSource.preload?.(categoryIds);
+  }
+
+  readonly latencyLabel = 'اتصال Firebase';
+
+  async sampleLatency(): Promise<number | null> {
+    if (!this.isConnected || !this.currentRoomId) return null;
+    const roomId = this.currentRoomId;
+    const { authCtx } = await this.ensureSession();
+    const started = performance.now();
+    await get(ref(authCtx.database, `rooms/${roomId}/meta`));
+    return this.isConnected && this.currentRoomId === roomId ? performance.now() - started : null;
   }
 
   private getCandidateTakeoverRank(): number {
@@ -1474,7 +1541,7 @@ export class FirebaseTransport implements GameTransport {
       if (this.disposed || this.isHost || attachment.disposed || this.currentRoomId !== roomId) {
         return;
       }
-      void this.tryPromoteToHost(roomId);
+      this.promotionPromise = this.tryPromoteToHost(roomId);
     }, delayMs);
   }
 
@@ -1493,7 +1560,9 @@ export class FirebaseTransport implements GameTransport {
     let candidateRuntime: FirebaseHostRuntime | null = null;
 
     try {
-      const { session, authCtx } = await this.ensureSession();
+      const [{ session, authCtx }, { FirebaseHostRuntime }] = await Promise.all([
+        this.ensureSession(), import('./firebase-host-runtime.js'),
+      ]);
       if (this.disposed || this.isHost || this.currentRoomId !== roomId) return;
 
       const runtime = new FirebaseHostRuntime({
@@ -1655,6 +1724,7 @@ export class FirebaseTransport implements GameTransport {
           return;
         }
         this.latestRoomView = view;
+        this.flushOfflineActions();
         for (const handler of this.stateListeners) {
           handler(view);
         }
@@ -1662,39 +1732,40 @@ export class FirebaseTransport implements GameTransport {
       const initialView = this.hostRuntime.getLatestCommittedView();
       if (initialView && isAttachmentActive()) {
         this.latestRoomView = initialView;
+        this.flushOfflineActions();
         for (const handler of this.stateListeners) {
           handler(initialView);
         }
       }
     } else {
-      const viewRef = ref(db, `rooms/${roomId}/views/${uid}`);
-      attachment.viewUnsub = onValue(
-        viewRef,
-        (snap) => {
-          if (!snap.exists() || !isAttachmentActive()) {
-            return;
-          }
-          const val = snap.val();
-          if (val && typeof val.json === 'string') {
-            try {
-              const parsedView = JSON.parse(val.json) as RoomView;
-              this.latestRoomView = parsedView;
-              for (const handler of this.stateListeners) {
-                handler(parsedView);
-              }
-            } catch {
-              // Ignore malformed view JSON
-            }
-          }
-        },
-        () => {
-          if (!isAttachmentActive()) {
-            return;
-          }
-          this.emitError('انقطع الاتصال بعرض الغرفة أو أُلغيت الصلاحية');
-          this.emitClosed('انقطع الاتصال بعرض الغرفة أو أُلغيت الصلاحية', roomId);
-        },
-      );
+      let shared: ProjectionRecord | null = null;
+      let personal: ProjectionRecord | null = null;
+      const accept = (view: RoomView | null) => {
+        if (!view || !isAttachmentActive()) return;
+        this.latestRoomView = view;
+        this.flushOfflineActions();
+        for (const handler of this.stateListeners) handler(view);
+      };
+      const onViewError = () => {
+        if (!isAttachmentActive()) return;
+        this.emitError('انقطع الاتصال بعرض الغرفة أو أُلغيت الصلاحية');
+        this.emitClosed('انقطع الاتصال بعرض الغرفة أو أُلغيت الصلاحية', roomId);
+      };
+      const subscriptions = [
+        onValue(ref(db, `rooms/${roomId}/publicView`), (snap) => {
+          shared = snap.exists() ? snap.val() as ProjectionRecord : null;
+          try { accept(mergeSplitView(shared, personal)); } catch { onViewError(); }
+        }, onViewError),
+        onValue(ref(db, `rooms/${roomId}/privateViews/${uid}`), (snap) => {
+          personal = snap.exists() ? snap.val() as ProjectionRecord : null;
+          try { accept(mergeSplitView(shared, personal)); } catch { onViewError(); }
+        }, onViewError),
+        onValue(ref(db, `rooms/${roomId}/views/${uid}`), (snap) => {
+          if (shared || !snap.exists()) return;
+          try { accept(JSON.parse(snap.val().json) as RoomView); } catch { onViewError(); }
+        }, onViewError),
+      ];
+      attachment.viewUnsub = () => { for (const unsubscribe of subscriptions) unsubscribe(); };
     }
 
     // 3. Heartbeat & host unresponsive / takeover monitoring (for guests)
@@ -1853,6 +1924,7 @@ export class FirebaseTransport implements GameTransport {
     this.currentPlayerId = null;
     this.currentToken = null;
     this.latestRoomView = null;
+    this.offlineActions.cancel();
     this.isHost = false;
     this.currentRoomExpiresAtMs = 0;
 
@@ -1933,6 +2005,7 @@ export class FirebaseTransport implements GameTransport {
   }
 
   dispose(): void {
+    this.offlineActions.cancel();
     this.disposed = true;
     this.commandGeneration += 1;
     this.operationGeneration += 1;

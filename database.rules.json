@@ -237,7 +237,7 @@
         "joinRequests": {
           "$reqSlot": {
             ".read": "auth != null && $reqSlot.matches(/^[1-8]$/) && (!data.exists() || data.child('uid').val() === auth.uid || data.child('expiresAtMs').val() <= now || root.child('rooms').child($roomId).child('meta/hostUid').val() === auth.uid) && root.child('rooms').child($roomId).child('meta/expiresAtMs').val() > now",
-            ".write": "auth != null && $reqSlot.matches(/^[1-8]$/) && root.child('rooms').child($roomId).child('meta/expiresAtMs').val() > now && ((!newData.exists() && data.exists() && data.child('uid').val() === auth.uid) || (newData.exists() && newData.child('uid').val() === auth.uid && root.child('rooms').child($roomId).child('meta/status').val() === 'open' && root.child('rooms').child($roomId).child('meta/phase').val() === 'lobby' && root.child('rooms').child($roomId).child('snapshot').exists() && root.child('rooms').child($roomId).child('lease/expiresAtMs').val() > now && (root.child('rooms').child($roomId).child('meta/memberCount').val() < 8 || (root.child('rooms').child($roomId).child('members').child(auth.uid).exists() && root.child('rooms').child($roomId).child('members').child(auth.uid).child('removed').val() !== true)) && (root.child('rooms').child($roomId).child('meta/admittedCount').val() < 32 || root.child('rooms').child($roomId).child('members').child(auth.uid).exists()) && (!data.exists() || data.child('uid').val() === auth.uid || data.child('expiresAtMs').val() <= now || root.child('rooms').child($roomId).child('joinResponses').child($reqSlot).child('commandId').val() === data.child('commandId').val() || root.child('rooms').child($roomId).child('responses').child(data.child('uid').val()).child('commandId').val() === data.child('commandId').val())))",
+            ".write": "auth != null && $reqSlot.matches(/^[1-8]$/) && root.child('rooms').child($roomId).child('meta/expiresAtMs').val() > now && ((!newData.exists() && data.exists() && data.child('uid').val() === auth.uid) || (newData.exists() && newData.child('uid').val() === auth.uid && root.child('rooms').child($roomId).child('meta/status').val() === 'open' && root.child('rooms').child($roomId).child('snapshot').exists() && root.child('rooms').child($roomId).child('lease/expiresAtMs').val() > now && (root.child('rooms').child($roomId).child('meta/memberCount').val() < 8 || (root.child('rooms').child($roomId).child('members').child(auth.uid).exists() && root.child('rooms').child($roomId).child('members').child(auth.uid).child('removed').val() !== true)) && (root.child('rooms').child($roomId).child('meta/admittedCount').val() < 32 || root.child('rooms').child($roomId).child('members').child(auth.uid).exists()) && (!data.exists() || data.child('uid').val() === auth.uid || data.child('expiresAtMs').val() <= now || root.child('rooms').child($roomId).child('joinResponses').child($reqSlot).child('commandId').val() === data.child('commandId').val() || root.child('rooms').child($roomId).child('responses').child(data.child('uid').val()).child('commandId').val() === data.child('commandId').val())))",
             ".validate": "newData.hasChildren(['commandId', 'uid', 'nickname', 'createdAtMs', 'expiresAtMs']) && newData.child('createdAtMs').val() >= now - 10000 && newData.child('createdAtMs').val() <= now + 5000 && newData.child('expiresAtMs').val() > now && newData.child('expiresAtMs').val() > newData.child('createdAtMs').val() && newData.child('expiresAtMs').val() <= newData.child('createdAtMs').val() + 10000 && newData.child('expiresAtMs').val() <= now + 15000",
             "commandId": {
               ".validate": "newData.isString() && newData.val().matches(/^[A-Za-z0-9_-]{4,64}$/)"
@@ -376,11 +376,86 @@
         },
         "$other": {
           ".validate": false
+        },
+        "privateViews": {
+          "$uid": {
+            ".read": "auth != null && auth.uid === $uid && root.child('rooms').child($roomId).child('members').child(auth.uid).exists() && root.child('rooms').child($roomId).child('members').child(auth.uid).child('removed').val() !== true && root.child('rooms').child($roomId).child('meta/expiresAtMs').val() > now",
+            ".write": "auth != null && newData.exists() && root.child('rooms').child($roomId).child('meta/hostUid').val() === auth.uid && root.child('rooms').child($roomId).child('meta/expiresAtMs').val() > now && root.child('rooms').child($roomId).child('meta/status').val() === 'open' && root.child('rooms').child($roomId).child('lease/ownerId').val() === newData.child('leaseOwnerId').val() && root.child('rooms').child($roomId).child('lease/expiresAtMs').val() > now",
+            ".validate": "newData.hasChildren(['slot', 'json', 'version', 'updatedAtMs', 'leaseOwnerId']) && root.child('rooms').child($roomId).child('memberSlots').child(newData.child('slot').val()).child('uid').val() === $uid && newData.child('updatedAtMs').val() >= now - 30000 && newData.child('updatedAtMs').val() <= now + 30000",
+            "slot": {
+              ".validate": "newData.isString() && newData.val().matches(/^([1-9]|[12][0-9]|3[0-2])$/)"
+            },
+            "json": {
+              ".validate": "newData.isString() && newData.val().length >= 2 && newData.val().length <= 262144"
+            },
+            "version": {
+              ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() % 1 === 0"
+            },
+            "updatedAtMs": {
+              ".validate": "newData.isNumber()"
+            },
+            "leaseOwnerId": {
+              ".validate": "newData.isString() && newData.val().matches(/^[A-Za-z0-9_-]{4,64}$/)"
+            },
+            "$other": {
+              ".validate": false
+            }
+          }
+        },
+        "publicView": {
+          ".read": "auth != null && root.child('rooms').child($roomId).child('members').child(auth.uid).exists() && root.child('rooms').child($roomId).child('members').child(auth.uid).child('removed').val() !== true && root.child('rooms').child($roomId).child('meta/expiresAtMs').val() > now",
+          ".write": "auth != null && newData.exists() && root.child('rooms').child($roomId).child('meta/hostUid').val() === auth.uid && root.child('rooms').child($roomId).child('meta/expiresAtMs').val() > now && root.child('rooms').child($roomId).child('meta/status').val() === 'open' && root.child('rooms').child($roomId).child('lease/ownerId').val() === newData.child('leaseOwnerId').val() && root.child('rooms').child($roomId).child('lease/expiresAtMs').val() > now",
+          ".validate": "newData.hasChildren(['json', 'version', 'updatedAtMs', 'leaseOwnerId']) && (!data.exists() || newData.child('version').val() >= data.child('version').val()) && newData.child('updatedAtMs').val() >= now - 30000 && newData.child('updatedAtMs').val() <= now + 30000",
+          "json": {
+            ".validate": "newData.isString() && newData.val().length >= 2 && newData.val().length <= 524288"
+          },
+          "version": {
+            ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() % 1 === 0"
+          },
+          "updatedAtMs": {
+            ".validate": "newData.isNumber()"
+          },
+          "leaseOwnerId": {
+            ".validate": "newData.isString() && newData.val().matches(/^[A-Za-z0-9_-]{4,64}$/)"
+          },
+          "$other": {
+            ".validate": false
+          }
         }
       }
     },
     "$other": {
       ".validate": false
+    },
+    "telemetry": {
+      "$questionId": {
+        ".read": "auth != null",
+        "$sampleId": {
+          ".write": "auth != null && !data.exists() && newData.exists() && $questionId.matches(/^[A-Za-z0-9_-]{1,128}$/) && $sampleId === newData.child('roomId').val() + '_' + newData.child('roundNo').val() && root.child('rooms').child(newData.child('roomId').val()).child('meta/hostUid').val() === auth.uid && root.child('rooms').child(newData.child('roomId').val()).child('meta/status').val() === 'open' && root.child('rooms').child(newData.child('roomId').val()).child('meta/phase').val() === 'round_result' && root.child('rooms').child(newData.child('roomId').val()).child('lease/hostUid').val() === auth.uid && root.child('rooms').child(newData.child('roomId').val()).child('lease/expiresAtMs').val() > now",
+          ".validate": "newData.hasChildren(['roomId','roundNo','plays','answered','correct','totalSolveMs']) && newData.child('answered').val() <= newData.child('plays').val() && newData.child('correct').val() <= newData.child('answered').val()",
+          "roomId": {
+            ".validate": "newData.isString() && newData.val().matches(/^[A-Za-z0-9_-]{10,64}$/)"
+          },
+          "roundNo": {
+            ".validate": "newData.isNumber() && newData.val() >= 1 && newData.val() % 1 === 0"
+          },
+          "plays": {
+            ".validate": "newData.isNumber() && newData.val() >= 1 && newData.val() <= 8 && newData.val() % 1 === 0"
+          },
+          "answered": {
+            ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() % 1 === 0"
+          },
+          "correct": {
+            ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() % 1 === 0"
+          },
+          "totalSolveMs": {
+            ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 1200000"
+          },
+          "$other": {
+            ".validate": false
+          }
+        }
+      }
     }
   }
 }

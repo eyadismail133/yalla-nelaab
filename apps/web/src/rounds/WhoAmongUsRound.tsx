@@ -11,11 +11,13 @@ export function WhoAmongUsRound({
   client,
   players,
 }: RoundProps<WhoAmongUsView> & { players: RoomView['players'] }) {
-  const { pending, error, act } = useRoundAction(client, roundNo);
+  const { pending, error, act, submittedAction } = useRoundAction<{ kind: 'vote'; targetId: string }>(client, roundNo);
+  const locked = view.hasVoted || submittedAction !== null;
+  const myVote = view.myVote ?? submittedAction?.targetId;
   const nameOf = (id: string) => players.find((p) => p.id === id)?.nickname ?? '؟';
 
   const vote = (targetId: string) => {
-    if (view.hasVoted || pending) return;
+    if (locked || pending) return;
     void act({ kind: 'vote', targetId });
   };
 
@@ -25,13 +27,13 @@ export function WhoAmongUsRound({
 
       <div className="grid gap-3">
         {view.candidates.map((id) => {
-          const picked = view.myVote === id;
+          const picked = myVote === id;
           return (
             <button
               key={id}
               type="button"
               onClick={() => vote(id)}
-              disabled={view.hasVoted || pending}
+              disabled={locked || pending}
               className={`flex min-h-16 items-center gap-3 rounded-2xl border-2 px-4 text-start text-lg font-bold transition active:scale-[0.99] ${
                 picked
                   ? 'border-[var(--accent)] bg-surface-2'
@@ -55,7 +57,7 @@ export function WhoAmongUsRound({
       <p className="text-center text-sm text-muted">{ar.whoAmongUsHint}</p>
 
       <LockStatus
-        locked={view.hasVoted}
+        locked={locked}
         lockedCount={view.lockedCount}
         total={view.totalPlayers}
       />

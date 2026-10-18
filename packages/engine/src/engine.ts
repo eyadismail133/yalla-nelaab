@@ -170,15 +170,13 @@ export class MatchEngine {
     let token = '';
 
     const state = await this.store.transition(code, null, (current) => {
-      if (current.phase !== 'lobby') {
-        throw new EngineError('الماتش بدأ خلاص — استنى لما يخلص أو اعمل غرفة جديدة');
-      }
       if (current.players.length >= MAX_PLAYERS) {
         throw new EngineError(`الغرفة كاملة (${MAX_PLAYERS} لاعيبة بالكتير)`);
       }
       // Compared after truncation, because that is the name the room will actually show:
       // two seventeen-character nicknames sharing a prefix are one name on every screen.
       const player = this.makePlayer(nickname, this.opts.now());
+      player.spectator = current.phase !== 'lobby';
       const taken = current.players.some(
         (p) => p.nickname.toLowerCase() === player.nickname.toLowerCase(),
       );
@@ -192,8 +190,8 @@ export class MatchEngine {
         ...current,
         // Somebody joining after teams were switched on still needs a side, and it has to be
         // the smaller one or the room drifts lopsided as people trickle in.
-        players: current.config.teams ? assignTeams(players) : players,
-        totals: emptyTotals(players.map((p) => p.id)),
+        players: current.config.teams && current.phase === 'lobby' ? assignTeams(players) : players,
+        totals: current.phase === 'lobby' ? emptyTotals(players.map((p) => p.id)) : current.totals,
       });
     });
 
@@ -218,6 +216,7 @@ export class MatchEngine {
       if (current.phase !== 'lobby') throw new EngineError('مش هينفع تغيّر الإعدادات والماتش شغال');
 
       const mergedPatch = { ...current.config, ...patch };
+      if (mergedPatch.format === 'focused' || (patch.format !== undefined && patch.roundTypeIds === undefined)) delete mergedPatch.roundTypeIds;
       if (mergedPatch.format !== 'focused') {
         delete mergedPatch.roundTypeId;
       }
@@ -298,11 +297,13 @@ export class MatchEngine {
         teams: current.config.teams,
         availableShapes,
         roundTypeId: current.config.roundTypeId,
+        roundTypeIds: current.config.roundTypeIds,
         rng: this.opts.rng,
       });
 
       const fresh: RoomState = {
         ...current,
+        matchCards: {},
         players: clearReadiness(current.players),
         playlist,
         roundIndex: -1,
@@ -364,12 +365,13 @@ export class MatchEngine {
 
       // People who walked out do not get dragged into the next match, and the sides are
       // recomputed around whoever is left rather than kept from a room that no longer exists.
-      const remaining = clearReadiness(current.players.filter((p) => p.connected));
+      const remaining = clearReadiness(current.players.filter((p) => p.connected).map((p) => ({ ...p, spectator: false })));
       const staying = current.config.teams ? rebalanceTeams(remaining) : remaining;
 
       return this.touch({
         ...current,
         phase: 'lobby',
+        matchCards: {},
         phaseEndsAtMs: null,
         playlist: [],
         roundIndex: -1,
@@ -405,6 +407,29 @@ export class MatchEngine {
     action: unknown,
   ): Promise<RoomState> {
     return this.store.transition(code, null, async (current) => {
+      const submitted = action as { kind?: string; emoji?: string } | null;
+      if (submitted?.kind === 'reaction') {
+        const player = current.players.find((candidate) => candidate.id === playerId && candidate.connected && !candidate.leftEarly);
+        const previous = current.reactions?.findLast((reaction) => reaction.playerId === playerId);
+        const now = this.opts.now();
+        if (!player || roundNo !== current.roundNo || !['lobby', 'round_result', 'podium'].includes(current.phase) ||
+          !['⚽', '🟨', '😂', '🔥'].includes(submitted.emoji ?? '') || (previous && now - previous.atMs < 1_000)) {
+          throw new EngineError('استنى شوية قبل التفاعل الجاي');
+        }
+        return this.touch({ ...current, reactions: [...(current.reactions ?? []), { playerId, emoji: submitted.emoji!, atMs: now }].slice(-16) });
+      }
+      if (current.players.find((player) => player.id === playerId)?.spectator) throw new EngineError('إنت بتتفرج لحد الماتش الجاي');
+      if (submitted?.kind === 'result_ready') {
+        if (current.phase !== 'round_result' || current.roundNo !== roundNo ||
+          !current.players.some((player) => player.id === playerId && player.connected && !player.leftEarly)) {
+          throw new EngineError('الاستعداد متاح بعد نتيجة الجولة');
+        }
+        const next = { ...current, resultReady: [...new Set([...(current.resultReady ?? []), playerId])] };
+        return this.touch(this.allResultsReady(next) ? await this.advance(next, this.opts.now()) : next);
+      }
+      if (action && typeof action === 'object' && (action as { kind?: string }).kind === 'card') {
+        return this.touch(this.playMatchCard(current, playerId, roundNo, (action as { card?: string }).card));
+      }
       const playable = current.phase === 'in_round' || current.phase === 'sudden_death';
       if (!playable || !current.roundTypeId || !current.roundState) return current;
 
@@ -533,7 +558,8 @@ export class MatchEngine {
       return await this.store.transition(code, null, async (current) => {
         const now = this.opts.now();
         const checked = this.checkAbandonment(this.setConnectedIn(current, playerId, connected), now);
-        if (!connected && this.allConnectedPlayersActed(checked)) {
+        if (this.allResultsReady(checked)) return this.touch(await this.advance(checked, now));
+        if (this.allConnectedPlayersActed(checked)) {
           return this.touch(await this.advanceIfAllConnectedActed(checked, now));
         }
         return this.touch(checked);
@@ -559,6 +585,7 @@ export class MatchEngine {
 
         const withHost = this.transferHost({ ...current, players });
         const checked = this.checkAbandonment(withHost, now);
+        if (this.allResultsReady(checked)) return this.touch(await this.advance(checked, now));
         if (this.allConnectedPlayersActed(checked)) {
           return this.touch(await this.advanceIfAllConnectedActed(checked, now));
         }
@@ -601,6 +628,7 @@ export class MatchEngine {
     return {
       ...state,
       phase: 'round_intro',
+      resultReady: [],
       phaseEndsAtMs: nowMs + this.opts.introMs,
       roundNo: state.roundNo + 1,
       roundIndex: index,
@@ -624,13 +652,13 @@ export class MatchEngine {
 
     // The clock starts now, not when the content was fetched — otherwise a slow sweeper tick
     // silently shortens the round for everyone.
-    const activePlayers = state.players.filter((p) => !p.leftEarly);
+    const activePlayers = state.players.filter((p) => !p.leftEarly && !p.spectator);
     const participants =
       phase === 'sudden_death' && state.suddenDeath
         ? activePlayers.filter((p) => state.suddenDeath!.contenders.includes(p.id))
         : activePlayers.length >= 2
           ? activePlayers
-          : state.players;
+          : state.players.filter((p) => !p.spectator);
 
     const roundState = type.createState(state.pendingContent as ContentItem[], {
       players: asPlayerRefs(participants),
@@ -681,7 +709,11 @@ export class MatchEngine {
       ? state.roundState
       : type.onDeadline(state.roundState, { nowMs }).state;
 
-    const scores = scoreRound(type.roundScores(closed), entry?.weight ?? 1);
+    const scores = scoreRound(type.roundScores(closed), entry?.weight ?? 1).map((score) => ({
+      ...score,
+      points: score.points > 0 && state.matchCards?.[score.playerId]?.doubleRoundNo === state.roundNo
+        ? score.points * 2 : score.points,
+    }));
     const totals = accumulate(state.totals, scores, type.durationMs);
     const previousRanks = new Map(state.standings.map((s) => [s.playerId, s.rank]));
     const standings = rankPlayers(totals, previousRanks);
@@ -838,8 +870,9 @@ export class MatchEngine {
 
   private checkAbandonment(state: RoomState, nowMs: number): RoomState {
     if (state.phase === 'lobby' || state.phase === 'podium') return state;
-    const connected = state.players.filter((p) => p.connected).length;
-    if (connected > 1) return state;
+    const recoverable = state.players.filter((player) => !player.spectator && !player.leftEarly &&
+      (player.connected || (player.disconnectedAtMs !== null && nowMs - player.disconnectedAtMs <= this.opts.disconnectGraceMs))).length;
+    if (recoverable > 1) return state;
     // Playing alone is not a match. Show the standings as they stand rather than pretending
     // the last player standing won something.
     return this.concludeMatch(state, 'abandoned', nowMs);
@@ -872,6 +905,42 @@ export class MatchEngine {
       .sort((a, b) => a.joinedAtMs - b.joinedAtMs)[0];
 
     return successor ? { ...state, hostId: successor.id } : state;
+  }
+
+  private allResultsReady(state: RoomState): boolean {
+    if (state.phase !== 'round_result') return false;
+    const participants = state.players.filter((player) => player.connected && !player.leftEarly && !player.spectator);
+    return participants.length > 0 && participants.every((player) => state.resultReady?.includes(player.id));
+  }
+
+  private playMatchCard(state: RoomState, playerId: PlayerId, roundNo: number, card: string | undefined): RoomState {
+    const player = state.players.find((candidate) => candidate.id === playerId);
+    if (!player || !player.connected || player.leftEarly || state.roundNo !== roundNo ||
+      (state.phaseEndsAtMs !== null && this.opts.now() >= state.phaseEndsAtMs)) throw new EngineError('الكارت مش متاح دلوقتي');
+    const cards = { ...state.matchCards?.[playerId] };
+    if (card === 'double_captain') {
+      if (state.phase !== 'round_intro' || cards.doubleRoundNo !== undefined) throw new EngineError('الكابتن بيتلعب مرة واحدة قبل الجولة');
+      cards.doubleRoundNo = roundNo;
+    } else if (card === 'var') {
+      if (state.phase !== 'in_round' || cards.varRoundNo !== undefined) throw new EngineError('الفار بيتلعب مرة واحدة أثناء الجولة');
+      const round = state.roundState as { item?: ContentItem; answers?: Record<string, unknown>; guesses?: Record<string, unknown> };
+      if (round?.answers?.[playerId] || round?.guesses?.[playerId]) throw new EngineError('العب الكارت قبل ما تجاوب');
+      if (state.roundTypeId === 'mcq_race' && round?.item?.shape === 'mcq') {
+        const wrong = round.item.options.map((_, index) => index).filter((index) => index !== (round.item as { correctIndex: number }).correctIndex);
+        for (let index = wrong.length - 1; index > 0; index -= 1) {
+          const swap = Math.floor(this.opts.rng() * (index + 1));
+          [wrong[index], wrong[swap]] = [wrong[swap]!, wrong[index]!];
+        }
+        cards.varHint = { hiddenOptions: wrong.slice(0, 2) };
+      } else if (state.roundTypeId === 'numeric_guess' && round?.item?.shape === 'numeric') {
+        const correct = round.item.correctValue;
+        const width = 10 ** Math.floor(Math.log10(Math.max(1, Math.abs(correct))));
+        const lower = Math.floor(correct / width) * width;
+        cards.varHint = { range: [lower, lower + width] };
+      } else throw new EngineError('الفار متاح في الاختيارات وتخمين الرقم بس');
+      cards.varRoundNo = roundNo;
+    } else throw new EngineError('كارت غير معروف');
+    return { ...state, matchCards: { ...state.matchCards, [playerId]: cards } };
   }
 
   private isPlayerDoneInCurrentStage(

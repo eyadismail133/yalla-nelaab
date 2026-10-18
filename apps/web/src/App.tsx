@@ -1,13 +1,18 @@
-import { useEffect, useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { ar } from './i18n/ar.js';
 import { useGame } from './net/useGame.js';
 import { Button, Screen } from './ui/primitives.js';
 import { HomeScreen } from './screens/HomeScreen.js';
-import { LobbyScreen } from './screens/LobbyScreen.js';
 import { RoundIntroScreen } from './screens/RoundIntroScreen.js';
-import { RoundScreen } from './screens/RoundScreen.js';
-import { ResultScreen } from './screens/ResultScreen.js';
-import { PodiumScreen } from './screens/PodiumScreen.js';
+import { ScreenLoadBoundary } from './ui/ScreenLoadBoundary.js';
+import { ConnectionQuality } from './net/connection-quality.js';
+import { LiveReactions } from './rounds/LiveReactions.js';
+
+const LobbyScreen = lazy(() => import('./screens/LobbyScreen.js').then((module) => ({ default: module.LobbyScreen })));
+const loadRoundScreen = () => import('./screens/RoundScreen.js');
+const RoundScreen = lazy(() => loadRoundScreen().then((module) => ({ default: module.RoundScreen })));
+const ResultScreen = lazy(() => import('./screens/ResultScreen.js').then((module) => ({ default: module.ResultScreen })));
+const PodiumScreen = lazy(() => import('./screens/PodiumScreen.js').then((module) => ({ default: module.PodiumScreen })));
 
 export function App() {
   const {
@@ -31,6 +36,12 @@ export function App() {
 
   const isFirebaseMode =
     (import.meta.env?.VITE_GAME_TRANSPORT ?? '').toLowerCase() === 'firebase';
+
+  useEffect(() => {
+    if (view?.phase === 'round_intro' || view?.phase === 'sudden_death_intro') {
+      void loadRoundScreen().catch(() => {});
+    }
+  }, [view?.phase]);
 
   useEffect(() => {
     if (!error) return;
@@ -149,6 +160,7 @@ export function App() {
         />
       ) : (
         <div className="flex min-h-dvh flex-col">
+          <ConnectionQuality client={client} connected={connected} />
           {/* Firebase mode notices (host tab requirement and guest beta note) in normal layout flow */}
           {isFirebaseMode && view.phase === 'lobby' ? (
             <aside
@@ -166,8 +178,13 @@ export function App() {
           ) : null}
 
           <fieldset disabled={hostUnresponsive} className="contents">
-            <MatchRouter view={view} client={client} onError={setError} onLeave={reset} />
+            <ScreenLoadBoundary>
+              <Suspense fallback={<Screen><p role="status" className="text-center">بنجهّز الشاشة...</p></Screen>}>
+                <MatchRouter view={view} client={client} onError={setError} onLeave={reset} />
+              </Suspense>
+            </ScreenLoadBoundary>
           </fieldset>
+          {['lobby', 'round_result', 'podium'].includes(view.phase) ? <LiveReactions key={`${view.code}:${view.phase}`} view={view} client={client} /> : null}
         </div>
       )}
 
@@ -200,7 +217,7 @@ function MatchRouter({
       return <LobbyScreen view={view} client={client} onError={onError} onLeave={onLeave} />;
     case 'round_intro':
     case 'sudden_death_intro':
-      return <RoundIntroScreen view={view} />;
+      return <RoundIntroScreen view={view} client={client} />;
     case 'in_round':
     case 'sudden_death':
       return <RoundScreen view={view} client={client} />;

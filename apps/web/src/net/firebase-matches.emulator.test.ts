@@ -330,6 +330,15 @@ describe('Firebase complete-match acceptance tests', () => {
     const guest2Db = testEnv.authenticatedContext(guest2Uid).database();
     const intruderDb = testEnv.authenticatedContext('intruder-alien-uid').database();
 
+    // New rooms publish one shared projection and isolated per-seat secrets.
+    const publicProjection = await assertSucceeds(get(ref(guest1Db, `rooms/${roomId}/publicView`)));
+    expect(publicProjection.exists()).toBe(true);
+    expect(JSON.parse(publicProjection.val().json)).not.toHaveProperty('you');
+    expect((await assertSucceeds(get(ref(guest1Db, `rooms/${roomId}/privateViews/${guest1Uid}`)))).exists()).toBe(true);
+    await assertFails(get(ref(guest1Db, `rooms/${roomId}/privateViews/${guest2Uid}`)));
+    await assertFails(get(ref(intruderDb, `rooms/${roomId}/publicView`)));
+    await assertFails(get(ref(intruderDb, `rooms/${roomId}/privateViews/${guest1Uid}`)));
+
     // 3. Guests can read their own private view projection
     await assertSucceeds(get(ref(guest1Db, `rooms/${roomId}/views/${guest1Uid}`)));
     await assertSucceeds(get(ref(guest2Db, `rooms/${roomId}/views/${guest2Uid}`)));

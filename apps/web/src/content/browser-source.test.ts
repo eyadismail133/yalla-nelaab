@@ -18,6 +18,16 @@ function makeNodeLoader() {
 }
 
 describe('BrowserContentSource', () => {
+  it('preloads selected banks and the shared party bank without blocking later questions on another download', async () => {
+    const loader = makeNodeLoader();
+    const source = new BrowserContentSource(loader);
+    await source.preload(['football', 'football', 'unknown']);
+    loader.mockClear();
+    expect(await source.pick({ categoryIds: ['football'], shape: 'mcq', count: 1 })).toHaveLength(1);
+    expect(await source.countBy(['football'], 'poll')).toBeGreaterThan(0);
+    expect(loader).not.toHaveBeenCalled();
+  });
+
   it('matches server JsonSource category metadata in exact id, nameAr, emoji and order without loading banks', async () => {
     const loader = makeNodeLoader();
     const browserSource = new BrowserContentSource(loader);

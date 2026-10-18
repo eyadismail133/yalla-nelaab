@@ -390,10 +390,11 @@ describe('lobby', () => {
     await expect(engine.kick(code, host.playerId, host.playerId)).rejects.toThrow(EngineError);
   });
 
-  it('refuses joins once the match is under way', async () => {
+  it('admits late joiners as spectators once the match is under way', async () => {
     const { engine, code, host } = await seatedRoom();
     await engine.start(code, host.playerId);
-    await expect(engine.join(code, 'متأخر')).rejects.toThrow(EngineError);
+    const joined = await engine.join(code, 'متأخر');
+    expect(joined.state.players.find((player) => player.id === joined.playerId)?.spectator).toBe(true);
   });
 
   it('refuses a configuration with no categories', async () => {
@@ -729,13 +730,16 @@ describe('disconnects and host transfer', () => {
     expect((await store.get(code))!.players).toHaveLength(2);
   });
 
-  it('ends the match when only one player is left connected', async () => {
+  it('preserves a brief mobile disconnect and ends the match only after the recovery grace period', async () => {
     const { engine, code, host, joins, clock, store } = await seatedRoom({ playerCount: 2 });
     await engine.start(code, host.playerId);
     clock.advance(INTRO_MS);
     await engine.tick();
 
     await engine.setConnected(code, joins[0]!.playerId, false);
+    expect((await store.get(code))!.phase).toBe('in_round');
+    clock.advance(91_000);
+    await engine.reapDisconnected(code);
     const state = (await store.get(code))!;
     expect(state.phase).toBe('podium');
     expect(state.endReason).toBe('abandoned');

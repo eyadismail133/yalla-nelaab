@@ -226,6 +226,7 @@ export interface Category {
  * land. Round types never touch this — the engine hydrates content and hands it in.
  */
 export interface ContentSource {
+  preload?(categoryIds: string[]): Promise<void>;
   pick(query: ContentQuery): Promise<ContentItem[]>;
   countBy(categoryIds: string[], shape: ContentShape): Promise<number>;
   categories(): Promise<Category[]>;

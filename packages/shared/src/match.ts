@@ -29,6 +29,7 @@ export const matchConfigSchema = z.object({
     .default(10),
   /** Only used by the `focused` format. */
   roundTypeId: z.string().optional(),
+  roundTypeIds: z.array(z.string().min(1)).min(1).max(18).optional(),
   /** Splits the room into two sides that are ranked together. */
   teams: z.boolean().default(false),
 });
@@ -59,6 +60,7 @@ export const TEAMS: Team[] = [
 ];
 
 export interface RoomPlayer extends PlayerRef {
+  spectator?: boolean;
   /**
    * Opaque reconnect secret — the whole of "auth" for a guest-only game.
    *
@@ -80,6 +82,13 @@ export interface SuddenDeathState {
 }
 
 export interface RoomState {
+  resultReady?: PlayerId[];
+  reactions?: Array<{ playerId: PlayerId; emoji: string; atMs: number }>;
+  matchCards?: Record<PlayerId, {
+    varRoundNo?: number;
+    doubleRoundNo?: number;
+    varHint?: { hiddenOptions?: number[]; range?: [number, number] };
+  }>;
   code: string;
   hostId: PlayerId;
   players: RoomPlayer[];
@@ -139,12 +148,22 @@ export interface RoomState {
 
 /** The per-player redacted projection pushed after every transition. */
 export interface RoomView {
+  resultReady?: PlayerId[];
+  reactions?: Array<{ playerId: PlayerId; emoji: string; atMs: number }>;
   code: string;
   phase: RoomPhase;
   phaseEndsAtMs: number | null;
   serverNowMs: number;
-  you: { id: PlayerId; nickname: string; isHost: boolean };
+  you: {
+    id: PlayerId; nickname: string; isHost: boolean;
+    isSpectator?: boolean;
+    cards?: {
+      varAvailable: boolean; doubleAvailable: boolean; doubleActive: boolean;
+      varHint: { hiddenOptions?: number[]; range?: [number, number] } | null;
+    };
+  };
   players: Array<{
+    spectator?: boolean;
     id: PlayerId;
     nickname: string;
     connected: boolean;

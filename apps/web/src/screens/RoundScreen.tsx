@@ -10,6 +10,7 @@ import { QuickfireRound } from '../rounds/QuickfireRound.js';
 import { FillBlankRound } from '../rounds/FillBlankRound.js';
 import { FibbingRound } from '../rounds/FibbingRound.js';
 import { WhoAmongUsRound } from '../rounds/WhoAmongUsRound.js';
+import { MatchCards } from '../rounds/MatchCards.js';
 import {
   BiddingRound,
   LandGrabRound,
@@ -79,7 +80,7 @@ export function RoundScreen({ view, client }: { view: RoomView; client: GameTran
   const remaining = useCountdown(client, view.phaseEndsAtMs);
   const suddenDeath = view.phase === 'sudden_death';
   const spectating =
-    suddenDeath && !!view.suddenDeath && !view.suddenDeath.contenders.includes(view.you.id);
+    view.you.isSpectator || (suddenDeath && !!view.suddenDeath && !view.suddenDeath.contenders.includes(view.you.id));
 
   const totalMs = resolveRoundTotalMs(view, lengthsRef.current);
 
@@ -102,13 +103,20 @@ export function RoundScreen({ view, client }: { view: RoomView; client: GameTran
           </span>
         ) : null}
       </header>
+      {!spectating ? <MatchCards view={view} client={client} /> : null}
 
       {spectating ? (
         <div className="flex flex-1 flex-col items-center justify-center gap-2 text-center">
           <p className="text-2xl font-black" style={{ color: 'var(--accent)' }}>
             {ar.spectating}
           </p>
-          <p className="text-muted">{ar.suddenDeathHint}</p>
+          <p className="text-muted">{view.you.isSpectator ? 'هتدخل لاعب في الماتش الجاي' : ar.suddenDeathHint}</p>
+          {view.you.isSpectator ? <>
+            <p className="text-xl font-bold">{(round.view as { textAr?: string })?.textAr ?? round.nameAr}</p>
+            <div className="flex flex-col gap-1">{view.standings.map((standing) => <p key={standing.playerId}>
+              {view.players.find((player) => player.id === standing.playerId)?.nickname}: {standing.total}
+            </p>)}</div>
+          </> : null}
         </div>
       ) : (
         <RoundBody
@@ -127,7 +135,7 @@ function RoundBody({ view, client }: { view: RoomView; client: GameTransport }) 
 
   switch (round.typeId) {
     case 'mcq_race':
-      return <McqRaceRound {...props} view={round.view as McqRaceView} />;
+      return <McqRaceRound {...props} view={round.view as McqRaceView} hiddenOptions={view.you.cards?.varHint?.hiddenOptions} />;
     case 'numeric_guess':
       return <NumericGuessRound {...props} view={round.view as NumericGuessView} />;
     case 'quickfire_tf':
