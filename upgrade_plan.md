@@ -1,6 +1,6 @@
 # Upgrade plan — future update levels
 
-Updated 18 October 2026. This is the active roadmap. The October release is deployed at [Yalla Nelaab](https://yalla-nelaab-20261016.web.app/). Implementation and measured results are in [the phase record](docs/implementation/upgrade-progress.md) and [release verification](docs/verification/release-2026-10-18.md).
+Updated 18 October 2026. This is the active roadmap. `main` is the sole maintained branch and GitHub default; earlier branch names below identify historical release evidence. The October release is deployed at [Yalla Nelaab](https://yalla-nelaab-20261016.web.app/). Implementation and measured results are in [the phase record](docs/implementation/upgrade-progress.md) and [release verification](docs/verification/release-2026-10-18.md).
 
 Published follow-up: Level 2 automation/browser coverage and Level 3 bundle/startup improvements are deployed from application commit `5ee5475` on `codex/release-network-performance`. Both GitHub CI jobs passed, all 27 manifest assets plus HTML (28 files total) match the release build, and three live browser scenarios passed. Initial JavaScript is 175,625 gzip bytes (11.8% below the previous deployed baseline), protected by a 185,000-byte budget. Physical phone acceptance, production-network comparisons and required-check enforcement remain open. See [publication evidence](docs/verification/published-reliability-2026-10-18.md).
 
@@ -43,7 +43,7 @@ Exit: physical Android and iPhone evidence exists for lifecycle, input, sharing 
 
 ## Level 2 — Repeatable release and network coverage
 
-Status: implemented, verified in GitHub CI and deployed; exact-artifact verification and live smoke/recovery passed. Required-check enforcement remains open: `launch/free-online` is unprotected.
+Status: implemented, verified in GitHub CI and deployed; exact-artifact verification and live smoke/recovery passed. Required-check enforcement remains open for the consolidated `main` branch.
 
 Goal: catch deployment and recovery regressions before publication.
 

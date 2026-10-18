@@ -2,6 +2,10 @@
 
 Keep Firebase Spark, Anonymous Auth and browser-host authority. No billing, Functions, card or paid service is needed. GitHub workflows use standard hosted runners; confirm repository Actions allowance before enabling runs on a private repository. Nothing here deploys automatically.
 
+## Repository and live source
+
+`main` is the only maintained branch and the GitHub default. Build and deploy its reviewed commit to Firebase Hosting using the commands below. Firebase serves the uploaded build; a Git push alone does not deploy it. The existing manual release flow needs no new paid service or deployment credential in GitHub.
+
 ## Before publication
 
 1. Start from a clean reviewed commit. Record `git rev-parse HEAD`, Node version, test output and build manifest. Install dependencies with `npm ci`; Node >=24.12 and Java 21 are required. The standalone Firebase CLI is installed separately (`npm install --global firebase-tools@15.30.0`); it is never bundled into the game.
