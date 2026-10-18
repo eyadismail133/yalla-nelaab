@@ -26,6 +26,7 @@ import {
 import { TabSeatManager } from './seat.js';
 import { ClientSequencer } from './sequence.js';
 import { OfflineActionQueue } from './offline-action.js';
+import { measureDatabaseLatency } from './database-latency.js';
 import { mergeSplitView, type ProjectionRecord } from './split-view.js';
 import {
   type FirebaseWebConfig,
@@ -1511,9 +1512,9 @@ export class FirebaseTransport implements GameTransport {
     if (!this.isConnected || !this.currentRoomId) return null;
     const roomId = this.currentRoomId;
     const { authCtx } = await this.ensureSession();
-    const started = performance.now();
-    await get(ref(authCtx.database, `rooms/${roomId}/meta`));
-    return this.isConnected && this.currentRoomId === roomId ? performance.now() - started : null;
+    const idToken = await authCtx.user.getIdToken();
+    const measured = await measureDatabaseLatency(ref(authCtx.database, `rooms/${roomId}/meta`).toString(), idToken);
+    return this.isConnected && this.currentRoomId === roomId ? measured : null;
   }
 
   private getCandidateTakeoverRank(): number {
