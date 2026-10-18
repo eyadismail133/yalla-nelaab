@@ -1,0 +1,60 @@
+{
+  "browser": "156.0.8078.4",
+  "network": {
+    "latencyMs": 150,
+    "downloadBps": 1600000,
+    "uploadBps": 750000,
+    "cpuSlowdown": 4
+  },
+  "notes": "Desktop Chromium emulation; local Vite preview; warm = same-context navigation; encodedBodySize includes modulepreload; not physical-device or production ping evidence.",
+  "samples": [
+    {
+      "run": 0,
+      "cache": "cold",
+      "readyMs": 3308.121699999996,
+      "domContentLoadedMs": 1547.0999999940395,
+      "firstContentfulPaintMs": 2300,
+      "scriptBytes": 199385
+    },
+    {
+      "run": 0,
+      "cache": "warm",
+      "readyMs": 1633.5492999999988,
+      "domContentLoadedMs": 440.3999999910593,
+      "firstContentfulPaintMs": 600,
+      "scriptBytes": 0
+    },
+    {
+      "run": 1,
+      "cache": "cold",
+      "readyMs": 3605.864499999996,
+      "domContentLoadedMs": 1510.7999999970198,
+      "firstContentfulPaintMs": 2388,
+      "scriptBytes": 199385
+    },
+    {
+      "run": 1,
+      "cache": "warm",
+      "readyMs": 1722.9737999999925,
+      "domContentLoadedMs": 436.79999999701977,
+      "firstContentfulPaintMs": 676,
+      "scriptBytes": 0
+    },
+    {
+      "run": 2,
+      "cache": "cold",
+      "readyMs": 3456.0610000000015,
+      "domContentLoadedMs": 1541.5,
+      "firstContentfulPaintMs": 2388,
+      "scriptBytes": 199385
+    },
+    {
+      "run": 2,
+      "cache": "warm",
+      "readyMs": 1620.8115000000107,
+      "domContentLoadedMs": 436.70000000298023,
+      "firstContentfulPaintMs": 592,
+      "scriptBytes": 0
+    }
+  ]
+}

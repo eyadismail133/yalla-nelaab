@@ -1,5 +1,12 @@
 # Launch status — 18 October 2026
 
+## Local follow-up candidate (not deployed)
+
+- `codex/release-network-performance`: release CI, six production-browser scenarios, recovery race fixes, build-time transport selection and lazy QR generation.
+- Fresh local gates: 697 unit/integration tests, 82 real-rules emulator tests, 6 browser scenarios, types, Firebase/Socket.IO builds, 185 KB initial gzip budget, Firebase module graph and zero known npm vulnerabilities.
+- Initial Firebase JavaScript: 175,625 gzip bytes; emulator-profile median cold startup 3,456 → 3,152 ms. Small-sample acknowledgement timing is inconclusive; no production-ping reduction is claimed.
+- Nothing pushed/deployed. Physical Android/iPhone acceptance, production-network comparisons and GitHub required-check configuration remain open; all-type emulator action traffic is recorded. [Evidence and APPROVED local review](../verification/reliability-performance-2026-10-18.md).
+
 ## Current deployed release
 
 - Live site: [Yalla Nelaab](https://yalla-nelaab-20261016.web.app/), Firebase project `yalla-nelaab-20261016`.

@@ -16,7 +16,7 @@ import {
   type Unsubscribe,
 } from 'firebase/database';
 import { BrowserContentSource } from '../content/browser-source.js';
-import { clearSession, saveSession } from './client.js';
+import { clearSession, saveSession } from './session.js';
 import type { FirebaseHostRuntime } from './firebase-host-runtime.js';
 import {
   type AuthContext,
@@ -27,13 +27,14 @@ import { TabSeatManager } from './seat.js';
 import { ClientSequencer, parseCommandId } from './sequence.js';
 import { OfflineActionQueue } from './offline-action.js';
 import { measureDatabaseLatency } from './database-latency.js';
+import { LEASE_TTL_MS } from './firebase-lease.js';
 import { mergeSplitView, type ProjectionRecord } from './split-view.js';
 import {
   type FirebaseWebConfig,
   type GameTransport,
   resolveFirebaseConfig,
   validateFirebaseConfig,
-} from './transport.js';
+} from './transport-config.js';
 
 export interface FirebaseTransportOptions {
   config?: Partial<FirebaseWebConfig>;
@@ -851,7 +852,9 @@ export class FirebaseTransport implements GameTransport {
     }
 
     const opGen = ++this.operationGeneration;
-    const maxWait = options?.maxWaitMs ?? COMMAND_TIMEOUT_MS;
+    // A refreshed host must be able to wait out its predecessor's full lease, then restore.
+    // Keep gameplay command timeouts separate from this recovery-only budget.
+    const maxWait = options?.maxWaitMs ?? (this.options.leaseTtlMs ?? LEASE_TTL_MS) + COMMAND_TIMEOUT_MS;
     const startDeadlineMs = Date.now() + maxWait;
 
     let timeoutTimer: ReturnType<typeof setTimeout> | null = null;
@@ -1048,6 +1051,16 @@ export class FirebaseTransport implements GameTransport {
     roundNo?: number,
     timeoutMs = COMMAND_TIMEOUT_MS,
   ): Promise<AckResult<T>> {
+    if (type !== 'resume' && this.activeResume) {
+      const roomId = this.currentRoomId;
+      const playerId = this.currentPlayerId;
+      const generation = this.operationGeneration;
+      const restored = await this.activeResume.promise;
+      if (!restored.ok) return { ok: false, error: restored.error };
+      if (this.operationGeneration !== generation || this.currentRoomId !== roomId || this.currentPlayerId !== playerId) {
+        return { ok: false, error: 'تم إلغاء الأمر بعد تغيير الجلسة' };
+      }
+    }
     // A promoted view may arrive before the local runtime's listeners are attached.
     // Commands must choose their host/guest acknowledgement path after that transition.
     if (this.promotionInFlight) await this.promotionPromise;
@@ -1834,7 +1847,7 @@ export class FirebaseTransport implements GameTransport {
         }
         if (this.lastHostSeenAtMs > 0) {
           const elapsed = now - this.lastHostSeenAtMs;
-          const effectiveLeaseTtlMs = this.options.leaseTtlMs ?? 12_000;
+          const effectiveLeaseTtlMs = this.options.leaseTtlMs ?? LEASE_TTL_MS;
           const takeoverGraceMs =
             this.options.hostTakeoverGraceMs ?? DEFAULT_HOST_TAKEOVER_GRACE_MS;
 

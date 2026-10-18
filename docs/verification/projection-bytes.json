@@ -1,0 +1,1655 @@
+{
+  "scope": "Deterministic synthetic reducer fixtures through real toView/split/merge. UTF-8 JSON projection update payload only; excludes canonical snapshots, commands, ACKs, protocol overhead and actual network billing. Not bytes-per-action on a live room.",
+  "rows": [
+    {
+      "type": "mcq_race",
+      "players": 2,
+      "stage": "initial",
+      "fullProjectionBytes": 13174,
+      "splitProjectionBytes": 7077,
+      "publicBytes": 6331,
+      "privateBytes": 732
+    },
+    {
+      "type": "mcq_race",
+      "players": 2,
+      "stage": "first-action",
+      "fullProjectionBytes": 13170,
+      "splitProjectionBytes": 7073,
+      "publicBytes": 6331,
+      "privateBytes": 728
+    },
+    {
+      "type": "mcq_race",
+      "players": 2,
+      "stage": "with-captain",
+      "fullProjectionBytes": 13170,
+      "splitProjectionBytes": 7073,
+      "publicBytes": 6331,
+      "privateBytes": 728
+    },
+    {
+      "type": "mcq_race",
+      "players": 2,
+      "stage": "with-var",
+      "fullProjectionBytes": 13192,
+      "splitProjectionBytes": 7095,
+      "publicBytes": 6331,
+      "privateBytes": 750
+    },
+    {
+      "type": "mcq_race",
+      "players": 2,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 20292,
+      "splitProjectionBytes": 7670,
+      "publicBytes": 6483,
+      "privateBytes": 1173
+    },
+    {
+      "type": "mcq_race",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 27820,
+      "splitProjectionBytes": 8177,
+      "publicBytes": 6699,
+      "privateBytes": 1464
+    },
+    {
+      "type": "mcq_race",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 27816,
+      "splitProjectionBytes": 8173,
+      "publicBytes": 6699,
+      "privateBytes": 1460
+    },
+    {
+      "type": "mcq_race",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 27816,
+      "splitProjectionBytes": 8173,
+      "publicBytes": 6699,
+      "privateBytes": 1460
+    },
+    {
+      "type": "mcq_race",
+      "players": 4,
+      "stage": "with-var",
+      "fullProjectionBytes": 27838,
+      "splitProjectionBytes": 8195,
+      "publicBytes": 6699,
+      "privateBytes": 1482
+    },
+    {
+      "type": "mcq_race",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 35684,
+      "splitProjectionBytes": 8844,
+      "publicBytes": 6851,
+      "privateBytes": 1979
+    },
+    {
+      "type": "mcq_race",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 61528,
+      "splitProjectionBytes": 10377,
+      "publicBytes": 7435,
+      "privateBytes": 2928
+    },
+    {
+      "type": "mcq_race",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 61524,
+      "splitProjectionBytes": 10373,
+      "publicBytes": 7435,
+      "privateBytes": 2924
+    },
+    {
+      "type": "mcq_race",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 61524,
+      "splitProjectionBytes": 10373,
+      "publicBytes": 7435,
+      "privateBytes": 2924
+    },
+    {
+      "type": "mcq_race",
+      "players": 8,
+      "stage": "with-var",
+      "fullProjectionBytes": 61546,
+      "splitProjectionBytes": 10395,
+      "publicBytes": 7435,
+      "privateBytes": 2946
+    },
+    {
+      "type": "numeric_guess",
+      "players": 2,
+      "stage": "initial",
+      "fullProjectionBytes": 12916,
+      "splitProjectionBytes": 6946,
+      "publicBytes": 6204,
+      "privateBytes": 728
+    },
+    {
+      "type": "numeric_guess",
+      "players": 2,
+      "stage": "first-action",
+      "fullProjectionBytes": 12915,
+      "splitProjectionBytes": 6945,
+      "publicBytes": 6204,
+      "privateBytes": 727
+    },
+    {
+      "type": "numeric_guess",
+      "players": 2,
+      "stage": "with-captain",
+      "fullProjectionBytes": 12915,
+      "splitProjectionBytes": 6945,
+      "publicBytes": 6204,
+      "privateBytes": 727
+    },
+    {
+      "type": "numeric_guess",
+      "players": 2,
+      "stage": "with-var",
+      "fullProjectionBytes": 12935,
+      "splitProjectionBytes": 6965,
+      "publicBytes": 6204,
+      "privateBytes": 747
+    },
+    {
+      "type": "numeric_guess",
+      "players": 2,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 19907,
+      "splitProjectionBytes": 7539,
+      "publicBytes": 6356,
+      "privateBytes": 1169
+    },
+    {
+      "type": "numeric_guess",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 27304,
+      "splitProjectionBytes": 8042,
+      "publicBytes": 6572,
+      "privateBytes": 1456
+    },
+    {
+      "type": "numeric_guess",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 27303,
+      "splitProjectionBytes": 8041,
+      "publicBytes": 6572,
+      "privateBytes": 1455
+    },
+    {
+      "type": "numeric_guess",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 27303,
+      "splitProjectionBytes": 8041,
+      "publicBytes": 6572,
+      "privateBytes": 1455
+    },
+    {
+      "type": "numeric_guess",
+      "players": 4,
+      "stage": "with-var",
+      "fullProjectionBytes": 27323,
+      "splitProjectionBytes": 8061,
+      "publicBytes": 6572,
+      "privateBytes": 1475
+    },
+    {
+      "type": "numeric_guess",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 35041,
+      "splitProjectionBytes": 8709,
+      "publicBytes": 6724,
+      "privateBytes": 1971
+    },
+    {
+      "type": "numeric_guess",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 60496,
+      "splitProjectionBytes": 10234,
+      "publicBytes": 7308,
+      "privateBytes": 2912
+    },
+    {
+      "type": "numeric_guess",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 60495,
+      "splitProjectionBytes": 10233,
+      "publicBytes": 7308,
+      "privateBytes": 2911
+    },
+    {
+      "type": "numeric_guess",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 60495,
+      "splitProjectionBytes": 10233,
+      "publicBytes": 7308,
+      "privateBytes": 2911
+    },
+    {
+      "type": "numeric_guess",
+      "players": 8,
+      "stage": "with-var",
+      "fullProjectionBytes": 60515,
+      "splitProjectionBytes": 10253,
+      "publicBytes": 7308,
+      "privateBytes": 2931
+    },
+    {
+      "type": "quickfire_tf",
+      "players": 2,
+      "stage": "initial",
+      "fullProjectionBytes": 12920,
+      "splitProjectionBytes": 7008,
+      "publicBytes": 6146,
+      "privateBytes": 848
+    },
+    {
+      "type": "quickfire_tf",
+      "players": 2,
+      "stage": "first-action",
+      "fullProjectionBytes": 12920,
+      "splitProjectionBytes": 7008,
+      "publicBytes": 6146,
+      "privateBytes": 848
+    },
+    {
+      "type": "quickfire_tf",
+      "players": 2,
+      "stage": "with-captain",
+      "fullProjectionBytes": 12920,
+      "splitProjectionBytes": 7008,
+      "publicBytes": 6146,
+      "privateBytes": 848
+    },
+    {
+      "type": "quickfire_tf",
+      "players": 2,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 19797,
+      "splitProjectionBytes": 7684,
+      "publicBytes": 6230,
+      "privateBytes": 1440
+    },
+    {
+      "type": "quickfire_tf",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 27608,
+      "splitProjectionBytes": 8298,
+      "publicBytes": 6588,
+      "privateBytes": 1696
+    },
+    {
+      "type": "quickfire_tf",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 27608,
+      "splitProjectionBytes": 8298,
+      "publicBytes": 6588,
+      "privateBytes": 1696
+    },
+    {
+      "type": "quickfire_tf",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 27608,
+      "splitProjectionBytes": 8298,
+      "publicBytes": 6588,
+      "privateBytes": 1696
+    },
+    {
+      "type": "quickfire_tf",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 35231,
+      "splitProjectionBytes": 9408,
+      "publicBytes": 6598,
+      "privateBytes": 2796
+    },
+    {
+      "type": "quickfire_tf",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 62288,
+      "splitProjectionBytes": 10878,
+      "publicBytes": 7472,
+      "privateBytes": 3392
+    },
+    {
+      "type": "quickfire_tf",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 62288,
+      "splitProjectionBytes": 10878,
+      "publicBytes": 7472,
+      "privateBytes": 3392
+    },
+    {
+      "type": "quickfire_tf",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 62288,
+      "splitProjectionBytes": 10878,
+      "publicBytes": 7472,
+      "privateBytes": 3392
+    },
+    {
+      "type": "fill_blank",
+      "players": 2,
+      "stage": "initial",
+      "fullProjectionBytes": 12930,
+      "splitProjectionBytes": 6972,
+      "publicBytes": 6192,
+      "privateBytes": 766
+    },
+    {
+      "type": "fill_blank",
+      "players": 2,
+      "stage": "first-action",
+      "fullProjectionBytes": 12943,
+      "splitProjectionBytes": 6985,
+      "publicBytes": 6192,
+      "privateBytes": 779
+    },
+    {
+      "type": "fill_blank",
+      "players": 2,
+      "stage": "with-captain",
+      "fullProjectionBytes": 12943,
+      "splitProjectionBytes": 6985,
+      "publicBytes": 6192,
+      "privateBytes": 779
+    },
+    {
+      "type": "fill_blank",
+      "players": 2,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 19919,
+      "splitProjectionBytes": 7575,
+      "publicBytes": 6344,
+      "privateBytes": 1217
+    },
+    {
+      "type": "fill_blank",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 27332,
+      "splitProjectionBytes": 8106,
+      "publicBytes": 6560,
+      "privateBytes": 1532
+    },
+    {
+      "type": "fill_blank",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 27345,
+      "splitProjectionBytes": 8119,
+      "publicBytes": 6560,
+      "privateBytes": 1545
+    },
+    {
+      "type": "fill_blank",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 27345,
+      "splitProjectionBytes": 8119,
+      "publicBytes": 6560,
+      "privateBytes": 1545
+    },
+    {
+      "type": "fill_blank",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 35067,
+      "splitProjectionBytes": 8783,
+      "publicBytes": 6712,
+      "privateBytes": 2057
+    },
+    {
+      "type": "fill_blank",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 60552,
+      "splitProjectionBytes": 10374,
+      "publicBytes": 7296,
+      "privateBytes": 3064
+    },
+    {
+      "type": "fill_blank",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 60565,
+      "splitProjectionBytes": 10387,
+      "publicBytes": 7296,
+      "privateBytes": 3077
+    },
+    {
+      "type": "fill_blank",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 60565,
+      "splitProjectionBytes": 10387,
+      "publicBytes": 7296,
+      "privateBytes": 3077
+    },
+    {
+      "type": "fibbing",
+      "players": 2,
+      "unsupported": "requires 3 players"
+    },
+    {
+      "type": "fibbing",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 27360,
+      "splitProjectionBytes": 7987,
+      "publicBytes": 6609,
+      "privateBytes": 1364
+    },
+    {
+      "type": "fibbing",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 27370,
+      "splitProjectionBytes": 7997,
+      "publicBytes": 6609,
+      "privateBytes": 1374
+    },
+    {
+      "type": "fibbing",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 27370,
+      "splitProjectionBytes": 7997,
+      "publicBytes": 6609,
+      "privateBytes": 1374
+    },
+    {
+      "type": "fibbing",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 35119,
+      "splitProjectionBytes": 8727,
+      "publicBytes": 6739,
+      "privateBytes": 1974
+    },
+    {
+      "type": "fibbing",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 60608,
+      "splitProjectionBytes": 10087,
+      "publicBytes": 7345,
+      "privateBytes": 2728
+    },
+    {
+      "type": "fibbing",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 60618,
+      "splitProjectionBytes": 10097,
+      "publicBytes": 7345,
+      "privateBytes": 2738
+    },
+    {
+      "type": "fibbing",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 60618,
+      "splitProjectionBytes": 10097,
+      "publicBytes": 7345,
+      "privateBytes": 2738
+    },
+    {
+      "type": "who_among_us",
+      "players": 2,
+      "unsupported": "requires 3 players"
+    },
+    {
+      "type": "who_among_us",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 27524,
+      "splitProjectionBytes": 8223,
+      "publicBytes": 6585,
+      "privateBytes": 1624
+    },
+    {
+      "type": "who_among_us",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 27525,
+      "splitProjectionBytes": 8224,
+      "publicBytes": 6585,
+      "privateBytes": 1625
+    },
+    {
+      "type": "who_among_us",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 27525,
+      "splitProjectionBytes": 8224,
+      "publicBytes": 6585,
+      "privateBytes": 1625
+    },
+    {
+      "type": "who_among_us",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 35272,
+      "splitProjectionBytes": 8888,
+      "publicBytes": 6737,
+      "privateBytes": 2137
+    },
+    {
+      "type": "who_among_us",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 61160,
+      "splitProjectionBytes": 10807,
+      "publicBytes": 7321,
+      "privateBytes": 3472
+    },
+    {
+      "type": "who_among_us",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 61161,
+      "splitProjectionBytes": 10808,
+      "publicBytes": 7321,
+      "privateBytes": 3473
+    },
+    {
+      "type": "who_among_us",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 61161,
+      "splitProjectionBytes": 10808,
+      "publicBytes": 7321,
+      "privateBytes": 3473
+    },
+    {
+      "type": "who_am_i",
+      "players": 2,
+      "stage": "initial",
+      "fullProjectionBytes": 13196,
+      "splitProjectionBytes": 7252,
+      "publicBytes": 6178,
+      "privateBytes": 1060
+    },
+    {
+      "type": "who_am_i",
+      "players": 2,
+      "stage": "first-action",
+      "fullProjectionBytes": 13209,
+      "splitProjectionBytes": 7265,
+      "publicBytes": 6178,
+      "privateBytes": 1073
+    },
+    {
+      "type": "who_am_i",
+      "players": 2,
+      "stage": "with-captain",
+      "fullProjectionBytes": 13209,
+      "splitProjectionBytes": 7265,
+      "publicBytes": 6178,
+      "privateBytes": 1073
+    },
+    {
+      "type": "who_am_i",
+      "players": 2,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 20170,
+      "splitProjectionBytes": 7889,
+      "publicBytes": 6314,
+      "privateBytes": 1561
+    },
+    {
+      "type": "who_am_i",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 27864,
+      "splitProjectionBytes": 8680,
+      "publicBytes": 6546,
+      "privateBytes": 2120
+    },
+    {
+      "type": "who_am_i",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 27877,
+      "splitProjectionBytes": 8693,
+      "publicBytes": 6546,
+      "privateBytes": 2133
+    },
+    {
+      "type": "who_am_i",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 27877,
+      "splitProjectionBytes": 8693,
+      "publicBytes": 6546,
+      "privateBytes": 2133
+    },
+    {
+      "type": "who_am_i",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 35584,
+      "splitProjectionBytes": 9425,
+      "publicBytes": 6682,
+      "privateBytes": 2729
+    },
+    {
+      "type": "who_am_i",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 61616,
+      "splitProjectionBytes": 11536,
+      "publicBytes": 7282,
+      "privateBytes": 4240
+    },
+    {
+      "type": "who_am_i",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 61629,
+      "splitProjectionBytes": 11549,
+      "publicBytes": 7282,
+      "privateBytes": 4253
+    },
+    {
+      "type": "who_am_i",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 61629,
+      "splitProjectionBytes": 11549,
+      "publicBytes": 7282,
+      "privateBytes": 4253
+    },
+    {
+      "type": "ordering",
+      "players": 2,
+      "stage": "initial",
+      "fullProjectionBytes": 12990,
+      "splitProjectionBytes": 7084,
+      "publicBytes": 6140,
+      "privateBytes": 930
+    },
+    {
+      "type": "ordering",
+      "players": 2,
+      "stage": "first-action",
+      "fullProjectionBytes": 12991,
+      "splitProjectionBytes": 7085,
+      "publicBytes": 6140,
+      "privateBytes": 931
+    },
+    {
+      "type": "ordering",
+      "players": 2,
+      "stage": "with-captain",
+      "fullProjectionBytes": 12991,
+      "splitProjectionBytes": 7085,
+      "publicBytes": 6140,
+      "privateBytes": 931
+    },
+    {
+      "type": "ordering",
+      "players": 2,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 19915,
+      "splitProjectionBytes": 7675,
+      "publicBytes": 6292,
+      "privateBytes": 1369
+    },
+    {
+      "type": "ordering",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 27452,
+      "splitProjectionBytes": 8382,
+      "publicBytes": 6508,
+      "privateBytes": 1860
+    },
+    {
+      "type": "ordering",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 27453,
+      "splitProjectionBytes": 8383,
+      "publicBytes": 6508,
+      "privateBytes": 1861
+    },
+    {
+      "type": "ordering",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 27453,
+      "splitProjectionBytes": 8383,
+      "publicBytes": 6508,
+      "privateBytes": 1861
+    },
+    {
+      "type": "ordering",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 35123,
+      "splitProjectionBytes": 9047,
+      "publicBytes": 6660,
+      "privateBytes": 2373
+    },
+    {
+      "type": "ordering",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 60792,
+      "splitProjectionBytes": 10978,
+      "publicBytes": 7244,
+      "privateBytes": 3720
+    },
+    {
+      "type": "ordering",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 60793,
+      "splitProjectionBytes": 10979,
+      "publicBytes": 7244,
+      "privateBytes": 3721
+    },
+    {
+      "type": "ordering",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 60793,
+      "splitProjectionBytes": 10979,
+      "publicBytes": 7244,
+      "privateBytes": 3721
+    },
+    {
+      "type": "steal",
+      "players": 2,
+      "unsupported": "requires 3 players"
+    },
+    {
+      "type": "steal",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 27556,
+      "splitProjectionBytes": 8111,
+      "publicBytes": 6633,
+      "privateBytes": 1464
+    },
+    {
+      "type": "steal",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 27552,
+      "splitProjectionBytes": 8107,
+      "publicBytes": 6633,
+      "privateBytes": 1460
+    },
+    {
+      "type": "steal",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 27552,
+      "splitProjectionBytes": 8107,
+      "publicBytes": 6633,
+      "privateBytes": 1460
+    },
+    {
+      "type": "steal",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 35308,
+      "splitProjectionBytes": 8828,
+      "publicBytes": 6761,
+      "privateBytes": 2053
+    },
+    {
+      "type": "steal",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 61000,
+      "splitProjectionBytes": 10311,
+      "publicBytes": 7369,
+      "privateBytes": 2928
+    },
+    {
+      "type": "steal",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 60996,
+      "splitProjectionBytes": 10307,
+      "publicBytes": 7369,
+      "privateBytes": 2924
+    },
+    {
+      "type": "steal",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 60996,
+      "splitProjectionBytes": 10307,
+      "publicBytes": 7369,
+      "privateBytes": 2924
+    },
+    {
+      "type": "bidding",
+      "players": 2,
+      "stage": "initial",
+      "fullProjectionBytes": 12824,
+      "splitProjectionBytes": 6877,
+      "publicBytes": 6181,
+      "privateBytes": 682
+    },
+    {
+      "type": "bidding",
+      "players": 2,
+      "stage": "first-action",
+      "fullProjectionBytes": 12821,
+      "splitProjectionBytes": 6874,
+      "publicBytes": 6181,
+      "privateBytes": 679
+    },
+    {
+      "type": "bidding",
+      "players": 2,
+      "stage": "with-captain",
+      "fullProjectionBytes": 12821,
+      "splitProjectionBytes": 6874,
+      "publicBytes": 6181,
+      "privateBytes": 679
+    },
+    {
+      "type": "bidding",
+      "players": 2,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 19726,
+      "splitProjectionBytes": 7557,
+      "publicBytes": 6258,
+      "privateBytes": 1285
+    },
+    {
+      "type": "bidding",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 27120,
+      "splitProjectionBytes": 7927,
+      "publicBytes": 6549,
+      "privateBytes": 1364
+    },
+    {
+      "type": "bidding",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 27117,
+      "splitProjectionBytes": 7924,
+      "publicBytes": 6549,
+      "privateBytes": 1361
+    },
+    {
+      "type": "bidding",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 27117,
+      "splitProjectionBytes": 7924,
+      "publicBytes": 6549,
+      "privateBytes": 1361
+    },
+    {
+      "type": "bidding",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 34768,
+      "splitProjectionBytes": 8833,
+      "publicBytes": 6626,
+      "privateBytes": 2193
+    },
+    {
+      "type": "bidding",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 60128,
+      "splitProjectionBytes": 10027,
+      "publicBytes": 7285,
+      "privateBytes": 2728
+    },
+    {
+      "type": "bidding",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 60125,
+      "splitProjectionBytes": 10024,
+      "publicBytes": 7285,
+      "privateBytes": 2725
+    },
+    {
+      "type": "bidding",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 60125,
+      "splitProjectionBytes": 10024,
+      "publicBytes": 7285,
+      "privateBytes": 2725
+    },
+    {
+      "type": "land_grab",
+      "players": 2,
+      "stage": "initial",
+      "fullProjectionBytes": 13652,
+      "splitProjectionBytes": 7797,
+      "publicBytes": 6091,
+      "privateBytes": 1692
+    },
+    {
+      "type": "land_grab",
+      "players": 2,
+      "stage": "first-action",
+      "fullProjectionBytes": 13741,
+      "splitProjectionBytes": 7886,
+      "publicBytes": 6091,
+      "privateBytes": 1781
+    },
+    {
+      "type": "land_grab",
+      "players": 2,
+      "stage": "with-captain",
+      "fullProjectionBytes": 13741,
+      "splitProjectionBytes": 7886,
+      "publicBytes": 6091,
+      "privateBytes": 1781
+    },
+    {
+      "type": "land_grab",
+      "players": 2,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 20668,
+      "splitProjectionBytes": 8455,
+      "publicBytes": 6280,
+      "privateBytes": 2161
+    },
+    {
+      "type": "land_grab",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 28776,
+      "splitProjectionBytes": 9857,
+      "publicBytes": 6459,
+      "privateBytes": 3384
+    },
+    {
+      "type": "land_grab",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 28865,
+      "splitProjectionBytes": 9946,
+      "publicBytes": 6459,
+      "privateBytes": 3473
+    },
+    {
+      "type": "land_grab",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 28865,
+      "splitProjectionBytes": 9946,
+      "publicBytes": 6459,
+      "privateBytes": 3473
+    },
+    {
+      "type": "land_grab",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 36538,
+      "splitProjectionBytes": 10515,
+      "publicBytes": 6648,
+      "privateBytes": 3853
+    },
+    {
+      "type": "land_grab",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 63440,
+      "splitProjectionBytes": 13977,
+      "publicBytes": 7195,
+      "privateBytes": 6768
+    },
+    {
+      "type": "land_grab",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 63529,
+      "splitProjectionBytes": 14066,
+      "publicBytes": 7195,
+      "privateBytes": 6857
+    },
+    {
+      "type": "land_grab",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 63529,
+      "splitProjectionBytes": 14066,
+      "publicBytes": 7195,
+      "privateBytes": 6857
+    },
+    {
+      "type": "describe_it",
+      "players": 2,
+      "unsupported": "requires 4 players"
+    },
+    {
+      "type": "describe_it",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 28034,
+      "splitProjectionBytes": 8605,
+      "publicBytes": 6629,
+      "privateBytes": 1962
+    },
+    {
+      "type": "describe_it",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 28032,
+      "splitProjectionBytes": 8603,
+      "publicBytes": 6629,
+      "privateBytes": 1960
+    },
+    {
+      "type": "describe_it",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 28032,
+      "splitProjectionBytes": 8603,
+      "publicBytes": 6629,
+      "privateBytes": 1960
+    },
+    {
+      "type": "describe_it",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 35914,
+      "splitProjectionBytes": 9211,
+      "publicBytes": 6818,
+      "privateBytes": 2379
+    },
+    {
+      "type": "describe_it",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 61922,
+      "splitProjectionBytes": 11269,
+      "publicBytes": 7365,
+      "privateBytes": 3890
+    },
+    {
+      "type": "describe_it",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 61918,
+      "splitProjectionBytes": 11265,
+      "publicBytes": 7365,
+      "privateBytes": 3886
+    },
+    {
+      "type": "describe_it",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 61918,
+      "splitProjectionBytes": 11265,
+      "publicBytes": 7365,
+      "privateBytes": 3886
+    },
+    {
+      "type": "odd_one_out",
+      "players": 2,
+      "stage": "initial",
+      "fullProjectionBytes": 13398,
+      "splitProjectionBytes": 7516,
+      "publicBytes": 6116,
+      "privateBytes": 1386
+    },
+    {
+      "type": "odd_one_out",
+      "players": 2,
+      "stage": "first-action",
+      "fullProjectionBytes": 13395,
+      "splitProjectionBytes": 7513,
+      "publicBytes": 6116,
+      "privateBytes": 1383
+    },
+    {
+      "type": "odd_one_out",
+      "players": 2,
+      "stage": "with-captain",
+      "fullProjectionBytes": 13395,
+      "splitProjectionBytes": 7513,
+      "publicBytes": 6116,
+      "privateBytes": 1383
+    },
+    {
+      "type": "odd_one_out",
+      "players": 2,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 20311,
+      "splitProjectionBytes": 8120,
+      "publicBytes": 6269,
+      "privateBytes": 1837
+    },
+    {
+      "type": "odd_one_out",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 28268,
+      "splitProjectionBytes": 9270,
+      "publicBytes": 6484,
+      "privateBytes": 2772
+    },
+    {
+      "type": "odd_one_out",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 28265,
+      "splitProjectionBytes": 9267,
+      "publicBytes": 6484,
+      "privateBytes": 2769
+    },
+    {
+      "type": "odd_one_out",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 28265,
+      "splitProjectionBytes": 9267,
+      "publicBytes": 6484,
+      "privateBytes": 2769
+    },
+    {
+      "type": "odd_one_out",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 35927,
+      "splitProjectionBytes": 9948,
+      "publicBytes": 6637,
+      "privateBytes": 3297
+    },
+    {
+      "type": "odd_one_out",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 62424,
+      "splitProjectionBytes": 12778,
+      "publicBytes": 7220,
+      "privateBytes": 5544
+    },
+    {
+      "type": "odd_one_out",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 62421,
+      "splitProjectionBytes": 12775,
+      "publicBytes": 7220,
+      "privateBytes": 5541
+    },
+    {
+      "type": "odd_one_out",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 62421,
+      "splitProjectionBytes": 12775,
+      "publicBytes": 7220,
+      "privateBytes": 5541
+    },
+    {
+      "type": "emoji_rush",
+      "players": 2,
+      "stage": "initial",
+      "fullProjectionBytes": 12964,
+      "splitProjectionBytes": 7039,
+      "publicBytes": 6159,
+      "privateBytes": 866
+    },
+    {
+      "type": "emoji_rush",
+      "players": 2,
+      "stage": "first-action",
+      "fullProjectionBytes": 12964,
+      "splitProjectionBytes": 7057,
+      "publicBytes": 6141,
+      "privateBytes": 902
+    },
+    {
+      "type": "emoji_rush",
+      "players": 2,
+      "stage": "with-captain",
+      "fullProjectionBytes": 12964,
+      "splitProjectionBytes": 7057,
+      "publicBytes": 6141,
+      "privateBytes": 902
+    },
+    {
+      "type": "emoji_rush",
+      "players": 2,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 19842,
+      "splitProjectionBytes": 7727,
+      "publicBytes": 6231,
+      "privateBytes": 1482
+    },
+    {
+      "type": "emoji_rush",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 27672,
+      "splitProjectionBytes": 8341,
+      "publicBytes": 6595,
+      "privateBytes": 1732
+    },
+    {
+      "type": "emoji_rush",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 27672,
+      "splitProjectionBytes": 8395,
+      "publicBytes": 6577,
+      "privateBytes": 1804
+    },
+    {
+      "type": "emoji_rush",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 27672,
+      "splitProjectionBytes": 8395,
+      "publicBytes": 6577,
+      "privateBytes": 1804
+    },
+    {
+      "type": "emoji_rush",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 35296,
+      "splitProjectionBytes": 9469,
+      "publicBytes": 6599,
+      "privateBytes": 2856
+    },
+    {
+      "type": "emoji_rush",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 62320,
+      "splitProjectionBytes": 10945,
+      "publicBytes": 7467,
+      "privateBytes": 3464
+    },
+    {
+      "type": "emoji_rush",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 62320,
+      "splitProjectionBytes": 11071,
+      "publicBytes": 7449,
+      "privateBytes": 3608
+    },
+    {
+      "type": "emoji_rush",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 62320,
+      "splitProjectionBytes": 11071,
+      "publicBytes": 7449,
+      "privateBytes": 3608
+    },
+    {
+      "type": "ladder",
+      "players": 2,
+      "stage": "initial",
+      "fullProjectionBytes": 13172,
+      "splitProjectionBytes": 7208,
+      "publicBytes": 6198,
+      "privateBytes": 996
+    },
+    {
+      "type": "ladder",
+      "players": 2,
+      "stage": "first-action",
+      "fullProjectionBytes": 13172,
+      "splitProjectionBytes": 7208,
+      "publicBytes": 6198,
+      "privateBytes": 996
+    },
+    {
+      "type": "ladder",
+      "players": 2,
+      "stage": "with-captain",
+      "fullProjectionBytes": 13172,
+      "splitProjectionBytes": 7208,
+      "publicBytes": 6198,
+      "privateBytes": 996
+    },
+    {
+      "type": "ladder",
+      "players": 2,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 20141,
+      "splitProjectionBytes": 7844,
+      "publicBytes": 6322,
+      "privateBytes": 1508
+    },
+    {
+      "type": "ladder",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 27816,
+      "splitProjectionBytes": 8572,
+      "publicBytes": 6566,
+      "privateBytes": 1992
+    },
+    {
+      "type": "ladder",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 27816,
+      "splitProjectionBytes": 8572,
+      "publicBytes": 6566,
+      "privateBytes": 1992
+    },
+    {
+      "type": "ladder",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 27816,
+      "splitProjectionBytes": 8572,
+      "publicBytes": 6566,
+      "privateBytes": 1992
+    },
+    {
+      "type": "ladder",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 35531,
+      "splitProjectionBytes": 9340,
+      "publicBytes": 6690,
+      "privateBytes": 2636
+    },
+    {
+      "type": "ladder",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 61520,
+      "splitProjectionBytes": 11300,
+      "publicBytes": 7302,
+      "privateBytes": 3984
+    },
+    {
+      "type": "ladder",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 61520,
+      "splitProjectionBytes": 11300,
+      "publicBytes": 7302,
+      "privateBytes": 3984
+    },
+    {
+      "type": "ladder",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 61520,
+      "splitProjectionBytes": 11300,
+      "publicBytes": 7302,
+      "privateBytes": 3984
+    },
+    {
+      "type": "higher_lower",
+      "players": 2,
+      "stage": "initial",
+      "fullProjectionBytes": 13090,
+      "splitProjectionBytes": 7172,
+      "publicBytes": 6152,
+      "privateBytes": 1006
+    },
+    {
+      "type": "higher_lower",
+      "players": 2,
+      "stage": "first-action",
+      "fullProjectionBytes": 13090,
+      "splitProjectionBytes": 7172,
+      "publicBytes": 6152,
+      "privateBytes": 1006
+    },
+    {
+      "type": "higher_lower",
+      "players": 2,
+      "stage": "with-captain",
+      "fullProjectionBytes": 13090,
+      "splitProjectionBytes": 7172,
+      "publicBytes": 6152,
+      "privateBytes": 1006
+    },
+    {
+      "type": "higher_lower",
+      "players": 2,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 19973,
+      "splitProjectionBytes": 7848,
+      "publicBytes": 6236,
+      "privateBytes": 1598
+    },
+    {
+      "type": "higher_lower",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 27948,
+      "splitProjectionBytes": 8620,
+      "publicBytes": 6594,
+      "privateBytes": 2012
+    },
+    {
+      "type": "higher_lower",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 27948,
+      "splitProjectionBytes": 8620,
+      "publicBytes": 6594,
+      "privateBytes": 2012
+    },
+    {
+      "type": "higher_lower",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 27948,
+      "splitProjectionBytes": 8620,
+      "publicBytes": 6594,
+      "privateBytes": 2012
+    },
+    {
+      "type": "higher_lower",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 35577,
+      "splitProjectionBytes": 9730,
+      "publicBytes": 6604,
+      "privateBytes": 3112
+    },
+    {
+      "type": "higher_lower",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 62968,
+      "splitProjectionBytes": 11516,
+      "publicBytes": 7478,
+      "privateBytes": 4024
+    },
+    {
+      "type": "higher_lower",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 62968,
+      "splitProjectionBytes": 11516,
+      "publicBytes": 7478,
+      "privateBytes": 4024
+    },
+    {
+      "type": "higher_lower",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 62968,
+      "splitProjectionBytes": 11516,
+      "publicBytes": 7478,
+      "privateBytes": 4024
+    },
+    {
+      "type": "relay",
+      "players": 2,
+      "unsupported": "requires 4 players"
+    },
+    {
+      "type": "relay",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 28490,
+      "splitProjectionBytes": 9079,
+      "publicBytes": 6623,
+      "privateBytes": 2442
+    },
+    {
+      "type": "relay",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 28490,
+      "splitProjectionBytes": 9079,
+      "publicBytes": 6623,
+      "privateBytes": 2442
+    },
+    {
+      "type": "relay",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 28490,
+      "splitProjectionBytes": 9079,
+      "publicBytes": 6623,
+      "privateBytes": 2442
+    },
+    {
+      "type": "relay",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 36327,
+      "splitProjectionBytes": 9648,
+      "publicBytes": 6812,
+      "privateBytes": 2822
+    },
+    {
+      "type": "relay",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 62870,
+      "splitProjectionBytes": 12259,
+      "publicBytes": 7359,
+      "privateBytes": 4886
+    },
+    {
+      "type": "relay",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 62870,
+      "splitProjectionBytes": 12259,
+      "publicBytes": 7359,
+      "privateBytes": 4886
+    },
+    {
+      "type": "relay",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 62870,
+      "splitProjectionBytes": 12259,
+      "publicBytes": 7359,
+      "privateBytes": 4886
+    },
+    {
+      "type": "word_race",
+      "players": 2,
+      "unsupported": "requires 3 players"
+    },
+    {
+      "type": "word_race",
+      "players": 4,
+      "stage": "initial",
+      "fullProjectionBytes": 27648,
+      "splitProjectionBytes": 8122,
+      "publicBytes": 6660,
+      "privateBytes": 1448
+    },
+    {
+      "type": "word_race",
+      "players": 4,
+      "stage": "first-action",
+      "fullProjectionBytes": 27656,
+      "splitProjectionBytes": 8130,
+      "publicBytes": 6660,
+      "privateBytes": 1456
+    },
+    {
+      "type": "word_race",
+      "players": 4,
+      "stage": "with-captain",
+      "fullProjectionBytes": 27656,
+      "splitProjectionBytes": 8130,
+      "publicBytes": 6660,
+      "privateBytes": 1456
+    },
+    {
+      "type": "word_race",
+      "players": 4,
+      "stage": "with-spectator",
+      "fullProjectionBytes": 35387,
+      "splitProjectionBytes": 9132,
+      "publicBytes": 6706,
+      "privateBytes": 2412
+    },
+    {
+      "type": "word_race",
+      "players": 8,
+      "stage": "initial",
+      "fullProjectionBytes": 61184,
+      "splitProjectionBytes": 10306,
+      "publicBytes": 7396,
+      "privateBytes": 2896
+    },
+    {
+      "type": "word_race",
+      "players": 8,
+      "stage": "first-action",
+      "fullProjectionBytes": 61192,
+      "splitProjectionBytes": 10314,
+      "publicBytes": 7396,
+      "privateBytes": 2904
+    },
+    {
+      "type": "word_race",
+      "players": 8,
+      "stage": "with-captain",
+      "fullProjectionBytes": 61192,
+      "splitProjectionBytes": 10314,
+      "publicBytes": 7396,
+      "privateBytes": 2904
+    }
+  ]
+}

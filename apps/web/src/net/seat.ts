@@ -1,5 +1,5 @@
 import { nanoid } from 'nanoid';
-import { clearSession } from './client.js';
+import { clearSession } from './session.js';
 
 export const TAB_SEAT_STORAGE_KEY = 'party-game-tab-seat-id';
 export const TAB_SEATS_CHANNEL_NAME = 'party-game-tab-seats';

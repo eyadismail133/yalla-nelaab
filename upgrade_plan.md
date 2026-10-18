@@ -2,6 +2,8 @@
 
 Updated 18 October 2026. This is the active roadmap. The October release is deployed at [Yalla Nelaab](https://yalla-nelaab-20261016.web.app/). Implementation and measured results are in [the phase record](docs/implementation/upgrade-progress.md) and [release verification](docs/verification/release-2026-10-18.md).
 
+Local follow-up candidate: Level 2 automation/browser coverage and Level 3 bundle/startup improvements are implemented on `codex/release-network-performance`, with 697 unit/integration, 82 emulator and 6 production-browser scenarios passing. Initial release JavaScript is 175,625 gzip bytes (11.8% below the deployed baseline), protected by a stricter 185,000-byte local/CI budget. Two refresh/reconnect defects were fixed. This candidate is **not deployed**; physical phone acceptance and production-network comparisons remain open. See [candidate evidence and review](docs/verification/reliability-performance-2026-10-18.md).
+
 ## Release baseline — Level 0 shipped
 
 | Original phase | Released behavior | Scope/limit |
@@ -41,6 +43,8 @@ Exit: physical Android and iPhone evidence exists for lifecycle, input, sharing 
 
 ## Level 2 — Repeatable release and network coverage
 
+Status: implemented and locally verified in the follow-up candidate. GitHub execution, required-check settings and explicit post-publication smoke remain operational release steps.
+
 Goal: catch deployment and recovery regressions before publication.
 
 1. Add repository CI for unit/type/build/bundle/audit gates and a Java-enabled Auth/RTDB emulator job.
@@ -51,6 +55,8 @@ Goal: catch deployment and recovery regressions before publication.
 Exit: failures block release, recovery cases reproduce automatically, and an explicitly invoked smoke workflow can verify a newly deployed test room.
 
 ## Level 3 — Measured performance and bandwidth
+
+Status: bundle/startup work and synthetic projection profiling are locally verified. An actual all-type emulator action-traffic baseline is also recorded. Physical-device timing and production-network comparisons remain open; this level is not fully accepted.
 
 Goal: improve real mobile loading and action response without changing billing/authority.
 

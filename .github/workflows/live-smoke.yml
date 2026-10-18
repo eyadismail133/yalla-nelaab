@@ -1,0 +1,24 @@
+name: Explicit live smoke
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.16.0'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build:firebase
+      - name: Record exact deployed entry and script hashes
+        run: node scripts/site-identity.mjs https://yalla-nelaab-20261016.web.app --match-local
+      - name: Create and close a two-player test room
+        run: npm run test:smoke
+        env:
+          SMOKE_BASE_URL: https://yalla-nelaab-20261016.web.app

@@ -16,6 +16,6 @@ const chunks = await Promise.all(Object.entries(manifest).filter(([, chunk]) => 
 }));
 const initialBytes = chunks.filter((chunk) => chunk.initial).reduce((sum, chunk) => sum + chunk.bytes, 0);
 const initialGzip = chunks.filter((chunk) => chunk.initial).reduce((sum, chunk) => sum + chunk.gzip, 0);
-const report = { initialBytes, initialGzip, initialGzipBudget: 230_000, chunkBudget: 500_000, chunks };
+const report = { initialBytes, initialGzip, initialGzipBudget: 185_000, chunkBudget: 500_000, chunks };
 process.stdout.write(JSON.stringify(report, null, 2) + '\n');
 if (initialGzip > report.initialGzipBudget || chunks.some((chunk) => chunk.bytes > report.chunkBudget)) process.exitCode = 1;

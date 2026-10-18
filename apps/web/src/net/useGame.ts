@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { RoomView } from '@game/shared';
-import { clearSession, loadSession, saveSession } from './client.js';
+import { clearSession, loadSession, saveSession } from './session.js';
 import { isPermanentSessionError } from './session-error.js';
-import { createGameTransport, type GameTransport } from './transport.js';
+import { createGameTransport } from '#game-transport';
+import type { GameTransport } from './transport-config.js';
 import { useScreenWakeLock } from './wake-lock.js';
 
 export interface GameState {

@@ -1,48 +1,53 @@
-import { defineConfig } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwind from '@tailwindcss/vite';
 import { fileURLToPath } from 'node:url';
 
 const GAME_SERVER = process.env.GAME_SERVER_URL ?? 'http://localhost:3001';
 
-export default defineConfig({
-  plugins: [react(), tailwind()],
-  build: {
-    manifest: true,
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          const path = id.replaceAll('\\', '/');
-          if (path.includes('/node_modules/@firebase/auth/')) return 'firebase-auth';
-          if (path.includes('/node_modules/@firebase/database/')) return 'firebase-database';
-          if (/\/node_modules\/(react|react-dom|scheduler)\//.test(path)) return 'react';
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, fileURLToPath(new URL('.', import.meta.url)), 'VITE_');
+  const firebase = (process.env.VITE_GAME_TRANSPORT ?? env.VITE_GAME_TRANSPORT ?? '').toLowerCase() === 'firebase';
+  return {
+    plugins: [react(), tailwind()],
+    build: {
+      manifest: true,
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            const path = id.replaceAll('\\', '/');
+            if (path.includes('/node_modules/@firebase/auth/')) return 'firebase-auth';
+            if (path.includes('/node_modules/@firebase/database/')) return 'firebase-database';
+            if (/\/node_modules\/(react|react-dom|scheduler)\//.test(path)) return 'react';
+          },
         },
       },
     },
-  },
-  resolve: {
-    alias: {
-      '@game/shared': fileURLToPath(new URL('../../packages/shared/src/index.ts', import.meta.url)),
-      '@game/rounds': fileURLToPath(new URL('../../packages/rounds/src/index.ts', import.meta.url)),
-      '@game/engine': fileURLToPath(new URL('../../packages/engine/src/index.ts', import.meta.url)),
+    resolve: {
+      alias: {
+        '#game-transport': fileURLToPath(new URL(`./src/net/${firebase ? 'firebase' : 'socket'}-entry.ts`, import.meta.url)),
+        '@game/shared': fileURLToPath(new URL('../../packages/shared/src/index.ts', import.meta.url)),
+        '@game/rounds': fileURLToPath(new URL('../../packages/rounds/src/index.ts', import.meta.url)),
+        '@game/engine': fileURLToPath(new URL('../../packages/engine/src/index.ts', import.meta.url)),
+      },
     },
-  },
-  server: {
-    port: 5173,
-    // `--host` plus this makes the dev server reachable from phones on the same wifi, which is
-    // the only way to find out whether the pacing actually works.
-    strictPort: true,
-    /**
-     * Everything the client needs arrives on one origin, in dev exactly as in production.
-     *
-     * Without this the page has to guess where the game server lives, and every guess is
-     * wrong somewhere: `localhost` breaks on phones, `hostname:3001` breaks behind a tunnel
-     * because only 5173 is exposed. Proxying means a tunnel to the web port carries the
-     * websocket too, and the client never needs configuring.
-     */
-    proxy: {
-      '/socket.io': { target: GAME_SERVER, ws: true, changeOrigin: true },
-      '/health': { target: GAME_SERVER, changeOrigin: true },
+    server: {
+      port: 5173,
+      // `--host` plus this makes the dev server reachable from phones on the same wifi, which is
+      // the only way to find out whether the pacing actually works.
+      strictPort: true,
+      /**
+       * Everything the client needs arrives on one origin, in dev exactly as in production.
+       *
+       * Without this the page has to guess where the game server lives, and every guess is
+       * wrong somewhere: `localhost` breaks on phones, `hostname:3001` breaks behind a tunnel
+       * because only 5173 is exposed. Proxying means a tunnel to the web port carries the
+       * websocket too, and the client never needs configuring.
+       */
+      proxy: {
+        '/socket.io': { target: GAME_SERVER, ws: true, changeOrigin: true },
+        '/health': { target: GAME_SERVER, changeOrigin: true },
+      },
     },
-  },
+  };
 });

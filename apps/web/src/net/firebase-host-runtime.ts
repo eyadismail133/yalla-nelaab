@@ -30,9 +30,10 @@ import { HostDedupTracker, parseCommandId } from './sequence.js';
 import { prepareViewPublication } from './view-publication.js';
 import { splitViewUpdates } from './split-view.js';
 import { questionSample } from './question-telemetry.js';
+import { LEASE_TTL_MS } from './firebase-lease.js';
 
 export const SIX_HOURS_MS = 6 * 60 * 60 * 1_000;
-export const LEASE_TTL_MS = 12_000;
+export { LEASE_TTL_MS };
 export const HEARTBEAT_INTERVAL_MS = 3_500;
 
 export interface HostRuntimeOptions {

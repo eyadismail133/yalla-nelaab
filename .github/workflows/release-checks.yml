@@ -1,0 +1,55 @@
+name: Release checks
+on:
+  pull_request:
+  push:
+    branches: [main, master, launch/free-online, 'codex/**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.16.0'
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build:firebase
+      - run: npm run bundle:check
+      - run: npm run bundle:firebase
+      - run: npm audit
+      - run: npm run build:web
+  emulator-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.16.0'
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - run: npm ci
+      # Keep the standalone CLI outside the shipped application's dependency tree.
+      - run: npm install --global firebase-tools@15.30.0
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/firebase/emulators
+          key: firebase-emulators-15.30.0-java21
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:emulator
+      - run: npm run test:browser

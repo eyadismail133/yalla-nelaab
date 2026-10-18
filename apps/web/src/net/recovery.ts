@@ -1,4 +1,4 @@
-import type { Session } from './client.js';
+import type { Session } from './session.js';
 
 const PREFIX = 'party-game-recovery:';
 export const RECOVERY_TTL_MS = 15 * 60 * 1_000;

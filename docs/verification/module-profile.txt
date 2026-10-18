@@ -1,0 +1,12 @@
+Firebase production graph contains no Socket.IO client modules.
+{
+  "metric": "Rollup rendered module lengths before final chunk minification; initial static import closure only, not wire/gzip bytes.",
+  "groups": {
+    "other-vendors": 398014,
+    "web-app": 175461,
+    "shared-and-schemas": 9419,
+    "rounds-and-catalog-reducers": 102820,
+    "firebase-database": 363504,
+    "firebase-auth": 251625
+  }
+}

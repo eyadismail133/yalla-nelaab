@@ -14,6 +14,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
+      '#game-transport': r('./apps/web/src/net/transport.ts'),
       '@game/shared': r('./packages/shared/src/index.ts'),
       '@game/rounds': r('./packages/rounds/src/index.ts'),
       '@game/engine': r('./packages/engine/src/index.ts'),

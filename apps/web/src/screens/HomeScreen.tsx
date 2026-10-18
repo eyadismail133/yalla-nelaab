@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { GameDiscovery } from '../experience/GameDiscovery.js';
 import { ar } from '../i18n/ar.js';
-import { saveSession } from '../net/client.js';
+import { saveSession } from '../net/session.js';
 import { listRecoveries, restoreRecovery } from '../net/recovery.js';
 import type { GameTransport } from '../net/transport.js';
 import { isValidRoomCode, normalizeRoomCodeInput } from '../ui/InvitationPanel.js';

@@ -12,3 +12,5 @@ coverage/
 firebase-debug*.log
 database-debug*.log
 ui-debug*.log
+test-results/
+playwright-report/

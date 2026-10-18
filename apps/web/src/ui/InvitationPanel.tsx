@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import QRCode from 'qrcode';
 import { ar } from '../i18n/ar.js';
 import { Button, Card } from './primitives.js';
 
@@ -36,6 +35,7 @@ export function buildWhatsAppInviteHref(code: string, inviteUrl: string): string
 }
 
 export async function generateInviteQrDataUrl(inviteUrl: string): Promise<string> {
+  const { default: QRCode } = await import('qrcode');
   return QRCode.toDataURL(inviteUrl, {
     width: 220,
     margin: 1,
