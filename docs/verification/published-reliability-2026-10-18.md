@@ -22,6 +22,10 @@ The latter two used the existing Playwright configuration with a temporary test 
 
 These tests establish production lobby/recovery behavior. They do not establish a full live match across every round, concurrent old/new full releases, physical mobile lifecycle behavior, or improved production ping. Small local acknowledgement samples remain inconclusive.
 
+## Follow-up
+
+The repository was subsequently consolidated into `main`, rebuilt and deployed from `fe4aeb8`; both CI jobs and live smoke passed. The user then skipped physical-phone acceptance and authorized the second/third steps below. See [production measurements and integration outcome](production-performance-2026-10-18.md). The following list preserves the original next-step context.
+
 ## Next steps
 
 1. Run [physical Android Chrome and iPhone Safari beta acceptance](../BETA-PLAYTEST.md): Wi-Fi/mobile data, backgrounding/locking, host recovery, Arabic input, QR/sharing, 2/4/8 players and teams. Record devices, browser versions and first failures.

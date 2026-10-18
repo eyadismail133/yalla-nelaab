@@ -30,7 +30,9 @@ Validation: 697 unit/integration tests, 81 full-suite emulator tests plus one ca
 - Keep secrets and seat credentials out of screenshots, reports and telemetry. Do not remove questions automatically.
 - Keep the manual beta checklist honest: responsive desktop checks are not proof of Android/iOS lifecycle behavior.
 
-## Level 1 — Physical mobile acceptance (next)
+## Level 1 — Physical mobile acceptance (skipped by user; not accepted)
+
+Status: skipped by user on 18 October 2026 to proceed with production measurements and release integration. No physical-device acceptance is claimed.
 
 Goal: establish actual Android Chrome and iPhone Safari reliability.
 
@@ -43,7 +45,7 @@ Exit: physical Android and iPhone evidence exists for lifecycle, input, sharing 
 
 ## Level 2 — Repeatable release and network coverage
 
-Status: implemented, verified in GitHub CI and deployed; exact-artifact verification and live smoke/recovery passed. Required-check enforcement remains open for the consolidated `main` branch.
+Status: implemented, verified in GitHub CI and deployed; exact-artifact verification and live smoke/recovery passed. The consolidated `main` branch is the sole/default branch and both CI jobs passed. Required-check enforcement is unavailable on the current private repository plan: GitHub returned HTTP 403 requiring Pro or public visibility. No upgrade or visibility change was made.
 
 Goal: catch deployment and recovery regressions before publication.
 
@@ -56,7 +58,7 @@ Exit: failures block release, recovery cases reproduce automatically, and an exp
 
 ## Level 3 — Measured performance and bandwidth
 
-Status: bundle/startup work and synthetic projection profiling are locally verified. An actual all-type emulator action-traffic baseline is also recorded. Physical-device timing and production-network comparisons remain open; this level is not fully accepted.
+Status: bundle/startup work, synthetic profiling and all-type emulator traffic are recorded. The current live release now has a desktop production baseline: five cold/warm pairs, twenty lobby acknowledgements and five MCQ answer propagations. [Production results and release integration](docs/verification/production-performance-2026-10-18.md). Physical testing is skipped; matched before/after production timing, cross-network devices and production load/billing comparisons remain open. This level is not fully accepted.
 
 Goal: improve real mobile loading and action response without changing billing/authority.
 

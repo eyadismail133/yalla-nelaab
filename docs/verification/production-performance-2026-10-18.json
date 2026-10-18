@@ -1,0 +1,294 @@
+{
+  "checkedAt": "2026-10-18T14:35:52.259Z",
+  "site": "https://yalla-nelaab-20261016.web.app",
+  "browser": "156.0.8078.4",
+  "profile": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "startupHttpLatencyMs": 150,
+    "startupDownloadBitsPerSecond": 1600000,
+    "startupUploadBitsPerSecond": 750000,
+    "startupCpuSlowdown": 4,
+    "gameplay": "Actual desktop host and guest on the same machine/network, no synthetic frame delay or CPU throttling"
+  },
+  "startup": [
+    {
+      "run": 0,
+      "cache": "cold",
+      "readyMs": 7445.781800000001,
+      "domContentLoadedMs": 4101.79999999702,
+      "firstContentfulPaintMs": 4860,
+      "scriptEncodedBytes": 152261,
+      "scriptTransferBytes": 153461
+    },
+    {
+      "run": 0,
+      "cache": "warm",
+      "readyMs": 1428.9148999999989,
+      "domContentLoadedMs": 284.40000000596046,
+      "firstContentfulPaintMs": 484,
+      "scriptEncodedBytes": 152261,
+      "scriptTransferBytes": 0
+    },
+    {
+      "run": 1,
+      "cache": "cold",
+      "readyMs": 4238.296700000001,
+      "domContentLoadedMs": 1441.7999999970198,
+      "firstContentfulPaintMs": 2172,
+      "scriptEncodedBytes": 152261,
+      "scriptTransferBytes": 153461
+    },
+    {
+      "run": 1,
+      "cache": "warm",
+      "readyMs": 1508.3171999999995,
+      "domContentLoadedMs": 270,
+      "firstContentfulPaintMs": 480,
+      "scriptEncodedBytes": 152261,
+      "scriptTransferBytes": 0
+    },
+    {
+      "run": 2,
+      "cache": "cold",
+      "readyMs": 4470.387000000001,
+      "domContentLoadedMs": 1395,
+      "firstContentfulPaintMs": 2168,
+      "scriptEncodedBytes": 152261,
+      "scriptTransferBytes": 153461
+    },
+    {
+      "run": 2,
+      "cache": "warm",
+      "readyMs": 1551.7100999999966,
+      "domContentLoadedMs": 289.20000000298023,
+      "firstContentfulPaintMs": 484,
+      "scriptEncodedBytes": 152261,
+      "scriptTransferBytes": 0
+    },
+    {
+      "run": 3,
+      "cache": "cold",
+      "readyMs": 4359.443199999998,
+      "domContentLoadedMs": 1637.2999999970198,
+      "firstContentfulPaintMs": 2236,
+      "scriptEncodedBytes": 152261,
+      "scriptTransferBytes": 153461
+    },
+    {
+      "run": 3,
+      "cache": "warm",
+      "readyMs": 1432.7458000000006,
+      "domContentLoadedMs": 254.90000000596046,
+      "firstContentfulPaintMs": 400,
+      "scriptEncodedBytes": 152261,
+      "scriptTransferBytes": 0
+    },
+    {
+      "run": 4,
+      "cache": "cold",
+      "readyMs": 4663.0733,
+      "domContentLoadedMs": 1372.5999999940395,
+      "firstContentfulPaintMs": 2360,
+      "scriptEncodedBytes": 152261,
+      "scriptTransferBytes": 153461
+    },
+    {
+      "run": 4,
+      "cache": "warm",
+      "readyMs": 1403.2087000000029,
+      "domContentLoadedMs": 255.6000000089407,
+      "firstContentfulPaintMs": 452,
+      "scriptEncodedBytes": 152261,
+      "scriptTransferBytes": 0
+    }
+  ],
+  "readiness": [
+    {
+      "run": 0,
+      "ready": true,
+      "acknowledgedUiMs": 312.883799999996,
+      "hostObservedMs": 335.65729999999894
+    },
+    {
+      "run": 1,
+      "ready": false,
+      "acknowledgedUiMs": 344.5097999999998,
+      "hostObservedMs": 361.7646999999997
+    },
+    {
+      "run": 2,
+      "ready": true,
+      "acknowledgedUiMs": 350.8000000000029,
+      "hostObservedMs": 366.5436000000045
+    },
+    {
+      "run": 3,
+      "ready": false,
+      "acknowledgedUiMs": 392.3828999999969,
+      "hostObservedMs": 398.30659999999625
+    },
+    {
+      "run": 4,
+      "ready": true,
+      "acknowledgedUiMs": 269.23369999999704,
+      "hostObservedMs": 274.80509999999776
+    },
+    {
+      "run": 5,
+      "ready": false,
+      "acknowledgedUiMs": 285.5077999999994,
+      "hostObservedMs": 303.3070000000007
+    },
+    {
+      "run": 6,
+      "ready": true,
+      "acknowledgedUiMs": 262.9120000000039,
+      "hostObservedMs": 273.18789999999717
+    },
+    {
+      "run": 7,
+      "ready": false,
+      "acknowledgedUiMs": 272.0922999999966,
+      "hostObservedMs": 295.9351999999999
+    },
+    {
+      "run": 8,
+      "ready": true,
+      "acknowledgedUiMs": 253.42969999999332,
+      "hostObservedMs": 256.74789999999484
+    },
+    {
+      "run": 9,
+      "ready": false,
+      "acknowledgedUiMs": 266.34999999999854,
+      "hostObservedMs": 278.5368000000017
+    },
+    {
+      "run": 10,
+      "ready": true,
+      "acknowledgedUiMs": 300.512999999999,
+      "hostObservedMs": 306.67109999999957
+    },
+    {
+      "run": 11,
+      "ready": false,
+      "acknowledgedUiMs": 361.7662000000055,
+      "hostObservedMs": 365.2685000000056
+    },
+    {
+      "run": 12,
+      "ready": true,
+      "acknowledgedUiMs": 258.34210000000166,
+      "hostObservedMs": 262.337099999997
+    },
+    {
+      "run": 13,
+      "ready": false,
+      "acknowledgedUiMs": 251.29619999999704,
+      "hostObservedMs": 254.53300000000309
+    },
+    {
+      "run": 14,
+      "ready": true,
+      "acknowledgedUiMs": 264.7183999999979,
+      "hostObservedMs": 267.9655999999959
+    },
+    {
+      "run": 15,
+      "ready": false,
+      "acknowledgedUiMs": 233.77780000000348,
+      "hostObservedMs": 248.00630000000092
+    },
+    {
+      "run": 16,
+      "ready": true,
+      "acknowledgedUiMs": 262.29469999999856,
+      "hostObservedMs": 266.0910999999978
+    },
+    {
+      "run": 17,
+      "ready": false,
+      "acknowledgedUiMs": 256.0213999999978,
+      "hostObservedMs": 259.34879999999976
+    },
+    {
+      "run": 18,
+      "ready": true,
+      "acknowledgedUiMs": 237.28710000000137,
+      "hostObservedMs": 240.45420000000013
+    },
+    {
+      "run": 19,
+      "ready": false,
+      "acknowledgedUiMs": 268.2592999999979,
+      "hostObservedMs": 278.96949999999924
+    }
+  ],
+  "answers": [
+    {
+      "round": 1,
+      "hostObservedMs": 270.9962999999989,
+      "guestConfirmedMs": 274.41989999999896,
+      "feedback": {
+        "firstFrameMs": 12.700000002980232,
+        "disabled": true
+      }
+    },
+    {
+      "round": 2,
+      "hostObservedMs": 245.22489999999743,
+      "guestConfirmedMs": 248.23279999999795,
+      "feedback": {
+        "firstFrameMs": 12.200000002980232,
+        "disabled": true
+      }
+    },
+    {
+      "round": 3,
+      "hostObservedMs": 240.7970000000023,
+      "guestConfirmedMs": 253.99499999999898,
+      "feedback": {
+        "firstFrameMs": 15.299999997019768,
+        "disabled": true
+      }
+    },
+    {
+      "round": 4,
+      "hostObservedMs": 246.90950000000157,
+      "guestConfirmedMs": 249.52810000000318,
+      "feedback": {
+        "firstFrameMs": 13,
+        "disabled": true
+      }
+    },
+    {
+      "round": 5,
+      "hostObservedMs": 254.78350000000137,
+      "guestConfirmedMs": 257.67999999999665,
+      "feedback": {
+        "firstFrameMs": 11.300000011920929,
+        "disabled": true
+      }
+    }
+  ],
+  "restBadge": [
+    216,
+    227,
+    254,
+    null
+  ],
+  "roomsLeft": true,
+  "probeNote": "Startup and 20 readiness samples retained from the first run; answer probe rerun after narrowing the sending-status selector. The first probe closed browser contexts after a harness assertion failure; that temporary room was not explicitly left and remains subject to normal room expiry.",
+  "commit": "fe4aeb8ef421d0e2392bf5a541f0ee29265a73d3",
+  "completedAt": "2026-10-18T14:39:30.374Z",
+  "metricNotes": {
+    "startup": "Navigation start through enabled create-room UI; same-context warm navigation. First cold run includes connection setup. Resource encodedBodySize can include cached decoded entries; use transferSize for network/cache comparison. Profile adds HTTP latency to the existing real route; it does not establish the physical location of the runner.",
+    "acknowledgement": "Readiness: click call through acknowledged enabled button and host ready count. Answers: click call through host 1/2 submitted count, guest 1/2 count, then absence of the sending-action indicator. Includes Playwright/browser scheduling; no raw transport-only RTT claim.",
+    "feedback": "Click event through next animation-frame callback with selected answer disabled; not a measured screen-paint or physical touch-to-display latency.",
+    "restBadge": "Independent authenticated database REST RTT displayed by the game, sampled opportunistically. Null means not yet available. These are not gameplay acknowledgements.",
+    "coverage": "Five cold/warm pairs, twenty alternating lobby readiness commands, five guest MCQ answers with host submitting separately; one desktop/network, two-player room. No physical phones, 4/8-player production load, every-round production benchmark, old-release production timing, or billing-volume measurement."
+  }
+}

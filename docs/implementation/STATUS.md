@@ -6,7 +6,8 @@
 - Fresh local gates: 697 unit/integration tests, 82 real-rules emulator tests, 6 browser scenarios, types, Firebase/Socket.IO builds, 185 KB initial gzip budget, Firebase module graph and zero known npm vulnerabilities.
 - Initial Firebase JavaScript: 175,625 gzip bytes; emulator-profile median cold startup 3,456 → 3,152 ms. Small-sample acknowledgement timing is inconclusive; no production-ping reduction is claimed.
 - Application commit `5ee5475` is pushed and deployed. Both GitHub CI jobs passed; all 27 manifest assets plus HTML (28 files total) matched the local release, and three live browser scenarios passed. [Publication evidence](../verification/published-reliability-2026-10-18.md).
-- Physical Android/iPhone acceptance, production-network comparisons and GitHub required-check configuration remain open; required-check enforcement has not been configured. All-type emulator action traffic is recorded. [Local measurements and APPROVED review](../verification/reliability-performance-2026-10-18.md).
+- Physical Android/iPhone acceptance is skipped by user, not passed. The desktop production baseline records median cold/warm readiness of 4,470/1,433 ms, lobby acknowledgement 267 ms, and MCQ guest confirmation 254 ms. [Production results](../verification/production-performance-2026-10-18.md). Cross-network and matched before/after production comparisons remain open.
+- Both CI jobs passed for `main` commit `fe4aeb8`. GitHub required checks are blocked on this private repository by its current plan (HTTP 403: Pro or public visibility required). No paid upgrade or visibility change was made. All-type emulator action traffic remains recorded in the [local measurement record](../verification/reliability-performance-2026-10-18.md).
 
 ## Previous deployed release — Level 0
 
