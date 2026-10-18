@@ -2,7 +2,7 @@
 
 Updated 18 October 2026. This is the active roadmap. The October release is deployed at [Yalla Nelaab](https://yalla-nelaab-20261016.web.app/). Implementation and measured results are in [the phase record](docs/implementation/upgrade-progress.md) and [release verification](docs/verification/release-2026-10-18.md).
 
-Local follow-up candidate: Level 2 automation/browser coverage and Level 3 bundle/startup improvements are implemented on `codex/release-network-performance`, with 697 unit/integration, 82 emulator and 6 production-browser scenarios passing. Initial release JavaScript is 175,625 gzip bytes (11.8% below the deployed baseline), protected by a stricter 185,000-byte local/CI budget. Two refresh/reconnect defects were fixed. This candidate is **not deployed**; physical phone acceptance and production-network comparisons remain open. See [candidate evidence and review](docs/verification/reliability-performance-2026-10-18.md).
+Published follow-up: Level 2 automation/browser coverage and Level 3 bundle/startup improvements are deployed from application commit `5ee5475` on `codex/release-network-performance`. Both GitHub CI jobs passed, all 27 manifest assets plus HTML (28 files total) match the release build, and three live browser scenarios passed. Initial JavaScript is 175,625 gzip bytes (11.8% below the previous deployed baseline), protected by a 185,000-byte budget. Physical phone acceptance, production-network comparisons and required-check enforcement remain open. See [publication evidence](docs/verification/published-reliability-2026-10-18.md).
 
 ## Release baseline — Level 0 shipped
 
@@ -43,7 +43,7 @@ Exit: physical Android and iPhone evidence exists for lifecycle, input, sharing 
 
 ## Level 2 — Repeatable release and network coverage
 
-Status: implemented and locally verified in the follow-up candidate. GitHub execution, required-check settings and explicit post-publication smoke remain operational release steps.
+Status: implemented, verified in GitHub CI and deployed; exact-artifact verification and live smoke/recovery passed. Required-check enforcement remains open: `launch/free-online` is unprotected.
 
 Goal: catch deployment and recovery regressions before publication.
 
@@ -61,7 +61,7 @@ Status: bundle/startup work and synthetic projection profiling are locally verif
 Goal: improve real mobile loading and action response without changing billing/authority.
 
 1. Capture cold/warm startup and guest-to-host acknowledgement timing under defined networks/devices. Separate database REST RTT from gameplay acknowledgement latency.
-2. Keep initial gzip JavaScript below 230,000 bytes and every JavaScript chunk below 500,000 bytes; current baseline is 199,217 gzip bytes.
+2. Keep initial gzip JavaScript at or below 185,000 bytes and every JavaScript chunk at or below 500,000 bytes; the deployed release is 175,625 initial gzip bytes.
 3. Profile eager catalog/reducer loading, Socket.IO code in Firebase builds, round/result chunks, font loading and selected-bank warming before choosing more splits.
 4. Measure public/private writes for all 18 round types at 2/4/8 players, including progress updates, cards and spectators. Optimize only with privacy/version fencing tests.
 

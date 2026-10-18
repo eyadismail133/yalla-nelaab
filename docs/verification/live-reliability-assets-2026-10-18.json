@@ -1,0 +1,232 @@
+{
+  "checkedAt": "2026-10-18T14:13:47.995Z",
+  "commit": "5ee5475b1585b991a032369020f3dcc0b120a005",
+  "site": "https://yalla-nelaab-20261016.web.app",
+  "allMatch": true,
+  "files": [
+    {
+      "file": "assets/LobbyScreen-CFUoEBzd.js",
+      "status": 200,
+      "bytes": 16260,
+      "sha256": "fa5ef7b3cfefe856d957abc99182a9591f37bba3212612b6f2c63f4f8f2d2609",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/PodiumScreen-CDn226Qz.js",
+      "status": 200,
+      "bytes": 13086,
+      "sha256": "100497c98239cfa1e33bff4163e1b5f8ed0347c1c64ddd575a16515b4caeabd0",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/ResultScreen-C8T4tQF_.js",
+      "status": 200,
+      "bytes": 129246,
+      "sha256": "1fb361e881648275012b2aef35e24b8e4efa7c410e70e7f251b7729960c8b513",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/RoundScreen-DKEhWBdW.js",
+      "status": 200,
+      "bytes": 39351,
+      "sha256": "ecb12922c9c7e56943bcf003d995b763507f6b2d99f9cc71735667231aa1521c",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/anime-Dbni2HXD.js",
+      "status": 200,
+      "bytes": 163433,
+      "sha256": "c7735dac358c3a12dd33b94359878729c49e5d9128c52688639b6e9991a099df",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/bluff-B7AII7Ic.js",
+      "status": 200,
+      "bytes": 203681,
+      "sha256": "e33093459fffb10ca4c8fad6e4fde6674b6a1ba061fa1ddb9d2b5d1439ca42f4",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/browser-DNo-t-vh.js",
+      "status": 200,
+      "bytes": 25776,
+      "sha256": "75b7922a0376a6639310c23cbfddd9a42c636f14c756e136869e99ba9008d1e5",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/cinema-XCpSCBp-.js",
+      "status": 200,
+      "bytes": 181884,
+      "sha256": "7f85f299944bec6a7821338c83264607923b80290a543b2c4abe2b9e0f008077",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/firebase-auth-CuGODK5u.js",
+      "status": 200,
+      "bytes": 71126,
+      "sha256": "bd2a6ed681ae13eb614d84a66dba9cbebb0224df2971f3403765e744fbb5428f",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/firebase-database-I8snBUIn.js",
+      "status": 200,
+      "bytes": 164353,
+      "sha256": "b22cbf32bbcd1a5d4da6715fd6d5c4e83348b3798aac046f74a0ee667f28375e",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/firebase-host-runtime-AgUNYQ6x.js",
+      "status": 200,
+      "bytes": 67036,
+      "sha256": "10c93926e394681822bf2516b56babf8b2d482553bb896d02f4bc610128f7419",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/food-BWTkzGPh.js",
+      "status": 200,
+      "bytes": 166533,
+      "sha256": "93462492e2ca3a821256647bacb9a51770d41e5c1454260dfc0423a315ae8d78",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/football-B0yronR4.js",
+      "status": 200,
+      "bytes": 184509,
+      "sha256": "209981c3a1fb044af60971f214bfe097a965a30ae5f4eb28f6b2b4ba8ecd9fdd",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/friends-BB0a65tV.js",
+      "status": 200,
+      "bytes": 74563,
+      "sha256": "eea5c7db81437209c3cdc240e536558fdc976aaf42a82421c72927594abf38b5",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/general-Dl0XT_8h.js",
+      "status": 200,
+      "bytes": 168715,
+      "sha256": "f3a9e09eb8b2a817613af630fbf2520d89eba1a8717e57b1f43ab6c26cac23d3",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/geography-Q0pTffHJ.js",
+      "status": 200,
+      "bytes": 159498,
+      "sha256": "bf98a2995e6b45a5e1a8c306dddaa48ce1e162ef2654767ffc68ce0ac5fa18b1",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/history-D62dmZJX.js",
+      "status": 200,
+      "bytes": 175650,
+      "sha256": "d8807e5a731034a56fdb666f7296651bcecb6cf1943f7e3db85410b9e435af6f",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/index-BwLlNY75.css",
+      "status": 200,
+      "bytes": 24742,
+      "sha256": "8dd5ea7febbb0f35d4b873f9f192f7d7e7f7237ec86d2fec8bc02ccc7d7cda14",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/index-DVEG9OKl.js",
+      "status": 200,
+      "bytes": 225625,
+      "sha256": "be642a72e0c3722d83b48c2d5df4603e33b88b3a708b95549b0bf8dae2f1eed2",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/islamic-BgDC2xQ0.js",
+      "status": 200,
+      "bytes": 166335,
+      "sha256": "527b48a0e81b6615029afdb6c13c86139793882dacf786b2a0b7cd2c6c948749",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/music-CV8BXpq0.js",
+      "status": 200,
+      "bytes": 181051,
+      "sha256": "f8f650fe4cddbb79fad24316ae9592667244259582426cea06dd4953b4cf85e3",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/nature-CJmYibqu.js",
+      "status": 200,
+      "bytes": 174554,
+      "sha256": "a664782fef4df7e7204024fbb085b8f77adb706282d7ad873e10722dc6898e6b",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/playerColors-DifO5ecJ.js",
+      "status": 200,
+      "bytes": 253,
+      "sha256": "18bbe9681d1d8504b5b4713d35bbc152c0d75a5276b6de167d1a7b93a62c4ecd",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/proverbs-DutAl6E4.js",
+      "status": 200,
+      "bytes": 168207,
+      "sha256": "67eb8776a3d4f0059db36068c0fc8978fb871b2c077ef0e39b5a7197810a6f4d",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/react-hUzBva16.js",
+      "status": 200,
+      "bytes": 141823,
+      "sha256": "6d03a8c93c6dbf47eb3dcf518920899e00ed619f4680d407281d0a7be3becf5a",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/science-BJcWfROB.js",
+      "status": 200,
+      "bytes": 158077,
+      "sha256": "4bb0242583d50a2875e2fb1b1b48a405792e2d7d268c34c24caa4c47d0b8b95f",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "assets/useCountdown-B6Snh_RD.js",
+      "status": 200,
+      "bytes": 298,
+      "sha256": "88717ce8f1d31c3364aaf71a097fd1e9055950e72d0a2141fe4f2d8000e7b5b6",
+      "matchesLocal": true,
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "bytes": 1003,
+      "sha256": "feafad4adf1696d94057dc153f9444b11ed9688e50715ea2e9707a94f4da3ed2",
+      "matchesLocal": true,
+      "cacheControl": "no-cache, no-store, must-revalidate"
+    }
+  ]
+}

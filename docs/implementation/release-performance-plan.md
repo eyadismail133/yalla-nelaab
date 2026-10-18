@@ -2,7 +2,7 @@
 
 Approved scope: upgrade_plan.md Levels 2 then 3, as selected on 18 October 2026. Implement directly in this chat. Physical phone acceptance (Level 1) stays open.
 
-Constraints: Firebase Spark, browser host authority, no billing/card, no deployment or push. Keep gameplay, legacy projections, privacy, sequence fencing and host takeover behavior. Do not infer gameplay ping from REST RTT.
+Constraints: Firebase Spark, browser host authority, no billing/card. Publication was initially excluded and subsequently authorized by the user on 18 October 2026. Keep gameplay, legacy projections, privacy, sequence fencing and host takeover behavior. Do not infer gameplay ping from REST RTT.
 
 ## Level 2: repeatable release
 
@@ -22,4 +22,4 @@ Constraints: Firebase Spark, browser host authority, no billing/card, no deploym
 
 Actual gates discovered: npm test; npm run typecheck; npm run build:firebase; npm run build:web; npm run bundle:check; npm audit; npm run test:emulator. No lint script exists. Baseline: 199,217 initial gzip bytes; 697 tests (679 pass in restricted sandbox, 18 socket tests time out there and require localhost-capable execution).
 
-Local execution record: [verification and APPROVED review](../verification/reliability-performance-2026-10-18.md). CI is prepared but has not been run on GitHub; publication, required-check settings, real-phone acceptance and production-network comparisons remain pending. The eagerly imported round/catalog reducers were profiled and retained; further metadata/authority changes are deferred until mobile evidence justifies them.
+Local execution record: [verification and APPROVED review](../verification/reliability-performance-2026-10-18.md). Both CI jobs passed on GitHub for application commit `5ee5475`; Hosting publication, exact asset checks and three live browser scenarios passed. See [publication evidence](../verification/published-reliability-2026-10-18.md). Required-check enforcement, real-phone acceptance and production-network comparisons remain pending. The eagerly imported round/catalog reducers were profiled and retained; further metadata/authority changes are deferred until mobile evidence justifies them.

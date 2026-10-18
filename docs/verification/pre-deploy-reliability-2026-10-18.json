@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-18T14:07:32.140Z",
+  "commit": null,
+  "site": "https://yalla-nelaab-20261016.web.app",
+  "matchesLocal": null,
+  "identity": [
+    {
+      "file": "/",
+      "sha256": "ef25d7c92f998738861cd622da9828e90ff5bfb45beeba8145db554a685ea8ae"
+    },
+    {
+      "file": "/assets/index-DUTPzbKh.js",
+      "sha256": "639f292931cfa2858598ea82147468f41470d402cbc2f9de34e29bb4de07a9c1"
+    }
+  ]
+}

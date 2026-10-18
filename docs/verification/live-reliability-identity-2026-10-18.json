@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-18T14:13:13.740Z",
+  "commit": "5ee5475b1585b991a032369020f3dcc0b120a005",
+  "site": "https://yalla-nelaab-20261016.web.app",
+  "matchesLocal": true,
+  "identity": [
+    {
+      "file": "/",
+      "sha256": "feafad4adf1696d94057dc153f9444b11ed9688e50715ea2e9707a94f4da3ed2"
+    },
+    {
+      "file": "/assets/index-DVEG9OKl.js",
+      "sha256": "be642a72e0c3722d83b48c2d5df4603e33b88b3a708b95549b0bf8dae2f1eed2"
+    }
+  ]
+}

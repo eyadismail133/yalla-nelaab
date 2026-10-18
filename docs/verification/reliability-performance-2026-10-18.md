@@ -1,6 +1,6 @@
 # Reliability and performance candidate — 18 October 2026
 
-Local candidate on `codex/release-network-performance`. Implemented and reviewed directly by Codex at the user's request. Nothing was pushed or deployed. The currently deployed release remains the Level 0 release recorded separately.
+Historical local acceptance record on `codex/release-network-performance`, implemented and reviewed directly by Codex. Subsequent user-authorized push, successful CI, Hosting publication and live verification are recorded in [publication evidence](published-reliability-2026-10-18.md). The measurements below retain their original local/emulator scope.
 
 ## Changes and review verdict
 
@@ -75,7 +75,7 @@ These counts include snapshots, commands, projections, acknowledgements, cleanup
 
 ## Remaining acceptance
 
-- Level 2 code and local checks are implemented. GitHub workflow execution, repository required-check settings, publication and exact-live-artifact smoke have not occurred. The explicit smoke first builds this checkout and compares deployed HTML/entry SHA-256 against it before creating a test room. See [release checklist](../RELEASE-CHECKLIST.md).
+- Level 2 code, GitHub execution, publication and exact-artifact live checks are complete in the publication follow-up. Required-check enforcement remains open; the release branch is unprotected. See [release checklist](../RELEASE-CHECKLIST.md).
 - Level 3's bundle/startup work and all-type emulator traffic baseline are verified locally. Actual Android/iPhone cold/warm/action timing and production-network/billing comparisons remain open; Level 3 is not declared fully accepted.
 - Level 1 remains open: desktop Chromium and viewport dimensions do not prove Android/iOS backgrounding, wake lock, screen lock, sharing or cross-network reliability.
 - The Firebase Spark/no-card architecture is preserved. No hosting provider, paid feature, billing setting, region or payment method was added or enabled.
