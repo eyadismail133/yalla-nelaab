@@ -148,7 +148,7 @@ export function MatchPresets({
         <span className="text-xs text-muted">تقدر تعدّل أي إعداد بعدها</span>
       </div>
 
-      <div className="grid grid-cols-1 gap-2.5">
+      <div className="preset-grid grid grid-cols-1 gap-2.5">
         {MATCH_PRESETS.map((preset) => {
           const active = isPresetActive(preset.id, currentConfig, normalizedCategories);
           const isFootballUnavailable = ['football_night', 'football_derby'].includes(preset.id) && !footballAvailable;
@@ -164,7 +164,7 @@ export function MatchPresets({
                 const freshConfig = buildPresetConfig(preset.id, normalizedCategories);
                 onSelect(freshConfig, preset.id);
               }}
-              className={`flex min-h-14 w-full min-w-0 flex-col gap-1.5 rounded-2xl border p-3.5 text-start transition active:scale-[0.99] disabled:opacity-40 disabled:active:scale-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)] ${
+              className={`preset-card flex min-h-14 w-full min-w-0 flex-col gap-1.5 rounded-2xl border p-3.5 text-start transition active:scale-[0.99] disabled:opacity-40 disabled:active:scale-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)] ${
                 active
                   ? 'border-[var(--accent)] bg-surface-2 text-body'
                   : 'border-line bg-surface text-body hover:border-muted'

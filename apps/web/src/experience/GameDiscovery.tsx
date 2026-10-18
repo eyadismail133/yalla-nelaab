@@ -292,13 +292,13 @@ export function GameDiscovery({
   ];
 
   return (
-    <section aria-label="دليل الألعاب والمجالات" className="flex w-full min-w-0 flex-col gap-3">
+    <section aria-label="دليل الألعاب والمجالات" className="game-discovery flex w-full min-w-0 flex-col gap-3">
       {/* Compact expandable 3-step How to Play */}
       <details
         open={defaultHowToPlayOpen}
         className="group rounded-3xl border border-line bg-surface px-4 py-3 text-body"
       >
-        <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-2 font-bold select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]">
+        <summary className="discovery-summary flex min-h-11 cursor-pointer list-none items-center justify-between gap-2 font-bold select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]">
           <span className="flex items-center gap-2 text-base">
             <span aria-hidden="true">🎯</span>
             <span>إزاي بتتلعب؟ (٣ خطوات سريعة)</span>
@@ -330,12 +330,12 @@ export function GameDiscovery({
       </details>
 
       {/* Preview of all 14 categories from static metadata (zero question bank loading) */}
-      <Card className="flex flex-col gap-3 p-4">
+      <Card className="discovery-topics flex flex-col gap-3 p-4">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h2 className="text-base font-bold">
             مواضيع الأسئلة <span className="tabular text-sm text-muted">({categories.length} مجال)</span>
           </h2>
-          <Pill>بدون تحميل مسبق</Pill>
+          <Pill>كل قعدة وليها موضوع</Pill>
         </div>
         <div className="flex flex-wrap gap-1.5" role="list" aria-label="قائمة المجالات">
           {categories.map((cat) => (
@@ -356,7 +356,7 @@ export function GameDiscovery({
         open={defaultCatalogOpen}
         className="group rounded-3xl border border-line bg-surface px-4 py-3 text-body"
       >
-        <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-2 font-bold select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]">
+        <summary className="discovery-summary flex min-h-11 cursor-pointer list-none items-center justify-between gap-2 font-bold select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]">
           <div className="min-w-0">
             <span className="block text-base">
               كتالوج الألعاب <span className="tabular text-sm text-muted">({allEntries.length} لعبة)</span>
@@ -400,7 +400,7 @@ export function GameDiscovery({
           </div>
 
           {/* Games list */}
-          <div className="flex flex-col gap-2.5">
+          <div className="game-catalog-grid flex flex-col gap-2.5">
             {filteredEntries.map((game) => {
               const accentVar = `var(--color-accent-${game.accent})`;
               const isSelected = selectedRoundTypeId === game.id;
@@ -408,7 +408,7 @@ export function GameDiscovery({
               return (
                 <article
                   key={game.id}
-                  className={`flex flex-col gap-2 rounded-2xl border p-3.5 transition ${
+                  className={`game-catalog-entry flex flex-col gap-2 rounded-2xl border p-3.5 transition ${
                     isSelected
                       ? 'border-[var(--accent)] bg-surface-2'
                       : 'border-line bg-surface-2/60'

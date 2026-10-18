@@ -262,9 +262,6 @@ export function LobbyScreen({
         <span className="size-11" />
       </div>
 
-      {/* Invitation panel with selectable URL, room code, clipboard, native share, WhatsApp, and local QR */}
-      <InvitationPanel code={view.code} onError={onError} />
-
       <section className="flex flex-col gap-3">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h2 className="font-bold">
@@ -284,7 +281,7 @@ export function LobbyScreen({
             return (
               <div
                 key={player.id}
-                className="flex items-center gap-2.5 rounded-2xl border border-line bg-surface py-2 pe-2 ps-3.5"
+                className="lobby-player flex items-center gap-2.5 rounded-2xl border border-line bg-surface py-2 pe-2 ps-3.5"
               >
                 {/* The seat colour a player will wear on every screen for the whole match. */}
                 <span
@@ -352,6 +349,8 @@ export function LobbyScreen({
           <p className="text-center text-xs text-muted">{ar.readyStatusHint}</p>
         </div>
       </section>
+
+      <InvitationPanel code={view.code} onError={onError} />
 
       {isHost ? (
         <>

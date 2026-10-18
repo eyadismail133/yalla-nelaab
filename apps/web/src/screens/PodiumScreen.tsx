@@ -49,7 +49,7 @@ export function PodiumScreen({
 
   return (
     <Screen accent="amber">
-      <Card className="text-center">
+      <Card className="podium-hero text-center">
         {abandoned ? (
           <p className="text-xl font-bold text-muted">{ar.endedEarly}</p>
         ) : isTeamMatch ? (

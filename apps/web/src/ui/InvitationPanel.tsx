@@ -41,8 +41,8 @@ export async function generateInviteQrDataUrl(inviteUrl: string): Promise<string
     margin: 1,
     errorCorrectionLevel: 'M',
     color: {
-      dark: '#120f1e',
-      light: '#f3efff',
+      dark: '#121313',
+      light: '#f3eee5',
     },
   });
 }

@@ -28,7 +28,7 @@ export function ResultScreen({
 
   return (
     <Screen accent={round.accent}>
-      <Card className="text-center">
+      <Card className="result-reveal text-center">
         <p className="text-sm text-muted">{ar.correctAnswer}</p>
         <Reveal typeId={round.typeId} reveal={view.reveal} view={view} />
       </Card>

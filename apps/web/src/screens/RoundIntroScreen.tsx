@@ -18,6 +18,7 @@ export function RoundIntroScreen({ view, client }: { view: RoomView; client?: Ga
   return (
     <Screen accent={suddenDeath ? 'violet' : round.accent} className="justify-center text-center">
       <div className="pop-in flex flex-col items-center gap-4">
+        <span className="round-intro-symbol" aria-hidden="true">{suddenDeath ? '⚡' : round.isFinalRound ? '★' : '✦'}</span>
         {suddenDeath ? (
           <>
             <p className="text-sm font-bold uppercase tracking-widest text-muted">

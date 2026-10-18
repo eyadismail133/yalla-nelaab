@@ -39,14 +39,14 @@ export interface MatchResultSummary {
 }
 
 const SEAT_HEX_PALETTE = [
-  '#2ee6a8', // emerald
-  '#3dc7ff', // sky
-  '#ff6b9d', // rose
-  '#ffc94a', // amber
-  '#b98cff', // violet
-  '#c3ff4d', // lime
-  '#ff64d8', // fuchsia
-  '#ff9142', // orange
+  '#b8d39d', // emerald
+  '#accbd0', // sky
+  '#f2a491', // rose
+  '#edc777', // amber
+  '#d5b77a', // violet
+  '#d3df97', // lime
+  '#e7afa4', // fuchsia
+  '#f7a566', // orange
 ] as const;
 
 const DEFAULT_MAX_NAME_CHARS = 18;
@@ -82,7 +82,7 @@ export function sanitizeShareUrl(rawUrl?: string): string {
 
 function seatHexForPlayer(players: RoomView['players'], playerId: string): string {
   const idx = players.findIndex((p) => p.id === playerId);
-  if (idx < 0) return '#a89bcb';
+  if (idx < 0) return '#b1b2a9';
   return SEAT_HEX_PALETTE[idx % SEAT_HEX_PALETTE.length]!;
 }
 
@@ -308,27 +308,31 @@ export async function renderResultCardBlob(summary: MatchResultSummary): Promise
 
   // Background gradient
   const bgGradient = ctx.createLinearGradient(0, 0, 0, height);
-  bgGradient.addColorStop(0, '#120f1e');
-  bgGradient.addColorStop(0.5, '#19142b');
-  bgGradient.addColorStop(1, '#120f1e');
+  bgGradient.addColorStop(0, '#121313');
+  bgGradient.addColorStop(0.5, '#25241e');
+  bgGradient.addColorStop(1, '#121313');
   ctx.fillStyle = bgGradient;
   ctx.fillRect(0, 0, width, height);
 
   // Outer card frame
   drawRoundedRect(ctx, 44, 44, width - 88, height - 88, 44);
-  ctx.fillStyle = '#1c1730';
+  ctx.fillStyle = '#1c1d1c';
   ctx.fill();
   ctx.lineWidth = 3;
-  ctx.strokeStyle = '#372c56';
+  ctx.strokeStyle = '#3f413a';
   ctx.stroke();
 
   // Brand header
+  const logo = new Image();
+  logo.src = '/brand/logo-graphite.svg';
+  await logo.decode();
+  ctx.drawImage(logo, width / 2 + 172, 74, 82, 82);
   ctx.textAlign = 'center';
-  ctx.fillStyle = '#2ee6a8';
+  ctx.fillStyle = '#f3eee5';
   ctx.font = `900 56px ${fontStack}`;
   ctx.fillText(summary.brandAr, width / 2, 120);
 
-  ctx.fillStyle = '#a89bcb';
+  ctx.fillStyle = '#b1b2a9';
   ctx.font = `600 24px ${fontStack}`;
   ctx.fillText(summary.taglineAr, width / 2, 172);
 
@@ -336,27 +340,27 @@ export async function renderResultCardBlob(summary: MatchResultSummary): Promise
   const heroY = 216;
   const heroH = 220;
   drawRoundedRect(ctx, 88, heroY, width - 176, heroH, 34);
-  ctx.fillStyle = '#26203f';
+  ctx.fillStyle = '#292a27';
   ctx.fill();
   ctx.lineWidth = 3;
   ctx.strokeStyle =
     summary.outcome === 'abandoned'
-      ? '#ff6b9d'
+      ? '#f2a491'
       : summary.outcome === 'tie'
-        ? '#3dc7ff'
-        : '#ffc94a';
+        ? '#accbd0'
+        : '#edc777';
   ctx.stroke();
 
-  ctx.fillStyle = '#a89bcb';
+  ctx.fillStyle = '#b1b2a9';
   ctx.font = `700 26px ${fontStack}`;
   ctx.fillText(summary.badgeAr, width / 2, heroY + 48);
 
-  ctx.fillStyle = '#ffc94a';
+  ctx.fillStyle = '#edc777';
   ctx.font = `900 54px ${fontStack}`;
   const headlineFitted = fitCanvasText(ctx, summary.headlineAr, width - 250);
   ctx.fillText(headlineFitted, width / 2, heroY + 116);
 
-  ctx.fillStyle = '#f3efff';
+  ctx.fillStyle = '#f3eee5';
   ctx.font = `700 26px ${fontStack}`;
   const subtitleFitted = fitCanvasText(ctx, summary.subtitleAr, width - 250);
   ctx.fillText(subtitleFitted, width / 2, heroY + 174);
@@ -366,21 +370,21 @@ export async function renderResultCardBlob(summary: MatchResultSummary): Promise
   // Optional Team Standings section
   if (summary.teamStandings.length > 0) {
     ctx.textAlign = 'right';
-    ctx.fillStyle = '#a89bcb';
+    ctx.fillStyle = '#b1b2a9';
     ctx.font = `700 26px ${fontStack}`;
     ctx.fillText(ar.teamScoreboard, width - 92, cursorY);
     cursorY += 32;
 
     for (const team of summary.teamStandings.slice(0, 2)) {
       drawRoundedRect(ctx, 88, cursorY, width - 176, 68, 22);
-      ctx.fillStyle = team.isWinner ? '#26203f' : '#161226';
+      ctx.fillStyle = team.isWinner ? '#292a27' : '#171814';
       ctx.fill();
       ctx.lineWidth = 2;
-      ctx.strokeStyle = team.isWinner ? '#ffc94a' : '#372c56';
+      ctx.strokeStyle = team.isWinner ? '#edc777' : '#3f413a';
       ctx.stroke();
 
       ctx.textAlign = 'right';
-      ctx.fillStyle = '#f3efff';
+      ctx.fillStyle = '#f3eee5';
       ctx.font = `800 28px ${fontStack}`;
       const membersNote =
         team.memberNames.length > 0 ? ` (${team.memberNames.join('، ')})` : '';
@@ -392,7 +396,7 @@ export async function renderResultCardBlob(summary: MatchResultSummary): Promise
       ctx.fillText(label, width - 116, cursorY + 34);
 
       ctx.textAlign = 'left';
-      ctx.fillStyle = team.isWinner ? '#ffc94a' : '#f3efff';
+      ctx.fillStyle = team.isWinner ? '#edc777' : '#f3eee5';
       ctx.font = `900 30px ${fontStack}`;
       ctx.fillText(`${team.total} ${ar.points}`, 116, cursorY + 34);
 
@@ -404,22 +408,22 @@ export async function renderResultCardBlob(summary: MatchResultSummary): Promise
 
   // Individual Standings section
   ctx.textAlign = 'right';
-  ctx.fillStyle = '#a89bcb';
+  ctx.fillStyle = '#b1b2a9';
   ctx.font = `700 26px ${fontStack}`;
   ctx.fillText(ar.scoreboard, width - 92, cursorY);
   cursorY += 32;
 
   for (const row of summary.standings.slice(0, 8)) {
     drawRoundedRect(ctx, 88, cursorY, width - 176, 64, 20);
-    ctx.fillStyle = row.isWinner ? '#26203f' : '#161226';
+    ctx.fillStyle = row.isWinner ? '#292a27' : '#171814';
     ctx.fill();
     ctx.lineWidth = 2;
-    ctx.strokeStyle = row.isWinner ? '#ffc94a' : '#372c56';
+    ctx.strokeStyle = row.isWinner ? '#edc777' : '#3f413a';
     ctx.stroke();
 
     // Rank badge on the right (RTL start)
     ctx.textAlign = 'center';
-    ctx.fillStyle = row.isWinner ? '#ffc94a' : '#a89bcb';
+    ctx.fillStyle = row.isWinner ? '#edc777' : '#b1b2a9';
     ctx.font = `900 28px ${fontStack}`;
     ctx.fillText(`#${row.rank}`, width - 128, cursorY + 32);
 
@@ -431,7 +435,7 @@ export async function renderResultCardBlob(summary: MatchResultSummary): Promise
 
     // Player name + crown/team badge
     ctx.textAlign = 'right';
-    ctx.fillStyle = '#f3efff';
+    ctx.fillStyle = '#f3eee5';
     ctx.font = `700 28px ${fontStack}`;
     const prefix = row.isWinner ? '👑 ' : '';
     const suffix = row.teamEmoji ? ` ${row.teamEmoji}` : '';
@@ -444,7 +448,7 @@ export async function renderResultCardBlob(summary: MatchResultSummary): Promise
 
     // Points on the left (RTL end)
     ctx.textAlign = 'left';
-    ctx.fillStyle = row.isWinner ? '#ffc94a' : '#f3efff';
+    ctx.fillStyle = row.isWinner ? '#edc777' : '#f3eee5';
     ctx.font = `900 30px ${fontStack}`;
     ctx.fillText(`${row.total} ${ar.points}`, 116, cursorY + 32);
 
@@ -453,7 +457,7 @@ export async function renderResultCardBlob(summary: MatchResultSummary): Promise
 
   // Footer with sanitized base site URL ONLY (never room code or token)
   ctx.textAlign = 'center';
-  ctx.fillStyle = '#a89bcb';
+  ctx.fillStyle = '#b1b2a9';
   ctx.font = `700 24px ${fontStack}`;
   ctx.fillText(`العبوا مجانًا على: ${summary.siteUrl}`, width / 2, height - 86);
 
