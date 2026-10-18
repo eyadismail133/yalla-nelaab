@@ -32,6 +32,18 @@ function createMemoryStorage(): Storage {
 }
 
 describe('transport factory, tab seat identity, and config validation', () => {
+  it('keeps command numbers increasing after a tab closes and accepts only higher server counters', async () => {
+    const { ClientSequencer } = await import('./sequence.js');
+    const recoveryStorage = createMemoryStorage();
+    const original = new ClientSequencer('seat-recovered', { storage: createMemoryStorage(), recoveryStorage });
+    original.nextCommandId('seat-recovered');
+    original.nextCommandId('seat-recovered');
+    const restored = new ClientSequencer('seat-recovered', { storage: createMemoryStorage(), recoveryStorage });
+    expect(restored.nextCommandId('seat-recovered').seq).toBe(3);
+    restored.advanceTo(7);
+    restored.advanceTo(2);
+    expect(restored.nextCommandId('seat-recovered').seq).toBe(8);
+  });
   it('persists tab seat identifier in sessionStorage across refresh while giving new tabs distinct seat IDs', () => {
     const tabAStorage = createMemoryStorage();
     const tabBStorage = createMemoryStorage();

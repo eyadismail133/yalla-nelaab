@@ -1,0 +1,20 @@
+i  emulators: Starting emulators: auth, database
+i  emulators: Detected demo project ID "demo-yalla-nelaab", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+i  database: Database Emulator logging to database-debug.log
+i  Running script: npx vitest run --config vitest.emulator.config.ts apps/web/src/net/firebase-clock.emulator.test.ts
+
+ RUN  v5.0.5 D:/projects/football game
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  03:31:56
+   Duration  421ms (tests 73%, import 22%, transform 3%, worker 1%)
+
++  Script exited successfully (code 0)
+i  emulators: Shutting down emulators.
+i  database: Stopping Database Emulator
+!  Database Emulator has exited upon receiving signal: SIGINT
+i  auth: Stopping Authentication Emulator
+i  hub: Stopping emulator hub
+i  logging: Stopping Logging Emulator

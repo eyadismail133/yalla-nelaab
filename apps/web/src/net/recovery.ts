@@ -83,7 +83,10 @@ export function listRecoveries(local = localStore(), now = Date.now()): Recovery
 }
 
 export function forgetRecovery(seatId: string, local = localStore()): void {
-  try { local?.removeItem(PREFIX + seatId); } catch { /* Best-effort local cleanup. */ }
+  try {
+    local?.removeItem(PREFIX + seatId);
+    local?.removeItem('party-game-seq-' + seatId);
+  } catch { /* Best-effort local cleanup. */ }
 }
 
 export async function restoreRecovery(

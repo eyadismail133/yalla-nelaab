@@ -41,6 +41,7 @@ export function parseCommandId(commandId: string): ParsedCommandId | null {
 
 export interface ClientSequencerOptions {
   storage?: Storage | null;
+  recoveryStorage?: Storage | null;
   storageKeyPrefix?: string;
 }
 
@@ -53,34 +54,36 @@ export interface ClientSequencerOptions {
 export class ClientSequencer {
   private readonly storage: Storage | null;
   private readonly storageKey: string;
+  private readonly recoveryStorage: Storage | null;
   private inMemorySeq = 0;
 
   constructor(seatId: string, options: ClientSequencerOptions = {}) {
     this.storage = options.storage !== undefined ? options.storage : defaultSessionStorage();
     this.storageKey = `${options.storageKeyPrefix ?? 'party-game-seq-'}${seatId}`;
+    this.recoveryStorage = options.recoveryStorage !== undefined ? options.recoveryStorage : defaultLocalStorage();
     this.inMemorySeq = this.loadSeq();
   }
 
   private loadSeq(): number {
-    try {
-      const raw = this.storage?.getItem(this.storageKey);
-      if (raw) {
-        const parsed = Number.parseInt(raw, 10);
-        if (Number.isSafeInteger(parsed) && parsed >= 0) {
-          return parsed;
+    let highest = 0;
+    for (const storage of [this.storage, this.recoveryStorage]) {
+      try {
+        const raw = storage?.getItem(this.storageKey);
+        if (raw) {
+          const parsed = Number.parseInt(raw, 10);
+          if (Number.isSafeInteger(parsed) && parsed >= 0) {
+            highest = Math.max(highest, parsed);
+          }
         }
-      }
-    } catch {
-      // Fallback
+      } catch { /* Try the other storage when a browser restricts one. */ }
     }
-    return 0;
+    return highest;
   }
 
   private persistSeq(seq: number): void {
-    try {
-      this.storage?.setItem(this.storageKey, String(seq));
-    } catch {
-      // Ignore storage errors
+    for (const storage of [this.storage, this.recoveryStorage]) {
+      try { storage?.setItem(this.storageKey, String(seq)); }
+      catch { /* In-memory sequencing still supports restricted-storage sessions. */ }
     }
   }
 
@@ -94,6 +97,17 @@ export class ClientSequencer {
   currentSeq(): number {
     return this.inMemorySeq;
   }
+
+  advanceTo(seq: number): void {
+    if (!Number.isSafeInteger(seq) || seq <= this.inMemorySeq) return;
+    this.inMemorySeq = seq;
+    this.persistSeq(seq);
+  }
+}
+
+function defaultLocalStorage(): Storage | null {
+  try { return typeof window === 'undefined' ? null : window.localStorage ?? null; }
+  catch { return null; }
 }
 
 export interface DedupRecord {

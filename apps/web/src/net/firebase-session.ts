@@ -286,20 +286,19 @@ export class FirebaseSessionManager {
       const { database } = await this.ensureAuth();
       const offsetRef = ref(database, '.info/serverTimeOffset');
       return new Promise<number>((resolve) => {
-        const unsub = onValue(
+        onValue(
           offsetRef,
           (snap) => {
             const val = snap.val();
             if (typeof val === 'number') {
               this.clockOffsetMs = val;
             }
-            unsub();
             resolve(this.clockOffsetMs);
           },
           () => {
-            unsub();
             resolve(this.clockOffsetMs);
           },
+          { onlyOnce: true },
         );
       });
     } catch {

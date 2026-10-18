@@ -24,7 +24,7 @@ import {
   type FirebaseSessionOptions,
 } from './firebase-session.js';
 import { TabSeatManager } from './seat.js';
-import { ClientSequencer } from './sequence.js';
+import { ClientSequencer, parseCommandId } from './sequence.js';
 import { OfflineActionQueue } from './offline-action.js';
 import { measureDatabaseLatency } from './database-latency.js';
 import { mergeSplitView, type ProjectionRecord } from './split-view.js';
@@ -922,6 +922,7 @@ export class FirebaseTransport implements GameTransport {
           const res = await runtime.resumeHost(roomId, normCode, {
             maxWaitMs: Math.min(maxWait, remainingBudget),
           });
+          this.sequencer!.advanceTo(runtime.getLastCommandSequence(authCtx.uid));
           if (this.disposed || this.operationGeneration !== opGen || Date.now() >= startDeadlineMs) {
             if (currentRuntime && this.hostRuntime === currentRuntime) {
               currentRuntime.dispose();
@@ -970,6 +971,14 @@ export class FirebaseTransport implements GameTransport {
         }
 
         const member = memberSnap.val();
+
+        // Closed-tab recovery can have no session counter (including older recovery entries).
+        const response = await get(ref(db, `rooms/${roomId}/responses/${authCtx.uid}`));
+        if (this.disposed || this.operationGeneration !== opGen || Date.now() >= startDeadlineMs) {
+          return { ok: false, error: 'انتهت مهلة استعادة الجلسة — جرب تاني' };
+        }
+        const lastCommand = parseCommandId(response.val()?.commandId);
+        if (lastCommand) this.sequencer!.advanceTo(lastCommand.seq);
 
         const attachRes = await this.attachRoomListeners(db, roomId, authCtx.uid, false, opGen, startDeadlineMs);
         if (!attachRes.ok || this.disposed || this.operationGeneration !== opGen) {

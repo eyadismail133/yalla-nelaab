@@ -2694,7 +2694,7 @@ describe('FirebaseTransport real emulator integration', () => {
       expect(guest1Views[guest1Views.length - 1]?.phase).toBe('in_round');
 
       // Former host returns and reconnects using their session token -> joins as a regular member (isHost: false)!
-      const returningHostTransport = makeTransport('seat-host-transfer-orig', hostStorage, {
+      const returningHostTransport = makeTransport('seat-host-transfer-orig', createMemoryStorage(), {
         leaseTtlMs: 2_000,
         heartbeatIntervalMs: 500,
         hostTakeoverGraceMs: 400,

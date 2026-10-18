@@ -1,6 +1,6 @@
 {
-  "initialBytes": 671273,
-  "initialGzip": 199059,
+  "initialBytes": 672010,
+  "initialGzip": 199217,
   "initialGzipBudget": 230000,
   "chunkBudget": 500000,
   "chunks": [
@@ -119,37 +119,37 @@
       "initial": false
     },
     {
-      "file": "assets/index-KDPbUITL.js",
-      "bytes": 293971,
-      "gzip": 83148,
+      "file": "assets/index-DUTPzbKh.js",
+      "bytes": 294708,
+      "gzip": 83306,
       "initial": true
     },
     {
-      "file": "assets/firebase-host-runtime-DrkptLJE.js",
-      "bytes": 66968,
-      "gzip": 17344,
+      "file": "assets/firebase-host-runtime-EmfSPuT_.js",
+      "bytes": 67036,
+      "gzip": 17375,
       "initial": false
     },
     {
-      "file": "assets/LobbyScreen-CO3zFaix.js",
+      "file": "assets/LobbyScreen-DuR7OoUe.js",
       "bytes": 16260,
       "gzip": 4934,
       "initial": false
     },
     {
-      "file": "assets/PodiumScreen-CZjK6nDy.js",
+      "file": "assets/PodiumScreen-DwWb3Rxi.js",
       "bytes": 13086,
       "gzip": 4702,
       "initial": false
     },
     {
-      "file": "assets/ResultScreen-voG34oYB.js",
+      "file": "assets/ResultScreen-BGX1ofG_.js",
       "bytes": 129246,
       "gzip": 41702,
       "initial": false
     },
     {
-      "file": "assets/RoundScreen-CWkH2rCT.js",
+      "file": "assets/RoundScreen-CZ_wl0KE.js",
       "bytes": 39351,
       "gzip": 7251,
       "initial": false

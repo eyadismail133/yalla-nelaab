@@ -40,7 +40,7 @@ Production deployment, billing changes, and Git pushes are separate from local i
 - Public/private splitting reduces duplicated data in the eight-player projection test by more than 50%; private records are not guaranteed to stay below 200 bytes for every round type.
 - Screen lock support and mobile tab restoration still need physical Android/iPhone playtesting. Browser API rejection does not block play.
 - No CI workflow exists in the checked-out repository. GitHub access through the connector returned 404; authenticated Git transport verified remote HEAD instead.
-- The initial review recorded a large entry bundle. The authorized release follow-up now splits screens/runtime/vendor chunks and reduces initial gzip JavaScript to 198,900 bytes, with no large-chunk warning; see [the release record](../verification/release-2026-10-18.md).
+- The initial review recorded a large entry bundle. The authorized release follow-up now splits screens/runtime/vendor chunks and reduces initial gzip JavaScript to about 199 KB, with no large-chunk warning; see [the release record](../verification/release-2026-10-18.md).
 
 ## Review and validation
 

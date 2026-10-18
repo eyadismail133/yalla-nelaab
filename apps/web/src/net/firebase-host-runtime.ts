@@ -92,6 +92,9 @@ interface RoomMetaCache {
  * to Firebase RTDB alongside redacted player RoomViews and live lease fencing.
  */
 export class FirebaseHostRuntime {
+  getLastCommandSequence(uid: string): number {
+    return this.dedup.toJSON()[uid]?.lastSeq ?? 0;
+  }
   readonly session: FirebaseSessionManager;
   readonly contentSource: ContentSource;
   readonly leaseTtlMs: number;
