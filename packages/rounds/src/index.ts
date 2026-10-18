@@ -37,6 +37,7 @@ export type { RelayState, RelayAction } from './relay.js';
 export type { WordRaceState, WordRaceAction } from './word-race.js';
 
 export { ROUND_TYPES, getRoundType, hasRoundType, roundTypesForShapes } from './registry.js';
+export { questionMetrics, withQuestionMetrics } from './question-metrics.js';
 export {
   FINAL_ROUND_WEIGHT,
   NoEligibleRoundTypesError,

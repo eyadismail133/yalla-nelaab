@@ -1,0 +1,164 @@
+{
+  "initialBytes": 602927,
+  "initialGzip": 175620,
+  "initialGzipBudget": 185000,
+  "chunkBudget": 500000,
+  "chunks": [
+    {
+      "file": "assets/anime-Dbni2HXD.js",
+      "bytes": 163433,
+      "gzip": 29955,
+      "initial": false
+    },
+    {
+      "file": "assets/bluff-B7AII7Ic.js",
+      "bytes": 203681,
+      "gzip": 43819,
+      "initial": false
+    },
+    {
+      "file": "assets/cinema-XCpSCBp-.js",
+      "bytes": 181884,
+      "gzip": 34359,
+      "initial": false
+    },
+    {
+      "file": "assets/food-BWTkzGPh.js",
+      "bytes": 166533,
+      "gzip": 28585,
+      "initial": false
+    },
+    {
+      "file": "assets/football-Dzff8CBz.js",
+      "bytes": 184862,
+      "gzip": 34181,
+      "initial": false
+    },
+    {
+      "file": "assets/friends-BB0a65tV.js",
+      "bytes": 74563,
+      "gzip": 13615,
+      "initial": false
+    },
+    {
+      "file": "assets/general-Dl0XT_8h.js",
+      "bytes": 168715,
+      "gzip": 33949,
+      "initial": false
+    },
+    {
+      "file": "assets/geography-Q0pTffHJ.js",
+      "bytes": 159498,
+      "gzip": 27436,
+      "initial": false
+    },
+    {
+      "file": "assets/history-D62dmZJX.js",
+      "bytes": 175650,
+      "gzip": 32230,
+      "initial": false
+    },
+    {
+      "file": "assets/islamic-BgDC2xQ0.js",
+      "bytes": 166335,
+      "gzip": 29400,
+      "initial": false
+    },
+    {
+      "file": "assets/music-CV8BXpq0.js",
+      "bytes": 181051,
+      "gzip": 33990,
+      "initial": false
+    },
+    {
+      "file": "assets/nature-CJmYibqu.js",
+      "bytes": 174554,
+      "gzip": 32668,
+      "initial": false
+    },
+    {
+      "file": "assets/proverbs-DutAl6E4.js",
+      "bytes": 168207,
+      "gzip": 30388,
+      "initial": false
+    },
+    {
+      "file": "assets/science-BJcWfROB.js",
+      "bytes": 158077,
+      "gzip": 30528,
+      "initial": false
+    },
+    {
+      "file": "assets/browser-DNo-t-vh.js",
+      "bytes": 25776,
+      "gzip": 10133,
+      "initial": false
+    },
+    {
+      "file": "assets/firebase-auth-CuGODK5u.js",
+      "bytes": 71126,
+      "gzip": 21220,
+      "initial": true
+    },
+    {
+      "file": "assets/firebase-database-I8snBUIn.js",
+      "bytes": 164353,
+      "gzip": 49120,
+      "initial": true
+    },
+    {
+      "file": "assets/playerColors-DifO5ecJ.js",
+      "bytes": 253,
+      "gzip": 203,
+      "initial": false
+    },
+    {
+      "file": "assets/react-hUzBva16.js",
+      "bytes": 141823,
+      "gzip": 45571,
+      "initial": true
+    },
+    {
+      "file": "assets/useCountdown-B6Snh_RD.js",
+      "bytes": 298,
+      "gzip": 220,
+      "initial": false
+    },
+    {
+      "file": "assets/index-LLtciBaM.js",
+      "bytes": 225625,
+      "gzip": 59709,
+      "initial": true
+    },
+    {
+      "file": "assets/firebase-host-runtime-JMynciXh.js",
+      "bytes": 70947,
+      "gzip": 18583,
+      "initial": false
+    },
+    {
+      "file": "assets/LobbyScreen-CVQliNaK.js",
+      "bytes": 16260,
+      "gzip": 4932,
+      "initial": false
+    },
+    {
+      "file": "assets/PodiumScreen-YHTDEN6E.js",
+      "bytes": 13086,
+      "gzip": 4700,
+      "initial": false
+    },
+    {
+      "file": "assets/ResultScreen-BKJhey-1.js",
+      "bytes": 129246,
+      "gzip": 41701,
+      "initial": false
+    },
+    {
+      "file": "assets/RoundScreen-BjalAvLa.js",
+      "bytes": 39351,
+      "gzip": 7249,
+      "initial": false
+    }
+  ]
+}

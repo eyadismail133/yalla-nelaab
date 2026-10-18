@@ -1,0 +1,10 @@
+{
+  "browser": "156.0.8078.4",
+  "oneWayGuestFrameDelayMs": 75,
+  "samples": [
+    297.2022999999972,
+    261.6981999999989,
+    282.66240000000107
+  ],
+  "metric": "Guest readiness click through acknowledged enabled UI; includes Playwright/browser scheduling. Both guest RTDB directions delayed; host local. Not production ping or REST RTT."
+}

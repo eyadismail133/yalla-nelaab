@@ -1,0 +1,656 @@
+[
+  {
+    "questionId": "fb-mcq-7",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-open-5",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-60",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-bool-44",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-num-18",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-num-19",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-odd-23",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-ord-18",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-bool-59",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-bool-60",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-bool-61",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-bool-62",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-bool-63",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-bool-64",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-bool-65",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-bool-66",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-bool-67",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-bool-68",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-bool-69",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-bool-73",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-bool-74",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-bool-75",
+    "reviewedAt": "2026-10-18",
+    "status": "corrected",
+    "sources": [
+      "https://www.fifa.com/en/articles/just-fontaine-thirteen-goals-1958"
+    ],
+    "rationale": "The exclusivity claim is false: Fontaine (13), Kocsis (11), Ademir (9) and Eusebio (9) also exceeded eight in a single edition. Corrected boolean answer and added explanation; ID and difficulty retained."
+  },
+  {
+    "questionId": "fb-num-33",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-num-34",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-num-35",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-num-36",
+    "reviewedAt": "2026-10-18",
+    "status": "verified",
+    "sources": [
+      "https://gpcustomersupportfwc2026.tickets.fifa.com/hc/en-gb/articles/28784798873117-10-What-is-the-format-for-the-FIFA-World-Cup-2026-tournament",
+      "https://www.fifa.com/en/it/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums"
+    ],
+    "rationale": "FIFA tournament format/schedule confirms 104 total matches, 72 group-stage matches and 12 groups; numeric answer retained."
+  },
+  {
+    "questionId": "fb-num-37",
+    "reviewedAt": "2026-10-18",
+    "status": "verified",
+    "sources": [
+      "https://gpcustomersupportfwc2026.tickets.fifa.com/hc/en-gb/articles/28784798873117-10-What-is-the-format-for-the-FIFA-World-Cup-2026-tournament",
+      "https://www.fifa.com/en/it/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums"
+    ],
+    "rationale": "FIFA tournament format/schedule confirms 104 total matches, 72 group-stage matches and 12 groups; numeric answer retained."
+  },
+  {
+    "questionId": "fb-num-38",
+    "reviewedAt": "2026-10-18",
+    "status": "verified",
+    "sources": [
+      "https://gpcustomersupportfwc2026.tickets.fifa.com/hc/en-gb/articles/28784798873117-10-What-is-the-format-for-the-FIFA-World-Cup-2026-tournament",
+      "https://www.fifa.com/en/it/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums"
+    ],
+    "rationale": "FIFA tournament format/schedule confirms 104 total matches, 72 group-stage matches and 12 groups; numeric answer retained."
+  },
+  {
+    "questionId": "fb-num-39",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-num-55",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-num-56",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-num-57",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-num-58",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-num-64",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-fill-28",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-fill-29",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-fill-30",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-fill-31",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-fill-33",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-open-25",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-open-26",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-open-27",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-open-28",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-open-33",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-open-34",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-open-53",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-open-54",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-open-57",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-116",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-117",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-118",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-119",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-120",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-121",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-122",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-123",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-124",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-125",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-126",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-127",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-132",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-134",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-135",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-137",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-138",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-139",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-140",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-141",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-142",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-143",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-148",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-149",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-150",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-152",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-153",
+    "reviewedAt": "2026-10-18",
+    "status": "verified",
+    "sources": [
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/knockout-stage-match-schedule-bracket"
+    ],
+    "rationale": "Official FIFA result records Netherlands 1-1 Morocco, penalties 2-3; existing answer retained and explanation added."
+  },
+  {
+    "questionId": "fb-mcq-154",
+    "reviewedAt": "2026-10-18",
+    "status": "verified",
+    "sources": [
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/canada-morocco-match-report-highlights"
+    ],
+    "rationale": "Official FIFA report records Canada 0-3 Morocco in the round of 16; answer retained."
+  },
+  {
+    "questionId": "fb-mcq-155",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-156",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-157",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-158",
+    "reviewedAt": "2026-10-18",
+    "status": "corrected",
+    "sources": [
+      "https://www.youtube.com/watch?v=Lfo49ZbV4WU"
+    ],
+    "rationale": "Official FIFA quarter-final highlights record France 2-0 Morocco. Corrected qualification stage from quarter-finals to semi-finals; choices, answer index and difficulty retained."
+  },
+  {
+    "questionId": "fb-mcq-159",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-160",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-162",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-163",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-184",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-185",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-186",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-191",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-193",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-194",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  },
+  {
+    "questionId": "fb-mcq-195",
+    "reviewedAt": "2026-10-18",
+    "status": "needs-source",
+    "sources": [],
+    "rationale": "Dated football claim queued for a separate primary-source review; retained as playable. Triage date is not factual verification."
+  }
+]

@@ -1,0 +1,386 @@
+[
+  {
+    "type": "mcq_race",
+    "players": 2,
+    "beforeBytes": 19479,
+    "afterBytes": 19479,
+    "beforeAckMs": 23,
+    "afterAckMs": 28
+  },
+  {
+    "type": "mcq_race",
+    "players": 4,
+    "beforeBytes": 37122,
+    "afterBytes": 37122,
+    "beforeAckMs": 17,
+    "afterAckMs": 13
+  },
+  {
+    "type": "mcq_race",
+    "players": 8,
+    "beforeBytes": 77993,
+    "afterBytes": 77993,
+    "beforeAckMs": 65,
+    "afterAckMs": 20
+  },
+  {
+    "type": "numeric_guess",
+    "players": 2,
+    "beforeBytes": 19174,
+    "afterBytes": 19174,
+    "beforeAckMs": 29,
+    "afterAckMs": 12
+  },
+  {
+    "type": "numeric_guess",
+    "players": 4,
+    "beforeBytes": 36737,
+    "afterBytes": 36737,
+    "beforeAckMs": 36,
+    "afterAckMs": 11
+  },
+  {
+    "type": "numeric_guess",
+    "players": 8,
+    "beforeBytes": 76142,
+    "afterBytes": 76142,
+    "beforeAckMs": 60,
+    "afterAckMs": 15
+  },
+  {
+    "type": "quickfire_tf",
+    "players": 2,
+    "beforeBytes": 21084,
+    "afterBytes": 21199,
+    "beforeAckMs": 31,
+    "afterAckMs": 8
+  },
+  {
+    "type": "quickfire_tf",
+    "players": 4,
+    "beforeBytes": 39060,
+    "afterBytes": 39211,
+    "beforeAckMs": 42,
+    "afterAckMs": 11
+  },
+  {
+    "type": "quickfire_tf",
+    "players": 8,
+    "beforeBytes": 81229,
+    "afterBytes": 81453,
+    "beforeAckMs": 63,
+    "afterAckMs": 19
+  },
+  {
+    "type": "fill_blank",
+    "players": 2,
+    "beforeBytes": 19446,
+    "afterBytes": 19446,
+    "beforeAckMs": 32,
+    "afterAckMs": 7
+  },
+  {
+    "type": "fill_blank",
+    "players": 4,
+    "beforeBytes": 36931,
+    "afterBytes": 36931,
+    "beforeAckMs": 14,
+    "afterAckMs": 9
+  },
+  {
+    "type": "fill_blank",
+    "players": 8,
+    "beforeBytes": 76999,
+    "afterBytes": 76999,
+    "beforeAckMs": 45,
+    "afterAckMs": 14
+  },
+  {
+    "type": "fibbing",
+    "players": 4,
+    "beforeBytes": 37131,
+    "afterBytes": 37131,
+    "beforeAckMs": 51,
+    "afterAckMs": 18
+  },
+  {
+    "type": "fibbing",
+    "players": 8,
+    "beforeBytes": 76074,
+    "afterBytes": 76074,
+    "beforeAckMs": 58,
+    "afterAckMs": 17
+  },
+  {
+    "type": "who_among_us",
+    "players": 4,
+    "beforeBytes": 37302,
+    "afterBytes": 37302,
+    "beforeAckMs": 37,
+    "afterAckMs": 10
+  },
+  {
+    "type": "who_among_us",
+    "players": 8,
+    "beforeBytes": 78265,
+    "afterBytes": 78265,
+    "beforeAckMs": 55,
+    "afterAckMs": 13
+  },
+  {
+    "type": "who_am_i",
+    "players": 2,
+    "beforeBytes": 19845,
+    "afterBytes": 19845,
+    "beforeAckMs": 27,
+    "afterAckMs": 7
+  },
+  {
+    "type": "who_am_i",
+    "players": 4,
+    "beforeBytes": 38241,
+    "afterBytes": 38241,
+    "beforeAckMs": 35,
+    "afterAckMs": 8
+  },
+  {
+    "type": "who_am_i",
+    "players": 8,
+    "beforeBytes": 78963,
+    "afterBytes": 78963,
+    "beforeAckMs": 55,
+    "afterAckMs": 13
+  },
+  {
+    "type": "ordering",
+    "players": 2,
+    "beforeBytes": 19582,
+    "afterBytes": 19582,
+    "beforeAckMs": 26,
+    "afterAckMs": 9
+  },
+  {
+    "type": "ordering",
+    "players": 4,
+    "beforeBytes": 37465,
+    "afterBytes": 37465,
+    "beforeAckMs": 39,
+    "afterAckMs": 8
+  },
+  {
+    "type": "ordering",
+    "players": 8,
+    "beforeBytes": 77947,
+    "afterBytes": 77947,
+    "beforeAckMs": 55,
+    "afterAckMs": 13
+  },
+  {
+    "type": "steal",
+    "players": 4,
+    "beforeBytes": 37121,
+    "afterBytes": 37121,
+    "beforeAckMs": 35,
+    "afterAckMs": 8
+  },
+  {
+    "type": "steal",
+    "players": 8,
+    "beforeBytes": 78590,
+    "afterBytes": 78590,
+    "beforeAckMs": 53,
+    "afterAckMs": 16
+  },
+  {
+    "type": "bidding",
+    "players": 2,
+    "beforeBytes": 20751,
+    "afterBytes": 20809,
+    "beforeAckMs": 8,
+    "afterAckMs": 12
+  },
+  {
+    "type": "bidding",
+    "players": 4,
+    "beforeBytes": 37746,
+    "afterBytes": 37804,
+    "beforeAckMs": 34,
+    "afterAckMs": 8
+  },
+  {
+    "type": "bidding",
+    "players": 8,
+    "beforeBytes": 77196,
+    "afterBytes": 77254,
+    "beforeAckMs": 20,
+    "afterAckMs": 12
+  },
+  {
+    "type": "land_grab",
+    "players": 2,
+    "beforeBytes": 24743,
+    "afterBytes": 24821,
+    "beforeAckMs": 40,
+    "afterAckMs": 5
+  },
+  {
+    "type": "land_grab",
+    "players": 4,
+    "beforeBytes": 43061,
+    "afterBytes": 43138,
+    "beforeAckMs": 35,
+    "afterAckMs": 8
+  },
+  {
+    "type": "land_grab",
+    "players": 8,
+    "beforeBytes": 94327,
+    "afterBytes": 94405,
+    "beforeAckMs": 51,
+    "afterAckMs": 13
+  },
+  {
+    "type": "describe_it",
+    "players": 4,
+    "beforeBytes": 38378,
+    "afterBytes": 38378,
+    "beforeAckMs": 12,
+    "afterAckMs": 9
+  },
+  {
+    "type": "describe_it",
+    "players": 8,
+    "beforeBytes": 79317,
+    "afterBytes": 79317,
+    "beforeAckMs": 18,
+    "afterAckMs": 13
+  },
+  {
+    "type": "odd_one_out",
+    "players": 2,
+    "beforeBytes": 21578,
+    "afterBytes": 21745,
+    "beforeAckMs": 11,
+    "afterAckMs": 5
+  },
+  {
+    "type": "odd_one_out",
+    "players": 4,
+    "beforeBytes": 41984,
+    "afterBytes": 42259,
+    "beforeAckMs": 12,
+    "afterAckMs": 8
+  },
+  {
+    "type": "odd_one_out",
+    "players": 8,
+    "beforeBytes": 95232,
+    "afterBytes": 86941,
+    "beforeAckMs": 19,
+    "afterAckMs": 23
+  },
+  {
+    "type": "emoji_rush",
+    "players": 2,
+    "beforeBytes": 20194,
+    "afterBytes": 20194,
+    "beforeAckMs": 12,
+    "afterAckMs": 8
+  },
+  {
+    "type": "emoji_rush",
+    "players": 4,
+    "beforeBytes": 38168,
+    "afterBytes": 38168,
+    "beforeAckMs": 11,
+    "afterAckMs": 16
+  },
+  {
+    "type": "emoji_rush",
+    "players": 8,
+    "beforeBytes": 79908,
+    "afterBytes": 79908,
+    "beforeAckMs": 37,
+    "afterAckMs": 21
+  },
+  {
+    "type": "ladder",
+    "players": 2,
+    "beforeBytes": 21509,
+    "afterBytes": 21599,
+    "beforeAckMs": 26,
+    "afterAckMs": 6
+  },
+  {
+    "type": "ladder",
+    "players": 4,
+    "beforeBytes": 39620,
+    "afterBytes": 39747,
+    "beforeAckMs": 11,
+    "afterAckMs": 19
+  },
+  {
+    "type": "ladder",
+    "players": 8,
+    "beforeBytes": 82444,
+    "afterBytes": 91206,
+    "beforeAckMs": 54,
+    "afterAckMs": 12
+  },
+  {
+    "type": "higher_lower",
+    "players": 2,
+    "beforeBytes": 22488,
+    "afterBytes": 22488,
+    "beforeAckMs": 25,
+    "afterAckMs": 5
+  },
+  {
+    "type": "higher_lower",
+    "players": 4,
+    "beforeBytes": 40989,
+    "afterBytes": 40989,
+    "beforeAckMs": 36,
+    "afterAckMs": 7
+  },
+  {
+    "type": "higher_lower",
+    "players": 8,
+    "beforeBytes": 83615,
+    "afterBytes": 83615,
+    "beforeAckMs": 57,
+    "afterAckMs": 13
+  },
+  {
+    "type": "relay",
+    "players": 4,
+    "beforeBytes": 42934,
+    "afterBytes": 43041,
+    "beforeAckMs": 39,
+    "afterAckMs": 11
+  },
+  {
+    "type": "relay",
+    "players": 8,
+    "beforeBytes": 88175,
+    "afterBytes": 88284,
+    "beforeAckMs": 18,
+    "afterAckMs": 15
+  },
+  {
+    "type": "word_race",
+    "players": 4,
+    "beforeBytes": 37383,
+    "afterBytes": 37383,
+    "beforeAckMs": 31,
+    "afterAckMs": 8
+  },
+  {
+    "type": "word_race",
+    "players": 8,
+    "beforeBytes": 77479,
+    "afterBytes": 77479,
+    "beforeAckMs": 49,
+    "afterAckMs": 13
+  }
+]

@@ -1,0 +1,124 @@
+{
+  "scope": "Uncompressed UTF-8 snapshot serialization difference on synthetic optimal-script fixtures. Excludes RTDB framing/compression and result telemetry transactions; not billed bytes.",
+  "rows": [
+    {
+      "type": "quickfire_tf",
+      "players": 2,
+      "snapshotBytesWithoutMetrics": 815,
+      "snapshotBytesWithMetrics": 980,
+      "additionalMetadataBytes": 165
+    },
+    {
+      "type": "quickfire_tf",
+      "players": 4,
+      "snapshotBytesWithoutMetrics": 903,
+      "snapshotBytesWithMetrics": 1104,
+      "additionalMetadataBytes": 201
+    },
+    {
+      "type": "quickfire_tf",
+      "players": 8,
+      "snapshotBytesWithoutMetrics": 1079,
+      "snapshotBytesWithMetrics": 1352,
+      "additionalMetadataBytes": 273
+    },
+    {
+      "type": "odd_one_out",
+      "players": 2,
+      "snapshotBytesWithoutMetrics": 896,
+      "snapshotBytesWithMetrics": 1054,
+      "additionalMetadataBytes": 158
+    },
+    {
+      "type": "odd_one_out",
+      "players": 4,
+      "snapshotBytesWithoutMetrics": 950,
+      "snapshotBytesWithMetrics": 1216,
+      "additionalMetadataBytes": 266
+    },
+    {
+      "type": "odd_one_out",
+      "players": 8,
+      "snapshotBytesWithoutMetrics": 1058,
+      "snapshotBytesWithMetrics": 1540,
+      "additionalMetadataBytes": 482
+    },
+    {
+      "type": "bidding",
+      "players": 2,
+      "snapshotBytesWithoutMetrics": 935,
+      "snapshotBytesWithMetrics": 1080,
+      "additionalMetadataBytes": 145
+    },
+    {
+      "type": "bidding",
+      "players": 4,
+      "snapshotBytesWithoutMetrics": 1027,
+      "snapshotBytesWithMetrics": 1212,
+      "additionalMetadataBytes": 185
+    },
+    {
+      "type": "bidding",
+      "players": 8,
+      "snapshotBytesWithoutMetrics": 1211,
+      "snapshotBytesWithMetrics": 1476,
+      "additionalMetadataBytes": 265
+    },
+    {
+      "type": "land_grab",
+      "players": 2,
+      "snapshotBytesWithoutMetrics": 1653,
+      "snapshotBytesWithMetrics": 1875,
+      "additionalMetadataBytes": 222
+    },
+    {
+      "type": "land_grab",
+      "players": 4,
+      "snapshotBytesWithoutMetrics": 1699,
+      "snapshotBytesWithMetrics": 1921,
+      "additionalMetadataBytes": 222
+    },
+    {
+      "type": "land_grab",
+      "players": 8,
+      "snapshotBytesWithoutMetrics": 1791,
+      "snapshotBytesWithMetrics": 2013,
+      "additionalMetadataBytes": 222
+    },
+    {
+      "type": "ladder",
+      "players": 2,
+      "snapshotBytesWithoutMetrics": 992,
+      "snapshotBytesWithMetrics": 1151,
+      "additionalMetadataBytes": 159
+    },
+    {
+      "type": "ladder",
+      "players": 4,
+      "snapshotBytesWithoutMetrics": 1016,
+      "snapshotBytesWithMetrics": 1211,
+      "additionalMetadataBytes": 195
+    },
+    {
+      "type": "ladder",
+      "players": 8,
+      "snapshotBytesWithoutMetrics": 1064,
+      "snapshotBytesWithMetrics": 1331,
+      "additionalMetadataBytes": 267
+    },
+    {
+      "type": "relay",
+      "players": 4,
+      "snapshotBytesWithoutMetrics": 1864,
+      "snapshotBytesWithMetrics": 2003,
+      "additionalMetadataBytes": 139
+    },
+    {
+      "type": "relay",
+      "players": 8,
+      "snapshotBytesWithoutMetrics": 1960,
+      "snapshotBytesWithMetrics": 2081,
+      "additionalMetadataBytes": 121
+    }
+  ]
+}

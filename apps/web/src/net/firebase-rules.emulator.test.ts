@@ -317,6 +317,11 @@ describe('Firebase Realtime Database security rules (real emulator)', () => {
     await assertFails(set(ref(hostDb, path), { ...sample, nickname: 'must not be stored' }));
     await assertSucceeds(set(ref(hostDb, path), sample));
     await assertFails(set(ref(hostDb, path), { ...sample, correct: 0 }));
+      const multiPath = `telemetry/question_2/${ROOM_ID}_1`;
+      await assertFails(set(ref(hostDb, multiPath), { ...sample, roundTypeId: 'quickfire_tf', recordedAtMs: now - 120000 }));
+      await assertFails(set(ref(hostDb, multiPath), { ...sample, roundTypeId: 'quickfire_tf', recordedAtMs: now, playerId: 'private' }));
+      await assertSucceeds(set(ref(hostDb, multiPath), { ...sample, roundTypeId: 'quickfire_tf', recordedAtMs: now }));
+      await assertFails(set(ref(hostDb, multiPath), { ...sample, roundTypeId: 'quickfire_tf', recordedAtMs: now }));
     await assertFails(get(ref(testEnv.unauthenticatedContext().database(), 'telemetry/question_1')));
   });
 

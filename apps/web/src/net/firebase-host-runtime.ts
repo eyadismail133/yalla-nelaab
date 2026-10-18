@@ -21,6 +21,7 @@ import {
   ref,
   remove,
   runTransaction,
+  serverTimestamp,
   set,
   update,
   type Unsubscribe,
@@ -29,7 +30,7 @@ import type { FirebaseSessionManager } from './firebase-session.js';
 import { HostDedupTracker, parseCommandId } from './sequence.js';
 import { prepareViewPublication } from './view-publication.js';
 import { splitViewUpdates } from './split-view.js';
-import { questionSample } from './question-telemetry.js';
+import { questionSamples } from './question-telemetry.js';
 import { LEASE_TTL_MS } from './firebase-lease.js';
 
 export const SIX_HOURS_MS = 6 * 60 * 60 * 1_000;
@@ -275,16 +276,23 @@ export class FirebaseHostRuntime {
     this.recordQuestionSample(db, proposed);
   }
 
+  private telemetryRoundNo: number | null = null;
+
   private recordQuestionSample(db: Database, proposed: Record<string, unknown>): void {
     const snapshot = proposed.snapshot as { json: string } | undefined;
     if (!snapshot || !this.roomId) return;
     const state = (JSON.parse(snapshot.json) as HostSnapshotEnvelope).state;
-    const sample = questionSample(state, this.roomId);
-    if (!sample) return;
-    const sampleRef = ref(db, `telemetry/${sample.questionId}/${sample.sampleId}`);
+    if (this.telemetryRoundNo === state.roundNo) return;
+    const samples = questionSamples(state, this.roomId);
+    if (!samples.length) return;
+    this.telemetryRoundNo = state.roundNo;
     // An immutable room/round key prevents duplicated samples after retries and host transfer.
-    void runTransaction(sampleRef, (existing) => existing ? undefined : sample.aggregate, { applyLocally: false })
-      .catch((error) => console.warn('Question telemetry was not saved', error));
+    void Promise.all(samples.map((sample) => runTransaction(ref(db, `telemetry/${sample.questionId}/${sample.sampleId}`),
+      (existing) => existing ? undefined : { ...sample.aggregate, recordedAtMs: serverTimestamp() }, { applyLocally: false })))
+      .catch(() => {
+        if (this.telemetryRoundNo === state.roundNo) this.telemetryRoundNo = null;
+        console.warn('Question telemetry was not saved');
+      });
   }
 
   onCommittedAck(handler: (ack: CommittedAck) => void): () => void {

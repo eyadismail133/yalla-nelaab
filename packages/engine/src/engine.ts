@@ -28,13 +28,18 @@ import {
 import {
   ROUND_TYPES,
   generatePlaylist,
-  getRoundType,
+  getRoundType as getContentRoundType,
+  withQuestionMetrics,
   suddenDeathType,
 } from '@game/rounds';
 import { generateCode } from './codes.js';
 import { RoomNotFoundError, type RoomStore } from './store.js';
 
 export { MAX_PLAYERS, MIN_PLAYERS };
+
+// Instrument authority execution only; catalog/guest imports retain the smaller plain registry.
+const engineTypes = new Map(ROUND_TYPES.map((type) => [type.id, withQuestionMetrics(type)]));
+const getRoundType: typeof getContentRoundType = (id) => engineTypes.get(id) ?? getContentRoundType(id);
 
 export interface EngineOptions {
   introMs: number;

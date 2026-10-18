@@ -365,6 +365,41 @@ describe('Firebase complete-match acceptance tests', () => {
     await assertFails(get(ref(intruderDb, `rooms/${roomId}/snapshot`)));
   });
 
+  it('persists per-question quickfire outcomes once through the real host runtime and rules', async () => {
+    const host = makeTransport('seat-telemetry-host');
+    const guest = makeTransport('seat-telemetry-guest');
+    const created = await host.createRoom('هوست', { ...MCQ_5ROUND_CONFIG, roundTypeId: 'quickfire_tf' });
+    if (!created.ok) throw new Error(created.error);
+    expect((await guest.joinRoom(created.code, 'ضيف')).ok).toBe(true);
+    expect((await host.start()).ok).toBe(true);
+    await waitForView(host, (view) => view.phase === 'round_intro');
+    expect((await host.skip()).ok).toBe(true);
+    const view = await waitForView(host, (current) => current.phase === 'in_round');
+    const roundNo = view.round!.roundNo;
+    const { roomId, hostUid } = await getRoomIdAndHostUid(created.code);
+    const db = testEnv.authenticatedContext(hostUid).database();
+    const snapshot = (await get(ref(db, `rooms/${roomId}/snapshot`))).val();
+    const items: Array<{ id: string; isTrue: boolean }> = JSON.parse(snapshot.json).state.roundState.items;
+    for (const [index, item] of items.entries()) {
+      expect((await host.act(roundNo, { kind: 'judge', index, value: item.isTrue })).ok).toBe(true);
+      expect((await guest.act(roundNo, { kind: 'judge', index, value: !item.isTrue })).ok).toBe(true);
+    }
+    await waitForView(host, (current) => current.phase === 'round_result');
+    const readSamples = () => Promise.all(items.map(async (item) => (await get(ref(db, `telemetry/${item.id}/${roomId}_${roundNo}`))).val()));
+    await expect.poll(async () => (await readSamples()).every(Boolean)).toBe(true);
+    const samples = await readSamples();
+    for (const sample of samples) {
+      expect(sample).toMatchObject({ roomId, roundNo, plays: 2, answered: 2, correct: 1, roundTypeId: 'quickfire_tf' });
+      expect(sample.recordedAtMs).toBeGreaterThan(0);
+      expect(sample.totalSolveMs).toBeGreaterThanOrEqual(0);
+      expect(Object.keys(sample).sort()).toEqual(['answered', 'correct', 'plays', 'recordedAtMs', 'roomId', 'roundNo', 'roundTypeId', 'totalSolveMs']);
+    }
+    expect((await guest.act(roundNo, { kind: 'result_ready' })).ok).toBe(true);
+    expect(await readSamples()).toEqual(samples);
+    expect((await guest.leave()).ok).toBe(true);
+    expect((await host.leave()).ok).toBe(true);
+  }, 40_000);
+
   it('drives complete 5-round focused mcq_race with 2 players, validates stale action handling, idempotent answer safety, reaches podium, and rematches into lobby', async () => {
     const hostTransport = makeTransport('seat-2p-host');
     const guestTransport = makeTransport('seat-2p-guest');
