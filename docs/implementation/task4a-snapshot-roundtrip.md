@@ -1,5 +1,7 @@
 # Verify all18 round states survive Firebase snapshot JSON
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume original engine extraction conversation07a6c8b1-d842-48fb-a766-827a1fe82fe9 with user-selected gemini-3.8-flash-high. Scope ONLY one new packages/rounds/src/snapshot-roundtrip.test.ts. No production/testdriver/otherfile edits, no commit/stage/push/deploy/delegation/review/payment/globalpermissionchanges. Two other Antigravity tasks actively own net/Firebase/App and client.ts; do not touch them or run emulators.
 
 Actual repository commands npm test (vitest2), npm run typecheck, npm run build:web. User approved Firebase-only fallback, host snapshots serialize full round state; we need evidence JSON serialization doesn't change all18 reducers' behavior across stages. Existing tests packages/rounds/src/invariants.test.ts and test-drivers.ts expose real DRIVERS, initFor, makePlayers, START_MS, runOptimalScript, mulberry32. Inspect actual API and existing conventions before writing.

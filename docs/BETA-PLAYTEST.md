@@ -2,6 +2,10 @@
 
 These are pending real-device checks, not completed results. Responsive browser checks do not establish Android/iOS background behavior. See [the release verification record](verification/release-2026-10-18.md) for completed checks. Start with five invited friend groups; record problems before expanding promotion.
 
+Updated 18 October 2026. This is Level 1 of [the future upgrade plan](../upgrade_plan.md). Desktop-browser checks passed for 320×568, 390×844, 412×915 and a 390×420 keyboard-space approximation; leave the physical-device boxes below unchecked until tested on phones.
+
+Record device model, OS/browser version, network, player count, room configuration, observed failure and reproduction steps. Include cards, private hints, Arabic-number input, all-ready results, late spectators and rematch in each group session. Keep room tokens and Firebase credentials out of reports.
+
 ## Joining and setup
 
 - [ ] Android Chrome and iPhone Safari can open the same invitation on separate networks (for example Wi-Fi and mobile data).

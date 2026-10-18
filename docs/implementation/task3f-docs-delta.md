@@ -1,5 +1,7 @@
 # Documentation review delta
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Continue exact conversation4679fd2d-bcac-4360-912f-b97de91f2508 with gemini-3.8-flash-high. Scope README.md ONLY. No commit/stage/push/deploy/delegation/review/payment/globalchanges. Preserve other ongoing work. Independent verdict CHANGES_REQUESTED:
 
 - README98 incorrectly says security rules grant60s recovery and automatically mutate status:closed. Describe intended client recovery/wait/end behavior pending transport verification. Security rules constrain access; they cannot schedule mutations. No migration. 15s waiting/60s end remain intended requirements, not verified release claims.

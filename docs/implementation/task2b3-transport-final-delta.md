@@ -1,5 +1,7 @@
 # Finish Firebase transport cancellation and recovery
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume backend conversation 3519b64f-17fa-45b0-96a7-effce862d12d using user-selected gemini-3.8-flash-high, only after previous runtime task exits. Scope firebase-transport.ts, firebase-session.ts, and focused transport/session tests. Do not change UI, engine, rounds, content, scoring, rules, hosting, dependencies, or creation-intent protocol (separate next task). No commit/stage/push/deploy/delegate/review/Astra/payment/permission changes. NO terminal commands, gates, or background commands: Codex runs verification. Read files using supported file tools. Report FILES_READY_FOR_CODEX with exact files and unexecuted gates.
 
 Codex independently reviewed latest implementation: CHANGES_REQUESTED. Ordinary667 tests pass. Runtime bootstrap/replay corrections have a separate preceding task. Preserve the existing 10s API-entry deadlines, actual SDK command IDs/dedup, committed host ACK channel, engine scoring, saved-seat privacy, pure constructors, guest resume ACK propagation, server clock, explicit emulator configuration, and onError interface. Do not replace with mocks or automatic scoring retry.

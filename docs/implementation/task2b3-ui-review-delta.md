@@ -1,5 +1,7 @@
 # Correct three independently reviewed browser recovery defects
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume SAME UI conversation4679fd2d-bcac-4360-912f-b97de91f2508 with Flash3.8High. Preserve all useful delivered changes. Scope ONLY useGame.ts, session-error.ts and session-error.test.ts, plus narrowly necessary new focused test helper in your existing scope. No core/seat/Firebase/transport.ts/client changes needed. Core is concurrently implementing its assigned files. No commands/gates/background tasks, commit/stage/deploy/delegation/Astra/permission/payment changes. Prior delivery claimed local commands despite edit-only instruction: Codex independently verified12focused testsPASS; from now on leave ALL terminal verification to Codex and report FILES_READY_FOR_CODEX accurately.
 
 Independent non-Astra review CHANGES_REQUESTED, confirmed by Codex:

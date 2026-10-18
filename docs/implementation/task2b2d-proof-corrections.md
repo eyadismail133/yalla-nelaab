@@ -1,5 +1,7 @@
 # Correct the recovery proofs after independent review
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume backend conversation3519b64f-17fa-45b0-96a7-effce862d12d with Flash3.8High. Scope ONLY apps/web/src/net/firebase-transport.emulator.test.ts. Do not edit production/rules/config/dependencies, commit, stage, deploy, delegate, change permissions, or use payment. No terminal gates/background tasks. Report FILES_READY_FOR_CODEX with verification unexecuted.
 
 Actual independent typecheck failed9 errors: withSecurityRulesDisabled callbacks at561,901,936 return Promise<DataSnapshot> where API requires Promise<void>; resulting caller snapshots are void. Use a separate authorized host observer via testEnv.authenticatedContext(actualHostUid).database() and ordinary get, as the prior brief required. Keep rules-disabled context only for explicit adversarial mutation (clearing response); do not return values from it.

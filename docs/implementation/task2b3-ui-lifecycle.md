@@ -1,5 +1,7 @@
 # Browser-owned lifecycle and useful recovery controls
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume UI conversation4679fd2d-bcac-4360-912f-b97de91f2508 with Gemini3.8FlashHigh ONLY when Codex dispatches after the lifecycle tests-only writer finishes. Codex will attach actual red evidence. This runs alongside a backend implementation with strictly separate ownership.
 
 Scope ONLY apps/web/src/net/useGame.ts, apps/web/src/App.tsx, apps/web/src/net/client.ts, apps/web/src/net/client.test.ts, plus a narrowly useful new pure session-error helper/test if needed. Do NOT edit transport.ts, firebase-*.ts, seat.ts, other existing tests, shared/engine/rules/config/dependencies, approved round/screens/content, or docs. No commit/stage/push/deploy/delegate/review, Astra, permission changes, billing/payment. Do not run terminal gates/background tasks. Codex owns verification. Report FILES_READY_FOR_CODEX and list unexecuted gates honestly.

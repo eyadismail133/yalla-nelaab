@@ -1,4 +1,6 @@
 <task>
+
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
 Task 1: Extract the existing match engine into a browser-compatible workspace package, preserving behavior. Repo D:/projects/football game, branch launch/free-online. User approved implementing Firebase-only fallback because Render demanded a card. This task is ONLY reusable engine and browser content source; Firebase transport, UI and deployment are separate tasks.
 
 Create packages/engine with MatchEngine, MemoryStore, RoomStore/errors, room codes and toView moved from apps/server/src/rooms. Leave compatibility re-exports so existing server imports and tests work. Browser entry must have no node imports, filesystem, network or server dependencies. nanoid has a browser export. Update workspace dependencies, aliases and typecheck command. Keep shared and rounds canonical, all scoring/rules/session semantics/8-player limit unchanged. Node JsonSource remains server-only.

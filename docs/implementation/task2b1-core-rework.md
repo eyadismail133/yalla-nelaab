@@ -1,5 +1,7 @@
 # Firebase foundation rework — same conversation
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 User explicitly selected Gemini3.8 Flash; relay supplies gemini-3.8-flash-high. Previous Task2b run was deliberately interrupted by Codex after early review found fundamental protocol defects. Preserve useful current work; do not restart from scratch or claim Task2b complete. No commit/stage/push/deploy, delegation/review/Astra, payment/billing/globalsettings/permissions changes.
 
 CODEX VERDICT: CHANGES_REQUESTED for the current foundation. This is a bounded correctness rework before broader lifecycle/UI/release completion. Original task2b-transport.md remains the acceptance contract, but THIS run should finish the foundation plus real emulator create/join/command/rollback/refresh tests, then report exactly what remains. Do not spend the run on App styling or README before this is correct. Do not touch approved experience/screens/rounds/ui/i18n/styles or all18 pure reducers/questiondata. Rules9tests and UI27tests already independentlyapproved; preserve them.

@@ -1,5 +1,7 @@
 # Independent UI verification — 16 October 2026
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Task3a/3b independently APPROVED by a gpt-6.1-sol reviewer (never Astra). Final focused experience + screen suite:27 tests passed, exit0. Rules/bootstrap separately APPROVED:9 real-emulator tests passed, exit0. Neither approval covers the still-in-progress Firebase transport or a public deployment.
 
 Codex browser checks used the built app and existing local Socket.IO server, without changing game state through hidden browser APIs:

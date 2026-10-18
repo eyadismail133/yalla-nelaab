@@ -1,5 +1,7 @@
 # Task 2 early independent review findings
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 These were established while implementation was running; re-check against the latest files before fixing. Reviewer used gpt-6.1-sol (never Astra). All emulator probes used an alternate local port 19100 and no live services. No overall verdict yet.
 
 1. P1: database.rules.json cannot compile. Real DB emulator error: `16:7: Cannot have multiple default rules ('$code' and '$other').` Keep one wildcard under codes.

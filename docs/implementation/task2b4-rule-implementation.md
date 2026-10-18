@@ -1,5 +1,7 @@
 # Implement approved creator-intent database fences
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume SAME4679fd2d-bcac-4360-912f-b97de91f2508 with Flash3.8High. Bounded independent RULES task after your test corrections. Scope ONLY database.rules.json, firebase-rules.emulator.test.ts, and narrowly necessary corrections in firebase-creation.emulator.test.ts. Backend conversation owns runtime/transport/session and its tests: DO NOT EDIT those. No other source, UI, docs, deps, commits/stage/push/deploy/delegate/review/Astra/payment/permissions. NO terminal/gates/background tasks. Codex runs verification. Report FILES_READY_FOR_CODEX, exact scope, unexecuted gates.
 
 Tests-first root evidence11:53: new19 tests8PASS/11expectedFAIL, valid closed-room fixture now passes. Root actual-diff test review APPROVED corrected fixture structure (not overall implementation). Implement ONLY narrow architecture approved in task2b4-creation-final.md sections metadata read exception and paired intent fences. Do not implement client CAS/protocol; separate backend next. Existing transport will temporarily need corresponding private-intent-before-meta change and may fail until backend task; report honestly.

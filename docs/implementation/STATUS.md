@@ -1,4 +1,19 @@
-# Launch status — 17 October 2026
+# Launch status — 18 October 2026
+
+## Current deployed release
+
+- Live site: [Yalla Nelaab](https://yalla-nelaab-20261016.web.app/), Firebase project `yalla-nelaab-20261016`.
+- Branch: `launch/free-online`. Application release commits: `44f9c63`, `ac7d830`, `61706a8`.
+- Database rules were deployed before Hosting; authenticated rules readback and exact built HTML matched the deployed artifacts.
+- Verified: 697 unit/integration tests, 81 full-suite Firebase emulator tests plus one targeted clock regression (82 total), typecheck, build, bundle budget and zero known dependency vulnerabilities.
+- Initial JavaScript: 199,217 gzip bytes, about 26% below the prior build; largest chunk about 295 KB with no 500 KB build warning.
+- Current features include public/private projections, automatic host transfer, recovery with persistent command counters, real request latency sampling, cards, Derby, reactions, readiness and spectators.
+- Live browser checks and their physical-device limits are recorded in [release verification](../verification/release-2026-10-18.md). Real Android/iPhone lifecycle and cross-network group acceptance remain open.
+- Future updates are ordered by levels in [upgrade_plan.md](../../upgrade_plan.md). Hosted authority, Yellow Card and new football mode/content remain deferred by user choice.
+
+## Historical launch record — 17 October 2026
+
+The following records the previous release's evidence and architecture. Its test counts and fixed-host descriptions are historical, superseded by the current release above.
 
 ## Final Launch Verification & Live Deployment — 17 October 2026 (Complete)
 

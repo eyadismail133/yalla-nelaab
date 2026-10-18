@@ -1,5 +1,15 @@
 # Content Review Note: Cinema Seed Bank (`cn-mcq-52` & `cn-open-20`)
 
+> Updated 18 October 2026: the corrections below remain bounded historical evidence. Current release results are in [release verification](verification/release-2026-10-18.md); future content work is Level 4 of [the upgrade plan](../upgrade_plan.md).
+
+## Current review queue and telemetry policy
+
+- MCQ/numeric telemetry records anonymous aggregate plays, answers, correctness and solve time. `npm run telemetry:report --silent` reads an exported `/telemetry` JSON tree from stdin and emits review suggestions.
+- After at least 50 plays, a skip rate above 80% flags a question for review. Difficulty suggestions retain the existing 1–5 scale. Neither flagging nor reporting retires questions or applies ratings automatically.
+- Multi-question reducers need per-question instrumentation before their telemetry can be included accurately.
+- Live gameplay surfaced `fb-mcq-153`, a claim about a Morocco–Netherlands 2026 World Cup result, for source verification. This record does not establish its factual correctness; retain it as playable until a reviewer checks an authoritative tournament record, as requested.
+- Functional content/schema tests and a successful playthrough do not prove every fact in the 8,901-item bank. New football Hot Takes and career-path content are deferred.
+
 ## Scope & Purpose
 This document records a bounded factual correction in `content/seed/cinema.json`. This is a single verified factual fix identified during playthrough, **not** a comprehensive factual audit of all 8,901 items in the question bank. Codex owns final review.
 

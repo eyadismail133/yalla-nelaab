@@ -1,5 +1,7 @@
 Bounded content correction in SAME completed UI Antigravity conversation, user-selected Gemini3.8 Flash. Do NOT touch net/App/engine/config/UI (Firebase task active). No commits/stage/push/deploy/delegation/Astra/globalsettings/payment. This is only two verified factual prompt corrections and their source note, not a broad bank rewrite or new games.
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Local real UI playthrough exposed an inherited inaccurate cinema question in TWO shapes. In content/seed/cinema.json:
 - id cn-mcq-52 textAr currently إيه اسم أول فيلم كرتون طويل في التاريخ؟, answer index1 سنو وايت والأقزام السبعة, explanation اتعمل سنة1937.
 - id cn-open-20 same textAr, answer سنو وايت, aliases unchanged, explanation من إنتاج ديزني سنة1937.

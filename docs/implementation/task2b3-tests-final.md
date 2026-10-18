@@ -1,5 +1,7 @@
 # Final two focused test corrections before red execution
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Same3519conversation, FlashHigh. TEST CODE ONLY. No production/rules/config/dependencies, no commands/background verification, commit/stage/deploy/delegation/payment/permission changes. Report TESTS_READY_FOR_CODEX. Codex verified production hashes unchanged across tests-only runs.
 
 1. In client.test.ts new purity test, `renderClient.socket.opts` is not the Socket.IO Socket API; options belong to its manager. The test currently fails with undefined even if production is corrected. Use documented public `socket.active` (must be false before explicit startup), plus connectedfalse. Verify explicit retryConnection activates the real socket, then dispose. Don't assert a nonexistent field, don't mock transport.

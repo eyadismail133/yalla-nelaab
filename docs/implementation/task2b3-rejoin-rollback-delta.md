@@ -1,5 +1,7 @@
 # Repair denied existing-member rejoin rollback
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume SAME backend3519b64f-17fa-45b0-96a7-effce862d12d, Flash3.8High, ONLY AFTER active transport task exits. Scope firebase-host-runtime.ts and narrow real regression in firebase-transport.emulator.test.ts. No other files/commands/gates/background tasks/commit/stage/push/deploy/delegate/review/Astra/payment/permission changes. Codex gates/reviews. Report FILES_READY_FOR_CODEX.
 
 Independent non-Astra runtime review CHANGES_REQUESTED confirmed one remaining P2 at953–978: existing-admitted disconnected player branch awaits engine.setConnected (mutates MemoryStore/version), then separately writes accepted joinResponse, then publishes snapshot/views, OUTSIDE rollback block~1178. If request is cleared/replaced/expires during await, real rules reject accepted response. Rejection escapes to enqueue.catch empty, leaving local connected/version mutation. A later valid command/presence snapshot leaks this denied effect. Not intentionally deferred creation/transport scope.

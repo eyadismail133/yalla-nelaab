@@ -1,97 +1,95 @@
-# Comprehensive Upgrade Plan: Yalla Nelaab (يلا نلعب)
+# Upgrade plan — future update levels
 
-> **Execution status (2026-10-18):** See [the phase-by-phase implementation and verification record](docs/implementation/upgrade-progress.md). Hosted authority (1B), Yellow Card, the new football Hot Takes mode, and new career-path content are deferred by user choice. This release uses existing games. Telemetry flags questions for review without removing them. The record identifies the implemented features and remaining telemetry/mobile-testing limitations; this roadmap's original aspirational mode names are preserved below.
+Updated 18 October 2026. This is the active roadmap. The October release is deployed at [Yalla Nelaab](https://yalla-nelaab-20261016.web.app/). Implementation and measured results are in [the phase record](docs/implementation/upgrade-progress.md) and [release verification](docs/verification/release-2026-10-18.md).
 
-This roadmap outlines the next-generation upgrades across **Gameplay**, **Database**, **Connection & Mobile Resilience**, and **Game Speed / Ping & Lag Elimination**, building on top of the immediate fixes already implemented.
+## Release baseline — Level 0 shipped
 
----
+| Original phase | Released behavior | Scope/limit |
+| --- | --- | --- |
+| 1A | Optimistic MCQ/numeric/vote feedback, rejected-action rollback, obsolete-ack fencing, question-bank warming, view publishing optimization | No promised percentage latency reduction |
+| 1B | Browser-host Firebase authority retained | Hosted authority deferred to preserve free/no-card operation |
+| 2A | Wake lock, measured network badge, two-second Firebase answer replay, disconnect recovery grace | Badge measures database request time, not the full guest/host action path |
+| 2B | Named per-seat 15-minute recovery and persistent Firebase identity | Command counters survive tab closure; active-seat recovery is rejected |
+| 3A | Shared public state and per-UID private state, matching-version merge, legacy-room compatibility | Rules must deploy before the upgraded client |
+| 3B | Targeted expired-room cleanup, immutable aggregate MCQ/numeric telemetry and review reports | Review flags only; questions remain playable; difficulty stays 1–5 |
+| 4A | One VAR + one Double Captain per player/match, Derby preset, bounded visual reactions | Existing games/content only; Yellow Card, Hot Takes, career-path content and new reaction sounds deferred |
+| 4B | All-connected-player result readiness, late spectators, spectator promotion on rematch | Eight total active seats including spectators |
+| Release follow-up | Lazy screens/host runtime, cacheable vendor chunks, safe areas and 44px catalog targets | Initial JavaScript 199,217 gzip bytes; 26% lower than the previous 270,280-byte build |
 
-## 1. What We Just Fixed (Implemented & Active Now)
+Validation: 697 unit/integration tests, 81 full-suite emulator tests plus one cached-clock regression, typecheck, production build, bundle budgets, zero known dependency vulnerabilities. Live browser testing covered admission, recovery, private VAR, numeric Arabic input, captain scoring, reactions and all-ready progression. Physical phone testing is still open.
 
-1. **Zero-Wait Host Transfer to Oldest Member (No Game Freeze)**:
-   - When the host leaves or disconnects/switches apps beyond the lease grace window, the room no longer freezes or closes when other connected players are present.
-   - The **oldest connected member** in the room automatically claims the expired host lease (`epoch + 1`), updates `meta.hostUid`, promotes their `members/$uid/role` to `'host'`, and continues running the `MatchEngine` seamlessly.
-2. **Former Host Reconnects as a Regular Member (`isHost: false`)**:
-   - When the previous host returns to the browser tab (or reconnects via `resume` or `joinRoom`), the client detects that `meta.hostUid` has been transferred to another player, demotes the old host runtime, attaches guest listeners, and reconnects them in their original seat as a normal member.
-3. **Non-Blocking Round Progression on Player/Host Disconnect**:
-   - In [`MatchEngine`](packages/engine/src/engine.ts), rounds and multi-stage phases (`hot_take`, `bluff_box`, `closest_number`, `word_race`, `mcq_race`, etc.) now evaluate completion across **currently connected** players (`p.connected && !p.leftEarly`).
-   - If a player temporarily switches to another app on mobile, they remain in the round so they can still answer if they return quickly, **but** once all connected players have submitted their actions, the round advances immediately without stalling.
-4. **Mobile App-Switching Auto-Recovery**:
-   - [`useGame.ts`](apps/web/src/net/useGame.ts) now listens to `visibilitychange`, `pageshow`, `focus`, and `online` events to immediately re-assert Firebase presence and resume the session when a player switches back from another mobile app.
-5. **Fast-Path Command & Join Processing (Ping/Lag Reduction)**:
-   - [`FirebaseHostRuntime`](apps/web/src/net/firebase-host-runtime.ts) now caches `rooms/$roomId/meta` and live inbox snapshots in memory, eliminating **3 redundant RTDB `get()` network round-trips** per command and join request on the normal path.
-   - [`FirebaseTransport.joinRoom`](apps/web/src/net/firebase-transport.ts) now parallelizes `meta` and `members/$uid` reads and reduces `joinResponses` poll latency by **75%** (starting at `25ms` instead of `200ms`).
+## Rules for every future level
 
----
+- Start one bounded level at a time and record its acceptance evidence before moving on.
+- Preserve the free/no-card Firebase setup. Do not enable billing, Functions or a paid host without a new user decision.
+- Keep existing gameplay working and test legacy-room/host-transfer behavior when changing synchronization.
+- Run `npm run typecheck`, relevant tests, `npm run build:firebase`, `npm run bundle:check`, and `npm audit`. Run `npm run test:emulator` for rules/transport/engine persistence changes.
+- Review the actual diff directly, resolve blocking findings, then push/deploy only within the user's authorized scope. Deploy rules before Hosting when both change; verify the exact live artifact and a real room afterward.
+- Keep secrets and seat credentials out of screenshots, reports and telemetry. Do not remove questions automatically.
+- Keep the manual beta checklist honest: responsive desktop checks are not proof of Android/iOS lifecycle behavior.
 
-## 2. Upgrade Pillar 1: Game Speed, Ping & Lag Elimination
+## Level 1 — Physical mobile acceptance (next)
 
-```mermaid
-flowchart LR
-  subgraph Current["Current Browser-Hosted RTDB Flow"]
-    G["Guest Client"] -- "1. Write commands/$uid" --> DB[("Firebase RTDB")]
-    DB -- "2. Push to Host Browser" --> H["Host Browser Tab"]
-    H -- "3. Write snapshot + views/*" --> DB
-    DB -- "4. Push views/$uid + responses/$uid" --> G
-  end
-  subgraph Upgraded["Target Ultra-Low-Latency Flow (<40ms)"]
-    G2["Guest Client (Optimistic UI)"] -- "Direct WebSocket / Edge DO" --> E["Regional Edge Room Worker"]
-    E -- "Delta Patch (Binary/MsgPack)" --> G2
-  end
-```
+Goal: establish actual Android Chrome and iPhone Safari reliability.
 
-### Phase 1A: Client-Side Optimistic UI & Instant Feedback (Short-Term)
-- **Optimistic Action Locking**: Immediately show the selected option/submitted state locally on tap (`0ms` perceived latency) before the RTDB acknowledgement returns, rolling back only if `act()` returns `{ ok: false }`.
-- **Delta View Publishing**: Instead of rewriting every player's full `views/$uid` JSON (`2–8 KB` per player × 8 players) on every single answer submission during `in_round`, only publish `views/$uid` for players whose visible state actually changed, or split `views/$uid` into static round prompts (`rooms/$roomId/roundPublic`) and lightweight per-player progress flags (`actedPlayerIds`).
-- **Pre-Warm Question Banks**: Preload the selected categories' JSON chunks during the Lobby countdown or `round_intro` phase so `contentSource.pick()` never waits on network chunk fetching when a round starts.
+1. Run [BETA-PLAYTEST](docs/BETA-PLAYTEST.md) on real phones, including Wi-Fi/mobile-data combinations, portrait/landscape, notches, virtual keyboards, Arabic numerals and rapid taps.
+2. Exercise app switching, screen locking, denied/unsupported wake lock, guest/host refresh, tab close/recovery inside 15 minutes, and recovery expiry.
+3. Run 2-, 4- and 8-player matches, teams, spectators, rematch, QR entry and result sharing.
+4. Record device/OS/browser versions, setup, expected/actual outcome, and first failed step; reproduce and fix failures without recording private credentials.
 
-### Phase 1B: Dedicated Edge Room Authority (Medium-Term)
-- **Why Browser-Host Has Double-Hop Ping**: When the host is a mobile browser tab, every guest action travels `Guest -> Firebase Server -> Host Phone -> Firebase Server -> All Guests` (2x network RTT + mobile CPU throttling).
-- **Cloudflare Durable Objects / Regional Node WebSocket Server**: Move `MatchEngine` execution from the host player's browser to a lightweight stateful edge worker (using the existing `apps/server` WebSocket architecture deployed close to MENA/Europe regions). This cuts round-trip latency by **60–75%** and completely eliminates host-phone battery/background throttling issues.
+Exit: physical Android and iPhone evidence exists for lifecycle, input, sharing and networking; no unresolved blocking joining/recovery defects. This level requires access to real devices and cannot be marked complete from viewport screenshots.
 
----
+## Level 2 — Repeatable release and network coverage
 
-## 3. Upgrade Pillar 2: Connection & Mobile Resilience
+Goal: catch deployment and recovery regressions before publication.
 
-### Phase 2A: Mobile Lifecycle & Network Hardening
-- **WakeLock API Integration**: Request `navigator.wakeLock.request('screen')` during active matches (`round_intro`, `in_round`, `round_result`) so mobile screens do not dim or suspend the tab mid-round.
-- **Heartbeat & Connection Quality Indicator (Ping Badge)**: Display a live connection quality indicator (`🟢 ممتاز <80ms`, `🟡 متوسط`, `🔴 ضعيف`) using periodic RTT samples from `.info/serverTimeOffset` and command acks.
-- **Offline Action Queue with Short Replay Window**: If a player taps their answer while walking through a 1–2 second cellular dead zone (Wi-Fi to 4G/5G handoff), queue the `round:action` locally and auto-flush it the instant the WebSocket reconnects if the round is still active.
+1. Add repository CI for unit/type/build/bundle/audit gates and a Java-enabled Auth/RTDB emulator job.
+2. Add production-build browser scenarios for create/join, cached clock sync, closed-tab seat counters, host transfer, private projections, cards, result-ready and spectator rematch.
+3. Include controlled latency, short disconnects, dropped acknowledgements, old tabs after a release, and repeated reconnects; keep time-based tests bounded.
+4. Keep a release checklist with exact commit/build identity, rules-first deployment, smoke evidence, and rollback instructions.
 
-### Phase 2B: Seamless Session Persistence
-- **Dual Storage (`localStorage` + `sessionStorage` per Seat)**: Persist room recovery credentials across accidental mobile tab closes (swipe-away) with a 15-minute TTL so reopening the URL offers a one-tap **"العودة للماتش الشغال (غرفة XXXXX)"** banner.
+Exit: failures block release, recovery cases reproduce automatically, and an explicitly invoked smoke workflow can verify a newly deployed test room.
 
----
+## Level 3 — Measured performance and bandwidth
 
-## 4. Upgrade Pillar 3: Database Architecture & Security
+Goal: improve real mobile loading and action response without changing billing/authority.
 
-### Phase 3A: RTDB Payload & Bandwidth Optimization
-- **Separate Public State from Private Secrets**:
-  - Currently, `rooms/$roomId/views/$uid` duplicates the entire player list, standings, category list, and round prompt for every player (`O(N)` fan-out write per tick).
-  - **Upgrade**: Split into:
-    1. `rooms/$roomId/publicView`: Shared state readable by all admitted members (players, scores, timer, public round prompt).
-    2. `rooms/$roomId/privateViews/$uid`: Tiny (`<200 bytes`) secret per-player state (e.g., whether you are the Odd-One-Out, your secret role, or your submitted answer).
-  - **Impact**: Reduces database write bandwidth by **~80%** in 8-player rooms and makes state sync significantly faster.
+1. Capture cold/warm startup and guest-to-host acknowledgement timing under defined networks/devices. Separate database REST RTT from gameplay acknowledgement latency.
+2. Keep initial gzip JavaScript below 230,000 bytes and every JavaScript chunk below 500,000 bytes; current baseline is 199,217 gzip bytes.
+3. Profile eager catalog/reducer loading, Socket.IO code in Firebase builds, round/result chunks, font loading and selected-bank warming before choosing more splits.
+4. Measure public/private writes for all 18 round types at 2/4/8 players, including progress updates, cards and spectators. Optimize only with privacy/version fencing tests.
 
-### Phase 3B: Automated TTL Cleanup & Analytics
-- **Scheduled Stale Room Garbage Collection**: Add a lightweight cleanup task (or on-create opportunistic reaper) that deletes expired rooms (`meta.expiresAtMs < now - 1h`) so the RTDB instance stays small and fast.
-- **Question Telemetry & Difficulty Calibration**: Track anonymous aggregate stats per question ID (skip rate, average solve time, correct %) in a separate `/telemetry` tree to automatically retire broken questions and calibrate difficulty ratings (`1..3`).
+Exit: recorded before/after cold-load, input-response and bytes-per-action measurements improve under the same conditions; no invented sub-40ms, 80% bandwidth or latency promises.
 
----
+## Level 4 — Content quality and telemetry coverage
 
-## 5. Upgrade Pillar 4: Gameplay, Modes & Polish
+Goal: make question review actionable while preserving authored content.
 
-### Phase 4A: New Football & Party Game Mechanics
-1. **Power-Ups / Match Cards (كروت الماتش)**:
-   - Give each player 2 single-use tactical cards per match:
-     - **VAR (الفار)**: Eliminates 2 wrong options in `mcq_race` or reveals a hint in `closest_number`.
-     - **Double Captain (الكابتن x2)**: Doubles points earned in the upcoming round if played during `round_intro`.
-     - **Yellow Card (إنذار)**: Hides one opponent's speed bonus for a round.
-2. **Custom Football Mode ("ديربي الكورة")**:
-   - A dedicated preset combining Football Trivia (`mcq_race`), Transfer Fee / Stat Estimation (`closest_number`), Who Am I — Career Path (`bluff_box`), and Football Hot Takes (`hot_take`).
-3. **Interactive Live Reactions & Taunts**:
-   - Quick floating emoji/sound reactions in Lobby, `round_result`, and `podium` (⚽ هدف، 🟨 إنذار، 😂 ضحك، 🔥 عاش) throttled client-side so players can celebrate or react while waiting.
+1. Add per-question attribution to multi-question reducers before including them in telemetry; current samples cover MCQ and numeric rounds only.
+2. Define an authenticated review workflow for skip/correct rates, solve time, minimum sample size, suggested difficulty and reviewer decisions.
+3. Keep 1–5 difficulty; retain playable questions until reviewed. Protect telemetry deduplication across retries, rematches and host changes.
+4. Review dated football/statistics claims against primary sources and record corrections in [CONTENT-REVIEW](docs/CONTENT-REVIEW.md). The observed `fb-mcq-153` tournament claim is queued for factual verification, not declared verified by a functional playtest.
+5. Plan bounded aggregate retention/export within Spark constraints; preserve the exclusion of names, answers, tokens and player identifiers from samples.
 
-### Phase 4B: Match Flow & UX Speed-Ups
-- **Auto-Advance Ready Check in `round_result`**: Allow players to tap "جاهز للجولة الجاية" on the results screen; once a majority (or all connected players) tap it, advance immediately without waiting for the full result timer.
-- **Spectator Mode**: Allow players who join after a match has started (`phase !== 'lobby'`) to watch the live scoreboard and questions as spectators and automatically join the player pool on `rematch`.
+Exit: supported reducers have attribution tests, reviewers can trace a flag to a question and source, and approved corrections preserve valid item IDs/schema and content coverage.
+
+## Level 5 — Optional new gameplay/content
+
+Goal: add the items explicitly deferred from this release after a separate content/design decision.
+
+1. Specify and author football Hot Takes and career-path questions using real supported game IDs; do not treat a preset as a newly implemented mode.
+2. Decide whether Yellow Card replaces a card or changes the two-card allocation; define its exact speed-bonus effect and private/public visibility before implementing it.
+3. Consider opt-in reaction sounds with mute preferences and mobile autoplay/accessibility behavior.
+4. Extend snapshots, views, rules, scoring tests, spectators and round explanations for each approved addition.
+
+Exit: rules are unambiguous, content is reviewed, all cards reset/restore correctly, and existing formats/rematches remain compatible. These items are future work, not part of the deployed scope.
+
+## Level 6 — Optional hosted authority decision
+
+Goal: revisit server authority only if the user changes or explicitly reconfirms the hosting constraints.
+
+1. Assess available no-card options, regional latency, connection limits, process sleep, operating cost and recovery semantics using current provider terms.
+2. Compare existing Firebase browser-host operation with a regional Node/WebSocket or edge authority, including measured device/network results from Level 3.
+3. Specify trusted scoring, room persistence, host-independent progress, authentication, rollout and rollback before migration.
+
+Exit: the user approves a concrete provider/region/budget and migration plan. Until then, Phase 1B remains deferred and the deployed browser-host architecture remains the supported release.

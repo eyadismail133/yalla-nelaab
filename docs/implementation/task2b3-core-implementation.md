@@ -1,5 +1,7 @@
 # Implement Firebase operation and host lifecycle corrections
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume backend conversation3519b64f-17fa-45b0-96a7-effce862d12d, Flash3.8High, only on Codex dispatch after actual red gates. Read docs/implementation/task2b3-lifecycle-final.md for all requirements; this bounded ownership split supersedes its file ownership. Codex will append actual red evidence below. No more test-only delivery: implement corrections, preserve meaningful regressions, report FILES_READY_FOR_CODEX. No terminal gates/background tasks; Codex executes independently.
 
 Own ONLY Firebase transport/session/seat/runtime, transport.ts interface/factory, related Firebase/seat tests and narrowly necessary new helpers/tests, plus the requested extra EOF blank cleanup in packages/engine/src/engine.test.ts. Do NOT edit useGame.ts, App.tsx, client.ts/client.test.ts: same-time UI conversation4679 owns those. Do NOT edit other approved UI, scoring, rules, content, configs, dependencies, documentation or global settings. No commit/stage/push/deploy/delegate/review/Astra/permission/payment/billing changes.

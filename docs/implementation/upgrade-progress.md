@@ -2,6 +2,8 @@
 
 Work is performed directly by Codex, without delegation. The existing `upgrade_plan.md` supplies the requested scope.
 
+> Release update, 18 October 2026: the agreed scope and subsequent recovery/performance fixes have been pushed and deployed. Final evidence is in [release verification](../verification/release-2026-10-18.md), current status in [STATUS](STATUS.md), and future work in the leveled [upgrade plan](../../upgrade_plan.md). Counts and bundle sizes in the original review below are historical checkpoints; the final release has 697 unit/integration tests, 82 emulator tests and about 199 KB initial gzip JavaScript.
+
 ## Baseline audit
 
 - Local and remote HEAD: `8f078e74639710b800735c0680f27d61fa85015e`.

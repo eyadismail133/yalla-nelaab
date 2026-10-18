@@ -1,5 +1,7 @@
 # Correct recovery test fixtures and finish proof
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume backend conversation `3519b64f-17fa-45b0-96a7-effce862d12d` with Gemini 3.8 Flash High. Codex interrupted the prior run after its source writes stabilized while it waited on background verification. No finished-run approval was given. The four production corrections are present and independently reviewed; preserve them.
 
 Scope ONLY `apps/web/src/net/firebase-transport.emulator.test.ts`. No production, rules, other tests, config or dependencies. Do not commit, stage, push, deploy, delegate, review, change permissions or use payment/billing. **Do not run terminal verification commands or launch background tasks.** Codex owns execution and will send actual results back. Read/write files, then report FILES_READY_FOR_CODEX with commands explicitly unexecuted.

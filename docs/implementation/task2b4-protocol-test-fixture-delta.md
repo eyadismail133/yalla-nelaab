@@ -1,5 +1,7 @@
 # Correct creator protocol test fixtures
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume SAME4679fd2d-bcac-4360-912f-b97de91f2508 Flash3.8High. ONLY firebase-creation-runtime.emulator.test.ts. No other files/source/rules/docs/deps/commands/gates/background tasks/commit/stage/push/deploy/delegate/review/Astra/payment/permissions. Codex independently executes/red-reviews. Report FILES_READY_FOR_CODEX concise exact file/unexecuted tests. Preserve six meaningful scenarios, not placeholders/skips or weakened assertions.
 
 Independent non-Astra actual test review CHANGES_REQUESTED (rules28pass approved; current production protocol deliberately still missing). Fix fixture flaws BEFORE interpreting expected red:

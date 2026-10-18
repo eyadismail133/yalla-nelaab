@@ -1,5 +1,7 @@
 # Resume interrupted Firebase foundation — first prove the real core path
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Continue SAME conversation3519b64f-17fa-45b0-96a7-effce862d12d, userselectedgemini-3.8-flash-high. Priorrun stopped without result.json/finalreport while user was away. No AGY process or emulator remains. Do not claim completion from priorpartialfiles. Use actualcurrentcode, not remembered intendedchanges. No commit/stage/push/deploy/delegation/review/Astra/payment/billing/globalpermissionschanges.
 
 Original task2b-transport.md and task2b1-core-rework.md remain requirements. THIS bounded step prioritizes making actual production bootstrap/join/ready/config/start/action work against REAL approved rules and restoring typecheck. Then report remaining corehardening. Do not spend time on README/Appcosmetics or newfeatures before proof. No edits to independentlyapproved UI/experience/screens/rounds/ui/styles/questiondata. A separatecompletedcontenttaskchanged ONLYtwo cinema prompts+explanations withsourceverification; preserve those.

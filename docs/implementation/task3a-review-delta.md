@@ -1,5 +1,7 @@
 # Independent review findings for Task3a
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 CHANGES_REQUESTED. Do not apply until the Task3b integration run in this same Antigravity conversation finishes. Scope experience/** only, no commit/stage/push/deploy/delegation/Astra.
 
 1. ResultShare summarizes tied teams as a solo winner when winnerId is populated. Independent reviewer reproduced real MatchEngine.concludeMatch + toView: team averages500/500, winningTeamId=null, individual winner present => summaryOutcome=solo_winner/headline أحمد. Teams-mode outcome must use team result and preserve team ties, ignoring individual winner when teams apply. Add a meaningful regression using real engine projection or realistic fixture consistent with it.

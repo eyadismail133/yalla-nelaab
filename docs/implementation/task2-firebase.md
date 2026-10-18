@@ -1,5 +1,7 @@
 # Firebase multiplayer implementation brief
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 This task follows the approved engine extraction. Implement the complete Firebase-only guest multiplayer transport and deployment configuration while preserving the existing Socket.IO transport for local regression. User forbids card/payment/billing. Render Free actually presented an Add Card modal, so Firebase Spark fallback is selected. No Astra reviews, no implementing subagents, no commits/staging/push/deploy/global edits. Codex reviews and deploys afterward. Do not touch question JSON or change scoring/round rules.
 
 ## Existing verified infrastructure

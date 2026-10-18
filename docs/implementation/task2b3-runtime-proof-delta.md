@@ -1,5 +1,7 @@
 # Correct remaining runtime typing and replay regression proof
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume SAME backend3519b64f-17fa-45b0-96a7-effce862d12d using Flash3.8High. ONLY firebase-host-runtime.ts and new replay regression in firebase-transport.emulator.test.ts. No other files/commands/gates/background tasks/commits/push/deploy/delegate/review/Astra/payment/permission changes. Codex independently runs gates. Report FILES_READY_FOR_CODEX.
 
 Actual current typecheck still FAILS runtime434 implicit-any callback because engineResult remains declared any at create~362. Replace that invented shape with actual Awaited<ReturnType<MatchEngine['createRoom']>> nullable (guard before use), or equivalently sound inferred API type. Don't just annotate callback any. Other current type errors are a separate test writer fixing new creation test; do not touch that file.

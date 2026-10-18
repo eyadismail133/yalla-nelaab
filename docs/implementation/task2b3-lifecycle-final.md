@@ -1,5 +1,7 @@
 # Firebase transport lifecycle and bounded operations
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume the same backend conversation, `3519b64f-17fa-45b0-96a7-effce862d12d`, with Gemini 3.8 Flash High after the active recovery task finishes. Codex will add its current gate/review evidence before dispatch. This replaces the dense queued `task2b3-transport-review.md` as the implementation brief; preserve its requirements where clarified below.
 
 Scope: Firebase transport/session/seat/factory, `useGame.ts`, `App.tsx`, focused lifecycle tests, and narrowly necessary runtime status/committed-ACK integration. Preserve approved round/UI components, content, scoring, database rules, Socket timeout behavior and documentation. Do not commit, stage, push, deploy, delegate, review, change global permissions, use Astra, enable billing or use paid resources. New sequence/seat test files have separate ownership until their reports finish; Codex will identify when they are available.

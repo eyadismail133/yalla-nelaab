@@ -1,5 +1,7 @@
 # Repair actual transport ownership, cancellation, and invalid test proofs
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume SAME3519b64f-17fa-45b0-96a7-effce862d12d Flash3.8High AFTER rejoin-rollback task exits. Scope ONLY firebase-transport.ts, narrowly needed firebase-session.ts, and corrections to the eight new lifecycle tests at end of firebase-transport.emulator.test.ts (don't overwrite the preceding new rejoin rollback test). No UI/engine/rules/content/deps/docs/commands/gates/background tasks/commit/stage/push/deploy/delegate/review/Astra/payment/permissions. Codex runs gates. Report FILES_READY_FOR_CODEX with concise exact scope/unexecuted gates. Do not self-approve.
 
 Independent actual-diff review CHANGES_REQUESTED. Root typecheck5FAIL: transport360/377/798/815 nullable ownedRuntime equality guard,1031local callback inferrednever. Fix soundly via captured nonnull owner and actual typed cancellation structure; no any/ts-ignore casts hiding ownership bug. Root rules28 PASS/static APPROVED, so runtime old meta-before-intent is temporarily incompatible until NEXT protocol task; do not weaken rules or touch creation protocol here.

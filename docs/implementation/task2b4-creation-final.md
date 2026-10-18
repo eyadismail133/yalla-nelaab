@@ -1,5 +1,7 @@
 # Durable creation and safe room replacement
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 This readable brief supersedes task2b4-creation-intent.md while retaining its acceptance requirements. Queued for backend conversation3519b64f-17fa-45b0-96a7-effce862d12d, Flash3.8High. Dispatch only after current core work finishes and Codex adds current gate/review evidence. Preserve all lifecycle fixes, UI, scoring,18reducers and content. No commit/stage/push/deploy/delegation/review/Astra, global permission changes, billing or payment. No terminal gates/background tasks; Codex verifies.
 
 Two phases: prepare focused actual-SDK tests only and report TESTS_READY_FOR_CODEX; Codex runs intended red cases; implement on the next delta and report FILES_READY_FOR_CODEX. Never claim unexecuted checks pass.

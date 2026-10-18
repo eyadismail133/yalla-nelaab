@@ -1,5 +1,7 @@
 # Correct Socket.IO timeout regression
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Continue same conversation4679fd2d-bcac-4360-912f-b97de91f2508, gemini-3.8-flash-high. Prior docs task must be complete before this. Scope ONLY apps/web/src/net/client.ts and a focused regression test beside it (normal vitest suite). Do not edit Firebase files, App/useGame, rules, shared/server/engine/UI/config/docs other than your report. Another implementer owns Firebase. No commit/stage/push/deploy/delegation/review/payment/globalpermissions.
 
 Independent non-Astra verdict CHANGES_REQUESTED P1:

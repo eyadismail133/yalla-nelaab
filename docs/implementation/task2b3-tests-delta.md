@@ -1,5 +1,7 @@
 # Make lifecycle regressions exercise the intended failures
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume same3519 backend conversation, FlashHigh. TESTS ONLY, no production/config/rules/dependencies. No commit/stage/deploy/delegation/permissions/payment. No terminal gates; Codex executes. Report TESTS_READY_FOR_CODEX. Preserve prior test corrections and independent31passing cases.
 
 Codex inspected your test delivery before running gates. Two new tests currently cannot prove their claimed defects:

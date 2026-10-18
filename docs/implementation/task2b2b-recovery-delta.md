@@ -1,5 +1,7 @@
 # Host recovery review corrections
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume conversation `3519b64f-17fa-45b0-96a7-effce862d12d` with `gemini-3.8-flash-high`. The previous host run has finished. Independent Codex evidence at 21:34 Cairo: typecheck PASS; real demo Auth/Database rules + transport suites PASS22 (9 rules +13 transport), exit0. Final source review still found the four runtime defects below, so passing basic tests is not approval.
 
 Scope: `firebase-host-runtime.ts`, necessary host lifecycle integration in `firebase-transport.ts`, and `firebase-transport.emulator.test.ts`. Preserve the separately owned `firebase-matches.emulator.test.ts`, all approved rules, UI, Socket code, round reducers and content. Do not commit, stage, push, deploy, delegate, review, change permissions, enable billing or use paid resources.

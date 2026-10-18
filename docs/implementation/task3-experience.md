@@ -1,5 +1,7 @@
 # Player experience implementation brief
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Implement the approved user-experience improvements after Firebase multiplayer is reviewed. Work only in D:/projects/football game, branch launch/free-online. Preserve all scoring, reducers, 14 topics, Egyptian Arabic/RTL and 18 games. No deployment, commits, staging, push, global changes, delegates/reviewers or Astra. Codex reviews and deploys. User requires zero card/payment/billing. Browser host trust limitations are accepted and must be clearly explained in product copy only where relevant (keep host tab active; answers/scores trusted for friends, no promise of anti-cheat).
 
 ## Deliverables

@@ -1,5 +1,7 @@
 # Correct creation security test fixtures
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume SAME4679fd2d-bcac-4360-912f-b97de91f2508 with user Flash3.8High. Scope ONLY firebase-creation.emulator.test.ts. Same constraints: NO existing other files/rules/production/docs/dependencies/commands/gates/commits/push/deploy/delegate/review/permissions/Astra. Codex runs tests. Report FILES_READY_FOR_CODEX and intentional remaining RED.
 
 Independent reviewer CHANGES_REQUESTED; root19actualtests7PASS/12FAIL, mostly expected missing rule fences. Correct test defects without implementing rules or weakening requirements:

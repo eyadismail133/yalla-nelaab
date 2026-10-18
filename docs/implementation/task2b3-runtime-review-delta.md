@@ -1,5 +1,7 @@
 # Repair runtime bootstrap and committed replay acknowledgements
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume SAME backend conversation3519b64f-17fa-45b0-96a7-effce862d12d with Flash3.8High. Bounded rework: ONLY firebase-host-runtime.ts and narrowly necessary corrections in firebase-transport.emulator.test.ts for the restoration fixture/replay regression. No transport/session/seat/factory/UI/rules/scoring/dependency/config/doc changes, no commit/stage/push/deploy/delegate/review/Astra/permission/payment. No terminal commands/gates/background tasks. Report FILES_READY_FOR_CODEX, unexecuted gates honestly.
 
 Latest independent evidence03:14-15: npm test667PASS. Typecheck2FAIL: runtime1070 nonexistent joinResult.player;1218 unknown assigned to string|undefined. Real emulators41tests:13PASS/28FAIL. Most fail bootstrap because runtime445 accesses engineResult.player.nickname. The engine does NOT return player: actual createRoom/join return {state,playerId,token}. Verify installed/local APIs, not guessed shapes.

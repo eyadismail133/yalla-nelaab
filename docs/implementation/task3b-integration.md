@@ -1,5 +1,7 @@
 # Player experience integration
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Continue the SAME Task3a conversation. Integrate the completed experience components into the existing game and improve invitations/readiness/submission feedback. Another Antigravity conversation owns Firebase rules/transport/engine; do not edit its files or delegate. No Astra, commit/stage/push/deploy, billing/card/global settings.
 
 OWNERSHIP: apps/web/src/screens/**, apps/web/src/rounds/**, apps/web/src/ui/**, apps/web/src/i18n/**, styles.css, index.html, and new UI/invitation helpers/tests. You may update apps/web/package.json and package-lock.json ONLY to add qrcode plus @types/qrcode (or a comparably small local QR library). Other implementation does NOT own dependencies during this step. Do NOT edit App.tsx, net/**, engine/shared/server, database.rules.json, Firebase config or docs. Do NOT change experience/** while independent Task3a review is active; await a later review delta if needed. Keep changes focused and coherent with current visual design.

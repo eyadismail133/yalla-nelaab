@@ -1,5 +1,7 @@
 # Transport and application lifecycle review delta (queued after host rework)
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Continue exact conversation3519b64f-17fa-45b0-96a7-effce862d12d, userselected gemini-3.8-flash-high. Do not run concurrently with another writer to this conversation. Scope Firebase transport/session/seat/factory, useGame/App, focused tests plus narrowly necessary runtime commit ACK events. Preserve approved UI/rounds/content/rules/Socket/README. No commit/stage/push/deploy/delegation/review/Astra/payment/globalpermissions.
 
 Codex CHANGES_REQUESTED on current foundation. Independent17emulator and typecheck pass basicpath but these concrete defects remain:

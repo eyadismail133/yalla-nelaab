@@ -1,5 +1,7 @@
 # Host correctness review rework — same conversation
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Continue3519b64f-17fa-45b0-96a7-effce862d12d, gemini-3.8-flash-high. Codex verdict CHANGES_REQUESTED despite independent npm run test:emulator PASS17 and typecheckPASS. These tests do not prove advertised rematch/dedup/lease behavior. This bounded step owns host runtime + necessary transport hostconstruction changes + focused real emulator regression tests. No App/useGame/Socket/UI/content/README/rules changes, no commit/stage/push/deploy/delegation/review/payment/globalpermissions. Other AGY writes only round snapshot test. Do not weaken approvedrules or replace genuine runtime logic with testbypasses.
 
 Fix these actual reviewed host defects coherently:

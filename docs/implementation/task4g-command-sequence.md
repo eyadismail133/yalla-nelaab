@@ -1,5 +1,7 @@
 # Command identity and dedup regression tests
 
+> Historical implementation record — current status updated 18 October 2026. This file preserves its original task scope and evidence; it is not an instruction for new work. For the deployed release, current test counts and known limits, see [STATUS](STATUS.md) and [release verification](../verification/release-2026-10-18.md). Future work follows the levels in [upgrade_plan.md](../../upgrade_plan.md).
+
 Resume conversation `07a6c8b1-d842-48fb-a766-827a1fe82fe9` with Gemini 3.8 Flash High. Scope only a NEW `apps/web/src/net/sequence.test.ts`. Do not edit production, existing tests, config, dependencies or docs. Do not start emulators, commit, stage, push, deploy, delegate, review, change permissions, enable billing or use paid resources. Another conversation owns Firebase runtime/transport recovery.
 
 Inspect `sequence.ts`, the existing transport tests and project test conventions. Add compact, meaningful tests of the public command-identity/dedup contract. Earlier reviewed bugs accepted malformed legacy IDs and parsed underscores/digits ambiguously, so protect against those regressions.
