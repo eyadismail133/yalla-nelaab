@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-10-18T15:14:32.762Z",
+  "site": "https://yalla-nelaab-20261016.web.app",
+  "commit": "4b3671b8fc2ac74f88c6150dd13cd71bda07a43f",
+  "rounds": 5,
+  "questionSamples": [
+    {
+      "questionId": "anm-bool-32",
+      "plays": 2,
+      "answered": 2,
+      "correct": 1,
+      "totalSolveMs": 611,
+      "roundTypeId": "quickfire_tf",
+      "recordedAtMs": 1792336485541
+    },
+    {
+      "questionId": "anm-bool-74",
+      "plays": 2,
+      "answered": 2,
+      "correct": 1,
+      "totalSolveMs": 784,
+      "roundTypeId": "quickfire_tf",
+      "recordedAtMs": 1792336485544
+    },
+    {
+      "questionId": "prv-bool-83",
+      "plays": 2,
+      "answered": 2,
+      "correct": 1,
+      "totalSolveMs": 1150,
+      "roundTypeId": "quickfire_tf",
+      "recordedAtMs": 1792336485547
+    },
+    {
+      "questionId": "hs-bool-66",
+      "plays": 2,
+      "answered": 2,
+      "correct": 1,
+      "totalSolveMs": 647,
+      "roundTypeId": "quickfire_tf",
+      "recordedAtMs": 1792336485550
+    },
+    {
+      "questionId": "mus-bool-97",
+      "plays": 2,
+      "answered": 2,
+      "correct": 1,
+      "totalSolveMs": 651,
+      "roundTypeId": "quickfire_tf",
+      "recordedAtMs": 1792336485552
+    }
+  ],
+  "roomsLeft": true,
+  "stage": "complete",
+  "probeNote": "The first probe used two long nicknames with the same first 16 characters, so guest admission did not complete. This successful run used distinct short names. First-probe browser contexts closed without explicit room leave; normal expiry applies."
+}

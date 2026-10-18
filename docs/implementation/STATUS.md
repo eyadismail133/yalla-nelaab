@@ -1,13 +1,13 @@
 # Launch status — 18 October 2026
 
-## Current deployed reliability release
+## Current deployed content-quality release
 
-- Current source and GitHub default branch: `main`; the previous release branches were consolidated without losing commits. Release CI, six production-browser scenarios, recovery race fixes, build-time transport selection and lazy QR generation.
-- Fresh local gates: 697 unit/integration tests, 82 real-rules emulator tests, 6 browser scenarios, types, Firebase/Socket.IO builds, 185 KB initial gzip budget, Firebase module graph and zero known npm vulnerabilities.
-- Initial Firebase JavaScript: 175,625 gzip bytes; emulator-profile median cold startup 3,456 → 3,152 ms. Small-sample acknowledgement timing is inconclusive; no production-ping reduction is claimed.
-- Application commit `5ee5475` is pushed and deployed. Both GitHub CI jobs passed; all 27 manifest assets plus HTML (28 files total) matched the local release, and three live browser scenarios passed. [Publication evidence](../verification/published-reliability-2026-10-18.md).
-- Physical Android/iPhone acceptance is skipped by user, not passed. The desktop production baseline records median cold/warm readiness of 4,470/1,433 ms, lobby acknowledgement 267 ms, and MCQ guest confirmation 254 ms. [Production results](../verification/production-performance-2026-10-18.md). Cross-network and matched before/after production comparisons remain open.
-- Both CI jobs passed for `main` commit `fe4aeb8`. GitHub required checks are blocked on this private repository by its current plan (HTTP 403: Pro or public visibility required). No paid upgrade or visibility change was made. All-type emulator action traffic remains recorded in the [local measurement record](../verification/reliability-performance-2026-10-18.md).
+- Sole/default source branch: `main`. Application commit `4b3671b` is pushed and published to [Yalla Nelaab](https://yalla-nelaab-20261016.web.app/). Database rule additions were deployed before Hosting.
+- Both GitHub CI jobs passed. Validation: 713 unit/integration/content tests, 83 real-rules emulator tests, six minified browser scenarios, types, both transport builds, bundle/module gates and zero known npm vulnerabilities. [Level 4 release evidence](../verification/content-level4-2026-10-18.md).
+- All 29 local production-build files, live root security/cache headers and authenticated database rules readback match. Production smoke and a five-round live quickfire match passed; five first-round per-question aggregates were verified and successful-probe seats left.
+- Initial Firebase JavaScript: **175,620 gzip bytes** under a 185,000-byte budget, essentially unchanged from 175,625. New attribution code stays in the lazy host runtime. No reduced-production-ping claim is made.
+- Per-question review covers eight modes; the authenticated export/report workflow retains 1–5 difficulty and playable content. Two factual errors were corrected, five claims verified, and 84 dated football claims remain queued. [Review workflow](../CONTENT-REVIEW-WORKFLOW.md).
+- Physical Android/iPhone acceptance remains skipped by user. The earlier desktop production timing baseline is [recorded separately](../verification/production-performance-2026-10-18.md); cross-network and matched before/after production comparisons remain open. Required checks remain unavailable under GitHub's current private/free repository plan. No payment, billing, provider, region or visibility change was made.
 
 ## Previous deployed release — Level 0
 

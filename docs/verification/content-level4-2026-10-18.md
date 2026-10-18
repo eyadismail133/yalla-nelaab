@@ -27,4 +27,14 @@ Direct production/test diff review: **APPROVED**, subject to the recorded verifi
 
 ## Publication
 
-Pending source commit, final build, successful release checks, rules-first deployment, full live asset verification and real-room smoke. Physical Android/iPhone acceptance remains skipped by user. Private-repository required-check enforcement remains unavailable under the current free plan.
+Application commit: `4b3671b8fc2ac74f88c6150dd13cd71bda07a43f`, pushed to the sole/default `main` branch. [GitHub Release checks run 39138958363](https://github.com/eyadismail133/yalla-nelaab/actions/runs/39138958363) passed both quality and emulator-browser jobs, including the final 83-test emulator suite. A fresh Firebase build from that committed source passed its budget before publication.
+
+Deployed successfully with `firebase deploy --only database --project yalla-nelaab-20261016 --non-interactive`, followed by `firebase deploy --only hosting --project yalla-nelaab-20261016 --non-interactive`. Existing live rules were first read back through authenticated operator access and matched the pre-Level-4 local rules. No billing, visibility, provider or region changes occurred.
+
+[Full live identity verification](level4-live-identity.json), checked at 15:12 UTC (18:12 Cairo), confirms **all 29 local build files**, including the Vite manifest, match live SHA-256 content. Root security/cache headers match the Hosting configuration. Authenticated live rules readback matches the local rules, canonical SHA-256 `18bab028f4121f2a28e12b89bd07e9e8652512b1d1df2810c0260d2f13106a3d`.
+
+Production smoke passed: one create/join/readiness/host-transfer test, 10.1 seconds overall. A separate [live two-player quickfire match](level4-live-gameplay.json) completed five rounds (50 answer submissions), reached the podium, and explicitly left both seats. Scoped authenticated reads verified five first-round question samples: each has two plays, two answers, one correct response, mode `quickfire_tf`, solve time and a server timestamp. Only numeric aggregates and authored question IDs were saved; no room IDs, player names, answers, tokens, raw snapshots or browser storage were exported.
+
+The first full-match probe used long host/guest names that collided at the existing 16-character limit and did not complete guest admission. It was rerun with distinct short names; no game-code change was necessary. That first probe closed its contexts without explicitly leaving its temporary room, so normal expiry applies. The successful probe left both seats. The temporary probe script was removed after verification.
+
+Physical Android/iPhone acceptance remains skipped by user. Private-repository required-check enforcement remains unavailable under the current free plan. This release establishes the eight-mode attribution and review workflow; the remaining 84 source-review items, unsupported-mode measurement contracts, and manual retention operations remain explicit follow-up work.

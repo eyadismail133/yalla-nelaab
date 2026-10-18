@@ -63,7 +63,7 @@ Status: bundle/startup work, synthetic profiling and all-type emulator traffic a
 Goal: improve real mobile loading and action response without changing billing/authority.
 
 1. Capture cold/warm startup and guest-to-host acknowledgement timing under defined networks/devices. Separate database REST RTT from gameplay acknowledgement latency.
-2. Keep initial gzip JavaScript at or below 185,000 bytes and every JavaScript chunk at or below 500,000 bytes; the deployed release is 175,625 initial gzip bytes.
+2. Keep initial gzip JavaScript at or below 185,000 bytes and every JavaScript chunk at or below 500,000 bytes; the deployed release is 175,620 initial gzip bytes.
 3. Profile eager catalog/reducer loading, Socket.IO code in Firebase builds, round/result chunks, font loading and selected-bank warming before choosing more splits.
 4. Measure public/private writes for all 18 round types at 2/4/8 players, including progress updates, cards and spectators. Optimize only with privacy/version fencing tests.
 
@@ -71,12 +71,14 @@ Exit: recorded before/after cold-load, input-response and bytes-per-action measu
 
 ## Level 4 — Content quality and telemetry coverage
 
+Status: the initial content-quality implementation is published from `main` commit `4b3671b`. Both CI jobs passed; all 29 live build files and the database rules match locally. Eight modes now have supported per-question aggregates. A full live quickfire match and its first-round aggregates passed verification. [Release evidence](docs/verification/content-level4-2026-10-18.md). The source ledger records five verified claims, two corrections and 84 queued claims; this is not a full-bank audit. Unsupported-mode measurement contracts and manual retention remain follow-up work.
+
 Goal: make question review actionable while preserving authored content.
 
-1. Add per-question attribution to multi-question reducers before including them in telemetry; current samples cover MCQ and numeric rounds only.
+1. Add per-question attribution to multi-question reducers before including them in telemetry; supported samples now cover MCQ, numeric, quickfire, odd-one-out, bidding, land grab, ladder and relay. Other modes stay excluded pending a validated measurement contract.
 2. Define an authenticated review workflow for skip/correct rates, solve time, minimum sample size, suggested difficulty and reviewer decisions.
 3. Keep 1–5 difficulty; retain playable questions until reviewed. Protect telemetry deduplication across retries, rematches and host changes.
-4. Review dated football/statistics claims against primary sources and record corrections in [CONTENT-REVIEW](docs/CONTENT-REVIEW.md). The observed `fb-mcq-153` tournament claim is queued for factual verification, not declared verified by a functional playtest.
+4. Review dated football/statistics claims against primary sources and record corrections in [CONTENT-REVIEW](docs/CONTENT-REVIEW.md). The observed `fb-mcq-153` tournament claim is now verified against FIFA results, with its answer retained and an explanation added. Two adjacent factual errors were corrected; the remaining dated claims are queued in the decision ledger.
 5. Plan bounded aggregate retention/export within Spark constraints; preserve the exclusion of names, answers, tokens and player identifiers from samples.
 
 Exit: supported reducers have attribution tests, reviewers can trace a flag to a question and source, and approved corrections preserve valid item IDs/schema and content coverage.
