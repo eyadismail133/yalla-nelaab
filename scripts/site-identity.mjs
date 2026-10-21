@@ -16,7 +16,10 @@ if (scripts.length === 0) throw new Error('No deployed entry scripts found');
 const identity = [{ file: '/', sha256: createHash('sha256').update(html).digest('hex') }];
 for (const [, path] of scripts) {
   const url = new URL(path, base);
-  if (url.origin !== base.origin) throw new Error('Unexpected external entry script');
+  if (url.origin !== base.origin) {
+    if (url.href === 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3917258623347817') continue;
+    throw new Error('Unexpected external entry script');
+  }
   identity.push({ file: url.pathname, sha256: createHash('sha256').update(await fetchAsset(url)).digest('hex') });
 }
 let matchesLocal = null;
